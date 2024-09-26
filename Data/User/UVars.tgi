@@ -1,16 +1,25 @@
 [Vars]
 {
-	float	CameraScaleZoom = 1.500000
+	float	CameraScrollSpeed = 6.000000
+	float	CameraScaleZoom = 2.400000
 	flag	ViewShowElapsedGameTime = true
 	flag	CameraRotate = true
+	int	ResolutionX = 2560
+	int	ResolutionY = 1600
+	int	UIMessageLogMaximumLines = 15
+	int	RenderLODShadows = 2
+	float	ParticleGeneratePCG = 0.600000
 	flag	RenderDrawFootsteps = false
-	float	AudioMainVolume = 0.948556
-	float	Audio2DVolume = 0.969554
-	float	Audio3DVolume = 0.969554
-	float	AudioSpeechVolume = 0.998950
-	float	AudioMusicVolume = 0.961155
+	float	AudioMainVolume = 1.000000
+	float	Audio2DVolume = 1.000000
+	float	Audio3DVolume = 1.000000
+	float	AudioSpeechVolume = 1.000000
+	float	AudioMusicVolume = 1.000000
 	int	LastFilmIndex = 1
 	flag	UnitFogSimplified = true
+	int	AFKTime = 30
 	flag	FirstRun = false
+	flag	PerformanceDisableDecals = false
 	flag	RendererForceLowQualityTextures = true
+	flag	UICampaignConfirmDependentCampaign = false
 }

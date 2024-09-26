@@ -62,7 +62,7 @@
 		;; the size of the screen in the resolution Windows is in. The game will not change the
 		;; resolution of the screen if ResolutionCoopFullscreenMode is true, and ResolutionX and Y
 		;; are ignored.
-		flag ResolutionCoopFullscreenMode= true
+		flag ResolutionCoopFullscreenMode= false
 
 		int MessageLogMaximumLines = 50
 		flag ResourceCaching = true
