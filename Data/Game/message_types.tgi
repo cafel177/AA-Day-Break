@@ -76,6 +76,7 @@
 
 	icon = MessageTypeIcons/IconCompanyDestroyed.png
 	filter = UIMessageFilterCompany
+	color = 1, 0, 0
 }
 
 [MessageType Template=MessageType]
@@ -106,6 +107,7 @@
 
 	icon = MessageTypeIcons/IconCompanyDestroyed.png
 	filter = UIMessageFilterRegiment
+	color = 1, 0, 0
 }
 
 [MessageType Template=MessageType]
@@ -146,6 +148,7 @@
 
 	icon = MessageTypeIcons/IconBuildingDestroyed.png
 	filter = NULL
+	color = 1, 0, 0
 }
 
 [MessageType Template=MessageType]

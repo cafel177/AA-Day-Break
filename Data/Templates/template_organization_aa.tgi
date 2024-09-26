@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_organization_AA.tgi
-Copyright © 2003 TimeGate Studios
+Copyright ?2003 TimeGate Studios
 
 DESCRIPTION:  templates for AA units.
 
@@ -356,6 +356,9 @@ USAGE:
 	{
 		banner_ids = gbr_banner
 		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_deployed
 	}	
 }
 
@@ -374,6 +377,9 @@ USAGE:
 	{
 		banner_ids = gbr_banner
 		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_deployed
 	}	
 }
 
@@ -392,6 +398,9 @@ USAGE:
 	{
 		banner_ids = gbr_banner
 		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_paratrooper_deployed
 	}	
 }
 
@@ -410,6 +419,9 @@ USAGE:
 	{
 		banner_ids = gbr_banner
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_vehicle_deployed
 	}	
 }
 
@@ -429,6 +441,9 @@ USAGE:
 	{
 		banner_ids = gbr_banner
 		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_engineer_deployed
 	}	
 }
 
@@ -492,6 +507,9 @@ USAGE:
 	{
 		banner_ids = ger_banner
 		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_tank_deployed
 	}
 }
 
@@ -510,6 +528,9 @@ USAGE:
 	{
 		banner_ids = ger_banner
 		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_deployed
 	}
 }
 
@@ -528,6 +549,9 @@ USAGE:
 	{
 		banner_ids = ger_banner
 		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_paratrooper_deployed
 	}	
 }
 
@@ -546,6 +570,9 @@ USAGE:
 	{
 		banner_ids = ger_banner
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_vehicle_deployed
 	}	
 }
 
@@ -565,6 +592,9 @@ USAGE:
 	{
 		banner_ids = ger_banner
 		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_engineer_deployed
 	}	
 }
 
@@ -628,6 +658,9 @@ USAGE:
 	{
 		banner_ids = jpn_banner
 		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_deployed
 	}	
 }
 
@@ -646,6 +679,9 @@ USAGE:
 	{
 		banner_ids = jpn_banner
 		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_deployed
 	}	
 }
 
@@ -664,6 +700,9 @@ USAGE:
 	{
 		banner_ids = jpn_banner
 		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_paratrooper_deployed
 	}	
 }
 
@@ -682,6 +721,9 @@ USAGE:
 	{
 		banner_ids = jpn_banner
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_vehicle_deployed
 	}	
 }
 
@@ -701,6 +743,9 @@ USAGE:
 	{
 		banner_ids = jpn_banner
 		banner_icon = /Organizations/Banners/Icons/IconEngineer.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_engineer_deployed
 	}	
 }
 
@@ -765,6 +810,9 @@ USAGE:
 	{
 		banner_ids = rus_banner
 		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_tank_deployed
 	}	
 }
 
@@ -783,6 +831,9 @@ USAGE:
 	{
 		banner_ids = rus_banner
 		banner_icon = /Organizations/Banners/Icons/IconInfantry.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_deployed
 	}	
 }
 
@@ -801,6 +852,9 @@ USAGE:
 	{
 		banner_ids = rus_banner
 		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_paratrooper_deployed
 	}	
 }
 
@@ -819,6 +873,9 @@ USAGE:
 	{
 		banner_ids = rus_banner
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png  
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_vehicle_deployed
 	}	
 }
 
@@ -838,6 +895,9 @@ USAGE:
 	{
 		banner_ids = rus_banner
 		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_engineer_deployed
 	}	
 }
 
@@ -902,6 +962,9 @@ USAGE:
 	{
 		banner_ids = usa_banner
 		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_tank_deployed
 	}	
 }
 
@@ -920,6 +983,9 @@ USAGE:
 	{
 		banner_ids = usa_banner
 		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_deployed
 	}	
 }
 
@@ -938,6 +1004,9 @@ USAGE:
 	{
 		banner_ids = usa_banner
 		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_paratrooper_deployed
 	}	
 }
 
@@ -956,6 +1025,9 @@ USAGE:
 	{
 		banner_ids = usa_banner
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_vehicle_deployed
 	}	
 }
 
@@ -975,6 +1047,9 @@ USAGE:
 	{
 		banner_ids = usa_banner
 		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_engineer_deployed
 	}	
 }
 

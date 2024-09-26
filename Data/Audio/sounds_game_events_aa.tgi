@@ -33,6 +33,8 @@
 	IDS = building_under_siege_sfx
 	name = "#sounds_game_events_aa_building_under_siege_sfx_name"
 
+	who_flags = PLAYER
+
 	files = Sounds/Feedback/UnderSiege.wav
 }
 
@@ -81,6 +83,7 @@
 	IDS = company_recruited_sfx
 	name = "#sounds_game_events_aa_company_recruited_sfx_name"
 
+	volume = 50%
 	files = Sounds/Feedback/RegimentRecruited.wav
 }
 
@@ -89,6 +92,7 @@
 	IDS = company_commissioned_sfx
 	name = "#sounds_game_events_aa_company_commissioned_sfx_name"
 
+	volume = 50%
 	files = Sounds/Feedback/RegimentRecruited.wav
 }
 
@@ -216,7 +220,7 @@
 	
 	who_flags = PLAYER
 
-	files = Sounds/Feedback/BuildBunkerComplete.wav
+	files = Sounds/Feedback/BuildBunkerComplete2.wav
 }
 
 [Audio Template=AudioFeedback]
@@ -246,9 +250,58 @@
 
 	who_flags = PLAYER
 
+	volume = 100%
+
 	files = Sounds/Feedback/BuildAirfieldComplete.wav
 }
 
+[Audio Template=AudioFeedback]
+{
+	IDS = packable_complete
+	name = "#sounds_game_events_aa_airfield_complete_name"
+
+	who_flags = PLAYER
+
+	volume = 50%
+
+	files = Sounds/Feedback/BuildPackableComplete.wav
+}
+
+[Audio Template=AudioFeedback]
+{
+	IDS = depot_complete
+	name = "#sounds_game_events_aa_airfield_complete_name"
+
+	who_flags = PLAYER
+
+	volume = 100%
+
+	files = Sounds/Feedback/BuildDepotComplete.wav
+}
+
+[Audio Template=AudioFeedback]
+{
+	IDS = HQ_complete
+	name = "#sounds_game_events_aa_airfield_complete_name"
+
+	who_flags = PLAYER
+
+	volume = 100%
+
+	files = Sounds/Feedback/BuildHQComplete.wav
+}
+
+[Audio Template=AudioFeedback]
+{
+	IDS = CorpHQ_complete
+	name = "#sounds_game_events_aa_airfield_complete_name"
+
+	who_flags = PLAYER
+
+	volume = 100%
+
+	files = Sounds/Feedback/BuildCorpHQComplete.wav
+}
 
 ;; ------------------- UNUSED SFX ------------------ ;;
 

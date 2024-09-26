@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_unit_AA.tgi
-Copyright © 2003 TimeGate Studios
+Copyright ?2003 TimeGate Studios
 
 DESCRIPTION:  templates for AA units.
 
@@ -1685,7 +1685,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = gbr_bomber_deployed
+		audio_ids = gbr_air_attack
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_gbr_bomber
@@ -1997,7 +1997,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = ger_bomber_deployed
+		audio_ids = ger_air_attack
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_ger_bomber
@@ -2353,7 +2353,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = jpn_bomber_deployed
+		audio_ids = jpn_air_attack
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_jpn_bomber
@@ -2697,7 +2697,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = rus_bomber_deployed
+		audio_ids = rus_air_attack
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_rus_bomber
@@ -3016,7 +3016,7 @@ USAGE:
 	[View]
 	{
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = usa_fighter_deployed
+		audio_ids = usa_air_attack
 		
 		[WhenDestroyed Template=FXC_PlaySFX]
 		audio_ids = death_usa_bomber

@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_aa_building.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION:  templates for AA buildings, which have common features such
  	as the destruct animation.
@@ -71,6 +71,34 @@ USAGE:
 {	
 	[BodyComponent]
 	{
+		[WhenHealth Template=FXC_PlaySFX]
+		{
+			audio_ids = building_under_siege_sfx
+			health = 0.99
+			health_trigger_type = ABSOLUTE_BELOW
+		}
+
+		[WhenHealth Template=FXC_PlaySFX]
+		{
+			audio_ids = building_under_siege_sfx
+			health = 0.75
+			health_trigger_type = ABSOLUTE_BELOW
+		}
+
+		[WhenHealth Template=FXC_PlaySFX]
+		{
+			audio_ids = building_under_siege_sfx
+			health = 0.5
+			health_trigger_type = ABSOLUTE_BELOW
+		}
+
+		[WhenHealth Template=FXC_PlaySFX]
+		{
+			audio_ids = building_under_siege_sfx
+			health = 0.25
+			health_trigger_type = ABSOLUTE_BELOW
+		}
+
 	  	[WhenHealth Template=FXC_CreateVFX]
 	  	{
 			VFX_IDS = rising_flame
@@ -86,7 +114,7 @@ USAGE:
 			health = 0.8
 			health_trigger_type = ABSOLUTE_BELOW
 	  	}
-	  
+
 	  	[WhenHealth Template=FXC_CreateVFX]
 	  	{
 			VFX_IDS = rising_flame
@@ -188,6 +216,12 @@ USAGE:
 		attached = true
 	}
 
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = packable_complete
+	}
+
 } ; end [template AABuildingPackable]
 
 [Template AABuildingPackableHQ Template=AABuildingPackable]
@@ -253,6 +287,12 @@ USAGE:
 		audio_ids = unpack_8s_sfx
 	}
 	
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = HQ_complete
+	}
+
 } ; end [template AABuildingPackableHQ]
 
 [Template AABuildingPackableCorpHQ Template=AABuildingPackable]
@@ -281,6 +321,12 @@ USAGE:
 		audio_ids = unpack_10s_sfx
 	}
 	
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = CorpHQ_complete
+	}
+
 	[View]
 	{		
 		[WhenSelected Template=FXC_PlayObjectAnimation]
@@ -334,6 +380,12 @@ USAGE:
 		reward = 25, 50	
 	}
 	
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = depot_complete
+	}
+
 } ; end [template AABuildingPackableDepot]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
