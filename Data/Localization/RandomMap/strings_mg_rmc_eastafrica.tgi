@@ -1,0 +1,14 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_eastafrica.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_eastafrica.tgi"
+
+	mg_rmc_eastafrica_name = "East Africa"
+	mg_rmc_eastafrica_description = "East Africa"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_eastafrica_village_eastafrica_name = "Villages"
+	mg_rmc_eastafrica_bunkers_coastline_6_name = "Coastline Bunkers 6"
+}

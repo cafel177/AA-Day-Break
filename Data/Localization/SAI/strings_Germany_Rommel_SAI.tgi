@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Germany_Rommel_SAI.tgi
+	name = "@Localization/SAI/strings_Germany_Rommel_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Germany_Rommel_SAI_rommel_low_income_ego_name = "Rommel low income ego"
+	Germany_Rommel_SAI_rommel_main_game_ego_name = "Rommel main game ego"
+	Germany_Rommel_SAI_rommel_end_game_ego_name = "Rommel end game ego"
+	Germany_Rommel_SAI_rommel_sai_name = "Rommel AI"
+	Germany_Rommel_SAI_rommel_sai_description = "Rommel AI"
+}

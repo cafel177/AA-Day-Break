@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_india.tgi
+	name = "@Localization/RandomMap/strings_rmc_india.tgi"
+
+	rmc_india_name = "India"
+	rmc_india_description = "A major part of the greater British Empire, India possessed wealth and manpower necessary for maintaining British campaigns in North Africa and the Pacific.  Accordingly, invasion of India remained a high priority for the Axis forces, and protecting the colony was of the utmost importance for the British."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_india_village_india_name = "Villages"
+}

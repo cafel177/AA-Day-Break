@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Great_Britain_Wingate_SAI.tgi
+	name = "@Localization/SAI/strings_Great_Britain_Wingate_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Great_Britain_Wingate_SAI_wingate_low_income_ego_name = "Wingate low income ego"
+	Great_Britain_Wingate_SAI_wingate_main_game_ego_name = "Wingate main game ego"
+	Great_Britain_Wingate_SAI_wingate_end_game_ego_name = "Wingate end game ego"
+	Great_Britain_Wingate_SAI_wingate_sai_name = "Wingate AI"
+	Great_Britain_Wingate_SAI_wingate_sai_description = "Wingate AI"
+}

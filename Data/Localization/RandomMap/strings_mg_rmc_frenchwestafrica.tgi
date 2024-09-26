@@ -1,0 +1,16 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_frenchwestafrica.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_frenchwestafrica.tgi"
+
+	mg_rmc_frenchwestafrica_name = "French West Africa"
+	mg_rmc_frenchwestafrica_description = "French West Africa"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_frenchwestafrica_village_frenchwestafrica_name = "Villages"
+	mg_rmc_frenchwestafrica_bunkers_coastline_1_name = "Coastline Bunkers 1"
+	mg_rmc_frenchwestafrica_bunkers_coastline_2_name = "Coastline Bunkers 2"
+	mg_rmc_frenchwestafrica_bunkers_coastline_7_name = "Coastline Bunkers 7"
+}

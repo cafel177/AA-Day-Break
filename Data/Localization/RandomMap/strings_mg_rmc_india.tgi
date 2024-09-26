@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_india.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_india.tgi"
+
+	mg_rmc_india_name = "India"
+	mg_rmc_india_description = "India"
+	mg_rmc_india_bunkers_coastline_3_name = "Coastline Bunkers 3"
+	mg_rmc_india_bunkers_coastline_7_name = "Coastline Bunkers 7"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_india_village_india_name = "Villages"
+}

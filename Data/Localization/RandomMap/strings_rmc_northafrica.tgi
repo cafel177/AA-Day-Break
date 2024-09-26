@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_northafrica.tgi
+	name = "@Localization/RandomMap/strings_rmc_northafrica.tgi"
+
+	rmc_northafrica_name = "North Africa"
+	rmc_northafrica_description = "With the vast oil fields of the Middle East and strategically important ports and rivers, North Africa hosted numerous conflicts between the Axis and the Allies.  Italy, France, Germany, Britain, and the United States all took part in the territorial back-and-forth, none willing to give ground without forcing the enemy to pay for it with blood."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_northafrica_village_northafrica_name = "Villages"
+}

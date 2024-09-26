@@ -1,0 +1,149 @@
+;; A&A STRINGS
+
+[Text language = default]
+{
+	ids = string_table_aa
+	name = "Main A\&A String Table"
+
+	game_name = "Axis \& Allies"
+
+	;; Player Ranks
+	;; These need to be in here as oppose to the TGIs as when we download a new rank file from the 
+	;; web, the text will not be localized!
+	rank_name_1 = "Lieutenant"
+	rank_name_2 = "Captain"
+	rank_name_3 = "Major"
+	rank_name_4 = "Colonel"
+	rank_name_5 = "General"
+	
+	;; simulation 
+	default_kingdom_instance_name_independent|d = "Independent %d"
+	default_kingdom_instance_name_major|d= "Side %d"
+
+	;; Objectives
+	objective_city_ratio|ddd = "Control %d cities (%d/%d)"
+
+	;; World Rules
+	world_rules_city_victory_ratio_name = "City Control %"
+	world_rules_city_victory_ratio_description = "Enables city control victory.  Control this percent of the map's cities to win."
+
+	;; metagame messages
+	metagame_territory_captured_neutral|ss = "%s captured %s"
+	metagame_territory_defended_neutral|ss = "%s attack in %s failed"
+	metagame_territory_captured_enemy|ss = "%s captured %s"
+	metagame_territory_defended_enemy|ss = "%s attack in %s failed"
+	metagame_capital_captured_enemy|ss = "%s captures the capital of %s"
+	metagame_capital_defended_enemy|ss = "%s attack in %s failed"
+	metagame_purchased_technology|ss = "%s purchased %s"
+	metagame_purchased_army|ss = "%s purchased %s"
+	metagame_purchased_upgrade|ss = "%s upgraded army with %s"
+	metagame_army_move|ss = "%s moves into %s"
+	metagame_army_attack_unoccupied|ss = "%s moves into undefended %s"
+	metagame_army_attack_occupied|ss = "%s moves into %s in preparation for battle"
+	metagame_end_turn|s = "%s ends turn"
+	metagame_attacker_defender_message|ss = "%s vs %s"
+
+	;; metagame error messages
+	metagame_error_army_not_owned|ss = "%s does not belong to %s"
+	metagame_error_army_cannot_move|s = "%s cannot be moved"
+	metagame_error_army_cannot_move_to|ss = "%s cannot move to %s"
+	metagame_error_no_attacks_left = "No more attacks available this turn"
+	metagame_error_no_attacks_left_must_pullout|s = "No more attacks available this turn. You must pull out of %s." 
+	metagame_error_existing_pending_battle = "An army has already moved into a different enemy territory"
+	metagame_error_insufficient_resources = "Insufficient resources for purchase"
+	metagame_error_purchase_unowned_capital = "Capital required to purchase armies"
+	metagame_error_enemy_territory_required|s = "%s is not an enemy territory"
+	metagame_error_friendly_territory_required|s = "%s is not a friendly territory"
+
+	;; metagame confirmation message box labels
+	metagame_confirm_purchase|s = "Purchase %s?"
+
+	;; metagame UI
+	metagame_campaign_name = "World War II"
+	metagame_turn_status_label|s = "%s is playing their turn"
+	metagame_end_game_confirm = "Exit World War II?"
+	metagame_round_display_format = "%b %y"
+	metagame_battle_dialog_army_item_format = "x %d"
+
+	;; metagame tooltips
+	metagame_tooltip_purchase_army_division_name_description|ss = "%s - %s"
+	
+	metagame_tooltip_quickbattle_title = "Quick Resolve Battle"
+	metagame_tooltip_quickbattle_attacker = "Attacker"
+	metagame_tooltip_quickbattle_defender = "Defender"
+	metagame_tooltip_quickbattle_armies = "Armies"
+	metagame_tooltip_quickbattle_techs = "Technologies"
+	metagame_tooltip_quickbattle_win_chance = "Win Chance"
+	metagame_tooltip_quickbattle_armies_format|d = "%d"
+	metagame_tooltip_quickbattle_techs_format|d = "%d"
+	metagame_tooltip_quickbattle_win_chance_format|f = "%.1f%%"
+
+	metagame_tooltip_rtsbattle_title = "RTS Battle"
+	metagame_tooltip_rtsbattle_attacker = "Attacker"
+	metagame_tooltip_rtsbattle_defender = "Defender"
+	metagame_tooltip_rtsbattle_units = "Units"
+	metagame_tooltip_rtsbattle_money = "Money"
+	metagame_tooltip_rtsbattle_capabilities = "Capabilities"
+	metagame_tooltip_rtsbattle_techs = "Technologies"
+
+	;; metagame misc
+	metagame_object_display_neutral = "Neutral"
+	metagame_object_display_independent = "Independent"
+
+	;; Verify Map
+	verify_kingdom_missing_start_location|s = "Side '%s' is missing a start location"
+	start_mission_kingdom_invalid_faction_for_nation|sss = "Side '%s' has invalid general '%s' for nation '%s'"
+
+	;; Tooltips
+	ui_tooltip_item_title_factions = "Generals"
+	ui_tooltip_item_general = "General"
+	ui_tooltip_item_experience = "Experience"
+	ui_tooltip_politics_display_self = "Your Side."
+	ui_tooltip_politics_display_ally_generic = "Supply and visibility are shared with allied sides.  Cities, Depots, and Bunkers may be tributed to allied sides using team commands."
+	ui_tooltip_politics_display_neutral_generic = "Neutral sides will not attack you and cannot be attacked."
+	ui_tooltip_politics_display_enemy_generic = "Enemy sides will try to destroy your side."
+
+	;; Side Properties (Technologies)
+	ui_kingdom_property_gained|ss = "Side %s has gained technology: %s"
+	ui_kingdom_property_lost|ss = "Side %s has lost technology: %s"
+
+	ui_error_faction_ability_recharge_time|s = "Special Operation %s has not yet recharged"
+	ui_error_faction_ability_cost|s = "Insufficient experience to use Special Operation %s"
+	ui_error_faction_ability_already_summoned|ss = "Special Operation %s can not summon an additional %s"
+
+	;; SAI
+	staging_tooltip_faction		= "General: "
+	staging_map_preview_recommended_label_generic = "Sides"
+	staging_map_preview_source_metagame = "World War II"
+	staging_map_preview_source_metagame_battle|s = "World War II (%s)"
+	
+	;;;;;; random map errors/warnings
+	rmc_error_placement_failed_generic|s = "Map is too small for the number of players.  Please generate a larger map or reduce the number of players (%s has failed to place)."
+
+	;; Triggers
+	ma_kingdom = "Side"
+
+	;; Team Management
+	team_management_playable_kingdoms|dd	= "Total %d/%d Playable Sides"
+
+	;; Staging
+	staging_map_preview_num_kingdoms_format_string = "Sides"
+	staging_map_preview_kingdom_list = "Sides"
+	staging_map_preview_kingdom_and_player_list = "Sides and Players"
+
+	;; Error Messages
+	set_player_kingdom_failed	= "Set Player Side Failed"
+	set_kingdom_faction_failed	= "Set Side General Failed"
+	set_kingdom_nation_failed	= "Set Side Nation Failed"
+	set_kingdom_color_failed	= "Set Side Color Failed"
+	set_kingdom_team_failed		= "Set Side Team Failed"
+	error_loading_kingdom		= "Error loading a Side"
+	
+	;; localized lobby room names
+	ui_gamespy_lobby_room_name_Main			= "Main"
+	ui_gamespy_lobby_room_name_Tournament	= "Tournament"
+	
+	;; Custom modifier tooltips for A&A
+	modifier_desc_enchantment_immunity_long|s = "Immune to %s"
+	
+}

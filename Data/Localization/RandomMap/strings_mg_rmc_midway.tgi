@@ -1,0 +1,16 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_midway.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_midway.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_midway_name = "Midway"
+	mg_rmc_midway_description = "Midway"
+	mg_rmc_midway_bunkers_coastline_1_name = "Coastline Bunkers 1"
+	mg_rmc_midway_bunkers_coastline_2_name = "Coastline Bunkers 2"
+	mg_rmc_midway_bunkers_coastline_3_name = "Coastline Bunkers 3"
+	mg_rmc_midway_bunkers_coastline_4_name = "Coastline Bunkers 4"
+}

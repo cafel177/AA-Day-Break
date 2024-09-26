@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Great_Britain_Montgomery_SAI.tgi
+	name = "@Localization/SAI/strings_Great_Britain_Montgomery_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Great_Britain_Montgomery_SAI_montgomery_low_income_ego_name = "Montgomery low income ego"
+	Great_Britain_Montgomery_SAI_montgomery_main_game_ego_name = "Montgomery main game ego"
+	Great_Britain_Montgomery_SAI_montgomery_end_game_ego_name = "Montgomery end game ego"
+	Great_Britain_Montgomery_SAI_montgomery_sai_name = "Montgomery AI"
+	Great_Britain_Montgomery_SAI_montgomery_sai_description = "Montgomery AI"
+}

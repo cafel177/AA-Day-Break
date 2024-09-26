@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Great_Britain_Mountbatten_SAI.tgi
+	name = "@Localization/SAI/strings_Great_Britain_Mountbatten_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Great_Britain_Mountbatten_SAI_mountbatten_low_income_ego_name = "Mountbatten low income ego"
+	Great_Britain_Mountbatten_SAI_mountbatten_main_game_ego_name = "Mountbatten main game ego"
+	Great_Britain_Mountbatten_SAI_mountbatten_end_game_ego_name = "Mountbatten end game ego"
+	Great_Britain_Mountbatten_SAI_mountbatten_sai_name = "Mountbatten AI"
+	Great_Britain_Mountbatten_SAI_mountbatten_sai_description = "Mountbatten AI"
+}

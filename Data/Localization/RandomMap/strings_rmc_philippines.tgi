@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_philippines.tgi
+	name = "@Localization/RandomMap/strings_rmc_philippines.tgi"
+
+	rmc_philippines_name = "Philippines"
+	rmc_philippines_description = "Situated in a critical position in the Pacific theater, the Philippines could serve as an important forward base for either an Allied attack on Japan or a Japanese attack on Hawaii.  The string of islands, often no more than coral or volcanic outcroppings, proved to be the site of some of the deadliest battles in World War II."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_philippines_village_philippines_name = "Villages"
+}

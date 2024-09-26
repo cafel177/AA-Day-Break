@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_USA_Patton_SAI.tgi
+	name = "@Localization/SAI/strings_USA_Patton_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	USA_Patton_SAI_patton_low_income_ego_name = "Patton low income ego"
+	USA_Patton_SAI_patton_main_game_ego_name = "Patton main game ego"
+	USA_Patton_SAI_patton_end_game_ego_name = "Patton end game ego"
+	USA_Patton_SAI_patton_sai_name = "Patton AI"
+	USA_Patton_SAI_patton_sai_description = "Patton AI"
+}

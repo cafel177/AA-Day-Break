@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Japan_Mikawa_SAI.tgi
+	name = "@Localization/SAI/strings_Japan_Mikawa_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Japan_Mikawa_SAI_mikawa_low_income_ego_name = "Mikawa low income ego"
+	Japan_Mikawa_SAI_mikawa_main_game_ego_name = "Mikawa main game ego"
+	Japan_Mikawa_SAI_mikawa_end_game_ego_name = "Mikawa end game ego"
+	Japan_Mikawa_SAI_mikawa_sai_name = "Mikawa AI"
+	Japan_Mikawa_SAI_mikawa_sai_description = "Mikawa AI"
+}

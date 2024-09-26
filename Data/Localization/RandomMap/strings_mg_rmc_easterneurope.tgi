@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_easterneurope.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_easterneurope.tgi"
+
+	mg_rmc_easterneurope_name = "Eastern Europe"
+	mg_rmc_easterneurope_description = "Eastern Europe"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_easterneurope_village_easterneurope_name = "Villages"
+}

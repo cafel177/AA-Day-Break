@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Russia_Chuikov_SAI.tgi
+	name = "@Localization/SAI/strings_Russia_Chuikov_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Russia_Chuikov_SAI_chuikov_low_income_ego_name = "Chuikov low income ego"
+	Russia_Chuikov_SAI_chuikov_main_game_ego_name = "Chuikov main game ego"
+	Russia_Chuikov_SAI_chuikov_end_game_ego_name = "Chuikov end game ego"
+	Russia_Chuikov_SAI_chuikov_sai_name = "Chuikov AI"
+	Russia_Chuikov_SAI_chuikov_sai_description = "Chuikov AI"
+}

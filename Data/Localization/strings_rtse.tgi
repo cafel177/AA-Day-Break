@@ -1,0 +1,1407 @@
+;; RTSE STRINGS
+
+[Text language = default]
+{
+	ids = string_table_main
+	name = "Main String Table"
+
+	empty = ""
+	null = ""
+
+	;;;;;; game-specific: define this in each game
+
+	;; game_name
+
+	;;;;;; misc strings
+
+	grammatical_element_separator = ", " ;; used to separate elements of a list concatenated in code, avoid using this.
+	grammatical_newline = "\n" ;; used to create newlines.
+	multi_element_format_string|sd = "%s (%d)" ;; like "Infantry (5)", the number is how many.
+	multi_element_format_stringx|sd = "%s x%d" ;; like "Infantry x5", the number is how many.
+	multi_element_format_string|ss = "%s\n%s" 
+	multi_element_format_string|sss = "%s\n%s\n%s"
+	grammar_ellipsis = "..."
+	diplay_value|ss = "%s: %s"
+	additional_properties = "Additional Properties:\n"
+	requires = "Requires "
+	not_available = "(Not Available)"
+	load = "Load"
+	save = "Save"
+	save_as = "Save As"
+	options = "Options"
+	return_to_game = "Return To Game"
+	test = "Test"
+	exit_editor = "Exit Editor"
+	quit_application = "Quit Application"
+	screenshot_taken|s = "Screenshot taken: %s"
+	screenshot_failed = "Screenshot failed"
+	renderer_empty_screen = "Reloading textures"
+	ui_skipping_cutscene = "Please wait while advancing cutscene..."
+	
+	hotkey_title|s = "Hotkey: %s"
+	hotkey_load_favorite|s = "%s Load Favorite"
+	hotkey_place_favorite|s = "%s Place Favorite"
+	hotkey_save_to_slot|s = "%s Save to Favorite"
+	
+	camera_info|fffffff = "Yaw %.2f Pitch %.2f Height %.0f Zoom %.1f LookAt %.0f, %.0f Size %.0f, %.0f"
+
+	;;;;;; group floaters
+	groups_tooltip_title = "Groups"
+	groups_tooltip_description = "Right-Click on a group button to save.  Double-Click on a group button to center."
+	hotkey_select_group|s = "%s Select Group"
+	hotkey_save_group|s = "%s Save Group"
+
+	;;;;;; application level messages
+	
+	fatal_error_title = "Fatal Error"
+	warning_title = "Warning"
+	error_missing_string = "[Missing String]"
+
+	;;;;;; networking
+	default_lan_name = "Player"
+	networking_new_host|s = "%s has taken over as host."
+	networking_game_save_begin = "The host is saving the game."
+	networking_unable_to_bind|d = "Unable to bind to port %d"
+	networking_duplicate_name_formate|sd = "%s (%d)" ;; so we can have "John (1)" if John already exists
+	networking_change_game_speed|f = "Game speed changed to %.0f%%"
+	networking_player_quit|s = "Player %s quit the game"
+	networking_player_kicked|s = "Player %s was kicked from the game"
+	networking_player_invalid_cdkey|s = "Player %s had an invalid or duplicate CD key"
+	;;This old version doesn't make sense when voted to be kicked from inside the game.
+	;;networking_player_was_kicked|s = "Player %s kicked you from the game"
+	networking_player_was_kicked = "You were kicked from the game"
+	networking_player_voted_to_resign_team|ss = "%s voted for %s to resign"
+	networking_player_changed_name|ss = "%s changed name to %s"
+	networking_file_transfer_could_not_write = "Unable to open film file for write"
+	
+	;;;;;; Films
+	film_end_of_film2 = "End of Film"
+	film_end_of_film_oos = "Out of Sync with Film"
+	film_exit_to_scoring = "Exit to Scoring"
+	film_keep_watching = "Keep Watching"
+
+	;;;;;; CSD
+	csd_leave_game_confirm = "Exit the game?"
+	csd_title_connected_to|s = "Connected to %s"
+	csd_title_hosting = "Hosting"
+	csd_title_backup_host = "Backup Host"
+	csd_votes|dd = "%d/%d Votes"
+	csd_disconnecting_in_seconds|d = "Disconnecting in %d seconds"
+	
+	;;;;;;; networking vote to pause
+	networking_vote_to_pause_player_game_paused|s = "%s has paused the game"
+	networking_vote_to_pause_player_votes_to_unpause|sdd = "%s votes to unpause the game (%d/%d)"
+	networking_vote_to_pause_player_retracts_vote|sdd = "%s has retracted vote to unpause (%d/%d)"
+	networking_vote_to_pause_player_game_unpaused|s = "%s has unpaused the game"
+	networking_vote_to_pause_game_unpaused = "Game unpaused"
+	networking_vote_to_pause_needed_votes|dd = "Votes needed to unpause %d, current votes %d"
+	networking_vote_to_pause_pause_rejected|s = "%s attempted to pause but failed due to recent votes"
+	
+	;;;;;;; netwroking vote to kick
+	networking_vote_to_kick_player_voted_to_kick_player|ssdd = "%s has voted to kick %s (%d/%d)"
+	networking_vote_to_kick_player_has_retracted_vote_to_kick_player|ssdd = "%s has retracted vote to kick %s (%d/%d)"
+
+	;;;;;;; networking errors
+	networking_disconnect_game_full = "Game is full"
+	networking_disconnect_wrong_version = "Incorrect Version"
+	networking_disconnect_banned = "You are currently banned from this game"
+	networking_disconnect_allow_banned|s = "%s attempted to join and was banned. Click message to unban"
+	networking_disconnect_kicked = "You were kicked from the game"
+	networking_disconnect_quit = "Player Quit"
+	networking_disconnect_bad_depot_checksums = "Bad Depot Checksums - Versions Incompatible"
+	networking_disconnect_bad_data_checksums =  "Bad Data Checksums - Versions Incompatible"
+	networking_disconnect_wrong_mods = "The game is using a mod you do not have"
+	networking_disconnect_internet_lan_mismatch = "Cannot join internet games from LAN lobby"
+	networking_disconnect_game_in_progress = "Game is already in progress"
+	networking_disconnect_cdkey_auth_failed = "CD Key Authentication failed\nThe CD Key is invalid or already in use"
+	networking_disconnect_prompt_password = "Enter Game Password"
+	networking_disconnect_prompt_incorrect_password = "Incorrect Game Password.  Enter Game Password"
+	networking_disconnect_prompt_not_original_host = "Cannot join a game where the current host is different from the original host"
+
+	;;;;;;;;Banning message
+	chat_ok_dialog_popup_prompt|s = "Confirm unban of %s"
+	chat_ok_dialog_popup_already_unbaned|s = "%s has already been unbanned"
+	
+	;;;;;;;; Staging join message
+	networking_player_joined|s = "%s has joined the game"
+	
+	;;;;;; options screen
+	;; Strings that are used in the options panel next to various sliders as part of the advanced
+	;; Slider Widget.
+	options_fast = "Fast"
+	options_slow = "Slow"
+	options_in = "In"
+	options_out = "Out"
+	options_none = "None"
+	options_high = "High"
+	options_full = "Full"
+	
+
+	;;;;;; chat
+	public_chat|ss = "%s: %s"
+	team_chat|ss   = "%s: %s"
+	private_chat|ss = "%s: %s"
+	private_chat_warning_unrecognized_chat_target = "The person you were attempting to chat with was not found"
+	private_chat_warning_bad_kingdom|s = "%s is not a valid chat target"
+
+	;;;;;; app status (not that some of these strings are in avars.tgi)
+
+	app_status_init_interfaces = "Loading Menus"
+	app_status_init_widgets = "Loading UI"
+	app_status_init_networking = "Initializing Networking"
+
+	app_status_loading_data = "Loading Data"
+	app_status_loading_objects = "Loading Objects"
+
+	app_status_generating_map = "Generating Map"
+	app_status_verifying_map = "Verifying Map"
+
+	app_status_loading_resources = "Loading Resources"
+	app_status_waiting_on_other_players = "Waiting on Other Players"
+	app_status_finished = "Finished Loading"
+
+	;;;;;; RMG status
+
+	rmg_status_generating_map = "Generating Map"
+	rmg_status_terrain|s = "%s"
+	rmg_status_teams = "Teams"
+	rmg_status_start_locations = "Start Locations"
+	rmg_status_required_objects = "Required Objects"
+	rmg_status_beautify = "Beautify"
+	rmg_status_group|s = "%s"
+	rmg_status_doodads = "Objects"
+	rmg_status_verifying_map = "Verifying Map"
+
+	;;;;;; confirmation messages
+	
+	quit_confirm|s = "Quit %s?"
+	delete_confirm|s = "Delete %s?"
+	editor_confirm = "Exit to Editor?"
+	game_confirm = "Test Map?"
+	main_menu_confirm = "Exit to Main Menu?"
+	accept_changes_confirm|d = "Accept Changes? \nReverting in %d seconds. \n(For optimal results, restart the application after accepting.)"
+	score_screen_confirm = "Exit to Score Screen?"
+	campaign_end_confirm = "Exit to Debriefing?"
+	campaign_dependent_campaign_confirm|ss = "Playing the %s is recommended before playing %s. Do you wish to continue?"
+
+	;;;;;; message box
+
+	button_ok = "Ok"
+	button_cancel = "Cancel"
+
+	;;;;;; load/save messages
+
+	title_load_map = "Load Map"
+	title_save_map = "Save Map"
+	title_load_savegame = "Load Game"
+	title_save_savegame = "Save Game"
+	title_load_film = "Load Film"
+	last_film_filename = "LastFilm" ;;Do not include an extension on this! We do it in code.
+	game_saved|s = "Game Saved: '%s'"
+	map_saved|s = "Map Saved: '%s'"
+	save_error|ss = "Error saving '%s': %s"
+	load_error|ss = "Error loading '%s': %s"
+	map_load_not_verified = "Map has not been verified"
+
+	;;;; Verify Map
+	
+	prepare_ok = "Map preparation complete"
+	prepare_structure_attached_to_city|ss = "City %s: attaching %s"
+	prepare_structure_detached_from_city|ss = "City %s: detaching %s"
+	verify_ok = "Map verified"
+	verify_missing_static_map_analysis = "Static Map Analysis must first be run"	
+	verify_primary_island_not_found = "A primary island could not be found"
+	verify_actor_found_on_non_primary_island|sff = "Actor was found on an island: %s (%.0f,%.0f)"
+	verify_object_found_on_blocked_terrain|sff = "Object was found over blocked terrain: %s (%.0f,%.0f)"
+	verify_object_blocked_by_object|sff = "Object is blocked by another object: %s (%.0f,%.0f)"
+	verify_object_off_map|sff = "Object not completely on map: %s (%.0f,%.0f)"
+	verify_structure_outside_settlement|sff = "Settlement structure not in settlement: %s (%.0f,%.0f)"
+	verify_settlement_zone_problem|sff = "Object cannot place settlement zone: %s (%.0f,%.0f)"
+	verify_building_in_settlement|sff = "Independent building inside settlement: %s (%.0f,%.0f)"
+	verify_indestructible_in_settlement_zone|sff = "Indestructible object in settlement zone: %s (%.0f,%.0f)"
+
+	;;;;;; load errors
+	
+	load_error_missing_map|s = "File missing: '%s'"
+	load_error_corrupt_map|s = "File corrupt: '%s'"
+	load_error_bad_hotkey_data|s = "Cannot find hotkey data: IDS=%s"
+	load_error_incorrect_map|s = "Incorrect map type: '%s'"
+	load_error_random_map_failed = "Random map creation failed, please try again."
+
+	;;;;;; load warnings
+	
+	load_warning_unknown_thing_ids|s = "Unknown Thing IDS: '%s'"
+	load_warning_changed_gclass|s = "GClass changed: '%s'"
+	load_warning_replaced_changed_gclass|s = "GClass '%s' changed but was replaced"
+	load_warning_cant_replace_changed_gclass|s = "GClass '%s' changed and can't be replaced"
+	load_warning_unknown_terrain_variation|s = "Unrecognized terrain variation '%s'"
+	load_warning_missing_string_file|s = "Missing string file for map: %s"
+	load_warning_bad_string_file|s = "Bad string file for map: %s"
+	load_warning_thing_init_failed|sdff = "Thing failed to init: %s (ID=%d POS=%.0f,%.0f)"
+	load_warning_thing_init_failed_for_reason|sds = "Thing failed to init: %s (ID=%d) %s"
+	load_warning_missing_string_chunk|s	= "Missing string chunk for map: %s"
+	load_warning_thing_doesnt_fit|sff = "Object found over blocked terrain: %s (%.0f,%.0f)"
+	load_warning_cramped_doodad_removed = "Object removed because there was another object there"
+
+	;;;;;; random map errors/warnings
+	;; orphaned to separate K2 and A&A data, this string is no longer used
+	;; but must remain here since the K2 LDF expects it to be here.
+	rmc_error_placement_failed|s = "'%s' has failed to place. Please try with a larger map or fewer kingdoms."
+	
+	;;;;;; start mission
+	
+	start_mission_replacement_failed|sff = "Failed to create replacement object: %s (POS=%.0f,%.0f)"
+	start_mission_map_not_verified = "Map is not verified"
+
+	;;;;;; editor orders
+
+	required_object_error|s = "Could not create %s"
+
+	;;;;;; Editor Menu
+	ui_editor_menu_file_test = "Test"
+	ui_editor_menu_file_return_to_game = "Return To Game"
+	ui_editor_menu_file_load = "Load"
+	ui_editor_menu_file_save = "Save"
+	ui_editor_ask_new_folder_name = "Enter New Folder Name"
+
+	;;;;;; special undo/redo names
+	
+	base_change_name = "Change"
+	place_change_name = "Place"
+	destroy_change_name = "Delete"
+	orient_change_name = "Orient"
+	drag_change_name = "Drag"
+	cut_change_name = "Cut"
+	paste_change_name = "Paste"
+	actor_properties_change_name = "Actor Properties"
+	
+	undo = "Undo"
+	redo = "Redo"
+	cut = "Cut"
+	copy = "Copy"
+	paste = "Paste"
+	delete = "Delete"
+	select_all = "Select All"
+	select_all_same_type = "Select All Same Type"
+	actor_properties = "Actor Properties"
+	rotate_clockwise = "Rotate Clockwise"
+	rotate_counter_clockwise = "Rotate Counter-clockwise"
+	hq_attach = "Attach to HQ"
+	hq_detach = "Detach from HQ"
+		
+	undo_base_change = "Undo Change" ;; these are duplicated instead of concatenated
+	redo_base_change = "Redo Change" ;; to be localization-friendly.
+	undo_place = "Undo Place"
+	redo_place = "Redo Place"
+	undo_destroy = "Undo Destroy"
+	redo_destroy = "Redo Destroy"
+	undo_orient = "Undo Orient"
+	redo_orient = "Redo Orient"
+	undo_drag = "Undo Drag"
+	redo_drag = "Redo Drag"
+	undo_cut = "Undo Cut"
+	redo_cut = "Redo Cut"
+	undo_paste = "Undo Paste"
+	redo_paste = "Redo Paste"
+	actor_properties_undo = "Undo Actor Properties"
+	actor_properties_redo = "Redo Actor Properties"
+
+	;; Editor Options
+	show_on = "[On]" ;; appears like "Blocking [On]"
+	show_off = "[Off]"
+	show_blocking = "Show Blocking" ;; this means whether Blocking is being shown or not
+	show_trigger_areas = "Show Trigger Areas"
+	show_grid = "Show Grid"
+	show_regions = "Show Regions"
+	show_friendly_supply = "Show Friendly Supply"
+	show_settlement = "Show Settlement Zone"
+	editor_auto_verify_on_save = "Auto Verify On Save"
+	editor_sai_active_in_test = "SAI Active in Test"
+	editor_map_strings_separate = "Save Map Strings"
+	editor_camera_information = "Camera Information"
+	editor_camera_unlocked = "Unlock Camera"
+	
+	;;;; map properties
+	
+	map_name_default = "New Map"
+	map_description_default = "Map Description"
+
+	;;;; new map dialog
+	
+	no_weather = "None"
+	no_sun = "None"
+	
+	;;;; kingdom editor
+	
+	required_open = "Required Open" ;; meaning the kingdom slot is required to be open, meaning it's saved for a real human player
+	optional_open = "Optional Open" ;; the kingdom slot can be an AI or a human
+	ai_only = "AI Only" ;; the kingdom slot must be filled by an AI
+	random_faction = "Random" ;; this means no faction is selected in the dropdown
+	random_nation = "Random" ;; this means no nation is selected in the dropdown
+	random_color = "Random" ;; this menas no color is selected in the dropdown
+	no_team = "None" ;; indicates the kingdom is not assigned to a particular team	
+	no_sai = "Random"	
+	hero_name_available|s = "%s"
+	hero_name_unavailable|ss = "%s (%s)"	;; in an organization
+	editor_hero_attached|ss = "%s attached to %s"
+	delete_kingdom_confirm = "Associated actors will be deleted as well, ok?"
+
+	;;;; terrain layer
+
+	brush_shape_circle = "Circle"
+	brush_shape_square = "Square"
+
+	;;;; actor editor (aka actor properties)
+	
+	name_id|sd = "%s (ID: %d)"
+
+	;;;; team editor
+
+	default_team_name|d = "Team %d"
+
+	;;;; actor layer
+	last_organization = "Last Organization"
+
+	;;;; area layer
+
+	default_area_name|d = "Area %d"
+
+	;;;; camera layer
+
+	default_camera_name|d = "Camera %d"
+
+	;;;; doodad layer
+	random = "Random"
+
+	;;;; restriction groups
+	default_restriction_group_name|d = "Group %d"
+	no_restriction_group = "None"
+
+	;;;; enumerations
+	
+	true = "True"
+	false = "False"
+	not = "Not" ; used with world rules that are not allowed, eg. "Not Rated"
+		
+	;;;; gameplay messages
+	
+	;; BodyComponent
+	captured_victor|s = "%s has been captured"
+	captured_loser|s = "%s has surrendered to the enemy"
+	
+	;; RecruitComponent
+	transport_error_unloading|s = "Could not unload %s - funds returned"
+	recruit_error_creating|s = "Could not create %s"
+	recruit_error_affording|ss = "Insufficient funds for %s. Requires %s."	
+	recruit_error_unit_limit|s = "Insufficient unit limit to recruit %s"
+	recruit_error_item_unavailable|ss = "Could not recruit %s - unit %s not available"
+	recruit_error_missing_requirements|ss = "%s\nRequires: %s" ;; followed by a list of structures needed, like "Swordsman requires: Woodmill, Barracks"
+	recruit_missing_required_property|s = "%s (Tech)"
+	recruit_missing_required_property_tech_known|ss = "%s (%s)"
+	recruit_invalid_landing_location = "Invalid deploy location"
+	
+	;; Structure Component
+	structure_error_queue_no_supply|s = "%s paused production queue - no supply"
+	structure_error_queue_disabled|s = "%s paused production queue - disabled"
+	
+	;; HQ
+	hq_error_no_badge|s = "No available badge for %s"
+	hq_error_attach|s = "Cannot attach to %s. Wrong HQ type."
+	hq_error_attach_full|s = "Cannot attach to %s. HQ is full."
+	hq_error_attach_affording|ss = "Insufficient funds to attach %s. Requires %s."
+
+	;; ResearchComponent
+	research_error_generic|s = "Could not research %s"
+	research_error_affording|ss = "Insufficient funds for %s. Requires %s."
+	research_error_already_researched|s = "%s has already been researched"
+	research_error_missing_requirements|ss = "%s required: %s" ;; followed by a list of required properties and structures
+	research_complete|s = "%s research complete"
+
+	;; ElementComponent
+	element_error_detach|s = "Cannot detach %s"
+
+	;; OrganizationComponent
+	organization_error_attach_dead|s = "%s is not alive"
+	organization_error_hero_size|s = "%s needs at least two units"
+	organization_error_hero_state|s = "%s cannot currently attach or detach heroes"
+	organization_error_hero_supply|s = "%s out of supply"
+	organization_editor_display_tooltip|sss = "%s\n%s\n%s"
+	organization_routed|s = "%s has routed from battle"
+
+	;; ExperienceComponent	
+	experience_level_gained|s = "%s has gained a level"
+
+	;; SettlementComponent	
+	settlement_error_within_zone|ss = "Structure %s must be completely within the settlement zone (%s)"
+	settlement_error_another_kingdom|ss = "Cannot create structure %s in another kingdom's settlement zone (%s)"
+	settlement_error_full|ss = "Cannot create structure %s in a full settlement (%s)"
+	settlement_error_center|ss = "Cannot create center %s in another settlement's zone (%s)"
+	settlement_under_siege|s = "%s is under siege"
+	settlement_auto_placement_failed|s = "Failed to autoplace %s"
+
+	;; TAI
+	tai_error_unpack|s = "Cannot unpack %s"
+	tai_error_pack|s = "Cannot pack %s"
+
+	mobile_deployment_error_pack|s = "Cannot pack %s"
+	mobile_deployment_error_pack_health|s = "Could not pack %s: below minimum pack health"
+	mobile_deployment_error_pack_denizen|s = "Could not pack %s: denizens are deployed"
+
+	;; DenizenComponent
+	denizen_error_affording|ss = "Insufficient funds for %s. Requires %s."
+	denizen_air_attack = "Air Attack"
+	denizen_air_recon = "Air Recon"
+
+	;; Actor Commands
+	;; TODO: one per important command
+	important_command_confirm = "Are you sure?"
+
+	;; TAI Errors
+	construct_error_enemies_nearby = "There are enemies nearby"
+	construct_error_creating|s = "Could not create %s"
+	construct_error_affording|ss = "Insufficient funds for %s. Requires %s."
+	construct_error_affording_upgrade|ss = "Insufficient funds for %s. Requires %s."	
+	kill_error_invalid_target|s = "Invalid target: %s"
+	bombard_error_location = "Invalid bombard target"
+	
+	;; Modifier descriptions
+	modifier_desc_resist_damage_positive|fs = "%+g%% resistance to %s damage"
+	modifier_desc_resist_damage_positive|cf = "%lc%+g%% resistance"
+	modifier_desc_resist_damage_negative|fs = "%+g%% vulnerability to %s damage"
+	modifier_desc_resist_damage_negative|cf = "%lc%+g%% vulnerability"
+	modifier_desc_periodic_damage|fs = "%g %s damage every second"
+	modifier_desc_periodic_damage_glyph|cf = "%lc%g damage every second"
+	modifier_desc_periodic_heal|f = "%g healed every second"
+	modifier_desc_enchantment_immunity_all = "all"
+	modifier_desc_enchantment_immunity|s = "Immune to %s"
+	modifier_desc_enchantment_reverse_ability|s = "%s reverse effect"
+	
+	;; Broken out
+	;;modifier_desc_enchantment_immunity_long|s = "Immune to %s enchantments"
+
+	modifier_desc_flag_paralyze = "Paralyze"
+	modifier_desc_flag_trailblazing = "Trailblazing"
+	modifier_desc_flag_entangle = "Entangle"
+	modifier_desc_flag_berserk = "Berserk"
+	modifier_desc_flag_summoned = "Summoned"
+	modifier_desc_flag_supplied = "Supplied"
+	modifier_desc_flag_invisible_to_enemy = "Invisible to Enemy"
+	modifier_desc_flag_reveal_enemy_rzod = "Reveal enemy RZOD"
+	modifier_desc_flag_minimap_no_fog = "No Fog on Minimap"
+	modifier_desc_flag_no_upkeep = "No Upkeep"
+	modifier_desc_flag_not_capturable = "Not Capturable"
+	modifier_desc_flag_not_disposable = "Cannot be razed, disbanded, or sold."
+
+	modifier_desc_add_av|f = "%+g to Attack Value"
+	modifier_desc_add_av_melee|f = "%+g to Melee Attack Value"
+	modifier_desc_add_av_ranged|f = "%+g to Ranged Attack Value"
+	modifier_desc_add_dv|f = "%+g to Defense Value"
+	modifier_desc_add_ability_heal|f = "%+g to Heal Ability"
+	modifier_desc_add_ability_repair|f = "%+g to Repair Ability"
+	modifier_desc_add_supply_range|f = "%+g to Supply Range"
+	modifier_desc_add_detection_range|f = "%+g to Detection Range"
+	modifier_desc_add_morale|f = "%+g to Current Morale"
+	modifier_desc_add_morale_breakpoint|f = "%+g to Morale Breakpoint"
+	modifier_desc_add_projectile_ability_range|f = "%+g to Projectile Ability Range"
+	modifier_desc_add_bombard_ability_range|f = "%+g to Bombard Ability Range"
+	modifier_desc_add_auto_upgrade|dd = "Auto Upgrade in %d:%.2d"
+	modifier_desc_add_auto_upgrade_immediate = "Auto Upgrade"
+	modifier_desc_add_terrain_speed_cap|s = "Speed limit is %s"
+
+	modifier_desc_multiply_speed_max|f = "%+g%% to Maximum Speed"
+	modifier_desc_multiply_resupply_rate|f = "%+g%% to Resupply Rate"
+	modifier_desc_multiply_entrenchment_rate|f = "%+g%% to Entrenchment Rate"
+	modifier_desc_multiply_morale_recovery_rate|f = "%+g%% to Morale Recover Rate"
+	modifier_desc_multiply_morale_loss_rate|f = "%+g%% slower Morale Loss"
+	modifier_desc_multiply_structure_cost|f = "%+g%% to Structure Cost"
+	modifier_desc_multiply_health|f = "%+g%% to Health"
+	modifier_desc_multiply_control_range|f = "%+g%% to Control Range"
+	modifier_desc_multiply_attack_efficiency|f = "%+g%% to Attack Efficiency"
+	modifier_desc_multiply_attack_efficiency_current|ff = "%+g%% to Attack Efficiency (Current %g%%)"
+	modifier_desc_multiply_attack_efficiency_actual = "100%% Attack Efficiency"
+	modifier_desc_multiply_attack_efficiency_actual_current|f  = "100%% Attack Efficiency (Current %g%%)"
+	modifier_desc_multiply_recruit_cost|f = "%+g%% to Recruit Cost"
+	modifier_desc_multiply_recharge_time|f = "%+g%% to Attack Speed"
+
+	;; Ability effects
+	ability_effect_summon_failed|s = "Failed to summon %s"
+	ability_effect_invalid_location|s = "Invalid location for %s"
+	ability_effect_describe_economy|ss = "%s Economy: %s"
+
+	;; Ability effect descriptions
+	ability_effect_desc_summon|s = "Summons %s"
+	ability_effect_desc_morale_loss|f = "%g Morale Lost"
+	ability_effect_desc_morale_gain|f = "%g Morale Gained"
+	ability_effect_desc_heal|f = "%g Healed"
+	ability_effect_desc_repair|f = "%g Repaired"
+	ability_effect_desc_main_damage|fs = "%g %s Damage"
+	ability_effect_desc_add_damage|fs = "%g %s Extra Damage"
+	ability_effect_desc_add_plus_modifier_damage|ss = "%s %s Damage"
+	ability_effect_desc_main_damage_glyph|cf = "%lc%g"
+	ability_effect_desc_add_damage_glyph|cf = "%lc+%g"
+	ability_effect_desc_add_plus_modifier_damage_glyph|cs = "%lc%s"
+	ability_effect_desc_main_damage_glyph_long|cf = "%lc%g Damage"
+	ability_effect_desc_add_damage_glyph_long|cf = "%lc+%g Extra Damage"
+	ability_effect_desc_add_plus_modifier_damage_glyph_long|cs = "%lc%s Damage"
+	ability_effect_desc_enchantment|sf = "%s for %g Seconds"
+	ability_effect_desc_capture = "Capture Target"
+	ability_effect_desc_steal_resources|s = "Steal Resources: %s"
+	ability_effect_desc_describe_economy = "Describe Economy"
+
+	ability_effect_desc_vs_targets|s = "vs %s"
+	ability_effect_desc_target_prefix_required = ""
+	ability_effect_desc_target_prefix_excluded = "Not"
+	;; XXXX ability_description|ss = "%s\n%s"
+
+	;; Attack efficiency
+	attack_efficiency_description|ff = "%g%% Attack Efficiency (Current %g%%)"
+
+	;; Actor name numbering
+	;; NOTE: for languages other than english, all four strings below should be changed to a
+	;; generic "#%d %s"
+	actor_name_numbered|ds = "%dth %s"
+	actor_name_numbered_st|ds = "%dst %s"
+	actor_name_numbered_nd|ds = "%dnd %s"
+	actor_name_numbered_rd|ds = "%drd %s"
+
+	;; Objectives
+	objective_defeat_all_enemies = "Defeat all enemies"
+
+	;; User Interface
+		;; MISC
+	ui_checking_for_updates = "Checking for Updates..."
+	ui_updater_no_update_is_available = "No new update is available."
+	ui_updater_update_is_available|s = "An update is available to %s, install now?"
+	ui_update_could_not_find_update_url = "Update failed, could not successfully download update file."
+	ui_update_error_retrieving_update_server_list|s = "Error retrieving update server list.\n\nReason: %s"
+	ui_update_error_reading_url_redirection_file = "Error reading URL redirection file."
+	ui_update_success_on_redirection_file|s = "Successfully processed redirection file %s."
+	ui_update_redirected_to_attempting_download|s = "Redirected to %s, attempting download..."
+	ui_update_running_patch|s = "Successfully downloaded to %s, exiting app to apply update..."
+	ui_update_download failed|s = "Download failed. Reason: %s"
+
+	ui_unit_limit_tooltip_display = "Unit Limit"
+	
+	ui_message_tribute_actor_to_kingdom|ss = "Tribute %s to %s"
+	
+	ui_error_tribute_not_tributable|s = "%s is not tributable"
+	ui_error_tribute_not_tributable_currently|s = "%s is not currently tributable"
+	ui_error_tribute_not_tributable_resource_production|s = "Insufficient unit limit to tribute %s"
+	ui_error_team_command_target_invalid|s = "%s is not a valid target"
+	ui_error_command_target|s = "Invalid target for %s"
+	ui_error_command_target_actor|ss = "%s is an invalid target for %s"
+	ui_error_invalid_dettach_single_recruit_item_target = "Must select a hero to attach"
+	ui_error_missing_single_recruit_item = "Must select a hero to attach"
+	ui_error_build_structure_cannot_currently|s = "%s cannot build structure at this time"
+
+		;; Tooltips
+
+	ui_tooltip_action_button_exhausted_append = "Not available while exhausted."
+
+	ui_tooltip_upgrade|s = "Upgrade to %s"
+	
+	ui_tooltip_item_ping|f = "%.0fms"
+	ui_tooltip_item_packet_loss|f = "%.0f%%"
+	ui_tooltip_item_game_speed|f = "%.0f%%"
+	ui_tooltip_item_host|s = "%s"
+	
+	ui_tooltip_item_title_area = "Area"
+	ui_tooltip_item_title_attack_efficiency = "Efficiency"
+	ui_tooltip_item_title_behavior = "Behavior"
+	ui_tooltip_item_title_cost = "Cost"
+	ui_tooltip_item_title_defense = "Defense"
+	ui_tooltip_item_title_difficulty = "Difficulty"
+	ui_tooltip_item_title_experience = "Experience"
+	ui_tooltip_item_title_gains = "Gains"
+	ui_tooltip_item_title_game_speed = "Game Speed"
+	ui_tooltip_item_title_health = "Health"
+	ui_tooltip_item_title_host = "Host"
+	ui_tooltip_item_title_morale = "Morale"
+	ui_tooltip_item_title_nations = "Nations"
+	ui_tooltip_item_title_packet_loss = "Packet Loss"
+	ui_tooltip_item_title_ping = "Ping"
+	ui_tooltip_item_title_ping|d = "Ping: %d"
+	ui_tooltip_item_title_production = "Production"
+	ui_tooltip_item_title_production_potential = "Maximum"
+	ui_tooltip_item_title_production_percentage = "Production"
+	ui_tooltip_item_title_properties = "Properties"
+	ui_tooltip_item_title_properties_provided = "Provides"
+	ui_tooltip_item_title_properties_technology = "Technology"
+	ui_tooltip_item_title_queue_paused = "Paused"
+	ui_tooltip_item_title_recharge_rate = "Rate"
+	ui_tooltip_item_title_recruit_item_status = "Status"
+	ui_tooltip_item_title_recruits = "Recruits"
+	ui_tooltip_item_title_required_properties = "Affects"
+	ui_tooltip_item_title_requires = "Requires"
+	ui_tooltip_item_title_researches = "Researches"
+	ui_tooltip_item_title_role = "Role"
+	ui_tooltip_item_title_roles = "Roles"
+	ui_tooltip_item_title_slot_unit|d = "Slot #%d Unit"
+	ui_tooltip_item_title_speed = "Speed"
+	ui_tooltip_item_title_supply_stockpile = "Supply Stockpile"
+	ui_tooltip_item_title_transport_cargo = "Transporting"
+	ui_tooltip_item_title_upgrades = "Upgrades"
+	ui_tooltip_item_title_upkeep = "Upkeep"
+	ui_tooltip_item_title_upkeep_potential = "Maximum"
+
+	ui_tooltip_attack_efficiency|d = "%d%%"
+	ui_tooltip_bombard = "Bombard"
+	ui_tooltip_vorpal = "Vorpal"
+	ui_tooltip_behavior_aggressive = "Aggressive"
+	ui_tooltip_behavior_passive = "Passive"
+	ui_tooltip_cannot_recruit_while_under_siege = "Cannot recruit while under siege."
+	ui_tooltip_defense_value = "Defense Value"
+	ui_tooltip_elements_number|d = "x%d"
+	ui_tooltip_organization_title|s = "%s Company"
+	ui_tooltip_other_requirements|s = " (with %s)"
+	ui_tooltip_queue_paused_unit_limit = "Unit Limit"
+	ui_tooltip_queue_paused_disabled = "Disabled"
+	ui_tooltip_queue_paused_oos = "Out Of Supply"
+	
+	;; orphaned to separate K2 and A&A data, these strings are no longer used
+	;; but must remain here since the K2 LDF expects them to be here.
+
+	ui_tooltip_politics_team = "Team"
+	ui_tooltip_politics_team_none = "None"
+	ui_tooltip_politics_relation = "Relation"
+
+	ui_tooltip_politics_relation_self = "Self"
+	ui_tooltip_politics_relation_ally = "Ally"
+	ui_tooltip_politics_relation_neutral = "Neutral"
+	ui_tooltip_politics_relation_enemy = "Enemy"
+
+	
+
+	ui_tooltip_politics_display_ally = "Supply and visibility are shared with allied kingdoms. Objects and resources may be tributed to allied kingdoms using team commands."
+	ui_tooltip_politics_display_neutral = "Neutral kingdoms will not attack you and cannot be attacked."
+	ui_tooltip_politics_display_enemy = "Enemy kingdoms will try to destroy your kingdom."
+	
+	ui_tooltip_production_percentage|d = "%d%%"
+	ui_tooltip_production_queue_item_cancel = "Click icon to cancel production."
+	ui_tooltip_production_queue_item_empty = "This production slot is empty."
+	ui_tooltip_production_queue_item_empty_title = "Empty Production Queue Slot"
+	ui_tooltip_recruit_item_attached_to|s = "%s"
+	ui_tooltip_recruit_item_detached = "Detached"
+
+	ui_tooltip_rotate_camera_title = "Allows the in-game camera to rotate freely.\n"
+	ui_tooltip_rotate_camera_enable = "While pressed, enables free camera rotation"
+	ui_tooltip_rotate_camera_left = "Rotates the camera to the left"
+	ui_tooltip_rotate_camera_right = "Rotates the camera to the right"
+	ui_tooltip_rotate_camera_reset = "Resets the camera to default"
+	
+	ui_tooltip_message_location		= "Move camera to message location"
+	ui_tooltip_message_buddy_dialog = "Open buddy list"
+	ui_tooltip_message_buddy_auth	= "Respond to buddy request"
+	ui_tooltip_message_quest		= "Open objectives panel"
+	ui_tooltip_message_chat			= "Open player options"
+	
+		;; File Dialog
+	ui_file_dialog_file_folders_not_allowed = "Folders are not allowed, please enter a valid filename"
+	ui_file_dialog_file_overwrite|s = "Overwrite file '%s'?"
+	ui_file_dialog_file_not_found|s = "File '%s' not found"
+	ui_file_dialog_file_delete_failed|s = "Failed to delete file '%s'"
+	ui_file_dialog_folder_create_failed|s = "Failed to create folder '%s'"
+	ui_file_dialog_invalid_filename|ss = "The filename, %s, contains the invalid character %s"
+	ui_file_dialog_load_map_confirmation = "Any unsaved changes to the current map will be lost.  Continue anyway?"
+		;; Object Display
+	ui_object_display_recruit_queue_slot_empty = "Empty queue slot"
+	ui_research_display_recruit_queue_slot_in_use|ss = "%s\n%s\nClick to Cancel"
+	ui_object_display_recruit_queue_slot_in_use|sss = "%s\n%s\n%s\nClick to Cancel"
+	click_to_cancel = "Click to Cancel"
+		
+		;; Floaters
+	ui_floater_ability_recharge_time|dd = "Recharging (%d:%.2d left)"
+	
+		;; Objectives Messages
+	ui_objective_message_gained_primary|s = "New Primary Objective gained: %s"
+	ui_objective_message_gained_secondary|s = "New Secondary Objective gained: %s"
+	ui_objective_message_lost_primary|s = "Primary Objective lost: %s"
+	ui_objective_message_lost_secondary|s = "Secondary Objective taken away: %s"
+	ui_objective_message_completed_primary|s = "Primary Objective completed: %s"
+	ui_objective_message_completed_secondary|s = "Secondary Objective completed: %s"
+	ui_objective_message_failed_primary|s = "Primary Objective failed: %s"
+	ui_objective_message_failed_secondary|s = "Secondary Objective failed: %s"
+		;; Kingdom Properties (Technologies)
+	technology_gained|s = "%s technology gained"
+	technology_lost|s = "%s technology lost"
+		;; Groups
+	static_group_name|s = "Group %s"
+	static_group_wildcard_name = "Group"
+		;; Resource transfer
+	resource_transfer_dialog_name = "Resource Amount"
+
+	;; Mission Status Dialog
+	ui_mission_message_over = "Mission Over"
+	ui_mission_message_won = "Mission Won"
+	ui_mission_message_lost = "Mission Lost"
+	ui_mission_message_over_client = "Mission Over. Waiting for the host to end the game."
+	ui_mission_message_won_client = "Mission Won. Waiting for the host to end the game."
+	ui_mission_message_lost_client = "Mission Lost. Waiting for the host to end the game."
+	ui_mission_message_host_elected_keep_playing = "To exit select 'End Mission' from the menu."
+	ui_mission_message_host_elected_keep_playing_client|s = "%s has elected to keep the game going."
+	ui_mission_message_client_mission_status_changed = "Waiting for host to end the game."
+	ui_mission_label_ok = "Ok"
+	ui_mission_label_observe = "Observe"
+	ui_mission_label_end_game = "End Mission"
+	ui_mission_label_keep_playing = "Keep Playing"
+	ui_mission_message_host_has_ended_game = "The host has ended the game."
+	ui_mission_no_human_opponents_remaining_gamespy = "No human opponents remain.  Submitting victory to the stats server for all remaining human players.  The host may now end the mission."
+	ui_mission_no_human_opponents_remaining = "No human opponents remain."
+
+	;; Game Menu
+	ui_game_menu_leave_game_non_host_observing = "Leave Game"
+	ui_game_menu_leave_game_non_host_non_film_not_over = "Resign"
+	ui_game_menu_leave_game_host_film = "End Film"
+	ui_game_menu_leave_game_host_test = "Exit to Editor"
+	ui_game_menu_leave_game_host_game_over = "End Mission"
+	ui_game_menu_leave_game_host_game_not_over_only_ai_left = "Abort Mission"
+	ui_game_menu_leave_game_host_game_not_over_only_human_vs_ai_left = "Abort Mission"
+	ui_game_menu_leave_game_host_game_not_over_observer = "Leave Game"
+	ui_game_menu_leave_game_host_game_not_over = "Resign"
+	ui_game_menu_quit|s = "Quit %s"
+	ui_game_menu_resign_vote_to_resign = "Vote To Resign"
+	ui_game_menu_resign_resign = "Resign"
+	
+
+	;; Lobby
+	ui_lobby_default_game_name|s			= "%s's Game"
+	ui_lobby_select_server					= "Please choose a game to connect to"
+	ui_lobby_cant_connect					= "Can't connect to Lobby"
+	ui_lobby_disconnect						= "Disconnected from Lobby"
+	ui_lobby_nick_error|s					= "Nickname collision: %s"
+	ui_lobby_cant_join_room					= "Failed to join room"
+	ui_lobby_player_joined_format|s			= "%s joined"
+	ui_lobby_player_left_format|s			= "%s left"
+	ui_lobby_player_kicked_format|s			= "%s was kicked"
+	ui_lobby_buddy_msg_unsent_format|s		= "Message unsent.  Please select buddies to message: <color=1,1,1>%s"
+	ui_lobby_whisper_msg_unsent_format|s	= "Message unsent.  Please select players to whisper to: <color=1,1,1>%s"
+	ui_lobby_room_added_format|sd			= "Room: %s (Players %d)"
+	ui_lobby_room_entered_format|s			= "Entered %s"
+	ui_lobby_whispering_to|ss				= "Whispering to %s: <color=1,1,1>%s"
+	ui_lobby_entered_chat					= "Entered Chat.  Retrieving room list."
+	ui_lobby_invalid_player					= "Player has left"
+	ui_lobby_num_players_in_room_format|d 	= "There are %d players online"
+	ui_lobby_joining_game_format|s			= "Joining '%s', please wait ..."
+	ui_lobby_joining_game_host_contacted	= "Host contacted, serializing data..."
+	ui_lobby_connect_failed					= "Connection to game failed"
+	ui_lobby_nat_failed						= "NAT negotiation failed"
+	ui_lobby_buddy_message|ss				= "Buddy Message to %s: <color=1,1,1>%s"
+	ui_lobby_prompt_lan_nickname			= "Enter a nickname"
+	ui_lobby_join_direct_failed|s			= "Could not resolve %s to an IP address"
+	ui_lobby_join_direct_resolve|s			= "Resolving address for %s"
+	ui_lobby_join_timeout|d					= "Timeout in %d seconds"
+	ui_lobby_confirm_exit					= "Exit Lobby?"
+	
+	;; Server info
+	ui_server_info_password_required	= "Required"
+	ui_server_info_status_open			= "Open"
+	ui_server_info_status_closed		= "Closed"
+	ui_server_info_status_incompatible	= "Incompatible"
+	
+	;; Buddy Management
+	ui_buddy_add_request_format|s		= "%s has requested to add you as a buddy. Click here to accept/deny."
+	ui_buddy_im_msg_format|ss			= "%s: <color=1,1,1>%s"
+	ui_buddy_tooltip_waiting_for_auth	= "Waiting for authorization - Click to accept buddy request."
+	ui_buddy_auth_cancel				= "Cancel"
+	ui_buddy_auth_close					= "Close"
+	ui_buddy_auth_reciprocate|s			= "Add %s to your buddy list?"
+	ui_buddy_invite|s					= "%s has invited you to their game. Click here to open buddy list."
+	ui_buddy_request_add_buddy_dialog|s = "%s has requested to add you to their buddy list."
+	
+	;; Game
+	ui_game_chat_filter_all 	= "All"
+	ui_game_chat_filter_observers	= "Observers"
+	ui_game_chat_filter_allies	= "Allies"
+	ui_game_confirm_reset_favorites = "Reset Favorites?"
+	ui_game_confirm_reset_options	= "Reset Options?"
+
+	;; Trigger editing
+	actorstrings_any = "Any"
+	actorstrings_byid = "By ID"
+	actorstrings_condition = "Condition"
+	actorstrings_event = "Event"
+
+	actordatastrings_any = "Any"
+	
+	kingdomstrings_all = "All"
+	kingdomstrings_any = "Any"
+	kingdomstrings_byid = "By ID"
+	kingdomstrings_condition = "Condition"
+	kingdomstrings_event = "Event"
+	
+	herostrings_random = "Random"
+	herostrings_byname = "By Name"
+
+	less_than = "Less Than"
+	less_than_or_equal_to = "Less Than or Equal To"
+	equal_to = "Equal To"
+	greater_than_or_equal_to = "Greater Than or Equal To"
+	greater_than = "Greater Than"
+	not_equal_to = "Not Equal To"
+	
+	ma_invalid = "Invalid"
+	ma_value = "Value"
+	ma_range = "Range"
+	ma_compare = "Compare"
+	ma_object = "Object"
+	ma_actor = "Actor"
+	ma_property = "Property"
+	ma_hero = "Hero"
+	ma_organization = "Organization"
+	ma_type = "Type"
+	ma_area = "Area"
+	ma_camera = "Camera"
+	ma_boolean = "Boolean"
+	ma_objective = "Objective"
+	ma_ability = "Ability"
+	ma_animation = "Animation"
+	ma_status = "Status"
+	ma_location = "Location"
+	ma_state = "State"
+	ma_technology = "Technology"
+	ma_command = "Command"
+	ma_command_location = "Command"
+	ma_command_actor_data_location = "Command"
+	ma_command_actor = "Command"
+	ma_trigger = "Trigger"
+	ma_vfx = "VFX"
+	ma_sound = "Sound"
+	ma_speech = "Speech"
+	ma_music = "Music"
+	ma_actor_data = "Actor Data"
+	ma_organization_data = "Organization Data"
+	ma_unit_data = "Unit Data"
+	ma_building_data = "Building Data"
+	ma_transported_actor_data = "Transported Actor Data"
+	ma_sai_data = "SAI Data"
+	ma_flare_data_location = "Location Flare Data"
+	ma_flare_data_actor = "Actor Flare Data"
+	ma_string = "String"
+	ma_localized_string	= "Localized String"
+	ma_difficulty_level	= "Difficulty Level"
+	ma_weather = "Weather"
+	ma_sun = "Sun"
+	ma_script_command = "Script Command"
+	ma_cutscene = "Cutscene"
+	ma_formation = "Formation"
+	ma_resource = "Resource"
+	
+	event = "Event"
+	condition = "Condition"
+	effect = "Effect"
+	trigger_element_add = "Add"
+	trigger|d = "Trigger %d"
+	objective_description_default|d = "Objective %d"
+
+	;; misc trigger strings	
+	trigger_get_from_map = "From Map"
+	trigger_error_fail_evaluate|s = "Trigger %s could not process effects"
+	
+
+	;; TriggerElementParameter::GetAsString()
+	
+	location_format|fff = "%.2f, %.2f, %.2f"
+	id|d = "ID: %d"
+	ids|s = "IDS: %s"
+	name_ids|ss = "%s (IDS: %s)"
+	unknown_thing_id = "[nothing]"
+	unknown_objective = "[objective]"
+	unknown_ability = "[ability]"
+	unknown_animation = "[animation]"
+	unknown_state = "[state]"
+	unknown_command = "[command]"
+	unknown_data = "[data]"
+	unknown_sai_data = "[SAI data]"
+	unknown_technology = "[technology]"
+	unknown_hero_ids|s = "[unknown IDS %s]"
+	unknown_kingdom_ids|s = "[unknown IDS %s]"
+	unknown_difficulty_level = "[difficulty level]"
+	unknown_actor_ids|s = "IDS: %s"		;; we don't use warning brackets since this case is expected
+	unknown_formation = "[formation]"
+	unknown_script_command = "[script command]"
+
+	;; Error Messages (from Session)
+	set_player_status_failed	= "Set Player Status Failed"
+	set_player_ready_failed		= "Set Player Ready Failed"
+	session_order_failed		= "Session Order Failed"
+	session_order_rejected		= "Session Order Rejected"
+	session_order_rejected_currently_counting_down = "Cannot issue command while launch is counting down"
+	set_max_players_failed		= "Set Max Players Failed"
+	set_allow_observers_failed	= "Set Allow Observers Failed"
+	set_game_name_failed		= "Set Game Name Failed"
+	set_game_password_failed	= "Set Game Password Failed"
+	failed_to_create_film|s		= "Failed to create a film. Reason: %s"
+	map_will_not_transfer_client|s	= "You do not have %s. File cannot be transferred."
+	map_will_not_transfer_client_differs|s	= "Your version of %s is different from the host's version. File cannot be transferred."
+	map_will_not_transfer_host|ss = "%s does not have %s. File cannot be transferred."
+	map_will_not_transfer_host_film|ss = "%s does not have the source file for %s. File cannot be transferred."
+	host_requested_players_ready = "Requesting that all players become ready."
+	host_requested_players_ready_client_is_ready = "Host has requested that all players become ready."
+	host_requested_players_ready_client_does_not_have_map = "Host has requested that all players become ready. You must wait until the file transfer is complete."
+	host_requested_players_ready_client_cannot_download_map = "Host has requested that all players become ready. You do not have the file and cannot select ready."
+	unable_to_select_film_source_file_not_found|s = "Source map for film '%s' missing."
+	map_will_not_transfer_client_film_source|s = "Source map for film '%s' missing. File cannot be transferred."
+	
+	;; Team Management
+	team_management_no_Team_label		= "Independent"
+	team_management_ffa_label|d		= "%d Free For All"
+	team_management_ffa_team_label|d	= "%d Free For All"
+	
+	;; Launch Countdown strings
+	launch_countdown_begin = "Beginning Launch Countdown"
+	launch_countdown_number|d = "%d"  ;; just in case we want to add "4 Seconds" etc...
+	launch_countdown_abort = "Launch Countdown Aborted"
+	
+	
+	;; Staging
+	staging_players_label|dd		= "%d/%d Players"
+	staging_name_change_prompt		= "Change Name"
+	team_format_custom			= "Custom"
+	file_loading_status			= "Scanning Files"
+	staging_percent_downloaded|d = "%d%%" ;; %% means % ie. 40%
+	ready_label				= "READY"
+	not_ready_label				= "NOT READY"
+	staging_file_ok_button		= "Ok"
+	staging_file_load_button	= "Load"
+	staging_file_save_button	= "Save"
+	staging_and_session_random_sai_name = "Random"
+	
+	;; Generic Low and High, used currently for the terrain sliders in Random Map dialog
+	generic_low = "Low"
+	generic_high = "High"
+	generic_symbol_minus = "-"
+	generic_symbol_plus = "+"
+	
+	;; Campaign Interface
+	campaign_launch_failed		= "The mission you have selected may be missing or damaged."
+	campaign_completed		= "Completed"
+	campaign_mission_over_text	= "Mission Over"
+	campaign_mission_won_text	= "Mission Won"
+	campaign_mission_lost_text	= "Mission Lost"
+	campaign_bad_map		= "Bad or Missing Map"
+	campaign_mission_bad_launch_mission_not_reached = "The saved game you selected is for a mission you have not yet reached."
+
+	;; Staging
+	staging_map_preview_num_req_kingdoms_format_string|dd = "%d-%d" ;; if required kingdoms is different then available kingdoms we'll use this line.
+	staging_map_preview_map_size_format_string|dd = "%dx%d"
+	staging_map_preview_map_size = "Size"
+	staging_map_preview_kingdom_and_player|ss = "%s (%s)"
+	staging_map_preview_is_sai_marker = "*"
+	staging_map_preview_recommended_mini|s = "%s Recommended"
+	staging_map_preview_recommended|s = "%s Recommended"
+	
+	;; orphaned to separate K2 and A&A data, this string is no longer used
+	;; but must remain here since the K2 LDF expects it to be here.
+	staging_map_preview_recommended_label = "Kingdoms"   ;; The above will be displayed like "Kingdoms		2-4 Recommended"
+	
+	staging_map_preview_recommended_range|dd = "%d-%d"
+	staging_map_preview_sai_player_disclaimer|s = "%s denotes an AI Player"
+	staging_map_preview_saved_game_from_map = "Source Map"
+	staging_map_preview_append_film|s = "%s (Film)"
+	staging_map_preview_append_save|s = "%s (Save)"
+	staging_map_preview_source_of_a_saved_game = "Source"
+	staging_map_preview_time = "Time"
+	staging_map_preview_unknown_original_map = "Unknown"
+	staging_map_preview_file_name = "File"
+	staging_map_preview_map_description = "Description"
+	staging_map_preview_players_list = "Players"
+	staging_saved_game_not_campaign_map = "Saved Game is not a valid campaign map."
+	staging_ainame_clientname|ss = "%s (%s)"
+	staging_map_preview_heros = "Heroes"
+	staging_map_preview_official = "Official"
+	staging_sai_display_name_format|ss = "%s (%s)" ;; will look like "Bob (Dragu)" If you don't want the (%s) then just delete it, the code will be happy.
+	;; Staging file
+	staging_file_dialog_duplicate_name|sd = "%s [%d]"
+	staging_not_original_host = "Since the original host has left, the game is no longer public.  Please host a new game to enable players to join."
+	
+	staging_select_button_map = "Select Map"
+	staging_select_button_game = "Load Game"
+	staging_select_button_film = "Select Film"
+	staging_select_button_random = "Random Map"
+	
+	ui_staging_confirm_exit = "Exit Staging?"
+	ui_staging_recommended_num_players_message_box = "Number of players exceeds map recommendation.  Map may fail to generate.  Continue anyway?"
+	ui_staging_proceed_anyway_text = "Continue"
+
+	;; Error messages (miscellaneous)
+	failed_to_save_temporary_map_to_test_it = "Failed to save temporary map to test it"
+	failed_to_create_map = "Failed to create map"
+	failed_to_change_resolution = "Resolution change failed"
+	failed_to_create_settlement_for_center|s = "Unable to create settlement for center %s"
+	failed_to_load_campaign_map = "Attempted to load a saved game that was for a different campaign"
+	failed_to_load_map_application_invalid = "Attempted to load a file that was saved from another application"
+	failed_to_open_file_for_write|s = "Unable to open '%s'"
+	failed_film_wrong_version|s = "Film is from a different version (%s)."
+	failed_film_wrong_build|g = "Film is from a different build (%g)."
+	failed_film_source_map_missing|s = "Source map missing (%s)."
+	failed_to_load_savegame_in_editor = "Cannot load savegames in the editor."
+
+	;; Score graph
+	score_graph_time_min		= "Time (minutes)"
+	score_graph_time			= "Time"
+	score_graph_none			= "None"
+
+	;; Common Per Player Stat Strings
+	per_player_stats_random = "Random"
+	game_win_percentage_display|f = "%.1f%%"
+	community_stats_last_update|s = "Last Updated: %s"
+	per_player_stats_rank = "Rank"
+	per_player_stats_rank_none = "None"
+	per_player_stats_next_rank = "Next Rank"
+	per_player_stats_games_until_next_rank|d = "%d Games"
+	
+	;; GameSpy General Messages
+	ui_gamespy_entered_internet_lobby	= "Connecting to chat server"
+	ui_gamespy_msg_connect_failed	= "Could not connect to the GameSpy chat server\nPlease ensure your internet connection is working properly"
+	ui_gamespy_retry_button_label	= "Reconnect"
+	ui_gamespy_msg_disconnected		= "Disconnected from the GameSpy chat server"
+	ui_gamespy_msg_reconnect		= "Reconnecting to the GameSpy chat server"
+	ui_gamespy_away_message			= "Idle"
+	ui_gamespy_afk_start_message|s	= "Player %s has been marked as away"
+	ui_gamespy_afk_stop_message|s	= "Player %s is no longer away"
+	ui_gamespy_waiting_on_official_maps = "Please wait while retrieving official map list"
+	
+	;; GameSpy lobby localized room names
+	;; Moved to <Game>/Data/Localization/strings_<game>.tgi
+;;	ui_gamespy_lobby_room_name_Main			= "Main"
+;;	ui_gamespy_lobby_room_name_Tournament	= "Tournament"
+
+	;; GameSpy GP Status
+	gamespy_gp_status_chatting|s			= "%s Lobby"
+	gamespy_gp_status_staging|s				= "%s Staging"
+	gamespy_gp_status_playing|s				= "Playing %s"
+
+	;; GameSpy Stats
+	gamespy_stats_submit			= "Submitting results to stats server. Processing may take several minutes."
+	gamespy_stats_submit_victory	= "Submitting victory to the stats server. Processing may take several minutes."
+	gamespy_stats_submit_defeat		= "Submitting defeat to the stats server. Processing may take several minutes."
+	
+	;; Lobby player panel tooltips
+	lobby_player_tooltip_buddy		= "Buddy"
+	lobby_player_tooltip_ignored		= "Ignored"
+	lobby_player_tooltip_afk		= "Away"
+	lobby_player_tooltip_stats_rank		= "Rank"
+	lobby_player_tooltip_stats_games	= "Games"
+	lobby_player_tooltip_stats_wins		= "Wins"
+	lobby_player_tooltip_stats_win_percent  = "Win %"
+	lobby_player_tooltip_stats_losses	= "Losses"
+	lobby_player_tooltip_stats_disconnects	= "Disconnects"
+	lobby_player_tooltip_title|ss		= "%s (%s)"
+	
+	;; SAI
+	staging_tooltip_any			= "Any"
+	staging_tooltip_nation		= "Nation: "
+	sai_midgame_name_postfix	= " AI"  ;; append on to the end of the kingdom name.
+	sai_midgame_name_change|ss	= "%s taken over by %s"
+	
+	;; GameSpy Login
+	gamespy_login_title|s					= "You can manage your account at %s"
+	gamespy_login_attempt					= "Logging in to GameSpy ID..."
+	gamespy_login_already_exists			= "A GameSpy account for that E-Mail address and GameSpy profile already exists"
+	gamespy_login_failed|s					= "GameSpy Login Failed: %s"
+	gamespy_login_set_info_failed|ss		= "Failed to set the nickname to %s: %s"
+	gamespy_login_failed_to_get_persistent  = "Failed to retrieve your player stats from the GameSpy server"
+	gamespy_login_connect_failed			= "Failed to connect to the game"
+	gamespy_login_services_unavailable		= "GameSpy services for this game are unavailable"
+	gamespy_login_services_temp_unavailable	= "GameSpy services for this game are temporarily unavailable"
+	gamespy_login_failed_extra1				= "Note: Your nickname and GameSpy profile may be different."
+	gamespy_login_failed_extra2				= "If you have not selected a nickname, click Register and enter your GameSpy account information and desired nickname."
+	
+	;; GameSpy Profile Management
+	gamespy_pm_button_text_modify			= "Modify"
+	gamespy_pm_button_text_create			= "Create"
+	gamespy_pm_email_missing				= "Please enter a valid E-Mail address"
+	gamespy_pm_nickname_missing				= "Please enter a GameSpy profile"
+	gamespy_pm_handle_missing				= "Please enter a nickname"
+	gamespy_pm_password_missing				= "Please enter a password"
+	gamespy_pm_password_confirm_mismatch	= "Password and Password Confirm do not match"
+	gamespy_pm_modify_attempt				= "Updating account information..."
+	gamespy_pm_create_attempt				= "Creating account..."
+	gamespy_pm_modify_failed|s				= "Update failed: %s"
+	gamespy_pm_create_failed|s				= "Account creation failed: %s"
+	gamespy_pm_modify_success				= "Account information updated"
+	gamespy_pm_create_success				= "Account created"
+	gamespy_pm_set_clan_failed				= "Failed to set clan information in GameSpy persistent storage"
+	
+	gamespy_pm_email_too_long				= "E-Mail address is too long"
+	gamespy_pm_nickname_too_long			= "GameSpy profile is too long"
+	gamespy_pm_handle_too_long				= "Nickname is too long"
+	gamespy_pm_password_too_long			= "Password is too long"
+
+	gamespy_pm_handle_too_short				= "Nickname is too short"
+	gamespy_pm_invalid_characters_nickname	= "Invalid characters in GameSpy profile"
+	gamespy_pm_invalid_characters_handle	= "Invalid characters in nickname"
+	
+	gamespy_pm_account_exists				= "An account already exists for the given E-Mail address and the password is incorrect"
+	
+	;; GameSpy GP errors from GameSpy project gp/gp.h
+	GP_GENERAL						= "General Error"
+	GP_PARSE						= "Parsing Error"
+	GP_NOT_LOGGED_IN				= "Not Logged In"
+	GP_BAD_SESSKEY					= "Invalid Session Key"
+	GP_DATABASE						= "Database Error"
+	GP_NETWORK						= "A network error occurred\nPlease ensure your internet connection is working properly"
+	GP_FORCED_DISCONNECT			= "Forced to Disconnect"
+	GP_CONNECTION_CLOSED 			= "Connection Closed"
+	GP_LOGIN						= "Login Error"
+	GP_LOGIN_TIMEOUT				= "Login Timeout"
+	GP_LOGIN_BAD_NICK				= "GameSpy profile for E-Mail address/password not found"
+	GP_LOGIN_BAD_EMAIL				= "Account for E-Mail address not found"
+	GP_LOGIN_BAD_PASSWORD			= "Incorrect Password"
+	GP_LOGIN_BAD_PROFILE			= "Tried to retrieve information for an invalid profile"
+	GP_LOGIN_PROFILE_DELETED		= "Tried to retrieve information for a deleted profile"
+	GP_LOGIN_CONNECTION_FAILED		= "Connection Failed"
+	GP_LOGIN_SERVER_AUTH_FAILED		= "Server Authentication Failed"
+	GP_LOGIN_BAD_UNIQUENICK			= "A profile with the given nickname was not found"
+	GP_LOGIN_BAD_PREAUTH			= "Invalid Pre-Authorization"
+	GP_NEWUSER						= "Failed to create a new profile with the given information.\nPlease try changing one or both nicknames."
+	GP_NEWUSER_BAD_NICK				= "Invalid GameSpy profile.\nPlease try again with a different GameSpy profile"
+	GP_NEWUSER_BAD_PASSWORD			= "Incorrect Password for given E-Mail address"
+	GP_NEWUSER_UNIQUENICK_INVALID	= "Invalid nickname.\nPlease choose a different nickname."
+	GP_NEWUSER_UNIQUENICK_INUSE		= "Nickname already in use.\nPlease choose a different nickname."
+	GP_UPDATEUI						= "Update UI Error"
+	GP_UPDATEUI_BAD_EMAIL			= "Invalid E-Mail address"
+	GP_NEWPROFILE					= "New Profile Error"
+	GP_NEWPROFILE_BAD_NICK			= "Invalid GameSpy profile"
+	GP_NEWPROFILE_BAD_OLD_NICK		= "Invalid old GameSpy profile"
+	GP_UPDATEPRO					= "Update Profile Error"
+	GP_UPDATEPRO_BAD_NICK			= "Invalid GameSpy profile"
+	GP_ADDBUDDY						= "Add Buddy Error"
+	GP_ADDBUDDY_BAD_FROM			= "Invalid From"
+	GP_ADDBUDDY_BAD_NEW				= "Invalid New"
+	GP_ADDBUDDY_ALREADY_BUDDY		= "Already Buddy"
+	GP_AUTHADD						= "Authenticate Add Error"
+	GP_AUTHADD_BAD_FROM				= "Invalid From"
+	GP_AUTHADD_BAD_SIG				= "Invalid Sig"
+	GP_STATUS						= "Status Error"
+	GP_BM							= "BM Error"
+	GP_BM_NOT_BUDDY					= "Not Buddy"
+	GP_GETPROFILE					= "Get Profile Error"
+	GP_GETPROFILE_BAD_PROFILE		= "Invalid Profile"
+	GP_DELBUDDY						= "Delete Buddy Error"
+	GP_DELBUDDY_NOT_BUDDY			= "Not Buddy"
+	GP_DELPROFILE					= "Delete Profile Error"
+	GP_DELPROFILE_LAST_PROFILE		= "Last Profile Error"
+	GP_SEARCH						= "Search Error"
+	GP_SEARCH_CONNECTION_FAILED		= "Connection Failed"
+	GP_CHECK						= "Check Error"
+	GP_CHECK_BAD_EMAIL				= "Invalid E-Mail address"
+	GP_CHECK_BAD_NICK				= "Invalid GameSpy profile"
+	GP_CHECK_BAD_PASSWORD			= "Invalid Password"
+	GP_REVOKE						= "Revoke Error"
+	GP_REVOKE_NOT_BUDDY				= "Not Buddy"
+	GP_REGISTERUNIQUENICK			= "There was a problem registering this nickname.\nPlease try a different nickname"
+	GP_REGISTERUNIQUENICK_TAKEN		= "This nickname is already taken.\nPlease try a different nickname"
+	GP_REGISTERUNIQUENICK_RESERVED	= "This nickname is already taken.\nPlease try a different nickname"
+	GP_REGISTERUNIQUENICK_BAD_NAMESPACE	= "Namespace error"
+	GameSpy_GP_Unknown_Error		= "Unknown GameSpy GP Error"
+	
+	gp_error_append_BAD_PASSWORD|s	= "\nIf you have forgotten your password, visit %s for GameSpy account assistance"
+	gp_error_append_BAD_UNIQUENICK|s	= "\nIf you have forgotten your nickname, visit %s for GameSpy account assistance"
+	
+	;; GameSpy peer errors
+	gamespy_peer_unkown					= "Unknown error from GameSpy Peer SDK"
+	gamespy_peer_nickerror_in_use		= "The GameSpy profile is already being used"
+	gamespy_peer_nickerror_invalid		= "The GameSpy profile contains invalid characters"
+	gamespy_peer_nickerror_unique_nick_expired	= "The nickname for this account has expired"
+	gamespy_peer_nickerror_no_unique_nick	= "There is no nickname for this account"
+	gamespy_peer_nickerror_unvalid_unique_nick	= "The nickname associated with the account is invalid or in use"
+	
+	;; GameSpy http errors
+	gamespy_GHHTP_error_00 = "Successfully retrieved file"
+	gamespy_GHTTP_error_01  = "A memory allocation failed"
+	gamespy_GHTTP_error_02  = "The user-supplied buffer was too small to hold the file"
+	gamespy_GHTTP_error_03  = "Failed to parse the URL"
+	gamespy_GHTTP_error_04  = "Hostname lookup failed"
+	gamespy_GHTTP_error_05  = "Failed to create/initialize/read/write a socket"
+	gamespy_GHTTP_error_06  = "Failed to connect to the http server"
+	gamespy_GHTTP_error_07  = "Bad response from the server"
+	gamespy_GHTTP_error_08  = "The request has been rejected by the server"
+	gamespy_GHTTP_error_09  = "Not authorized to get the file"
+	gamespy_GHTTP_error_10  = "The server has refused to send the file"
+	gamespy_GHTTP_error_11  = "Failed to find the file on the server"
+	gamespy_GHTTP_error_12  = "The server has encountered an internal error"
+	gamespy_GHTTP_error_13  =  "Problem writing to the local file"
+	gamespy_GHTTP_error_14  = "Problem reading from a local file"
+	gamespy_GHTTP_error_15  = "Download started but was interrupted"
+	gamespy_GHTTP_error_16  = "The file is too big to be downloaded"
+	gamespy_GHTTP_unknown_error = "Undetermined problem"
+
+	;; player profile
+	playerprofile_getting_info		= "Retrieving Information"
+	playerprofile_get_info_failed	= "Failed to retrieve information for player"
+	
+	playerprofile_uniquenick_format|s	= "Nickname: %s"
+	playerprofile_clan_format|s		= "Clan: %s"
+	
+	;; GameSpy QR2 localized strings
+	gamespy_qr2_editor				= "Editor"
+	gs_gametype_map					= "Map"
+	gs_gametype_savedgame			= "Saved Game"
+	gs_gametype_randommap			= "Random Map"
+	gs_gametype_film				= "Film"
+	gs_gametype_editor				= "Editor"
+	gs_gametype_unknown				= "Unknown"
+	
+	;; CD Key
+	cdkey_ask_for_cdkey			= "Enter CD Key"
+	cdkey_invalid				= "Invalid CD Key"
+	
+	;; Team Commands - request chat
+	team_command_request_cash|d = "Please give me %d gold."
+	team_command_request_actor|s = "Please give me %s."
+	
+	;; Map overwrite
+	overwrite_map_confirm		= "A different version of this map exists - overwrite it?"
+	overwrite_map_ok			= "Overwrite"
+	overwrite_map_cancel		= "Leave Game"
+
+	;; hotkey names, for display usually in tooltips
+   	key_space = "Space"
+   	key_a = "A"
+   	key_b = "B"
+   	key_c = "C"
+   	key_d = "D"
+   	key_e = "E"
+   	key_f = "F"
+   	key_g = "G"
+   	key_h = "H"
+   	key_i = "I"
+   	key_j = "J"
+   	key_k = "K"
+   	key_l = "L"
+   	key_m = "M"
+   	key_n = "N"
+   	key_o = "O"
+   	key_p = "P"
+   	key_q = "Q"
+   	key_r = "R"
+   	key_s = "S"
+   	key_t = "T"
+   	key_u = "U"
+   	key_v = "V"
+   	key_w = "W"
+   	key_x = "X"
+   	key_y = "Y"
+   	key_z = "Z"
+   	key_0 = "0"
+   	key_1 = "1"
+   	key_2 = "2"
+   	key_3 = "3"
+   	key_4 = "4"
+   	key_5 = "5"
+   	key_6 = "6"
+   	key_7 = "7"
+   	key_8 = "8"
+   	key_9 = "9"
+	 	key_leftbracket = "["
+	 	key_rightbracket = "]"
+	 	key_[ = "["
+	 	key_] = "]"
+   	key_f1 = "F1"
+   	key_f2 = "F2"
+   	key_f3 = "F3"
+   	key_f4 = "F4"
+   	key_f5 = "F5"
+   	key_f6 = "F6"
+   	key_f7 = "F7"
+   	key_f8 = "F8"
+   	key_f9 = "F9"
+   	key_f10 = "F10"
+   	key_f11 = "F11"
+   	key_f12 = "F12"
+   	key_enter = "Enter"
+   	key_return = "Return"
+   	key_tab = "Tab"
+   	key_escape = "Escape"
+   	key_esc = "Esc"
+   	key_backspace = "Backspace"
+   	key_insert = "Insert"
+   	key_home = "Home"
+   	key_pause = "Pause"
+	 	key_pageup = "PageUp"
+	 	key_pagedown = "PageDown"
+   	key_delete = "Delete"
+   	key_end = "End"
+   	key_left = "Left"
+   	key_right = "Right"
+   	key_up = "Up"
+   	key_down = "Down"
+	 	key_numpad-0 = "Numpad-Insert"
+	 	key_numpad-1 = "Numpad-1"
+	 	key_numpad-2 = "Numpad-2"
+	 	key_numpad-3 = "Numpad-3"
+	 	key_numpad-4 = "Numpad-4"
+	 	key_numpad-5 = "Numpad-5"
+	 	key_numpad-6 = "Numpad-6"
+	 	key_numpad-7 = "Numpad-7"
+	 	key_numpad-8 = "Numpad-8"
+	 	key_numpad-9 = "Numpad-9"
+	 	key_numpad-left = "Numpad-4"
+	 	key_numpad-right = "Numpad-6"
+	 	key_numpad-up = "Numpad-8"
+	 	key_numpad-down = "Numpad-2"
+	 	key_numpad-home = "Numpad-7"
+	 	key_numpad-pageup = "Numpad-9"
+	 	key_numpad-end = "Numpad-1"
+	 	key_numpad-pagedown = "Numpad-3"
+   	key_minus = "Minus"
+   	key_plus = "Plus"
+	 	key_equals = "Plus"
+	 	key_equalssign = "Plus"
+ 		key_numpad-minus = "Numpad-Minus"
+	 	key_numpad-plus = "Numpad-Plus"
+ 		key_numpad-insert = "Numpad-Insert"
+	 	key_numpad-delete = "Numpad-Delete"
+   	key_grave = "Tilde"
+   	key_tilde = "Tilde"
+	 	key_printscreen = "PrintScreen"
+   	key_semicolon = "Semicolon"
+   	key_comma = "Comma"
+   	key_period = "Period"
+   	key_slash = "Slash"
+   	key_backslash = "Backslash"
+   	key_quote = "Quote"
+	 	key_button1 = "Mouse 1"
+	 	key_button2 = "Mouse 2"
+	 	key_button3 = "Mouse 3"
+	 	key_button4 = "Button 4"
+ 		key_button5 = "Button 5"
+	 	key_button6 = "Button 6"
+ 		key_button7 = "Button 7"
+	 	key_button8 = "Button 8"
+ 		key_mousez = "MouseZ"
+   	key_mousewheel = "MouseWheel"
+   	key_wheel = "Wheel"
+   	key_zaxis = "ZAxis"
+   	;; modifiers
+   	key_Alt = "Alt"
+   	key_Shift = "Shift"
+   	key_Ctrl = "Ctrl"
+   	key_Control = "Ctrl"
+   	key_Ctl = "Ctrl"
+   	;; Used in hotkey names like alt-f4
+   	hotkey_modifier_separator = "-"
+
+
+	;; SAI difficulty levels
+	sai_difficulty_level_easy = "Easy"
+	sai_difficulty_level_medium = "Medium"
+	sai_difficulty_level_hard = "Hard"
+	
+	;; status icon strings for csd. 
+	status_icon_disconnected = "Disconnected"
+	status_icon_low_bandwidth = "Low Bandwidth"
+	status_icon_out_of_sync = "Out of Sync"
+	status_icon_catching_up = "Catching Up"
+	status_icon_low_cpu = "Low CPU"
+	status_icon_ok = ""
+
+	insufficient_disk_space|sdddd = "%s requires at least %d megabytes (%d bytes) of available disk space, currently there are %d megabytes (%d bytes) available to the current user."
+
+	logitech_update_failed = "Logitech registry key failed to update successfully, you may need Administrator access."
+	logitech_update_succeeded = "Logitech registry key successfully updated, you must restart your computer and run this application again for the fix to take effect. Clicking OK will shut down this application, please reboot your system and run it again."
+
+	patch_external_confirm = "%s will now shut down to check for an available patch."
+
+}

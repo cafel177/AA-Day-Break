@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_alaska.tgi
+	name = "@Localization/RandomMap/strings_rmc_alaska.tgi"
+
+	rmc_alaska_name = "Alaska"
+	rmc_alaska_description = "With its long string of Aleutian Islands, its open, undefended landscape and endless shoreline, Alaska provided a potential beachhead for a Japanese invasion of North America.  Likewise, it furnished the Americans with a means of supplying their Soviet allies and potentially attacking the Japanese forces occupying China."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_alaska_village_alaska_name = "Villages"
+}

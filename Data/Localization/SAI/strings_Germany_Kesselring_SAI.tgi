@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Germany_Kesselring_SAI.tgi
+	name = "@Localization/SAI/strings_Germany_Kesselring_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Germany_Kesselring_SAI_kesselring_low_income_ego_name = "Kesselring low income ego"
+	Germany_Kesselring_SAI_kesselring_main_game_ego_name = "Kesselring main game ego"
+	Germany_Kesselring_SAI_kesselring_end_game_ego_name = "Kesselring end game ego"
+	Germany_Kesselring_SAI_kesselring_sai_name = "Kesselring AI"
+	Germany_Kesselring_SAI_kesselring_sai_description = "Kesselring AI"
+}

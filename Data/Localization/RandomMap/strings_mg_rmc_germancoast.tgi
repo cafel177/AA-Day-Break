@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_germancoast.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_germancoast.tgi"
+
+	mg_rmc_germancoast_name = "German Coast"
+	mg_rmc_germancoast_description = "German Coast"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_germancoast_village_germancoast_name = "Villages"
+}

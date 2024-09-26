@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Russia_Konev_SAI.tgi
+	name = "@Localization/SAI/strings_Russia_Konev_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Russia_Konev_SAI_konev_low_income_ego_name = "Konev low income ego"
+	Russia_Konev_SAI_konev_main_game_ego_name = "Konev main game ego"
+	Russia_Konev_SAI_konev_end_game_ego_name = "Konev end game ego"
+	Russia_Konev_SAI_konev_sai_name = "Konev AI"
+	Russia_Konev_SAI_konev_sai_description = "Konev AI"
+}

@@ -1,0 +1,16 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_mexico.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_mexico.tgi"
+
+	mg_rmc_mexico_name = "Mexico"
+	mg_rmc_mexico_description = "Mexico"
+	mg_rmc_mexico_bunkers_coastline_1_name = "Coastline Bunkers 1"
+	mg_rmc_mexico_bunkers_coastline_3_name = "Coastline Bunkers 3"
+	mg_rmc_mexico_bunkers_coastline_4_name = "Coastline Bunkers 4"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_mexico_village_mexico_name = "Villages"
+}

@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_germany.tgi
+	name = "@Localization/RandomMap/strings_rmc_germany.tgi"
+
+	rmc_germany_name = "Germany"
+	rmc_germany_description = "The heart of European Axis power, Germany had extremely well-developed industry and agriculture and a population base strong enough to supply a substantial army.  With its easily-defended rivers and large cities, Germany also was highly defensible."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_germany_village_germany_name = "Villages"
+}

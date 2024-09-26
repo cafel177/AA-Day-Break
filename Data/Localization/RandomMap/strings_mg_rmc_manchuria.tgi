@@ -1,0 +1,14 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_manchuria.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_manchuria.tgi"
+
+	mg_rmc_manchuria_name = "Manchuria"
+	mg_rmc_manchuria_description = "Manchuria"
+	mg_rmc_manchuria_bunkers_coastline_3_name = "Coastline Bunkers 3"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_manchuria_village_manchuria_name = "Villages"
+}

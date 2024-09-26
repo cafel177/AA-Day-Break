@@ -1,0 +1,16 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_easternsiberia.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_easternsiberia.tgi"
+
+	mg_rmc_easternsiberia_name = "Eastern Siberia"
+	mg_rmc_easternsiberia_description = "Eastern Siberia"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_easternsiberia_village_easternsiberia_name = "Villages"
+	mg_rmc_easternsiberia_bunkers_coastline_2_name = "Coastline Bunkers 2"
+	mg_rmc_easternsiberia_bunkers_coastline_3_name = "Coastline Bunkers 3"
+	mg_rmc_easternsiberia_bunkers_coastline_4_name = "Coastline Bunkers 4"
+}
