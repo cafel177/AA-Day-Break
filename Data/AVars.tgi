@@ -1,7 +1,7 @@
-/**************************************************************************
+ï»¿/**************************************************************************
 
 AVars.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ï¿½ 2002-2003 TimeGate Studios
 
 DESCRIPTION: Game-independent TGRTSE AVars.
 
@@ -47,10 +47,10 @@ drp012903 - moved game-specific AVars out
 	string app_status_init_data = Loading Data
 	
 	float DecalSlopeScaleBias = 0.0
-	float DecalDepthBias = -0.00001
+	float DecalDepthBias = -0.1
 	
 	float TrackSlopeScaleBias = 0.0
-	float TrackDepthBias = -0.00001		;; nVidia doesn't work with a much larger bonus
+	float TrackDepthBias = -0.1		;; nVidia doesn't work with a much larger bonus
 
 	;; radius at which "attached_scale = 2" has no effect 
 	;; smm050103 - changed to 1.3 since now using minimum selection box dimension as scale factor
@@ -176,7 +176,7 @@ drp012903 - moved game-specific AVars out
 
 	;; Number of Players in Multiplayer
 	int MultiplayerMinNumPlayers = 2
-	int MultiplayerMaxNumPlayers = 12
+	int MultiplayerMaxNumPlayers = 16
 	int MultiplayerTeamConfigurationVisibleHistory = 20 ;; Used on the staging menu
 	int MultiplayerTeamConfigurationUserPrefHistory = 1 ;; We'll keep a larger history in the prefs
 	
@@ -276,9 +276,9 @@ drp012903 - moved game-specific AVars out
 	;; these are used in map generation to allow the user to select certain
 	;; sizes of map.
 	int			MapMinimumSize = 192
-	int			MapMaximumSize = 704
+	int			MapMaximumSize = 896
 	int			MapStepSize = 64
-	;;int			KingdomsMax = 11	;; pcb062904 - now an svar
+	;;int			KingdomsMax = 16	;; pcb062904 - now an svar
 	
 	;; special textures
 

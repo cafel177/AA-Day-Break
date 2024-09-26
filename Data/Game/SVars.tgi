@@ -59,12 +59,12 @@
 	int		ExploreNumWaypointLocations	= 20		;; the number of locations to generate around the original waypoint where we were told to explore
 	
 			;; where to generate them
-	fixed	ExploreActorRadiusMin		= 20.0		;; the minimum radius to use when generating around the actor
-	fixed	ExploreActorRadiusMax		= 30.0		;; the maximum radius to use when generating around the actor
-	int		ExploreWaypointTilesIntoFog	= 8			;; the number of tiles into the fog to place a candidate that is generated around the waypoint
+	fixed	ExploreActorRadiusMin		= 30.0		;; the minimum radius to use when generating around the actor
+	fixed	ExploreActorRadiusMax		= 40.0		;; the maximum radius to use when generating around the actor
+	int		ExploreWaypointTilesIntoFog	= 16			;; the number of tiles into the fog to place a candidate that is generated around the waypoint
 	
 			;; how to evaluate them
-	fixed	ExploreActorBaseValue		= 40		;; base value for a candidate generated around the actor
+	fixed	ExploreActorBaseValue		= 50		;; base value for a candidate generated around the actor
 	fixed	ExploreWaypointBaseValue	= 0			;; base value for a candidate generated around the waypoint
 	fixed	ExploreDistanceMultiplier	= -1		;; distance is multiplied by this and added to the value.  Recommend negative value.
 	fixed	ExploreDotProductMultiplier	= 20		;; used to keep us heading in the same general direction - factor can vary from -1 * this to this.
@@ -119,13 +119,13 @@
 
 	;; UAI for engagement
 	fixed	PrimarySampleTime = 5
-	fixed	RetreatingTime = 25
-	fixed	RoutingTime = 25
-	fixed	ReformTime = 25
-	fixed	StalemateTime = 25
+	fixed	RetreatingTime = 15
+	fixed	RoutingTime = 15
+	fixed	ReformTime = 15
+	fixed	StalemateTime = 15
 	fixed	RegroupTime = 10
 	fixed	EngageReactionTimeRange = 0.3
-	fixed	UAIBadTargetExpirationSeconds = 5.0
+	fixed	UAIBadTargetExpirationSeconds = 3
 	
 	;; HQ component
 	fixed	HQAttachCostPercentage = 0.0	;; percentage of actor's cost charged when actor is attached to an HQ
@@ -224,7 +224,7 @@
 	flag	DisableSAIWhenGameLost				= true	;; kad091204 - For K2 we need this (so it doesn't break the outtake) but for A&A we need it to be false.
 	
 	;; building placement
-	fixed	MinAutoConstructDistanceFromSettlementCenter	= 1.2	;; kad040204 - Multiply the actual minimum distance between the settlement center and any building by this when auto placing.
+	fixed	MinAutoConstructDistanceFromSettlementCenter	= 2	;; kad040204 - Multiply the actual minimum distance between the settlement center and any building by this when auto placing.
 	
 	;; team commands
 	int		TeamCommandTransferResourceIncrementValue	= 25
@@ -232,7 +232,7 @@
 	int		MaxFlaresPerKingdom							= 5
 
 	;; world rules - NOTE: these defaults are overridden by "world_rules.tgi"
-	fixed	ResourceStockpileDefault 	= 500		;; Starting resources (gold,etc.) for new maps and random maps
+	fixed	ResourceStockpileDefault 	= 1000		;; Starting resources (gold,etc.) for new maps and random maps
 	int		FogOfWar					= 2		;; 2 == full fog
 	int		DifficultyLevel				= 0
 	fixed	GameSpeed 					= 0		;; 0 == 100%
@@ -248,7 +248,7 @@
 	
 	;; kingdom vars
 	int		DefaultKingdomsIndependent = 1
-	int		KingdomsMax = 8
+	int		KingdomsMax = 16
 
 	;;;;;; routing
 	int		RoutRandomCandidates = 20			;; The number of completely random candidates.
@@ -313,7 +313,7 @@
 	;; an actor goes out of the ActiveConstruction state when
 	;; it is not fully healed during construction (in seconds)
 
-	fixed ActiveConstructionTimeout = 2.5
+	fixed ActiveConstructionTimeout = 0.1
 
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	;; SUN VALUES

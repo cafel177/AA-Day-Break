@@ -40,7 +40,7 @@
 	name = "#world_rules_aa_ResourceStockpileDefault_name"
 	type = fixed
 	editbox_max_value = 99999
-	default = 500
+	default = 1000
 }
 
 [WorldRule template = WorldRule]

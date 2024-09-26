@@ -52,7 +52,7 @@
 	fixed	SunNightThreshold = 1.6
 
 	;; Max number of kingdoms for A&A
-	int	KingdomsMax = 8
+	int	KingdomsMax = 16
 
 	;; colors in RGB (0-1 for each channel)
 	point3	SunDiffuse = 1.0, 1.0, 1.0

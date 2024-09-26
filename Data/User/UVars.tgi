@@ -1,0 +1,16 @@
+[Vars]
+{
+	float	CameraScaleZoom = 1.500000
+	flag	ViewShowElapsedGameTime = true
+	flag	CameraRotate = true
+	flag	RenderDrawFootsteps = false
+	float	AudioMainVolume = 0.948556
+	float	Audio2DVolume = 0.969554
+	float	Audio3DVolume = 0.969554
+	float	AudioSpeechVolume = 0.998950
+	float	AudioMusicVolume = 0.961155
+	int	LastFilmIndex = 1
+	flag	UnitFogSimplified = true
+	flag	FirstRun = false
+	flag	RendererForceLowQualityTextures = true
+}
