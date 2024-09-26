@@ -552,8 +552,9 @@
 	icon = PropertyIcons/IconPropertyMorale.png
 	action_button_icon = TechIcons/IconAdvancedInfantryTraining.png
 	
-	[Modifier Template=AddModifier]
 	required_properties = org_infantry
+
+	[Modifier Template=AddModifier]
 	attribute = MORALE
 	amount = +1	
 }
@@ -565,8 +566,9 @@
 	icon = PropertyIcons/IconPropertyMorale.png
 	action_button_icon = TechIcons/IconAdvancedArmorTraining.png
 	
-	[Modifier Template=AddModifier]
 	required_properties = org_tank
+
+	[Modifier Template=AddModifier]
 	attribute = MORALE
 	amount = +3	
 }
