@@ -1,0 +1,3 @@
+# USER.TXT
+#
+# Custom script per user.  Remap hotkeys, customize settings, etc.

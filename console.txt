@@ -1,0 +1,356 @@
+COMMAND LINE
+------------
+
++command					= execute script command when loaded
+"+command param"			= execute script command when loaded
+"+exec <script_name.txt>"	= execute script file when loaded
+<var>=<value>				= set a user variable
+
+USER VARIABLES (see 'UVars.tgi' for a complete list)
+--------------
+
+Defaults are listed
+
+	CameraScrollSpeed=2			// changes speed of camera movement m/s (must be <= CameraScrollSpeedMax)
+	CameraScrollAcceleration=2	// meters per second squared scrolling accleration
+	CameraScrollSpeedMax=20		// max number of meters per second camera can scroll
+	TimingDisplaySummary=0	// display overall framerate statistics at program termination
+	DataCompatibilityMode=1	// don't complain if resources are missing - instead use default resources
+	WarningsDisplayedImmediately=0	// display warnings in a messagebox as soon as they occur
+	
+Graphics Options:
+
+	ResolutionWindowed=1		
+	ResolutionX=800
+	ResolutionY=600
+	AnimationBlending=1			// control use of blending between transitioning animations
+	ViewInterpolation=1			// control position and orientation interpolation for movement
+	TerrainSpecularEnabled=1	// control use of specular lighting on the terrain
+
+UI Options:
+	CameraScrollSpeed=2
+	CameraLocked=0
+	CameraScalePan=10
+	CameraScalePitch = 10
+	CameraScaleYaw=10
+	CameraScaleZoom=0.5
+	SunScaleDimmer=0.25
+	
+- From the Command Line:
+	CameraScrollSpeed=2
+	
+- From the Console: 
+	set ScrollSpeed=2
+
+HOTKEYS (see 'hotkeys.txt' and 'ui/hotkeys.txt' for a complete list)
+-------
+
+Default hotkeys (setup in hotkeys.txt):
+
+	F9 = test mode (from Editor)
+	~ = toggle console
+	CTRL+w = wireframe
+	CTRL+g = terrain grid
+	pause = game pause
+	CTRL+ALT+q = quit application
+	ALT+F4 = quit application
+	arrow keys = pan
+	numpad 4/6 = yaw
+	numpad 2/8 = pitch
+	numpad 5 = restore default angles and zoom
+	[ = sun intensity down
+	] = sun intensity up
+	+/- = zoom
+	mouse wheel = zoom
+	CTRL+f = toggle framerate and other stats display
+	CTRL+b = toggle displaying blocking information
+	PrintScreen = screenshot
+
+Editor mode hotkeys:
+
+	delete = remove selected objects
+
+SCRIPT COMMAND USAGE
+--------------------
+
+There are 3 ways to interact with the script system
+
+1) create a "start.txt" in the run folder, it will run these script commands whenever you run the RTSE, so
+   you can predefine CAMERA, CREATE, TERRAIN, etc
+
+2) run "rtse +exec blah.txt" to execute the script commands in "blah.txt"
+
+3) enter commands in the console toggled with the [~] key 
+
+
+USING COMMANDS
+--------------
+
+Commands can be defined in one of three areas:
+
+	1) via script (run with "exec")
+	2) via the console
+	3) via a hotkey
+
+Script commands can be commented out by prefixing the line with "#" or "//"
+
+	# this is a comment
+	// don't do the next command
+	#changeres 640 480 1
+
+Multiple script commands can be submitted on one line by using a ";" seperator.
+
+	# this will do all commands
+	+left; +up; wireframe
+
+CONSOLE MANAGEMENT COMMANDS
+---------------------------
+
+	~ key: toggle display of console
+	
+	EDITING:
+		Tab: Auto-completes the command, or displays a list of possible command completions.
+		Left arrow: move cursor left
+		Right arrow: move cursor right
+		Home: Move cursor to start of line.
+		End: Move cursor to end of line.
+		Delete: Delete character at cursor position.
+		Esc: Clear the current line of text.
+		Backspace: Delete character before cursor position.
+		
+	COMMAND HISTORY:
+		Up arrow: Cycle backwards through the last 20 lines entered into the console.
+		Down arrow: Cycle forwards through the last 20 lines entered into the console.
+		
+	LOG CONTROL:		
+		Page Up: Scroll 10 lines backwards through log messages.
+		Page Down: Scroll 10 lines forwards through log messages.
+
+COMMAND REFERENCE
+-----------------
+
+The availability of console commands is dependent on the context (what interface you are in).
+You can always get a list of all command available in the current context by going to the 
+console "~" and using TAB for auto-complete, or "HELP" for a full command list.  Following
+is a list of some commands and the context.
+
+// application
+EXEC scriptname
+HELP			- list all commands
+HELP command	- list usage for command
+?				- same as "HELP"
+WAIT seconds
+WAITORDERS
+WAITSTATE state
+ECHO string
+LOG level
+ALIAS newcommand command	- create new commands
+QUIT						- end the program (also use Alt-Q or Alt-F4)
+
+
+// application - vars system
+UVAR var value
+AVAR var value
+SVAR var value
+
+// application - resources
+ADDDEPOT depot
+REMDEPOT depot
+
+// renderer 
+SCREENSHOT				- take screenshot (or press ctrl-s)
+
+// renderer - debugging
+SHOWTIMING				- toggles onscreen stats, also shows average fps at program exit
+
+// main menu
+REQUESTGAME
+REQUESTEDITOR
+OPENOPTIONSMENU
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+XXXX obsolete list below
+
+// application
+UI [0/1]						- turns off or on the display of the user interface screens
+INTERFACE [0/1]					- turns off or on all interface components (UI, mouse, etc.).  escape key turns back on.
+
+// simulation
+TERRAIN [worldsize=128] [quadsize=2] [texturesize=8] [heightmap TGA] [texture TGA]
+RESET
+CREATE object x y [instance IDS]
+DESTROY name
+ANIM name animationname [looping=1]
+GAMESPEED [speed=1]			- range is 0.05 to 16
+GAMEPAUSE [1/0]				- default is toggle
+PLACEMENTMODE [unit]		- turns on placement mode for the specified unit type
+DESTROYSELECTED				- destroyed selected unit(s)
+
+// kingdoms 
+CREATE kingdom 0 0 [name]
+PLAYERKINGDOM [name]		- set the user to control this kingdom (by default the user controls the first kingdom)
+PLACEMENTKINGDOM [name]		- all subsequent placement of actors uses this as the owner kingdom
+
+// actor commands
+ORIENT name x y
+MOVE name x y [speed=1]
+STOP name
+SUICIDE name
+ATTACK name targetname
+GUARD name
+FOLLOW name targetname [relativex=0] [relativey=0]
+CAST name spell targetname
+
+// camera
+FOV [angle=15]
+ZOOM [level=1] = 0.5 (out) ... 20 (in)
+DELTAZOOM = -1 (out) ... +1 (in)
+LOOKAT x y
+PITCH [pitch=40]
+YAW [yaw=-45]
+HEIGHT [height=80]
+CAMERASCROLLSPEED [speed = 2]
+
+// change several camera parameters at once
+CAMERA x y [height=60] [pitch=40]
+DEFAULTANGLES				- restores camera to original state
+
+// tracking camera - last three are optional
+MOVECAMERA time x y [zoom] [pitch] [yaw]
+
+// renderer
+CHANGERES w h [fullscreen=0]
+WIREFRAME [1 or 0 = toggle]
+SCREENSHOT
+LETTERBOX [on/off/roll_on/roll_off] [seconds=2]
+
+// sun
+SunDimmer [intensity=1.5]						- lower = darker
+SunDiffuse r [g=r] [b=r]
+SunSpecular r [g=r] [b=r]
+SunAmbient r [g=r] [b=r]
+
+// equipment
+HIDE_EQUIPMENT [instance] [body_part]
+UNHIDE_EQUIPMENT [instance] [body_part]
+FLIP_EQUIPMENT [instance] [body_part]
+REMOVE_EQUIPMENT [instance] [body_part]
+ADD_EQUIPMENT [instance] [body_part] [equipment_nif]
+REPLACE_EQUIPMENT [instance] [body_part] [equipment_nif]	- copies the old transforms
+
+// VFX  (location = ground | head | spine | lhand | rhand | lfoot | rfoot)
+GLOBAL_FX effect x y [z = 0] [duration or -1] [orientation]								- displays effect at x,y
+ATTACHED_FX effect name [location=ground] [duration or -1] [translation] [orientation]	- attached to body part "location" of actor "name"
+DETACHED_FX effect name [location=ground] [duration or -1] [translation] [orientation]	- detached at body part "location" of actor "name" 
+
+// rain
+START_RAIN
+STOP_RAIN
+ZOOM_RAIN zoom
+SCALE_RAIN scale
+
+// hotkeys - see below
+MAP key context|context|widget command
+MAP key context|context|widget +impulse
+REMAP old_key new_key widget
+UNMAP key widget
+
+// debugging
+SHOWBLOCKING			- toggles objects and blocking information
+
+X obsolete list end
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+HOTKEYS
+-------
+
+Using the MAP command, hotkeys can be bound like macros to a script command.  There are three
+parameters to the MAP command:
+
+- key = the name of the key. Typically the ASCII representation, although there are some named keys
+  such as "left" for arrow left.  Modified keys can also be mapped, e.g. "Ctrl-x".  Note that
+  "+key" maps the event to when the key is pressed (which is actually the default).  You can
+  use "-key" to map the event to when the key is released.   [More detail is available.]
+
+- context = the context which has to be true for the key to work. 
+	dev = only works in a dev build when dev mode is enabled
+	editordev = works in any build in the editor, or a dev build running in dev mode
+
+- widget = the widget which has to exist and receive input (visible, enabled, etc.) for the hotkey
+  to work.  Common widgets include root, vworld, game, and editor.
+
+- command = the script command to execute when the event happens. This can also be activating
+  or deactivating an impulse command (see below).  Not specifying a command makes the hotkey
+  activate the widget.
+
+Examples:
+    map ctrl-x dev|vworld "height 90"
+    map w vworld wireframe
+    map +t vworld "wireframe 1"
+    map -t vworld "wireframe 0"
+    map numpad-home vworld camerascrollspeed 10;wireframe
+    map Alt-O MainMenuButtonToOpenOptionsMenu
+
+IMPULSE COMMANDS
+----------------
+
+These are commands that are toggled active/inactive.  While they are active they repeatedly
+perform some function, such as panning the screen or changing the pitch.  Typically, hotkeys
+are bound to impulses so the impulse is activated when the key is pressed ("+key") and the impulse
+is inactivated when the key is released ("-key").  A key can be mapped to an impulse command with
+one line:
+
+	map a vworld +PanLeft
+
+Note that this is equivalent to binding the key up and key down events separately:
+
+	map +a vworld +PanLeft
+	map -a vworld -PanLeft
+	
+Multiple impulse commands can be bound to one hotkey:
+
+	map numpad-home	vworld +PanLeft;+PanUp
+	
+Available impulse commands are:
+	PanLeft, PanRight, PanUp, PanDown, YawLeft, YawRight, PitchUp, PitchDown, ZoomIn, ZoomOut,
+
+SCENE PROFILING
+---------------
+
+Ctrl-Alt-F -- toggles the graphical framerate bar.
+Ctrl-Alt-1 -- toggles Skinned thing rendering
+Ctrl-Alt-2 -- toggles terrain rendering
+Ctrl-Alt-3 -- toggles vfx rendering
+
+Some things to note:
+Graphical Framerate Bar: The shorter the bar, the better. The thick bar is
+the exact time spent to update last frame, and the skinnier bar represents
+the smoothed average for the last few frames. Currently, when running at
+60 FPS the bar will be in the middle of the screen, whereas when it is at
+the far right we are running at 30 fps. This can be adjusted by playing
+with the value in uvars.tgi: FramerateBarUpdateMS. See the comments in
+uvars.tgi for more info.
+
+Turning off skinned things:
+This does not hide the weapons and so forth, as they are not skinned. Let
+me (johnm) know if this turns out to be problematic.
+
+
+CHEATS
+-----
+
+name         alias            what it does            
+fog          lasik            No fog of war
+money        gimme            Get 100 gold
+money ###    gimme ###        Get specified amount of gold
+win          victoryismine    Win the game
+lose         wasted           Lose the game
+
+You can use "name" or "alias" in development builds.  Type in the console or the chat window.
+
+
+NOTES
+-----
+
+- all values are in meters so if worldize=64 and quadsize=2 then you get a 32x32 quad world
