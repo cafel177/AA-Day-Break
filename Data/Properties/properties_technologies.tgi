@@ -553,6 +553,7 @@
 	action_button_icon = TechIcons/IconAdvancedInfantryTraining.png
 	
 	[Modifier Template=AddModifier]
+	required_properties = org_infantry
 	attribute = MORALE
 	amount = +1	
 }
@@ -565,6 +566,7 @@
 	action_button_icon = TechIcons/IconAdvancedArmorTraining.png
 	
 	[Modifier Template=AddModifier]
+	required_properties = org_tank
 	attribute = MORALE
 	amount = +3	
 }
@@ -652,7 +654,7 @@
 	icon = PropertyIcons/IconPropertySupply.png
 	action_button_icon = TechIcons/IconForaging.png
 	
-	required_properties = org_unit
+	required_properties = org_infantry
 	
 	[Modifier Template=MultiplyModifier]
 	attribute = RESUPPLY_RATE
