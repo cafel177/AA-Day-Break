@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_france.tgi
+	name = "@Localization/RandomMap/strings_rmc_france.tgi"
+
+	rmc_france_name = "France"
+	rmc_france_description = "Though a major power in World War I, France fell quickly to the German Blitzkrieg in World War II.  Occupied by the Germans, France provided the Axis with important bases and supplies, and control of the French coastline protected Germany against an Allied invasion of the mainland."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_france_village_france_name = "Villages"
+}

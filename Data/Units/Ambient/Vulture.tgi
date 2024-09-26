@@ -1,0 +1,71 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = vulture
+	name = "#Vulture_Thing_name"
+	
+	[Flags]
+	blocking = false
+
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 1.7
+
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 1.7
+			
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=IdleAnimation]
+		IDS = idleattack
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+	
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+				
+		[Animation Template=DieAnimation]
+		IDS = die1
+		length = 2
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		key_ratio = 0.6
+	}
+
+	[MoverComponent]
+	speed_max = 3
+	
+	[View]
+	{
+		resource_prefix = Vulture/Vulture
+		z_offset = 6
+		shadow_type = NONE
+		shadow_texture = null
+		
+		[AspectNormal]
+		ground_size = 0.2,0.2
+	}
+}
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = vulture_flock
+	name = "#Vulture_flock_name"
+	
+	[View]
+	resource_prefix = Vulture/Vulture
+	banner_ids = ambient_banner
+
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = vulture
+	}	
+}

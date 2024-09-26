@@ -1,0 +1,68 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = kangaroo
+	name = "#Kangaroo_Thing_name"
+	
+	[View]
+	resource_prefix = kangaroo/kangaroo
+
+	[MoverComponent]
+	{
+		speed_max = 3
+	}
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 1.7
+		kf = kangaroo/kangarooJog.kf
+
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 1.7
+		kf = kangaroo/kangarooJog.kf
+				
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=IdleAnimation]
+		IDS = idleattack
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+				
+		[Animation Template=DieAnimation]
+		{
+			IDS = die1
+			length = 2
+			kf = Sheep/SheepDie.kf
+		}
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		key_ratio = 0.6
+	}
+}
+
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = herd_kangaroo
+	name = "#Kangaroo_herd_kangaroo_name"
+	
+	[View]
+	resource_prefix = Kangaroo/Kangaroo
+	banner_ids = ambient_banner
+
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{
+		layout_IDS = herd_ambient_large
+		
+		[Slot]	;; front
+		element_IDS = kangaroo
+	}	
+}

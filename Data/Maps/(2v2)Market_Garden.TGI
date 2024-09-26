@@ -1,0 +1,20 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Operation Market Garden"
+
+	name_10759 = "Nijmegen"
+	kingdom_1 = "Side 1"
+	kingdom_0 = "Side 4"
+	name_10747 = "Arnhem"
+	name_10767 = "Eindhoven"
+	independent_7 = "Civilian (Aggressive)"
+	independent_6 = "Civilian (Neutral)"
+	team_1 = "Team 2"
+	team_0 = "Team 1"
+	map_description = "France has been liberated and the German defenses are in disarray.  A daring gambit to seize critical, lightly-guarded bridges within the Netherlands has been launched.  Swift airdrops followed by armored divisions will enable a surprise attack and open the way for an advance.  Confidence is high, and if the mission is a success, the war could be over by Christmas.  "
+	objective_2 = "1.  Capture Arnhem before the German army arrives."
+	map_name = "Operation Market Garden"
+	kingdom_3 = "Side 3"
+	kingdom_2 = "Side 2"
+}

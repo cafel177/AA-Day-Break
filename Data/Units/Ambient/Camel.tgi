@@ -1,0 +1,62 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = camel
+	name = "#Camel_Thing_name"
+
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 2
+		
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 2
+
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+		length = 3
+
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+		length = 4
+				
+		[Animation Template=DieAnimation]
+		{
+			IDS = die1
+			length = 2
+		}
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		key_ratio = 0.6
+	}
+
+	[MoverComponent]
+	speed_max = 2.5
+	
+	[View]
+	resource_prefix = Camel/Camel
+}
+
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = herd_camel
+	name = "#Camel_herd_camel_name"
+	
+	[View]
+	resource_prefix = Camel/Camel
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{		
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = camel
+	}	
+}

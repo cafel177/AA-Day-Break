@@ -1,0 +1,35 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = fish
+	name = "#fish_name"
+
+	[Flags]
+	water_based = true
+	blocking = false
+	
+	[Size]
+	{
+		scale_min = 1
+		scale_max = 1.1
+	}
+	
+	[View]
+	resource_prefix = Fish/Fish
+
+	[CharacterComponent]
+	{
+			
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=DieAnimation]
+		IDS = die1
+
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+	
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+					
+	}
+}

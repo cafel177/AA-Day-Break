@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Japan_Yamamoto_SAI.tgi
+	name = "@Localization/SAI/strings_Japan_Yamamoto_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Japan_Yamamoto_SAI_yamamoto_low_income_ego_name = "Yamamoto low income ego"
+	Japan_Yamamoto_SAI_yamamoto_main_game_ego_name = "Yamamoto main game ego"
+	Japan_Yamamoto_SAI_yamamoto_end_game_ego_name = "Yamamoto end game ego"
+	Japan_Yamamoto_SAI_yamamoto_sai_name = "Yamamoto AI"
+	Japan_Yamamoto_SAI_yamamoto_sai_description = "Yamamoto AI"
+}

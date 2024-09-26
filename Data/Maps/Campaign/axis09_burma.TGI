@@ -1,0 +1,18 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Invasion of India"
+
+	independent_2 = "Ambient"
+	kingdom_1 = "Wingate's Force"
+	name_1845 = "Bombay"
+	kingdom_0 = "Nagumo's Force"
+	name_1903 = "New Delhi"
+	objective_5 = "1. Destroy all British forces."
+	map_description = "London has fallen.  German troops are pouring into the British Isles.  Aside from partisan resistance, the heart of the British Empire is dead.    Japan marches on Burma to begin an invasion of India and set the sun on the British Empire."
+	independent_3 = "Civilian"
+	restriction_group_0004 = "Restrictions"
+	map_name = "Invasion of India"
+	name_1896 = "Calcutta"
+	name_1836 = "Colombo"
+}

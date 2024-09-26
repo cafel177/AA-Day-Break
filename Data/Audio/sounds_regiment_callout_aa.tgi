@@ -1,0 +1,1760 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;--------------- REGIMENT CALLOUTS --------------- ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;; ------------------- GBR ----------------------- ;;
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_flame_attack
+	name = "#sounds_regiment_callout_aa_gbr_tank_flame_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankFlameAttack01.wav, Sounds/GBR/CallOuts/GBRTankFlameAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_flame_move
+	name = "#sounds_regiment_callout_aa_gbr_tank_flame_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankFlameMove01.wav, Sounds/GBR/CallOuts/GBRTankFlameMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_flame_select
+	name = "#sounds_regiment_callout_aa_gbr_tank_flame_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankFlameSelect01.wav, Sounds/GBR/CallOuts/GBRTankFlameSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_engineer_attack
+	name = "#sounds_regiment_callout_aa_gbr_engineer_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBREngineerAttack01.wav, Sounds/GBR/CallOuts/GBREngineerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_engineer_move
+	name = "#sounds_regiment_callout_aa_gbr_engineer_move_name"
+
+	files = Sounds/GBR/CallOuts/GBREngineerMove01.wav, Sounds/GBR/CallOuts/GBREngineerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_engineer_select
+	name = "#sounds_regiment_callout_aa_gbr_engineer_select_name"
+
+	files = Sounds/GBR/CallOuts/GBREngineerSelect01.wav, Sounds/GBR/CallOuts/GBREngineerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_aa_attack
+	name = "#sounds_regiment_callout_aa_gbr_aa_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRAAAttack01.wav, Sounds/GBR/CallOuts/GBRAAAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_aa_move
+	name = "#sounds_regiment_callout_aa_gbr_aa_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRAAMove01.wav, Sounds/GBR/CallOuts/GBRAAMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_aa_select
+	name = "#sounds_regiment_callout_aa_gbr_aa_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRAASelect01.wav, Sounds/GBR/CallOuts/GBRAASelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_artillery_attack
+	name = "#sounds_regiment_callout_aa_gbr_artillery_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRArtilleryAttack01.wav, Sounds/GBR/CallOuts/GBRArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_artillery_move
+	name = "#sounds_regiment_callout_aa_gbr_artillery_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRArtilleryMove01.wav, Sounds/GBR/CallOuts/GBRArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_artillery_select
+	name = "#sounds_regiment_callout_aa_gbr_artillery_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRArtillerySelect01.wav, Sounds/GBR/CallOuts/GBRArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_halftrack_attack
+	name = "#sounds_regiment_callout_aa_gbr_halftrack_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRHalftrackAttack01.wav, Sounds/GBR/CallOuts/GBRHalftrackAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_halftrack_move
+	name = "#sounds_regiment_callout_aa_gbr_halftrack_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRHalftrackMove01.wav, Sounds/GBR/CallOuts/GBRHalftrackMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_halftrack_select
+	name = "#sounds_regiment_callout_aa_gbr_halftrack_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRHalftrackSelect01.wav, Sounds/GBR/CallOuts/GBRHalftrackSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_artillery_attack
+	name = "#sounds_regiment_callout_aa_gbr_infantry_artillery_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryArtilleryAttack01.wav, Sounds/GBR/CallOuts/GBRInfantryArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_artillery_move
+	name = "#sounds_regiment_callout_aa_gbr_infantry_artillery_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryArtilleryMove01.wav, Sounds/GBR/CallOuts/GBRInfantryArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_artillery_select
+	name = "#sounds_regiment_callout_aa_gbr_infantry_artillery_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryArtillerySelect01.wav, Sounds/GBR/CallOuts/GBRInfantryArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_attack
+	name = "#sounds_regiment_callout_aa_gbr_infantry_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryAttack01.wav, Sounds/GBR/CallOuts/GBRInfantryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_move
+	name = "#sounds_regiment_callout_aa_gbr_infantry_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryMove01.wav, Sounds/GBR/CallOuts/GBRInfantryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_select
+	name = "#sounds_regiment_callout_aa_gbr_infantry_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantrySelect01.wav, Sounds/GBR/CallOuts/GBRInfantrySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_at_attack
+	name = "#sounds_regiment_callout_aa_gbr_infantry_at_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryATAttack01.wav, Sounds/GBR/CallOuts/GBRInfantryATAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_at_move
+	name = "#sounds_regiment_callout_aa_gbr_infantry_at_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryATMove01.wav, Sounds/GBR/CallOuts/GBRInfantryATMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_infantry_at_select
+	name = "#sounds_regiment_callout_aa_gbr_infantry_at_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRInfantryATSelect01.wav, Sounds/GBR/CallOuts/GBRInfantryATSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_paratrooper_attack
+	name = "#sounds_regiment_callout_aa_gbr_paratrooper_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRParatrooperAttack01.wav, Sounds/GBR/CallOuts/GBRParatrooperAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_paratrooper_move
+	name = "#sounds_regiment_callout_aa_gbr_paratrooper_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRParatrooperMove01.wav, Sounds/GBR/CallOuts/GBRParatrooperMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_paratrooper_select
+	name = "#sounds_regiment_callout_aa_gbr_paratrooper_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRParatrooperSelect01.wav, Sounds/GBR/CallOuts/GBRParatrooperSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_recon_attack
+	name = "#sounds_regiment_callout_aa_gbr_recon_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRReconAttack01.wav, Sounds/GBR/CallOuts/GBRReconAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_recon_move
+	name = "#sounds_regiment_callout_aa_gbr_recon_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRReconMove01.wav, Sounds/GBR/CallOuts/GBRReconMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_recon_select
+	name = "#sounds_regiment_callout_aa_gbr_recon_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRReconSelect01.wav, Sounds/GBR/CallOuts/GBRReconSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_heavy_attack
+	name = "#sounds_regiment_callout_aa_gbr_tank_heavy_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankHeavyAttack01.wav, Sounds/GBR/CallOuts/GBRTankHeavyAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_heavy_move
+	name = "#sounds_regiment_callout_aa_gbr_tank_heavy_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankHeavyMove01.wav, Sounds/GBR/CallOuts/GBRTankHeavyMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_heavy_select
+	name = "#sounds_regiment_callout_aa_gbr_tank_heavy_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankHeavySelect01.wav, Sounds/GBR/CallOuts/GBRTankHeavySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_light_attack
+	name = "#sounds_regiment_callout_aa_gbr_tank_light_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankLightAttack01.wav, Sounds/GBR/CallOuts/GBRTankLightAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_light_move
+	name = "#sounds_regiment_callout_aa_gbr_tank_light_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankLightMove01.wav, Sounds/GBR/CallOuts/GBRTankLightMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_light_select
+	name = "#sounds_regiment_callout_aa_gbr_tank_light_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankLightSelect01.wav, Sounds/GBR/CallOuts/GBRTankLightSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_medium_attack
+	name = "#sounds_regiment_callout_aa_gbr_tank_medium_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankMediumAttack01.wav, Sounds/GBR/CallOuts/GBRTankMediumAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_medium_move
+	name = "#sounds_regiment_callout_aa_gbr_tank_medium_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankMediumMove01.wav, Sounds/GBR/CallOuts/GBRTankMediumMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_medium_select
+	name = "#sounds_regiment_callout_aa_gbr_tank_medium_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankMediumSelect01.wav, Sounds/GBR/CallOuts/GBRTankMediumSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_destroyer_attack
+	name = "#sounds_regiment_callout_aa_gbr_tank_destroyer_attack_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankDestroyerAttack01.wav, Sounds/GBR/CallOuts/GBRTankDestroyerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_destroyer_move
+	name = "#sounds_regiment_callout_aa_gbr_tank_destroyer_move_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankDestroyerMove01.wav, Sounds/GBR/CallOuts/GBRTankDestroyerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_tank_destroyer_select
+	name = "#sounds_regiment_callout_aa_gbr_tank_destroyer_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTankDestroyerSelect01.wav, Sounds/GBR/CallOuts/GBRTankDestroyerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = gbr_truck_select
+	name = "#sounds_regiment_callout_aa_gbr_truck_select_name"
+
+	files = Sounds/GBR/CallOuts/GBRTruckSelect01.wav, Sounds/GBR/CallOuts/GBRTruckSelect02.wav
+}
+
+;; ------------------- GER ----------------------- ;;
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_king_tiger_attack
+	name = "#sounds_regiment_callout_aa_ger_tank_king_tiger_attack_name"
+
+	files = Sounds/GER/CallOuts/GERKingTigerAttack01.wav, Sounds/GER/CallOuts/GERKingTigerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_king_tiger_move
+	name = "#sounds_regiment_callout_aa_ger_tank_king_tiger_move_name"
+
+	files = Sounds/GER/CallOuts/GERKingTigerMove01.wav, Sounds/GER/CallOuts/GERKingTigerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_king_tiger_select
+	name = "#sounds_regiment_callout_aa_ger_tank_king_tiger_select_name"
+
+	files = Sounds/GER/CallOuts/GERKingTigerSelect01.wav, Sounds/GER/CallOuts/GERKingTigerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_engineer_attack
+	name = "#sounds_regiment_callout_aa_ger_engineer_attack_name"
+
+	files = Sounds/GER/CallOuts/GEREngineerAttack01.wav, Sounds/GER/CallOuts/GEREngineerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_engineer_move
+	name = "#sounds_regiment_callout_aa_ger_engineer_move_name"
+
+	files = Sounds/GER/CallOuts/GEREngineerMove01.wav, Sounds/GER/CallOuts/GEREngineerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_engineer_select
+	name = "#sounds_regiment_callout_aa_ger_engineer_select_name"
+
+	files = Sounds/GER/CallOuts/GEREngineerSelect01.wav, Sounds/GER/CallOuts/GEREngineerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_aa_attack
+	name = "#sounds_regiment_callout_aa_ger_aa_attack_name"
+
+	files = Sounds/GER/CallOuts/GERAAAttack01.wav, Sounds/GER/CallOuts/GERAAAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_aa_move
+	name = "#sounds_regiment_callout_aa_ger_aa_move_name"
+
+	files = Sounds/GER/CallOuts/GERAAMove01.wav, Sounds/GER/CallOuts/GERAAMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_aa_select
+	name = "#sounds_regiment_callout_aa_ger_aa_select_name"
+
+	files = Sounds/GER/CallOuts/GERAASelect01.wav, Sounds/GER/CallOuts/GERAASelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_artillery_attack
+	name = "#sounds_regiment_callout_aa_ger_artillery_attack_name"
+
+	files = Sounds/GER/CallOuts/GERArtilleryAttack01.wav, Sounds/GER/CallOuts/GERArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_artillery_move
+	name = "#sounds_regiment_callout_aa_ger_artillery_move_name"
+
+	files = Sounds/GER/CallOuts/GERArtilleryMove01.wav, Sounds/GER/CallOuts/GERArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_artillery_select
+	name = "#sounds_regiment_callout_aa_ger_artillery_select_name"
+
+	files = Sounds/GER/CallOuts/GERArtillerySelect01.wav, Sounds/GER/CallOuts/GERArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_halftrack_attack
+	name = "#sounds_regiment_callout_aa_ger_halftrack_attack_name"
+
+	files = Sounds/GER/CallOuts/GERHalftrackAttack01.wav, Sounds/GER/CallOuts/GERHalftrackAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_halftrack_move
+	name = "#sounds_regiment_callout_aa_ger_halftrack_move_name"
+
+	files = Sounds/GER/CallOuts/GERHalftrackMove01.wav, Sounds/GER/CallOuts/GERHalftrackMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_halftrack_select
+	name = "#sounds_regiment_callout_aa_ger_halftrack_select_name"
+
+	files = Sounds/GER/CallOuts/GERHalftrackSelect01.wav, Sounds/GER/CallOuts/GERHalftrackSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_artillery_attack
+	name = "#sounds_regiment_callout_aa_ger_infantry_artillery_attack_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryArtilleryAttack01.wav, Sounds/GER/CallOuts/GERInfantryArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_artillery_move
+	name = "#sounds_regiment_callout_aa_ger_infantry_artillery_move_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryArtilleryMove01.wav, Sounds/GER/CallOuts/GERInfantryArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_artillery_select
+	name = "#sounds_regiment_callout_aa_ger_infantry_artillery_select_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryArtillerySelect01.wav, Sounds/GER/CallOuts/GERInfantryArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_attack
+	name = "#sounds_regiment_callout_aa_ger_infantry_attack_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryAttack01.wav, Sounds/GER/CallOuts/GERInfantryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_move
+	name = "#sounds_regiment_callout_aa_ger_infantry_move_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryMove01.wav, Sounds/GER/CallOuts/GERInfantryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_select
+	name = "#sounds_regiment_callout_aa_ger_infantry_select_name"
+
+	files = Sounds/GER/CallOuts/GERInfantrySelect01.wav, Sounds/GER/CallOuts/GERInfantrySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_at_attack
+	name = "#sounds_regiment_callout_aa_ger_infantry_at_attack_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryATAttack01.wav, Sounds/GER/CallOuts/GERInfantryATAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_at_move
+	name = "#sounds_regiment_callout_aa_ger_infantry_at_move_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryATMove01.wav, Sounds/GER/CallOuts/GERInfantryATMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_infantry_at_select
+	name = "#sounds_regiment_callout_aa_ger_infantry_at_select_name"
+
+	files = Sounds/GER/CallOuts/GERInfantryATSelect01.wav, Sounds/GER/CallOuts/GERInfantryATSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_paratrooper_attack
+	name = "#sounds_regiment_callout_aa_ger_paratrooper_attack_name"
+
+	files = Sounds/GER/CallOuts/GERParatrooperAttack01.wav, Sounds/GER/CallOuts/GERParatrooperAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_paratrooper_move
+	name = "#sounds_regiment_callout_aa_ger_paratrooper_move_name"
+
+	files = Sounds/GER/CallOuts/GERParatrooperMove01.wav, Sounds/GER/CallOuts/GERParatrooperMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_paratrooper_select
+	name = "#sounds_regiment_callout_aa_ger_paratrooper_select_name"
+
+	files = Sounds/GER/CallOuts/GERParatrooperSelect01.wav, Sounds/GER/CallOuts/GERParatrooperSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_recon_attack
+	name = "#sounds_regiment_callout_aa_ger_recon_attack_name"
+
+	files = Sounds/GER/CallOuts/GERReconAttack01.wav, Sounds/GER/CallOuts/GERReconAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_recon_move
+	name = "#sounds_regiment_callout_aa_ger_recon_move_name"
+
+	files = Sounds/GER/CallOuts/GERReconMove01.wav, Sounds/GER/CallOuts/GERReconMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_recon_select
+	name = "#sounds_regiment_callout_aa_ger_recon_select_name"
+
+	files = Sounds/GER/CallOuts/GERReconSelect01.wav, Sounds/GER/CallOuts/GERReconSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_heavy_attack
+	name = "#sounds_regiment_callout_aa_ger_tank_heavy_attack_name"
+
+	files = Sounds/GER/CallOuts/GERTankHeavyAttack01.wav, Sounds/GER/CallOuts/GERTankHeavyAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_heavy_move
+	name = "#sounds_regiment_callout_aa_ger_tank_heavy_move_name"
+
+	files = Sounds/GER/CallOuts/GERTankHeavyMove01.wav, Sounds/GER/CallOuts/GERTankHeavyMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_heavy_select
+	name = "#sounds_regiment_callout_aa_ger_tank_heavy_select_name"
+
+	files = Sounds/GER/CallOuts/GERTankHeavySelect01.wav, Sounds/GER/CallOuts/GERTankHeavySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_light_attack
+	name = "#sounds_regiment_callout_aa_ger_tank_light_attack_name"
+
+	files = Sounds/GER/CallOuts/GERTankLightAttack01.wav, Sounds/GER/CallOuts/GERTankLightAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_light_move
+	name = "#sounds_regiment_callout_aa_ger_tank_light_move_name"
+
+	files = Sounds/GER/CallOuts/GERTankLightMove01.wav, Sounds/GER/CallOuts/GERTankLightMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_light_select
+	name = "#sounds_regiment_callout_aa_ger_tank_light_select_name"
+
+	files = Sounds/GER/CallOuts/GERTankLightSelect01.wav, Sounds/GER/CallOuts/GERTankLightSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_medium_attack
+	name = "#sounds_regiment_callout_aa_ger_tank_medium_attack_name"
+
+	files = Sounds/GER/CallOuts/GERTankMediumAttack01.wav, Sounds/GER/CallOuts/GERTankMediumAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_medium_move
+	name = "#sounds_regiment_callout_aa_ger_tank_medium_move_name"
+
+	files = Sounds/GER/CallOuts/GERTankMediumMove01.wav, Sounds/GER/CallOuts/GERTankMediumMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_medium_select
+	name = "#sounds_regiment_callout_aa_ger_tank_medium_select_name"
+
+	files = Sounds/GER/CallOuts/GERTankMediumSelect01.wav, Sounds/GER/CallOuts/GERTankMediumSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_destroyer_attack
+	name = "#sounds_regiment_callout_aa_ger_tank_destroyer_attack_name"
+
+	files = Sounds/GER/CallOuts/GERTankDestroyerAttack01.wav, Sounds/GER/CallOuts/GERTankDestroyerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_destroyer_move
+	name = "#sounds_regiment_callout_aa_ger_tank_destroyer_move_name"
+
+	files = Sounds/GER/CallOuts/GERTankDestroyerMove01.wav, Sounds/GER/CallOuts/GERTankDestroyerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_tank_destroyer_select
+	name = "#sounds_regiment_callout_aa_ger_tank_destroyer_select_name"
+
+	files = Sounds/GER/CallOuts/GERTankDestroyerSelect01.wav, Sounds/GER/CallOuts/GERTankDestroyerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = ger_truck_select
+	name = "#sounds_regiment_callout_aa_ger_truck_select_name"
+
+	files = Sounds/GER/CallOuts/GERTruckSelect01.wav, Sounds/GER/CallOuts/GERTruckSelect02.wav
+}
+
+;; ------------------- JPN ----------------------- ;;
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tankette_attack
+	name = "#sounds_regiment_callout_aa_jpn_tankette_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNTanketteAttack01.wav, Sounds/JPN/CallOuts/JPNTanketteAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tankette_move
+	name = "#sounds_regiment_callout_aa_jpn_tankette_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNTanketteMove01.wav, Sounds/JPN/CallOuts/JPNTanketteMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tankette_select
+	name = "#sounds_regiment_callout_aa_jpn_tankette_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNTanketteSelect01.wav, Sounds/JPN/CallOuts/JPNTanketteSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_banzai_attack
+	name = "#sounds_regiment_callout_aa_jpn_infantry_banzai_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryBanzaiAttack01.wav, Sounds/JPN/CallOuts/JPNInfantryBanzaiAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_banzai_move
+	name = "#sounds_regiment_callout_aa_jpn_infantry_banzai_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryBanzaiMove01.wav, Sounds/JPN/CallOuts/JPNInfantryBanzaiMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_banzai_select
+	name = "#sounds_regiment_callout_aa_jpn_infantry_banzai_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryBanzaiSelect01.wav, Sounds/JPN/CallOuts/JPNInfantryBanzaiSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_engineer_attack
+	name = "#sounds_regiment_callout_aa_jpn_engineer_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNEngineerAttack01.wav, Sounds/JPN/CallOuts/JPNEngineerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_engineer_move
+	name = "#sounds_regiment_callout_aa_jpn_engineer_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNEngineerMove01.wav, Sounds/JPN/CallOuts/JPNEngineerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_engineer_select
+	name = "#sounds_regiment_callout_aa_jpn_engineer_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNEngineerSelect01.wav, Sounds/JPN/CallOuts/JPNEngineerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_aa_attack
+	name = "#sounds_regiment_callout_aa_jpn_aa_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNAAAttack01.wav, Sounds/JPN/CallOuts/JPNAAAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_aa_move
+	name = "#sounds_regiment_callout_aa_jpn_aa_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNAAMove01.wav, Sounds/JPN/CallOuts/JPNAAMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_aa_select
+	name = "#sounds_regiment_callout_aa_jpn_aa_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNAASelect01.wav, Sounds/JPN/CallOuts/JPNAASelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_artillery_attack
+	name = "#sounds_regiment_callout_aa_jpn_artillery_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNArtilleryAttack01.wav, Sounds/JPN/CallOuts/JPNArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_artillery_move
+	name = "#sounds_regiment_callout_aa_jpn_artillery_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNArtilleryMove01.wav, Sounds/JPN/CallOuts/JPNArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_artillery_select
+	name = "#sounds_regiment_callout_aa_jpn_artillery_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNArtillerySelect01.wav, Sounds/JPN/CallOuts/JPNArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_halftrack_attack
+	name = "#sounds_regiment_callout_aa_jpn_halftrack_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNHalftrackAttack01.wav, Sounds/JPN/CallOuts/JPNHalftrackAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_halftrack_move
+	name = "#sounds_regiment_callout_aa_jpn_halftrack_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNHalftrackMove01.wav, Sounds/JPN/CallOuts/JPNHalftrackMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_halftrack_select
+	name = "#sounds_regiment_callout_aa_jpn_halftrack_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNHalftrackSelect01.wav, Sounds/JPN/CallOuts/JPNHalftrackSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_artillery_attack
+	name = "#sounds_regiment_callout_aa_jpn_infantry_artillery_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryArtilleryAttack01.wav, Sounds/JPN/CallOuts/JPNInfantryArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_artillery_move
+	name = "#sounds_regiment_callout_aa_jpn_infantry_artillery_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryArtilleryMove01.wav, Sounds/JPN/CallOuts/JPNInfantryArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_artillery_select
+	name = "#sounds_regiment_callout_aa_jpn_infantry_artillery_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryArtillerySelect01.wav, Sounds/JPN/CallOuts/JPNInfantryArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_attack
+	name = "#sounds_regiment_callout_aa_jpn_infantry_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryAttack01.wav, Sounds/JPN/CallOuts/JPNInfantryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_move
+	name = "#sounds_regiment_callout_aa_jpn_infantry_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryMove01.wav, Sounds/JPN/CallOuts/JPNInfantryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_select
+	name = "#sounds_regiment_callout_aa_jpn_infantry_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantrySelect01.wav, Sounds/JPN/CallOuts/JPNInfantrySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_at_attack
+	name = "#sounds_regiment_callout_aa_jpn_infantry_at_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryATAttack01.wav, Sounds/JPN/CallOuts/JPNInfantryATAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_at_move
+	name = "#sounds_regiment_callout_aa_jpn_infantry_at_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryATMove01.wav, Sounds/JPN/CallOuts/JPNInfantryATMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_infantry_at_select
+	name = "#sounds_regiment_callout_aa_jpn_infantry_at_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNInfantryATSelect01.wav, Sounds/JPN/CallOuts/JPNInfantryATSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_paratrooper_attack
+	name = "#sounds_regiment_callout_aa_jpn_paratrooper_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNParatrooperAttack01.wav, Sounds/JPN/CallOuts/JPNParatrooperAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_paratrooper_move
+	name = "#sounds_regiment_callout_aa_jpn_paratrooper_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNParatrooperMove01.wav, Sounds/JPN/CallOuts/JPNParatrooperMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_paratrooper_select
+	name = "#sounds_regiment_callout_aa_jpn_paratrooper_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNParatrooperSelect01.wav, Sounds/JPN/CallOuts/JPNParatrooperSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_recon_attack
+	name = "#sounds_regiment_callout_aa_jpn_recon_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNReconAttack01.wav, Sounds/JPN/CallOuts/JPNReconAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_recon_move
+	name = "#sounds_regiment_callout_aa_jpn_recon_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNReconMove01.wav, Sounds/JPN/CallOuts/JPNReconMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_recon_select
+	name = "#sounds_regiment_callout_aa_jpn_recon_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNReconSelect01.wav, Sounds/JPN/CallOuts/JPNReconSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_light_attack
+	name = "#sounds_regiment_callout_aa_jpn_tank_light_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankLightAttack01.wav, Sounds/JPN/CallOuts/JPNTankLightAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_light_move
+	name = "#sounds_regiment_callout_aa_jpn_tank_light_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankLightMove01.wav, Sounds/JPN/CallOuts/JPNTankLightMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_light_select
+	name = "#sounds_regiment_callout_aa_jpn_tank_light_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankLightSelect01.wav, Sounds/JPN/CallOuts/JPNTankLightSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_medium_attack
+	name = "#sounds_regiment_callout_aa_jpn_tank_medium_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankMediumAttack01.wav, Sounds/JPN/CallOuts/JPNTankMediumAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_medium_move
+	name = "#sounds_regiment_callout_aa_jpn_tank_medium_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankMediumMove01.wav, Sounds/JPN/CallOuts/JPNTankMediumMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_medium_select
+	name = "#sounds_regiment_callout_aa_jpn_tank_medium_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankMediumSelect01.wav, Sounds/JPN/CallOuts/JPNTankMediumSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_destroyer_attack
+	name = "#sounds_regiment_callout_aa_jpn_tank_destroyer_attack_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankDestroyerAttack01.wav, Sounds/JPN/CallOuts/JPNTankDestroyerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_destroyer_move
+	name = "#sounds_regiment_callout_aa_jpn_tank_destroyer_move_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankDestroyerMove01.wav, Sounds/JPN/CallOuts/JPNTankDestroyerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_tank_destroyer_select
+	name = "#sounds_regiment_callout_aa_jpn_tank_destroyer_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNTankDestroyerSelect01.wav, Sounds/JPN/CallOuts/JPNTankDestroyerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = jpn_truck_select
+	name = "#sounds_regiment_callout_aa_jpn_truck_select_name"
+
+	files = Sounds/JPN/CallOuts/JPNTruckSelect01.wav, Sounds/JPN/CallOuts/JPNTruckSelect02.wav
+}
+
+;; ------------------- RUS ----------------------- ;;
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_rocket_truck_attack
+	name = "#sounds_regiment_callout_aa_rus_rocket_truck_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSRocketTruckAttack01.wav, Sounds/RUS/CallOuts/RUSRocketTruckAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_rocket_truck_move
+	name = "#sounds_regiment_callout_aa_rus_rocket_truck_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSRocketTruckMove01.wav, Sounds/RUS/CallOuts/RUSRocketTruckMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_rocket_truck_select
+	name = "#sounds_regiment_callout_aa_rus_rocket_truck_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSRocketTruckSelect01.wav, Sounds/RUS/CallOuts/RUSRocketTruckSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_conscript_attack
+	name = "#sounds_regiment_callout_aa_rus_conscript_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSConscriptAttack01.wav, Sounds/RUS/CallOuts/RUSConscriptAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_conscript_move
+	name = "#sounds_regiment_callout_aa_rus_conscript_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSConscriptMove01.wav, Sounds/RUS/CallOuts/RUSConscriptMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_conscript_select
+	name = "#sounds_regiment_callout_aa_rus_conscript_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSConscriptSelect01.wav, Sounds/RUS/CallOuts/RUSConscriptSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_engineer_attack
+	name = "#sounds_regiment_callout_aa_rus_engineer_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSEngineerAttack01.wav, Sounds/RUS/CallOuts/RUSEngineerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_engineer_move
+	name = "#sounds_regiment_callout_aa_rus_engineer_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSEngineerMove01.wav, Sounds/RUS/CallOuts/RUSEngineerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_engineer_select
+	name = "#sounds_regiment_callout_aa_rus_engineer_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSEngineerSelect01.wav, Sounds/RUS/CallOuts/RUSEngineerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_aa_attack
+	name = "#sounds_regiment_callout_aa_rus_aa_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSAAAttack01.wav, Sounds/RUS/CallOuts/RUSAAAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_aa_move
+	name = "#sounds_regiment_callout_aa_rus_aa_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSAAMove01.wav, Sounds/RUS/CallOuts/RUSAAMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_aa_select
+	name = "#sounds_regiment_callout_aa_rus_aa_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSAASelect01.wav, Sounds/RUS/CallOuts/RUSAASelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_artillery_attack
+	name = "#sounds_regiment_callout_aa_rus_artillery_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSArtilleryAttack01.wav, Sounds/RUS/CallOuts/RUSArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_artillery_move
+	name = "#sounds_regiment_callout_aa_rus_artillery_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSArtilleryMove01.wav, Sounds/RUS/CallOuts/RUSArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_artillery_select
+	name = "#sounds_regiment_callout_aa_rus_artillery_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSArtillerySelect01.wav, Sounds/RUS/CallOuts/RUSArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_halftrack_attack
+	name = "#sounds_regiment_callout_aa_rus_halftrack_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSHalftrackAttack01.wav, Sounds/RUS/CallOuts/RUSHalftrackAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_halftrack_move
+	name = "#sounds_regiment_callout_aa_rus_halftrack_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSHalftrackMove01.wav, Sounds/RUS/CallOuts/RUSHalftrackMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_halftrack_select
+	name = "#sounds_regiment_callout_aa_rus_halftrack_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSHalftrackSelect01.wav, Sounds/RUS/CallOuts/RUSHalftrackSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_artillery_attack
+	name = "#sounds_regiment_callout_aa_rus_infantry_artillery_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryArtilleryAttack01.wav, Sounds/RUS/CallOuts/RUSInfantryArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_artillery_move
+	name = "#sounds_regiment_callout_aa_rus_infantry_artillery_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryArtilleryMove01.wav, Sounds/RUS/CallOuts/RUSInfantryArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_artillery_select
+	name = "#sounds_regiment_callout_aa_rus_infantry_artillery_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryArtillerySelect01.wav, Sounds/RUS/CallOuts/RUSInfantryArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_attack
+	name = "#sounds_regiment_callout_aa_rus_infantry_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryAttack01.wav, Sounds/RUS/CallOuts/RUSInfantryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_move
+	name = "#sounds_regiment_callout_aa_rus_infantry_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryMove01.wav, Sounds/RUS/CallOuts/RUSInfantryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_select
+	name = "#sounds_regiment_callout_aa_rus_infantry_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantrySelect01.wav, Sounds/RUS/CallOuts/RUSInfantrySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_at_attack
+	name = "#sounds_regiment_callout_aa_rus_infantry_at_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryATAttack01.wav, Sounds/RUS/CallOuts/RUSInfantryATAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_at_move
+	name = "#sounds_regiment_callout_aa_rus_infantry_at_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryATMove01.wav, Sounds/RUS/CallOuts/RUSInfantryATMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_infantry_at_select
+	name = "#sounds_regiment_callout_aa_rus_infantry_at_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSInfantryATSelect01.wav, Sounds/RUS/CallOuts/RUSInfantryATSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_paratrooper_attack
+	name = "#sounds_regiment_callout_aa_rus_paratrooper_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSParatrooperAttack01.wav, Sounds/RUS/CallOuts/RUSParatrooperAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_paratrooper_move
+	name = "#sounds_regiment_callout_aa_rus_paratrooper_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSParatrooperMove01.wav, Sounds/RUS/CallOuts/RUSParatrooperMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_paratrooper_select
+	name = "#sounds_regiment_callout_aa_rus_paratrooper_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSParatrooperSelect01.wav, Sounds/RUS/CallOuts/RUSParatrooperSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_recon_attack
+	name = "#sounds_regiment_callout_aa_rus_recon_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSReconAttack01.wav, Sounds/RUS/CallOuts/RUSReconAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_recon_move
+	name = "#sounds_regiment_callout_aa_rus_recon_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSReconMove01.wav, Sounds/RUS/CallOuts/RUSReconMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_recon_select
+	name = "#sounds_regiment_callout_aa_rus_recon_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSReconSelect01.wav, Sounds/RUS/CallOuts/RUSReconSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_heavy_attack
+	name = "#sounds_regiment_callout_aa_rus_tank_heavy_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankHeavyAttack01.wav, Sounds/RUS/CallOuts/RUSTankHeavyAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_heavy_move
+	name = "#sounds_regiment_callout_aa_rus_tank_heavy_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankHeavyMove01.wav, Sounds/RUS/CallOuts/RUSTankHeavyMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_heavy_select
+	name = "#sounds_regiment_callout_aa_rus_tank_heavy_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankHeavySelect01.wav, Sounds/RUS/CallOuts/RUSTankHeavySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_light_attack
+	name = "#sounds_regiment_callout_aa_rus_tank_light_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankLightAttack01.wav, Sounds/RUS/CallOuts/RUSTankLightAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_light_move
+	name = "#sounds_regiment_callout_aa_rus_tank_light_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankLightMove01.wav, Sounds/RUS/CallOuts/RUSTankLightMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_light_select
+	name = "#sounds_regiment_callout_aa_rus_tank_light_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankLightSelect01.wav, Sounds/RUS/CallOuts/RUSTankLightSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_medium_attack
+	name = "#sounds_regiment_callout_aa_rus_tank_medium_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankMediumAttack01.wav, Sounds/RUS/CallOuts/RUSTankMediumAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_medium_move
+	name = "#sounds_regiment_callout_aa_rus_tank_medium_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankMediumMove01.wav, Sounds/RUS/CallOuts/RUSTankMediumMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_medium_select
+	name = "#sounds_regiment_callout_aa_rus_tank_medium_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankMediumSelect01.wav, Sounds/RUS/CallOuts/RUSTankMediumSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_destroyer_attack
+	name = "#sounds_regiment_callout_aa_rus_tank_destroyer_attack_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankDestroyerAttack01.wav, Sounds/RUS/CallOuts/RUSTankDestroyerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_destroyer_move
+	name = "#sounds_regiment_callout_aa_rus_tank_destroyer_move_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankDestroyerMove01.wav, Sounds/RUS/CallOuts/RUSTankDestroyerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_tank_destroyer_select
+	name = "#sounds_regiment_callout_aa_rus_tank_destroyer_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSTankDestroyerSelect01.wav, Sounds/RUS/CallOuts/RUSTankDestroyerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = rus_truck_select
+	name = "#sounds_regiment_callout_aa_rus_truck_select_name"
+
+	files = Sounds/RUS/CallOuts/RUSTruckSelect01.wav, Sounds/RUS/CallOuts/RUSTruckSelect02.wav
+}
+
+;; ------------------- USA ----------------------- ;;
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_flame_attack
+	name = "#sounds_regiment_callout_aa_usa_infantry_flame_attack_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryFlameAttack01.wav, Sounds/USA/CallOuts/USAInfantryFlameAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_flame_move
+	name = "#sounds_regiment_callout_aa_usa_infantry_flame_move_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryFlameMove01.wav, Sounds/USA/CallOuts/USAInfantryFlameMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_flame_select
+	name = "#sounds_regiment_callout_aa_usa_infantry_flame_select_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryFlameSelect01.wav, Sounds/USA/CallOuts/USAInfantryFlameSelect02.wav
+}
+
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_engineer_attack
+	name = "#sounds_regiment_callout_aa_usa_engineer_attack_name"
+
+	files = Sounds/USA/CallOuts/USAEngineerAttack01.wav, Sounds/USA/CallOuts/USAEngineerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_engineer_move
+	name = "#sounds_regiment_callout_aa_usa_engineer_move_name"
+
+	files = Sounds/USA/CallOuts/USAEngineerMove01.wav, Sounds/USA/CallOuts/USAEngineerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_engineer_select
+	name = "#sounds_regiment_callout_aa_usa_engineer_select_name"
+
+	files = Sounds/USA/CallOuts/USAEngineerSelect01.wav, Sounds/USA/CallOuts/USAEngineerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_aa_attack
+	name = "#sounds_regiment_callout_aa_usa_aa_attack_name"
+
+	files = Sounds/USA/CallOuts/USAAAAttack01.wav, Sounds/USA/CallOuts/USAAAAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_aa_move
+	name = "#sounds_regiment_callout_aa_usa_aa_move_name"
+
+	files = Sounds/USA/CallOuts/USAAAMove01.wav, Sounds/USA/CallOuts/USAAAMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_aa_select
+	name = "#sounds_regiment_callout_aa_usa_aa_select_name"
+
+	files = Sounds/USA/CallOuts/USAAASelect01.wav, Sounds/USA/CallOuts/USAAASelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_artillery_attack
+	name = "#sounds_regiment_callout_aa_usa_artillery_attack_name"
+
+	files = Sounds/USA/CallOuts/USAArtilleryAttack01.wav, Sounds/USA/CallOuts/USAArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_artillery_move
+	name = "#sounds_regiment_callout_aa_usa_artillery_move_name"
+
+	files = Sounds/USA/CallOuts/USAArtilleryMove01.wav, Sounds/USA/CallOuts/USAArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_artillery_select
+	name = "#sounds_regiment_callout_aa_usa_artillery_select_name"
+
+	files = Sounds/USA/CallOuts/USAArtillerySelect01.wav, Sounds/USA/CallOuts/USAArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_halftrack_attack
+	name = "#sounds_regiment_callout_aa_usa_halftrack_attack_name"
+
+	files = Sounds/USA/CallOuts/USAHalftrackAttack01.wav, Sounds/USA/CallOuts/USAHalftrackAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_halftrack_move
+	name = "#sounds_regiment_callout_aa_usa_halftrack_move_name"
+
+	files = Sounds/USA/CallOuts/USAHalftrackMove01.wav, Sounds/USA/CallOuts/USAHalftrackMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_halftrack_select
+	name = "#sounds_regiment_callout_aa_usa_halftrack_select_name"
+
+	files = Sounds/USA/CallOuts/USAHalftrackSelect01.wav, Sounds/USA/CallOuts/USAHalftrackSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_artillery_attack
+	name = "#sounds_regiment_callout_aa_usa_infantry_artillery_attack_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryArtilleryAttack01.wav, Sounds/USA/CallOuts/USAInfantryArtilleryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_artillery_move
+	name = "#sounds_regiment_callout_aa_usa_infantry_artillery_move_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryArtilleryMove01.wav, Sounds/USA/CallOuts/USAInfantryArtilleryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_artillery_select
+	name = "#sounds_regiment_callout_aa_usa_infantry_artillery_select_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryArtillerySelect01.wav, Sounds/USA/CallOuts/USAInfantryArtillerySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_attack
+	name = "#sounds_regiment_callout_aa_usa_infantry_attack_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryAttack01.wav, Sounds/USA/CallOuts/USAInfantryAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_move
+	name = "#sounds_regiment_callout_aa_usa_infantry_move_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryMove01.wav, Sounds/USA/CallOuts/USAInfantryMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_select
+	name = "#sounds_regiment_callout_aa_usa_infantry_select_name"
+
+	files = Sounds/USA/CallOuts/USAInfantrySelect01.wav, Sounds/USA/CallOuts/USAInfantrySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_at_attack
+	name = "#sounds_regiment_callout_aa_usa_infantry_at_attack_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryATAttack01.wav, Sounds/USA/CallOuts/USAInfantryATAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_at_move
+	name = "#sounds_regiment_callout_aa_usa_infantry_at_move_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryATMove01.wav, Sounds/USA/CallOuts/USAInfantryATMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_infantry_at_select
+	name = "#sounds_regiment_callout_aa_usa_infantry_at_select_name"
+
+	files = Sounds/USA/CallOuts/USAInfantryATSelect01.wav, Sounds/USA/CallOuts/USAInfantryATSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_paratrooper_attack
+	name = "#sounds_regiment_callout_aa_usa_paratrooper_attack_name"
+
+	files = Sounds/USA/CallOuts/USAParatrooperAttack01.wav, Sounds/USA/CallOuts/USAParatrooperAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_paratrooper_move
+	name = "#sounds_regiment_callout_aa_usa_paratrooper_move_name"
+
+	files = Sounds/USA/CallOuts/USAParatrooperMove01.wav, Sounds/USA/CallOuts/USAParatrooperMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_paratrooper_select
+	name = "#sounds_regiment_callout_aa_usa_paratrooper_select_name"
+
+	files = Sounds/USA/CallOuts/USAParatrooperSelect01.wav, Sounds/USA/CallOuts/USAParatrooperSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_recon_attack
+	name = "#sounds_regiment_callout_aa_usa_recon_attack_name"
+
+	files = Sounds/USA/CallOuts/USAReconAttack01.wav, Sounds/USA/CallOuts/USAReconAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_recon_move
+	name = "#sounds_regiment_callout_aa_usa_recon_move_name"
+
+	files = Sounds/USA/CallOuts/USAReconMove01.wav, Sounds/USA/CallOuts/USAReconMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_recon_select
+	name = "#sounds_regiment_callout_aa_usa_recon_select_name"
+
+	files = Sounds/USA/CallOuts/USAReconSelect01.wav, Sounds/USA/CallOuts/USAReconSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_heavy_attack
+	name = "#sounds_regiment_callout_aa_usa_tank_heavy_attack_name"
+
+	files = Sounds/USA/CallOuts/USATankHeavyAttack01.wav, Sounds/USA/CallOuts/USATankHeavyAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_heavy_move
+	name = "#sounds_regiment_callout_aa_usa_tank_heavy_move_name"
+
+	files = Sounds/USA/CallOuts/USATankHeavyMove01.wav, Sounds/USA/CallOuts/USATankHeavyMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_heavy_select
+	name = "#sounds_regiment_callout_aa_usa_tank_heavy_select_name"
+
+	files = Sounds/USA/CallOuts/USATankHeavySelect01.wav, Sounds/USA/CallOuts/USATankHeavySelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_light_attack
+	name = "#sounds_regiment_callout_aa_usa_tank_light_attack_name"
+
+	files = Sounds/USA/CallOuts/USATankLightAttack01.wav, Sounds/USA/CallOuts/USATankLightAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_light_move
+	name = "#sounds_regiment_callout_aa_usa_tank_light_move_name"
+
+	files = Sounds/USA/CallOuts/USATankLightMove01.wav, Sounds/USA/CallOuts/USATankLightMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_light_select
+	name = "#sounds_regiment_callout_aa_usa_tank_light_select_name"
+
+	files = Sounds/USA/CallOuts/USATankLightSelect01.wav, Sounds/USA/CallOuts/USATankLightSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_medium_attack
+	name = "#sounds_regiment_callout_aa_usa_tank_medium_attack_name"
+
+	files = Sounds/USA/CallOuts/USATankMediumAttack01.wav, Sounds/USA/CallOuts/USATankMediumAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_medium_move
+	name = "#sounds_regiment_callout_aa_usa_tank_medium_move_name"
+
+	files = Sounds/USA/CallOuts/USATankMediumMove01.wav, Sounds/USA/CallOuts/USATankMediumMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_medium_select
+	name = "#sounds_regiment_callout_aa_usa_tank_medium_select_name"
+
+	files = Sounds/USA/CallOuts/USATankMediumSelect01.wav, Sounds/USA/CallOuts/USATankMediumSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_destroyer_attack
+	name = "#sounds_regiment_callout_aa_usa_tank_destroyer_attack_name"
+
+	files = Sounds/USA/CallOuts/USATankDestroyerAttack01.wav, Sounds/USA/CallOuts/USATankDestroyerAttack02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_destroyer_move
+	name = "#sounds_regiment_callout_aa_usa_tank_destroyer_move_name"
+
+	files = Sounds/USA/CallOuts/USATankDestroyerMove01.wav, Sounds/USA/CallOuts/USATankDestroyerMove02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_tank_destroyer_select
+	name = "#sounds_regiment_callout_aa_usa_tank_destroyer_select_name"
+
+	files = Sounds/USA/CallOuts/USATankDestroyerSelect01.wav, Sounds/USA/CallOuts/USATankDestroyerSelect02.wav
+}
+
+[Audio Template=AudioCallout]
+{
+	IDS = usa_truck_select
+	name = "#sounds_regiment_callout_aa_usa_truck_select_name"
+
+	files = Sounds/USA/CallOuts/USATruckSelect01.wav, Sounds/USA/CallOuts/USATruckSelect02.wav
+}

@@ -1,0 +1,30 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Defense of Normandy"
+
+	name_8817 = "Bayeux"
+	name_8792 = "Ste. Mere Eglise"
+	independent_4 = "Civilian"
+	independent_3 = "Cutscene Kingdom"
+	kingdom_7 = "Rommel's Force"
+	kingdom_6 = "Crocker's Force"
+	kingdom_5 = "Gerow's Force"
+	restriction_group_0001 = "Restrictions"
+	name_8786 = "Montebourg"
+	map_name = "Defense of Normandy"
+	kingdom_2 = "Bucknall's Force"
+	trigger_81_element_6 = "UPDATE : The D-Day landings will begin in 3 minutes."
+	kingdom_1 = "Collins' Force"
+	kingdom_0 = "Rundstedt's Force"
+	trigger_102_element_5 = "UPDATE : The D-Day landings have begun!"
+	objective_20 = "1. Hold at least 2 major cities for 30 minutes."
+	objective_19 = "6. Hold Caen"
+	name_8824 = "Caen"
+	objective_18 = "5. Hold Bayeux"
+	objective_17 = "4. Hold Carentan"
+	name_8798 = "Carentan"
+	objective_16 = "3. Hold St. Mere Eglise"
+	objective_15 = "2. Hold Montebourg"
+	map_description = "The once mighty Red Army is no longer a threat to Germany.  Knowing that the Allies must open a second front to save Russia from sure defeat, the German military has anticipated a massive landing on the coast of France.  Rommel's forces have raced across Europe to provide important support for this crucial battle.  Repel the Allied assault and assure control of Europe."
+}

@@ -1,0 +1,14 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_russia.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_russia.tgi"
+
+	mg_rmc_russia_name = "Russia"
+	mg_rmc_russia_description = "Russia"
+	mg_rmc_russia_village_russia_name = "Villages"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_russia_moscow_name = "Moscow"
+}

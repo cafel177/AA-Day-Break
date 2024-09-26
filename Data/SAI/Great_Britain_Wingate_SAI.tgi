@@ -1,0 +1,39 @@
+[Ego template = InfantryLowIncomeEgo]
+{
+	IDS										= wingate_low_income_ego
+	name									= "#Great_Britain_Wingate_SAI_wingate_low_income_ego_name"
+} ;; LowIncomeEgo
+
+[Ego template = InfantryMainGameEgo]
+{
+	IDS										= wingate_main_game_ego
+	name									= "#Great_Britain_Wingate_SAI_wingate_main_game_ego_name"
+} ;; MainGameEgo
+
+[Ego template = InfantryEndGameEgo]
+{
+	IDS										= wingate_end_game_ego
+	name									= "#Great_Britain_Wingate_SAI_wingate_end_game_ego_name"
+} ;; EndGameEgo
+
+[SAI template = SAI]
+{
+	IDS										= wingate_sai
+	name									= "#Great_Britain_Wingate_SAI_wingate_sai_name"
+	description								= "#Great_Britain_Wingate_SAI_wingate_sai_description"
+	difficulty_level						= sai_difficulty_level_HARD
+
+	initial_ego								= wingate_low_income_ego
+
+	[Ego]
+	IDS										= wingate_main_game_ego
+
+	[Ego]
+	IDS										= wingate_end_game_ego
+
+	[Nation]
+	IDS										= nation_gbr
+	
+	[Faction]
+	ids										= wingate
+} ;; gbr SAI

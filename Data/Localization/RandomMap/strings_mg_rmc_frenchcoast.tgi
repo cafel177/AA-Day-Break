@@ -1,0 +1,14 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_frenchcoast.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_frenchcoast.tgi"
+
+	mg_rmc_frenchcoast_name = "French Coast"
+	mg_rmc_frenchcoast_description = "French Coast"
+	mg_rmc_frenchcoast_bunkers_coastline_1_name = "Coastline Bunkers 1"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_frenchcoast_village_frenchcoast_name = "Villages"
+}

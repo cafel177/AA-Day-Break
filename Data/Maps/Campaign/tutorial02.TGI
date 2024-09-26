@@ -1,0 +1,30 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Tutorial: Mission 2"
+
+	objective_12 = "8. Land Infantry on the beach."
+	objective_11 = "6. Repair the Supply Depot."
+	objective_10 = "2. Recon the city of Veranduth."
+	independent_3 = "Civilian"
+	restriction_group_0002 = "United State Restrictions"
+	map_name = "Tutorial: Mission 2"
+	objective_9 = "5. Build a bunker."
+	objective_8 = "4. Send airborne infantry to capture the city of Veranduth"
+	trigger_64_element_3 = "HINT: Artillery Bunkers are effective against large groups of attackers."
+	kingdom_1 = "Germany"
+	kingdom_0 = "United States"
+	trigger_63_element_3 = "HINT: Machine-gun bunkers are effective against infantry."
+	objective_5 = "1. Chain supply to your Infantry Division HQ."
+	trigger_106_element_1 = "HINT: You can also chain together the supply zones of your Division HQs and Depots to extend supply from your Corps HQs and cities."
+	trigger_102_element_4 = "HINT: You must unpack the Supply Depot within the supply zone (the green line surrounding your Corps HQ)."
+	objective_17 = "7. Destroy coastal bunker."
+	objective_16 = "3. Destroy bunker occupying city."
+	objective_15 = "Complete tutorial."
+	name_8130 = "1st Airborne Division HQ"
+	trigger_65_element_3 = "Anti-aircraft bunkers are very important for defending against airplanes."
+	map_description = "In the second tutorial, you learn about supply zones, airfields, paratroopers, capturing cities, engineers, battleships, and beach landings."
+	name_4173 = "Veranduth"
+	trigger_31_element_2 = "HINT: Cities under your control also provide a primary source of supply."
+	objective_13 = "9. Unpack a Corps HQ on the beachhead."
+}

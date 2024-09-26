@@ -1,0 +1,14 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Invasion of Australia"
+
+	name_3905 = "Brisbane"
+	name_3915 = "Cairns"
+	kingdom_0 = "Yamamoto's Force"
+	map_description = "The American fleet lies at the bottom of the sea near Pearl Harbor, and the Pacific is ripe for conquest.  The Japanese have conquered New Guinea, and are prepared to use it as the staging ground for a massive invasion of Australia.  Such a victory will leave the Allies without a staging ground in the South Pacific."
+	map_name = "Invasion of Australia"
+	independent_1 = "Civilian"
+	objective_0 = "1. Destroy all Australian Forces"
+	kingdom_2 = "Mountbatten's Force"
+}

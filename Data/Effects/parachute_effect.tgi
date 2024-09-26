@@ -1,0 +1,50 @@
+[VFX Template=AAVFXModelTemporary]
+{
+	IDS = parachute_open
+	name = "#parachute_effect_parachute_open_name"
+	model = USAParachute/USAParachuteOpen.nif
+	critical = true
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = parachute_travel
+	name = "#parachute_effect_parachute_travel_name"
+	model = USAParachute/USAParachuteTravel.nif
+}
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_gbr
+name = "#parachute_effect_parachute_close_gbr_name"
+model = Parachute/GBR/GBRParachuteClose.nif
+critical = true
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_ger
+name = "#parachute_effect_parachute_close_ger_name"
+model = Parachute/GER/GERParachuteClose.nif
+critical = true
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_jpn
+name = "#parachute_effect_parachute_close_jpn_name"
+model = Parachute/JPN/JPNParachuteClose.nif
+critical = true
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_rus
+name = "#parachute_effect_parachute_close_rus_name"
+model = Parachute/RUS/RUSParachuteClose.nif
+critical = true
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_usa
+name = "#parachute_effect_parachute_close_usa_name"
+model = Parachute/USA/USAParachuteClose.nif
+critical = true
+
+[VFX Template=AAVFXModelTemporary]
+IDS = parachute_close_generic
+name = "#parachute_effect_parachute_close_generic_name"
+model = Parachute/Generic/ParachuteClose.nif
+critical = true

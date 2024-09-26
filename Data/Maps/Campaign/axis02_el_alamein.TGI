@@ -1,0 +1,24 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Battle of El Alamein"
+
+	kingdom_1 = "Montgomery's Force"
+	kingdom_0 = "Rommel's Force"
+	objective_8 = "1. Clear the railroad of British blockades. (3/3 destroyed)"
+	objective_7 = "1. Clear the railroad of British blockades. (1/3 destroyed)"
+	objective_6 = "1. Clear the railroad of British blockades. (2/3 destroyed)"
+	objective_4 = "2. Find and capture the British oil depots."
+	name_9230 = "El Alamein"
+	independent_5 = "Ambient"
+	trigger_113_element_2 = "HINT : Your tanks begin this mission unattached.  You will need to build an Armor HQ to supply them."
+	restriction_group_0006 = "GER Restrictions"
+	team_0 = "Afrika Korps"
+	map_description = "German victories in Greece and Crete have forced the Allies out of the Mediterranean, cutting their North African forces off from easy resupply and reinforcement.  Erwin Rommel, the star of the German armored divisions, promises that he will be able to smash through the last British defenses at El Alamein, opening up Cairo and the Suez Canal to German control."
+	objective_2 = "1. Clear the railroad of British blockades. (0/3 destroyed)"
+	restriction_group_0005 = "GBR Restrictions"
+	kingdom_4 = "Stumme's Force"
+	independent_2 = "Independent"
+	map_name = "Battle of El Alamein"
+	kingdom_3 = "Auchinleck's Force"
+}

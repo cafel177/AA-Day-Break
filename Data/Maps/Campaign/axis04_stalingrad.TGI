@@ -1,0 +1,23 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Battle of Stalingrad"
+
+	kingdom_1 = "Manstein's Force"
+	name_2054 = "Tsymlyanskava"
+	kingdom_0 = "Zhukov's Force"
+	name_2074 = "Kapkinsky"
+	name_2013 = "Rostov"
+	objective_6 = "3. Destroy all of Chuikov's Forces."
+	objective_5 = "2. Destroy all of Zhukov's Forces."
+	name_2030 = "North Stalingrad"
+	objective_4 = "1. Capture Stalingrad"
+	map_description = "With the Middle East now part of the ever-expanding German empire, the German offensive in Russia now has a chance to link up with German forces advancing through the Middle East.  Rommel's Afrika Korps is advancing North.  Capture Stalingrad and send forces to meet Rommel."
+	independent_4 = "Civilian"
+	kingdom_5 = "Chuikov's Force"
+	restriction_group_0004 = "RUSSIA"
+	map_name = "Battle of Stalingrad"
+	restriction_group_0003 = "GERMANY"
+	kingdom_3 = "Stalingrad Garrison"
+	name_1997 = "South Stalingrad"
+}

@@ -1,0 +1,27 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Normandy Breakout"
+
+	name_19791 = "Caen"
+	independent_6 = "Civilian (Aggressive)"
+	independent_5 = "Civilian (Neutral)"
+	independent_4 = "Ambient"
+	kingdom_8 = "Side 5"
+	kingdom_7 = "Side 6"
+	restriction_group_0002 = "USA"
+	team_1 = "Team 2"
+	team_0 = "Team 1"
+	restriction_group_0001 = "GERMANY"
+	kingdom_3 = "Side 3"
+	map_name = "Normandy Breakout"
+	name_27212 = "Valognes"
+	kingdom_2 = "Side 2"
+	kingdom_1 = "Side 1"
+	name_19803 = "Cherbourg"
+	kingdom_0 = "Side 4"
+	objective_2 = "2. Capture and hold Saint Lo."
+	objective_1 = "1. Capture and hold Cherbourg."
+	objective_0 = "3. Capture and hold Caen."
+	map_description = "The successful landings across the Normandy coast have enabled the establishment of a significant beachhead on the continent.  Desperate with the direction the war has taken, the Germans are fighting ruthlessly to defend the hedgerows and battlefields lying between the Allies and the rest of France.  France's liberation is at hand, and total victory draws near."
+}

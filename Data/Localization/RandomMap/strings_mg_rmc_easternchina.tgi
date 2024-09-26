@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_easternchina.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_easternchina.tgi"
+
+	mg_rmc_easternchina_name = "Eastern China"
+	mg_rmc_easternchina_description = "Eastern China"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_easternchina_village_easternchina_name = "Villages"
+}

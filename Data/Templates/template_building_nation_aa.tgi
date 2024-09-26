@@ -1,0 +1,556 @@
+
+;; ------------------------ GER ----------------
+
+[Template AAGERBuilding Template=AABuilding]
+{
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+[Template AAGERBuildingPackable Template=AABuildingPackable]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+[Template AAGERBuildingPackableHQ Template=AABuildingPackableHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}		
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+[Template AAGERBuildingPackableDepot Template=AABuildingPackableDepot]
+{
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+[Template AAGERBuildingPackableCorpHQ Template=AABuildingPackableCorpHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+[Template AAGERBuildingConstructed Template=AABuildingConstructed]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_ger
+	}
+	
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+}
+
+;; ------------------------ GBR ----------------
+[Template AAGBRBuilding template=AABuilding]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+
+[Template AAGBRBuildingPackable Template=AABuildingPackable]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+	
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+
+[Template AAGBRBuildingPackableHQ Template=AABuildingPackableHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+	
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+
+[Template AAGBRBuildingPackableDepot Template=AABuildingPackableDepot]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+
+[Template AAGBRBuildingPackableCorpHQ Template=AABuildingPackableCorpHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+
+[Template AAGBRBuildingConstructed Template=AABuildingConstructed]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_gbr
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+}
+;; ------------------------ JPN ----------------
+
+[Template AAJPNBuilding template=AABuilding]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+
+[Template AAJPNBuildingPackable Template=AABuildingPackable]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+	
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+
+[Template AAJPNBuildingPackableHQ Template=AABuildingPackableHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+
+[Template AAJPNBuildingPackableDepot Template=AABuildingPackableDepot]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+	
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+
+[Template AAJPNBuildingPackableCorpHQ Template=AABuildingPackableCorpHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+
+[Template AAJPNBuildingConstructed Template=AABuildingConstructed]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_jpn
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+}
+;; ------------------------ RUS ----------------
+
+[template AARUSBuilding template=AABuilding]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+
+[Template AARUSBuildingPackable Template=AABuildingPackable]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+
+[Template AARUSBuildingPackableHQ Template=AABuildingPackableHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+
+[Template AARUSBuildingPackableDepot Template=AABuildingPackableDepot]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+
+[Template AARUSBuildingPackableCorpHQ Template=AABuildingPackableCorpHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+
+[Template AARUSBuildingConstructed Template=AABuildingConstructed]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_rus
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+}
+;; ------------------------ USA ----------------
+
+[template AAUSABuilding template=AABuilding]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+
+[Template AAUSABuildingPackable Template=AABuildingPackable]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+
+[Template AAUSABuildingPackableHQ Template=AABuildingPackableHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+
+[Template AAUSABuildingPackableDepot Template=AABuildingPackableDepot]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+
+[Template AAUSABuildingPackableCorpHQ Template=AABuildingPackableCorpHQ]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+
+[Template AAUSABuildingConstructed Template=AABuildingConstructed]
+{
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = nation_usa
+	}
+
+	[View]
+	{
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}	
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+}
+

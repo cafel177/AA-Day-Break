@@ -1,0 +1,44 @@
+[Thing Template=AAUnitGERAirplaneFighter]
+{
+	IDS = ger_fighter
+	name = "#ger_fighter_name"
+	editor_name = "#ger_fighter_editor_name"
+
+	[View]
+	resource_prefix = GERFighter/GERFighter
+	
+	[PerformerComponent]
+	{
+		[Ability Template=AAAttackLocal]
+		{
+			idle_animation = idle  ;; Temporary fix
+						
+			[AbilityDefinition Template=AAAirplaneAttackMG]
+			{
+				name = "#ger_fighter_AbilityDefinition_name"
+				mana_cost = 1
+				recharge_time = 1
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 75
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_mg_heavy
+			}
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = mg
+		
+		[Property]
+		property_IDS = combat_unit
+
+		[Property]
+		property_IDS = fighter
+	}
+		
+}
+

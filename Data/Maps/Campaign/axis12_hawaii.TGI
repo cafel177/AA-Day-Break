@@ -1,0 +1,31 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Invasion of Hawaii"
+
+	independent_5 = "Civilian"
+	name_14244 = "Nanakuli"
+	trigger_56_element_1 = "MESSAGE FROM SPY:  The mine I placed in the harbor should explode soon."
+	independent_2 = "Japanese Spy"
+	name_1496 = "Kaga"
+	trigger_18_element_11 = "MESSAGE FROM SPY:  Sir, here's my report of activity in Pearl Harbor.  I will now return and attempt to gather more information for the Empire!"
+	map_name = "Invasion of Hawaii"
+	name_1495 = "Akagi"
+	name_1494 = "Shokaku"
+	kingdom_1 = "Nimitz's Force"
+	trigger_18_element_6 = "MESSAGE FROM SPY:  Sir, here's my report of activity in Pearl Harbor.  I will now return and attempt to gather more information for the Empire!"
+	name_14237 = "Wahiawa"
+	kingdom_0 = "Nagumo's Force"
+	objective_4 = "5. Contact your spy on the north end of Oahu."
+	trigger_17_element_5 = "Spy Contacted!  "
+	objective_3 = "4. Sink all American ships."
+	objective_2 = "2. Capture and hold Wahiawa."
+	objective_1 = "1. Capture and hold Nanakuli."
+	objective_0 = "3. Capture and hold Honolulu."
+	name_10436 = "USS Enterprise"
+	name_14230 = "Honolulu"
+	name_1784 = "USS Maryland"
+	name_1782 = "USS Pennsylvannia"
+	trigger_56_element_7 = "MESSAGE FROM SPY : The mine I placed in the harbor should explode soon."
+	map_description = "Australia, India, Siberia, China, and the South Pacific are now all part of the Greater East Asia Coprosperity Sphere and protected by the Japanese Empire.  However, until the United States is finally and utterly neutralized as a naval power, the Japanese Empire will not be safe.  Securing Pearl Harbor will ensure the isolation of the Americas and the everlasting strength of the Empire!"
+}

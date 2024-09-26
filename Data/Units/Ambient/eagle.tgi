@@ -1,0 +1,62 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = eagle
+	name = "#eagle_name"
+	
+	[Flags]
+	blocking = false	
+
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 6
+		
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 6
+				
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+				
+		[Animation Template=DieAnimation]
+		IDS = die1
+		length = 2
+	}
+
+	[MoverComponent]
+	speed_max = 5
+	turn_radius = 6
+
+	[View]
+	{
+		resource_prefix = Eagle/Eagle
+		z_offset = 6
+		shadow_type = NONE
+		shadow_texture = null
+		
+		[AspectNormal]
+		ground_size = 0.2,0.2
+	}
+}
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = eagle_flock
+	name = "#eagle_flock_name"
+	
+	[View]
+	resource_prefix = Eagle/Eagle
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = eagle
+	}	
+}

@@ -1,0 +1,57 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = mule
+	name = "#Mule_Thing_name"
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 1
+		
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 1
+
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+				
+		[Animation Template=DieAnimation]
+		{
+			IDS = die1
+			length = 2
+		}
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		key_ratio = 0.6
+	}
+
+	[View]
+	resource_prefix = mule/mule
+}
+
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = herd_mule_tan
+	name = "#Mule_herd_mule_tan_name"
+	
+	[View]
+	resource_prefix = mule/mule
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{		
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = mule
+	}		
+}

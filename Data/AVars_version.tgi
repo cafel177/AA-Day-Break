@@ -1,0 +1,20 @@
+[Vars]
+{
+	;; VERSION: major . minor . patch . internal
+	;; - major release: incremented at release time
+	;; - minor release: incremented for major changes to the product
+	;; - patch level: incremented for each patch
+	;; - internal: (optional) used for internal or beta versions
+	string		Version = 1.0.5.0
+	
+	;; Intro Video Binks
+	string	IntroVideo1 = /Video/Intro/ESRB.bik
+	string	IntroVideo2 = /Video/Intro/TimeGate.bik
+	string	IntroVideo3 = /Video/Intro/Atari.bik
+	string	IntroVideo4 = /Video/Intro/ATI.bik
+
+	string	GameSpyRankURL 			= http://gamestats.gamespy.com/aarts/ranks.txt
+	string	GameSpyRatedMapsURL 		= http://gamestats.gamespy.com/aarts/maps.txt
+	string	GameSpyStatsURL			= gamestats.gamespy.com
+}
+

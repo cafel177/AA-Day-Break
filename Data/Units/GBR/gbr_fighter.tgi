@@ -1,0 +1,48 @@
+[Thing Template=AAUnitGBRAirplaneFighter]
+{
+	IDS = gbr_fighter
+	name = "#gbr_fighter_name"
+	editor_name = "#gbr_fighter_editor_name"
+	
+	[View]
+	resource_prefix = GBRFighter/GBRFighter
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAAttackLocal]
+		{
+			idle_animation = idle 
+						
+			[AbilityDefinition Template=AAAirplaneAttackMG]
+			{
+				name = "#gbr_fighter_AbilityDefinition_name"
+				mana_cost = 1
+				recharge_time = 1
+
+				area = 2
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 5
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 75
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_mg_heavy
+			}
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = mg
+		
+		[Property]
+		property_IDS = combat_unit
+
+		[Property]
+		property_IDS = fighter
+	}
+		
+}

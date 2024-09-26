@@ -1,0 +1,47 @@
+/**************************************************************************
+
+AVars_Locale.tgi
+Copyright © 2002 TimeGate Studios
+
+DESCRIPTION: Locale-specific AVars.
+
+REVISION HISTORY:
+drp012903 - created
+
+**************************************************************************/
+
+[Vars]
+{
+	string	SKU = English
+
+	string	GameSpyID = GameSpyID.com
+	
+	string	motd_url = http://timegate.com/motd_aa.php?sku=%s&language=%s
+	
+	;; GameSpy Distribution IDs for AA:
+	;; 0 means any distribution
+	;; North America = 1013
+	;; UK = 1014
+	;; French = 1015
+	;; German = 1016
+	;; Italian = 1017
+	;; Spanish = 1018
+	;; Japanese = 1019
+	;; Chinese = 1020
+	;; Korean = 1021
+	;; Beta = 1023
+	int		GameSpyDistributionID		= 1013
+
+	;; ApplicationName: the localized name.  We need to hard-code it in AVars
+	;; since the window is created *before* the TextData is loaded.
+	string		ApplicationName = Axis & Allies
+	
+	;; for localization system
+	;; Note: This is the string used to format the above motd_url
+	;; Note: needs to be mixed case since we show this in the server info dialog for now
+	string LanguageIDS = English
+
+	;; TODO: localized application initialization error messages can go error
+	
+	int	UITabWidth = 100 ;; in pixels
+}

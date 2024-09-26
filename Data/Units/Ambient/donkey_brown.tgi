@@ -1,0 +1,67 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = donkey_brown
+	name = "#donkey_brown_Thing_name"
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		kf = Donkey/DonkeyWalk.kf
+		walk_distance = .79
+		
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		kf = Donkey/DonkeyWalk.kf
+		walk_distance = .79
+
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		kf = Donkey/DonkeyIdle.kf
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+		kf = Donkey/DonkeyFidget1.kf
+
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+		kf = Donkey/DonkeyFidget2.kf
+				
+		[Animation Template=DieAnimation]
+		{
+			IDS = die1
+			kf = Donkey/DonkeyDie.kf
+			length = 2
+		}
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		kf = Donkey/DonkeyAttack1.kf
+		key_ratio = 0.6
+	}
+	
+	[MoverComponent]
+	speed_max = 1.0
+
+	[View]
+	resource_prefix = Donkey/Donkey02
+}
+
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = herd_donkey_brown
+	name = "#donkey_brown_herd_donkey_brown_name"
+	
+	[View]
+	resource_prefix = Donkey/Donkey02
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{		
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = donkey_brown
+	}	
+}

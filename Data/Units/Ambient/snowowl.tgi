@@ -1,0 +1,60 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = snowowl
+	name = "#Snowowl_Thing_name"
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 6.0
+				
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+				
+		[Animation Template=DieAnimation]
+		IDS = die1
+		length = 2
+	}
+	
+	[Flags]
+	blocking = false	
+	targetable = false
+	
+	[MoverComponent]
+	speed_max = 4.5
+	turn_radius = 8
+
+	[View]
+	{
+		resource_prefix = SnowOwl/SnowOwl
+		z_offset = 6
+		shadow_type = NONE
+		shadow_texture = null
+		
+		[AspectNormal]
+		ground_size = 0.2,0.2
+	}
+}
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = flock_snowowlsingle
+	name = "#Snowowl_flock_snowowlsingle_name"
+	
+	[View]
+	resource_prefix = SnowOwl/SnowOwl
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{
+	
+		layout_IDS = herd_ambient_single
+		
+		[Slot]	;; front
+		element_IDS = snowowl
+	}	
+}

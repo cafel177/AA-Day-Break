@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_USA_Nimitz_SAI.tgi
+	name = "@Localization/SAI/strings_USA_Nimitz_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	USA_Nimitz_SAI_nimitz_low_income_ego_name = "Nimitz low income ego"
+	USA_Nimitz_SAI_nimitz_main_game_ego_name = "Nimitz main game ego"
+	USA_Nimitz_SAI_nimitz_end_game_ego_name = "Nimitz end game ego"
+	USA_Nimitz_SAI_nimitz_sai_name = "Nimitz AI"
+	USA_Nimitz_SAI_nimitz_sai_description = "Nimitz AI"
+}

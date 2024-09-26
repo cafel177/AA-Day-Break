@@ -1,0 +1,51 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = sheep_ewe
+	name = "#sheep_ewe_name"
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = 1
+		kf = Sheep/SheepWalk.kf
+
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = 1
+		kf = Sheep/SheepWalk.kf
+				
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		kf = Sheep/SheepIdle.kf
+		
+		[Animation Template=IdleAnimation]
+		IDS = idleattack
+		kf = Sheep/SheepIdleAttack.kf
+		length = 1
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+		kf = Sheep/SheepFidget1.kf
+
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+		kf = Sheep/SheepFidget2.kf
+		length = 8
+				
+		[Animation Template=DieAnimation]
+		{
+			IDS = die1
+			length = 2
+			kf = Sheep/SheepDie.kf
+		}
+
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		kf = Sheep/SheepAttack1.kf
+		key_ratio = 0.6
+	}
+
+	[View]
+	resource_prefix = Sheep/Sheep01
+}

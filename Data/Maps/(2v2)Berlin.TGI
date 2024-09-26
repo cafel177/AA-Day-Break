@@ -1,0 +1,21 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Fall of Berlin"
+
+	kingdom_1 = "Side 2"
+	name_3944 = "Frankfurt"
+	kingdom_0 = "Side 1"
+	name_3954 = "Stettin"
+	team_1 = "Team 2"
+	name_3960 = "South Berlin"
+	independent_5 = "Civilian (Aggressive)"
+	team_0 = "Team 1"
+	map_description = "As the Americans and British defeat the Germans in the Battle of the Bulge, the Russian army marches ever closer to Berlin.  Desperate to forestall defeat, in hopes of being conquered by the Americans and British, the Germans fight savagely and hopelessly to hold on as long as possible.  Victory and retribution is at hand!"
+	name_12193 = "North Berlin"
+	kingdom_4 = "Side 4"
+	independent_2 = "Civilian (Neutral)"
+	map_name = "Fall of Berlin"
+	kingdom_3 = "Side 3"
+	objective_0 = "Capture Berlin."
+}

@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_palestine.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_palestine.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_palestine_name = "Palestine"
+	mg_rmc_palestine_description = "Palestine"
+	mg_rmc_palestine_village_palestine_name = "Villages"
+}

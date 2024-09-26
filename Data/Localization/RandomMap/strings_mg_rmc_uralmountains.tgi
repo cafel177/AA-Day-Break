@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_uralmountains.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_uralmountains.tgi"
+
+	mg_rmc_uralmountains_name = "Ural Mountains"
+	mg_rmc_uralmountains_description = "Ural Mountains"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_uralmountains_village_uralmountains_name = "Villages"
+}

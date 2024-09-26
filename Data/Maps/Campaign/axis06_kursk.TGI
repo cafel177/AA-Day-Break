@@ -1,0 +1,21 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Battle of Kursk"
+
+	objective_10 = "1. Destroy 3 Russian Armor HQs.  (1/3)"
+	objective_9 = "1. Destroy 3 Russian Armor HQs. (3/3)"
+	kingdom_1 = "Kluge's Force"
+	objective_8 = "1. Destroy 3 Russian Armor HQs.  (0/3)"
+	kingdom_0 = "Rokossovski's Force"
+	map_description = "The protracted, bloody siege of Stalingrad has come to an end, and the devastated city is now in German hands.  With the world's two richest oilfields now controlled by Germany, endlessly supplied panzer divisions roll toward Kursk, prepared to smash the last of the Russian armored forces."
+	name_11613 = "Kursk"
+	name_11542 = "Ponyri"
+	independent_2 = "Civilian"
+	name_11551 = "Prochorovka"
+	map_name = "Battle of Kursk"
+	restriction_group_0003 = "All Tanks"
+	kingdom_3 = "Manstein's Force"
+	name_11560 = "Belgorod"
+	objective_11 = "1. Destroy 3 Russian Armor HQs. (2/3)"
+}

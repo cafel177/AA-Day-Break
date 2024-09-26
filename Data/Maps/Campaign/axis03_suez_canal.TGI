@@ -1,0 +1,31 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Battle of Suez Canal"
+
+	name_9921 = "Alexandria"
+	name_9944 = "Cairo"
+	trigger_37_element_3 = "UPDATE : The caravan is leaving for Suez in 3 minutes."
+	trigger_38_element_2 = "UPDATE : The caravan will leave for the middle east in 3 minutes."
+	independent_4 = "Ambient"
+	restriction_group_0004 = "Restrictions"
+	name_9963 = "Suez"
+	trigger_25_element_9 = "UPDATE : The caravan is leaving for Alexandria."
+	trigger_26_element_8 = "UPDATE : The caravan is leaving for Cairo."
+	kingdom_3 = "British Air Force"
+	map_name = "Battle of Suez Canal"
+	kingdom_2 = "German Caravan"
+	kingdom_1 = "Montgomery's Force"
+	kingdom_0 = "Afrika Korps"
+	trigger_30_element_2 = "UPDATE : The caravan will leave for Alexandria in 5 minutes."
+	objective_5 = "6. The caravan's Ammo Depot Truck must survive."
+	objective_4 = "5. The caravan's Oil Depot Truck must survive."
+	trigger_28_element_8 = "UPDATE : The caravan is leaving for the middle east."
+	objective_3 = "4. The caravan's Armor HQ Truck must survive."
+	trigger_36_element_3 = "UPDATE : The caravan will leave for Cairo in 3 minutes."
+	objective_2 = "3. The caravan's Mech HQ Truck must survive."
+	trigger_27_element_8 = "UPDATE : The caravan is leaving for Suez."
+	objective_1 = "2. The caravan's Corp HQ Truck must survive."
+	objective_0 = "1. Protect the caravan as it crosses the Suez Canal."
+	map_description = "Having broken British resolve at El Alamein, Rommel's Afrika Korps is racing toward the Suez Canal.  Control of the Canal means control of the vast oil resources of the Middle East.  At last the critical shortage of fuel can be brought to an end, enabling greater advances into Russia.  Take and cross the Suez Canal at all costs. "
+}

@@ -1,0 +1,21 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Airdrop on Crete"
+
+	kingdom_1 = "Wavell's Force"
+	kingdom_0 = "Kesselring's Force"
+	name_9613 = "Suda"
+	name_2591 = "Canea"
+	name_9620 = "Sfakia"
+	objective_3 = "4. Capture the port of Suda."
+	name_10453 = "Retimo Airfield"
+	independent_4 = "Civilian"
+	map_description = "Greece has fallen, and control of the Adriatic is almost entirely within German hands.  All that remains are the retreating British forces on the island of Crete.  Despite concerns throughout the German military leadership that paratroopers will be ineffective at seizing control of the island, you must succeed.  Take the British airfields and ports to allow your reinforcements to be flown and shipped in.  Make sure no British soldiers escape, and complete the mission with the precision and speed of the Blitzkrieg."
+	restriction_group_0005 = "Units"
+	objective_2 = "3. Capture and hold the port of Sfakia.  "
+	name_10451 = "Maleme Airfield"
+	map_name = "Airdrop on Crete"
+	objective_1 = "2. Capture and hold Retimo Airfield."
+	objective_0 = "1. Capture and hold Maleme Airfield."
+}

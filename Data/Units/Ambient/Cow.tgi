@@ -1,0 +1,63 @@
+[Thing Template=AAAmbientUnit]
+{
+	IDS = cow
+	name = "#Cow_Thing_name"
+	
+	[CharacterComponent]
+	{
+		[Animation Template=MoveAnimation]
+		IDS = walk
+		walk_distance = .8
+
+		[Animation Template=MoveAnimation]
+		IDS = jog
+		walk_distance = .8
+				
+		[Animation Template=IdleAnimation]
+		IDS = idle
+		
+		[Animation Template=IdleAnimation]
+		IDS = idleattack
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget1
+		
+		[Animation Template=FidgetAnimation]
+		IDS = fidget2
+		
+				
+		[Animation Template=DieAnimation]
+		IDS = die1
+		length = 2
+			
+		[Animation Template=AttackAnimation]
+		IDS = meleeattack1
+		key_ratio = 0.6
+	}
+
+	[MoverComponent]
+	speed_max = .75
+	
+	[View]
+	resource_prefix = Cow/Cow
+}
+
+
+[Thing Template=AAAmbientCompany]
+{
+	IDS = herd_cow
+	name = "#Cow_herd_cow_name"
+	
+	[View]
+	resource_prefix = Cow/Cow
+	banner_ids = ambient_banner
+	
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+	{		
+		layout_IDS = herd_ambient_large
+		
+		[Slot]	;; front
+		element_IDS = cow
+	}	
+
+}

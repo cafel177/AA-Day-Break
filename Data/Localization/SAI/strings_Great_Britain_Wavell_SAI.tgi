@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Great_Britain_Wavell_SAI.tgi
+	name = "@Localization/SAI/strings_Great_Britain_Wavell_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Great_Britain_Wavell_SAI_wavell_low_income_ego_name = "Wavell low income ego"
+	Great_Britain_Wavell_SAI_wavell_main_game_ego_name = "Wavell main game ego"
+	Great_Britain_Wavell_SAI_wavell_end_game_ego_name = "Wavell end game ego"
+	Great_Britain_Wavell_SAI_wavell_sai_name = "Wavell AI"
+	Great_Britain_Wavell_SAI_wavell_sai_description = "Wavell AI"
+}

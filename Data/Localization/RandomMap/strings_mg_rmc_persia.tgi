@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_persia.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_persia.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_persia_name = "Persia"
+	mg_rmc_persia_description = "Persia"
+	mg_rmc_persia_village_persia_name = "Villages"
+}

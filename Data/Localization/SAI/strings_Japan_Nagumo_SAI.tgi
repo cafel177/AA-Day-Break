@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Japan_Nagumo_SAI.tgi
+	name = "@Localization/SAI/strings_Japan_Nagumo_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Japan_Nagumo_SAI_nagumo_low_income_ego_name = "Nagumo low income ego"
+	Japan_Nagumo_SAI_nagumo_main_game_ego_name = "Nagumo main game ego"
+	Japan_Nagumo_SAI_nagumo_end_game_ego_name = "Nagumo end game ego"
+	Japan_Nagumo_SAI_nagumo_sai_name = "Nagumo AI"
+	Japan_Nagumo_SAI_nagumo_sai_description = "Nagumo AI"
+}

@@ -1,0 +1,2434 @@
+;;-------------------------------------------------Reflection Projections----------------------------------------
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_artillery_projection_name"
+	texture = Armies/GBR/GBRArtilleryProjection.dds	
+	IDS = gbr_artillery_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_tank_projection_name"
+	texture = Armies/GBR/GBRTankProjection.dds	
+	IDS = gbr_tank_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_tank_air_projection_name"
+	texture = Armies/GBR/GBRTankAirProjection.dds	
+	IDS = gbr_tank_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_half_track_projection_name"
+	texture = Armies/GBR/GBRHalfTrackProjection.dds	
+	IDS = gbr_half_track_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_half_track_air_projection_name"
+	texture = Armies/GBR/GBRHalfTrackAirProjection.dds	
+	IDS = gbr_half_track_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_standing_attack_projection_name"
+	texture = Armies/GBR/GBRStandingAttackProjection.dds	
+	IDS = gbr_standing_attack_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_standing_attack_air_projection_name"
+	texture = Armies/GBR/GBRStandingAttackAirProjection.dds	
+	IDS = gbr_standing_attack_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_gbr_capital_projection_name"
+	texture = Armies/GBR/GBRCapitalProjection.dds	
+	IDS = gbr_capital_projection
+	attached_scale = 0
+	texture_size = 6
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_artillery_projection_name"
+	texture = Armies/GER/GERArtilleryProjection.dds	
+	IDS = ger_artillery_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_tank_projection_name"
+	texture = Armies/GER/GERTankProjection.dds	
+	IDS = ger_tank_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_tank_air_projection_name"
+	texture = Armies/GER/GERTankAirProjection.dds	
+	IDS = ger_tank_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_half_track_projection_name"
+	texture = Armies/GER/GERHalfTrackProjection.dds	
+	IDS = ger_half_track_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_half_track_air_projection_name"
+	texture = Armies/GER/GERHalfTrackAirProjection.dds	
+	IDS = ger_half_track_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_standing_attack_projection_name"
+	texture = Armies/GER/GERStandingAttackProjection.dds	
+	IDS = ger_standing_attack_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_standing_attack_air_projection_name"
+	texture = Armies/GER/GERStandingAttackAirProjection.dds	
+	IDS = ger_standing_attack_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_ger_capital_projection_name"
+	texture = Armies/GER/GERCapitalProjection.dds	
+	IDS = ger_capital_projection
+	attached_scale = 0
+	texture_size = 6
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_artillery_projection_name"
+	texture = Armies/JPN/JPNArtilleryProjection.dds	
+	IDS = jpn_artillery_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_tank_projection_name"
+	texture = Armies/JPN/JPNTankProjection.dds	
+	IDS = jpn_tank_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_tank_air_projection_name"
+	texture = Armies/JPN/JPNTankAirProjection.dds	
+	IDS = jpn_tank_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_half_track_projection_name"
+	texture = Armies/JPN/JPNHalfTrackProjection.dds	
+	IDS = jpn_half_track_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_half_track_air_projection_name"
+	texture = Armies/JPN/JPNHalfTrackAirProjection.dds	
+	IDS = jpn_half_track_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_standing_attack_projection_name"
+	texture = Armies/JPN/JPNStandingAttackProjection.dds	
+	IDS = jpn_standing_attack_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_standing_attack_air_projection_name"
+	texture = Armies/JPN/JPNStandingAttackAirProjection.dds	
+	IDS = jpn_standing_attack_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_jpn_capital_projection_name"
+	texture = Armies/JPN/JPNCapitalProjection.dds	
+	IDS = jpn_capital_projection
+	attached_scale = 0
+	texture_size = 6
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_artillery_projection_name"
+	texture = Armies/RUS/RUSArtilleryProjection.dds	
+	IDS = rus_artillery_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_tank_projection_name"
+	texture = Armies/RUS/RUSTankProjection.dds	
+	IDS = rus_tank_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_tank_air_projection_name"
+	texture = Armies/RUS/RUSTankAirProjection.dds	
+	IDS = rus_tank_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_half_track_projection_name"
+	texture = Armies/RUS/RUSHalfTrackProjection.dds	
+	IDS = rus_half_track_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_half_track_air_projection_name"
+	texture = Armies/RUS/RUSHalfTrackAirProjection.dds	
+	IDS = rus_half_track_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_standing_attack_projection_name"
+	texture = Armies/RUS/RUSStandingAttackProjection.dds	
+	IDS = rus_standing_attack_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_standing_attack_air_projection_name"
+	texture = Armies/RUS/RUSStandingAttackAirProjection.dds	
+	IDS = rus_standing_attack_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_rus_capital_projection_name"
+	texture = Armies/RUS/RUSCapitalProjection.dds	
+	IDS = rus_capital_projection
+	attached_scale = 0
+	texture_size = 6
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_artillery_projection_name"
+	texture = Armies/USA/USAArtilleryProjection.dds	
+	IDS = usa_artillery_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_tank_projection_name"
+	texture = Armies/USA/USATankProjection.dds	
+	IDS = usa_tank_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_tank_air_projection_name"
+	texture = Armies/USA/USATankAirProjection.dds	
+	IDS = usa_tank_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_half_track_projection_name"
+	texture = Armies/USA/USAHalfTrackProjection.dds	
+	IDS = usa_half_track_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_half_track_air_projection_name"
+	texture = Armies/USA/USAHalfTrackAirProjection.dds	
+	IDS = usa_half_track_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_standing_attack_projection_name"
+	texture = Armies/USA/USAStandingAttackProjection.dds	
+	IDS = usa_standing_attack_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_standing_attack_air_projection_name"
+	texture = Armies/USA/USAStandingAttackAirProjection.dds	
+	IDS = usa_standing_attack_air_projection
+	attached_scale = 0
+	texture_size = 3
+}
+
+[Thing Inherit=VFXProjectedTextureLit]
+{
+	name = "#mg_army_usa_capital_projection_name"
+	texture = Armies/USA/USACapitalProjection.dds	
+	IDS = usa_capital_projection
+	attached_scale = 0
+	texture_size = 6
+}
+
+;---------------------------------------------------------------------------------------
+;
+; BASIC MG ARMY TEMPLATE
+;
+; So possibly this could inherit from Actor and then not specify some of the 
+; components that aren't used (like most of them).   However, the engine expects
+; units to have most of these components and tends to blow up whenever certain
+; ones are omitted (for instance, to have a mind component to be able move the
+; unit, we are required to have an element component).   To save everyone some
+; pain, I just created this template with a bunch of dummy values.  The only 
+; things that are actually useful are the MetaGameComponent and the View.
+;
+;---------------------------------------------------------------------------------------
+
+;; This is the basic template that all MG armies use
+[Template MetaGameArmy Inherit=Unit]
+{
+	category = METAGAME_ACTOR
+	places_tracks = true
+
+	[MetaGameComponent]
+	{		
+		movement = 1
+
+		; percent amount this army increases quickbattle victory odds
+		; this is addition to the amount of damage done by the divisions
+		damage = 0.00
+
+		; all MG actors require a matching preference, and they should all be unique!
+		; if a user upgrades an army to have extra divisions, and multiple MG armies 
+		; "match" the divisions, then the one with the strongest (lowest number) 
+		; preference is used in the game.  
+		division_matching_preference = 0
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 25
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 50
+	}
+
+	[BodyComponent]
+	{
+		rot_time = 3
+		sink_time = 2
+		health = 1
+		defense = 1
+	}
+	
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 0
+		
+		[Upkeep]
+		unit_limit_consumed = 0
+		oil = 0
+	}
+
+	[ElementComponent]
+	{
+		morale_value = 1
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = captain
+	}
+	
+	[DetectionComponent]
+	{
+		detection_range = 1.0
+		remote_detection_range = 1.0
+	}
+
+	[View]
+	{
+		shadow_type = STENCIL
+		;; shadow_texture = /effects/shadows/UnitShadow.dds
+
+		selected_vfx = selected_circle_stationary
+		focused_vfx = selected_circle
+		aspects_as_variations = false
+		icon = %sIcon.dds
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+		
+		[WhenDestroyed Template=FXC_PlaySFX]
+		audio_ids = mg_death_army
+		at = TARGET_GROUND
+	}
+
+	[Flags]
+	{
+		targetable = true
+		blocking = false
+		axis_locked = true
+	}
+
+	[Size]
+	{
+		height = 2
+
+		blocking_shape = CIRCLE
+		blocking_radius = 0.5
+		
+		soft_shape = RECT
+		rect_width = 1.5
+		rect_height = 1.5
+		
+		fixed scale_min = 1.0
+		fixed scale_max = 1.0
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 32.0
+		acceleration = 10.0
+		
+		[WhenStartMoving Template=FXC_PlaySFX]
+		audio_IDS = mg_army_move
+	}
+}
+
+;; Added template to standardize the tooltip
+[Template MetaGameComponentArmy Inherit=MetaGameComponent]
+{
+	movement = 1
+}
+
+;---------------------------------------------------------------------------------------
+;
+;  BASIC GAME PIECES
+; 
+;  All the templates for the basic army types with their appropriate division 
+;  matching preferences.  For each army, there is a corresponding army with an air
+;  division with slightly more important division matching preference and different
+;  graphics.
+;
+;---------------------------------------------------------------------------------------
+
+
+[Template MetaGameCapital Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameCapital_name"
+
+	[MetaGameComponent]
+	{		
+		movement = 0
+		damage = 0.0
+		capturable = true
+		upgradable = false
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		; visual display preference for this army
+		division_matching_preference = 200
+	}
+}
+
+[Template MetaGameInfantryArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameInfantryArmy_name"
+
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{		
+		; visual display preference for this army
+		division_matching_preference = 100
+		tooltip = "#mg_army_MetaGameComponent_tooltip"
+
+		damage = 0.05
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 50
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 100
+	}
+	
+	[View]
+	icon = UI/ArmyIcons/IconInfantry.png
+}
+
+[Template MetaGameInfantryAirArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameInfantryAirArmy_name"
+
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{		
+		; visual display preference for this army
+		division_matching_preference = 90
+		tooltip = "#mg_army_MetaGameComponent_tooltip_2"
+
+		damage = 0.18
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 160
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 320
+	}
+	
+	[View]
+	icon = UI/ArmyIcons/IconInfantryAir.png
+}
+
+[Template MetaGameMobileArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameMobileArmy_name"
+	
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{		
+		; visual display preference for this army
+		division_matching_preference = 80
+		tooltip = "#mg_army_MetaGameComponent_tooltip_3"
+
+		damage = 0.13
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 120
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 240
+	}
+
+	[View]
+	icon = UI/ArmyIcons/IconMechanized.png
+}
+
+[Template MetaGameMobileAirArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameMobileAirArmy_name"
+	
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{		
+		; visual display preference for this army
+		division_matching_preference = 70
+		tooltip = "#mg_army_MetaGameComponent_tooltip_4"
+
+		damage = 0.23
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 220
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 440
+	}
+
+	[View]
+	icon = UI/ArmyIcons/IconMechanizedAir.png
+}
+
+[Template MetaGameArmoredArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameArmoredArmy_name"
+	
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{		
+		; visual display preference for this army
+		division_matching_preference = 60
+		tooltip = "#mg_army_MetaGameComponent_tooltip_5"
+
+		damage = 0.19
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 190
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 380
+	}
+
+	[View]
+	icon = UI/ArmyIcons/IconArmor.png
+}
+
+[Template MetaGameArmorAirArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameAirArmy_name"
+	
+	[MetaGameComponent Template=MetaGameComponentArmy]
+	{
+		; visual display preference for this army
+		division_matching_preference = 50
+		tooltip = "#mg_army_MetaGameComponent_tooltip_6"
+
+		damage = 0.28
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 280
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 560
+	}
+
+	[View]
+	icon = UI/ArmyIcons/IconArmorAir.png
+}
+
+[Template MetaGameDefensiveArmy Inherit=MetaGameArmy]
+{
+	name = "#mg_army_MetaGameDefensiveArmy_name"
+		
+	[MetaGameComponent]
+	{		
+		damage = 0.25
+		movement = 0
+		upgradable = false
+
+		; visual display preference for this army
+		division_matching_preference = 40
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 250
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 500
+	}
+
+	[View]
+	icon = UI/ArmyIcons/IconDefensive.png
+}
+
+;---------------------------------------------------------------------------------------
+;
+;  Very special defensive unit types used in the dynamic campaign.
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameArmy]
+{
+	IDS = mg_usa_phillipine_garrison
+	name = "#mg_army_mg_usa_phillipine_garrison_name"	
+	
+	[MetaGameComponent]
+	{		
+		movement = 0
+		damage = 0.05
+		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		; visual display preference for this army
+		division_matching_preference = 2
+
+		[Division]
+		ids = usa_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/USA/USAArtillery
+		icon = UI/ArmyIcons/IconDefensive.png
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_artillery_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+	}
+}
+
+[Thing Inherit=MetaGameArmy]
+{
+	IDS = mg_usa_china
+	name = "#mg_army_mg_usa_china_name"	
+	
+	[MetaGameComponent]
+	{		
+		movement = 0
+		damage = 0.15
+		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		; visual display preference for this army
+		division_matching_preference = 2
+
+		[StockpileBonus Inherit=ResourceList]
+		money = 150
+
+		[WaterStockpileBonus Inherit=ResourceList]
+		money = 300
+
+		[Division]
+		ids = usa_division_infantry
+		
+		[Division]	
+		ids = usa_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/USA/USAArtillery
+		icon = UI/ArmyIcons/IconDefensive.png
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_artillery_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+	}
+}
+
+;---------------------------------------------------------------------------------------
+;
+;  U  S  A
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameCapital]
+{
+	IDS = mg_usa_capital
+		
+	[View]
+	{
+		icon = UI/ArmyIcons/IconCapitalUSA.png
+		resource_prefix = Armies/USA/USACapital
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_waving_flag_pole
+			location = building_flag
+		}
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_capital_projection
+			location = position
+		}
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_capital_select
+	}
+
+
+}
+
+[Thing Inherit=MetaGameInfantryArmy]
+{
+	IDS = mg_usa_army_infantry
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = usa_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/USA/USAStandingAttack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_standing_attack_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileArmy]
+{
+	IDS = mg_usa_army_mobile
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]
+		ids = usa_division_mobile
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/USA/USAHalftrack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_half_track_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameInfantryAirArmy]
+{
+	IDS = mg_usa_army_infantry_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]	
+		ids = usa_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/USA/USAStandingAttackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_standing_attack_air_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileAirArmy]
+{
+	IDS = mg_usa_army_mobile_air
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]
+		ids = usa_division_mobile
+
+		[Division]	
+		ids = usa_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/USA/USAHalftrackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_half_track_air_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmoredArmy]
+{
+	IDS = mg_usa_army_armor
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]
+		ids = usa_division_mobile
+
+		[Division]
+		ids = usa_division_armor
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/USA/USATank
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_tank_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmorAirArmy]
+{
+	IDS = mg_usa_army_armor_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]
+		ids = usa_division_mobile
+
+		[Division]
+		ids = usa_division_armor
+
+		[Division]
+		ids = usa_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/USA/USATankAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_tank_air_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_tank_heavy_attack
+	}
+}
+
+[Thing Inherit=MetaGameDefensiveArmy]
+{
+	IDS = mg_usa_army_defensive
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = usa_division_infantry
+
+		[Division]
+		ids = usa_division_mobile
+
+		[Division]
+		ids = usa_division_armor
+
+		[Division]
+		ids = usa_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/USA/USAArtillery
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = usa_artillery_projection
+			location = position
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = bunker_aa_select
+	}
+}
+
+
+;---------------------------------------------------------------------------------------
+;
+;  J A P A N
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameCapital]
+{
+	IDS = mg_jpn_capital
+	
+	[View]
+	{
+		icon = UI/ArmyIcons/IconCapitalJPN.png
+		resource_prefix = Armies/JPN/JPNCapital
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_waving_flag_pole
+			location = building_flag
+		}
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_capital_projection
+		}
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_capital_select
+	}
+
+
+}
+
+[Thing Inherit=MetaGameInfantryArmy]
+{
+	IDS = mg_jpn_army_infantry
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = jpn_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNStandingAttack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_standing_attack_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileArmy]
+{
+	IDS = mg_jpn_army_mobile
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_mobile
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNHalftrack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_half_track_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameInfantryAirArmy]
+{
+	IDS = mg_jpn_army_infantry_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_air	
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNStandingAttackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_standing_attack_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileAirArmy]
+{
+	IDS = mg_jpn_army_mobile_air
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_mobile
+
+		[Division]
+		ids = jpn_division_air	
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNHalftrackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_half_track_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmoredArmy]
+{
+	IDS = mg_jpn_army_armor
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_mobile
+
+		[Division]
+		ids = jpn_division_armor
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNTank
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_tank_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_light_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_light_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_light_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmorAirArmy]
+{
+	IDS = mg_jpn_army_armor_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_mobile
+
+		[Division]
+		ids = jpn_division_armor
+
+		[Division]
+		ids = jpn_division_air		
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNTankAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_tank_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_medium_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_medium_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_medium_attack
+	}
+}
+
+[Thing Inherit=MetaGameDefensiveArmy]
+{
+	IDS = mg_jpn_army_defensive
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = jpn_division_infantry
+
+		[Division]
+		ids = jpn_division_mobile
+
+		[Division]
+		ids = jpn_division_armor
+
+		[Division]
+		ids = jpn_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/JPN/JPNArtillery
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = jpn_artillery_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = bunker_aa_select
+	}
+}
+
+;---------------------------------------------------------------------------------------
+;
+;  G R E A T   B R I T A I N
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameCapital]
+{
+	IDS = mg_gbr_capital
+	
+	[View]
+	{
+		icon = UI/ArmyIcons/IconCapitalGBR.png
+		resource_prefix = Armies/GBR/GBRCapital
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_waving_flag_pole
+			location = building_flag
+		}
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_capital_projection
+		}
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_capital_select
+	}
+
+
+}
+
+[Thing Inherit=MetaGameInfantryArmy]
+{
+	IDS = mg_gbr_army_infantry
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = gbr_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRStandingAttack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_standing_attack_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileArmy]
+{
+	IDS = mg_gbr_army_mobile
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_mobile
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRHalftrack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_half_track_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameInfantryAirArmy]
+{
+	IDS = mg_gbr_army_infantry_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRStandingAttackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_standing_attack_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileAirArmy]
+{
+	IDS = mg_gbr_army_mobile_air
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_mobile
+
+		[Division]
+		ids = gbr_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRHalftrackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_half_track_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmoredArmy]
+{
+	IDS = mg_gbr_army_armor
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_mobile
+
+		[Division]
+		ids = gbr_division_armor
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRTank
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_tank_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_light_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_light_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_light_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmorAirArmy]
+{
+	IDS = mg_gbr_army_armor_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_mobile
+
+		[Division]
+		ids = gbr_division_armor
+
+		[Division]
+		ids = gbr_division_air
+	}
+
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRTankAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_tank_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_heavy_attack
+	}
+}
+
+[Thing Inherit=MetaGameDefensiveArmy]
+{
+	IDS = mg_gbr_army_defensive
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = gbr_division_infantry
+
+		[Division]
+		ids = gbr_division_mobile
+
+		[Division]
+		ids = gbr_division_armor
+
+		[Division]
+		ids = gbr_division_air
+	}
+	
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GBR/GBRArtillery
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = gbr_artillery_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = bunker_aa_select
+	}
+}
+
+
+;---------------------------------------------------------------------------------------
+;
+;  G E R M A N Y
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameCapital]
+{
+	IDS = mg_ger_capital
+	
+	[View]
+	{
+		icon = UI/ArmyIcons/IconCapitalGER.png
+		resource_prefix = Armies/GER/GERCapital
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_waving_flag_pole
+			location = building_flag
+		}
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_capital_projection
+		}
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_capital_select
+	}
+
+}
+
+[Thing Inherit=MetaGameInfantryArmy]
+{
+	IDS = mg_ger_army_infantry
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = ger_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GER/GERStandingAttack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_standing_attack_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileArmy]
+{
+	IDS = mg_ger_army_mobile
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_mobile
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GER/GERHalftrack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_half_track_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameInfantryAirArmy]
+{
+	IDS = mg_ger_army_infantry_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GER/GERStandingAttackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_standing_attack_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileAirArmy]
+{
+	IDS = mg_ger_army_mobile_air
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_mobile
+
+		[Division]
+		ids = ger_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GER/GERHalftrackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_half_track_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmoredArmy]
+{
+	IDS = mg_ger_army_armor
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_mobile
+
+		[Division]
+		ids = ger_division_armor
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/GER/GERTank
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_tank_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmorAirArmy]
+{
+	IDS = mg_ger_army_armor_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_mobile
+
+		[Division]
+		ids = ger_division_armor
+
+		[Division]
+		ids = ger_division_air
+	}
+
+	[Stance Template=StanceDeath]
+		
+	[View]
+	{
+		resource_prefix = Armies/GER/GERTankAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_tank_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_attack
+	}
+}
+
+[Thing Inherit=MetaGameDefensiveArmy]
+{
+	IDS = mg_ger_army_defensive
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = ger_division_infantry
+
+		[Division]
+		ids = ger_division_mobile
+
+		[Division]
+		ids = ger_division_armor
+
+		[Division]
+		ids = ger_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/GER/GERArtillery
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = ger_artillery_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = bunker_aa_select
+	}
+}
+
+;---------------------------------------------------------------------------------------
+;
+;  R U S S I A
+;
+;---------------------------------------------------------------------------------------
+
+[Thing Inherit=MetaGameCapital]
+{
+	IDS = mg_rus_capital
+		
+	[View]
+	{
+		icon = UI/ArmyIcons/IconCapitalRUS.png
+		resource_prefix = Armies/RUS/RUSCapital
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_waving_flag_pole
+			location = building_flag
+		}
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_capital_projection
+		}
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_capital_select
+	}
+
+
+}
+
+[Thing Inherit=MetaGameInfantryArmy]
+{
+	IDS = mg_rus_army_infantry
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = rus_division_infantry
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSStandingAttack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_standing_attack_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileArmy]
+{
+	IDS = mg_rus_army_mobile
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_mobile
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSHalftrack
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_half_track_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_attack
+	}
+}
+
+
+[Thing Inherit=MetaGameInfantryAirArmy]
+{
+	IDS = mg_rus_army_infantry_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSStandingAttackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_standing_attack_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_attack
+	}
+}
+
+[Thing Inherit=MetaGameMobileAirArmy]
+{
+	IDS = mg_rus_army_mobile_air
+
+	[MetaGameComponent]
+	{
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_mobile
+
+		[Division]
+		ids = rus_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSHalftrackAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_half_track_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmoredArmy]
+{
+	IDS = mg_rus_army_armor
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_mobile
+
+		[Division]
+		ids = rus_division_armor
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSTank
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_tank_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_tank_light_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_tank_light_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_tank_light_attack
+	}
+}
+
+[Thing Inherit=MetaGameArmorAirArmy]
+{
+	IDS = mg_rus_army_armor_air
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_mobile
+
+		[Division]
+		ids = rus_division_armor
+
+		[Division]
+		ids = rus_division_air
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSTankAirSupport
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_tank_air_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_tank_heavy_attack
+	}
+}
+
+[Thing Inherit=MetaGameDefensiveArmy]
+{
+	IDS = mg_rus_army_defensive
+	
+	[MetaGameComponent]
+	{		
+		; when launching into the RTS, this is the actor to create		
+		rts_actor_ids = NULL
+		rts_water_actor_ids = NULL
+		
+		[Division]
+		ids = rus_division_infantry
+
+		[Division]
+		ids = rus_division_mobile
+
+		[Division]
+		ids = rus_division_armor
+
+		[Division]
+		ids = rus_division_air
+	}
+
+	[Stance Template=StanceDeath]
+
+	[View]
+	{
+		resource_prefix = Armies/RUS/RUSArtillery
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = rus_artillery_projection
+		}
+
+		[Aspect Template=AAAspectDeath]
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = bunker_aa_select
+	}
+}
+
+;---------------------------------------------------------------------------------------
+

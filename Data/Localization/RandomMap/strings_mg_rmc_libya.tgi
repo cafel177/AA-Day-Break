@@ -1,0 +1,14 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_libya.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_libya.tgi"
+
+	mg_rmc_libya_name = "Libya"
+	mg_rmc_libya_description = "Libya"
+	mg_rmc_libya_village_libya_name = "Villages"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_libya_bunkers_coastline_1_name = "Coastline Bunkers 1"
+}

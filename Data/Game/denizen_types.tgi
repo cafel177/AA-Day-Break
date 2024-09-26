@@ -1,0 +1,17 @@
+[DenizenType = Template=DenizenType]
+{
+	ids = denizen_type_bomber
+	name = "#denizen_types_denizen_type_bomber_name"
+	
+	description = "#denizen_types_denizen_type_bomber_description"
+	icon = /Properties/DenizenIcons/IconDenizenBomber.png
+}
+
+[DenizenType = Template=DenizenType]
+{
+	ids = denizen_type_fighter
+	name = "#denizen_types_denizen_type_fighter_name"
+	
+	description = "#denizen_types_denizen_type_fighter_description"
+	icon = /Properties/DenizenIcons/IconDenizenFighter.png
+}

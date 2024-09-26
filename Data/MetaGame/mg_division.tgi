@@ -1,0 +1,578 @@
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Root MG division template
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[Template MGDivisionTemplate]
+{
+	localized 	name			;; Name as it appears in the game
+	string 		ids			;; IDS of the division
+	string 		icon			;; Path of icon
+	localized	tooltip			;; Tooltip that appears in the purchasing screen and the icon in the display window
+	localized	upgrade_tooltip		;; Tooltip that appears over the upgrade button in the actions window
+	fixed		damage			;; Percent amount this division increases quickbattle victory odds
+	string		rts_actor_ids		;; Which actor to add to the RTS game (on land attack) because of this division (can be NULL)
+	string		rts_water_actor_ids	;; Which actor to add to the RTS game (on water attack) because of this division (can be NULL)
+	int		icon_location		;; Where the icon appears in the display windows
+	int		upgrade_button_location	;; Where the button appears in the upgrade actions windows
+
+	;; The technologies this division give when entering into the RTS game
+	[list Technology]
+	{
+		string		ids
+	}
+
+	;; The different upgrade buttons VE for the UI
+	[list UpgradeButtonVE]
+	{
+		string		when
+		string		texture
+	}
+
+	;; The division prereqs for this division to be purchased
+	[list DivisionPreReq]
+	{
+		string		ids
+	}
+}
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Basic division templates
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[Template MGDivisionInfantry Template=MGDivisionTemplate]
+{
+	name = "#mg_division_MGDivisionInfantry_name"
+	tooltip = "#mg_division_MGDivisionInfantry_tooltip" ;"Adds the ability to create infantry army in the field."
+	upgrade_tooltip = "#mg_division_MGDivisionInfantry_upgrade_tooltip"
+	damage = 0.0   ; percent amount this division increases quickbattle victory odds
+	rts_actor_ids = NULL
+	rts_water_actor_ids = NULL
+	icon_location = 0
+	upgrade_button_location = 0
+	
+	[Technology]
+	ids = infhqproduction
+}
+
+
+[Template MGDivisionMobile Template=MGDivisionTemplate]
+{
+	name = "#mg_division_MGDivisionMobile_name"
+
+	tooltip = "#mg_division_MGDivisionMobile_tooltip" ;"Adds the ability to create mechanized divisions in the field."
+	upgrade_tooltip = "#mg_division_MGDivisionMobile_upgrade_tooltip"
+	damage = 0.0  ; percent amount this division increases quickbattle victory odds
+	rts_actor_ids = NULL
+	rts_water_actor_ids = NULL
+	icon_location = 1	
+	upgrade_button_location = 1
+
+	[Technology]
+	ids = mechhqproduction
+}
+
+[Template MGDivisionArmor Template=MGDivisionTemplate]
+{
+	name = "#mg_division_MGDivisionArmor_name"
+	tooltip = "#mg_division_MGDivisionArmor_tooltip" ;"Adds the ability to create armored divisions in the field."
+	upgrade_tooltip = "#mg_division_MGDivisionArmor_upgrade_tooltip"
+	damage = 0.0   ; percent amount this division increases quickbattle victory odds
+	rts_actor_ids = NULL
+	rts_water_actor_ids = NULL
+	icon_location = 2
+	upgrade_button_location = 2
+
+	[Technology]
+	ids = mechhqproduction
+
+	[Technology]
+	ids = armorhqproduction
+}
+
+[Template MGDivisionAir Template=MGDivisionTemplate]
+{
+	name = "#mg_division_MGDivisionAir_name"
+	tooltip = "#mg_division_MGDivisionAir_tooltip" ;"Provides any existing army with 1 starting airbase and the ability to build additional airbases."
+	upgrade_tooltip = "#mg_division_MGDivisionAir_upgrade_tooltip"
+	damage = 0.0   ; percent amount this division increases quickbattle victory odds
+	icon_location = 3	
+	upgrade_button_location = 3
+
+	[Technology]
+	ids = air_support
+}
+
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Specific division objects for USA
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[MGDivision Template=MGDivisionInfantry]
+{
+	ids = usa_division_infantry
+	icon = divisions/USA/Icon_InfantryEnabled.tga
+	rts_actor_ids = usa_corps_dynamic
+	rts_water_actor_ids = usa_battleship_dynamic
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeInfantryDefault.tga
+
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeInfantrySelectedFocus.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeInfantryFocus.tga
+}
+
+[MGDivision Template=MGDivisionMobile]
+{
+	ids = usa_division_mobile
+	icon = divisions/USA/Icon_MobileEnabled.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeMobileDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeMobileSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeMobileFocus.tga
+
+	[DivisionPreReq]
+	ids = usa_division_infantry
+}
+
+
+[MGDivision Template=MGDivisionArmor]
+{
+	ids = usa_division_armor
+	icon = divisions/USA/Icon_ArmorEnabled.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeArmorDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeArmorSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeArmorFocus.tga
+
+	[DivisionPreReq]
+	ids = usa_division_infantry
+
+	[DivisionPreReq]
+	ids = usa_division_mobile
+}
+
+
+[MGDivision Template=MGDivisionAir]
+{
+	ids = usa_division_air
+	rts_actor_ids = null
+	rts_water_actor_ids = usa_carrier
+	icon = divisions/USA/Icon_AirSupportEnabled.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeAirForceDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeAirForceSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/USA/Button_UpgradeAirForceFocus.tga
+}
+
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Specific division objects for GBR
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[MGDivision Template=MGDivisionInfantry]
+{
+	ids = gbr_division_infantry
+	icon = divisions/GBR/Icon_InfantryEnabled.tga
+	rts_actor_ids = gbr_corps_dynamic
+	rts_water_actor_ids = gbr_battleship_dynamic
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeInfantryDefault.tga
+
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeInfantrySelectedFocus.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeInfantryFocus.tga
+}
+
+[MGDivision Template=MGDivisionMobile]
+{
+	ids = gbr_division_mobile
+	icon = divisions/GBR/Icon_MobileEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeMobileDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeMobileSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeMobileFocus.tga
+
+	[DivisionPreReq]
+	ids = gbr_division_infantry
+}
+
+
+[MGDivision Template=MGDivisionArmor]
+{
+	ids = gbr_division_armor
+	icon = divisions/GBR/Icon_ArmorEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeArmorDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeArmorSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeArmorFocus.tga
+
+	[DivisionPreReq]
+	ids = gbr_division_infantry
+
+	[DivisionPreReq]
+	ids = gbr_division_mobile
+}
+
+
+[MGDivision Template=MGDivisionAir]
+{
+	ids = gbr_division_air
+	rts_actor_ids = null
+	rts_water_actor_ids = gbr_carrier
+	icon = divisions/GBR/Icon_AirSupportEnabled.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeAirForceDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeAirForceSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GBR/Button_UpgradeAirForceFocus.tga
+}
+
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Specific division objects for RUS
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[MGDivision Template=MGDivisionInfantry]
+{
+	ids = rus_division_infantry
+	icon = divisions/RUS/Icon_InfantryEnabled.tga
+	rts_actor_ids = rus_corps_dynamic
+	rts_water_actor_ids = rus_battleship_dynamic
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeInfantryDefault.tga
+
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeInfantrySelectedFocus.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeInfantryFocus.tga
+}
+
+[MGDivision Template=MGDivisionMobile]
+{
+	ids = rus_division_mobile
+	icon = divisions/RUS/Icon_MobileEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeMobileDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeMobileSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeMobileFocus.tga
+
+	[DivisionPreReq]
+	ids = rus_division_infantry
+}
+
+
+[MGDivision Template=MGDivisionArmor]
+{
+	ids = rus_division_armor
+	icon = divisions/RUS/Icon_ArmorEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeArmorDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeArmorSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeArmorFocus.tga
+
+	[DivisionPreReq]
+	ids = rus_division_infantry
+
+	[DivisionPreReq]
+	ids = rus_division_mobile
+}
+
+
+[MGDivision Template=MGDivisionAir]
+{
+	ids = rus_division_air
+	rts_actor_ids = null
+	rts_water_actor_ids = rus_carrier
+	icon = divisions/RUS/Icon_AirSupportEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeAirForceDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeAirForceSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/RUS/Button_UpgradeAirForceFocus.tga
+}
+
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Specific division objects for GER
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[MGDivision Template=MGDivisionInfantry]
+{
+	ids = ger_division_infantry
+	icon = divisions/GER/Icon_InfantryEnabled.tga
+	rts_actor_ids = ger_corps_dynamic
+	rts_water_actor_ids = ger_battleship_dynamic
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeInfantryDefault.tga
+
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeInfantrySelectedFocus.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeInfantryFocus.tga
+}
+
+[MGDivision Template=MGDivisionMobile]
+{
+	ids = ger_division_mobile
+	icon = divisions/GER/Icon_MobileEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeMobileDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeMobileSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeMobileFocus.tga
+
+	[DivisionPreReq]
+	ids = ger_division_infantry
+}
+
+
+[MGDivision Template=MGDivisionArmor]
+{
+	ids = ger_division_armor
+	icon = divisions/GER/Icon_ArmorEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeArmorDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeArmorSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeArmorFocus.tga
+
+	[DivisionPreReq]
+	ids = ger_division_infantry
+
+	[DivisionPreReq]
+	ids = ger_division_mobile
+}
+
+
+[MGDivision Template=MGDivisionAir]
+{
+	ids = ger_division_air
+	rts_actor_ids = null
+	rts_water_actor_ids = ger_carrier
+	icon = divisions/GER/Icon_AirSupportEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeAirForceDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeAirForceSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/GER/Button_UpgradeAirForceFocus.tga
+}
+
+
+
+;;-------------------------------------------------------------------------------------------------
+;;
+;;  Specific division objects for JPN
+;;
+;;-------------------------------------------------------------------------------------------------
+
+[MGDivision Template=MGDivisionInfantry]
+{
+	ids = jpn_division_infantry
+	icon = divisions/JPN/Icon_InfantryEnabled.tga
+	rts_actor_ids = jpn_corps_dynamic
+	rts_water_actor_ids = jpn_battleship_dynamic
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeInfantryDefault.tga
+
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeInfantrySelectedFocus.tga
+
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeInfantryFocus.tga
+}
+
+[MGDivision Template=MGDivisionMobile]
+{
+	ids = jpn_division_mobile
+	icon = divisions/JPN/Icon_MobileEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeMobileDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeMobileSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeMobileFocus.tga
+
+	[DivisionPreReq]
+	ids = jpn_division_infantry
+}
+
+
+[MGDivision Template=MGDivisionArmor]
+{
+	ids = jpn_division_armor
+	icon = divisions/JPN/Icon_ArmorEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeArmorDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeArmorSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeArmorFocus.tga
+
+	[DivisionPreReq]
+	ids = jpn_division_infantry
+
+	[DivisionPreReq]
+	ids = jpn_division_mobile
+}
+
+
+[MGDivision Template=MGDivisionAir]
+{
+	ids = jpn_division_air
+	rts_actor_ids = null
+	rts_water_actor_ids = jpn_carrier
+	icon = divisions/JPN/Icon_AirSupportEnabled.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + UNFOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeAirForceDefault.tga
+	
+	[UpgradeButtonVE]
+	when = PRESSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeAirForceSelectedFocus.tga
+	
+	[UpgradeButtonVE]
+	when = UNPRESSED + FOCUSED
+	texture = /MetaGame/Divisions/JPN/Button_UpgradeAirForceFocus.tga
+}

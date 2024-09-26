@@ -1,0 +1,20 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_samoa.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_samoa.tgi"
+
+	mg_rmc_samoa_name = "Samoa"
+	mg_rmc_samoa_description = "Samoa"
+	mg_rmc_samoa_bunkers_coastline_1_name = "Coastline Bunkers 1"
+	mg_rmc_samoa_bunkers_coastline_2_name = "Coastline Bunkers 2"
+	mg_rmc_samoa_bunkers_coastline_3_name = "Coastline Bunkers 3"
+	mg_rmc_samoa_bunkers_coastline_4_name = "Coastline Bunkers 4"
+	mg_rmc_samoa_bunkers_coastline_5_name = "Coastline Bunkers 5"
+	mg_rmc_samoa_bunkers_coastline_6_name = "Coastline Bunkers 6"
+	mg_rmc_samoa_bunkers_coastline_7_name = "Coastline Bunkers 7"
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_samoa_village_samoa_name = "Villages"
+}

@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_rmc_southerneurope.tgi
+	name = "@Localization/RandomMap/strings_rmc_southerneurope.tgi"
+
+	rmc_southerneurope_name = "Southern Europe"
+	rmc_southerneurope_description = "Southern Europe presented broken, mountainous land and dangerous rocky shoreline to any would-be invaders.  Nevertheless, because of its Mediterranean ports, it served as a critical link between the North African and European theaters, and thus was too valuable to pass up."
+
+
+;; Strings below added in ldf.txt
+
+	rmc_southerneurope_village_southerneurope_name = "Villages"
+}

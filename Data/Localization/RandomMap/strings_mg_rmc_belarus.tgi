@@ -1,0 +1,13 @@
+﻿[Text language = default]
+{
+	ids = Localization/RandomMap/strings_mg_rmc_belarus.tgi
+	name = "@Localization/RandomMap/strings_mg_rmc_belarus.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	mg_rmc_belarus_name = "Belarus"
+	mg_rmc_belarus_description = "Belarus"
+	mg_rmc_belarus_village_belarus_name = "Villages"
+}

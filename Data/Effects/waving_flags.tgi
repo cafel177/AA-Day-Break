@@ -1,0 +1,114 @@
+;--------------- FLAGS - NO POLES ----------------------
+
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = jpn_waving_flag
+	name = "#waving_flags_jpn_waving_flag_name"
+	model = Flags/JPNFlag.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = rus_waving_flag
+	name = "#waving_flags_rus_waving_flag_name"
+	model = Flags/RUSFlag.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = gbr_waving_flag
+	name = "#waving_flags_gbr_waving_flag_name"
+	model = Flags/GBRFlag.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = ger_waving_flag
+	name = "#waving_flags_ger_waving_flag_name"
+	model = Flags/GERFlag.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = usa_waving_flag
+	name = "#waving_flags_usa_waving_flag_name"
+	model = Flags/USAFlag.nif
+}
+
+;--------------- FLAGS - POLES ----------------------
+
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = jpn_waving_flag_pole
+	name = "#waving_flags_jpn_waving_flag_pole_name"
+	model = Flags/JPNFlagPole.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = gbr_waving_flag_pole
+	name = "#waving_flags_gbr_waving_flag_pole_name"
+	model = Flags/GBRFlagPole.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = ger_waving_flag_pole
+	name = "#waving_flags_ger_waving_flag_pole_name"
+	model = Flags/GERFlagPole.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = usa_waving_flag_pole
+	name = "#waving_flags_usa_waving_flag_pole_name"
+	model = Flags/USAFlagPole.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = rus_waving_flag_pole
+	name = "#waving_flags_rus_waving_flag_pole_name"
+	model = Flags/RUSFlagPole.nif
+}
+
+;--------------- FLAGS - POLES (DAMAGED) ----------------------
+
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = jpn_waving_flag_pole_damaged
+	name = "#waving_flags_jpn_waving_flag_pole_damaged_name"
+	model = Flags/JPNFlagPoleDamaged.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = gbr_waving_flag_pole_damaged
+	name = "#waving_flags_gbr_waving_flag_pole_damaged_name"
+	model = Flags/GBRFlagPoleDamaged.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = ger_waving_flag_pole_damaged
+	name = "#waving_flags_ger_waving_flag_pole_damaged_name"
+	model = Flags/GERFlagPoleDamaged.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = usa_waving_flag_pole_damaged
+	name = "#waving_flags_usa_waving_flag_pole_damaged_name"
+	model = Flags/USAFlagPoleDamaged.nif
+}
+
+[VFX Template=AAVFXModelPermanent]
+{
+	IDS = rus_waving_flag_pole_damaged
+	name = "#waving_flags_rus_waving_flag_pole_damaged_name"
+	model = Flags/RUSFlagPoleDamaged.nif
+}
+

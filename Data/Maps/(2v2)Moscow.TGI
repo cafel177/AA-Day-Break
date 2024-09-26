@@ -1,0 +1,22 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "The Burning of Moscow"
+
+	kingdom_1 = "Side 2"
+	kingdom_0 = "Side 1"
+	objective_7 = "3. Destroy all of Chuikov's Forces"
+	independent_7 = "Civilian (Aggressive)"
+	name_6142 = "Dmitrov"
+	objective_6 = "2. Destroy all of Zhukov's Forces"
+	name_1591 = "Ryazan"
+	team_1 = "Team 2"
+	team_0 = "Team 1"
+	map_description = "With the Red Army in tatters and supplies desperately short, Russian morale is at an all time low and forces are surrendering in droves.  Stalin has realized that the fall of Moscow will result in the complete collapse of Communist control over the masses, and has staked a final defensive line, comprised of the last remnants of the Red Army and irregular conscripts from the general population.  Victory here will mean the end of Russia.  The German European forces, supported by advance Japanese units from the newly-conquered India, are prepared to strike the final blow."
+	name_1549 = "Kaluga"
+	kingdom_4 = "Side 4"
+	independent_2 = "Civilian (Neutral)"
+	map_name = "The Burning of Moscow"
+	kingdom_3 = "Side 3"
+	objective_0 = "1.  Capture Moscow before Japan."
+}

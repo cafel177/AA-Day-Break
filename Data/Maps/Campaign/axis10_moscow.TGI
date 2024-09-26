@@ -1,0 +1,21 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "The Burning of Moscow"
+
+	kingdom_1 = "Zhukov's Force"
+	kingdom_0 = "Manstein's Force"
+	objective_7 = "3. Destroy all of Chuikov's Forces"
+	objective_6 = "2. Destroy all of Zhukov's Forces"
+	independent_6 = "German Spies"
+	name_1591 = "Ryazan"
+	map_description = "With the Red Army in tatters and supplies desperately short, Russian morale is at an all time low and forces are surrendering in droves.  Stalin has realized that the fall of Moscow will result in the complete collapse of Communist control over the masses, and has staked a final defensive line, comprised of the last remnants of the Red Army and irregular conscripts from the general population.  Victory here will mean the end of Russia.  The German European forces, supported by advance Japanese units from the newly-conquered India, are prepared to strike the final blow."
+	trigger_52_element_2 = "HINT : Several German spies have been planted behind enemy lines.  These spies will allow you to track enemy movement."
+	kingdom_5 = "Moscow Garrison"
+	name_1549 = "Kaluga"
+	kingdom_4 = "Chuikov's Force"
+	independent_2 = "Civilian"
+	map_name = "The Burning of Moscow"
+	kingdom_3 = "Kuribayashi's Force"
+	objective_0 = "1.  Capture Moscow before Japan."
+}

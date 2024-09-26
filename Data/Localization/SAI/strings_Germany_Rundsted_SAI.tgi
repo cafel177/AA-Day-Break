@@ -1,0 +1,15 @@
+﻿[Text language = default]
+{
+	ids = Localization/SAI/strings_Germany_Rundsted_SAI.tgi
+	name = "@Localization/SAI/strings_Germany_Rundsted_SAI.tgi"
+
+
+
+;; Strings below added in ldf.txt
+
+	Germany_Rundsted_SAI_rundstedt_low_income_ego_name = "Rundstedt low income ego"
+	Germany_Rundsted_SAI_rundstedt_main_game_ego_name = "Rundstedt main game ego"
+	Germany_Rundsted_SAI_rundstedt_end_game_ego_name = "Rundstedt end game ego"
+	Germany_Rundsted_SAI_rundstedt_sai_name = "Rundstedt AI"
+	Germany_Rundsted_SAI_rundstedt_sai_description = "Rundstedt AI"
+}

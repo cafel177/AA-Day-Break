@@ -1,0 +1,25 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "Tutorial: Mission 1"
+
+	objective_10 = "6. Attach an infantry regiment to the Infantry Division HQ."
+	kingdom_1 = "Germany"
+	objective_9 = "5. Deploy an infantry regiment."
+	kingdom_0 = "Russia"
+	restriction_group_0000 = "Russian Restrictions"
+	trigger_41_element_4 = "HINT: You can also use ALT + RIGHT-CLICK to force your troops to run as well."
+	objective_6 = "4. Deploy and unpack an ammo depot."
+	objective_5 = "7. Resupply the stranded infantry regiment."
+	trigger_198_element_2 = "HINT: The regiment limit on the Division HQ indicates the number of regiments that you can deploy before you need to create another Division HQ."
+	trigger_35_element_3 = "HINT: You can also RIGHT-CLICK on the enemy to attack them."
+	map_description = "In the first tutorial you will learn about regiments, movement, combat, base building, formations, and using special operations."
+	objective_2 = "1. Select and move the infantry regiment."
+	map_name = "Tutorial: Mission 1"
+	independent_2 = "Civilian"
+	objective_1 = "3. Deploy and unpack an Infantry Division HQ.."
+	trigger_199_element_2 = "HINT: The supply drop orders a plane to fly to the targeted location and drop provisions that provide a supply zone for your troops."
+	trigger_116_element_3 = "HINT: You can also RIGHT-CLICK to move your regiment."
+	objective_0 = "2. Attack and defeat the Germans, then move to the Corps HQ."
+	objective_11 = "Complete tutorial."
+}
