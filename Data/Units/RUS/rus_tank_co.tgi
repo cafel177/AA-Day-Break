@@ -53,6 +53,7 @@
 	[MoverComponent]
 	{
 		speed_max = 3.5
+		acceleration = 3
 		turn_radians_per_sec = 2
 		
 		[WhenStartMoving template=FXC_CreateVFX]
