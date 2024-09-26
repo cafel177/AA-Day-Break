@@ -65,7 +65,7 @@
 				B = +30
 			}
 
-			[Decal Template=DecalWidget
+			[Decal Template=DecalWidget]
 			{
 				[View Template=NoVE]
 

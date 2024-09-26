@@ -19,133 +19,6 @@
 		T = 0
 		R = 100%
 		B = 100%
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 317
-			T = 65
-			R = +654
-			B = +7
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignAboveWindowEnds.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignAboveWindowCenter.png
-		}
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 0
-			T = 0
-			R = +427
-			B = +65
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-		}
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 656
-			T = 0
-			R = 100%
-			B = +65
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-		}
-		
-		[Child Template = CampaignBarTopLogoDecal]
-		{
-			L = 427
-			T = 0
-			R = +229
-			B = +65
-		}
-
-		[Child Template = CampaignBarBottomTile]
-		{
-			L = 0
-			T = 680
-			R = 100%
-			B = 100%
-		}
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 316
-			T = 618
-			R = +662
-			B = +63
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBelowWindowEnds.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBelowWindowCenter.png
-		}
-		
-		[Child Template = CampaignBarBottomColumn]
-		{
-			L = 0
-			T = 680
-		}
-		
-		[Child Template = CampaignBarBottomColumn]
-		{
-			L = 271
-			T = 680
-		}
-		
-		[Child Template = CampaignBarBottomColumn]
-		{
-			L = 977
-			T = 680
-			
-			texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarBottomColumnRight.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 971
-			T = 64
-			R = +53
-			B = +128
-			
-			texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignRightColumnTop.png
-		}
-		
-		[Child Template = DecalVETiledVertical]
-		{
-			L = 971
-			T = 192
-			R = +53
-			B = +425
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignRightColumnTile.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignRightColumnTile.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 971
-			T = 617
-			R = +53
-			B = +64
-			
-			texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignRightColumnBottom.png
-		}
-				
-		[Child Template = LobbyButtonMenu]
-		{
-			L = 0
-			T = 64
-			R = +317
-			B = +640
-		}
-		
-		[Child Template = LobbyWindow]
-		{
-			L = 316
-			T = 72
-			R = +656
-			B = +546
-		}
 	}
 
 	[CampaignButton Template=SharedToggleButtonWidget]
@@ -200,7 +73,7 @@
 			[Decal Template=DecalVE]
 			{
 				alpha_blending = true
-				texture = null
+				texture = /UI/%s/Default/Campaign/CampaignButtonSelectedFocused.tga
 			}
 		}
 

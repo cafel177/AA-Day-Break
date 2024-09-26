@@ -2,18 +2,18 @@
 {
 		;;;;;; warnings that are normally on in dev
 
-		flag MemoryShowLeakReport = false
-		flag WarningsDisplayedAtEnd = false
-		flag DataReportInvalidIDSWarnings = false		;; Report warning on invalid IDS lookups
-		flag RenderDrawTerrainTexPoolWarning = false
+		flag MemoryShowLeakReport = true
+		flag WarningsDisplayedAtEnd = true
+		flag DataReportInvalidIDSWarnings = true		;; Report warning on invalid IDS lookups
+		flag RenderDrawTerrainTexPoolWarning = true
 
 		;;;;;; warnings and errors		
 		
-		flag DataMissingResourceWarning = false
-		flag LogsEchoArtToGame = false
-		flag WarningsDisplayedImmediately = false
-		flag WarningsCheckPartitions = false			;; NIF checking, disable in release
-		flag ResourceReportUnused = false			;; enable this to track unused resources	
+		flag DataMissingResourceWarning = true
+		flag LogsEchoArtToGame = true
+		flag WarningsDisplayedImmediately = true
+		flag WarningsCheckPartitions = true			;; NIF checking, disable in release
+		flag ResourceReportUnused = true			;; enable this to track unused resources	
 		
 		string CombatValueCSV = null
 }

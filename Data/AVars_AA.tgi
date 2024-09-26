@@ -52,7 +52,7 @@ drp012903 - created
 	
 	;; camera
 	;; TODO: change engine-hardcoded value
-	float 			CameraHeight = 100
+	;;float 			CameraHeight = 100
 
 	;; UI components disabling
 	flag	UIUseSidePanel = false

@@ -3,7 +3,7 @@
 
 [Template DynamicCampaignGeneralButtonGroupVE Template=GroupVE]
 {
-	R = +182
+	R = +582
 	B = +46
 	
 	[Child Template=DecalVE]
@@ -66,8 +66,8 @@
 	interface_music = main_title_music
 
 	bool	anchored_tooltips = true
-	float	anchored_tooltip_x = 244
-	float	anchored_tooltip_y = 240
+	float	anchored_tooltip_x = 700
+	float	anchored_tooltip_y = 90
 	float	anchored_tooltip_width = 256
 	bool	anchored_tooltip_should_expand_downward = true
 
@@ -192,7 +192,7 @@
 
 	[Label Template=SharedLargeCenteredLabelVE]
 	{
-		T = 8
+		T = 6
 		text = ""	;; Set by code
 	}
 }
@@ -205,86 +205,16 @@
 		L = 0%
 		T = 0
 		R = 100%
-		B = +237
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 0
-			T = 0
-			R = +427
-			B = +65
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-		}
-		
-		[Child Template = DecalVETiledHorizontal]
-		{
-			L = 656
-			T = 0
-			R = 100%
-			B = +65
-			
-			ends_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-			center_texture = /UI/%s/Default/Menus/SinglePlayerCampaign/SinglePlayerCampaignBarTopTile.png
-		}
-		
-		[Child Template = CampaignBarTopLogoDecal]
-		{
-			L = 427
-			T = 0
-			R = +229
-			B = +65
-		}
+		B = +307
 		
 		[Child Template = DecalVE]
 		{
 			L = 0
-			T = 64
-			R = +205
+			T = 0
+			R = 100%
 			B = +172
 			
 			texture = /MetaGame/UI/%s/ChooseDynamicCampaign/NationButtonBackground01.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 205
-			T = 64
-			R = +205
-			B = +172
-			
-			texture = /MetaGame/UI/%s/ChooseDynamicCampaign/NationButtonBackground02.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 409
-			T = 64
-			R = +205
-			B = +172
-			
-			texture = /MetaGame/UI/%s/ChooseDynamicCampaign/NationButtonBackground03.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 612
-			T = 64
-			R = +205
-			B = +172
-			
-			texture = /MetaGame/UI/%s/ChooseDynamicCampaign/NationButtonBackground04.png
-		}
-		
-		[Child Template = DecalVE]
-		{
-			L = 816
-			T = 64
-			R = +208
-			B = +172
-			
-			texture = /MetaGame/UI/%s/ChooseDynamicCampaign/NationButtonBackground05.png
 		}
 	}
 
@@ -297,10 +227,10 @@
 	
 		[View]
 		{
-			L = 26
-			T = 201
-			R = +182
-			B = +36
+			L = 5
+			T = 0
+			R = +70
+			B = +1
 		}
 		
 		[Client]
@@ -322,10 +252,10 @@
 		
 		[View]
 		{
-			L = 222
-			T = 201
-			R = +182
-			B = +36
+			L = 75
+			T = 0
+			R = +70
+			B = +1
 		}
 		
 		[Client]
@@ -347,10 +277,10 @@
 		
 		[View]
 		{
-			L = 418
-			T = 201
-			R = +182
-			B = +36
+			L = 145
+			T = 0
+			R = +70
+			B = +1
 		}
 		
 		[Client]
@@ -372,10 +302,10 @@
 		
 		[View]
 		{
-			L = 614
-			T = 201
-			R = +182
-			B = +36
+			L = 215
+			T = 0
+			R = +70
+			B = +1
 		}
 		
 		[Client]
@@ -397,10 +327,10 @@
 		
 		[View]
 		{
-			L = 810
-			T = 201
-			R = +182
-			B = +36
+			L = 285
+			T = 0
+			R = +70
+			B = +1
 		}
 		
 		[Client]
@@ -413,14 +343,354 @@
 		}
 	}
 
+	[DynamicCampaignLabel5 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 355
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+	[DynamicCampaignLabel6 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 425
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+	[DynamicCampaignLabel7 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 495
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+	[DynamicCampaignLabel8 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 565
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+	[DynamicCampaignLabel9 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 635
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+
+	[DynamicCampaignLabel10 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 13
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 705
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+	[DynamicCampaignLabel11 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 775
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 845
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+	[DynamicCampaignLabel12 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 775
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 915
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+	[DynamicCampaignLabel13 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 80
+			T = 0
+			R = +160
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 13
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+
+	[DynamicCampaignLabel14 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 915
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 915
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+
+
+	[DynamicCampaignLabel15 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 955
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 915
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+
+	[DynamicCampaignLabel16 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 995
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 915
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
+
+	[DynamicCampaignLabel17 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		pressed_client_L = 17
+		pressed_client_T = 10
+		pressed_client_R = 13r
+		pressed_client_B = 2b
+		
+		[View]
+		{
+			L = 1035
+			T = 0
+			R = +70
+			B = +1
+		}
+		
+		[Client]
+		{
+			[View]
+			L = 915
+			T = 8
+			R = 13r
+			B = 3b
+		}
+	}
+
+
 	[DynamicCampaignButton0 Inherit=DynamicCampaignButtonTemplate]
 	{
 		[View Template=GroupVE]
 		{
-			L = 19
-			T = 40
-			R = +196
-			B = +161
+			L = 00
+			T = 25
+			R = +60
+			B = +60
 		}
 	}
 
@@ -428,10 +698,10 @@
 	{
 		[View Template=GroupVE]
 		{
-			L = 215
-			T = 40
-			R = +196
-			B = +161
+			L = 60
+			T = 25
+			R = +59
+			B = +60
 		}
 	}
 	
@@ -439,10 +709,10 @@
 	{
 		[View Template=GroupVE]
 		{
-			L = 411
-			T = 40
-			R = +196
-			B = +161
+			L = 120
+			T = 25
+			R = +59
+			B = +60
 		}
 	}
 	
@@ -450,10 +720,10 @@
 	{
 		[View Template=GroupVE]
 		{
-			L = 607
-			T = 40
-			R = +196
-			B = +161
+			L = 180
+			T = 25
+			R = +59
+			B = +60
 		}
 	}
 	
@@ -461,12 +731,155 @@
 	{
 		[View Template=GroupVE]
 		{
-			L = 803
-			T = 40
-			R = +196
-			B = +161
+			L = 240
+			T = 25
+			R = +59
+			B = +60
 		}
 	}
+
+	[DynamicCampaignButton5 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 300
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton6 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 360
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton7 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 420
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton8 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 480
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton9 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 540
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton10 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 600
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+	[DynamicCampaignButton11 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 660
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton12 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 720
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton13 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 780
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton14 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 840
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton15 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 900
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton16 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 960
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
+	[DynamicCampaignButton17 Inherit=DynamicCampaignButtonTemplate]
+	{
+		[View Template=GroupVE]
+		{
+			L = 1020
+			T = 25
+			R = +59
+			B = +60
+		}
+	}
+
 }
 
 [DynamicCampaignGeneralButtons Inherit=PanelWidget]
@@ -474,9 +887,9 @@
 	[View Template=GroupVE]
 	{
 		L = 0
-		T = 236
-		R = +278
-		B = +435
+		T = 90
+		R = +825
+		B = +608
 		
 		validate_decal_children = false
 		
@@ -486,10 +899,10 @@
 		
 		[Child Template = DecalVETiled]
 		{
-			L = 17
-			T = 9
-			R = +221
-			B = +220
+			L = 1021
+			T = 0
+			R = +1
+			B = +1
 			
 			corners_texture = /MetaGame/UI/%s/ChooseDynamicCampaign/GeneralPortraitBorderCorners.png
 			left_border_texture = /MetaGame/UI/%s/ChooseDynamicCampaign/GeneralPortraitBorderLeft.png
@@ -524,10 +937,10 @@
 		
 		[View]
 		{
-			L = 23
-			T = 15
-			R = +209
-			B = +209
+			L = 1021
+			T = 0
+			R = +1
+			B = +1
 		}
 
 		[VideoResource]
@@ -538,10 +951,10 @@
 	{
 		[View Template=DynamicCampaignGeneralButtonGroupVE]
 		{
-			L = 14
-			T = 237
+			L = 004
+			T = 0
 			R = +227
-			B = +46
+			B = +37
 		}
 	}
 
@@ -549,10 +962,10 @@
 	{
 		[View Template=DynamicCampaignGeneralButtonGroupVE]
 		{
-			L = 14
-			T = 281
+			L = 04
+			T = 38
 			R = +227
-			B = +46
+			B = +37
 		}
 	}
 	
@@ -560,10 +973,10 @@
 	{
 		[View Template=DynamicCampaignGeneralButtonGroupVE]
 		{
-			L = 14
-			T = 326
+			L = 04
+			T = 76
 			R = +227
-			B = +46
+			B = +37
 		}
 	}
 
@@ -571,12 +984,518 @@
 	{
 		[View Template=DynamicCampaignGeneralButtonGroupVE]
 		{
-			L = 14
-			T = 371
+			L = 04
+			T = 114
 			R = +227
-			B = +46
+			B = +37
 		}
 	}
+
+	[DynamicCampaignGeneralButton4 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 152
+			R = +227
+			B = +37
+		}
+	}
+[DynamicCampaignGeneralButton5 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 190
+			R = +227
+			B = +37
+		}
+	}
+
+
+[DynamicCampaignGeneralButton6 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 228
+			R = +227
+			B = +37
+		}
+	}
+		
+[DynamicCampaignGeneralButton7 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 266
+			R = +227
+			B = +37
+		}
+	}
+
+[DynamicCampaignGeneralButton8 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 304
+			R = +227
+			B = +37
+		}
+	}
+
+[DynamicCampaignGeneralButton9 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 342
+			R = +227
+			B = +38
+		}
+	}
+	
+
+[DynamicCampaignGeneralButton10 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 380
+			R = +227
+			B = +38
+		}
+	}
+
+
+[DynamicCampaignGeneralButton11 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 418
+			R = +227
+			B = +38
+		}
+	}
+
+
+[DynamicCampaignGeneralButton12 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 456
+			R = +227
+			B = +38
+		}
+	}
+
+[DynamicCampaignGeneralButton13 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 494
+			R = +227
+			B = +38
+		}
+	}	
+
+
+[DynamicCampaignGeneralButton14 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 532
+			R = +227
+			B = +38
+		}
+	}		
+
+
+[DynamicCampaignGeneralButton15 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 004
+			T = 570
+			R = +227
+			B = +38
+		}
+	}		
+	
+[DynamicCampaignGeneralButton16 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 0
+			R = +227
+			B = +38
+		}
+	}
+		
+
+[DynamicCampaignGeneralButton17 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 38
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+
+[DynamicCampaignGeneralButton18 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 76
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+[DynamicCampaignGeneralButton19 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 115
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+
+[DynamicCampaignGeneralButton20 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 152
+			R = +227
+			B = +38
+		}
+	}
+				
+	
+
+[DynamicCampaignGeneralButton21 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 190
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton22 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 228
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton23 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 266
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton24 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 304
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton25 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 342
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton26 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 380
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton27 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 418
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton28 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 456
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton29 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 494
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton30 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 532
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton31 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 232
+			T = 570
+			R = +227
+			B = +38
+		}
+	}
+		
+	
+[DynamicCampaignGeneralButton32 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 0
+			R = +227
+			B = +38
+		}
+	}
+		
+
+[DynamicCampaignGeneralButton33 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 38
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+
+[DynamicCampaignGeneralButton34 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 76
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+[DynamicCampaignGeneralButton35 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 115
+			R = +227
+			B = +38
+		}
+	}
+				
+		
+
+[DynamicCampaignGeneralButton36 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 152
+			R = +227
+			B = +38
+		}
+	}
+				
+	
+
+[DynamicCampaignGeneralButton37 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 190
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton38 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 228
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton39 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 266
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton40 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 304
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton41 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 342
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton42 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 380
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton43 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 418
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton44 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 456
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton45 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 494
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton46 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 532
+			R = +227
+			B = +38
+		}
+	}		
+
+[DynamicCampaignGeneralButton47 Inherit=DynamicCampaignGeneralButtonTemplate]
+	{
+		[View Template=DynamicCampaignGeneralButtonGroupVE]
+		{
+			L = 464
+			T = 570
+			R = +227
+			B = +38
+		}
+	}		
 }
 
 [GlobeBink Template = CinematicWidget]
@@ -601,10 +1520,10 @@
 	
 	[View]
 	{
-		L = 201
+		L = 301
 		T = 236
-		R = +823
-		B = +436
+		R = +301
+		B = +237
 	}
 	
 	[VideoResource]
