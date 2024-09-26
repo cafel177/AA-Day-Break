@@ -1,7 +1,7 @@
 /**************************************************************************
 
 small.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ?2002-2003 TimeGate Studios
 
 DESCRIPTION: Describes the contents of a font.
 
@@ -29,71 +29,71 @@ EXAMPLES:
 {
 	ids = small
 	name = "#font_small_small_name"
-	size = 12 ;; this is the Windows font size, not the actual pixel height of glyphs.
+	size = 9 ;; this is the Windows font size, not the actual pixel height of glyphs.
 
 	[CharacterSet]
 	{
 		ids = base
 		font = /fonts/truetype/A&A.TTF
 		
-		backup_font = Arial
-		backup_font_size = 11
-		use_backup_font_when_smaller_than = 12
+		backup_font = /fonts/truetype/A&A.TTF
+		backup_font_size = 6
+		use_backup_font_when_smaller_than = 9
 		
 		bold = true
-		shadow = true
+		shadow = false
 		shadow_opacity = .4
 	}
 	
 	[CharacterSet]
 	ids = hangul_jamo
-	font = GulimChe
+	font = /fonts/truetype/A&A.TTF
 	
 	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = MS Gothic
+	font = /fonts/truetype/A&A.TTF
 
 	[CharacterSet]
 	ids = han
-	font = MingLiU
+	font = /fonts/truetype/A&A.TTF
 	*/
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = GulimChe
+	font = /fonts/truetype/A&A.TTF
 }
 
 [Font template = Font]
 {
 	ids = small_bold
 	name = "#font_small_small_bold_name"
-	size = 14 ;; this is the Windows font size, not the actual pixel height of glyphs.
+	size = 9 ;; this is the Windows font size, not the actual pixel height of glyphs.
 
 	[CharacterSet]
 	{
 		ids = base
-		font = Arial
+		font = /fonts/truetype/A&A.TTF
 		bold = true
-		shadow = true
+		shadow = false
 		shadow_opacity = .4
 	}
 	
 	[CharacterSet]
 	ids = hangul_jamo
-	font = GulimChe
+	font = /fonts/truetype/A&A.TTF
 	
 	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = MS Gothic
+	font = /fonts/truetype/A&A.TTF
 
 	[CharacterSet]
 	ids = han
-	font = MingLiU
+	font = /fonts/truetype/A&A.TTF
 	*/
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = GulimChe
+	font = /fonts/truetype/A&A.TTF
 }
