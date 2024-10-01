@@ -1,7 +1,7 @@
 /**************************************************************************
 
 font_tiny.tgi
-Copyright ?2002-2003 TimeGate Studios
+Copyright © 2002-2003 TimeGate Studios
 
 DESCRIPTION: Describes the contents of a font.
 
@@ -30,69 +30,62 @@ EXAMPLES:
 {
 	ids = tiny
 	name = "#font_tiny_name"
-	size = 9
+	size = 12
 
 	[CharacterSet]
 	{
 		ids = base
-		font = /fonts/truetype/A&A.TTF
-		bold = true
+		font = simsun
+		antialias = false
+		bold = false
 		shadow = false
-		shadow_opacity = .4
 	}
-	
+
 	[CharacterSet]
 	ids = hangul_jamo
-	font = /fonts/truetype/A&A.TTF
-	
-	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
+	font = simsun
+
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 
 	[CharacterSet]
 	ids = han
-	font = /fonts/truetype/A&A.TTF
-	*/
+	font = simsun
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = /fonts/truetype/A&A.TTF
-
+	font = simsun
 }
 
 [Font template = Font]
 {
 	ids = tiny_outline
 	name = "#font_tiny_name"
-	size = 9
+	size = 16
 
 	[CharacterSet]
 	{
 		ids = base
-		font = /fonts/truetype/A&A.TTF
-		bold = true
-		outline = false
-		shadow_opacity = .4
-		shadow_brightness = 0
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
 	}
-	
+
 	[CharacterSet]
 	ids = hangul_jamo
-	font = /fonts/truetype/A&A.TTF
-	
-	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
+	font = simsun
+
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 
 	[CharacterSet]
 	ids = han
-	font = /fonts/truetype/A&A.TTF
-	*/
+	font = simsun
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = /fonts/truetype/A&A.TTF
-
+	font = simsun
 }

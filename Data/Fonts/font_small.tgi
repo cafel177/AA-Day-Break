@@ -29,71 +29,66 @@ EXAMPLES:
 {
 	ids = small
 	name = "#font_small_small_name"
-	size = 9 ;; this is the Windows font size, not the actual pixel height of glyphs.
+	size = 13 ;; this is the Windows font size, not the actual pixel height of glyphs.
 
 	[CharacterSet]
 	{
 		ids = base
-		font = /fonts/truetype/A&A.TTF
-		
-		backup_font = /fonts/truetype/A&A.TTF
-		backup_font_size = 6
-		use_backup_font_when_smaller_than = 9
-		
-		bold = true
+		font = simsun
+		antialias = false
+		bold = false
 		shadow = false
-		shadow_opacity = .4
+		
+		backup_font = simsun
 	}
-	
+
 	[CharacterSet]
 	ids = hangul_jamo
-	font = /fonts/truetype/A&A.TTF
-	
-	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
+	font = simsun
+
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 
 	[CharacterSet]
 	ids = han
-	font = /fonts/truetype/A&A.TTF
-	*/
+	font = simsun
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 }
 
 [Font template = Font]
 {
 	ids = small_bold
 	name = "#font_small_small_bold_name"
-	size = 9 ;; this is the Windows font size, not the actual pixel height of glyphs.
+	size = 14 ;; this is the Windows font size, not the actual pixel height of glyphs.
 
 	[CharacterSet]
 	{
 		ids = base
-		font = /fonts/truetype/A&A.TTF
-		bold = true
+		font = simsun
+		antialias = false
+		bold = false
 		shadow = false
-		shadow_opacity = .4
+		
+		backup_font = simsun
 	}
-	
+
 	[CharacterSet]
 	ids = hangul_jamo
-	font = /fonts/truetype/A&A.TTF
-	
-	/* TODO: drp050403 - removed these two charsets because causing problem on Win98 which may be missing MS Serif
+	font = simsun
+
 	[CharacterSet]
 	ids = hiragana_katakana
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 
 	[CharacterSet]
 	ids = han
-	font = /fonts/truetype/A&A.TTF
-	*/
+	font = simsun
 
 	[CharacterSet]
 	ids = hangul_johab
-	font = /fonts/truetype/A&A.TTF
+	font = simsun
 }
