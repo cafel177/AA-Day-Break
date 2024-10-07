@@ -53,8 +53,13 @@
 			[AbilityDefinition Template=AAInfantryRifle]
 			{				
 				name = "#rus_infantry_sniper_AbilityDefinition_name"
-				recharge_time = 10
-				range = 20
+				recharge_time = 5
+				area = 1
+				range = 30
+				max_targets = 2
+
+				[Flags] 
+				bombard = true
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 10

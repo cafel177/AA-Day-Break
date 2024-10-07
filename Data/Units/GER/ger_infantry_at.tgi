@@ -42,8 +42,6 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
-
 		[Ability template=AAAttackLocal]
 		{
 			spawn_bone_ids = cannon_ae_01
@@ -51,9 +49,14 @@
 			[AbilityDefinition Template=AAInfantryRocket]
 			{				
 				name = "#ger_infantry_at_AbilityDefinition_name"
-				recharge_time = 5
-				range = 12
+				recharge_time = 6
+				area = 2
+				range = 35
+				max_targets = 5
 				
+				[Flags] 
+				bombard = true
+
 				[Effect Template=APDamageEffect]
 				amount = 45
 
@@ -62,6 +65,8 @@
 			
 				[Effect Template=EnchantmentEffect]
 				{
+					targets = +ENEMY +VEHICLE
+
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
 					IDS = at_stun_ger1

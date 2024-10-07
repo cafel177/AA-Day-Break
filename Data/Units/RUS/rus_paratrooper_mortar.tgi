@@ -85,9 +85,9 @@
 			[AbilityDefinition Template=AAMortarShot]
 			{				
 				name = "#rus_infantry_mortar_AbilityDefinition_name"
-				recharge_time = 9
+				recharge_time = 8
 				area = 3
-				range = 30
+				range = 35
 				max_targets = 8
 
 				[Flags] 
@@ -95,6 +95,11 @@
 					
 				[Effect Template=BlastDamageEffect]
 				amount = 30
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = explosive
+				targets = building
+				amount = 50
 
 				[Effect Template=MoraleLossEffect]
 				amount = .75

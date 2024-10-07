@@ -24,8 +24,6 @@
 
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
-
 		[Ability template=AAAttackLocal]
 		{
 			spawn_bone_ids = cannon_ae_01
@@ -34,8 +32,13 @@
 			{				
 				name = "#usa_infantry_at_AbilityDefinition_name"
 				recharge_time = 7
-				range = 12
+				area = 2
+				range = 35
+				max_targets = 5
 				
+				[Flags] 
+				bombard = true
+
 				[Effect Template=APDamageEffect]
 				amount = 55
 
@@ -44,6 +47,8 @@
 
 				[Effect Template=EnchantmentEffect]
 				{
+					targets = +ENEMY +VEHICLE
+
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
 					IDS = at_stun_usa1

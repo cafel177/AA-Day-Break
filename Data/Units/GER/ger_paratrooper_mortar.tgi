@@ -77,8 +77,8 @@
 			[AbilityDefinition Template=AAMortarShot]
 			{				
 				name = "#ger_infantry_mortar_AbilityDefinition_name"
-				recharge_time = 9
-				range = 30
+				recharge_time = 8
+				range = 35
 				area = 3
 				max_targets = 8
 
@@ -87,6 +87,11 @@
 	
 				[Effect Template=BlastDamageEffect]
 				amount = 30
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = explosive
+				targets = building
+				amount = 50
 
 				[Effect Template=MoraleLossEffect]
 				amount = .75

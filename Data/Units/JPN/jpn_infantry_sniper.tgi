@@ -54,8 +54,13 @@
 			[AbilityDefinition Template=AAInfantryRifle]
 			{				
 				name = "#jpn_infantry_sniper_AbilityDefinition_name"
-				recharge_time = 10
-				range = 18
+				recharge_time = 5
+				area = 1
+				range = 30
+				max_targets = 2
+				
+				[Flags] 
+				bombard = true
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 10
@@ -67,18 +72,6 @@
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_rifle
-			}
-		}
-		
-		[Ability Template=AAGrenadeLocal]
-		{
-			[AbilityDefinition Template=AAThrownGrenade]
-			{
-				name = "#jpn_infantry_AbilityDefinition_name_2"
-				projectile_ids = grenade02
-				
-				[Effect Template=BlastDamageEffect]
-				amount = 20
 			}
 		}
 	}
