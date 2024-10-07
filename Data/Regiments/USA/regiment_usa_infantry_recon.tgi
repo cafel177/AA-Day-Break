@@ -57,7 +57,7 @@
 		element_IDS = null
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_infantry
+		element_IDS = null
 	
 		[Slot]	;; flank
 		element_IDS = null
