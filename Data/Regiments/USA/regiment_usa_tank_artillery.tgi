@@ -29,7 +29,7 @@
 		icon = /UI/Game/RegimentButtons/IconTankArtillery.png
 
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = usa_vehicle_deployed
+		audio_ids = usa_tank_deployed
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = usa_artillery_select
