@@ -81,6 +81,9 @@
 				damage_type_IDS = gunfire
 				targets = infantry
 				amount = 250
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_rifle
 			}
 		}
 	}

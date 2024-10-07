@@ -72,6 +72,9 @@
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 14
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_rifle
 			}
 		}
 
