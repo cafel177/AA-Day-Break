@@ -31,22 +31,22 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_mechanized
+		layout_IDS = regiment_mechanized_infantry
 		
 		[Slot]	;; front
-		element_IDS = ger_infantry
+		element_IDS = ger_halftrack
 		
 		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry_mg
+		element_IDS = ger_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_tank_light
+		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 3
 		element_IDS = ger_infantry_mg
 	
 		[Slot]	;; flank
-		element_IDS = ger_halftrack
+		element_IDS = ger_infantry_mg
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co
