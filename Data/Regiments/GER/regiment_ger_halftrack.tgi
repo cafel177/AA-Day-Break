@@ -7,11 +7,11 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 35
 		
 		[Upkeep]
 		ammo = 0
-		oil = 15
+		oil = 5
 	}
 
 	[View]
@@ -34,13 +34,11 @@
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_heavy
-		
+		layout_IDS = regiment_vehicle_tiny
+		recruit_full = true
+
 		[Slot]	;; front
 		element_IDS = ger_halftrack
-	
-		[Slot]	;; support
-		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co
@@ -50,5 +48,11 @@
 	{	
 		[Property]
 		property_ids = mechanized_company
+
+		[Property]
+		property_IDS = recon	
+		
+		[Property]
+		property_IDS = trailblazing	
 	}
 }
