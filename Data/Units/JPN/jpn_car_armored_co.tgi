@@ -50,13 +50,13 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 2
+		defense = 5
 	}
 	
 	[MoverComponent]
 	{
 		speed_max = 4.5
-		acceleration = 8
+		acceleration = 4
 
 		[WhenStartMoving template=FXC_CreateVFX]
 		{

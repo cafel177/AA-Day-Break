@@ -141,17 +141,17 @@
 		;; Front Line1
 		[Position template=FormationPosition]
 		property_IDS = front
-		offset = +2, -0.5
+		offset = +4, +4
 
 		;; Front Line2
 		[Position template=FormationPosition]
 		property_IDS = front
-		offset = 0, +8
+		offset = 0, +6
 		
 		;; Front Line3
 		[Position template=FormationPosition]
 		property_IDS = front
-		offset = -2, -0.5
+		offset = -4, +4
 		
 		;; Rear Guard1
 		[Position template=FormationPosition]

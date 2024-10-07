@@ -9,6 +9,7 @@
 	[MoverComponent]
 	{
 		speed_max = 4.5
+		acceleration = 3.5
 		turn_radius = 1.5
 	}
 		

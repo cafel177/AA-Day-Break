@@ -48,13 +48,13 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 4
+		defense = 5
 	}
 	
 	[MoverComponent]
 	{
 		speed_max = 4.5
-		acceleration = 8
+		acceleration = 4
 	}
 
 	[ElementComponent]
