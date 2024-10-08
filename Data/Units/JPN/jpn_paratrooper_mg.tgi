@@ -84,10 +84,10 @@
 				max_targets = 4
 				
 				recharge_time = 2
-				range = 12
+				range = 18
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 12
+				amount = 16
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_mg_heavy

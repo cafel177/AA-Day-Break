@@ -658,10 +658,10 @@
 				max_targets = 4
 				
 				recharge_time = 2
-				range = 12
+				range = 18
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 14
+				amount = 18
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_mg_heavy
