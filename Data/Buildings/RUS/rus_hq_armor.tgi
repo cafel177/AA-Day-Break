@@ -59,7 +59,7 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 350
+		money = 175
 
 		[Production]
 		ammo = 10
