@@ -360,7 +360,6 @@ USAGE:
 	[SupplyComponent]
 	{
 		supply_range = 0
-		is_relay = true
 		stockpile_max = 60
 	}
 
