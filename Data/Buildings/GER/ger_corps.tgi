@@ -7,7 +7,7 @@
 	show_faction_portrait = true
 
 	[BodyComponent]
-	health = 3500
+	health = 2500
 	defense = 5
 
 	[DefenderComponent]
