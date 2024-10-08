@@ -40,6 +40,9 @@
 	{
 		[Property]
 		property_IDS = supplydepot
+
+		[Property]
+		property_ids = money
 	}	
 	
 	[View]
