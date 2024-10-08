@@ -7,10 +7,13 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 135
+
+		[Production]
+		money = 10
 
    		[Upkeep]
-		building_limit_consumed = 0
+		building_limit_consumed = 1
 	}
 
 	[BodyComponent]
