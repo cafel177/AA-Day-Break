@@ -64,7 +64,7 @@
 			delay = 1
 		}
 		[AirAttackCost]
-		money = 100
+		money = 75
 	
 		[AirReconCost]
 		money = 25
