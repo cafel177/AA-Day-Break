@@ -354,6 +354,13 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = inf_air_hq
+	name = "#properties_intrinsic_inf_air_hq_name"
+	icon = null
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = engineer_brigade
 	name = "#properties_intrinsic_engineer_brigade_name"
 	icon = null

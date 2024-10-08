@@ -88,6 +88,9 @@
 		property_ids = infhq				
 
 		[Property]
+		property_ids = inf_air_hq
+
+		[Property]
 		property_ids = economic_building
 		
 		[Property]

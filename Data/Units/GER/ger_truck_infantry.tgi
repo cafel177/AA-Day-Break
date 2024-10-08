@@ -51,7 +51,11 @@
 		property_IDS = captain
 		
 		[Property]
-		property_ids = infhq		
+		property_ids = infhq
+
+		[Property]
+		property_ids = inf_air_hq
+		
 	}
 	
 	[View]

@@ -524,7 +524,7 @@
 	icon = PropertyIcons/IconPropertyEconomic.png
 	action_button_icon = TechIcons/IconConscription.png
 	
-	required_properties_any = infhq, airhq	
+	required_properties = inf_air_hq	
 	
 	[Modifier Template=MultiplyModifier]
 	attribute = RECRUIT_COST
