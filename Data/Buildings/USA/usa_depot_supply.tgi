@@ -5,7 +5,7 @@
 	editor_name = "#usa_depot_supply_editor_name"
 
 	[BodyComponent]
-	health = 750
+	health = 1000
 	defense = 5
 
 	[ConstructionComponent]
