@@ -512,7 +512,8 @@ EXPERIENCE LEVELS
 ;;   the size of the view component as well below to match.
 [Template HQSupplyComponent Template=SupplyComponent]
 {
-	supply_range = 30
+	supply_range = 20
+	is_relay = false
 	stockpile_max = 90
 }
 

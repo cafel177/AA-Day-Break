@@ -13,7 +13,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 400
+		money = 300
 
 		[Upkeep]
 		ammo = 15
@@ -23,7 +23,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_brigade_engineer, jpn_motor_pool, jpn_brigade_artillery
+		required_structures = jpn_brigade_engineer
 		required_properties = air_support
 	}
 	

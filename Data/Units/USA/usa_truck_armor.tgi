@@ -16,7 +16,6 @@
 		money = 350
 
 		[Production]
-		money = 12
 		ammo = 5
 		oil = 8
 		unit_limit_provided = 3
@@ -24,7 +23,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = usa_hq_mechanized
+		required_structures = usa_hq_infantry
 		required_properties = armorhqproduction
 	}
 

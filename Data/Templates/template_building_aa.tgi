@@ -305,6 +305,7 @@ USAGE:
 	{
 		packing_length = 10
 		unpacking_length = 10
+		pack_health_min = 0.5
 	}
 
 	[WhenEnter Template=FXC_PlaySFX]
@@ -359,7 +360,8 @@ USAGE:
 
 	[SupplyComponent]
 	{
-		supply_range = 0
+		supply_range = 10
+		is_relay = true
 		stockpile_max = 60
 	}
 
@@ -370,7 +372,8 @@ USAGE:
 	}
 
 	[EconomyComponent]
-	
+	supply_required = true
+
 	[LairComponent]
 	{
 		reward = 25, 50	

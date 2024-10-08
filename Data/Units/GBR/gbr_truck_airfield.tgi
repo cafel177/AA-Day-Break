@@ -11,7 +11,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 360
+		money = 270
 
 		[Upkeep]
 		ammo = 15
@@ -20,7 +20,7 @@
 	}
 
 	[ElementComponent]
-	required_structures = gbr_brigade_engineer, gbr_motor_pool, gbr_brigade_artillery
+	required_structures = gbr_brigade_engineer
 	required_properties = air_support
 	
 	[MobileDeploymentComponent]
