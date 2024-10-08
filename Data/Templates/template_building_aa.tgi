@@ -355,7 +355,7 @@ USAGE:
 	}
 
 	[DetectionComponent]
-	detection_range = 55
+	detection_range = 20
 	remote_detection_range = 20
 
 	[SupplyComponent]

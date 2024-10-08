@@ -288,7 +288,7 @@ USAGE:
 
 	[DetectionComponent]
 	{
-		detection_range = 65
+		detection_range = 40
 		remote_detection_range = 18
 	}
 	
