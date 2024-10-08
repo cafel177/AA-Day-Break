@@ -7,15 +7,13 @@
 	[EconomyComponent]
 
 	[HQComponent]
-	max_attachments = 5
+	max_attachments = 9
 
 	[PropertiesComponent]
 	{
 		[Property]
 		property_ids = conscription
 
-		[Property]
-		property_ids = money
 	}
 
 	[Placement]

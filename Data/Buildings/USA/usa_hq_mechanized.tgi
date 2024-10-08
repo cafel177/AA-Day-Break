@@ -58,7 +58,7 @@
 		[Production]
 		ammo = 10
 		oil = 10
-		unit_limit_provided = 4
+		unit_limit_provided = 9
 	}
 
 	[PerformerComponent]

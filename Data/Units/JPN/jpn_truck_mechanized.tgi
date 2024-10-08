@@ -18,7 +18,7 @@
 		[Production]
 		ammo = 5
 		oil = 5
-		unit_limit_provided = 4
+		unit_limit_provided = 6
 	}
 
 	[ElementComponent]

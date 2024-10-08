@@ -7,15 +7,14 @@
 	[EconomyComponent]
 	
 	[HQComponent]
-	max_attachments = 4
+	max_attachments = 9
 
 	[Placement]
 	placement_category = BUILDING
 
 	[PropertiesComponent]
 	{
-		[Property]
-		property_ids = money
+
 	}
 	
 	[View]
