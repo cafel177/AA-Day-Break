@@ -5,7 +5,7 @@
 	editor_name = "#ger_hq_infantry_Thing_editor_name"
 
 	[BodyComponent]
-	health = 2000
+	health = 1500
 	defense = 5
 
 	[DefenderComponent]
@@ -56,7 +56,6 @@
 		money = 250
 
 		[Production]
-		money = 25
 		ammo = 10
 		oil = 5
 		unit_limit_provided = 5

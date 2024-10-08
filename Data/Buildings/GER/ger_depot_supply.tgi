@@ -13,13 +13,13 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 50
+		money = 150
 		
 		[Upkeep]
-		
+		building_limit_consumed = 1
+
 		[Production]
-		ammo = 5
-		oil = 5
+		money = 24
 	}
 	
 	[PropertiesComponent]

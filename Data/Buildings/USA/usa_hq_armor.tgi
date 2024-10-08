@@ -11,7 +11,7 @@
 	}
 
 	[BodyComponent]
-	health = 2000
+	health = 1500
 	defense = 5
 
 	[DefenderComponent]
@@ -62,7 +62,6 @@
 		money = 350
 		
 		[Production]
-		money = 30
 		ammo = 10
 		oil = 15
 		unit_limit_provided = 3

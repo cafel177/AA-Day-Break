@@ -5,7 +5,7 @@
 	editor_name = "#rus_hq_airborne_Thing_editor_name"
 
 	[BodyComponent]
-	health = 2000
+	health = 1500
 	defense = 5
 
 	[DefenderComponent]
@@ -58,7 +58,6 @@
 		money = 250
 
 		[Production]
-		money = 25
 		ammo = 10
 		oil = 0
 		unit_limit_provided = 3

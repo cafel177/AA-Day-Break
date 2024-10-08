@@ -5,7 +5,7 @@
 	editor_name = "#gbr_hq_armor_Thing_editor_name"
 
 	[BodyComponent]
-	health = 2000
+	health = 1500
 	defense = 5
 
 	[DefenderComponent]
@@ -53,7 +53,6 @@
 		money = 315
 
 		[Production]
-		money = 20
 		ammo = 10
 		oil = 15
 		unit_limit_provided = 3
