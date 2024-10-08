@@ -44,7 +44,7 @@
 		element_IDS = ger_paratrooper
 	
 		[Slot]	;; support
-		element_IDS = ger_paratrooper
+		element_IDS = ger_paratrooper_mg
 		
 		[Slot]	;; captain
 		element_IDS = ger_paratrooper_co

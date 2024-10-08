@@ -42,7 +42,7 @@
 		element_IDS = jpn_paratrooper
 	
 		[Slot]	;; support
-		element_IDS = jpn_paratrooper
+		element_IDS = jpn_paratrooper_mg
 		
 		[Slot]	;; captain
 		element_IDS = jpn_paratrooper_co

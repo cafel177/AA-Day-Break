@@ -38,10 +38,10 @@
 		element_IDS = rus_paratrooper
 		
 		[Slot]	;; rear guard 3
-		element_IDS = rus_paratrooper_mortar
+		element_IDS = rus_paratrooper_mg
 	
 		[Slot]	;; support
-		element_IDS = rus_paratrooper_mg
+		element_IDS = rus_paratrooper_mortar
 		
 		[Slot]	;; captain
 		element_IDS = rus_paratrooper_co

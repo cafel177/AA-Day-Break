@@ -38,13 +38,13 @@
 		element_IDS = ger_paratrooper
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_paratrooper
+		element_IDS = ger_paratrooper_mg
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_paratrooper_mortar
+		element_IDS = ger_paratrooper_mg
 	
 		[Slot]	;; support
-		element_IDS = ger_paratrooper_mg
+		element_IDS = ger_paratrooper_mortar
 		
 		[Slot]	;; captain
 		element_IDS = ger_paratrooper_co
