@@ -1160,6 +1160,11 @@ USAGE:
 
 	[TransportComponent]
 	deployment_delay = 0.4
+
+	[LairComponent]
+	{
+		reward = 50	
+	}
 }
 
 [Template AAUnitAirplaneFighter Template=AAUnitAirplane]
@@ -1222,6 +1227,11 @@ USAGE:
 
 	[PerformerComponent]
 	mana_max = 20
+
+	[LairComponent]
+	{
+		reward = 30	
+	}
 }
 
 ;;------------------------------------ SEA UNITS -----
