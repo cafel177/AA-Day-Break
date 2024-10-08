@@ -20,11 +20,7 @@
 
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = recon	
-		
-		[Property]
-		property_IDS = trailblazing		
+	
 	}
 
 	[View]
