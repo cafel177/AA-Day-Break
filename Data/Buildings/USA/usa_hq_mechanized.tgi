@@ -109,6 +109,9 @@
 		actor_ids = regiment_usa_halftrack_artillery
 
 		[RecruitActor]
+		actor_ids = regiment_usa_infantry_mechanized
+
+		[RecruitActor]
 		actor_ids = regiment_usa_tank_light
 	}
 
