@@ -123,6 +123,9 @@
 		actor_ids = regiment_gbr_infantry_heavy
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_amphib
 	}
 	
