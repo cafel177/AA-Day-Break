@@ -179,7 +179,19 @@
 			{
 				money = 75
 			}
-		}			
+		}	
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
 	}	
 
 	[Size]

@@ -1,8 +1,8 @@
 [Thing Template=AAGBROrganizationMobile]
 {	
-	IDS = regiment_gbr_halftrack_at
-	name = "#regiment_gbr_halftrack_at_name"
-	editor_name = "#regiment_gbr_halftrack_at_editor_name"
+	IDS = regiment_gbr_halftrack_sniper
+	name = "#regiment_gbr_halftrack_sniper_name"
+	editor_name = "#regiment_gbr_halftrack_sniper_editor_name"
 
 	[EconomyComponent]
 	{
@@ -17,8 +17,8 @@
 	[View]
 	{
 		resource_prefix = /Units/GBR/GBRTankDestroyer/GBRTankDestroyer
-		icon = /UI/Game/RegimentButtons/IconHalftrackAT.png
-		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
+		icon = /UI/Game/RegimentButtons/IconHalftrack.png
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_vehicle_deployed
@@ -41,7 +41,7 @@
 		element_IDS = gbr_halftrack
 	
 		[Slot]	;; support
-		element_IDS = gbr_tank_destroyer
+		element_IDS = gbr_halftrack_sniper
 		
 		[Slot]	;; captain
 		element_IDS = gbr_car_armored_co
@@ -49,7 +49,6 @@
 	
 	[PropertiesComponent]
 	{	
-		[Property]
-		property_ids = antitank_company
+
 	}
 }

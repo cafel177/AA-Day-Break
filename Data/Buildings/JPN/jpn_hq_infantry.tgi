@@ -125,6 +125,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_amphib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tankette
 	}
 		
 	[ResearchComponent]

@@ -105,13 +105,13 @@
 		actor_ids = regiment_gbr_halftrack_aa
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_at
+		actor_ids = regiment_gbr_halftrack_sniper
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
+		actor_ids = regiment_gbr_tank_light
 	}
 
 	[Size]
