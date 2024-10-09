@@ -74,7 +74,24 @@
 			
 						[Modifier Template=FlagModifier]
 						modifier_flag = PARALYZE			
-		
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+				
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +INFANTRY
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_gbr_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_generic
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
 						[Modifier Template=MultiplyModifier]
 						attribute = SPEED_MAX
 						amount = -0.5
@@ -83,7 +100,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-				
+
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_rocket
 			}
