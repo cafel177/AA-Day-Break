@@ -41,7 +41,7 @@
 		element_IDS = gbr_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = gbr_infantry
+		element_IDS = gbr_halftrack_aa
 		
 		[Slot]	;; rear guard 3
 		element_IDS = gbr_infantry_mg

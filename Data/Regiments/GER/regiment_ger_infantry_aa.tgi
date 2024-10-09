@@ -38,10 +38,10 @@
 		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry
+		element_IDS = ger_infantry_mg
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_infantry_mg
+		element_IDS = ger_halftrack_aa
 		
 		[Slot]	;; rear guard 3
 		element_IDS = ger_infantry_mg
