@@ -66,10 +66,10 @@
 		}
 
 		[AirAttackCost]
-		money = 100
+		money = 50
 	
 		[AirReconCost]
-		money = 25
+		money = 15
 	}
 
 	[DetectionComponent]

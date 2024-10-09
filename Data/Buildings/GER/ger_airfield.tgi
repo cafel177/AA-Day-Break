@@ -64,10 +64,10 @@
 			delay = 1
 		}
 		[AirAttackCost]
-		money = 75
+		money = 40
 	
 		[AirReconCost]
-		money = 25
+		money = 15
 	}
 
 	[DetectionComponent]
