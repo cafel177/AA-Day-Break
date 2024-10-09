@@ -66,6 +66,9 @@
 		money = 200
 	}
 
+	[OrganizationComponent]
+	recruit_time = 8
+
 	[Placement]
 	placement_group_ids = null
 }
