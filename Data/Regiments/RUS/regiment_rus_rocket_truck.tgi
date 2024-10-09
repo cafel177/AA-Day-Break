@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 125
+		money = 150
 		
 		[Upkeep]
 		ammo = 15
@@ -35,19 +35,10 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_mechanized
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = rus_infantry
-		
-		[Slot]	;; rear guard 1
-		element_IDS = rus_infantry_mg
-
-		[Slot]	;; rear guard 2
-		element_IDS = rus_tank_light
-		
-		[Slot]	;; rear guard 3
-		element_IDS = rus_infantry
+		element_IDS = rus_halftrack
 	
 		[Slot]	;; flank
 		element_IDS = rus_rocket_truck
@@ -59,6 +50,9 @@
 	[PropertiesComponent]
 	{	
 		[Property]
-		property_ids = tank_company
+		property_IDS = org_mechanized
+
+		[Property]
+		property_ids = artillery_company
 	}
 }
