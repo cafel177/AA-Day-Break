@@ -11,6 +11,12 @@
 	number = 2
 	name = "#regiment_vehicle_light_Slot_name"
 	
+	[Slot template=LayoutSlot]
+	property_IDS = support
+	number = 2
+	required = false
+	name = "#regiment_vehicle_light_Slot_name_2"
+
 	[Slot template=PrimarySlot]
 	property_IDS = captain
 	name = "#regiment_vehicle_light_Slot_name_3"
@@ -27,6 +33,14 @@
 		property_IDS = front
 		offset = +4, +1
 		
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -2, -5.8
+
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +2, -5.8
+
 		[Position template=FormationPosition]
 		property_IDS = captain
 		offset = 0,0
@@ -45,6 +59,14 @@
 		offset = +4, +2
 		
 		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -2, -3.4
+
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +2, -3.4
+
+		[Position template=FormationPosition]
 		property_IDS = captain
 		offset = 0,0
 	}
@@ -61,6 +83,14 @@
 		property_IDS = front
 		offset = +2, -4
 		
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -2, -7
+
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +2, -7
+
 		[Position template=FormationPosition]
 		property_IDS = captain
 		offset = 0,0

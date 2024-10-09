@@ -40,6 +40,9 @@
 		[Slot]	;; front
 		element_IDS = gbr_halftrack
 		
+		[Slot]	;; support
+		element_IDS = null
+
 		[Slot]	;; captain
 		element_IDS = gbr_car_armored_co
 	}

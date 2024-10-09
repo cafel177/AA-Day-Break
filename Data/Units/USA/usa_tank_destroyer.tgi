@@ -37,6 +37,9 @@
 	[PropertiesComponent]
 	{
 		[Property]
+		property_IDS = front
+
+		[Property]
 		property_IDS = support
 		
 		[Property]

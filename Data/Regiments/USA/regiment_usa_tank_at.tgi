@@ -47,10 +47,10 @@
 		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = usa_tank_light
+		element_IDS = usa_tank_destroyer
 	
 		[Slot]	;; support
-		element_IDS = usa_tank_destroyer
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = usa_tank_co
