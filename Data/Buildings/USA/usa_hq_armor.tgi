@@ -115,10 +115,7 @@
 		actor_ids = regiment_usa_infantry_dummy
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_armored
-
-		[RecruitActor]
-		actor_ids = regiment_usa_tank_aa
+		actor_ids = regiment_usa_tank_at
 		
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_artillery

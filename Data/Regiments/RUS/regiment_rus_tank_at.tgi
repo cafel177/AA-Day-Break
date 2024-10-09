@@ -1,8 +1,8 @@
-[Thing Template=AARUSOrganizationArtillery]
+[Thing Template=AARUSOrganizationArmor]
 {	
-	IDS = regiment_rus_tank_artillery
-	name = "#regiment_rus_tank_artillery_name"
-	editor_name = "#regiment_rus_tank_artillery_editor_name"
+	IDS = regiment_rus_tank_at
+	name = "#regiment_rus_tank_destroyer_name"
+	editor_name = "#regiment_rus_tank_destroyer_editor_name"
 
 	[EconomyComponent]
 	{
@@ -20,25 +20,26 @@
 		property_IDS = org_tank
 
 		[Property]
-		property_ids = artillery_company
+		property_ids = antitank_company
 	}	
 
 	[View]
 	{
-		resource_prefix = /Units/RUS/RUSTankSPA/RUSTankSPA
-		icon = /UI/Game/RegimentButtons/IconTankArtillery.png
+		resource_prefix = /Units/RUS/RUSTankDestroyer/RUSTankDestroyer
+		icon = /UI/Game/RegimentButtons/IconTankDestroyer.png
+		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = rus_tank_deployed
 
 		[WhenSelected Template=FXC_PlaySFX]
-		audio_ids = rus_artillery_select
+		audio_ids = rus_tank_destroyer_select
 
 		[WhenCommanded Template=FXC_PlaySFX]
-		audio_ids = rus_artillery_move
+		audio_ids = rus_tank_destroyer_move
 
 		[WhenCommandedAggressive Template=FXC_PlaySFX]
-		audio_ids = rus_artillery_attack
+		audio_ids = rus_tank_destroyer_attack
 	}		
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
@@ -49,7 +50,7 @@
 		element_IDS = rus_tank_light
 	
 		[Slot]	;; support
-		element_IDS = rus_tank_spa
+		element_IDS = rus_tank_destroyer
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co

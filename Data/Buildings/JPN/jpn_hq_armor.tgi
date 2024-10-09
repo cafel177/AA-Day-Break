@@ -109,7 +109,7 @@
 		actor_ids = regiment_usa_infantry_dummy
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_tank_aa
+		actor_ids = regiment_jpn_tank_at
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_artillery

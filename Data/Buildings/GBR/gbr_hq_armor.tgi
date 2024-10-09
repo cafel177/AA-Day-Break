@@ -106,7 +106,7 @@
 		actor_ids = regiment_gbr_tank_flame
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_aa
+		actor_ids = regiment_gbr_tank_at
 		
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_artillery

@@ -109,13 +109,10 @@
 		actor_ids = regiment_ger_tank_king_tiger
 
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_aa
+		actor_ids = regiment_ger_tank_at
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_mechanized
 	}
 	
 	[ResearchComponent]
