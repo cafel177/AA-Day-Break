@@ -1163,7 +1163,7 @@ USAGE:
 
 	[LairComponent]
 	{
-		reward = 30, 50	
+		reward = 30, 40	
 	}
 }
 
@@ -1230,7 +1230,7 @@ USAGE:
 
 	[LairComponent]
 	{
-		reward = 15, 25	
+		reward = 10, 15	
 	}
 }
 
