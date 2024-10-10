@@ -33,8 +33,8 @@
 	editor_name = "#rus_motor_pool_Thing_editor_name"
 
 	[BodyComponent]
-	health = 750
-	defense = 5
+	health = 1500
+	defense = 0
 
 	[EconomyComponent]
 	{
