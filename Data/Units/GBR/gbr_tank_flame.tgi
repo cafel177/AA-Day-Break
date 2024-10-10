@@ -44,7 +44,7 @@
 	[BodyComponent]
 	{
 		health = 400
-		defense = 7
+		defense = 15
 	}
 
 	[ElementComponent]
@@ -80,13 +80,16 @@
 				
 				name = "#gbr_tank_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				range = 6
+				range = 25
 				recharge_time = 3
-				area = 2
-				max_targets = 4
-				
+				area = 4
+				max_targets = 10
+
+				[Flags] 
+				bombard = true				
+
 				[Effect Template=FireDamageEffect]
-				amount = 30
+				amount = 40
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_flame_tank

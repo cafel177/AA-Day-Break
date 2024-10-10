@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 550
-		defense = 9
+		defense = 25
 	}
 
 	[MoverComponent]
@@ -46,7 +46,7 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
+
 
 		[Ability template=AATurretAttackLocal]
 		{
@@ -54,12 +54,16 @@
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#rus_tank_heavy_AbilityDefinition_name"
-				recharge_time = 6
-				range = 20
-				area = 1
+				recharge_time = 5
+				area = 3
+				range = 35
+				max_targets = 6
+				
+				[Flags] 
+				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 80
+				amount = 90
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
