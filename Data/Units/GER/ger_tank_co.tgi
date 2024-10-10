@@ -43,7 +43,7 @@
 	[BodyComponent]
 	{
 		health = 400
-		defense = 7
+		defense = 9
 	}
 	
 	[MoverComponent]
@@ -71,23 +71,25 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
-
 		[Ability template=AATurretAttackLocal]
 		{
 			
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#ger_tank_co_AbilityDefinition_name"
-				recharge_time = 6
-				range = 18
-				area = 1
+				recharge_time = 5
+				range = 25
+				area = 2
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 75
+				amount = 65
 
 				[WhenDo template=FXC_PlaySFX]
   				audio_ids = ger_cannon_medium

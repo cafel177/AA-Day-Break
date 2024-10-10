@@ -49,7 +49,7 @@
 	[BodyComponent]
 	{
 		health = 375
-		defense = 5
+		defense = 9
 	}
 	
 	[MoverComponent]
@@ -84,18 +84,20 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
-
 		[Ability template=AATurretAttackLocal]
 		{
 			
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#jpn_tank_co_AbilityDefinition_name"
-				recharge_time = 6
-				range = 18
-				area = 1
-								
+				recharge_time = 5
+				range = 25
+				area = 2
+				max_targets = 4	
+		
+				[Flags] 
+				bombard = true
+
 				[Effect Template=APDamageEffect]
 				amount = 55
 				
