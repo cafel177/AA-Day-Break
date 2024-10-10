@@ -8,7 +8,7 @@
 	[BodyComponent]
 	{
 		health = 300
-		defense = 4
+		defense = 8
 	}
 
 	[ElementComponent]
@@ -33,23 +33,24 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
-
 		[Ability template=AATurretAttackLocal]
-		{
-			
+		{			
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#gbr_tank_light_AbilityDefinition_name"
-				recharge_time = 6
-				area = 1
-				range = 18
-				
+				recharge_time = 5
+				area = 2
+				range = 22
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
+
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 50
+				amount = 40
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_light

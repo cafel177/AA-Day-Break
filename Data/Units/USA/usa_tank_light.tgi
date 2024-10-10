@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 300
-		defense = 4
+		defense = 8
 	}
 	
 	[MoverComponent]
@@ -51,7 +51,6 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
 
 		[Ability template=AATurretAttackLocal]
 		{
@@ -59,12 +58,16 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#usa_tank_light_AbilityDefinition_name"
-				recharge_time = 6
-				range = 18
-				area = 1
+				recharge_time = 5
+				range = 22
+				area = 2
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 50
+				amount = 40
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
