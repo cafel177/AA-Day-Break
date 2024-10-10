@@ -53,7 +53,7 @@
 			[AbilityDefinition Template=AASPAShot]
 			{
 				name = "#jpn_halftrack_artillery_AbilityDefinition_name"
-				range = 40
+				range = 45
 				area = 4
 				recharge_time = 9
 				max_targets = 10
