@@ -4,12 +4,12 @@
 	impact_impulse = 6000
 	icon = /Properties/AbilityIcons/IconAbilityDamageExplosive.png
 	
-	area = 3
+	area = 5
 	attenuation_range_min = 1
 	attenuation_factor_max = 0.25
-	max_targets = 8
+	max_targets = 12
 
-	range = 25
+	range = 45
 	recharge_time = 9
 	reload_time = 0.0
 									
@@ -19,6 +19,11 @@
 	[Effect Template=MoraleLossEffect]
 	amount = 0.25
 	
+	[Effect Template=AddDamageEffect]
+	damage_type_IDS = explosive
+	targets = building
+	amount = 15
+
 	[WhenDo template=FXC_PlaySFX]
 	audio_ids = rus_rocket_truck
 	
