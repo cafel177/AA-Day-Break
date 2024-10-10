@@ -72,6 +72,20 @@
 
 	[Placement]
 	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+
+		[Property]
+		property_ids = org_resupply
+	}
+
+	[LairComponent]
+	{
+		reward = 20, 25	
+	}
 }
 
 [Thing Template=AAJPNRegimentParatrooper]

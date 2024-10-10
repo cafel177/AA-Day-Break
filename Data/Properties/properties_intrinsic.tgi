@@ -649,3 +649,14 @@
 	icon = NULL
 }
 
+
+
+[Property Template=SharedProperty]
+{
+	IDS = org_resupply
+	name = "#resupply_Effect_EnchantmentProperty_name"
+	icon = /Properties/PropertyIcons/IconPropertySupply.png
+
+	[Modifier Template=FlagModifier]
+	modifier_flag = SUPPLIED
+}
