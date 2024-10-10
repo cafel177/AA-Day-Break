@@ -2,8 +2,8 @@
 {
 
 	[BodyComponent]
-	health = 1000
-	defense = 5
+	health = 2000
+	defense = 0
 
 	[Flags]
 	axis_locked = false

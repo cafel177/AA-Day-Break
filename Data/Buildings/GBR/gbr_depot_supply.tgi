@@ -5,21 +5,21 @@
 	editor_name = "#gbr_depot_supply_editor_name"
 
 	[BodyComponent]
-	health = 1000
-	defense = 5
+	health = 2000
+	defense = 0
 
 	[ConstructionComponent]
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 125
 		
 		[Upkeep]
 		building_limit_consumed = 1
 
 		[Production]
-		money = 20
+		money = 30
 	}
 	
 	[PropertiesComponent]

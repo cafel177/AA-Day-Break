@@ -5,8 +5,8 @@
 	editor_name = "#gbr_hq_mechanized_Thing_editor_name"
 
 	[BodyComponent]
-	health = 1500
-	defense = 5
+	health = 2000
+	defense = 0
 
 	[DefenderComponent]
 	{
