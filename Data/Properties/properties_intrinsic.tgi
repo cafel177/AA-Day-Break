@@ -246,8 +246,6 @@
 	name = "#properties_intrinsic_small_target_name"
 	icon = PropertyIcons/IconPropertyDefense.png
 	
-	enabled_target_flags = infantry
-	
 	[Modifier Template=ResistDamageModifier]
 	damage_type = armor_piercing
 	amount = 0.40

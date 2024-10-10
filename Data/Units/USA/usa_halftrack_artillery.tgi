@@ -46,6 +46,7 @@
 				amount = 50
 				
 				[Effect Template=MoraleLossEffect]
+				targets = +ENEMY -TANK
 				amount = .75
 				
 				[Flags] 

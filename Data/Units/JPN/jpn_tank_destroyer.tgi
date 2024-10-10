@@ -89,7 +89,7 @@
 
 				[Effect Template=EnchantmentEffect]
 				{
-					targets = +ENEMY +INFANTRY +VEHICLE
+
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{

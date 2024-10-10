@@ -94,6 +94,7 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
+				targets = infantry
 				amount = .75
 				
 				[WhenDo template=FXC_PlaySFX]
