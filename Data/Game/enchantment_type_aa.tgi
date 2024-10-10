@@ -40,7 +40,14 @@ smm091503 - created
 
 [EnchantmentType Template=EnchantmentType]
 {
-	IDS = ench_type_stun
+	IDS = ench_type_stun1
+	name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+	description = "#enchantment_type_aa_ench_type_fear_description"
+}
+
+[EnchantmentType Template=EnchantmentType]
+{
+	IDS = ench_type_stun2
 	name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 	description = "#enchantment_type_aa_ench_type_fear_description"
 }

@@ -52,7 +52,7 @@
 				recharge_time = 7
 				area = 2
 				range = 30
-				max_targets = 5
+				max_targets = 4
 				
 				[Flags] 
 				bombard = true
@@ -72,7 +72,7 @@
 						IDS = at_stun_jpn1
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
-						enchantment_type = ench_type_stun
+						enchantment_type = ench_type_stun1
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]
