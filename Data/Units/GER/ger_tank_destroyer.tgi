@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 400
-		defense = 7
+		defense = 15
 	}
 	
 	[MoverComponent]
@@ -48,28 +48,35 @@
 		
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
+
 
 		[Ability template=AAProjectileLocal]
 		{
 			[AbilityDefinition Template=AAAntiTankGun]
 			{				
 				name = "#ger_tank_destroyer_AbilityDefinition_name"
-				recharge_time = 6
-				range = 22
+				recharge_time = 7
+				area = 2
+				range = 40
+				max_targets = 4
 				
+				[Flags] 
+				bombard = true
+
 				[Effect Template=APDamageEffect]
-				amount = 90
+				amount = 80
 
 				[Effect Template=EnchantmentEffect]
 				{
+					targets = +ENEMY +VEHICLE
+
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-					IDS = at_stun_ger2
-					name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
-					duration = 1
-					enchantment_type = ench_type_generic
-					icon = /properties/PropertyIcons/IconPropertyMovement.png
+						IDS = at_stun_ger2
+						name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun2
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]
 						modifier_flag = PARALYZE			
@@ -79,6 +86,27 @@
 					}
 				}
 				
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +INFANTRY +VEHICLE
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger2_2
+						name = "#ger_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png		
+		
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 

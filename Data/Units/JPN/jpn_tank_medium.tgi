@@ -62,7 +62,7 @@
 			{				
 				name = "#jpn_tank_medium_AbilityDefinition_name"
 				recharge_time = 5
-				range = 25
+				range = 30
 				area = 2
 				max_targets = 4
 
