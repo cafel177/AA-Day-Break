@@ -69,7 +69,7 @@
 						IDS = at_stun_gbr1
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
-						enchantment_type = ench_type_generic
+						enchantment_type = ench_type_stun
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]
@@ -82,14 +82,14 @@
 				
 				[Effect Template=EnchantmentEffect]
 				{
-					targets = +ENEMY +INFANTRY
+					targets = +ENEMY +INFANTRY +VEHICLE
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
 						IDS = at_stun_gbr_2
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
-						enchantment_type = ench_type_generic
+						enchantment_type = ench_type_slow
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=MultiplyModifier]
