@@ -74,7 +74,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 95
+				amount = 105
 					
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

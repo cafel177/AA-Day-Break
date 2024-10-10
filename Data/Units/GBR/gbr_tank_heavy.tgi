@@ -78,7 +78,7 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 90
+				amount = 100
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_heavy
