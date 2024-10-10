@@ -353,9 +353,6 @@ USAGE:
 	{
 		[Property]
 		property_ids = tank
-
-		[Property]
-		property_ids = anti_stun1
 	}
 	
 	[View]
@@ -475,6 +472,12 @@ USAGE:
 
 [Template AAUnitVehicleMediumTank template=AAUnitVehicleTank]
 {
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = anti_stun1
+	}
+
 	[MoverComponent]
 	{
 		turn_radius = 0.9
@@ -526,6 +529,9 @@ USAGE:
 {
 	[PropertiesComponent]
 	{
+		[Property]
+		property_ids = anti_stun1
+
 		[Property]
 		property_ids = anti_stun2
 	}

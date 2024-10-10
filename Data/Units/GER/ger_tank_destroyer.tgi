@@ -93,7 +93,7 @@
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
 						IDS = at_stun_ger2_2
-						name = "#ger_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
+						name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
 						enchantment_type = ench_type_slow
 						icon = /properties/PropertyIcons/IconPropertyMovement.png		
