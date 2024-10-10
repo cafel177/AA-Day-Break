@@ -51,7 +51,7 @@
 				name = "#jpn_infantry_at_AbilityDefinition_name"
 				recharge_time = 7
 				area = 2
-				range = 35
+				range = 30
 				max_targets = 5
 				
 				[Flags] 
