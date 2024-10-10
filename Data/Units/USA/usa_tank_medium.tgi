@@ -6,7 +6,7 @@
 
 	[BodyComponent]
 	{
-		health = 400
+		health = 450
 		defense = 15
 	}
 
@@ -61,7 +61,7 @@
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#usa_tank_medium_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				range = 30
 				area = 2
 				max_targets = 4

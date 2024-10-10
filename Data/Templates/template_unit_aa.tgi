@@ -324,7 +324,7 @@ USAGE:
 		[Turret]
 		{
 			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 37
+			yaw_rotation_per_sec_degrees = 360
 		}
 	}
 
@@ -353,6 +353,9 @@ USAGE:
 	{
 		[Property]
 		property_ids = tank
+
+		[Property]
+		property_ids = anti_stun1
 	}
 	
 	[View]
@@ -455,7 +458,7 @@ USAGE:
 		[Turret]
 		{
 			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 50
+			yaw_rotation_per_sec_degrees = 360
 		}
 	}
 
@@ -500,7 +503,7 @@ USAGE:
 		[Turret]
 		{
 			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 37
+			yaw_rotation_per_sec_degrees = 270
 		}
 	}
 
@@ -521,6 +524,12 @@ USAGE:
 
 [template AAUnitVehicleHeavyTank template=AAUnitVehicleTank]
 {
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = anti_stun2
+	}
+
 	[MoverComponent]
 	{
 		turn_radius = 1.15
@@ -549,7 +558,7 @@ USAGE:
 		[Turret]
 		{
 			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 26
+			yaw_rotation_per_sec_degrees = 180
 		}
 	}
 

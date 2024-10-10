@@ -8,8 +8,8 @@
 
 	[BodyComponent]
 	{
-		health = 550
-		defense = 25
+		health = 700
+		defense = 30
 	}
 
 	[MoverComponent]
@@ -54,7 +54,7 @@
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#rus_tank_heavy_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				area = 3
 				range = 35
 				max_targets = 6

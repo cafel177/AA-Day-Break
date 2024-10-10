@@ -18,7 +18,7 @@
 	{
 		resource_prefix = /Units/GBR/GBRTankFlame/GBRTankFlame
 		icon = /UI/Game/RegimentButtons/IconGBRTankFlame.png
-		banner_icon = /Organizations/Banners/Icons/IconArmorHeavy.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorMedium.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_tank_deployed

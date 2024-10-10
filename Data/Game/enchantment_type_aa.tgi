@@ -41,20 +41,20 @@ smm091503 - created
 [EnchantmentType Template=EnchantmentType]
 {
 	IDS = ench_type_stun1
-	name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
-	description = "#enchantment_type_aa_ench_type_fear_description"
+	name = "#gbr_AbilityDefinition_Effect_EnchantmentProperty_name"
+	description = "#enchantment_type_aa_ench_type_stun1_description"
 }
 
 [EnchantmentType Template=EnchantmentType]
 {
 	IDS = ench_type_stun2
 	name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
-	description = "#enchantment_type_aa_ench_type_fear_description"
+	description = "#enchantment_type_aa_ench_type_stun2_description"
 }
 
 [EnchantmentType Template=EnchantmentType]
 {
 	IDS = ench_type_slow
 	name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
-	description = "#enchantment_type_aa_ench_type_fear_description"
+	description = "#enchantment_type_aa_ench_type_slow_description"
 }

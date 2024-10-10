@@ -9,8 +9,8 @@
 
 	[BodyComponent]
 	{
-		health = 500
-		defense = 25
+		health = 600
+		defense = 30
 	}
 
 	[ElementComponent]
@@ -66,7 +66,7 @@
 			[AbilityDefinition Template=AAHeavyTankGun]
 			{				
 				name = "#gbr_tank_heavy_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				area = 3
 				range = 35
 				max_targets = 6

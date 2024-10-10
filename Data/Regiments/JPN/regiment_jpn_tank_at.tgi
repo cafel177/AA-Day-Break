@@ -47,10 +47,10 @@
 		layout_IDS = regiment_vehicle_heavy
 		
 		[Slot]	;; front
-		element_IDS = jpn_tank_light
+		element_IDS = jpn_tank_destroyer
 	
 		[Slot]	;; support
-		element_IDS = jpn_tank_destroyer
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = jpn_tank_co

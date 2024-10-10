@@ -6,7 +6,7 @@
 
 	[BodyComponent]
 	{
-		health = 400
+		health = 500
 		defense = 15
 	}
 
@@ -56,16 +56,16 @@
 			[AbilityDefinition Template=AAAntiTankGun]
 			{				
 				name = "#gbr_tank_destroyer_AbilityDefinition_name"
-				recharge_time = 7
-				area = 2
+				recharge_time = 6
+				area = 4
 				range = 40
-				max_targets = 4
+				max_targets = 6
 
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 80
 
 				[Effect Template=EnchantmentEffect]
 				{

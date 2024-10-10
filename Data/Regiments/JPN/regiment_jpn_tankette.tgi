@@ -43,7 +43,7 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = jpn_tank_co
+		element_IDS = jpn_car_armored_co
 	}
 	
 	[PropertiesComponent]

@@ -38,7 +38,7 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#gbr_tank_light_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				area = 2
 				range = 22
 				max_targets = 4

@@ -658,3 +658,23 @@
 	[Modifier Template=FlagModifier]
 	modifier_flag = SUPPLIED
 }
+
+[Property Template=SharedProperty]
+{
+	IDS = anti_stun1
+	name = "#anti_stun1_Effect_EnchantmentProperty_name"
+	icon = /Properties/PropertyIcons/IconPropertyCombat.png
+
+	[Modifier Template=EnchantmentImmunityModifier]
+	enchantment_type = ench_type_stun1
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = anti_stun2
+	name = "#anti_stun2_Effect_EnchantmentProperty_name"
+	icon = /Properties/PropertyIcons/IconPropertyCombat.png
+
+	[Modifier Template=EnchantmentImmunityModifier]
+	enchantment_type = ench_type_stun2
+}

@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 3
+		defense = 5
 	}
 	
 	[MoverComponent]
@@ -51,7 +51,7 @@
 	
 	[PerformerComponent]
 	{
-		check_damage_resistance = true
+
 
 		[Ability template=AATurretAttackLocal]
 		{
@@ -63,10 +63,14 @@
 				
 				recharge_time = 6
 				range = 18
-				area = 1
-				
+				area = 2
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
+
 				[Effect Template=BlastDamageEffect]
-				amount = 40
+				amount = 30
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

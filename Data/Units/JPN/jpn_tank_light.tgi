@@ -51,7 +51,7 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#jpn_tank_light_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				range = 22
 				area = 2
 				max_targets = 4

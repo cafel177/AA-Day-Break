@@ -8,8 +8,8 @@
 	
 	[BodyComponent]
 	{
-		health = 600
-		defense = 30
+		health = 800
+		defense = 40
 	}
 	
 	[MoverComponent]
@@ -65,7 +65,7 @@
 			[AbilityDefinition Template=AAHeavyTankGun]
 			{				
 				name = "#ger_tank_king_tiger_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 6
 				area = 3
 				range = 40
 				max_targets = 6
