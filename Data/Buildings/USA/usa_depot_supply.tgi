@@ -13,13 +13,13 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 125
 		
 		[Upkeep]
 		building_limit_consumed = 1
 
 		[Production]
-		money = 25
+		money = 35
 	}
 	
 	[PropertiesComponent]
