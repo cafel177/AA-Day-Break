@@ -66,9 +66,14 @@
 				name = "#usa_infantry_assault_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageExplosive.png
 
-				recharge_time = 30
-				range = 12
-				
+				recharge_time = 10
+				range = 18
+				area = 2
+				max_targets = 3
+
+				[Flags] 
+				bombard = true
+
 				[Effect Template=BlastDamageEffect]
 				amount = 30
 

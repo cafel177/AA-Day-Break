@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 150
-		defense = 0
+		defense = 1
 	}
 
 	[CharacterComponent Template=AAInfantryCharacterComponent]
@@ -37,11 +37,11 @@
 			{				
 				name = "#rus_conscript_AbilityDefinition_name"
 				recharge_time = 3
-				range = 10
+				range = 12
 				
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 8
+				amount = 10
 
 				[WhenDo template=FXC_PlaySFX]
 				{
@@ -59,10 +59,10 @@
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				projectile_ids = molotov
 				
-				recharge_time = 20
+				recharge_time = 7
 				
 				[Effect Template=FireDamageEffect]
-				amount = 10
+				amount = 15
 			}
 		}
 	}

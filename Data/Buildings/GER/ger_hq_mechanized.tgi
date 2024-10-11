@@ -113,6 +113,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_light
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_goliath
 	}
 	
 	[Size]

@@ -36,10 +36,10 @@
 		layout_IDS = regiment_infantry
 		
 		[Slot]	;; front
-		element_IDS = jpn_infantry
+		element_IDS = jpn_infantry_banzai
 		
 		[Slot]	;; rear guard 1
-		element_IDS = jpn_infantry
+		element_IDS = jpn_infantry_banzai
 
 		[Slot]	;; rear guard 2
 		element_IDS = jpn_infantry_banzai
@@ -48,7 +48,7 @@
 		element_IDS = jpn_infantry_banzai
 	
 		[Slot]	;; flank
-		element_IDS = jpn_infantry_banzai
+		element_IDS = jpn_infantry_mg
 		
 		[Slot]	;; captain
 		element_IDS = jpn_infantry_co

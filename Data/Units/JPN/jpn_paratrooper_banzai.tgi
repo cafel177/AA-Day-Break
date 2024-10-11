@@ -113,7 +113,14 @@
 
 				[Effect Template=APDamageEffect]
 				{
-					amount = 200
+					amount = 250
+				}
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = explosive
+					targets = BUILDING
+					amount = 50
 				}
 
 				[Effect Template=AddDamageEffect]

@@ -1,4 +1,4 @@
-[Thing Template=AAGEROrganizationInfantry]
+[Thing Template=AAGEROrganizationMobile]
 {
 	IDS = regiment_ger_infantry_goliath
 	editor_name = "#regiment_ger_infantry_goliath_editor_name"
@@ -16,7 +16,7 @@
 
 	[View]
 	{
-		resource_prefix = /Units/GER/GERInfantry/GERInfantry
+		resource_prefix = /Units/GER/GERHalftrack/GERHalftrack
 		icon = /UI/Game/RegimentButtons/IconInfantryGoliath.png
 		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
 
@@ -32,30 +32,21 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_mechanized
+		layout_IDS = regiment_vehicle_heavy
 		
 		[Slot]	;; front
-		element_IDS = ger_infantry
-		
-		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry
-
-		[Slot]	;; rear guard 2
-		element_IDS = ger_infantry_mg
-		
-		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_mg
-	
-		[Slot]	;; flank
 		element_IDS = ger_goliath
 		
+		[Slot]	;; support
+		element_IDS = null
+		
 		[Slot]	;; captain
-		element_IDS = ger_infantry_co
+		element_IDS = ger_car_armored_co
 	}
 	
 	[PropertiesComponent]
 	{	
 		[Property]
-		property_ids = antiaircraft_company
+		property_ids = mechanized_company
 	}
 }
