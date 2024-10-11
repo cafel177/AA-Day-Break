@@ -88,14 +88,20 @@
 			[AbilityDefinition Template=AAInfantryFlame]
 			{				
 				name = "#usa_infantry_flame_AbilityDefinition_name"
-				range = 6
-				recharge_time = 6
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 20
+				recharge_time = 5
+				area = 4
+				max_targets = 8
 				
+				[Flags] 
+				bombard = true	
+
 				[Effect Template=FireDamageEffect]
-				amount = 40
+				amount = 30
 							
 				[Effect Template=MoraleLossEffect]
+				targets = +ENEMY -TANK
 				amount = 1
 			}
 			

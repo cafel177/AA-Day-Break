@@ -89,7 +89,7 @@
 				bombard = true				
 
 				[Effect Template=FireDamageEffect]
-				amount = 35
+				amount = 40
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_flame_tank
