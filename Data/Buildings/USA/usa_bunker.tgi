@@ -1,4 +1,4 @@
-[Thing Template=AAUSABuildingConstructed]
+[Thing Template=AAUSABuildingPackable]
 {
 	IDS = usa_bunker
 	name = "#usa_bunker_Thing_name"
@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 1250
-		defense = 10
+		defense = 8
 	}
 	
 	[DefenderComponent]
@@ -21,37 +21,23 @@
 			[AbilityDefinition Template=AABunkerAttackMG]
 			{
 				name = "#usa_bunker_DefenderComponent_AbilityDefinition_name"
-				area = 2
-				attenuation_range_min = 0.5
-				attenuation_factor_max = 0.5
-				max_targets = 4
+				area = 4
+				max_targets = 10
 				
 				recharge_time = 2
 				range = 20
-				
+
 				[Effect Template=PierceDamageEffect]
-				amount = 20
+				amount = 25
 				
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = .5
+
 				[WhenDo template=FXC_PlaySFX]	
 				audio_ids = usa_mg_heavy
 			}
 		}
-	}
-
-	[EconomyComponent]
-	{
-		[Cost]
-		money = 25
-		
-		[Production]
-		
-		[Upkeep]
-		ammo = 3
-	}
-
-	[Flags]
-	{
-		axis_locked = false
 	}
 
 	[PerformerComponent]
@@ -64,8 +50,64 @@
 			yaw_start_degrees = 0
 			offset = 0, 0	
 		}
+
+		[Ability Template=AAAttackLocal]
+		{
+			turret_ids = turret
+			
+			[AbilityDefinition Template=AABunkerAttackMG]
+			{
+				name = "#usa_bunker_DefenderComponent_AbilityDefinition_name"
+				area = 4
+				max_targets = 10
+				
+				recharge_time = 2
+				range = 20
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=PierceDamageEffect]
+				amount = 25
+				
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = .5
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				targets = building
+				amount = 15
+
+				[WhenDo template=FXC_PlaySFX]	
+				audio_ids = usa_mg_heavy
+			}
+		}
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 0
+		
+		[Production]
+		
+		[Upkeep]
+		ammo = 10
+	}
+
+	[Flags]
+	{
+		axis_locked = false
 	}
 	
+	[MobileDeploymentComponent]
+	{
+		packing_length = 3
+		unpacking_length = 3
+		pack_health_min = 1
+	}
+
 	[PropertiesComponent]
 	{
 		[Property]
