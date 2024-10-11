@@ -291,6 +291,11 @@ USAGE:
 		audio_ids = HQ_complete
 	}
 
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
 } ; end [template AABuildingPackableHQ]
 
 [Template AABuildingPackableCorpHQ Template=AABuildingPackable]
@@ -330,6 +335,11 @@ USAGE:
 	{		
 		[WhenSelected Template=FXC_PlayObjectAnimation]
 		object_animation_IDS = talk1
+	}
+
+	[LairComponent]
+	{
+		reward = 75, 100	
 	}
 
 } ; end [template AABuildingPackableHQ]
