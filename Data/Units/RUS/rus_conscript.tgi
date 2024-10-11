@@ -59,10 +59,10 @@
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				projectile_ids = molotov
 				
-				recharge_time = 7
+				recharge_time = 6
 				
 				[Effect Template=FireDamageEffect]
-				amount = 15
+				amount = 10
 			}
 		}
 	}
