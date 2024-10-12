@@ -103,6 +103,15 @@
 		actor_ids = usa_truck_bunker_aa
 	}
 
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 2.5, 1.5
+			deployment_offset = 2.5, 6.0
+		}
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

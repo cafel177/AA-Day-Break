@@ -88,6 +88,15 @@
 		}
 	}
 
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 2.5, 1.5
+			deployment_offset = 2.5, 6.0
+		}
+	}
+
 	[RecruitComponent]
 	{
 		[RecruitActor]

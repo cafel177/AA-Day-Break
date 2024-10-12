@@ -56,11 +56,32 @@
 				range = 25
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 30
-			
+				amount = 20	
+	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .75
+				amount = .25
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = infantry
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_slow
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
 
 				[WhenDo template=FXC_PlaySFX]
 				{
@@ -95,14 +116,35 @@
 				range = 25
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 30
-				
-				[Flags] 
-				bombard = true
-
+				amount = 20	
+	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .75
+				amount = .25
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = infantry
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_slow
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[Flags] 
+				bombard = true
 
 				[WhenDo template=FXC_PlaySFX]
 				{
