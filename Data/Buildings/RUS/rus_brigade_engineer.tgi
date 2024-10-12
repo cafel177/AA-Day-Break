@@ -92,6 +92,21 @@
 		}		
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker_artillery
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker
+
+		[RecruitActor]
+		actor_ids = rus_truck_bunker_aa
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

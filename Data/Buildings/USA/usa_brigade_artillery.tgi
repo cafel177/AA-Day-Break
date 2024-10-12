@@ -89,6 +89,12 @@
 		}
 	}
 	
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = usa_truck_bunker_artillery
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

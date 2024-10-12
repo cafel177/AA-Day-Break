@@ -88,6 +88,12 @@
 		}
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = jpn_truck_bunker_artillery
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

@@ -34,8 +34,8 @@
 
 	[BodyComponent]
 	{
-		health = 1250
-		defense = 8
+		health = 1000
+		defense = 5
 	}
 	
 	[DefenderComponent]
@@ -56,16 +56,11 @@
 				range = 25
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 25
+				amount = 30
 			
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .5
-
-				[Effect Template=AddDamageEffect]
-				damage_type_IDS = gunfire
-				targets = building
-				amount = 15
+				amount = .75
 
 				[WhenDo template=FXC_PlaySFX]
 				{
@@ -100,19 +95,14 @@
 				range = 25
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 25
+				amount = 30
 				
 				[Flags] 
 				bombard = true
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .5
-
-				[Effect Template=AddDamageEffect]
-				damage_type_IDS = gunfire
-				targets = building
-				amount = 15
+				amount = .75
 
 				[WhenDo template=FXC_PlaySFX]
 				{
@@ -173,18 +163,14 @@
 		soft_radius = 2.1
 	}
 	
-	[Stance Template=StanceDisabled]
-	
-	[Stance Template=StanceDeath]
+
 
 	[View]
 	{
 		resource_prefix = RUSBunker/RUSBunker
 		icon = /UI/Game/BuildingButtons/IconBunker.png
 
-		[Aspect Template=AAAspectDisabled]
-	
-		[Aspect Template=AAAspectDeath]
+
 
 		[WhenConstructed Template=FXC_CreateVFX]
 		{

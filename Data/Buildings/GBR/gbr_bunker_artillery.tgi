@@ -141,9 +141,7 @@
 		soft_radius = 2.1
 	}
 	
-	[Stance Template=StanceDisabled]
-	
-	[Stance Template=StanceDeath]
+
 	
 	[View]
 	{
@@ -158,15 +156,7 @@
 			kf = GBRBunkerArtillery/GBRBunkerArtilleryRecoil1.kf
 		}
 		
-		[Aspect Template=AAAspectDisabled]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GBRBunkerArtillery/GBRBunkerArtilleryDisabledRecoil1.kf
-		}
-		
-		[Aspect Template=AAAspectDeath]
+
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{

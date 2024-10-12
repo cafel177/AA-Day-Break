@@ -16,6 +16,11 @@
 		ammo = 10
 	}
 	
+	[ElementComponent]
+	{
+		required_structures = gbr_brigade_engineer
+	}
+
 	[BodyComponent]
 	health = 500
 	defense = 2

@@ -91,6 +91,15 @@
 		}
 	}
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker
+
+		[RecruitActor]
+		actor_ids = ger_truck_bunker_aa
+	}
+
 	[Size]
 	{
 		blocking_shape = SQUARE

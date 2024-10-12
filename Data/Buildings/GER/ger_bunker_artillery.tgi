@@ -147,9 +147,6 @@
 		soft_radius = 2.1
 	}
 
-	[Stance Template=StanceDisabled]
-	
-	[Stance Template=StanceDeath]
 	
 	[View]
 	{
@@ -182,15 +179,7 @@
 			kf = GERBunkerArtillery/GERBunkerArtilleryRecoil1.kf
 		}
 		
-		[Aspect Template=AAAspectDisabled]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERBunkerArtillery/GERBunkerArtilleryDisabledRecoil1.kf
-		}
-		
-		[Aspect Template=AAAspectDeath]
+
 		
 		[WhenSelected Template=FXC_PlaySFX]
 		{
