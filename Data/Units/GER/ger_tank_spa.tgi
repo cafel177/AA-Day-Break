@@ -84,7 +84,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = explosive
 				targets = building
-				amount = 50
+				amount = 70
 
 				[Effect Template=BlastDamageEffect]
 				amount = 55

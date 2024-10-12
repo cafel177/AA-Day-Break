@@ -71,7 +71,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = explosive
 				targets = building
-				amount = 50
+				amount = 60
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_artillery_heavy
