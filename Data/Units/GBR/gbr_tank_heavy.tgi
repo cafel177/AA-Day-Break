@@ -80,6 +80,10 @@
 				[Effect Template=APDamageEffect]
 				amount = 100
 				
+				[Effect Template=MoraleGainEffect]
+				targets = self
+				amount = .5
+
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_heavy
 			}
