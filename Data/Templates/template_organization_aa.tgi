@@ -21,7 +21,7 @@ USAGE:
 [Template AAInfantryOrganizationComponent Inherit=OrganizationComponent]
 {
 	layout_IDS = infantry_regiment_standard
-	entrenchment_time = 30
+	entrenchment_time = 99999
 
 	control_range = 18
 	operational_range = 34
@@ -36,7 +36,7 @@ USAGE:
 [Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
 {
 	layout_IDS = vehicle_regiment_standard
-	entrenchment_time = 30
+	entrenchment_time = 99999
 
 	control_range = 18
 	operational_range = 34
@@ -51,7 +51,7 @@ USAGE:
 [Template AAArmorOrganizationComponent Inherit=OrganizationComponent]
 {
 	layout_IDS = vehicle_regiment_standard
-	entrenchment_time = 30
+	entrenchment_time = 99999
 
 	control_range = 18
 	operational_range = 34
