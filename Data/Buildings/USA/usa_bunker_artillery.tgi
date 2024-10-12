@@ -30,7 +30,12 @@
 				amount = 70
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.25
+				amount = 3
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
@@ -71,7 +76,12 @@
 				bombard = true
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.25
+				amount = 3
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
@@ -185,6 +195,6 @@
 	[WhenLeave Template=FXC_PlaySFX]
 	{
 		audio_ids = bunker_artillery_construction_complete
-		actor_state = construction
+		actor_state = structure_unpacking
 	}
 }

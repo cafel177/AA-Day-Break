@@ -54,7 +54,7 @@
 	[View]
 	{
 		resource_prefix = USATruck/USATruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconBunkerAA.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = usa_truck_deployed

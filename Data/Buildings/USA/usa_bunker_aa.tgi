@@ -159,6 +159,6 @@
 	[WhenLeave Template=FXC_PlaySFX]
 	{
 		audio_ids = bunker_aa_construction_complete
-		actor_state = construction
+		actor_state = structure_unpacking
 	}
 }
