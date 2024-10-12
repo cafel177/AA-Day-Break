@@ -42,6 +42,7 @@
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry
+		recruit_full = true
 		
 		[Slot]	;; front
 		element_IDS = jpn_infantry

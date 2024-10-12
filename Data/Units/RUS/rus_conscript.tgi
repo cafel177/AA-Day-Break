@@ -29,6 +29,11 @@
 		property_IDS = combat_unit
 	}
 	
+	[ElementComponent]
+	{
+		required_properties = tech_conscription
+	}
+
 	[PerformerComponent]
 	{
 		[Ability Template=AAGunLocal]
