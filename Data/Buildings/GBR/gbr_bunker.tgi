@@ -46,13 +46,12 @@
 						enchantment_type = ench_type_slow
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
-						[Modifier Template=MultiplyModifier]
-						attribute = SPEED_MAX
-						amount = -0.5
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = 0
+						amount = -1
 
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint
@@ -110,13 +109,12 @@
 						enchantment_type = ench_type_slow
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
-						[Modifier Template=MultiplyModifier]
-						attribute = SPEED_MAX
-						amount = -0.5
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = 0
+						amount = -1
 
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint

@@ -21,21 +21,64 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 7
+				recharge_time = 5
 				range = 35
 				area = 6
 				max_targets = 15
 
 				[Effect Template=BlastDamageEffect]
-				amount = 70
+				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				amount = 3
+				targets = +ENEMY -TANK
+				amount = 2
 
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
 				amount = 50
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_artillery_stun
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_artillery_slow
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -1
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_artillery_heavy
@@ -65,24 +108,67 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 7
+				recharge_time = 5
 				range = 35
 				area = 6
 				max_targets = 15
 
 				[Effect Template=BlastDamageEffect]
-				amount = 70
+				amount = 50
+
+				[Flags] 
+				bombard = true
 
 				[Effect Template=MoraleLossEffect]
-				amount = 3
+				targets = +ENEMY -TANK
+				amount = 2
 
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
 				amount = 50
 
-				[Flags] 
-				bombard = true
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_artillery_stun2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_bunker_artillery_slow2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -1
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_artillery_heavy
