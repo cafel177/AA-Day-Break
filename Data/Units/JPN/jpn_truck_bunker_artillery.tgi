@@ -1,19 +1,19 @@
 [Thing Template=AAUnitJPNVehicleHQTruck]
 {
-	IDS = jpn_truck_supply
-	name = "#jpn_truck_supply_name"
-	editor_name = "#jpn_truck_supply_editor_name"
+	IDS = jpn_truck_bunker_artillery
+	name = "#jpn_truck_bunker_artillery_name"
+	editor_name = "#jpn_truck_bunker_artillery_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 250
+		money = 125
 
 		[Production]
-		money = 15
+		
 
    		[Upkeep]
-		building_limit_consumed = 1
+		ammo = 10
 	}
 
 	[BodyComponent]
@@ -25,7 +25,7 @@
 	[MobileDeploymentComponent]
 	{
 	
-		unpack_to_actor_ids = jpn_depot_supply
+		unpack_to_actor_ids = jpn_bunker_artillery
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
@@ -36,7 +36,7 @@
 		speed_max = 3
 
 		;; ids of the trailer actor
-		trailer_actor = jpn_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		{		
@@ -48,17 +48,13 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
 
-		[Property]
-		property_ids = money
 	}
 	
 	[View]
 	{
 		resource_prefix = JPNTruck/JPNTruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconBunkerArtillery.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = jpn_truck_deployed
