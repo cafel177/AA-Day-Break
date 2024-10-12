@@ -32,6 +32,11 @@
 	name = "#rus_motor_pool_Thing_name"
 	editor_name = "#rus_motor_pool_Thing_editor_name"
 
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
 	[BodyComponent]
 	health = 1500
 	defense = 0

@@ -4,6 +4,11 @@
 	;name = "Airfield"
 	;editor_name = "USA Airfield"
 
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
 	[BodyComponent]
 	health = 2000
 	defense = 0

@@ -1,5 +1,10 @@
 [Template AAGERBuildingPackableAirfield Template=AAGERBuildingPackable]
 {
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
 	[BodyComponent]
 	health = 2000
 	defense = 0

@@ -1,6 +1,11 @@
 [Template AAGBRBuildingPackableAirfield Template=AAGBRBuildingPackable]
 {
 
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
 	[BodyComponent]
 	health = 2000
 	defense = 0
