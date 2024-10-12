@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_ability_AA.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: Shared specific abilities that actors may use.
 
@@ -434,6 +434,8 @@ smm021003 - created
 	recoil_impulse = 4000
 	recharge_time = 4
 	icon = /Properties/AbilityIcons/IconAbilityDamageArmorPierce.png
+	attenuation_range_min = 1
+	attenuation_factor_max = 0.35
 	
 	;; Tanks muzzle shoot effect
 	[WhenStart template=FXC_CreateVFX]
@@ -456,7 +458,9 @@ smm021003 - created
 	recoil_impulse = 4000
 	recharge_time = 5
 	icon = /Properties/AbilityIcons/IconAbilityDamageArmorPierce.png
-	
+	attenuation_range_min = 1
+	attenuation_factor_max = 0.35
+
 	;; Tanks muzzle shoot effect
 	[WhenStart template=FXC_CreateVFX]
 	{
@@ -478,6 +482,8 @@ smm021003 - created
 	recoil_impulse = 4000
 	recharge_time = 6
 	icon = /Properties/AbilityIcons/IconAbilityDamageArmorPierce.png
+	attenuation_range_min = 1
+	attenuation_factor_max = 0.35
 
 	;; Tanks muzzle shoot effect
 	[WhenStart template=FXC_CreateVFX]
@@ -500,6 +506,8 @@ smm021003 - created
 	recoil_impulse = 4000
 	recharge_time = 6
 	icon = /Properties/AbilityIcons/IconAbilityDamageArmorPierce.png
+	attenuation_range_min = 1
+	attenuation_factor_max = 0.2
 
 	;; Tanks muzzle shoot effect
 	[WhenStart template=FXC_CreateVFX]
