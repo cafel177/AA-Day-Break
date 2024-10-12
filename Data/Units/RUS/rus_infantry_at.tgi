@@ -50,10 +50,12 @@
 			{				
 				name = "#rus_infantry_at_AbilityDefinition_name"
 				recharge_time = 7
-				area = 2
+				area = 3
 				range = 30
 				max_targets = 4
-				
+				attenuation_range_min = 1
+				attenuation_factor_max = 0.2
+
 				[Flags] 
 				bombard = true
 

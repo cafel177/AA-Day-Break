@@ -70,6 +70,8 @@
 				range = 18
 				area = 2
 				max_targets = 3
+				attenuation_range_min = 1
+				attenuation_factor_max = 0.2
 
 				[Flags] 
 				bombard = true
