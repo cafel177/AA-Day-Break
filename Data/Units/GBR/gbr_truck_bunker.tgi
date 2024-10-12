@@ -1,19 +1,19 @@
 [Thing Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_supply
-	name = "#gbr_truck_supply_name"
-	editor_name = "#gbr_truck_supply_editor_name"
+	IDS = gbr_truck_bunker
+	name = "#gbr_truck_bunker_name"
+	editor_name = "#gbr_truck_bunker_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 250
+		money = 75
 
 		[Production]
-		money = 15
+
 
    		[Upkeep]
-		building_limit_consumed = 1
+		ammo = 5
 	}
 	
 	[BodyComponent]
@@ -21,7 +21,7 @@
 	defense = 2
 	
 	[MobileDeploymentComponent]
-	unpack_to_actor_ids = gbr_depot_supply
+	unpack_to_actor_ids = gbr_bunker
 	packed_position_offset = 0,0
 	packed_orientation = 1,0
 	
@@ -29,7 +29,7 @@
 	{
 		speed_max = 3
 		
-		trailer_actor = gbr_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		node_ids = hitch
@@ -38,17 +38,13 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
 
-		[Property]
-		property_ids = money
 	}	
 	
 	[View]
 	{
 		resource_prefix = GBRTruck/GBRTruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconBunker.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_truck_deployed

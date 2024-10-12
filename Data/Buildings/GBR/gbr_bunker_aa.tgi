@@ -6,8 +6,8 @@
 	editor_name = "#gbr_bunker_aa_Thing_editor_name"
 	
 	[BodyComponent]
-	health = 1000
-	defense = 5
+	health = 1250
+	defense = 8
 
 	[DefenderComponent]
 	{
@@ -24,7 +24,7 @@
 				range = 25
 							
 				[Effect Template=PierceDamageEffect]
-				amount = 40
+				amount = 60
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_aa
@@ -44,17 +44,24 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 30
+		money = 0
 		
 		[Production]
 		
 		[Upkeep]
-		ammo = 5
+		ammo = 10
 	}
 
 	[Flags]
 	{
 		axis_locked = false
+	}
+
+	[MobileDeploymentComponent]
+	{
+		packing_length = 3
+		unpacking_length = 3
+		pack_health_min = 1
 	}
 
 	[PerformerComponent]
@@ -64,7 +71,7 @@
 			turret_ids = Turret
 			offset = -0.003,-0.131	
 
-			yaw_rotation_per_sec_degrees = 180
+			yaw_rotation_per_sec_degrees = 360
 			yaw_rotation_range_degrees = 360
 			yaw_start_degrees = 0
 
@@ -151,6 +158,6 @@
 	[WhenLeave Template=FXC_PlaySFX]
 	{
 		audio_ids = bunker_aa_construction_complete
-		actor_state = construction
+		actor_state = structure_unpacking
 	}
 }
