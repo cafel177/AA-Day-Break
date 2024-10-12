@@ -67,7 +67,7 @@
 				
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .5
+				amount = .75
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

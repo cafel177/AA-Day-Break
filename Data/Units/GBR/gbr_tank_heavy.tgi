@@ -82,7 +82,7 @@
 				
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .5
+				amount = .75
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_heavy
