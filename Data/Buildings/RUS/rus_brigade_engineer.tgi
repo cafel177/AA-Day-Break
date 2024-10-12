@@ -95,12 +95,6 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
-		actor_ids = rus_truck_bunker_artillery
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
 		actor_ids = rus_truck_bunker
 
 		[RecruitActor]
