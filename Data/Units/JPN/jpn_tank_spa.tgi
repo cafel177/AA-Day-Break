@@ -91,7 +91,7 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1
+				amount = 1.5
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

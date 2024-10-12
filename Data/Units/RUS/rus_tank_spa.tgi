@@ -60,7 +60,7 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1
+				amount = 1.25
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_artillery_heavy
