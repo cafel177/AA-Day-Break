@@ -12,7 +12,7 @@
 	
 	[DefenderComponent]
 	{
-		control_range = 20
+		control_range = 25
 	
 		[Ability Template=AAAttackLocal]
 		{
@@ -25,7 +25,7 @@
 				max_targets = 10
 				
 				recharge_time = 2
-				range = 20
+				range = 25
 
 				[Effect Template=PierceDamageEffect]
 				amount = 25
@@ -45,7 +45,7 @@
 		[Turret]
 		{
 			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 90
+			yaw_rotation_per_sec_degrees = 360
 			yaw_rotation_range_degrees = 360
 			yaw_start_degrees = 0
 			offset = 0, 0	
@@ -62,7 +62,7 @@
 				max_targets = 10
 				
 				recharge_time = 2
-				range = 20
+				range = 25
 				
 				[Flags] 
 				bombard = true

@@ -1,19 +1,19 @@
 [Thing Template=AAUnitUSAVehicleHQTruck]
 {
-	IDS = usa_truck_supply
-	name = "#usa_truck_supply_name"
-	editor_name = "#usa_truck_supply_editor_name"
+	IDS = usa_truck_bunker_aa
+	name = "#usa_truck_bunker_aa_name"
+	editor_name = "#usa_truck_bunker_aa_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 250
+		money = 75
 
 		[Production]
-		money = 15
+
 
    		[Upkeep]
-		building_limit_consumed = 1
+		ammo = 5
 	}
 
 	[BodyComponent]
@@ -25,7 +25,7 @@
 	[MobileDeploymentComponent]
 	{
 	
-		unpack_to_actor_ids = usa_depot_supply
+		unpack_to_actor_ids = usa_bunker_aa
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
@@ -36,7 +36,7 @@
 		speed_max = 3
 
 		;; ids of the trailer actor
-		trailer_actor = usa_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		{		
@@ -48,11 +48,7 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
 
-		[Property]
-		property_ids = money
 	}
 	
 	[View]
