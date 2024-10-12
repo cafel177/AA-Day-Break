@@ -272,6 +272,9 @@ USAGE:
 	{
 		[Property]
 		property_ids = artillery
+
+		[Property]
+		property_ids = anti_stun1
 	}
 
 	[View]

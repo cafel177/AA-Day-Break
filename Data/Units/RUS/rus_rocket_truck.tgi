@@ -9,7 +9,7 @@
 	attenuation_factor_max = 0.25
 	max_targets = 12
 
-	range = 55
+	range = 45
 	recharge_time = 9
 	reload_time = 0.0
 									
