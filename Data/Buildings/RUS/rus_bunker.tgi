@@ -78,6 +78,10 @@
 						attribute = SPEED_MAX
 						amount = -0.5
 
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = 0
+
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint
 					}
@@ -128,7 +132,7 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = rus_bunker_slow
+						IDS = rus_bunker_slow2
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
 						enchantment_type = ench_type_slow
@@ -137,6 +141,10 @@
 						[Modifier Template=MultiplyModifier]
 						attribute = SPEED_MAX
 						amount = -0.5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = 0
 
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint
