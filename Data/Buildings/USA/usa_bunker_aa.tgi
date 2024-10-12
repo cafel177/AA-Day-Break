@@ -1,4 +1,4 @@
-[Thing Template=AAUSABuildingConstructed]
+[Thing Template=AAUSABuildingPackable]
 {
 	IDS = usa_bunker_aa
 	name = "#usa_bunker_aa_Thing_name"
