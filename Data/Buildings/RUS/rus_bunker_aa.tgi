@@ -1,4 +1,4 @@
-[Thing Template=AARUSBuildingConstructed]
+[Thing Template=AARUSBuildingPackable]
 {
 	IDS = rus_bunker_aa
 	name = "#rus_bunker_aa_Thing_name"

@@ -1,4 +1,4 @@
-[Thing Template=AAGBRBuildingConstructed]
+[Thing Template=AAGBRBuildingPackable]
 {
 	IDS = gbr_bunker_artillery
 	name = "#gbr_bunker_artillery_Thing_name"

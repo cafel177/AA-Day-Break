@@ -1,4 +1,4 @@
-[Thing Template=AAJPNBuildingConstructed]
+[Thing Template=AAJPNBuildingPackable]
 {
 	IDS = jpn_bunker_aa
 	name = "#jpn_bunker_aa_Thing_name"

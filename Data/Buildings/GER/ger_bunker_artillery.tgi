@@ -1,4 +1,4 @@
-[Thing Template=AAGERBuildingConstructed]
+[Thing Template=AAGERBuildingPackable]
 {
 	IDS = ger_bunker_artillery
 	name = "#ger_bunker_artillery_Thing_name"
@@ -11,13 +11,13 @@
 
 	[BodyComponent]
 	{
-		health = 1000
-		defense = 5
+		health = 1500
+		defense = 15
 	}
 
 	[DefenderComponent]
 	{
-		control_range = 30
+		control_range = 35
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -26,15 +26,21 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#ger_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 9
-				range = 30
-				area = 4
-				
+				recharge_time = 7
+				range = 35
+				area = 6
+				max_targets = 15
+
 				[Effect Template=BlastDamageEffect]
-				amount = 55
+				amount = 70
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.25
+				amount = 3
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
@@ -45,6 +51,52 @@
 		}
 	}
 	
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 180
+			yaw_rotation_range_degrees = 360
+			yaw_start_degrees = 0
+			offset = 0.016,0.446
+		}
+
+		[Ability Template=AAAttackLocal]
+		{
+			turret_ids = Turret 
+			
+			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
+			{
+				name = "#ger_bunker_artillery_DefenderComponent_AbilityDefinition_name"
+				recharge_time = 7
+				range = 35
+				area = 6
+				max_targets = 15
+
+				[Effect Template=BlastDamageEffect]
+				amount = 70
+
+				[Effect Template=MoraleLossEffect]
+				amount = 3
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
+
+				[Flags] 
+				bombard = true
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_artillery_heavy
+			}
+		}
+	}
+
 	[DetectionComponent]
 	{
 		detection_range = 30
@@ -53,12 +105,12 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 40
+		money = 0
 		
 		[Production]
 		
 		[Upkeep]
-		ammo = 7
+		ammo = 20
 	}
 
 	[ElementComponent]
@@ -67,16 +119,11 @@
 		required_structures = ger_brigade_artillery
 	}
 
-	[PerformerComponent]
+	[MobileDeploymentComponent]
 	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 30
-			yaw_rotation_range_degrees = 360
-			yaw_start_degrees = 0
-			offset = 0.016,0.446
-		}
+		packing_length = 3
+		unpacking_length = 3
+		pack_health_min = 1
 	}
 
 	[PropertiesComponent]
@@ -154,6 +201,6 @@
 	[WhenLeave Template=FXC_PlaySFX]
 	{
 		audio_ids = bunker_artillery_construction_complete
-		actor_state = construction
+		actor_state = structure_unpacking
 	}
 }

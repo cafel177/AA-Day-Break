@@ -26,7 +26,7 @@
 }
 ;;---------------------------------------------------------------------------
 
-[Thing Template=AARUSBuildingConstructed]
+[Thing Template=AARUSBuildingPackable]
 {
 	IDS = rus_bunker
 	name = "#rus_bunker_Thing_name"
@@ -35,12 +35,12 @@
 	[BodyComponent]
 	{
 		health = 1250
-		defense = 10
+		defense = 8
 	}
 	
 	[DefenderComponent]
 	{
-		control_range = 20
+		control_range = 25
 	
 		[Ability Template=AAAttackLocal]
 		{
@@ -49,17 +49,71 @@
 			[AbilityDefinition Template=AABunkerAttackMG]
 			{
 				name = "#rus_bunker_DefenderComponent_AbilityDefinition_name"
-				area = 2
-				attenuation_range_min = 0.5
-				attenuation_factor_max = 0.5
-				max_targets = 4
+				area = 4
+				max_targets = 10
 				
 				recharge_time = 2
-				range = 14
+				range = 25
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 20
+				amount = 25
 			
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = .5
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				targets = building
+				amount = 15
+
+				[WhenDo template=FXC_PlaySFX]
+				{
+					audio_ids = rus_mg_light
+				}
+			}
+		}
+	}
+
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 360
+			yaw_rotation_range_degrees = 360
+ 			yaw_start_degrees = 0
+			offset = 0, 0	
+ 		}
+
+		[Ability Template=AAAttackLocal]
+		{
+			turret_ids = turret
+			
+			[AbilityDefinition Template=AABunkerAttackMG]
+			{
+				name = "#rus_bunker_DefenderComponent_AbilityDefinition_name"
+				area = 4
+				max_targets = 10
+				
+				recharge_time = 2
+				range = 25
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 25
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = .5
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				targets = building
+				amount = 15
+
 				[WhenDo template=FXC_PlaySFX]
 				{
 					audio_ids = rus_mg_light
@@ -77,12 +131,12 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 0
 		
 		[Production]
 		
 		[Upkeep]
-		ammo = 3
+		ammo = 10
 	}
 
 	[Flags]
@@ -90,16 +144,11 @@
 		axis_locked = false
 	}
 
-	[PerformerComponent]
+	[MobileDeploymentComponent]
 	{
-		[Turret]
-		{
-			turret_ids = Turret
-			yaw_rotation_per_sec_degrees = 90
-			yaw_rotation_range_degrees = 360
- 			yaw_start_degrees = 0
-			offset = 0, 0	
- 		}
+		packing_length = 3
+		unpacking_length = 3
+		pack_health_min = 1
 	}
 	
 	[PropertiesComponent]
@@ -164,6 +213,6 @@
 	[WhenLeave Template=FXC_PlaySFX]
 	{
 		audio_ids = bunker_construction_complete
-		actor_state = construction
+		actor_state = structure_unpacking
 	}
 }

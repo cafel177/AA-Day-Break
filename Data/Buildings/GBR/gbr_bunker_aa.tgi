@@ -1,4 +1,4 @@
-[Thing Template=AAGBRBuildingConstructed]
+[Thing Template=AAGBRBuildingPackable]
 {
 	;;IDS = gbr_aa_bunker
 	IDS = gbr_bunker_aa
