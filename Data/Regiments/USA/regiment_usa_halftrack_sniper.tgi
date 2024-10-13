@@ -49,6 +49,7 @@
 	
 	[PropertiesComponent]
 	{	
-
+		[Property]
+		property_ids = mechanized_company
 	}
 }

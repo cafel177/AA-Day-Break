@@ -1,8 +1,8 @@
 [Thing Template=AARUSOrganizationMobile]
 {	
-	IDS = regiment_rus_halftrack_sniper
-	name = "#regiment_rus_halftrack_sniper_name"
-	editor_name = "#regiment_rus_halftrack_sniper_editor_name"
+	IDS = regiment_rus_halftrack_flame
+	name = "#regiment_rus_halftrack_flame_name"
+	editor_name = "#regiment_rus_halftrack_flame_editor_name"
 
 	[EconomyComponent]
 	{
@@ -16,7 +16,7 @@
 
 	[View]
 	{
-		resource_prefix = /Units/RUS/RUSTankDestroyer/RUSTankDestroyer
+		resource_prefix = /Units/RUS/RUSHalftrack/RUSHalftrack
 		icon = /UI/Game/RegimentButtons/IconHalftrack.png
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
 
@@ -38,10 +38,10 @@
 		layout_IDS = regiment_vehicle_heavy
 		
 		[Slot]	;; front
-		element_IDS = rus_halftrack
+		element_IDS = rus_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = rus_halftrack_sniper
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = rus_car_armored_co
@@ -49,6 +49,7 @@
 	
 	[PropertiesComponent]
 	{	
-
+		[Property]
+		property_ids = mechanized_company
 	}
 }

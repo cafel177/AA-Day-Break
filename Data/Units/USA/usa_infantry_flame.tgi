@@ -59,7 +59,7 @@
 
 	[ElementComponent]
 	{
-		required_properties = tech_infantry_flame
+		required_properties = tech_flame
 	}
 	
 	[PropertiesComponent]

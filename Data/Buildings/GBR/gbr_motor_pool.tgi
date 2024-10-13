@@ -95,13 +95,13 @@
 
 		[ResearchItem]
 		{
-			property_IDS = tech_tank_flame
+			property_IDS = tech_flame
 			type = GLOBAL	
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 150
+				money = 100
 			}
 		}		
 

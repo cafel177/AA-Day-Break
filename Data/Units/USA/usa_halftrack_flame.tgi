@@ -1,4 +1,39 @@
-[Template USAHalftrackSniper Inherit=AAUnitUSAVehicleHalftrack]
+;;--------------------------------------------- Flame Attack ---
+
+[Template AAVehicleFlame Inherit=AAProjectileAttack]
+{
+	projectile_ids = flame_vehicle_projectile
+	ability_type = null
+
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = flame_hit_effect_ground
+		at = TARGET_GROUND
+		attached = false
+		delay = 0.7
+	}
+	
+	[WhenDo template=FXC_CreateVFX]
+  	{
+  		VFX_IDS = flame_hit_effect
+  		at = TARGET_HIT_POSITION
+  		attached = false
+  		delay = 0.7
+  	}
+
+	[WhenDo template=FXC_CreateVFX]
+  	{
+  		VFX_IDS = flame_ring
+  		at = TARGET_HIT_POSITION
+  		attached = false
+  		delay = 0.7
+  	}
+	
+}; end [Template AAInfantryFlame]
+
+;;------------------------------------------------------
+
+[Template USAHalftrackFlame Inherit=AAUnitUSAVehicleHalftrack]
 {
 	[BodyComponent]
 	{
@@ -8,8 +43,9 @@
 	
 	[MoverComponent]
 	{
-		speed_max = 4.5
-		acceleration = 3.5
+		speed_max = 5.5
+		turn_radius = 1.5
+		acceleration = 4.5
 	}
 
 	[ElementComponent]
@@ -30,6 +66,13 @@
 	}
 	
 	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 360
+		}
+	}
 	
 	[View]
 	{
@@ -55,44 +98,147 @@
 
 ;;----------------------------- UNITS ------------------------ ;;
 
-[Thing Template=USAHalftrackSniper]
+[Thing Template=USAHalftrackFlame]
 {
-	IDS = usa_halftrack_sniper
-	name = "#usa_halftrack_sniper_Thing_name"
-	editor_name = "#usa_halftrack_sniper_Thing_editor_name"
+	IDS = usa_halftrack_flame
+	name = "#usa_halftrack_flame_Thing_name"
+	editor_name = "#usa_halftrack_flame_Thing_editor_name"
 
 	hide_if_missing_properties = false
 
 	[ElementComponent]
 	{
-		required_properties = tech_sniper_rifle
+		required_structures = usa_motor_pool
+		required_properties = tech_flame
 	}
 
-	[PerformerComponent]
+	[DefenderComponent]
 	{
-		[Ability Template=AAGunLocal]
-		{	
-			[AbilityDefinition Template=AAVehicleMG]
-			{
-				name = "#usa_halftrack_AbilityDefinition_name"
-				recharge_time = 5
-				area = 1.5
-				range = 30
-				max_targets = 3			
-				
-				[Flags] 
-				bombard = true
+		control_range = 20
+		
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{	
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 20
+				recharge_time = 4
+				area = 6
+				max_targets = 15
 
-				[Effect Template=PierceDamageEffect]
-				amount = 20
-				
-				[Effect Template=AddDamageEffect]
-				damage_type_IDS = gunfire
-				targets = infantry
-				amount = 250
+				[Flags]
+				spell = true
 
 				[WhenDo template=FXC_PlaySFX]
-				audio_ids = usa_mg_heavy
+				audio_ids = gbr_flame_tank
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_buff_all
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type = ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
+
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -0.5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = MORALE_RECOVERY_RATE
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +artillery
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_buff_artillery
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type =ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png
+			
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 10
+
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = ATTACK_EFFICIENCY_ACTUAL
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
 			}
 		}
 	}

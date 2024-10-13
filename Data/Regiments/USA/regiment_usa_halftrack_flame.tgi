@@ -1,8 +1,8 @@
 [Thing Template=AAUSAOrganizationMobile]
 {	
-	IDS = regiment_usa_halftrack_sniper
-	name = "#regiment_usa_halftrack_sniper_name"
-	editor_name = "#regiment_usa_halftrack_sniper_editor_name"
+	IDS = regiment_usa_halftrack_flame
+	name = "#regiment_usa_halftrack_flame_name"
+	editor_name = "#regiment_usa_halftrack_flame_editor_name"
 
 	[EconomyComponent]
 	{
@@ -16,7 +16,7 @@
 
 	[View]
 	{
-		resource_prefix = /Units/USA/USATankDestroyer/USATankDestroyer
+		resource_prefix = /Units/USA/USAHalftrack/USAHalftrack
 		icon = /UI/Game/RegimentButtons/IconHalftrack.png
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
 
@@ -38,10 +38,10 @@
 		layout_IDS = regiment_vehicle_heavy
 		
 		[Slot]	;; front
-		element_IDS = usa_halftrack
+		element_IDS = usa_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = usa_halftrack_sniper
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = usa_car_armored_co
@@ -49,6 +49,7 @@
 	
 	[PropertiesComponent]
 	{	
-
+		[Property]
+		property_ids = mechanized_company
 	}
 }

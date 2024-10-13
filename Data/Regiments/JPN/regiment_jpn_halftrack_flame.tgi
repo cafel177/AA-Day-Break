@@ -1,8 +1,8 @@
 [Thing Template=AAJPNOrganizationMobile]
 {	
-	IDS = regiment_jpn_halftrack_sniper
-	name = "#regiment_jpn_halftrack_sniper_name"
-	editor_name = "#regiment_jpn_halftrack_sniper_editor_name"
+	IDS = regiment_jpn_halftrack_flame
+	name = "#regiment_jpn_halftrack_flame_name"
+	editor_name = "#regiment_jpn_halftrack_flame_editor_name"
 
 	[EconomyComponent]
 	{
@@ -16,7 +16,7 @@
 
 	[View]
 	{
-		resource_prefix = /Units/JPN/JPNTankDestroyer/JPNTankDestroyer
+		resource_prefix = /Units/JPN/JPNHalftrack/JPNHalftrack
 		icon = /UI/Game/RegimentButtons/IconHalftrack.png
 		banner_icon = /Organizations/Banners/Icons/IconMobile.png
 
@@ -38,10 +38,10 @@
 		layout_IDS = regiment_vehicle_heavy
 		
 		[Slot]	;; front
-		element_IDS = jpn_halftrack
+		element_IDS = jpn_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = jpn_halftrack_sniper
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = jpn_car_armored_co
@@ -49,6 +49,7 @@
 	
 	[PropertiesComponent]
 	{	
-
+		[Property]
+		property_ids = mechanized_company
 	}
 }

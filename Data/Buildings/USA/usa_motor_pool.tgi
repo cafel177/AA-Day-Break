@@ -59,7 +59,7 @@
 	{
 		[ResearchItem]
 		{
-			property_IDS = tech_infantry_flame
+			property_IDS = tech_flame
 			type = GLOBAL
 			research_time = 60
 		

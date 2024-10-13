@@ -413,6 +413,17 @@
 
 [Property Template=AATechnology]
 {
+	IDS = tech_flame
+	name = "#properties_technologies_tech_flame_name"
+	description = "#properties_technologies_tech_flame_description"
+	icon = PropertyIcons/IconPropertyEngineering.png
+	action_button_icon = TechIcons/IconFlameTanks.png
+	
+	required_properties = hq
+}
+
+[Property Template=AATechnology]
+{
 	IDS = tech_tank_flame
 	name = "#properties_technologies_tech_gbr_tank_flame_name"
 	icon = PropertyIcons/IconPropertyEngineering.png
