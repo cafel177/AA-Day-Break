@@ -372,7 +372,7 @@
 	[Modifier Template=ResourceProductionModifier]
 	{
 		[Production Template=ProductionList]
-        	oil = 5
+        		oil = 5
 	}
 }
 
@@ -802,4 +802,13 @@
 	[Modifier Template=AddModifier]
 	attribute = SUPPLY_RANGE
 	amount = 20
+
+	[Modifier Template=ResourceProductionModifier]
+	{
+		[Production Template=ProductionList]
+        		oil = 5
+
+		[Production Template=ProductionList]
+        		ammo = 5
+	}
 }
