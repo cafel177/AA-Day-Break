@@ -47,7 +47,7 @@
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 20
+				money = 25
 			}
 		}
 	}

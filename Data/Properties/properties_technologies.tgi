@@ -803,11 +803,19 @@
 	attribute = SUPPLY_RANGE
 	amount = 20
 
+	[Modifier template=FlagModifier]
+	{
+		modifier_flag = NO_UPKEEP
+	}
+
 	[Modifier Template=ResourceProductionModifier]
 	{
 		[Production Template=ProductionList]
         		oil = 5
+	}
 
+	[Modifier Template=ResourceProductionModifier]
+	{
 		[Production Template=ProductionList]
         		ammo = 5
 	}
