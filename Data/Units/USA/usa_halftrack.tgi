@@ -1,11 +1,14 @@
 [Template USAHalftrack Inherit=AAUnitUSAVehicleHalftrack]
 {
+	name = "#usa_halftrack_Thing_name"
+	editor_name = "#usa_halftrack_Thing_editor_name"
+
 	[BodyComponent]
 	{
 		health = 250
 		defense = 5
 	}
-	
+
 	[MoverComponent]
 	{
 		speed_max = 4.5
@@ -34,6 +37,29 @@
 	}
 	
 	[PerformerComponent]
+	{
+		[Ability Template=AAGunLocal]
+		{	
+			[AbilityDefinition Template=AAVehicleMG]
+			{
+				name = "#usa_halftrack_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+				
+				recharge_time = 2
+				range = 14
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 14
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_mg_heavy
+			}
+		}	
+	}
+	
 	
 	[View]
 	{
@@ -62,29 +88,39 @@
 [Thing Template=USAHalftrack]
 {
 	IDS = usa_halftrack
-	name = "#usa_halftrack_Thing_name"
-	editor_name = "#usa_halftrack_Thing_editor_name"
+}
+
+[Thing Template=USAHalftrack]
+{
+	IDS = usa_halftrack_recon
+	
+	[BuilderComponent]
+	{
+		[BuildActor]
+		actor_ids = bunker_recon
+	}
 
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocal]
+		[Ability Template=AARepairLocal]
 		{	
-			[AbilityDefinition Template=AAVehicleMG]
+			[AbilityDefinition Template=AARepairAction]
 			{
-				name = "#usa_halftrack_AbilityDefinition_name"
-				area = 1.5
-				attenuation_range_min = 0.5
-				attenuation_factor_max = 0.5
-				max_targets = 4
-				
-				recharge_time = 2
-				range = 14
-				
-				[Effect Template=PierceDamageEffect]
-				amount = 14
+				recharge_time = .5
 
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = usa_mg_heavy
+				[Effect Template=RepairEffect]
+				amount = 20
+			}
+		}
+		
+		[Ability Template=AAConstructLocal]
+		{
+			[AbilityDefinition Template=AAConstructAction]
+			{
+				recharge_time = .5
+
+				[Effect Template=RepairEffect]
+				amount = 30
 			}
 		}
 	}
