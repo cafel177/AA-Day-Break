@@ -792,3 +792,14 @@
 	}
 }
 
+[Property Template=AATechnology]
+{
+	IDS = tech_improved_logistics2
+	name = "#properties_technologies_AATechnologySupplyZone_name"
+	icon = PropertyIcons/IconPropertySupply.png
+	action_button_icon = TechIcons/IconImprovedLogisitics.png
+
+	[Modifier Template=AddModifier]
+	attribute = SUPPLY_RANGE
+	amount = 20
+}

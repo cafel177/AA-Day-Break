@@ -48,7 +48,7 @@
 		entrenchment_time = 30
 
 		[Slot]	;; front
-		element_IDS = ger_infantry
+		element_IDS = ger_infantry_recon
 		
 		[Slot]	;; rear guard 1
 		element_IDS = null

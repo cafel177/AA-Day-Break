@@ -49,7 +49,7 @@
 		entrenchment_time = 30
 
 		[Slot]	;; front
-		element_IDS = jpn_infantry
+		element_IDS = jpn_infantry_recon
 		
 		[Slot]	;; rear guard 1
 		element_IDS = null

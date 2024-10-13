@@ -37,7 +37,7 @@
 		layout_IDS = regiment_vehicle_tiny
 
 		[Slot]	;; front
-		element_IDS = gbr_halftrack
+		element_IDS = gbr_halftrack_recon
 		
 		[Slot]	;; support
 		element_IDS = null
