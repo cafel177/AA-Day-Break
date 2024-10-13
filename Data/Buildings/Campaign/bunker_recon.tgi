@@ -43,7 +43,7 @@
 		{
 			property_IDS =  tech_improved_logistics2
 			type = LOCAL	
-			research_time = 60
+			research_time = 30
 		
 			[ResearchCost Template=CostList]
 			{
