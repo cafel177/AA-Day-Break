@@ -38,5 +38,5 @@
 
 	[Ability Template=AASpecialOpCodeBreaker]
 	
-	[Ability Template=AASpecialOpCorpsGBR]
+	[Ability Template=AASpecialOpGBRSupplyDrop]
 }

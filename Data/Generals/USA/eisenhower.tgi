@@ -38,7 +38,7 @@
 	
 	[Ability Template=AASpecialOpResupply2]
 	
-	[Ability Template=AASpecialOpCorpsUSA]
+	[Ability Template=AASpecialOpUSASupplyDrop]
 }
 
 ;; Eisenhower for Battle of the Bulge

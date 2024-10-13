@@ -39,5 +39,5 @@
 	
 	[Ability Template=AASpecialOpGBRSecretAgent]
 	
-	[Ability Template=AASpecialOpCorpsGBR]
+	[Ability Template=AASpecialOpGBRSupplyDrop]
 }

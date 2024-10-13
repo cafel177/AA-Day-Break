@@ -38,5 +38,5 @@
 	
 	[Ability Template=AASpecialOpResupply3]
 	
-	[Ability Template=AASpecialOpCorpsGER]
+	[Ability Template=AASpecialOpGERSupplyDrop]
 }

@@ -34,11 +34,11 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
 	[Ability Template=AASpecialOpMechanizedAdvance]
 	
-	[Ability Template=AASpecialOpUSASupplyDrop]
+	[Ability Template=AASpecialOpAssemblyLine]
 	
 	[Ability Template=AASpecialOpCourage]
 
-	[Ability Template=AASpecialOpCorpsUSA]
+	[Ability Template=AASpecialOpUSASupplyDrop]
 }
 
 

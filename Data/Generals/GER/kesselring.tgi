@@ -34,11 +34,11 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
 	[Ability Template=AASpecialOpBlitzkrieg]
 		
-	[Ability Template=AASpecialOpGERSupplyDrop]
+	[Ability Template=AASpecialOpRapidDeployment]
 	
 	[Ability Template=AASpecialOpMilitaryGearUpGER]
 
-	[Ability Template=AASpecialOpCorpsGER]
+	[Ability Template=AASpecialOpGERSupplyDrop]
 }
 
 

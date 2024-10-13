@@ -38,5 +38,5 @@
 	
 	[Ability Template=AASpecialOpAssemblyLine]
 
-	[Ability Template=AASpecialOpCorpsRUS]
+	[Ability Template=AASpecialOpRUSSupplyDrop]
 }

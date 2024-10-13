@@ -32,13 +32,13 @@
 	portrait_ids = zhukov_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;	
+	[Ability Template=AASpecialOpAtomicBomb]
+	
 	[Ability Template=AASpecialOpSabotageRUS]
 	
+	[Ability Template=AASpecialOpAssemblyLine]
+	
 	[Ability Template=AASpecialOpRUSSupplyDrop]
-	
-	[Ability Template=AASpecialOpPurge]
-	
-	[Ability Template=AASpecialOpCorpsRUS]
 }
 
 ;; Zhukov for the tutorial
