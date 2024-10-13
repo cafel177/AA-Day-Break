@@ -1,0 +1,84 @@
+[Template GBRHalftrackSniper Inherit=AAUnitGBRVehicleHalftrack]
+{
+	[BodyComponent]
+	{
+		health = 200
+		defense = 3
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 4.5
+		acceleration = 3.5
+	}
+	
+	[PerformerComponent]
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = combat_unit
+		
+		[Property]
+		property_IDS = halftrack_unit
+	}
+	
+	[View]
+	{
+		resource_prefix = GBRHalftrack/GBRHalftrack
+	}
+}
+
+
+;;----------------------------- UNITS ------------------------ ;;
+
+[Thing Template=GBRHalftrackSniper]
+{
+	IDS = gbr_halftrack_sniper
+	name = "#gbr_halftrack_sniper_Thing_name"
+	editor_name = "#gbr_halftrack_sniper_Thing_editor_name"
+
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	{
+		required_properties = tech_sas_commandos
+	}
+
+	[PerformerComponent]
+	{
+		
+		[Ability Template=AAGunLocal]
+		{
+					
+			[AbilityDefinition Template=AAVehicleMG]
+			{
+				name = "#gbr_halftrack_AbilityDefinition_name"
+				recharge_time = 5
+				area = 1.5
+				range = 30
+				max_targets = 3			
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=PierceDamageEffect]
+				amount = 20
+				
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				targets = infantry
+				amount = 250
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_mg_heavy
+			}
+		}
+	}
+}
