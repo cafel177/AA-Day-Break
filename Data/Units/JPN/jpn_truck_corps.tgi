@@ -8,6 +8,11 @@
 		defense = 2
 	}
 
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	required_properties = tech_battleship
+
 	[EconomyComponent]
 	{
 		[Cost]

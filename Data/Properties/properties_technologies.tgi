@@ -712,9 +712,11 @@
 {
 	IDS = tech_battleship
 	name = "#properties_technologies_tech_battleship_name"
-	icon = null
-	action_button_icon = null
+	icon = PropertyIcons/IconPropertyTemporary.png
+	action_button_icon = TechIcons/IconReorganizeHQ.png
 	
+	required_properties = provides_corps_property
+
 	enabled_target_flags = provides_corps
 }
 

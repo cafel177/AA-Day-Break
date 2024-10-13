@@ -1359,6 +1359,12 @@ USAGE:
 [Template AAUnitSeaMajor Template=AAUnitSea]
 {
 
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = provides_corps_property
+	}
+
 	[Placement]
 	placement_category = BUILDING
 	

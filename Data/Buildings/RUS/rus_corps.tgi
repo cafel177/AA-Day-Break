@@ -146,10 +146,22 @@
 			}
 		}
 		
-				[ResearchItem]
+		[ResearchItem]
 		{
 			property_IDS = tech_military_surplus
 			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
 			research_time = 60
 		
 			[ResearchCost Template=CostList]

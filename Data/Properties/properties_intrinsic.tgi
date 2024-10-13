@@ -678,3 +678,10 @@
 	[Modifier Template=EnchantmentImmunityModifier]
 	enchantment_type = ench_type_stun2
 }
+
+[Property Template=SharedProperty]
+{
+	IDS = provides_corps_property
+	name = "#properties_technologies_tech_battleship_name"
+	icon = null
+}
