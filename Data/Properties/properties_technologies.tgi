@@ -419,7 +419,7 @@
 	icon = PropertyIcons/IconPropertyEngineering.png
 	action_button_icon = TechIcons/IconFlameTanks.png
 	
-	required_properties = hq
+	required_properties = mech_armor_hq
 }
 
 [Property Template=AATechnology]
@@ -469,7 +469,7 @@
 	
 	description = "#properties_technologies_tech_ger_goliath_description"
 	
-	required_properties = infhq
+	required_properties = inf_mech_hq
 }
 
 [Property Template=AATechnology]
@@ -491,7 +491,7 @@
 	icon = PropertyIcons/IconPropertyEngineering.png
 	action_button_icon = TechIcons/IconTankettes.png
 
-	required_properties = hq
+	required_properties = inf_mech_hq
 
 	description = "#properties_technologies_tech_jpn_tankette_description"
 }
