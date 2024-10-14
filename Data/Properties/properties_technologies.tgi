@@ -521,7 +521,7 @@
 	
 	[Modifier Template=MultiplyModifier]
 	attribute = RECRUIT_COST
-	amount = 0.1
+	amount = 0.15
 }
 
 /*
