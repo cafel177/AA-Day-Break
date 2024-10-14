@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 65
+		money = 75
 		
 		[Upkeep]
 		ammo = 15
@@ -26,6 +26,7 @@
 	{
 		resource_prefix = /Units/GBR/GBRInfantryMortar/GBRInfantryMortar
 		icon = /UI/Game/RegimentButtons/IconInfantryArtillery.png
+		banner_icon = /Organizations/Banners/Icons/IconInfantryArtillery.png
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = gbr_infantry_artillery_select
