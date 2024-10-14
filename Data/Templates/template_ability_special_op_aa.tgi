@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_actor_ability_AA.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: Defines a specific ability that an actor may use.
 
@@ -313,7 +313,7 @@ smm042004 - created
 
 [Template AASpecialOpSupplyDrop Template=AASpecialOpShared]
 {
-	cost_faction_experience = 400
+	cost_faction_experience = 300
 }
 
 [Template AASpecialOpGBRSupplyDrop Template=AASpecialOpSupplyDrop]
