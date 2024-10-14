@@ -159,13 +159,13 @@
 		
 		[ResearchItem]
 		{
-			property_IDS = tech_special_forces
+			property_IDS = tech_marksmanship
 			type = GLOBAL	
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 100
+				money = 75
 			}
 		}	
 		
@@ -177,7 +177,7 @@
 		
 			[ResearchCost Template=CostList]
 			{
-				money = 75
+				money = 100
 			}
 		}	
 

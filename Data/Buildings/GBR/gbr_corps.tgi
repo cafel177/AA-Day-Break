@@ -145,18 +145,6 @@
 
 		[ResearchItem]
 		{
-			property_IDS = tech_improved_machineguns
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
 			property_IDS = tech_sas_commandos
 			type = GLOBAL
 			research_time = 60
