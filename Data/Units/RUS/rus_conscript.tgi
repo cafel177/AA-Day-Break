@@ -4,6 +4,8 @@
 	name = "#rus_conscript_name"
 	editor_name = "#rus_conscript_editor_name"
 	
+	hide_if_missing_properties = false
+
 	[BodyComponent]
 	{
 		health = 150
