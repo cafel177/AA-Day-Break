@@ -97,7 +97,7 @@
 				{
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = gbr_buff_all
+						IDS = gbr_buff_all2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type = ench_type_generic
@@ -152,7 +152,7 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = gbr_buff_artillery
+						IDS = gbr_buff_artillery2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type =ench_type_generic
