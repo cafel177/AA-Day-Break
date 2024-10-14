@@ -38,19 +38,7 @@
 	}	
 		
 	[ResearchComponent]
-	{	
-		[ResearchItem]
-		{
-			property_IDS = tech_infantry_banzai
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
+	{			
 		[ResearchItem]
 		{
 			property_IDS = tech_long_range_artillery
