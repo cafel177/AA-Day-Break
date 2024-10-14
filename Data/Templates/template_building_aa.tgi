@@ -370,7 +370,7 @@ USAGE:
 
 	[SupplyComponent]
 	{
-		supply_range = 10
+		supply_range = 20
 		is_relay = true
 		stockpile_max = 60
 	}
