@@ -82,6 +82,12 @@
 		actor_ids = bunker_recon
 	}
 
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = engineer
+	}
+
 	[PerformerComponent]
 	{
 		[Ability Template=AARepairLocal]

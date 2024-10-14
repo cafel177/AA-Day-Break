@@ -57,18 +57,6 @@
 		
 		[ResearchItem]
 		{
-			property_IDS = tech_entrenchment
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-		[ResearchItem]
-		{
 			property_IDS = tech_construction_battalions
 			type = GLOBAL	
 			research_time = 60

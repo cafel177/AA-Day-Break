@@ -90,6 +90,12 @@
 		actor_ids = bunker_recon
 	}
 
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = engineer
+	}
+
 	[CharacterComponent Template=AAInfantryCharacterComponent]
 	{
 		[Animation Template=AttackAnimation]

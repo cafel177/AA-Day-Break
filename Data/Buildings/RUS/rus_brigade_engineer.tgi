@@ -43,6 +43,19 @@
 		
 	[ResearchComponent]
 	{
+	
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
 		[ResearchItem]
 		{
 			property_IDS = tech_ammo_production
@@ -59,18 +72,6 @@
 		{
 			property_IDS = tech_improved_fortifications
 			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_entrenchment
-			type = GLOBAL	
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
