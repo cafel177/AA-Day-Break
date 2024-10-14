@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_randommap_aa.tgi
-Copyright © 2004 TimeGate Studios
+Copyright ?2004 TimeGate Studios
 
 DESCRIPTION:  Core templates for A&A random map system
 
@@ -288,9 +288,7 @@ USAGE:
 	
 	properties = tech_noupkeep
 
-	[RequiredObject]
-	object_ids = placeholder_bunker
-	position = 0,0
+
 	
 	;; this will prevent these bunkers from going anywhere near 12m of any corps HQ (one of
 	;; which happens to be corps paired with this bunker). However this also means that the
@@ -325,13 +323,7 @@ USAGE:
 	
 	properties = tech_noupkeep
 
-	[RequiredObject]
-	object_ids = placeholder_bunker_antiaircraft
-	position = 0,0
-	
-	[RequiredObject]
-	object_ids = placeholder_bunker_antiaircraft
-	position = 0,0
+
 	
 	;; see comment in [MachineGunBunkers]
 	[GroupRestriction]
@@ -360,9 +352,7 @@ USAGE:
 	
 	properties = tech_noupkeep
 
-	[RequiredObject]
-	object_ids = placeholder_bunker_artillery
-	position = 0,0
+
 	
 	;; see comment in [MachineGunBunkers]
 	[GroupRestriction]
