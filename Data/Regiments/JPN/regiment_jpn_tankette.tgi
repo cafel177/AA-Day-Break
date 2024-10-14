@@ -18,7 +18,8 @@
 	{
 		resource_prefix = /Units/JPN/JPNTankette/JPNTankette
 		icon = /UI/Game/RegimentButtons/IconJPNTankette.png
-		
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = jpn_vehicle_deployed
 

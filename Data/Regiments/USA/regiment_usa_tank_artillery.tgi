@@ -27,6 +27,7 @@
 	{
 		resource_prefix = /Units/USA/USATankSPA/USATankSPA
 		icon = /UI/Game/RegimentButtons/IconTankArtillery.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorArtillery.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = usa_tank_deployed

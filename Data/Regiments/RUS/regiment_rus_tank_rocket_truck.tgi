@@ -24,7 +24,7 @@
 	{
 		resource_prefix = /Units/RUS/RUSRocketTruck/RUSRocketTruck
 		icon = /UI/Game/RegimentButtons/IconRUSRocketTank.png
-		banner_icon = /Organizations/Banners/Icons/IconArtillery.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorArtillery.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = rus_vehicle_deployed
