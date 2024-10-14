@@ -23,7 +23,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = ger_hq_infantry	
+		required_structures = ger_hq_mechanized
 		required_properties = armorhqproduction
 	}
 	
