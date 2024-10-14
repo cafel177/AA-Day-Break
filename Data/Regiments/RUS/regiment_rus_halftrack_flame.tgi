@@ -17,8 +17,8 @@
 	[View]
 	{
 		resource_prefix = /Units/RUS/RUSHalftrack/RUSHalftrack
-		icon = /UI/Game/RegimentButtons/IconHalftrack.png
-		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
+		banner_icon = /Organizations/Banners/Icons/IconFlame.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = rus_vehicle_deployed

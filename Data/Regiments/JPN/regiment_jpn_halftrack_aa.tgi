@@ -18,7 +18,7 @@
 	{
 		resource_prefix = /Units/JPN/JPNHalftrackAA/JPNHalftrackAA
 		icon = /UI/Game/RegimentButtons/IconHalftrackAA.png
-		banner_icon = /Organizations/Banners/Icons/IconAntiAircraft.png
+		banner_icon = /Organizations/Banners/Icons/IconMobileAA.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = jpn_vehicle_deployed

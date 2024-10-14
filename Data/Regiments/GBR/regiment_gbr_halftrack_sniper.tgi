@@ -18,7 +18,7 @@
 	{
 		resource_prefix = /Units/GBR/GBRTankDestroyer/GBRTankDestroyer
 		icon = /UI/Game/RegimentButtons/IconHalftrack.png
-		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+		banner_icon = /Organizations/Banners/Icons/IconMobileAntiTank.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_vehicle_deployed
