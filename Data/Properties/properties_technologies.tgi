@@ -112,7 +112,7 @@
 	icon = PropertyIcons/IconPropertySpecialForces.png
 	action_button_icon = TechIcons/IconSASParatroopers.png
 	
-	required_properties = airhq
+	required_properties = air_mech_hq
 
 	description = "#properties_technologies_tech_gbr_sas_commandos_description"
 }
@@ -218,7 +218,7 @@
 	icon = PropertyIcons/IconPropertySpecialForces.png
 	action_button_icon = TechIcons/IconBanzai.png
 	
-	required_properties = infhq
+	required_properties = inf_air_hq
 
 	description = "#properties_technologies_tech_jpn_infantry_banzai_description"
 }
@@ -655,7 +655,7 @@
 	icon = PropertyIcons/IconPropertySpecialForces.png
 	action_button_icon = TechIcons/IconSniperRifles.png
 	
-	required_properties = infhq
+	required_properties = inf_mech_hq
 
 	description = "#properties_technologies_tech_jpn_sniper_rifle_description"
 }

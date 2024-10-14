@@ -359,6 +359,27 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = inf_mech_hq
+	name = "#properties_intrinsic_inf_mech_hq_name"
+	icon = null
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = air_mech_hq
+	name = "#properties_intrinsic_air_mech_hq_name"
+	icon = null
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = mech_armor_hq
+	name = "#properties_intrinsic_mech_armor_hq_name"
+	icon = null
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = engineer_brigade
 	name = "#properties_intrinsic_engineer_brigade_name"
 	icon = null

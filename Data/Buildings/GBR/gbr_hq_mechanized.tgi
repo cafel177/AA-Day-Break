@@ -90,6 +90,15 @@
 		property_ids = mechhq		
 
 		[Property]
+		property_ids = inf_mech_hq
+
+		[Property]
+		property_ids = air_mech_hq
+
+		[Property]
+		property_ids = mech_armor_hq
+
+		[Property]
 		property_IDS = economic_building
 		
 		[Property]
