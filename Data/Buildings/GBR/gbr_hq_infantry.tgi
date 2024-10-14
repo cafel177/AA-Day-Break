@@ -112,18 +112,12 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_engineer
 		
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_amphib

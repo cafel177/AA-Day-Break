@@ -115,19 +115,19 @@
 		actor_ids = regiment_jpn_infantry_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_banzai
+		actor_ids = regiment_jpn_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_commando
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_amphib
+		actor_ids = regiment_jpn_infantry_banzai
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_tankette
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_amphib
 	}
 		
 	[ResearchComponent]

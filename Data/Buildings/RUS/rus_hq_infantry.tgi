@@ -115,13 +115,13 @@
 		actor_ids = regiment_rus_infantry_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_rus_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_sniper
+		actor_ids = regiment_rus_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_rus_conscript
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_sniper
 
 		[RecruitActor]
 		actor_ids = regiment_rus_infantry_amphib

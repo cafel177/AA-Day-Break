@@ -112,16 +112,13 @@
 		actor_ids = regiment_usa_infantry_artillery
 		
 		[RecruitActor]
-		actor_ids = regiment_usa_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_assault
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_flame
+		actor_ids = regiment_usa_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_assault
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_marine
