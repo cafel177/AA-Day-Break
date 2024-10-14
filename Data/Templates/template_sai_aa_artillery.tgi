@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 550
+			value							= 600
 		}
 
 		[ActorPriority]
@@ -205,6 +205,12 @@
 			{
 				property_ids				= ammo
 			}	
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= infhq  
+				one_time_bonus				= 200
+			}
 		} ;; Recruiting
 
 		[ActorPriority]

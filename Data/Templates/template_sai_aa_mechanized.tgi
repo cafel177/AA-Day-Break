@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 550
+			value							= 700
 		}
 
 		[ActorPriority]
@@ -204,6 +204,12 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
+			}
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= mechhq  
+				one_time_bonus				= 200
 			}
 		} ;; Recruiting
 
