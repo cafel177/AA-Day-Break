@@ -109,10 +109,10 @@
 		actor_ids = regiment_rus_halftrack_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_rus_halftrack_flame
+		actor_ids = regiment_rus_infantry_mechanized
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_mechanized
+		actor_ids = regiment_rus_halftrack_flame
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_light

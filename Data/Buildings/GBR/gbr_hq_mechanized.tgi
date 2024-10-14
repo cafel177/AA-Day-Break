@@ -111,10 +111,10 @@
 		actor_ids = regiment_gbr_halftrack_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_flame
+		actor_ids = regiment_gbr_infantry_mechanized
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
+		actor_ids = regiment_gbr_halftrack_flame
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_light
