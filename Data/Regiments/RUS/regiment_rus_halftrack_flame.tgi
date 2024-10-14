@@ -51,5 +51,8 @@
 	{	
 		[Property]
 		property_ids = mechanized_company
+
+		[Property]
+		property_IDS = trailblazing	
 	}
 }
