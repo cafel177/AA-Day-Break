@@ -112,9 +112,6 @@
 		actor_ids = regiment_rus_tank_heavy
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_dummy
-
-		[RecruitActor]
 		actor_ids = regiment_rus_tank_at
 		
 		[RecruitActor]

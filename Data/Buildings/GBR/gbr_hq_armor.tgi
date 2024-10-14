@@ -103,13 +103,13 @@
 		actor_ids = regiment_gbr_tank_heavy
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_flame
-
-		[RecruitActor]
 		actor_ids = regiment_gbr_tank_at
 		
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_flame
 	}
 
 	[ResearchComponent]
