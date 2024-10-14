@@ -63,7 +63,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 140
 	}
 
 	[OrganizationComponent]
@@ -94,6 +94,6 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 90
 	}
 }
