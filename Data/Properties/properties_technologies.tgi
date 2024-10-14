@@ -230,7 +230,7 @@
 	icon = PropertyIcons/IconPropertyEngineering.png
 	action_button_icon = TechIcons/IconRocketTrucks.png
 	
-	required_properties = hq
+	required_properties = mech_armor_hq
 	
 	description = "#properties_technologies_tech_rus_rocket_truck_description"
 }

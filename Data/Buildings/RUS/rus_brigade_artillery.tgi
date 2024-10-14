@@ -54,6 +54,18 @@
 		
 		[ResearchItem]
 		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+
+		[ResearchItem]
+		{
 			property_IDS = tech_long_range_artillery
 			type = GLOBAL	
 			research_time = 60
