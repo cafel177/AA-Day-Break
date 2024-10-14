@@ -34,7 +34,7 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
 	[Ability Template=AASpecialOpMechanizedAdvance]
 	
-	[Ability Template=AASpecialOpAssemblyLine]
+	[Ability Template=AASpecialOpResupply2]
 	
 	[Ability Template=AASpecialOpCourage]
 

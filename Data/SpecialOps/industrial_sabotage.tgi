@@ -13,7 +13,7 @@
 	icon = /UI/%s/Game/SpecialOps/IconIndustrialSabotage.png
 	
 	[Effect Template=BlastDamageEffect]
-	amount = 1200
+	amount = 2000
 
 	[WhenDo Template=FXC_PlaySFX]
 	audio_ids = industrial_sabotage_sfx

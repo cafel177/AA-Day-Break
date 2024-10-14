@@ -25,7 +25,7 @@
 				
 			[Modifier Template=MultiplyModifier]
 			attribute = RECHARGE_TIME
-			amount = -0.5
+			amount = -0.75
 			
 			[Modifier Template=MultiplyModifier]
 			attribute = SPEED_MAX

@@ -6,7 +6,7 @@
 	IDS = sand_bagging
 	name = "#sand_bagging_name"
 	description = "#sand_bagging_description"
-	targets = +FRIEND +BUILDING
+	targets = +FRIEND
 	recharge_time = 480
 	range = 10
 	area = 20
@@ -21,7 +21,7 @@
 			IDS = property_sandbag
 			name = "#sand_bagging_Effect_EnchantmentProperty_name"
 			enchantment_type = ench_type_generic
-			duration = 180
+			duration = 60
 			icon = /Properties/PropertyIcons/IconPropertyDefense.png
 			
 			[Modifier Template=ResistDamageModifier]

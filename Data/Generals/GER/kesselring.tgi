@@ -36,7 +36,7 @@
 		
 	[Ability Template=AASpecialOpRapidDeployment]
 	
-	[Ability Template=AASpecialOpMilitaryGearUpGER]
+	[Ability Template=AASpecialOpAssemblyLine]
 
 	[Ability Template=AASpecialOpGERSupplyDrop]
 }

@@ -6,7 +6,7 @@
 	IDS = double_guard
 	name = "#double_guard_name"
 	description = "#double_guard_description"
-	targets = +FRIEND +BUILDING
+	targets = +FRIEND +TANK
 	recharge_time = 480
 	range = 10
 	area = 30
@@ -21,7 +21,7 @@
 			IDS = property_double_guard
 			name = "#double_guard_Effect_EnchantmentProperty_name"
 			enchantment_type = ench_type_generic
-			duration = 180
+			duration = 120
 			icon = /Properties/PropertyIcons/IconPropertyDefense.png
 			
 			[Modifier Template=AddModifier]

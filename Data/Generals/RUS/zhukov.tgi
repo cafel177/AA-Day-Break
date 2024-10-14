@@ -34,9 +34,9 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;	
 	[Ability Template=AASpecialOpAtomicBomb]
 	
-	[Ability Template=AASpecialOpSabotageRUS]
+	[Ability Template=AASpecialOpMilitaryGearUpRUS]
 	
-	[Ability Template=AASpecialOpAssemblyLine]
+	[Ability Template=AASpecialOpRapidDeployment]
 	
 	[Ability Template=AASpecialOpRUSSupplyDrop]
 }

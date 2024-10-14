@@ -23,7 +23,7 @@
 
 	[DetectionComponent]
 	{
-		detection_range = 40
+		detection_range = 100
 		remote_detection_range = 10
 	}
 

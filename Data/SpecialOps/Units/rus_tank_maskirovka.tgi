@@ -42,7 +42,7 @@
 				range = 16
 				
 				[Effect Template=APDamageEffect]
-				amount = 5
+				amount = 15
 
 				[Effect Template=MoraleLossEffect]
 				amount = 0.25
