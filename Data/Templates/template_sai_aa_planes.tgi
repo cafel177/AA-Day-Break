@@ -20,6 +20,12 @@
 
 		[ActorPriority]
 		{
+			property_IDS					= money
+			value							= 550
+		}
+
+		[ActorPriority]
+		{
 			property_IDS					= oil
 			value							= 250
 		}
@@ -135,7 +141,7 @@
 		[Item]
 		stat								= money_rate
 		min									= -9999999
-		max									= 40
+		max									= 150
 	}
 
 	[GoalEngine]
@@ -196,31 +202,17 @@
 
 			[SpecificRecruitRequest]
 			{
+				property_ids				= money
+			}
+
+			[SpecificRecruitRequest]
+			{
 				property_ids				= oil
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
-			}
-
-			[SpecificRecruitRequest]
-			{
-				property_ids				= corpshq 
-			}							
-
-			[SpecificRecruitRequest]
-			{
-				property_ids				= infhq 
-				base_priority				= -850
-				hq_type_not_available_bonus	= 1000
-			}							
-
-			[SpecificRecruitRequest]
-			{
-				property_ids				= mechhq
-				base_priority				= -850
-				hq_type_not_available_bonus	= 1000
 			}
 		} ;; Recruiting
 
@@ -252,8 +244,8 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 30
-		max									= 120
+		min									= 150
+		max									= 250
 	}
 
 	[GoalEngine]
@@ -311,6 +303,12 @@
 			max_goals_per_think				= 4
 			num_military_goals				= 2
 			insufficient_income_level		= 30
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= money
+                base_priority				= -750
+			}
 
 			[SpecificRecruitRequest]
 			{
@@ -432,7 +430,7 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 100
+		min									= 250
 		max									= 1000000
 	}
 
@@ -492,6 +490,12 @@
 			num_military_goals				= 4
 			insufficient_income_level		= 80
 
+			[SpecificRecruitRequest]
+			{
+				property_ids				= money
+                base_priority				= -850
+			}
+            
 			[SpecificRecruitRequest]
 			{
 				property_ids				= oil

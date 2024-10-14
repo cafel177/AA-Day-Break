@@ -255,6 +255,11 @@
 
 			[RequiredProperty]
 			{
+				ids						= money
+			}
+
+			[RequiredProperty]
+			{
 				ids						= infhq
 			}
 
