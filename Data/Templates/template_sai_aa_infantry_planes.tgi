@@ -148,7 +148,7 @@
 		[Item]
 		stat								= money_rate
 		min									= -9999999
-		max									= 150
+		max									= 100
 	}
 
 	[GoalEngine]
@@ -244,7 +244,7 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 150
+		min									= 100
 		max									= 250
 	}
 

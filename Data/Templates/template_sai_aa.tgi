@@ -255,11 +255,6 @@
 
 			[RequiredProperty]
 			{
-				ids						= money
-			}
-
-			[RequiredProperty]
-			{
 				ids						= infhq
 			}
 
@@ -577,7 +572,7 @@
 		[GoalPriority]
 		{
 			goal_IDS						= UNPACK
-			multiplier						= 5
+			multiplier						= 100
 		}
 
 		[GoalPriority]
