@@ -54,8 +54,7 @@
 
 	[PropertiesComponent]
 	{		
-		[Property]
-		property_IDS = military_building
+
 	}
 
 	[Size]
