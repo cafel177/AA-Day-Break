@@ -26,7 +26,7 @@
 	[View]
 	{
 		resource_prefix = /Units/RUS/RUSTankDestroyer/RUSTankDestroyer
-		icon = /UI/Game/RegimentButtons/IconTankDestroyer.png
+		icon = /UI/Game/RegimentButtons/IconTankAT.png
 		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
 
 		[WhenCreated Template=FXC_PlaySFX]
