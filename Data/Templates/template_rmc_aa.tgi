@@ -125,18 +125,6 @@ USAGE:
 	recommended_kingdoms_max = 6
 	
 	[MapSize]
-	width = 448
-	height = 256
-	recommended_kingdoms_min = 4
-	recommended_kingdoms_max = 6
-
-	[MapSize]
-	width = 256
-	height = 448
-	recommended_kingdoms_min = 4
-	recommended_kingdoms_max = 6
-
-	[MapSize]
 	width = 512
 	height = 512
 	recommended_kingdoms_min = 4
