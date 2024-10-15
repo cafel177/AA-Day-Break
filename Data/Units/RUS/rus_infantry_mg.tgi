@@ -51,7 +51,7 @@
 				range = 18
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 16
+				amount = 14
 				
 				[WhenDo template=FXC_PlaySFX]
 				{
