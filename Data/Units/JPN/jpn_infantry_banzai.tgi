@@ -79,7 +79,7 @@
 				attenuation_factor_max = 0.25
 				
 				impact_impulse = 2000
-				targets = +ENEMY, +VEHICLE
+				targets = +ENEMY, -INFANTRY -AIR
 
 				[Flags]
 				{
