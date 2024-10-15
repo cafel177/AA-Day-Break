@@ -92,6 +92,9 @@ EXPERIENCE LEVELS
 			[Modifier template=MultiplyModifier]
 			attribute = MORALE_RECOVERY_RATE
 			amount = 0.10
+
+			[Modifier template=PeriodicHealModifier]
+			amount = 5
 		}	
 	}
 	
@@ -203,6 +206,9 @@ EXPERIENCE LEVELS
 			[Modifier template=MultiplyModifier]
 			attribute = MORALE_RECOVERY_RATE
 			amount = 0.10
+
+			[Modifier template=PeriodicHealModifier]
+			amount = 5
 		}	
 	}
 	
@@ -320,6 +326,9 @@ EXPERIENCE LEVELS
 			[Modifier template=MultiplyModifier]
 			attribute = MORALE_RECOVERY_RATE
 			amount = 0.10
+
+			[Modifier template=PeriodicHealModifier]
+			amount = 5
 		}	
 	}
 	
@@ -384,11 +393,7 @@ EXPERIENCE LEVELS
 			
 			[Modifier template=AddModifier]
 			attribute = AV
-			amount = +10
-				
-			[Modifier template=AddModifier]
-			attribute = DV
-			amount = +1
+			amount = +15
 			
 			[Modifier template=MultiplyModifier]
 			attribute = HEALTH
@@ -416,11 +421,7 @@ EXPERIENCE LEVELS
 				
 			[Modifier template=AddModifier]
 			attribute = AV
-			amount = +20
-			
-			[Modifier template=AddModifier]
-			attribute = DV
-			amount = +2
+			amount = +25
 			
 			[Modifier template=MultiplyModifier]
 			attribute = HEALTH
@@ -433,6 +434,9 @@ EXPERIENCE LEVELS
 			[Modifier template=MultiplyModifier]
 			attribute = MORALE_RECOVERY_RATE
 			amount = 0.10
+
+			[Modifier template=PeriodicHealModifier]
+			amount = 5
 		}	
 	}
 	
@@ -448,11 +452,7 @@ EXPERIENCE LEVELS
 				
 			[Modifier template=AddModifier]
 			attribute = AV
-			amount = +40
-				
-			[Modifier template=AddModifier]
-			attribute = DV
-			amount = +3
+			amount = +45
 			
 			[Modifier template=MultiplyModifier]
 			attribute = HEALTH
