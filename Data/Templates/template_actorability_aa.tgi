@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_actor_ability_AA.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: Defines a specific ability that an actor may use.
 
@@ -19,14 +19,6 @@ smm021003 - created
 	
 	priority = 1
 
-	move_weight = 1
-	use_weight = 1
-	wait_weight = 0
-
-	move_bonus = 3
-	use_bonus = 100
-	wait_bonus = 100
-
 	[AbilityDefinition template=AAAttack]
 	{
 		IDS = null
@@ -41,16 +33,6 @@ smm021003 - created
 	idle_animation = idleattack
 	
 	priority = 1
-
-	move_weight = 1
-	use_weight = 1
-	wait_weight = 0
-
-	move_bonus = 3
-	use_bonus = 50
-	wait_bonus = 50
-	
-	fuzzy_range = 3
 
 	[AbilityDefinition template=AAAttack]
 	{
@@ -118,15 +100,6 @@ smm021003 - created
 	
 	priority = 20
 
-	move_weight = 1
-	use_weight = 1
-	wait_weight = 0
-
-	move_bonus = 0
-	use_bonus = 1
-	wait_bonus = 4
-	
-	fuzzy_range = 3
 
 	[AbilityDefinition template=AAAttack]
 	{
