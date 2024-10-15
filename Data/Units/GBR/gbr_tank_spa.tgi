@@ -64,7 +64,6 @@
 	[ElementComponent]
 	{
 		required_structures = gbr_brigade_artillery
-		morale_value = 10
 	}
 
 	[PerformerComponent]

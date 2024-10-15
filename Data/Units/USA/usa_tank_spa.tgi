@@ -96,6 +96,5 @@
 	[ElementComponent]
 	{
 		required_structures = usa_brigade_artillery
-		morale_value = 10
 	}
 }

@@ -24,7 +24,6 @@
 	[ElementComponent]
 	{
 		required_properties = tech_goliath
-		morale_value = 5
 	}
 		
 	[PropertiesComponent]

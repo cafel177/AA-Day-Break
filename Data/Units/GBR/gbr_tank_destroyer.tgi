@@ -13,7 +13,6 @@
 	[ElementComponent]
 	{
 		required_structures = gbr_motor_pool
-		morale_value = 10
 	}
 
 	[MoverComponent]

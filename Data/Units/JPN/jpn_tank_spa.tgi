@@ -63,7 +63,6 @@
 	[ElementComponent]
 	{
 		required_structures = jpn_brigade_artillery
-		morale_value = 10
 	}
 
 	[PerformerComponent]

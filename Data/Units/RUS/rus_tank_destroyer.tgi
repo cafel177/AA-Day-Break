@@ -31,7 +31,6 @@
 	[ElementComponent]
 	{
 		required_structures = rus_motor_pool
-		morale_value = 10
 	}
 	
 	[PropertiesComponent]

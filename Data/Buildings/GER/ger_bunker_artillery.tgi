@@ -199,12 +199,6 @@
 		ammo = 20
 	}
 
-	[ElementComponent]
-	{
-		morale_value = 10
-		required_structures = ger_brigade_artillery
-	}
-
 	[MobileDeploymentComponent]
 	{
 		packing_length = 3
