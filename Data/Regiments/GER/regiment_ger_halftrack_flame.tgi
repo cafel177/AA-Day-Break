@@ -18,7 +18,7 @@
 	{
 		resource_prefix = /Units/GER/GERHalftrack/GERHalftrack
 		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
-		banner_icon = /Organizations/Banners/Icons/IconMobileFlame.png
+		banner_icon = /Organizations/Banners/Icons/IconFlame.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = ger_vehicle_deployed
