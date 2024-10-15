@@ -1,20 +1,14 @@
 [OrganizationLayout template=AAOrganizationLayout]
 {
-	IDS = regiment_vehicle_light
+	IDS = regiment_vehicle_light_bomb
 	name = "#regiment_vehicle_light_name"
 	default_formation_ids = regiment_defensive
 	combat_formation_ids = regiment_aggressive
-	
-	[Slot template=LayoutSlot]
-	property_IDS = front
-	locked = true
-	number = 3
-	name = "#regiment_vehicle_light_Slot_name"
 
 	[Slot template=LayoutSlot]
 	property_IDS = support
-	number = 2
-	required = false
+	number = 3
+	required = true
 	name = "#regiment_vehicle_light_Slot_name_2"
 	
 	[Slot template=PrimarySlot]
@@ -26,24 +20,16 @@
 		formation_IDS = regiment_aggressive
 				
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = -4, -1
 
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = +3, +0
 		
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = +6, -1.5
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = -2, -5
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = +5, -5.8
 		
 		[Position template=FormationPosition]
 		property_IDS = captain
@@ -55,24 +41,16 @@
 		formation_IDS = regiment_defensive
 
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = -4, 2.5
 
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = 0, +5
 		
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = +4.5, 2
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = -3.5, -3.4
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = +3.5, -3
 		
 		[Position template=FormationPosition]
 		property_IDS = captain
@@ -84,24 +62,16 @@
 		formation_IDS = regiment_column
 		
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = -2, +4.5
 
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = 0, -5
 		
 		[Position template=FormationPosition]
-		property_IDS = front
+		property_IDS = support
 		offset = +2, +4.5
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = -3, -7
-
-		[Position template=FormationPosition]
-		property_IDS = support
-		offset = +3, -7
 		
 		[Position template=FormationPosition]
 		property_IDS = captain
