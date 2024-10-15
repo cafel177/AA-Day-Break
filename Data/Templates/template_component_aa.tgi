@@ -94,7 +94,7 @@ EXPERIENCE LEVELS
 			amount = 0.10
 
 			[Modifier template=PeriodicHealModifier]
-			amount = 5
+			amount = 10
 		}	
 	}
 	
@@ -208,7 +208,7 @@ EXPERIENCE LEVELS
 			amount = 0.10
 
 			[Modifier template=PeriodicHealModifier]
-			amount = 5
+			amount = 10
 		}	
 	}
 	
@@ -328,7 +328,7 @@ EXPERIENCE LEVELS
 			amount = 0.10
 
 			[Modifier template=PeriodicHealModifier]
-			amount = 5
+			amount = 20
 		}	
 	}
 	
@@ -436,7 +436,7 @@ EXPERIENCE LEVELS
 			amount = 0.10
 
 			[Modifier template=PeriodicHealModifier]
-			amount = 5
+			amount = 30
 		}	
 	}
 	
