@@ -21,9 +21,9 @@
 	amount = 400
 
 	[Effect Template=AddDamageEffect]
-	damage_type_IDS = flame
+	damage_type_IDS = explosive
 	targets = building
-	amount = 800
+	amount = 1200
 
 	[Effect Template=SummonEffect]
 	hide_from_tooltip = true

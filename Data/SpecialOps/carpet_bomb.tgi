@@ -17,12 +17,12 @@
 	icon = /UI/%s/Game/SpecialOps/IconCarpetBomb.png
 
 	[Effect Template=BlastDamageEffect]
-	amount = 400
+	amount = 275
 
 	[Effect Template=AddDamageEffect]
 	damage_type_IDS = explosive
 	targets = building
-	amount = 1200
+	amount = 1000
 
 	[Effect Template=SummonEffect]
 	hide_from_tooltip = true
