@@ -154,12 +154,12 @@
 	;; combat value
 	;; drp042504 - increase RangePower from 0.1 to 0.15
 	fixed	CombatValueRangePower = 0.15		;; power for range score
-	fixed	CombatValueAreaPower = 1			;; power for the area-of-effect score
-	fixed	CombatValueOffenseWeight = 0.3		;; (0-1) importance of the offense score in CV calculations
-	fixed	CombatValueDefenseWeight = 0.3		;; (0-1) importance of the defense score in CV calculations
-	fixed	CombatValueDefenseWeightRanged = 0.3	;; (0-1) for ranged actors (if below mean)
+	fixed	CombatValueAreaPower = 0.15			;; power for the area-of-effect score
+	fixed	CombatValueOffenseWeight = 0.2		;; (0-1) importance of the offense score in CV calculations
+	fixed	CombatValueDefenseWeight = 0.2		;; (0-1) importance of the defense score in CV calculations
+	fixed	CombatValueDefenseWeightRanged = 0.2	;; (0-1) for ranged actors (if below mean)
 	fixed	CombatValueRangedMinimum = 12		;; what range defines CombatValueDefenseWeightRanged
-	fixed	CombatValueMovementWeight = 0.2		;; importance of the movement score in CV calculations
+	fixed	CombatValueMovementWeight = 0.1		;; importance of the movement score in CV calculations
 	fixed	CombatValueMovementDefault = 1		;; value used if actor has no mover component (which would result in a CV of zero)
 	fixed	CombatValueMeanValuesDiscardPercent = 0.2		;; percentage of weakest and strongest units to ignore in mean calculations
 
