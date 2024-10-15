@@ -6,7 +6,7 @@
 	IDS = communist_zeal
 	name = "#communist_zeal_name"
 	description = "#communist_zeal_description"
-	targets = +FRIEND +INFANTRY
+	targets = +FRIEND  -ORGANIZATION -BUILDING
 	ability_type = NULL
 	recharge_time = 420
 	area = 20
@@ -24,7 +24,6 @@
 			name = "#communist_zeal_Effect_EnchantmentProperty_name"
 			enchantment_type = ench_type_courage
 			duration = 120				
-			required_properties = infantry
 			icon = /Properties/PropertyIcons/IconPropertyCombat.png
 		
 			[Modifier Template=AbilityEffectModifier]
