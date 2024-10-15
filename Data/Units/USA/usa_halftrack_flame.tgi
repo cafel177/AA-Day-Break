@@ -127,6 +127,9 @@
 				area = 6
 				max_targets = 15
 
+				[Effect Template=FireDamageEffect]
+				amount = 10
+
 				[Flags]
 				spell = true
 
