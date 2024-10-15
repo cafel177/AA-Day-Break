@@ -15,7 +15,7 @@
 	float	Audio3DVolume = 1.000000
 	float	AudioSpeechVolume = 1.000000
 	float	AudioMusicVolume = 1.000000
-	int	LastFilmIndex = 1
+	int	LastFilmIndex = 10
 	flag	UnitFogSimplified = true
 	int	AFKTime = 30
 	flag	FirstRun = false
