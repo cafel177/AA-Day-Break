@@ -16,7 +16,7 @@
 	[RecruitComponent]
 	{	
 		[RecruitActor]
-		actor_ids = gbr_truck_corps
+		actor_ids = ger_truck_corps
 	}
 
 	[DenizenComponent]
