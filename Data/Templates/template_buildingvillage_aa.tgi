@@ -256,9 +256,9 @@
 	[EconomyComponent]
 	{
 		[Production]
-		money = 10
-		oil = 0
-		ammo = 0
+		money = 15
+		oil = 5
+		ammo = 5
 	}
 
 	[PropertiesComponent]
