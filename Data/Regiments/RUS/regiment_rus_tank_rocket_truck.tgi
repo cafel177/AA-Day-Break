@@ -44,7 +44,7 @@
 		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = rus_tank_medium
+		element_IDS = rus_tank_medium_cant_bomb
 		
 		[Slot]	;; flank
 		element_IDS = rus_rocket_truck
