@@ -723,6 +723,7 @@
 {
 	IDS = tech_battleship
 	name = "#properties_technologies_tech_battleship_name"
+	description = "#properties_technologies_tech_battleship_description"
 	icon = PropertyIcons/IconPropertyTemporary.png
 	action_button_icon = TechIcons/IconReorganizeHQ.png
 	
