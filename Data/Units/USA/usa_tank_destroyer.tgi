@@ -65,7 +65,7 @@
 				bombard = true
 				
 				[Effect Template=APDamageEffect]
-				amount = 90
+				amount = 70
 
 				[Effect Template=EnchantmentEffect]
 				{
