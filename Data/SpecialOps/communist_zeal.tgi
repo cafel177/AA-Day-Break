@@ -36,6 +36,10 @@
 			}
 			
 			[Modifier Template=MultiplyModifier]
+			attribute = RECHARGE_TIME
+			amount = +0.2
+
+			[Modifier Template=MultiplyModifier]
 			attribute = HEALTH
 			amount = +0.4
 			

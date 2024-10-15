@@ -6,7 +6,7 @@
 	IDS = mechanized_advance
 	name = "#mechanized_advance_name"
 	description = "#mechanized_advance_description"
-	targets = +FRIEND +VEHICLE -TANK
+	targets = +FRIEND +VEHICLE
 	ability_type = NULL
 	recharge_time = 360
 	area = 20
