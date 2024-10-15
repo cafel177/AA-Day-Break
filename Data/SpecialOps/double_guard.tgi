@@ -7,9 +7,10 @@
 	name = "#double_guard_name"
 	description = "#double_guard_description"
 	targets = +FRIEND +TANK
-	recharge_time = 480
+	recharge_time = 300
 	range = 10
-	area = 30
+	area = 20
+	max_targets = 24
 	target_location_vfx = friendly_target_decal_vfx
 
 	icon = /UI/%s/Game/SpecialOps/IconDoubleGuard.png
@@ -21,7 +22,7 @@
 			IDS = property_double_guard
 			name = "#double_guard_Effect_EnchantmentProperty_name"
 			enchantment_type = ench_type_generic
-			duration = 120
+			duration = 60
 			icon = /Properties/PropertyIcons/IconPropertyDefense.png
 			
 			[Modifier Template=AddModifier]

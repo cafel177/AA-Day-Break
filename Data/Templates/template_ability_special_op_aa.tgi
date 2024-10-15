@@ -118,7 +118,7 @@ smm042004 - created
 
 [Template AASpecialOpDoubleGuard Template=AASpecialOpShared]
 {
-	cost_faction_experience = 400
+	cost_faction_experience = 300
 	ability_ids = double_guard
 }
 
