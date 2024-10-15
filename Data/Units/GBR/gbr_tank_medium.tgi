@@ -56,6 +56,9 @@
 				range = 30
 				max_targets = 4
 
+				[Flags] 
+				bombard = true
+
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 				

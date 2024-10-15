@@ -69,6 +69,9 @@
 				area = 3
 				range = 35
 				max_targets = 6
+				
+				[Flags] 
+				bombard = true
 
 				[Effect Template=APDamageEffect]
 				amount = 120

@@ -39,6 +39,9 @@
 	{
 		[Property]
 		property_IDS = front
+
+        [Property]
+		property_IDS = support
 		
 		[Property]
 		property_IDS = combat_unit
@@ -58,6 +61,9 @@
 				area = 3
 				range = 35
 				max_targets = 6
+				
+				[Flags] 
+				bombard = true
 
 				[Effect Template=APDamageEffect]
 				amount = 110
