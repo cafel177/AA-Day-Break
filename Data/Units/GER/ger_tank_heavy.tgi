@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 600
-		defense = 40
+		defense = 25
 	}
 	
 	[MoverComponent]
@@ -74,11 +74,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 75
-                				
-				[Effect Template=AddDamageEffect]
-				damage_type_IDS = armor_piercing
-				amount = 45
+				amount = 120
 	
 				[Effect Template=MoraleGainEffect]
 				targets = self

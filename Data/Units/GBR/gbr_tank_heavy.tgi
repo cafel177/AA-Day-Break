@@ -10,7 +10,7 @@
 	[BodyComponent]
 	{
 		health = 600
-		defense = 40
+		defense = 25
 	}
 
 	[ElementComponent]
@@ -78,11 +78,7 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 75
-
-				[Effect Template=AddDamageEffect]
-				damage_type_IDS = armor_piercing
-				amount = 35
+				amount = 110
 
 				[Effect Template=MoraleGainEffect]
 				targets = self
