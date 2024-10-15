@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 700
-		defense = 30
+		defense = 40
 	}
 
 	[MoverComponent]
@@ -63,11 +63,15 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 100
-				
+				amount = 75
+                
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = armor_piercing
+				amount = 35
+
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .75
+				amount = .5
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

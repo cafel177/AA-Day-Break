@@ -10,7 +10,7 @@
 	[BodyComponent]
 	{
 		health = 600
-		defense = 30
+		defense = 40
 	}
 
 	[ElementComponent]
@@ -78,12 +78,16 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 100
-				
+				amount = 75
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = armor_piercing
+				amount = 35
+
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .75
-
+				amount = .5
+                
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_heavy
 			}
