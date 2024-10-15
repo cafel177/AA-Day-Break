@@ -41,7 +41,7 @@
 		element_IDS = rus_halftrack_aa
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = rus_halftrack_aa
 		
 		[Slot]	;; captain
 		element_IDS = rus_car_armored_co

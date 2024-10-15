@@ -41,7 +41,7 @@
 		element_IDS = jpn_halftrack_aa
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = jpn_halftrack_aa
 		
 		[Slot]	;; captain
 		element_IDS = jpn_car_armored_co
