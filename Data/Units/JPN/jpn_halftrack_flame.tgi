@@ -107,7 +107,7 @@
 				max_targets = 15				
 				
 				[Effect Template=FireDamageEffect]
-				amount = 10
+				amount = 5
 
 				[Flags]
 				spell = true
