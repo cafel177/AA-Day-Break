@@ -44,10 +44,13 @@
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_heavy_bomb
+		layout_IDS = regiment_vehicle_heavy
 		
-		[Slot]	;; support
+		[Slot]	;; front
 		element_IDS = jpn_tank_destroyer
+	
+		[Slot]	;; support
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = jpn_tank_co
