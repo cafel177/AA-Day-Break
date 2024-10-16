@@ -7,7 +7,7 @@
 	
 	[Slot template=LayoutSlot]
 	property_IDS = front
-	locked = true
+	required = false
 	number = 3
 	name = "#regiment_vehicle_light_Slot_name"
 
