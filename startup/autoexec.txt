@@ -38,7 +38,7 @@ addlocaledepot Speech.rwd
 addlocaledepot Speech/
 
 # Work Depot: "My Documents/Axis&Allies/Data"
-adddepot %USERDATA%/data/ 1
+adddepot %USERDATA%/data_sp/ 1
 adddepot Userdata/ 1
 
 # note that autorunpath and installerpath are commented out since TimeGate isn't
