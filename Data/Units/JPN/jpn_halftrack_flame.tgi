@@ -125,10 +125,6 @@
 						enchantment_type = ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
 
-						[Modifier template=PeriodicDamageModifier]
-						damage_type = flame
-						amount = 5
-
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
 						amount = -0.5
@@ -182,7 +178,7 @@
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 10
+						amount = 15
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
