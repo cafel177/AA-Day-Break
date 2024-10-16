@@ -97,7 +97,7 @@
 				recharge_time = .5
 
 				[Effect Template=RepairEffect]
-				amount = 20
+				amount = 3
 			}
 		}
 		

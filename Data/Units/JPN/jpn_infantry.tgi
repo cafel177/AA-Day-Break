@@ -139,7 +139,7 @@
 			[AbilityDefinition Template=AARepairAction]
 			{
 				[Effect Template=RepairEffect]
-				amount = 10
+				amount = 2
 			}
 		}
 		
