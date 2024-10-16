@@ -78,6 +78,9 @@
 {
 	IDS = gbr_halftrack_recon
 
+	[ElementComponent]
+	morale_value = 7
+
 	[BuilderComponent]
 	{
 		[BuildActor]
