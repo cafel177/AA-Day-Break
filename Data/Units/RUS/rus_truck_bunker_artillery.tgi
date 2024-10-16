@@ -4,10 +4,12 @@
 	name = "#rus_truck_bunker_artillery_name"
 	editor_name = "#rus_truck_bunker_artillery_editor_name"
 
+	hide_if_missing_properties = false
+    
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 200
 
 		[Production]
 		
@@ -20,6 +22,7 @@
 	[ElementComponent]
 	{
 		required_structures = rus_brigade_engineer
+		required_properties = tech_bunker_artillery
 	}
 
 	[BodyComponent]

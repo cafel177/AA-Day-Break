@@ -261,6 +261,17 @@
 	description = "#properties_technologies_tech_usa_rifle_grenade_description"
 }
 
+[Property Template=AATechnology]
+{
+	IDS = tech_bunker_artillery
+	name = "#properties_technologies_tech_bunker_artillery_name"
+	description = "#properties_technologies_tech_bunker_artillery_description"
+	icon = PropertyIcons/IconPropertySpecialForces.png
+	action_button_icon = TechIcons/IconBunkerArtillery.png
+	
+	required_properties = artillery_brigade
+}
+
 /*
 ------------ ENGINEER BRIGADE TECHNOLOGIES ------------------
 */

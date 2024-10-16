@@ -191,15 +191,15 @@
 
 	[MobileDeploymentComponent]
 	{
-		packing_length = 3
-		unpacking_length = 3
+		packing_length = 5
+		unpacking_length = 5
 		pack_health_min = 1
 	}
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 150
 		
 		[Production]
 		
