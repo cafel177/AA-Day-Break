@@ -1,4 +1,4 @@
-[Thing Template=AAUnitGERVehicleTinyTank]
+[Thing Template=AAUnitGERVehicleJeep]
 {
 	IDS = ger_goliath
 	name = "#ger_goliath_name"
@@ -88,7 +88,7 @@
 				{
 					damage_type_ids = explosive
 					targets = BUILDING
-					amount = 350
+					amount = 400
 				}
 
 				[Effect Template=AddDamageEffect]
