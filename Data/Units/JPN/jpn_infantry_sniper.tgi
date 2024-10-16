@@ -55,9 +55,9 @@
 			{				
 				name = "#jpn_infantry_sniper_AbilityDefinition_name"
 				recharge_time = 5
-				area = 1
+				area = 0.5
 				range = 28
-				max_targets = 2
+				max_targets = 1
 				
 				[Flags] 
 				bombard = true
