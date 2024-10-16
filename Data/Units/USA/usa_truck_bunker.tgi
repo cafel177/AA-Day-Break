@@ -14,6 +14,7 @@
 
    		[Upkeep]
 		ammo = 5
+		building_limit_consumed = 0
 	}
 
 	[BodyComponent]
