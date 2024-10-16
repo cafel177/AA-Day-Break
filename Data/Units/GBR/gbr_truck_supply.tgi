@@ -26,7 +26,7 @@
 	{
 		speed_max = 3
 		
-		trailer_actor = gbr_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		node_ids = hitch

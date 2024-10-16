@@ -33,7 +33,7 @@
 		speed_max = 3
 
 		;; ids of the trailer actor
-		trailer_actor = jpn_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		{		

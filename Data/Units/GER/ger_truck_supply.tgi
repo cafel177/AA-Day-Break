@@ -32,7 +32,7 @@
 	{
 		speed_max = 3
 		acceleration = 2
-		trailer_actor = ger_trailer_supply
+		trailer_actor = null
 
 		[TrailerHitch]
 		{
