@@ -5,8 +5,8 @@
 	editor_name = "#gbr_depot_supply_editor_name"
 
 	[BodyComponent]
-	health = 750
-	defense = 5
+	health = 1000
+	defense = 0
 
 	[ConstructionComponent]
 

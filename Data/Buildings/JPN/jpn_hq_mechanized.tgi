@@ -128,6 +128,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_light
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
 	}
 
 

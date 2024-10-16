@@ -131,6 +131,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_amphib
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
 	}
 		
 	[ResearchComponent]

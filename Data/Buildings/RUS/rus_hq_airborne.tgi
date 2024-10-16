@@ -115,6 +115,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_rus_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
 	}
 	
 	[ResearchComponent]

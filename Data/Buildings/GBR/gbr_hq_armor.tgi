@@ -113,6 +113,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_flame
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
 	}
 
 	[ResearchComponent]

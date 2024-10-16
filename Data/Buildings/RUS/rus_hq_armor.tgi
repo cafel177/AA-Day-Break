@@ -119,6 +119,9 @@
 		
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_artillery
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
 	}
 	
 	[ResearchComponent]

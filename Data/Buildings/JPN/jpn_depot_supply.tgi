@@ -5,8 +5,8 @@
 	editor_name = "#jpn_depot_supply_Thing_editor_name"
 
 	[BodyComponent]
-	health = 750
-	defense = 5
+	health = 1000
+	defense = 0
 
 	[ConstructionComponent]
 

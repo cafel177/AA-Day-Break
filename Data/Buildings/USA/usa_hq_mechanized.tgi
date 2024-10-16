@@ -125,6 +125,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_light
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
 	}
 
 	[Size]

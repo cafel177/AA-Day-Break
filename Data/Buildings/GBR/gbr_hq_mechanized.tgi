@@ -127,6 +127,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_light
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
 	}
 
 	[Size]

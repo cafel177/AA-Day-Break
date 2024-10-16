@@ -113,6 +113,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_artillery
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
 	}
 	
 	[SupplyComponent Template=HQSupplyComponent]
