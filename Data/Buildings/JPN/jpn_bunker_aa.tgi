@@ -86,6 +86,9 @@
 	[PropertiesComponent]
 	{
 		[Property]
+		property_IDS = bunker
+
+		[Property]
 		property_IDS = property_bunker_aa
 
 		[Property]

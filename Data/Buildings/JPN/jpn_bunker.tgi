@@ -164,6 +164,9 @@
 	[PropertiesComponent]
 	{
 		[Property]
+		property_IDS = bunker
+
+		[Property]
 		property_IDS = jpnfort
 		
 		[Property]

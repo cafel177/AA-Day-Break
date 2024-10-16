@@ -157,6 +157,9 @@
 		property_IDS = mg
 
 		[Property]
+		property_IDS = bunker
+
+		[Property]
 		property_IDS = property_bunker
 
 		[Property]
