@@ -1,12 +1,12 @@
 ##############################################################################
 #
 # hotkeys_standard_k2.txt
-# Copyright © 2002-2004 TimeGate Studios
+# Copyright ?2002-2004 TimeGate Studios
 #
 # DESCRIPTION: standard hotkey mapping file
 #
 # REVISION HISTORY:
-# cwp010104 – created
+# cwp010104 ?created
 #
 ##############################################################################
 
@@ -176,7 +176,7 @@ map t game|action|verify "PropertyDataSelectCommand tech_tank_production"
 # Game - actor commands       # 
 ###############################
 
-
+map s game|action|verify "ActorDataSelectCommand bunker_recon"
 
 ### Nation - Britain
 
@@ -204,8 +204,12 @@ map z game|action|verify "ActorDataSelectCommand regiment_gbr_hq_mechanized_unpa
 map b game|action|verify "ActorDataSelectCommand regiment_gbr_hq_airborne"
 map b game|action|verify "ActorDataSelectCommand regiment_gbr_hq_airborne_unpacked"
 map s game|action|verify "ActorDataSelectCommand gbr_truck_supply"
+map s game|action|verify "ActorDataSelectCommand gbr_truck_money"
 map m game|action|verify "ActorDataSelectCommand gbr_truck_ammo"
 map o game|action|verify "ActorDataSelectCommand gbr_truck_oil"
+map s game|action|verify "ActorDataSelectCommand gbr_truck_bunker"
+map d game|action|verify "ActorDataSelectCommand gbr_truck_bunker_aa"
+map s game|action|verify "ActorDataSelectCommand gbr_truck_bunker_artillery"
 
 # Upgrades
 #map a game|action|verify "ActorDataUpgradeCommand gbr_depot_ammo"
@@ -226,14 +230,15 @@ map e game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper_heavy_
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper_a"
 map e game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper_heavy"
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper"
-map s game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper"
-map s game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper_ground"
+map d game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper"
+map d game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper_ground"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack"
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_artillery"
-map t game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_at"
+map t game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_sniper"
+map d game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_gbr_infantry_mechanized"
 
 # Armor HQ
@@ -245,6 +250,7 @@ map v game|action|verify "ActorDataSelectCommand regiment_gbr_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_gbr_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_gbr_tank_mechanized"
 map e game|action|verify "ActorDataSelectCommand regiment_gbr_tank_medium"
+map d game|action|verify "ActorDataSelectCommand regiment_gbr_tank_at"
 
 
 ### Nation - Germany
@@ -273,8 +279,12 @@ map z game|action|verify "ActorDataSelectCommand regiment_ger_hq_mechanized_unpa
 map b game|action|verify "ActorDataSelectCommand regiment_ger_hq_airborne"
 map b game|action|verify "ActorDataSelectCommand regiment_ger_hq_airborne_unpacked"
 map s game|action|verify "ActorDataSelectCommand ger_truck_supply"
+map s game|action|verify "ActorDataSelectCommand ger_truck_money"
 map m game|action|verify "ActorDataSelectCommand ger_truck_ammo"
 map o game|action|verify "ActorDataSelectCommand ger_truck_oil"
+map s game|action|verify "ActorDataSelectCommand ger_truck_bunker"
+map d game|action|verify "ActorDataSelectCommand ger_truck_bunker_aa"
+map s game|action|verify "ActorDataSelectCommand ger_truck_bunker_artillery"
 
 # Upgrades
 #map a game|action|verify "ActorDataUpgradeCommand ger_depot_ammo"
@@ -293,7 +303,8 @@ map g game|action|verify "ActorDataSelectCommand regiment_ger_infantry_goliath"
 map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_artillery"
-map t game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_at"
+map t game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_sniper"
+map d game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_ger_infantry_mechanized" 
 
 
@@ -313,7 +324,7 @@ map v game|action|verify "ActorDataSelectCommand regiment_ger_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_ger_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_ger_tank_mechanized"
 map e game|action|verify "ActorDataSelectCommand regiment_ger_tank_medium"
-
+map d game|action|verify "ActorDataSelectCommand regiment_ger_tank_at"
 
 
 ### Nation - Japan
@@ -342,8 +353,12 @@ map z game|action|verify "ActorDataSelectCommand regiment_jpn_hq_mechanized_unpa
 map b game|action|verify "ActorDataSelectCommand regiment_jpn_hq_airborne"
 map b game|action|verify "ActorDataSelectCommand regiment_jpn_hq_airborne_unpacked"
 map s game|action|verify "ActorDataSelectCommand jpn_truck_supply"
+map s game|action|verify "ActorDataSelectCommand jpn_truck_money"
 map m game|action|verify "ActorDataSelectCommand jpn_truck_ammo"
 map o game|action|verify "ActorDataSelectCommand jpn_truck_oil"
+map s game|action|verify "ActorDataSelectCommand jpn_truck_bunker"
+map d game|action|verify "ActorDataSelectCommand jpn_truck_bunker_aa"
+map s game|action|verify "ActorDataSelectCommand jpn_truck_bunker_artillery"
 
 # Upgrades
 #map a game|action|verify "ActorDataUpgradeCommand jpn_depot_ammo"
@@ -363,8 +378,9 @@ map d game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_commando"
 map f game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack"
 map a game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_artillery"
-map t game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_at"
+map t game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_sniper"
 map k game|action|verify "ActorDataSelectCommand regiment_jpn_tankette"
+map d game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_mechanized"
 
 # Airborne HQ
@@ -384,7 +400,7 @@ map v game|action|verify "ActorDataSelectCommand regiment_jpn_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_jpn_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_jpn_tank_mechanized"
 map e game|action|verify "ActorDataSelectCommand regiment_jpn_tank_medium"
-
+map d game|action|verify "ActorDataSelectCommand regiment_jpn_tank_at"
 
 ### Nation - Russia
 
@@ -412,8 +428,12 @@ map z game|action|verify "ActorDataSelectCommand regiment_rus_hq_mechanized_unpa
 map b game|action|verify "ActorDataSelectCommand regiment_rus_hq_airborne"
 map b game|action|verify "ActorDataSelectCommand regiment_rus_hq_airborne_unpacked"
 map s game|action|verify "ActorDataSelectCommand rus_truck_supply"
+map s game|action|verify "ActorDataSelectCommand rus_truck_money"
 map m game|action|verify "ActorDataSelectCommand rus_truck_ammo"
 map o game|action|verify "ActorDataSelectCommand rus_truck_oil"
+map s game|action|verify "ActorDataSelectCommand rus_truck_bunker"
+map d game|action|verify "ActorDataSelectCommand rus_truck_bunker_aa"
+map s game|action|verify "ActorDataSelectCommand rus_truck_bunker_artillery"
 
 # Upgrades
 #map a game|action|verify "ActorDataUpgradeCommand rus_depot_ammo"
@@ -427,14 +447,15 @@ map i game|action|verify "ActorDataSelectCommand regiment_rus_infantry"
 map a game|action|verify "ActorDataSelectCommand regiment_rus_infantry_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_rus_infantry_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_infantry_at"
-map s game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper"
+map d game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack"
 map a game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_artillery"
-map t game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_at"
+map t game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_sniper"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_rocket_truck"
+map d game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_rus_infantry_mechanized"
 
 # Airborne HQ
@@ -453,7 +474,7 @@ map l game|action|verify "ActorDataSelectCommand regiment_rus_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_rus_tank_mechanized"
 map e game|action|verify "ActorDataSelectCommand regiment_rus_tank_medium"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_tank_rocket_truck"
-
+map d game|action|verify "ActorDataSelectCommand regiment_rus_tank_at"
 
 ### Nation - USA
 
@@ -482,8 +503,12 @@ map z game|action|verify "ActorDataSelectCommand regiment_usa_hq_mechanized_unpa
 map b game|action|verify "ActorDataSelectCommand regiment_usa_hq_airborne"
 map b game|action|verify "ActorDataSelectCommand regiment_usa_hq_airborne_unpacked"
 map s game|action|verify "ActorDataSelectCommand usa_truck_supply"
+map s game|action|verify "ActorDataSelectCommand usa_truck_money"
 map m game|action|verify "ActorDataSelectCommand usa_truck_ammo"
 map o game|action|verify "ActorDataSelectCommand usa_truck_oil"
+map s game|action|verify "ActorDataSelectCommand usa_truck_bunker"
+map d game|action|verify "ActorDataSelectCommand usa_truck_bunker_aa"
+map s game|action|verify "ActorDataSelectCommand usa_truck_bunker_artillery"
 
 # Upgrades
 #map a game|action|verify "ActorDataUpgradeCommand usa_depot_ammo"
@@ -504,7 +529,8 @@ map a game|action|verify "ActorDataSelectCommand regiment_usa_infantry_assault"
 map f game|action|verify "ActorDataSelectCommand regiment_usa_halftrack"
 map a game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_artillery"
-map t game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_at"
+map t game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_sniper"
+map d game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_usa_infantry_mechanized"
 
 # Airborne HQ
@@ -522,7 +548,7 @@ map v game|action|verify "ActorDataSelectCommand regiment_usa_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_usa_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_usa_tank_mechanized"
 map e game|action|verify "ActorDataSelectCommand regiment_usa_tank_medium"
-
+map d game|action|verify "ActorDataSelectCommand regiment_usa_tank_at"
 
 ###################################
 # Observer Commands               # 
