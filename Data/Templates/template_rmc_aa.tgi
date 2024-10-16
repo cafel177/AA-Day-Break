@@ -262,6 +262,10 @@ USAGE:
 	object_ids = placeholder_depot_supply
 	position = 0,0
 
+	[RequiredObject]
+	object_ids = placeholder_depot_money
+	position = 0,0
+
 	[GroupRestriction]
 	group_ids = start_corps*
 	proximity_min = 96
@@ -292,6 +296,10 @@ USAGE:
 	object_ids = placeholder_bunker
 	position = 0,0
 	
+    [RequiredObject]
+	object_ids = placeholder_bunker
+	position = 0,0
+
 	;; this will prevent these bunkers from going anywhere near 12m of any corps HQ (one of
 	;; which happens to be corps paired with this bunker). However this also means that the
 	;; desired distance will be applied with every corps (not what we want). The problem
