@@ -11,7 +11,8 @@
 	}
 	
 	[ElementComponent]
-	
+	morale_value = 7
+
 	[MoverComponent]
 	{
 		speed_max = 3.5
@@ -45,7 +46,7 @@
 				amount = 15
 
 				[Effect Template=MoraleLossEffect]
-				amount = 0.25
+				amount = 0.15
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
