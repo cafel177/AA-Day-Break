@@ -17,7 +17,7 @@
 	amount = 20
 
 	[Effect Template=MoraleLossEffect]
-	amount = 0.35
+	amount = 0.25
 	
 	[Effect Template=AddDamageEffect]
 	damage_type_IDS = explosive

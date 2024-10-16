@@ -63,7 +63,7 @@
 				
 				[Effect Template=MoraleLossEffect]
 				targets = +ENEMY -TANK 
-				amount = 1.25
+				amount = 1
 				
 				[Flags] 
 				bombard = true

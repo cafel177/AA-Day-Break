@@ -95,7 +95,7 @@
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .75
+				amount = .25
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_artillery_light

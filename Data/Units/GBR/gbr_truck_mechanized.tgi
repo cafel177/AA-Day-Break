@@ -23,6 +23,7 @@
 	
 	[ElementComponent]
 	{
+		required_structures = gbr_hq_infantry
 		required_properties = mechhqproduction
 	}
 	

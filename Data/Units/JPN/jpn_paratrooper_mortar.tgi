@@ -103,7 +103,7 @@
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = 1
+				amount = .4
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_artillery_light
