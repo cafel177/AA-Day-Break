@@ -11,7 +11,7 @@
 	
 	[BodyComponent]
 	{
-		health = 500
+		health = 300
 		defense = 2
 	}
 	
@@ -22,34 +22,22 @@
 	}
 
 	[DetectionComponent]
-	detection_range = 35
+	detection_range = 40
 	remote_detection_range = 12
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 15
+		money = 10
 		
 		[Production]
 		
 		[Upkeep]
-		ammo = 3
 	}
 
 	[ResearchComponent]
 	{
-		
-		[ResearchItem]
-		{
-			property_IDS =  tech_improved_logistics2
-			type = LOCAL	
-			research_time = 30
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 25
-			}
-		}
+
 	}
 
 	[PropertiesComponent]
