@@ -1,5 +1,6 @@
-[Template AAUnitRUSVehicleMediumTankBase Template=AAUnitRUSVehicleMediumTank]
+[Thing Template=AAUnitRUSVehicleMediumTank]
 {
+	IDS = rus_tank_medium
 	name = "#rus_tank_medium_name"
 	editor_name = "#rus_tank_medium_editor_name"
 
@@ -37,35 +38,19 @@
 		[Property]
 		property_IDS = front
 
-       		 [Property]
+        [Property]
 		property_IDS = support
 		
 		[Property]
 		property_IDS = combat_unit
 	}
-
-	[View]
-	{
-		resource_prefix = RUSTankMedium/RUSTankMedium
-		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = RUSTankMedium/RUSTankMediumRecoil1.kf
-		}
-	}
-}
-
-[Thing Template=AAUnitRUSVehicleMediumTankBase]
-{
-	IDS = rus_tank_medium
-
+	
 	[PerformerComponent]
 	{
+
 		[Ability template=AATurretAttackLocal]
 		{
+			
 			[AbilityDefinition Template=AAMediumTankGun]
 			{				
 				name = "#rus_tank_medium_AbilityDefinition_name"
@@ -89,34 +74,17 @@
 			}
 		}
 	}
-}
 
-[Thing Template=AAUnitRUSVehicleMediumTankBase]
-{
-	IDS = rus_tank_medium_cant_bomb
-
-	[PerformerComponent]
+	[View]
 	{
-		[Ability template=AATurretAttackLocal]
-		{
-			[AbilityDefinition Template=AAMediumTankGun]
-			{				
-				name = "#rus_tank_medium_AbilityDefinition_name"
-				recharge_time = 6
-				range = 30
-				area = 2
-				max_targets = 4
-
-				[Effect Template=APDamageEffect]
-				amount = 80
-				
-				[WhenDo Template=FXC_PlayObjectAnimation]
-				object_animation_IDS = Recoil1
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = rus_cannon_medium
-
-			}
+		resource_prefix = RUSTankMedium/RUSTankMedium
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = RUSTankMedium/RUSTankMediumRecoil1.kf
 		}
 	}
 }
