@@ -124,9 +124,6 @@
 		actor_ids = regiment_ger_infantry_mechanized
 
 		[RecruitActor]
-		actor_ids = regiment_ger_infantry_goliath
-
-		[RecruitActor]
 		actor_ids = regiment_ger_infantry_amphib
 
 		[RecruitActor]
