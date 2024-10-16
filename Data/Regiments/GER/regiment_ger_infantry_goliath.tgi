@@ -32,13 +32,13 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_tiny
 		
 		[Slot]	;; front
-		element_IDS = ger_goliath
+		element_IDS = ger_halftrack
 		
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = ger_goliath
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co

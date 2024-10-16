@@ -38,10 +38,10 @@
 		element_IDS = jpn_infantry_paratrooper_banzai
 
 		[Slot]	;; rear guard 2
-		element_IDS = jpn_infantry_paratrooper_banzai
+		element_IDS = jpn_paratrooper
 		
 		[Slot]	;; rear guard 3
-		element_IDS = jpn_infantry_paratrooper_banzai
+		element_IDS = jpn_paratrooper
 	
 		[Slot]	;; support
 		element_IDS = jpn_paratrooper_mg
@@ -79,9 +79,6 @@
 	{	
 		[Property]
 		property_IDS = recon
-
-		[Property]
-		property_ids = org_resupply
 	}
 
 	[LairComponent]
