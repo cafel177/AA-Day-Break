@@ -19,7 +19,7 @@
 	icon = /UI/%s/Game/SpecialOps/IconVWeapons.png
 	
 	[Effect Template=BlastDamageEffect]
-	amount = 600
+	amount = 700
 
 	[Effect Template=AddDamageEffect]
 	damage_type_IDS = explosive

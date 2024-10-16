@@ -16,7 +16,7 @@
 	icon = /UI/%s/Game/SpecialOps/IconAtomicBomb.png
 
 	[Effect Template=FireDamageEffect]
-	amount = 275
+	amount = 500
 
 	[Effect Template=SummonEffect]
 	hide_from_tooltip = true
@@ -26,7 +26,7 @@
 	[Effect Template=AddDamageEffect]
 	damage_type_IDS = explosive
 	targets = building
-	amount = 1000
+	amount = 900
 	
 	[Effect Template=EnchantmentEffect]
 	{
@@ -40,7 +40,7 @@
 				
 			[Modifier template=PeriodicDamageModifier]
 			damage_type = flame
-			amount = 5
+			amount = 15
 			
 			[WhenAdded Template=FXC_CreateVFX]
 			{

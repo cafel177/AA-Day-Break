@@ -18,12 +18,12 @@
 	icon = /UI/%s/Game/SpecialOps/IconKamikaze.png
 
 	[Effect Template=APDamageEffect]
-	amount = 400
+	amount = 500
 
 	[Effect Template=AddDamageEffect]
-	damage_type_IDS = explosive
+	damage_type_IDS = flame
 	targets = building
-	amount = 1200
+	amount = 1000
 
 	[Effect Template=SummonEffect]
 	hide_from_tooltip = true
