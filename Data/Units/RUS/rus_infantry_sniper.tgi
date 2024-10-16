@@ -54,7 +54,7 @@
 			{				
 				name = "#rus_infantry_sniper_AbilityDefinition_name"
 				recharge_time = 5
-				area = 0.5
+				area = 1
 				range = 30
 				max_targets = 1
 

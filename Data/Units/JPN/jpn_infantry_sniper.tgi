@@ -55,7 +55,7 @@
 			{				
 				name = "#jpn_infantry_sniper_AbilityDefinition_name"
 				recharge_time = 5
-				area = 0.5
+				area = 1
 				range = 28
 				max_targets = 1
 				
