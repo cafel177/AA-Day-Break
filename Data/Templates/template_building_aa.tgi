@@ -365,12 +365,12 @@ USAGE:
 	}
 
 	[DetectionComponent]
-	detection_range = 20
+	detection_range = 40
 	remote_detection_range = 20
 
 	[SupplyComponent]
 	{
-		supply_range = 20
+		supply_range = 40
 		is_relay = true
 		stockpile_max = 60
 	}
