@@ -8,6 +8,11 @@
 	health = 1000
 	defense = 0
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[ConstructionComponent]
 
 	[EconomyComponent]
