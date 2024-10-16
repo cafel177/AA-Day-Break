@@ -17,7 +17,7 @@
 	[View]
 	{
 		resource_prefix = /Units/GBR/GBRTankDestroyer/GBRTankDestroyer
-		icon = /UI/Game/RegimentButtons/IconHalftrack.png
+		icon = /UI/Game/RegimentButtons/IconHalftrackSniper.png
 		banner_icon = /Organizations/Banners/Icons/IconMobileAntiTank.png
 
 		[WhenCreated Template=FXC_PlaySFX]
