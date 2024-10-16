@@ -357,7 +357,7 @@
 		actor_ids = rus_truck_airfield
 
 		[RecruitActor]
-		actor_ids = rus_truck_supply
+		actor_ids = rus_truck_money
 
 		[RecruitActor]
 		actor_ids = rus_truck_ammo
@@ -405,7 +405,7 @@
 		actor_ids = rus_truck_airfield
 
 		[RecruitActor]
-		actor_ids = rus_truck_supply
+		actor_ids = rus_truck_money
 
 		[RecruitActor]
 		actor_ids = rus_truck_ammo

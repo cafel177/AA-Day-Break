@@ -1,8 +1,8 @@
-[Thing Template=AARUSBuildingPackableDepot]
+[Thing Template=AAGBRBuildingPackableDepot]
 {
-	IDS = rus_depot_supply
-	name = "#rus_depot_supply_Thing_name"
-	editor_name = "#rus_depot_supply_Thing_editor_name"
+	IDS = gbr_depot_money
+	name = "#gbr_depot_money_name"
+	editor_name = "#gbr_depot_money_editor_name"
 
 	[BodyComponent]
 	health = 2000
@@ -13,7 +13,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 112
+		money = 125
 		
 		[Upkeep]
 		building_limit_consumed = 1
@@ -24,9 +24,6 @@
 	
 	[PropertiesComponent]
 	{	
-		[Property]
-		property_IDS = supplydepot	
-
 		[Property]
 		property_IDS = economic_building
 
@@ -46,12 +43,12 @@
 	{
 		property_ids = building_upgrade
 	}
-
+		
 	[View]
 	{
-		resource_prefix = RUSDepotSupply/RUSDepotSupply
+		resource_prefix = GBRDepotSupply/GBRDepotSupply
 		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
-
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
 			vfx_ids = ground_depot_dirt
@@ -75,48 +72,28 @@
 			audio_ids = depot_supply_select
 		}
 		
-		;;----- Spot Lights ----------------------
+		;----- Lights -----
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_03
+			vfx_ids = spotlight_02
 			location = spotlight_ae_01
 			attached = true
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = window_thin
-			location = window_01
+			vfx_ids = spotlight_03
+			location = spotlight_ae_02
 			attached = true
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = window_thin
-			location = window_02
+			vfx_ids = spotlight_02_bright
+			location = spotlight_ae_03
 			attached = true
 		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_03
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_04
-			attached = true
-		}		
-	}
-
-	[WhenEnter Template=FXC_PlaySFX]
-	{
-		actor_state = structure_unpacking
-		audio_ids = unpack_7s_sfx
 	}
 
 	[WhenEnter Template=FXC_PlaySFX]
@@ -124,5 +101,10 @@
 		actor_state = structure_packing
 		audio_ids = pack_7s_sfx
 	}
-
+	
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
+	}
 }

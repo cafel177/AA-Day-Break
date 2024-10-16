@@ -1,8 +1,8 @@
 [Thing Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_supply
-	name = "#gbr_truck_supply_name"
-	editor_name = "#gbr_truck_supply_editor_name"
+	IDS = gbr_truck_money
+	name = "#gbr_truck_money_name"
+	editor_name = "#gbr_truck_money_editor_name"
 
 	[EconomyComponent]
 	{
@@ -21,7 +21,7 @@
 	defense = 2
 	
 	[MobileDeploymentComponent]
-	unpack_to_actor_ids = gbr_depot_supply
+	unpack_to_actor_ids = gbr_depot_money
 	packed_position_offset = 0,0
 	packed_orientation = 1,0
 	
@@ -38,9 +38,6 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
-
 		[Property]
 		property_ids = money
 	}	

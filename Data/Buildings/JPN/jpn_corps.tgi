@@ -385,7 +385,7 @@
 		actor_ids = jpn_truck_airfield
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = jpn_truck_money
 
 		[RecruitActor]
 		actor_ids = jpn_truck_ammo
@@ -433,7 +433,7 @@
 		actor_ids = jpn_truck_airfield
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = jpn_truck_money
 
 		[RecruitActor]
 		actor_ids = jpn_truck_ammo

@@ -1,8 +1,8 @@
-[Thing Template=AAJPNBuildingPackableDepot]
+[Thing Template=AAGERBuildingPackableDepot]
 {
-	IDS = jpn_depot_supply
-	name = "#jpn_depot_supply_Thing_name"
-	editor_name = "#jpn_depot_supply_Thing_editor_name"
+	IDS = ger_depot_money
+	name = "#ger_depot_money_name"
+	editor_name = "#ger_depot_money_editor_name"
 
 	[BodyComponent]
 	health = 2000
@@ -19,14 +19,11 @@
 		building_limit_consumed = 1
 
 		[Production]
-		money = 25
+		money = 30
 	}
 	
 	[PropertiesComponent]
 	{	
-		[Property]
-		property_IDS = supplydepot	
-
 		[Property]
 		property_IDS = economic_building
 
@@ -49,7 +46,7 @@
 
 	[View]
 	{
-		resource_prefix = JPNDepotSupply/JPNDepotSupply
+		resource_prefix = GERDepotSupply/GERDepotSupply
 		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
 
 		[WhenConstructed Template=FXC_CreateVFX]
@@ -69,53 +66,23 @@
 			vfx_ids = ground_depot_snow
 			terrain_group_filter = snow
 		}
-	
+		
 		[WhenSelected Template=FXC_PlaySFX]
 		{
 			audio_ids = depot_supply_select
 		}
 		
-		;;----- Spot Lights ----------------------
-		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_02
+			vfx_ids = spotlight_02_bright
 			location = spotlight_ae_01
 			attached = true
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_03
+			vfx_ids = spotlight_02
 			location = spotlight_ae_02
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_01
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_02
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_03
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_04
 			attached = true
 		}
 	}

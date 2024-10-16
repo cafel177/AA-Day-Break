@@ -372,7 +372,7 @@
 		actor_ids = ger_truck_airfield
 
 		[RecruitActor]
-		actor_ids = ger_truck_supply
+		actor_ids = ger_truck_money
 
 		[RecruitActor]
 		actor_ids = ger_truck_ammo
@@ -420,7 +420,7 @@
 		actor_ids = ger_truck_airfield
 
 		[RecruitActor]
-		actor_ids = ger_truck_supply
+		actor_ids = ger_truck_money
 
 		[RecruitActor]
 		actor_ids = ger_truck_ammo

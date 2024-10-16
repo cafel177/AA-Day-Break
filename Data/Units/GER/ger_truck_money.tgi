@@ -1,8 +1,8 @@
-[Thing Template=AAUnitJPNVehicleHQTruck]
+[Thing Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = jpn_truck_supply
-	name = "#jpn_truck_supply_name"
-	editor_name = "#jpn_truck_supply_editor_name"
+	IDS = ger_truck_money
+	name = "#ger_truck_money_name"
+	editor_name = "#ger_truck_money_editor_name"
 
 	[EconomyComponent]
 	{
@@ -10,7 +10,7 @@
 		money = 250
 
 		[Production]
-		money = 15
+		money = 24
 
    		[Upkeep]
 		building_limit_consumed = 1
@@ -25,7 +25,7 @@
 	[MobileDeploymentComponent]
 	{
 	
-		unpack_to_actor_ids = jpn_depot_supply
+		unpack_to_actor_ids = ger_depot_money
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
@@ -34,34 +34,29 @@
 	[MoverComponent]
 	{
 		speed_max = 3
-
-		;; ids of the trailer actor
-		trailer_actor = jpn_trailer_supply
+		acceleration = 2
+		trailer_actor = ger_trailer_supply
 
 		[TrailerHitch]
-		{		
-			;; node name and node offset of the truck's hitch
+		{
 			node_ids = hitch
-			node_offset = 0, -1.2, .5
+			node_offset = 0, -1.8, .5
 		}
 	}
 	
 	[PropertiesComponent]
 	{
 		[Property]
-		property_IDS = supplydepot
-
-		[Property]
 		property_ids = money
-	}
+	}	
 	
 	[View]
 	{
-		resource_prefix = JPNTruck/JPNTruck
+		resource_prefix = GERTruck/GERTruck
 		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
 
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = jpn_truck_deployed
+		audio_ids = ger_truck_deployed
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = depot_supply_select

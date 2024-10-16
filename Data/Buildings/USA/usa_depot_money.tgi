@@ -1,8 +1,8 @@
 [Thing Template=AAUSABuildingPackableDepot]
 {
-	IDS = usa_depot_supply
-	name = "#usa_depot_supply_name"
-	editor_name = "#usa_depot_supply_editor_name"
+	IDS = usa_depot_money
+	name = "#usa_depot_money_name"
+	editor_name = "#usa_depot_money_editor_name"
 
 	[BodyComponent]
 	health = 2000
@@ -24,9 +24,6 @@
 	
 	[PropertiesComponent]
 	{	
-		[Property]
-		property_IDS = supplydepot	
-
 		[Property]
 		property_ids = economic_building
 
