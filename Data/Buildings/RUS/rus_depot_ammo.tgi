@@ -17,7 +17,7 @@
 		building_limit_consumed = 1
 		
 		[Production]
-		ammo = 25	
+		ammo = 50	
 	}
 
 	[PropertiesComponent]

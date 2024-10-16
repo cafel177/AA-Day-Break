@@ -17,7 +17,7 @@
 		building_limit_consumed = 1
 	
 		[Production]
-		oil = 25
+		oil = 50
 	}
 
 	[PropertiesComponent]
