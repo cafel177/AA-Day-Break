@@ -55,7 +55,7 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 125
+		money = 100
 
 		[Production]
 		ammo = 10
@@ -104,6 +104,9 @@
 
 	[RecruitComponent]
 	{
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_recon
+
 		[RecruitActor]
 		actor_ids = regiment_rus_paratrooper
 

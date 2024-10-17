@@ -169,7 +169,7 @@
 
 				[Effect Template=EnchantmentEffect]
 				{
-					targets = +ENEMY +artillery
+					targets = +ENEMY +artillery -building
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{

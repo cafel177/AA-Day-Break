@@ -607,7 +607,7 @@
 	[Modifier Template=ResourceProductionModifier]
 	{
 		[Production Template=ProductionList]
-        	money = 5
+        	money = 10
 	}
 }
 

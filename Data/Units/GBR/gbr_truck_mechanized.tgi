@@ -13,7 +13,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 270
+		money = 180
 
 		[Production]
 		ammo = 5
@@ -23,7 +23,7 @@
 	
 	[ElementComponent]
 	{
-		required_structures = gbr_hq_infantry
+		required_structures = gbr_hq_airborne
 		required_properties = mechhqproduction
 	}
 	

@@ -22,7 +22,7 @@
 		money = 75
 
 		[Production]
-		ammo = 12
+		ammo = 25
 
 		[Upkeep]
 		building_limit_consumed = 1

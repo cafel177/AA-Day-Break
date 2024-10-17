@@ -10,7 +10,7 @@
 		money = 100
 
 		[Production]
-		oil = 20
+		oil = 35
 
 		[Upkeep]
 		building_limit_consumed = 1
