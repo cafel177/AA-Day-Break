@@ -38,7 +38,7 @@
 	IDS = regiment_ger_infantry
 	editor_name = "#regiment_ger_infantry_Thing_editor_name"
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		entrenchment_time = 30
@@ -73,7 +73,7 @@
 	[Placement]
 	placement_group_ids = null
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		

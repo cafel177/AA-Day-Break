@@ -38,7 +38,7 @@
 	IDS = regiment_rus_infantry
 	editor_name = "#regiment_rus_infantry_Thing_editor_name"
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		entrenchment_time = 30
@@ -73,7 +73,7 @@
 	[Placement]
 	placement_group_ids = null
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		
@@ -106,7 +106,7 @@
 	[Placement]
 	placement_group_ids = group_campaign
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		in_supply_detached = true

@@ -29,7 +29,7 @@
 		audio_ids = rus_infantry_attack
 	}		
 	
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_mechanized_infantry
 		entrenchment_time = 30

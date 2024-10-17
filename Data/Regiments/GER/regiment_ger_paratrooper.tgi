@@ -27,7 +27,7 @@
 		audio_ids = ger_paratrooper_attack
 	}		
 	
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{
 		layout_ids = regiment_infantry
 		
@@ -68,9 +68,6 @@
 		[Cost]
 		money = 135
 	}
-
-	[OrganizationComponent]
-	recruit_time = 8
 
 	[Placement]
 	placement_group_ids = null

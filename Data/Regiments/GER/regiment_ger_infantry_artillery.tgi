@@ -38,7 +38,7 @@
 		audio_ids = ger_infantry_artillery_attack
 	}		
 	
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
 		

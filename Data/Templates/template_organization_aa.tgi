@@ -33,6 +33,11 @@ USAGE:
 	in_supply_detached = false
 }
 
+[Template AAInfantryOrganizationComponentNew Inherit=AAInfantryOrganizationComponent]
+{
+	recruit_time = 5
+}
+
 [Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
 {
 	layout_IDS = vehicle_regiment_standard
@@ -46,6 +51,11 @@ USAGE:
 	recruit_full = false
 
 	in_supply_detached = false
+}
+
+[Template AAVehicleOrganizationComponentNew Inherit=AAVehicleOrganizationComponent]
+{
+	recruit_time = 10
 }
 
 [Template AAArmorOrganizationComponent Inherit=OrganizationComponent]
@@ -63,6 +73,10 @@ USAGE:
 	in_supply_detached = false
 }
 
+[Template AAArmorOrganizationComponentNew Inherit=AAArmorOrganizationComponent]
+{
+	recruit_time = 12
+}
 
 [Template AAOrganizationComponentAmbient Inherit=OrganizationComponent]
 {
