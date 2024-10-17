@@ -19,6 +19,9 @@
 		ammo = 5
 		oil = 2
 		unit_limit_provided = 12
+
+   		[Upkeep]
+		building_limit_consumed = 0
 	}
 	
 	[MobileDeploymentComponent]
