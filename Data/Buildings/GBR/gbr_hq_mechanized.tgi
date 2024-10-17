@@ -55,12 +55,13 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 90
+		money = 135
 
 		[Production]
+		money = 25
 		ammo = 10
 		oil = 10
-		unit_limit_provided = 6
+		unit_limit_provided = 4
 	}
 
 	[PerformerComponent]

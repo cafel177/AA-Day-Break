@@ -56,9 +56,10 @@
 		money = 150
 
 		[Production]
+		money = 30
 		ammo = 10
 		oil = 10
-		unit_limit_provided = 9
+		unit_limit_provided = 4
 	}
 
 	[PerformerComponent]

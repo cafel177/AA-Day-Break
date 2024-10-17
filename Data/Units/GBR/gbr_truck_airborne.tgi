@@ -13,12 +13,13 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 250
+		money = 225
 
 		[Production]
+		money = 12
 		ammo = 5
 		oil = 0
-		unit_limit_provided = 9
+		unit_limit_provided = 3
 	}
 
 	[ElementComponent]
