@@ -188,11 +188,11 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = gunfire
-	amount = 0.40
+	amount = 0.30
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
-	amount = 0.20
+	amount = 0.15
 }
 
 ;; Tanks also inherit from Vehicle.
@@ -206,11 +206,11 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = gunfire
-	amount = 0.20
+	amount = 0.15
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
-	amount = 0.20
+	amount = 0.15
 }
 
 [Property Template=SharedProperty]
