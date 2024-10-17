@@ -59,9 +59,9 @@
 			{
 				name = "#rus_halftrack_AbilityDefinition_name"
 				recharge_time = 5
-				area = 1
+				area = 1.5
 				range = 30
-				max_targets = 1			
+				max_targets = 2			
 				
 				[Flags] 
 				bombard = true
