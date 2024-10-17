@@ -19,7 +19,7 @@
 		building_limit_consumed = 1
 
 		[Production]
-		money = 25
+		money = 20
 	}
 	
 	[PropertiesComponent]
