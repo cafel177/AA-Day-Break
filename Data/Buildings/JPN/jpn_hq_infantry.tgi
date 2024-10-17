@@ -146,7 +146,8 @@
 	}
 	
 	[SupplyComponent Template=HQSupplyComponent]
-	
+	is_relay = true
+
 	[View]
 	{
 		minimap_icon = /Minimap/Icons/IconDivisionHQ.tga

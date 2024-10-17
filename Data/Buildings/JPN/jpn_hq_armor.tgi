@@ -120,6 +120,7 @@
 	}
 	
 	[SupplyComponent Template=HQSupplyComponent]
+	is_relay = true
 
 	[Size]
 	{
