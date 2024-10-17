@@ -11,7 +11,7 @@
 	
 	[BodyComponent]
 	{
-		health = 300
+		health = 500
 		defense = 2
 	}
 	
@@ -22,13 +22,13 @@
 	}
 
 	[DetectionComponent]
-	detection_range = 40
+	detection_range = 70
 	remote_detection_range = 12
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 10
+		money = 25
 		
 		[Production]
 		
