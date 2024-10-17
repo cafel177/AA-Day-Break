@@ -105,6 +105,9 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
+		actor_ids = regiment_ger_infantry_recon
+
+		[RecruitActor]
 		actor_ids = regiment_ger_paratrooper
 
 		[RecruitActor]
