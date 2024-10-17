@@ -59,6 +59,9 @@
 		property_ids = airhq	
 
 		[Property]
+		property_ids = air_mech_hq
+
+		[Property]
 		property_ids = inf_air_hq
 		
 	}

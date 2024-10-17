@@ -58,7 +58,10 @@
 		property_ids = captain	
 		
 		[Property]
-		property_IDS = armorhq			
+		property_IDS = armorhq	
+
+		[Property]
+		property_ids = mech_armor_hq		
 	}
 
 	[View]
