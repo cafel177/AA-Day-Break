@@ -63,6 +63,9 @@
 
 		[Property]
 		property_ids = mech_armor_hq
+
+		[Property]
+		property_ids = money
 	}
 	
 	[View]

@@ -44,7 +44,7 @@
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_money
-	thing_IDS = jpn_truck_money
+	thing_IDS = jpn_truck_supply
 
 	[Badge]
 	badge_texture = JPN/JPNBadge01.png

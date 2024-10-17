@@ -102,6 +102,9 @@
 		
 		[Property]
 		property_ids = mg		
+
+		[Property]
+		property_ids = money
 	}	
 	
 	[RecruitComponent]

@@ -68,7 +68,10 @@
 		property_ids = air_mech_hq
 
 		[Property]
-		property_ids = mech_armor_hq	
+		property_ids = mech_armor_hq
+
+		[Property]
+		property_ids = money	
 	}
 	
 	[View]

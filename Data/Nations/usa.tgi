@@ -44,7 +44,7 @@
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_money
-	thing_IDS = usa_truck_money
+	thing_IDS = usa_truck_supply
 
 	[Badge]
 	badge_texture = USA/USABadge01.png

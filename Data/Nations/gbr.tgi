@@ -43,7 +43,7 @@
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_money
-	thing_IDS = gbr_truck_money
+	thing_IDS = gbr_truck_supply
 	
 	[Badge]
 	badge_texture = GBR/GBRBadge01.png
