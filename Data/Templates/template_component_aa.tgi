@@ -549,7 +549,7 @@ EXPERIENCE LEVELS
 	;; supply_required = true
 	
 	[Production]
-	money = 10
+	money = 25
 	oil = 10
 	ammo = 10
 }
@@ -559,7 +559,7 @@ EXPERIENCE LEVELS
 	;; supply_required = true	
 
 	[Production]
-	money = 15
-	oil = 10
-	ammo = 10
+	money = 50
+	oil = 20
+	ammo = 20
 }
