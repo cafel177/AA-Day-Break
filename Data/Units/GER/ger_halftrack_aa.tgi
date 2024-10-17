@@ -18,7 +18,6 @@
 	[ElementComponent]
 	{
 		required_structures = ger_brigade_engineer
-		morale_value = 10
 	}
 	
 	[PropertiesComponent]

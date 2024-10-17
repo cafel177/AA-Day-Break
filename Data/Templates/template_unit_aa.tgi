@@ -92,7 +92,7 @@ USAGE:
 	conform_to_terrain = true
 
 	[ElementComponent]
-	morale_value = 14
+	morale_value = 10
 	group_priority = 2
 
 	[BodyComponent]
@@ -265,7 +265,7 @@ USAGE:
 [Template AAUnitVehicleSPA Template=AAUnitVehicle]
 {
 	[ElementComponent]
-	morale_value = 18
+	morale_value = 15
 	group_priority = 2
 
 	[PropertiesComponent]
@@ -349,7 +349,7 @@ USAGE:
 [Template AAUnitVehicleTank Template=AAUnitVehicle]
 {
 	[ElementComponent]
-	morale_value = 20
+	morale_value = 15
 	group_priority = 1
 
 	[PropertiesComponent]
@@ -2153,7 +2153,7 @@ USAGE:
 	placement_group_IDS = group_nation_jpn
 
 	[ElementComponent]
-	morale_value = 6
+	morale_value = 7
 	
 	[PropertiesComponent]
 	{
