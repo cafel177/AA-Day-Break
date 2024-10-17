@@ -22,10 +22,10 @@
 			{
 				name = "#usa_bunker_aa_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 2
-				range = 25
+				range = 30
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 60
+				amount = 150
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_aa
