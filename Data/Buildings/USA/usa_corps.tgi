@@ -449,9 +449,6 @@
 		actor_ids = usa_truck_airfield
 
 		[RecruitActor]
-		actor_ids = usa_truck_money
-
-		[RecruitActor]
 		actor_ids = usa_truck_ammo
 		
 		[RecruitActor]
