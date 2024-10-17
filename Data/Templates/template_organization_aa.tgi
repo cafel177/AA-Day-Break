@@ -25,7 +25,7 @@ USAGE:
 
 	control_range = 18
 	operational_range = 34
-	morale_breakpoint = 20
+	morale_breakpoint = 12
 
 	recruit_time = 15
 	recruit_full = false
@@ -35,7 +35,7 @@ USAGE:
 
 [Template AAInfantryOrganizationComponentNew Inherit=AAInfantryOrganizationComponent]
 {
-	recruit_time = 5
+	recruit_time = 4
 }
 
 [Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
@@ -45,7 +45,7 @@ USAGE:
 
 	control_range = 18
 	operational_range = 34
-	morale_breakpoint = 20
+	morale_breakpoint = 15
 
 	recruit_time = 20
 	recruit_full = false
