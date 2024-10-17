@@ -62,10 +62,7 @@
 		property_IDS = armorhq	
 
 		[Property]
-		property_ids = mech_armor_hq
-
-		[Property]
-		property_ids = money		
+		property_ids = mech_armor_hq		
 	}
 	
 	[View]

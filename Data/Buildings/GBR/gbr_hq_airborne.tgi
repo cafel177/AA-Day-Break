@@ -100,10 +100,7 @@
 		property_IDS = economic_building
 		
 		[Property]
-		property_ids = mg	
-
-		[Property]
-		property_ids = money	
+		property_ids = mg		
 	}
 
 	[RecruitComponent]

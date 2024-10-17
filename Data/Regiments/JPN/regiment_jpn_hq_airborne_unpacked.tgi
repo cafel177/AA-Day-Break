@@ -14,7 +14,8 @@
 		[Property]
 		property_ids = conscription
 
-
+		[Property]
+		property_ids = money
 	}
 
 	[Placement]
