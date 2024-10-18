@@ -7,7 +7,7 @@
 	[EconomyComponent]
 
 	[HQComponent]
-	max_attachments = 9
+	max_attachments = 12
 
 	[Placement]
 	placement_category = TRUCK
