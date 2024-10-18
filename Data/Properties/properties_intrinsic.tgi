@@ -188,7 +188,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = gunfire
-	amount = 0.3
+	amount = 0.4
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
@@ -206,7 +206,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = gunfire
-	amount = 0.1
+	amount = 0.2
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
