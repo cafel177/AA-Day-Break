@@ -1,0 +1,14 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "五谷丰登"
+
+	independent_5 = " 平民"
+	kingdom_3 = " 位置3"
+	kingdom_2 = " 位置2"
+	kingdom_1 = " 位置1"
+	kingdom_0 = " 位置0"
+	map_name = "五谷丰登"
+	kingdom_4 = " 位置4"
+	map_description = "5人混战图"
+}
