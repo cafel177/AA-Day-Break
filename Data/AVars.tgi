@@ -29,7 +29,7 @@ drp012903 - moved game-specific AVars out
 	float WaterOpaqueDepth = 1.5
 	int	VGridCellSize = 4
 	float CameraNearPlane = 1
-	float CameraFarPlane = 512
+	float CameraFarPlane = 99999
 	int CursorDragThreshold = 10
 	float TimingSmoothingConstant = 0.9
 	point3 ReplacementColorDefault = 1,1,1
