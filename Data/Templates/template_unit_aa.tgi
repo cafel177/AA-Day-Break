@@ -21,7 +21,7 @@ USAGE:
 {
 	[ElementComponent]
 	morale_value = 5
-	resupply_rate = 0.2
+	resupply_rate = 0.15
 	
 	[DetectionComponent]
 	detection_range = 18.0
@@ -193,7 +193,7 @@ USAGE:
 	}
 	
 	[ElementComponent]
-	resupply_rate = 0.34
+	resupply_rate = 0.35
 	group_priority = 3
 	
 	[MoverComponent]
@@ -669,7 +669,7 @@ USAGE:
 [template AAUnitVehicleHalftrack template=AAUnitVehicle]
 {
 	[ElementComponent]
-	resupply_rate = 0.25
+	resupply_rate = 0.2
 	
 	[MoverComponent]
 	{

@@ -35,7 +35,7 @@ USAGE:
 
 [Template AAInfantryOrganizationComponentNew Inherit=AAInfantryOrganizationComponent]
 {
-	recruit_time = 4
+	recruit_time = 6
 }
 
 [Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
