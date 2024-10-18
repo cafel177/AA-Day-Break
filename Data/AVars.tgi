@@ -342,7 +342,7 @@ drp012903 - moved game-specific AVars out
 	string	PathRMCS = RandomMap/
 	string	PathDynamicCampaignSavedGames = DynamicCampaignSave/
 	string  LastFilmName = LastFilm.RFM
-	int FilmRotationQueueSize = 5
+	int FilmRotationQueueSize = 10
 	
 	;; videos
 	string	DefaultVideoResource = Video/blank.bik	
