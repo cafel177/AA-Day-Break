@@ -10,7 +10,7 @@
 		money = 225
 
 		[Production]
-		money = 24
+		money = 18
 
    		[Upkeep]
 		building_limit_consumed = 1

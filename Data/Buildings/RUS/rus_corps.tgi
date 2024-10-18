@@ -60,7 +60,7 @@
 		building_limit_consumed = 1
 		
 		[Production]
-		money = 25
+		money = 30
 		ammo = 20
 		oil = 10
 	}
@@ -167,18 +167,6 @@
 			[ResearchCost Template=CostList]
 			{
 				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_military_surplus
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
 			}
 		}
 
