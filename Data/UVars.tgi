@@ -208,15 +208,15 @@
 		;; Terrain Layer
 
 		;; Brush Size (in meters)
-		float TerrainBrushSize = 5
+		float TerrainBrushSize = 20
 		float TerrainBrushSizeMin = 1
-		float TerrainBrushSizeMax = 30
+		float TerrainBrushSizeMax = 80
 		float TerrainBrushSizeStep = 1		;; how much the slider steps
 
 		;; Brush Strength - the strength multiplies the heightmap affect
 		float TerrainBrushStrength = 0.5
 		float TerrainBrushStrengthMin = 0.25
-		float TerrainBrushStrengthMax = 3.0
+		float TerrainBrushStrengthMax = 5.0
 		float TerrainBrushStrengthStep = 0.25	;; how much the slider steps
 
 		;;;;;; user interface
