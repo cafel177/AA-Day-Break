@@ -1,16 +1,23 @@
 [Thing Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_supply
-	name = "#ger_truck_supply_name"
-	editor_name = "#ger_truck_supply_editor_name"
+	IDS = ger_truck_heal
+	name = "#ger_truck_heal_name"
+	editor_name = "#ger_truck_heal_editor_name"
+
+    	hide_if_missing_properties = false
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 100
 
    		[Upkeep]
 		building_limit_consumed = 0
+	}
+
+    	[ElementComponent]
+	{
+		required_properties = tech_improved_fortifications
 	}
 
 	[BodyComponent]
@@ -22,7 +29,7 @@
 	[MobileDeploymentComponent]
 	{
 	
-		unpack_to_actor_ids = ger_depot_supply
+		unpack_to_actor_ids = ger_heal_parts
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
@@ -43,14 +50,13 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
+
 	}	
 	
 	[View]
 	{
 		resource_prefix = GERTruck/GERTruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconBuildStructure.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = ger_truck_deployed

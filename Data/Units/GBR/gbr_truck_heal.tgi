@@ -1,24 +1,31 @@
 [Thing Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_supply
-	name = "#gbr_truck_supply_name"
-	editor_name = "#gbr_truck_supply_editor_name"
+	IDS = gbr_truck_heal
+	name = "#gbr_truck_heal_name"
+	editor_name = "#gbr_truck_heal_editor_name"
+
+    	hide_if_missing_properties = false
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 22
+		money = 100
 
    		[Upkeep]
 		building_limit_consumed = 0
 	}
 	
+	[ElementComponent]
+	{
+		required_properties = tech_improved_fortifications
+	}
+
 	[BodyComponent]
 	health = 500
 	defense = 2
 	
 	[MobileDeploymentComponent]
-	unpack_to_actor_ids = gbr_depot_supply
+	unpack_to_actor_ids = gbr_heal_parts
 	packed_position_offset = 0,0
 	packed_orientation = 1,0
 	
@@ -35,14 +42,13 @@
 	
 	[PropertiesComponent]
 	{
-		[Property]
-		property_IDS = supplydepot
+
 	}	
 	
 	[View]
 	{
 		resource_prefix = GBRTruck/GBRTruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconBuildStructure.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_truck_deployed

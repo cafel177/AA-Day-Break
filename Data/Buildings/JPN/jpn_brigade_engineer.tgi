@@ -98,6 +98,9 @@
 
 		[RecruitActor]
 		actor_ids = jpn_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = jpn_truck_heal
 	}
 
 	[Size]

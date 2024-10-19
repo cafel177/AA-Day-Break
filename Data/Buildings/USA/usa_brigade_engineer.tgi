@@ -111,6 +111,9 @@
 
 		[RecruitActor]
 		actor_ids = usa_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = usa_truck_heal
 	}
 
 	[DenizenComponent]

@@ -15,8 +15,10 @@
 	name = "#properties_buildings_building_upgrade_name"
 	icon = PropertyIcons/IconPropertyHealth.png
 
+	required_properties = building
+
 	[Modifier template=PeriodicHealModifier]
-	amount = 25
+	amount = 35
 }
 
 [Property Template=SharedProperty]

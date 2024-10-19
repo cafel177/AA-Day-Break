@@ -110,6 +110,9 @@
 
 		[RecruitActor]
 		actor_ids = ger_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = ger_truck_heal
 	}
 
 	[DenizenComponent]

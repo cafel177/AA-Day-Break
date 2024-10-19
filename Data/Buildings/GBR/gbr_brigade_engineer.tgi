@@ -87,6 +87,9 @@
 
 		[RecruitActor]
 		actor_ids = gbr_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = gbr_truck_heal
 	}
 
 	[DenizenComponent]
