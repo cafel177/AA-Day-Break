@@ -31,6 +31,7 @@
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
+		entrenchment_time = 30
 		recruit_full = true
 
 		[Slot]	;; front

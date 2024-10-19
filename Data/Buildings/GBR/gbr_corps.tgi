@@ -1,7 +1,7 @@
 [Template GBRcorpsHQ Template=AAGBRBuildingPackableCorpHQ]
 {
 	[BodyComponent]
-	health = 4000
+	health = 3000
 	defense = 0
 
 	[DefenderComponent]
