@@ -1,7 +1,7 @@
 [Vars]
 {
-	float	CameraScrollSpeed = 6.000000
-	float	CameraScaleZoom = 2.400000
+	float	CameraScrollSpeed = 10.000000
+	float	CameraScaleZoom = 1.400000
 	flag	ViewShowElapsedGameTime = true
 	flag	CameraRotate = true
 	int	ResolutionX = 2560

@@ -2,9 +2,9 @@
 {
 		;;;;;; camera
 		
-		float	CameraScrollSpeed = 2
-		float	CameraScrollAcceleration = 4
-		float	CameraScrollSpeedMax = 10
+		float	CameraScrollSpeed = 10
+		float	CameraScrollAcceleration = 10
+		float	CameraScrollSpeedMax = 15
 		int		CameraScrollEdgePadding = 10
 		flag	CameraLocked = false
 		float	CameraScalePan = 10
