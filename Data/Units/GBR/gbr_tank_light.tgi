@@ -40,7 +40,7 @@
 				name = "#gbr_tank_light_AbilityDefinition_name"
 				recharge_time = 6
 				area = 2
-				range = 22
+				range = 25
 				max_targets = 4
 
 				[Flags] 

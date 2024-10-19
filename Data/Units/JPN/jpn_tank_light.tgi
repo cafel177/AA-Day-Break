@@ -52,7 +52,7 @@
 			{				
 				name = "#jpn_tank_light_AbilityDefinition_name"
 				recharge_time = 6
-				range = 22
+				range = 25
 				area = 2
 				max_targets = 4
 
