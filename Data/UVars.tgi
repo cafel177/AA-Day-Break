@@ -3,14 +3,14 @@
 		;;;;;; camera
 		
 		float	CameraScrollSpeed = 10
-		float	CameraScrollAcceleration = 10
-		float	CameraScrollSpeedMax = 15
+		float	CameraScrollAcceleration = 5
+		float	CameraScrollSpeedMax = 40
 		int		CameraScrollEdgePadding = 10
 		flag	CameraLocked = false
 		float	CameraScalePan = 10
 		float	CameraScalePitch = 10
 		float	CameraScaleYaw = 10
-		float	CameraScaleZoom = 0.5
+		float	CameraScaleZoom = 2.0
 		float	CameraRotateSpeed = 0.50	;; degrees/pixel (positive is clockwise)
 		float	SunScaleDimmer = 0.25
 		flag	CameraInformation = false
