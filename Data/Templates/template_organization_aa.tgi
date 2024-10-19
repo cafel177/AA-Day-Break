@@ -25,7 +25,7 @@ USAGE:
 
 	control_range = 18
 	operational_range = 34
-	morale_breakpoint = 12
+	morale_breakpoint = 15
 
 	recruit_time = 15
 	recruit_full = false
@@ -65,7 +65,7 @@ USAGE:
 
 	control_range = 18
 	operational_range = 34
-	morale_breakpoint = 15
+	morale_breakpoint = 10
 
 	recruit_time = 25
 	recruit_full = false
