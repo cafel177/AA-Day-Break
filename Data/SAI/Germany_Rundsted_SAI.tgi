@@ -1,16 +1,16 @@
-[Ego template = ArtilleryLowIncomeEgo]
+[Ego template = ArtilleryLowIncomeEgoNew]
 {
 	IDS										= rundstedt_low_income_ego
 	name									= "#Germany_Rundsted_SAI_rundstedt_low_income_ego_name"
 } ;; LowIncomeEgo
 
-[Ego template = ArtilleryMainGameEgo]
+[Ego template = ArtilleryMainGameEgoNew]
 {
 	IDS										= rundstedt_main_game_ego
 	name									= "#Germany_Rundsted_SAI_rundstedt_main_game_ego_name"
 } ;; MainGameEgo
 
-[Ego template = ArtilleryEndGameEgo]
+[Ego template = ArtilleryEndGameEgoNew]
 {
 	IDS										= rundstedt_end_game_ego
 	name									= "#Germany_Rundsted_SAI_rundstedt_end_game_ego_name"

@@ -1,16 +1,16 @@
-[Ego template = CampaignLowIncomeEgo]
+[Ego template = CampaignLowIncomeEgoNew]
 {
 	IDS										= ger_low_income_ego
 	name									= "#germany_sai_ger_low_income_ego_unit_limit_max_needed_name"
 } ;; LowIncomeEgo
 
-[Ego template = CampaignMainGameEgo]
+[Ego template = CampaignMainGameEgoNew]
 {
 	IDS										= ger_main_game_ego
 	name									= "#germany_sai_ger_main_game_ego_unit_limit_max_needed_name"
 } ;; MainGameEgo
 
-[Ego template = CampaignEndGameEgo]
+[Ego template = CampaignEndGameEgoNew]
 {
 	IDS										= ger_end_game_ego
 	name									= "#germany_sai_ger_end_game_ego_unit_limit_max_needed_name"

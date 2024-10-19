@@ -1,4 +1,4 @@
-[template AAInfantryPlanesBaseEgo template = AABaseEgo]
+[template AAInfantryPlanesBaseEgoNew template = AABaseEgo]
 {
 	[GoalEngine]
 	{
@@ -21,7 +21,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 50
+			value							= 1000
 		}
 
 		[ActorPriority]
@@ -141,7 +141,7 @@
 	} ;; GoalEngine
 } ;; AAInfantryPlanesBaseEgo
 
-[template InfantryPlanesLowIncomeEgo template = AAInfantryPlanesBaseEgo]
+[template InfantryPlanesLowIncomeEgoNew template = AAInfantryPlanesBaseEgo]
 {
 	[Filters]
 	{
@@ -210,22 +210,26 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= money
+				one_time_bonus				= 100
 			}
                         
             [SpecificRecruitRequest]
 			{
 				property_ids				= oil
+				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
+				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
 				one_time_bonus				= 200
+				repeat_penalty				= 1000
 			}	
 		} ;; Recruiting
 
@@ -244,7 +248,7 @@
 	} ;; GoalEngine
 } ;; BalancedLowIncomeEgo
 
-[template InfantryPlanesMainGameEgo template = AAInfantryPlanesBaseEgo]
+[template InfantryPlanesMainGameEgoNew template = AAInfantryPlanesBaseEgo]
 {
 	[Filters]
 	{
@@ -432,7 +436,7 @@
 	} ;; GoalEngine
 } ;; BalancedMainGameEgo
 
-[template InfantryPlanesEndGameEgo template = AAInfantryPlanesBaseEgo]
+[template InfantryPlanesEndGameEgoNew template = AAInfantryPlanesBaseEgo]
 {
 	[Filters]
 	{
@@ -524,7 +528,7 @@
 			{
 				property_ids				= infhq  
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1200
 				one_time_bonus				= 400
 			}							
 
@@ -532,14 +536,14 @@
 			{
 				property_ids				= mechhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1200
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= armorhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1200
 			}
 
 			[SpecificRecruitRequest]

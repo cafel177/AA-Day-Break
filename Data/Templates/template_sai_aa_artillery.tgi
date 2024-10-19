@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 600
+			value							= 50
 		}
 
 		[ActorPriority]
@@ -132,7 +132,7 @@
 		[Item]
 		stat								= money_rate
 		min									= -9999999
-		max									= 100
+		max									= 150
 	}
 
 	[GoalEngine]
@@ -140,7 +140,7 @@
 		[GoalPriority]
 		{
 			goal_IDS						= RESEARCH
-			multiplier						= 1.5
+			multiplier						= 0
 			fuzziness						= 100
 		}
 
@@ -241,7 +241,7 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 100
+		min									= 150
 		max									= 250
 	}
 

@@ -1,16 +1,16 @@
-[Ego template = CampaignLowIncomeEgo]
+[Ego template = CampaignLowIncomeEgoNew]
 {
 	IDS										= rus_low_income_ego
 	name									= "#russia_sai_rus_low_income_ego_unit_limit_max_needed_name"
 } ;; LowIncomeEgo
 
-[Ego template = CampaignMainGameEgo]
+[Ego template = CampaignMainGameEgoNew]
 {
 	IDS										= rus_main_game_ego
 	name									= "#russia_sai_rus_main_game_ego_unit_limit_max_needed_name"
 } ;; MainGameEgo
 
-[Ego template = CampaignEndGameEgo]
+[Ego template = CampaignEndGameEgoNew]
 {
 	IDS										= rus_end_game_ego
 	name									= "#russia_sai_rus_end_game_ego_unit_limit_max_needed_name"

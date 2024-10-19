@@ -27,6 +27,14 @@ templates/template_sai_aa_armor.tgi
 templates/template_sai_aa_artillery.tgi
 templates/template_sai_aa_planes.tgi
 templates/template_sai_aa_mechanized.tgi
+templates/template_sai_aa_campaign_new.tgi
+templates/template_sai_aa_balanced_new.tgi
+templates/template_sai_aa_infantry_new.tgi
+templates/template_sai_aa_infantry_planes_new.tgi
+templates/template_sai_aa_armor_new.tgi
+templates/template_sai_aa_artillery_new.tgi
+templates/template_sai_aa_planes_new.tgi
+templates/template_sai_aa_mechanized_new.tgi
 templates/template_waterinfo_aa.tgi
 templates/template_rmc_aa.tgi
 templates/template_rmc_mg_aa.tgi

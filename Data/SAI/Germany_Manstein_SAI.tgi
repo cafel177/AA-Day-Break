@@ -1,16 +1,16 @@
-[Ego template = PlanesLowIncomeEgo]
+[Ego template = PlanesLowIncomeEgoNew]
 {
 	IDS										= manstein_low_income_ego
 	name									= "#Germany_Manstein_SAI_manstein_low_income_ego_name"
 } ;; LowIncomeEgo
 
-[Ego template = PlanesMainGameEgo]
+[Ego template = PlanesMainGameEgoNew]
 {
 	IDS										= manstein_main_game_ego
 	name									= "#Germany_Manstein_SAI_manstein_main_game_ego_name"
 } ;; MainGameEgo
 
-[Ego template = PlanesEndGameEgo]
+[Ego template = PlanesEndGameEgoNew]
 {
 	IDS										= manstein_end_game_ego
 	name									= "#Germany_Manstein_SAI_manstein_end_game_ego_name"

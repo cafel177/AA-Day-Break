@@ -1,16 +1,7 @@
-[template AAInfantryPlanesBaseEgo template = AABaseEgo]
+[template AAMechanizedBaseEgoNew template = AABaseEgo]
 {
 	[GoalEngine]
 	{
-		[Combat]
-		{
-			[AirAttacks]
-			{
-				min_time_between_attacks	= 90
-				extra_planes_multiplier_max	= 3
-			}
-		}
-
 		[ActorPriority]
 		{
 			property_IDS					= corpshq
@@ -21,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 50
+			value							= 1000
 		}
 
 		[ActorPriority]
@@ -39,13 +30,13 @@
 		[ActorPriority]
 		{
 			property_IDS					= airhq
-			value							= 650
+			value							= 350
 		}
 
 		[ActorPriority]
 		{
 			property_IDS					= infhq
-			value							= 650
+			value							= 550
 		}
 
 		[ActorPriority]
@@ -87,7 +78,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= property_city
-			value							= 300
+			value							= 50
 		}
 
 		[ActorPriority]
@@ -100,29 +91,22 @@
 		[ActorPriority]
 		{
 			property_IDS					= infantry_company
-			value							= 700
+			value							= 500
 			repeat_penalty					= 150
 		}
 
 		[ActorPriority]
 		{
-			property_IDS					= paratrooper_company
-			value							= 700
-			repeat_penalty					= 150				
-		}
-
-		[ActorPriority]
-		{
 			property_IDS					= mechanized_company
-			value							= 500
-			repeat_penalty					= 100				
+			value							= 600
+			repeat_penalty					= 75				
 		}
 
 		[ActorPriority]
 		{
 			property_IDS					= artillery_company
-			value							= 500
-			repeat_penalty					= 100				
+			value							= 600
+			repeat_penalty					= 75				
 		}
 
 		[ActorPriority]
@@ -135,13 +119,13 @@
 		[ActorPriority]
 		{
 			property_IDS					= antitank_company
-			value							= 500
-			repeat_penalty					= 100				
+			value							= 600
+			repeat_penalty					= 75				
 		}
 	} ;; GoalEngine
-} ;; AAInfantryPlanesBaseEgo
+} ;; AAMechanizedBaseEgo
 
-[template InfantryPlanesLowIncomeEgo template = AAInfantryPlanesBaseEgo]
+[template MechanizedLowIncomeEgoNew template = AAMechanizedBaseEgo]
 {
 	[Filters]
 	{
@@ -160,7 +144,7 @@
 			fuzziness						= 100
 		}
 
-		[Research template = InfantryPlanesLowIncomeEgoResearch]
+		[Research template = MechanizedLowIncomeEgoResearch]
 
 		[ResourceManagement]
 		{
@@ -169,7 +153,7 @@
 		
 		[OffensiveCV]
 		{
-			cv_advantage_target				= 1
+			cv_advantage_target				= 1.2
 			cv_exponent_under_target		= 3
 		}
 
@@ -210,23 +194,27 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= money
+				one_time_bonus				= 100
 			}
-                        
-            [SpecificRecruitRequest]
+
+			[SpecificRecruitRequest]
 			{
 				property_ids				= oil
+				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
+				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
 				one_time_bonus				= 200
-			}	
+				repeat_penalty				= 1000
+			}
 		} ;; Recruiting
 
 		[ActorPriority]
@@ -238,13 +226,20 @@
 
 		[ActorPriority]
 		{
+			property_IDS					= paratrooper_company
+			value							= 100
+			repeat_penalty					= 50				
+		}
+
+		[ActorPriority]
+		{
 			property_IDS					= engineer
 			value							= -10000
 		}
 	} ;; GoalEngine
-} ;; BalancedLowIncomeEgo
+} ;; MechanizedLowIncomeEgo
 
-[template InfantryPlanesMainGameEgo template = AAInfantryPlanesBaseEgo]
+[template MechanizedMainGameEgoNew template = AAMechanizedBaseEgo]
 {
 	[Filters]
 	{
@@ -263,11 +258,11 @@
 			fuzziness						= 125
 		}
 
-		[Research template = InfantryPlanesMainGameEgoResearch]
+		[Research template = MechanizedMainGameEgoResearch]
 
 		[OffensiveCV]
 		{
-			cv_advantage_target				= .9
+			cv_advantage_target				= 1
 			cv_exponent_under_target		= 2
 		}
 
@@ -336,42 +331,31 @@
 				property_ids				= infhq  
 				base_priority				= -850
 				hq_type_not_available_bonus	= 900
-				one_time_bonus				= 400
 			}							
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= mechhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1600
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= armorhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1500
 			}
 
 			[SpecificRecruitRequest]
 			{
-				property_ids				= airhq 
-				base_priority				= -850
-				hq_type_not_available_bonus	= 900
-				one_time_bonus				= 100
-			}							
-
-			[SpecificRecruitRequest]
-			{
 				property_ids				= airfield
-				base_priority				= 250
 				repeat_penalty				= 10000
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= engineer_brigade
-				base_priority				= 200
 				repeat_penalty				= 10000
 			}
 
@@ -404,6 +388,13 @@
 
 		[ActorPriority]
 		{
+			property_IDS					= paratrooper_company
+			value							= 500
+			repeat_penalty					= 200				
+		}
+
+		[ActorPriority]
+		{
 			property_IDS					= engineer
 			value							= 600
 			repeat_penalty					= 10000
@@ -430,9 +421,9 @@
 			repeat_penalty					= 50
 		}
 	} ;; GoalEngine
-} ;; BalancedMainGameEgo
+} ;; MechanizedMainGameEgo
 
-[template InfantryPlanesEndGameEgo template = AAInfantryPlanesBaseEgo]
+[template MechanizedEndGameEgoNew template = AAMechanizedBaseEgo]
 {
 	[Filters]
 	{
@@ -451,7 +442,7 @@
 			fuzziness						= 150
 		}
 
-		[Research template = InfantryPlanesEndGameEgoResearch]
+		[Research template = MechanizedEndGameEgoResearch]
 
 		[OffensiveCV]
 		{
@@ -525,42 +516,40 @@
 				property_ids				= infhq  
 				base_priority				= -850
 				hq_type_not_available_bonus	= 900
-				one_time_bonus				= 400
 			}							
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= mechhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1600
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= armorhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
+				hq_type_not_available_bonus	= 1500
 			}
 
 			[SpecificRecruitRequest]
 			{
-				property_ids				= airhq 
+				property_ids				= airhq
 				base_priority				= -850
-				hq_type_not_available_bonus	= 900
-				one_time_bonus				= 100
-			}							
+				hq_type_not_available_bonus	= 1100
+			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= airfield
-				base_priority				= 500
-				repeat_penalty				= 750
+				base_priority				= 350
+				repeat_penalty				= 500
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= engineer_brigade
-				base_priority				= 500
+				base_priority				= 200
 				repeat_penalty				= 10000
 			}
 
@@ -593,6 +582,13 @@
 
 		[ActorPriority]
 		{
+			property_IDS					= paratrooper_company
+			value							= 750
+			repeat_penalty					= 350				
+		}
+
+		[ActorPriority]
+		{
 			property_IDS					= engineer
 			value							= 600
 			repeat_penalty					= 10000
@@ -619,4 +615,4 @@
 			repeat_penalty					= 75
 		}
 	} ;; GoalEngine
-} ;; BalancedEndGameEgo
+} ;; MechanizedEndGameEgo
