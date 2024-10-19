@@ -318,6 +318,7 @@
 			{
 				property_ids				= money
                 base_priority				= -750
+				one_time_bonus				= 50
 			}
 
 			[SpecificRecruitRequest]
