@@ -22,7 +22,7 @@
 	[ElementComponent]
 	{
 		required_structures = rus_brigade_engineer
-		required_properties = tech_bunker_artillery
+		required_properties = tech_improved_fortifications
 	}
 
 	[BodyComponent]

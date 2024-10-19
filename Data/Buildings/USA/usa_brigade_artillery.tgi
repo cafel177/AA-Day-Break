@@ -87,18 +87,6 @@
 				money = 150
 			}
 		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_bunker_artillery
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
 	}
 	
 	[RecruitComponent]
