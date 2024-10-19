@@ -47,7 +47,8 @@
 	
 	[PropertiesComponent]
 	{
-
+		[Property]
+		property_IDS = property_bunker_artillery
 	}	
 	
 	[View]
