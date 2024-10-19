@@ -55,7 +55,7 @@
 	
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocal]
+		[Ability Template=AAGunLocalBomb]
 		{
 			use_bonus = 110
 			spawn_bone_ids = gun_ae_01

@@ -64,7 +64,7 @@
 	
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocal]
+		[Ability Template=AAGunLocalBomb]
 		{
 			idle_animation = idleattack
 									

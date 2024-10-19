@@ -70,7 +70,7 @@
 	
 	[PerformerComponent]
 	{
-		[Ability Template=AAAttackLocal]
+		[Ability Template=AAAttackLocalBomb]
 		{			
 			spawn_bone_ids = cannon_ae_01
 						

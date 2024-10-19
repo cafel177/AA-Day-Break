@@ -19,11 +19,32 @@ smm021003 - created
 	
 	priority = 1
 
+	move_weight = 1
+	use_weight = 1
+	wait_weight = 0
+
+	move_bonus = 3
+	use_bonus = 100
+	wait_bonus = 100
+
 	[AbilityDefinition template=AAAttack]
 	{
 		IDS = null
 		recharge_time = 0.5
 	}
+}
+
+[template AAAttackLocalBomb inherit=AAAttackLocal]
+{
+	move_weight = 1
+	use_weight = 1
+	wait_weight = 1
+
+	move_bonus = 0
+	use_bonus = 0
+	wait_bonus = 0
+
+    fuzzy_range = 0
 }
 
 [template AAGunLocal inherit=AbilityLocal]
@@ -34,11 +55,34 @@ smm021003 - created
 	
 	priority = 1
 
+	move_weight = 1
+	use_weight = 1
+	wait_weight = 0
+
+	move_bonus = 3
+	use_bonus = 50
+	wait_bonus = 50
+	
+	fuzzy_range = 3
+
 	[AbilityDefinition template=AAAttack]
 	{
 		IDS = null
 		recharge_time = 0.5
 	}
+}
+
+[template AAGunLocalBomb inherit=AAGunLocal]
+{
+	move_weight = 1
+	use_weight = 1
+	wait_weight = 1
+
+	move_bonus = 0
+	use_bonus = 0
+	wait_bonus = 0
+
+    fuzzy_range = 0
 }
 
 [template AAGrenadeLocal inherit=AbilityLocal]

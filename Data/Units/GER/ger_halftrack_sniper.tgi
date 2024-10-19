@@ -53,7 +53,7 @@
 	[PerformerComponent]
 	{
 		
-		[Ability Template=AAGunLocal]
+		[Ability Template=AAGunLocalBomb]
 		{
 			[AbilityDefinition Template=AAVehicleMG]
 			{
