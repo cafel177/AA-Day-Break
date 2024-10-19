@@ -1,14 +1,14 @@
 [Text language=Default]
 {
 	ids = map_strings_table
-	name = "5 Free Map"
+	name = "5 Free Map 01"
 
 	independent_5 = " Other"
 	kingdom_3 = " Side 3"
 	kingdom_2 = " Side 2"
 	kingdom_1 = " Side 1"
 	kingdom_0 = " Side 0"
-	map_name = "5 Free Map"
+	map_name = "5 Free Map 01"
 	kingdom_4 = " Side 4"
 	map_description = "5 Free Map"
 }
