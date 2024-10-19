@@ -36,7 +36,8 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_heavy
-		
+		control_range = 30
+
 		[Slot]	;; front
 		element_IDS = gbr_halftrack_aa
 	

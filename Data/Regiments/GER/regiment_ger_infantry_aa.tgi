@@ -33,6 +33,7 @@
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_mechanized
+		control_range = 30
 		
 		[Slot]	;; front
 		element_IDS = ger_infantry
