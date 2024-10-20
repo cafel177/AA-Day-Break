@@ -15,8 +15,8 @@
 	fixed ProjectileTargetHeightRatio = 0.65
 	fixed ProjectileArcingTargetHeightRatio = 0.35
 
-	fixed GameSpeedMin = -2		;; 25% (100% * 1/4)
-	fixed GameSpeedMax = +2		;; 400% (100% * 4)
+	fixed GameSpeedMin = -4		;; 25% (100% * 1/4)
+	fixed GameSpeedMax = +4		;; 400% (100% * 4)
 	fixed GameSpeedFilmMin = -4		;; 6% (100% * 1/16)
 	fixed GameSpeedFilmMax = +4		;; 1600% (100% * 16)
 	
@@ -242,7 +242,7 @@
 	flag	TeamsAllowed				= true			;; pcb111903 - deleted world rule so no longer used
 	flag	AllowCheats				= true
 	flag	TeamVictory				= true	
-	fixed	CaptureHealthFactor			= 0.3
+	fixed	CaptureHealthFactor			 = 0.3
 	bool	AllowSellUnderSiege			= true
 	int		CityVictoryRatio			= 0
 	
