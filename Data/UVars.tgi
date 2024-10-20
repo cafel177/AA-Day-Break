@@ -469,7 +469,7 @@
 		float	RenderTerrainTexPoolWarningSize = 0.08
 
 		int 	TerrainTexturePoolDesiredNumEntries = 120			;; Approximately 20% more than on-screen for max-zoom
-		int		TerrainTexturePoolDesiredTextureResolution = 128
+		int		TerrainTexturePoolDesiredTextureResolution. = 128
 		int		TerrainTexturePoolMinTextureResolution = 64
 		flag	TerrainTexturePoolRequiresAlpha = false
 		flag	TerrainTexturePoolGenerateMipMaps = true
