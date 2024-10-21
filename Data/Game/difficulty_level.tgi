@@ -1,5 +1,11 @@
 [DifficultyLevel]
 {
+	ids = infinite
+	name = "#difficulty_level_infinite_name_2"
+}
+
+[DifficultyLevel]
+{
 	ids = easy
 	name = "#difficulty_level_easy_name_2"
 }
@@ -16,8 +22,4 @@
 	name = "#difficulty_level_hard_name_2"
 }
 
-[DifficultyLevel]
-{
-	ids = infinite
-	name = "#difficulty_level_infinite_name_2"
-}
+

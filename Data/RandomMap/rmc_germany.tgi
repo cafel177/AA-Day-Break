@@ -80,4 +80,13 @@
 
 	[ActorGroup Template=MachineGunBunkers]
 	apply_to_all_major_kingdoms = true
+
+	[ActorGroup Template=AntiAirBatteries]
+	apply_to_all_major_kingdoms = true
+
+	[ActorGroup Template=ArtilleryBatteries]
+	apply_to_all_major_kingdoms = true
+
+    	[ActorGroup Template=StartInfinite]
+	apply_to_all_major_kingdoms = true
 }

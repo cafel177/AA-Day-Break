@@ -27,7 +27,7 @@ USAGE:
 		[Rule]
 		ids = difficultylevel
 		default = HARD
-		show_ui = false
+		show_ui = true
 	}
 
 /*	KINGDOMS			*/
@@ -290,7 +290,8 @@ USAGE:
 	name = "#template_rmc_aa_start_bunkers_name"
 
 	kingdom_ids = null
-	show_ui = false
+	show_ui = true
+	difficulty_level = hard
 
 	range = 1,1
 	area_factor = 0
@@ -305,10 +306,6 @@ USAGE:
 	properties = tech_noupkeep
 
 	[RequiredObject]
-	object_ids = placeholder_truck_bunker
-	position = 0,0
-	
-    [RequiredObject]
 	object_ids = placeholder_truck_bunker
 	position = 0,0
 
@@ -331,7 +328,8 @@ USAGE:
 	name = "#template_rmc_aa_start_antiair_name"
 
 	kingdom_ids = null
-	show_ui = false
+	show_ui = true
+	difficulty_level = medium
 
 	range = 1,1
 	area_factor = 0
@@ -366,7 +364,8 @@ USAGE:
 	name = "#template_rmc_aa_start_artillery_name"
 
 	kingdom_ids = null
-	show_ui = false
+	show_ui = true
+	difficulty_level = easy
 
 	range = 1,1
 	area_factor = 0
@@ -383,7 +382,6 @@ USAGE:
 	[RequiredObject]
 	object_ids = placeholder_truck_bunker_artillery
 	position = 0,0
-
 	
 	;; see comment in [MachineGunBunkers]
 	[GroupRestriction]
@@ -398,8 +396,8 @@ USAGE:
 	name = "#template_rmc_aa_start_infinite_name"
 
 	kingdom_ids = null
-	show_ui = false
-	difficulty_level = medium
+	show_ui = true
+	difficulty_level = infinite
 
 	range = 1,1
 	area_factor = 0
