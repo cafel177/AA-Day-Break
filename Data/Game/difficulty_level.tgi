@@ -15,3 +15,9 @@
 	ids = hard
 	name = "#difficulty_level_hard_name_2"
 }
+
+[DifficultyLevel]
+{
+	ids = infinite
+	name = "#difficulty_level_infinite_name_2"
+}

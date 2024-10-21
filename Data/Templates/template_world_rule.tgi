@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_world_rule.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ?2002-2003 TimeGate Studios
 
 DESCRIPTION: a world rule
 
@@ -30,6 +30,10 @@ EXAMPLES:
 		[EnumValue]
 		ids = HARD
 		name = "Hard"
+
+		[EnumValue]
+		ids = INF
+		name = "Infinite"
 	}
 
 
