@@ -107,6 +107,18 @@ USAGE:
 /*	AVAILABLE MAP SIZES		*/
 
 	[MapSize]
+	width = 192
+	height = 192
+	recommended_kingdoms_min = 1
+	recommended_kingdoms_max = 2
+
+	[MapSize]
+	width = 256
+	height = 256
+	recommended_kingdoms_min = 2
+	recommended_kingdoms_max = 4
+
+	[MapSize]
 	width = 320
 	height = 320
 	recommended_kingdoms_min = 2
