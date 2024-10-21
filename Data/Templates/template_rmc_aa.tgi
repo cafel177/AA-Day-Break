@@ -27,7 +27,7 @@ USAGE:
 		[Rule]
 		ids = difficultylevel
 		default = MEDIUM
-		show_ui = false
+		show_ui = true
 	}
 
 /*	KINGDOMS			*/
