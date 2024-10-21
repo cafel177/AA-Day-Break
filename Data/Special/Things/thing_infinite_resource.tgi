@@ -1,0 +1,42 @@
+[Thing template=Actor]
+{
+	IDS = thing_infinite_resource
+	name = "#thing_infinite_resource_name"
+	category = UNIT
+	
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = tech_noupkeep
+	}
+	
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+	
+	[Placement]
+	placement_group_IDS = group_special
+
+	[View]
+	{
+		resource_prefix = ThingCurrencyResource/ThingCurrencyResource
+		shadow_type = none
+		shadow_texture = null
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+    [Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 3
+					
+		soft_shape = RECT
+		rect_width = 3
+		rect_height = 3
+	}
+}

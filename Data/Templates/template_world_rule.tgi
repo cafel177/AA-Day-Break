@@ -32,7 +32,7 @@ EXAMPLES:
 		name = "Hard"
 
 		[EnumValue]
-		ids = INF
+		ids = INFINITE
 		name = "Infinite"
 	}
 

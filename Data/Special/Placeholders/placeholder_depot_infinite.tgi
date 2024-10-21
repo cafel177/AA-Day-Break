@@ -1,10 +1,11 @@
 [Thing Template=Placeholder]
 {
-	IDS = placeholder_bunker_artillery
-	name = "#placeholder_bunker_artillery_name"
+	IDS = placeholder_depot_infinite
+	name = "#placeholder_depot_infinite_name"
 
 	[Flags]
-	axis_locked = false	
+	axis_locked = false
+	tile_locked = false
 
 	[Placement]
 	placement_group_IDS = group_special
@@ -14,13 +15,15 @@
 	{
 		blocking_shape = CIRCLE
 		blocking_radius = 2
-		soft_shape = CIRCLE
-		soft_radius = 2.1
+					
+		soft_shape = RECT
+		rect_width = 2
+		rect_height = 2
 	}
 
 	[View]
 	{
-		resource_prefix = PlaceholderBunkerArtillery/PlaceholderBunkerArtillery
+		resource_prefix = PlaceholderDepotSupply/PlaceholderDepotSupply
 
 		[TextureSearchPath]
 		path = /Shared/SharedTextures

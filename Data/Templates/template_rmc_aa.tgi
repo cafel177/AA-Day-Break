@@ -26,8 +26,8 @@ USAGE:
 		
 		[Rule]
 		ids = difficultylevel
-		default = MEDIUM
-		show_ui = true
+		default = HARD
+		show_ui = false
 	}
 
 /*	KINGDOMS			*/
@@ -305,11 +305,11 @@ USAGE:
 	properties = tech_noupkeep
 
 	[RequiredObject]
-	object_ids = placeholder_bunker
+	object_ids = placeholder_truck_bunker
 	position = 0,0
 	
     [RequiredObject]
-	object_ids = placeholder_bunker
+	object_ids = placeholder_truck_bunker
 	position = 0,0
 
 	;; this will prevent these bunkers from going anywhere near 12m of any corps HQ (one of
@@ -345,7 +345,13 @@ USAGE:
 	
 	properties = tech_noupkeep
 
-
+	[RequiredObject]
+	object_ids = placeholder_truck_bunker_antiaircraft
+	position = 0,0
+	
+    [RequiredObject]
+	object_ids = placeholder_truck_bunker_antiaircraft
+	position = 0,0
 	
 	;; see comment in [MachineGunBunkers]
 	[GroupRestriction]
@@ -374,6 +380,9 @@ USAGE:
 	
 	properties = tech_noupkeep
 
+	[RequiredObject]
+	object_ids = placeholder_truck_bunker_artillery
+	position = 0,0
 
 	
 	;; see comment in [MachineGunBunkers]
@@ -382,3 +391,34 @@ USAGE:
 	proximity_min = 12
 	proximity_desired = 12
 }
+
+[Template StartInfinite Template=RMCActorGroup]
+{
+	ids = start_infinite
+	name = "#template_rmc_aa_start_infinite_name"
+
+	kingdom_ids = null
+	show_ui = false
+	difficulty_level = medium
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_infinite
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+

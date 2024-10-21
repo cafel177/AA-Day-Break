@@ -1,7 +1,7 @@
 [Thing Template=Placeholder]
 {
-	IDS = placeholder_bunker_antiaircraft
-	name = "#placeholder_bunker_antiaircraft_name"
+	IDS = placeholder_truck_bunker_antiaircraft
+	name = "#placeholder_truck_bunker_antiaircraft_name"
 
 	[Flags]
 	axis_locked = false	
@@ -13,9 +13,11 @@
 	[Size]
 	{
 		blocking_shape = CIRCLE
-		blocking_radius = 2
-		soft_shape = CIRCLE
-		soft_radius = 2.1
+		blocking_radius = 0.6
+					
+		soft_shape = RECT
+		rect_width = 1.4
+		rect_height = 3.0
 	}
 
 	[View]

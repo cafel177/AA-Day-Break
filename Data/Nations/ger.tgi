@@ -27,16 +27,28 @@
 	thing_IDS = ger_airfield
 	
 	[Placeholder]
-	placeholder_IDS = placeholder_bunker
+	placeholder_IDS = placeholder_truck_bunker
 	thing_IDS = ger_truck_bunker
 	
 	[Placeholder]
-	placeholder_IDS = placeholder_bunker_antiaircraft
+	placeholder_IDS = placeholder_truck_bunker_antiaircraft
 	thing_IDS = ger_truck_bunker_aa
 	
 	[Placeholder]
-	placeholder_IDS = placeholder_bunker_artillery
+	placeholder_IDS = placeholder_truck_bunker_artillery
 	thing_IDS = ger_truck_bunker_artillery
+
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker
+	thing_IDS = ger_bunker
+	
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker_antiaircraft
+	thing_IDS = ger_bunker_aa
+	
+	[Placeholder]
+	placeholder_IDS = placeholder_bunker_artillery
+	thing_IDS = ger_bunker_artillery
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_supply
@@ -45,6 +57,10 @@
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_money
 	thing_IDS = ger_truck_money
+
+	[Placeholder]
+	placeholder_IDS = placeholder_depot_infinite
+	thing_IDS = thing_infinite_resource
 
 	[Badge]
 	badge_texture = GER/GERBadge01.png
