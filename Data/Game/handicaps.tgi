@@ -26,13 +26,11 @@
 	property_ids = property_handicap_hard
 }
 
-/*
 [Handicap Template=Handicap]
 {
-	IDS = handicap_economy_penalty_1
-	name = "#handicaps_name"
-	description = "#handicaps_description"
+	IDS = handicap_infinite
+	name = "#handicaps_handicap_infinite_name"
+	description = "#handicaps_handicap_infinite_description"
 
-	property_ids = property_handicap_economy_penalty_1
+	property_ids = property_handicap_infinite
 }
-*/
