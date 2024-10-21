@@ -58,7 +58,7 @@
 			[AbilityDefinition Template=AAVehicleMG]
 			{
 				name = "#rus_halftrack_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 7
 				area = 1.5
 				range = 30
 				max_targets = 2			
