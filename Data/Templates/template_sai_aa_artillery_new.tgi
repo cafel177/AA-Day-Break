@@ -508,7 +508,7 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= corpshq 
-				repeat_penalty				= 10000
+				repeat_penalty				= 100
 			}							
 
 			[SpecificRecruitRequest]
