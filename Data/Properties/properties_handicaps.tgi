@@ -11,6 +11,23 @@
 		
 	[Modifier Template=MultiplyModifier]
 	attribute = RECRUIT_COST
+	amount = -0.4
+		
+	[Modifier template=MultiplyModifier]
+	attribute = health
+	amount = -0.25
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = property_handicap_normal
+	name = "#properties_handicaps_property_handicap_normal_name"
+	icon = /Properties/%s/PropertyIcons/IconPropertyEconomic.png
+	;;required_properties = building
+	is_technology = true
+		
+	[Modifier Template=MultiplyModifier]
+	attribute = RECRUIT_COST
 	amount = -0.25
 		
 	[Modifier template=MultiplyModifier]
@@ -48,7 +65,7 @@
 	
 	[Modifier Template=MultiplyModifier]
 	attribute = RECRUIT_COST
-	amount = +0.25
+	amount = +0.4
 		
 	[Modifier template=MultiplyModifier]
 	attribute = health
