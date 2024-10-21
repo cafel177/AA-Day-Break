@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_vfx.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ?2002-2003 TimeGate Studios
 
 DESCRIPTION: a complex thing - a visual effect that can be instantiated in
 			the world view.  Does not affect the simulation (i.e. art only).
@@ -304,7 +304,7 @@ EXAMPLES:
 	localized	text
 	string		font_IDS
 	
-	constant_screen_size = true
+	constant_screen_size = false
 	
 	;; for floating VFX text
 	float		rise_to_height = 0

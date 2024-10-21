@@ -319,7 +319,7 @@
 	IDS = banner_focus_vfx
 	name = "#game_vfx_banner_focus_vfx_name"
 	model = selection/bannerfocus.NIF
-	constant_screen_size = true
+	constant_screen_size = false
 }
 
 [VFX Template=VFXModelPermanent]
