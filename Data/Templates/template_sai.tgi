@@ -522,7 +522,7 @@
 			;;		- whenever it builds anything
 			;;		- whenever it finishes recruiting a builder company (settler or engineer)
 			;;		- whenever it finds a settlement spot
-			int immediate_think_on_build_max_settlements	= 2
+			int immediate_think_on_build_max_settlements	= 5
 			fixed immediate_think_on_build_max_time			= 600
 		}
 
@@ -723,7 +723,7 @@
 		[OffensiveCV]
 		{
 			;; effect of cv
-			fixed cv_advantage_target			= 1		;; priority drops exponentially if we're below this, goes up linearly if above (was 2)
+			fixed cv_advantage_target			= 2		;; priority drops exponentially if we're below this, goes up linearly if above (was 2)
 			fixed cv_advantage_max				= 5			;; CV over this is irrelevant
 			fixed cv_exponent_under_target		= 4			;; the exponent used if under target cv
 			fixed cv_max_mult_over_target		= 15		;; the maximum bonus to priority if over target cv
@@ -740,7 +740,7 @@
 		[DefensiveCV]
 		{
 			;; effect of cv
-			fixed cv_advantage_target			= 2			;; priority drops exponentially if we're below this, goes up linearly if above
+			fixed cv_advantage_target			= 3			;; priority drops exponentially if we're below this, goes up linearly if above
 			fixed cv_advantage_max				= 10		;; CV over this is irrelevant
 			fixed cv_exponent_under_target		= 1.5		;; the exponent used if under target cv
 			fixed cv_max_mult_over_target		= 4			;; the maximum bonus to priority if over target cv
