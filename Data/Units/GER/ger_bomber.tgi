@@ -60,12 +60,16 @@
 		{
 			required_properties = tech_napalm
 			
-			[AbilityDefinition Template=AAGERAirplaneAttackBomb]
+			[AbilityDefinition Template=AAAirplaneAttackBomb]
 			{
 				IDS = ger_bomb5
-				mana_cost = 0		
+				mana_cost = 0	
+				range = 15	
 				name = "#usa_bomber_AbilityDefinition_name_5"
 				area = 6
+				recharge_time = 5	
+				max_targets = 12
+
 				projectile_ids = napalm_bomb
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 			
@@ -74,6 +78,10 @@
 				
 				[Effect Template=MoraleLossEffect]
 				amount = 2
+
+				[WhenDo Template=FXC_PlaySFX]
+				audio_ids = bomb_heavy
+				at = TARGET_GROUND
 			}
 		}
 	}
