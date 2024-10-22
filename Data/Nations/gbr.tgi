@@ -67,7 +67,7 @@
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_moneybox
-	thing_IDS = thing_currency_resource
+	thing_IDS = thing_currency_resource_tb
 
 	[Badge]
 	badge_texture = GBR/GBRBadge01.png

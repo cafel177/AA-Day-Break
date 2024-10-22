@@ -20,10 +20,6 @@
 	
 	[TerrainBlob Template=TempGrassDryTerrainBlob02]
 	
-	[TerrainStreak Template=TempForestConiferousTerrainStreak]
-
-	[TerrainBlob Template=TempForestConiferousTerrainBlob]
-	
 	[TerrainBlob Template=TempGrassTerrainBlob02]
 
 /********************    BLOCKING TERRAIN    ********************/

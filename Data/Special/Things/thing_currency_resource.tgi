@@ -1,14 +1,7 @@
-[Thing template=Actor]
+[template MoneyBox template=Actor]
 {
-	IDS = thing_currency_resource
 	name = "#thing_currency_resource_name"
 	category = UNIT
-	
-	[EconomyComponent]
-	{
-		[Production]
-		money = 20
-	}
 	
 	[Flags]
 	invulnerable = true
@@ -38,5 +31,27 @@
 		soft_shape = RECT
 		rect_width = 2
 		rect_height = 2
+	}
+}
+
+[Thing Template=MoneyBox]
+{
+	IDS = thing_currency_resource
+
+	[EconomyComponent]
+	{
+		[Production]
+		money = 20
+	}
+}
+
+[Thing Template=MoneyBox]
+{
+	IDS = thing_currency_resource_tb
+
+	[EconomyComponent]
+	{
+		[Production]
+		money = 100
 	}
 }
