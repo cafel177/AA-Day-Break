@@ -1,13 +1,13 @@
 [Thing template=Actor]
 {
-	IDS = thing_infinite_resource
-	name = "#thing_infinite_resource_name"
+	IDS = thing_currency_resource
+	name = "#thing_currency_resource_name"
 	category = UNIT
 	
-	[StructureComponent]
+	[EconomyComponent]
 	{
-		[TechnologyProperty]
-		property_ids = tech_noupkeep
+		[Production]
+		money = 20
 	}
 	
 	[Flags]

@@ -1,7 +1,7 @@
 [Thing Template=Placeholder]
 {
-	IDS = placeholder_depot_infinite
-	name = "#placeholder_depot_infinite_name"
+	IDS = placeholder_depot_moneybox
+	name = "#placeholder_depot_moneybox_name"
 
 	[Flags]
 	axis_locked = false

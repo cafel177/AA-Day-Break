@@ -62,6 +62,14 @@
 	placeholder_IDS = placeholder_depot_infinite
 	thing_IDS = thing_infinite_resource
 
+	[Placeholder]
+	placeholder_IDS = placeholder_corpsunpacked_tb
+	thing_ids = ger_corps_tb
+
+	[Placeholder]
+	placeholder_IDS = placeholder_depot_moneybox
+	thing_IDS = thing_currency_resource
+
 	[Badge]
 	badge_texture = GER/GERBadge01.png
 	
