@@ -3,10 +3,7 @@
 	name = "#ger_tank_spa_Thing_name"
 	editor_name = "#ger_tank_spa_Thing_editor_name"
 
-	[ElementComponent]
-	{
-		required_structures = ger_brigade_artillery
-	}
+
 
 	[BodyComponent]
 	{
@@ -99,6 +96,11 @@
 [Thing Template=AAUnitGERSPA]
 {
 	IDS = ger_tank_spa
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_artillery
+	}
 }
 
 [Thing Template=AAUnitGERSPA]
@@ -109,5 +111,10 @@
 	[LairComponent]
 	{
 		reward = 10, 10	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_artillery_tb
 	}
 }

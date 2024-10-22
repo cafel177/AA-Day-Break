@@ -27,10 +27,6 @@
 	  	}
 	}
 
-	[ElementComponent]
-	{
-		required_structures = ger_motor_pool
-	}
 	
 	[PropertiesComponent]
 	{
@@ -61,6 +57,11 @@
 [Thing Template=AAUnitGERVehicleTankAT]
 {
 	 IDS = ger_tank_destroyer
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool
+	}
 
 	[PerformerComponent]
 	{
@@ -142,6 +143,11 @@
 	[LairComponent]
 	{
 		reward = 20, 20	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool_tb
 	}
 
 	[PerformerComponent]

@@ -30,10 +30,7 @@
 		*/
 	}
 	
-	[ElementComponent]
-	{
-		required_structures = ger_motor_pool
-	}
+
 		
 	[PropertiesComponent]
 	{
@@ -93,6 +90,11 @@
 [Thing Template=AAUnitGERVehicleMediumTankBase]
 {
 	 IDS = ger_tank_medium
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool
+	}
 }
 
 [Thing Template=AAUnitGERVehicleMediumTankBase]
@@ -102,5 +104,10 @@
 	[LairComponent]
 	{
 		reward = 15, 15	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool_tb
 	}
 }

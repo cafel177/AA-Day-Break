@@ -3,10 +3,7 @@
 	name = "#rus_tank_spa_Thing_name"
 	editor_name = "#rus_tank_spa_Thing_editor_name"
 
-	[ElementComponent]
-	{
-		required_structures = rus_brigade_artillery
-	}
+
 
 	[BodyComponent]
 	{
@@ -99,6 +96,11 @@
 [Thing Template=AAUnitRUSSPA]
 {
 	IDS = rus_tank_spa
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_artillery
+	}
 }
 
 [Thing Template=AAUnitRUSSPA]
@@ -108,5 +110,10 @@
 	[LairComponent]
 	{
 		reward = 10, 10	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_artillery_tb
 	}
 }

@@ -30,7 +30,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_motor_pool
 		required_properties = tech_heavy_tank
 	}
 		
@@ -98,6 +97,11 @@
 [Thing Template=AAUnitRUSVehicleHeavyTankBase]
 {
 	IDS = rus_tank_heavy
+
+	[ElementComponent]
+	{
+		required_structures = rus_motor_pool
+	}
 }
 
 [Thing Template=AAUnitRUSVehicleHeavyTankBase]
@@ -107,5 +111,10 @@
 	[LairComponent]
 	{
 		reward = 25, 25	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = rus_motor_pool_tb
 	}
 }

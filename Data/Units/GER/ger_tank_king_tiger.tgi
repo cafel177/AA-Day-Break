@@ -38,7 +38,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = ger_motor_pool
 		required_properties = tech_heavy_tank, tech_tank_king_tiger
 	}
 		
@@ -105,6 +104,11 @@
 [Thing Template=AAUnitGERVehicleKingTigerTank]
 {
 	IDS = ger_tank_king_tiger
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool
+	}
 }
 
 [Thing Template=AAUnitGERVehicleKingTigerTank]
@@ -114,5 +118,10 @@
 	[LairComponent]
 	{
 		reward = 30, 30	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool_tb
 	}
 }
