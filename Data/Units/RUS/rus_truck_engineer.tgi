@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleHQTruck]
+[Template AAUnitRUSVehicleHQTruckEngineer Template=AAUnitRUSVehicleHQTruck]
 {
-	IDS = rus_truck_engineer
 	name = "#rus_truck_engineer_name"
 	editor_name = "#rus_truck_engineer_editor_name"
 
@@ -30,9 +29,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = rus_brigade_engineer
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -69,4 +65,20 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_engineer_select
 	}
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckEngineer]
+{
+	IDS = rus_truck_engineer
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_brigade_engineer
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckEngineer]
+{
+	IDS = rus_truck_engineer_tb
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_brigade_engineer_tb
 }

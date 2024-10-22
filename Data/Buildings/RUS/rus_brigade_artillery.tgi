@@ -1,6 +1,5 @@
-[Thing Template=AARUSBuildingPackable]
+[Template AARUSBuildingPackableArtillery Template=AARUSBuildingPackable]
 {
-	IDS = rus_brigade_artillery
 	name = "#rus_brigade_artillery_Thing_name"
 	editor_name = "#rus_brigade_artillery_Thing_editor_name"
 
@@ -38,68 +37,7 @@
 		property_IDS = ammo
 	}	
 		
-	[ResearchComponent]
-	{
-		[ResearchItem]
-		{
-			property_IDS = tech_rocket_truck
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fire_control
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}
 
-		[ResearchItem]
-		{
-			property_IDS = tech_long_range_artillery
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}	
-				
-		[ResearchItem]
-		{
-			property_IDS = tech_gyrostabilized_cannons
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_tank_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}		
-	}
 
 	[RecruitComponent]
 	{
@@ -196,4 +134,128 @@
 		audio_ids = pack_7s_sfx
 	}
 
+}
+
+[Thing Template=AARUSBuildingPackableArtillery]
+{
+	IDS = rus_brigade_artillery
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_rocket_truck
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_long_range_artillery
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_gyrostabilized_cannons
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}		
+	}
+}
+
+[Thing Template=AARUSBuildingPackableArtillery]
+{
+	IDS = rus_brigade_artillery_tb
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_long_range_artillery
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_gyrostabilized_cannons
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}		
+	}
 }

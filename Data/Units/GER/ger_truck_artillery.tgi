@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleHQTruckArtillery Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_artillery
 	name = "#ger_truck_artillery_name"
 	editor_name = "#ger_truck_artillery_editor_name"
 	
@@ -26,9 +25,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = ger_brigade_artillery
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -62,4 +58,20 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_artillery_select
 	}
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckArtillery]
+{
+	IDS = ger_truck_artillery
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_brigade_artillery
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckArtillery]
+{
+	IDS = ger_truck_artillery_tb
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_brigade_artillery_tb
 }

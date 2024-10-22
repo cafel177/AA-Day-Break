@@ -1,6 +1,5 @@
-[Thing Template=AARUSBuildingPackable]
+[Template AARUSBuildingPackableEngineer Template=AARUSBuildingPackable]
 {
-	IDS = rus_brigade_engineer
 	name = "#rus_brigade_engineer_Thing_name"
 	editor_name = "#rus_brigade_engineer_Thing_editor_name"
 
@@ -40,58 +39,6 @@
 		[Property]
 		property_IDS = oil
 	}	
-		
-	[ResearchComponent]
-	{
-	
-		[ResearchItem]
-		{
-			property_IDS = tech_oil_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_ammo_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fortifications
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-
-		[ResearchItem]
-		{
-			property_IDS = tech_construction_battalions
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-	}
 
 	[RecruitComponent]
 	{
@@ -184,4 +131,118 @@
 		audio_ids = pack_7s_sfx
 	}
 
+}
+
+[Thing Template=AARUSBuildingPackableEngineer]
+{
+	IDS = rus_brigade_engineer
+
+	[ResearchComponent]
+	{
+	
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fortifications
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+
+		[ResearchItem]
+		{
+			property_IDS = tech_construction_battalions
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+}
+
+[Thing Template=AARUSBuildingPackableEngineer]
+{
+	IDS = rus_brigade_engineer_tb
+
+	[ResearchComponent]
+	{
+	
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fortifications
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+
+		[ResearchItem]
+		{
+			property_IDS = tech_construction_battalions
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
 }

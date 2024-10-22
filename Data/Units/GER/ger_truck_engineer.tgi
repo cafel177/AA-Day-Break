@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleHQTruckEngineer Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_engineer
 	name = "#ger_truck_engineer_name"
 	editor_name = "#ger_truck_engineer_editor_name"
 
@@ -30,9 +29,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = ger_brigade_engineer
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -66,4 +62,20 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_engineer_select
 	}
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckEngineer]
+{
+	IDS = ger_truck_engineer
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_brigade_engineer
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckEngineer]
+{
+	IDS = ger_truck_engineer_tb
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_brigade_engineer_tb
 }

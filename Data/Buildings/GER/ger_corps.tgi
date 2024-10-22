@@ -96,104 +96,7 @@
 		property_ids = mg		
 	}
 
-	[ResearchComponent]
-	{		
-		[ResearchItem]
-		{
-			property_IDS = tech_advanced_infantry_training
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_advanced_armor_training
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
 
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_logistics
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 50
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_machineguns
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_marksmanship
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_sniper_rifle
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-
-		[ResearchItem]
-		{
-			property_IDS = tech_battleship
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_military_surplus
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}	
-	}
 
 	[Size]
 	{
@@ -392,6 +295,105 @@
 		[RecruitActor]
 		actor_ids = ger_truck_oil
 	}
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_armor_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}	
+	}
 }
 
 [Thing Template=GERcorpsHQ]
@@ -418,13 +420,13 @@
 		actor_ids = regiment_ger_hq_armor_tb
 
 		[RecruitActor]
-		actor_ids = ger_truck_engineer
+		actor_ids = ger_truck_engineer_tb
 		
 		[RecruitActor]
 		actor_ids = ger_truck_motor_tb
 
 		[RecruitActor]
-		actor_ids = ger_truck_artillery
+		actor_ids = ger_truck_artillery_tb
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply
@@ -434,6 +436,45 @@
 		
 		[RecruitActor]
 		actor_ids = ger_truck_oil
+	}
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_armor_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}	
 	}
 }
 
@@ -482,5 +523,104 @@
 		
 		[RecruitActor]
 		actor_ids = ger_truck_oil
+	}
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_armor_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}	
 	}	
 }

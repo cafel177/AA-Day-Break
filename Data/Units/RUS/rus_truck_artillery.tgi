@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleHQTruck]
+[Template AAUnitRUSVehicleHQTruckArtillery Template=AAUnitRUSVehicleHQTruck]
 {
-	IDS = rus_truck_artillery
 	name = "#rus_truck_artillery_name"
 	editor_name = "#rus_truck_artillery_editor_name"
 	
@@ -26,9 +25,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = rus_brigade_artillery
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -65,4 +61,20 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_artillery_select
 	}
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckArtillery]
+{
+	IDS = rus_truck_artillery
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_brigade_artillery
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckArtillery]
+{
+	IDS = rus_truck_artillery_tb
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_brigade_artillery_tb
 }

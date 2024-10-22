@@ -76,80 +76,7 @@
 		property_IDS = oil
 	}
 	
-	[ResearchComponent]
-	{	
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanized_production
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	
-		[ResearchItem]
-		{
-			property_IDS = tech_flame
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
 
-		[ResearchItem]
-		{
-			property_IDS = tech_diesel_engines
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-			
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanical_reliability
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-				
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_light_antitank
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-
-		[ResearchItem]
-		{
-			property_IDS = tech_heavy_tank
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	}
 
 	[Size]
 	{
@@ -272,6 +199,81 @@
 		actor_ids = rus_truck_corps
 	}
 
+	[ResearchComponent]
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanized_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	
+		[ResearchItem]
+		{
+			property_IDS = tech_flame
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_diesel_engines
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+			
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_light_antitank
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+
+		[ResearchItem]
+		{
+			property_IDS = tech_heavy_tank
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+
 }
 
 [Thing Template=AARUSBuildingPackableMotor]
@@ -282,6 +284,45 @@
 	{	
 		[RecruitActor]
 		actor_ids = rus_truck_corps_tb
+	}
+
+	[ResearchComponent]
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_diesel_engines
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+			
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}			
+
+		[ResearchItem]
+		{
+			property_IDS = tech_heavy_tank
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
 	}
 
 }

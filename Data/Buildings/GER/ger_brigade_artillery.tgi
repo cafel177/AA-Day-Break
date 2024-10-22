@@ -1,6 +1,5 @@
-[Thing Template=AAGERBuildingPackable]
+[Template AAGERBuildingPackableArtillery Template=AAGERBuildingPackable]
 {
-	IDS = ger_brigade_artillery
 	name = "#ger_brigade_artillery_Thing_name"
 	editor_name = "#ger_brigade_artillery_Thing_editor_name"
 
@@ -37,57 +36,7 @@
 		property_IDS = ammo
 	}	
 		
-	[ResearchComponent]
-	{
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_gyrostabilized_cannons
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fire_control
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}	
 
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_mortars
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-			
-		[ResearchItem]
-		{
-			property_IDS = tech_tank_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}		
-	}
 
 	[RecruitComponent]
 	{
@@ -250,5 +199,107 @@
 	{
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
+	}
+}
+
+[Thing Template=AAGERBuildingPackableArtillery]
+{
+	IDS = ger_brigade_artillery
+
+	[ResearchComponent]
+	{
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_gyrostabilized_cannons
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}	
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+			
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}		
+	}
+}
+
+[Thing Template=AAGERBuildingPackableArtillery]
+{
+	IDS = ger_brigade_artillery_tb
+
+	[ResearchComponent]
+	{
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_gyrostabilized_cannons
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}	
+			
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}		
 	}
 }
