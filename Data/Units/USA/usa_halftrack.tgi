@@ -115,7 +115,7 @@
 		{	
 			[AbilityDefinition Template=AARepairAction]
 			{
-				recharge_time = 3
+				recharge_time = 1
 
 				[Effect Template=RepairEffect]
 				amount = 3
