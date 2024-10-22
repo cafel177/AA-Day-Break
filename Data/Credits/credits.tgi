@@ -1122,7 +1122,7 @@
 	leading = -18
 
 	[CreditNode template=CreditsTextNames]
-	text = "@Jean Marcel Nicola?
+	text = "@Jean Marcel Nicola"
 	leading = 40
 
 	[CreditNode template=CreditsTextHeader]
