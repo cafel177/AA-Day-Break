@@ -1,6 +1,5 @@
-[Thing Template=AAGERBuildingPackable]
+[Template AAGERBuildingPackableMotor Template=AAGERBuildingPackable]
 {
-	IDS = ger_motor_pool
 	name = "#ger_motor_pool_Thing_name"
 	editor_name = "#ger_motor_pool_Thing_editor_name"
 
@@ -12,12 +11,6 @@
 	[BodyComponent]
 	health = 1500
 	defense = 0
-
-	[RecruitComponent]
-	{	
-		[RecruitActor]
-		actor_ids = ger_truck_corps
-	}
 
 	[DenizenComponent]
 	{
@@ -240,5 +233,27 @@
 	{
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
+	}
+}
+
+[Thing Template=AAGERBuildingPackableMotor]
+{
+	IDS = ger_motor_pool
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = ger_truck_corps
+	}
+}
+
+[Thing Template=AAGERBuildingPackableMotor]
+{
+	IDS = ger_motor_pool_tb
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = ger_truck_corps_tb
 	}
 }

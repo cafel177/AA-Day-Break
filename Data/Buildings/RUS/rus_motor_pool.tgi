@@ -26,9 +26,8 @@
 }
 ;;---------------------------------------------------------------------------
 
-[Thing Template=AARUSBuildingPackable]
+[Template AARUSBuildingPackableMotor Template=AARUSBuildingPackable]
 {
-	IDS = rus_motor_pool
 	name = "#rus_motor_pool_Thing_name"
 	editor_name = "#rus_motor_pool_Thing_editor_name"
 
@@ -40,12 +39,6 @@
 	[BodyComponent]
 	health = 1500
 	defense = 0
-
-	[RecruitComponent]
-	{	
-		[RecruitActor]
-		actor_ids = rus_truck_corps
-	}
 
 	[DenizenComponent]
 	{
@@ -265,6 +258,30 @@
 	{
 		actor_state = structure_packing
 		audio_ids = pack_7s_sfx
+	}
+
+}
+
+[Thing Template=AARUSBuildingPackableMotor]
+{
+	IDS = rus_motor_pool
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = rus_truck_corps
+	}
+
+}
+
+[Thing Template=AARUSBuildingPackableMotor]
+{
+	IDS = rus_motor_pool_tb
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = rus_truck_corps_tb
 	}
 
 }

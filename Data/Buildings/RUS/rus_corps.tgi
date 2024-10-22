@@ -382,7 +382,7 @@
 		actor_ids = rus_truck_engineer
 		
 		[RecruitActor]
-		actor_ids = rus_truck_motor
+		actor_ids = rus_truck_motor_tb
 
 		[RecruitActor]
 		actor_ids = rus_truck_artillery
