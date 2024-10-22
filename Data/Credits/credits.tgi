@@ -16,7 +16,7 @@
 	texture = /Credits/BBRD01.png
 
 	[CreditNode template=CreditsTextHeader]
-	text = "@                          -- TimeGate Studios, Inc. --"
+	text = "@                          -- A&A Day Break by Spica based on TimeGate Studios, Inc. --"
 	leading = 40
 
 	[CreditNode template=CreditsTextHeader]
@@ -1122,7 +1122,7 @@
 	leading = -18
 
 	[CreditNode template=CreditsTextNames]
-	text = "@Jean Marcel Nicolaï"
+	text = "@Jean Marcel Nicola?
 	leading = 40
 
 	[CreditNode template=CreditsTextHeader]
@@ -1469,7 +1469,7 @@
 
 ;; Licensing acknowledgements
 	[CreditNode template=CreditsTextNamesLeft]
-	text = "@Portions of this software are included under license.  © 2004 Numerical Design, Ltd.  All rights reserved.  Gamebryo® is a registered trademark of Numerical Design, Ltd."
+	text = "@Portions of this software are included under license.  ?2004 Numerical Design, Ltd.  All rights reserved.  Gamebryo?is a registered trademark of Numerical Design, Ltd."
 	leading = 100
 
 	[CreditNode template=CreditsTextNamesLeft]
@@ -1480,11 +1480,11 @@
 	texture = /Credits/BinkLogo.png
 
 	[CreditNode template=CreditsTextNamesLeft]
-	text = "@Uses Bink Video.  Copyright © 1997-2004 by RAD Game Tools, Inc."
+	text = "@Uses Bink Video.  Copyright ?1997-2004 by RAD Game Tools, Inc."
 	leading = 100
 
 	[CreditNode template=CreditsTextNamesLeft]
-	text = "@Uses Miles Sound System.  Copyright © 1991-2004 by RAD Game Tools, Inc."
+	text = "@Uses Miles Sound System.  Copyright ?1991-2004 by RAD Game Tools, Inc."
 	leading = 100
 
 	[CreditNode template=CreditDecalNodeData]

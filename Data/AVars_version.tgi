@@ -5,7 +5,7 @@
 	;; - minor release: incremented for major changes to the product
 	;; - patch level: incremented for each patch
 	;; - internal: (optional) used for internal or beta versions
-	string		bySpica = 1.0.5.0
+	string		bySpica = A&A Day Break 1.0
 	
 	;; Intro Video Binks
 	string	IntroVideo1 = /Video/Intro/ESRB.bik

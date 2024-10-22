@@ -44,7 +44,7 @@ drp012903 - moved game-specific AVars out
 	
 	;; App init (the rest of thsese strings are in the strings table)
 	string app_status_initializing = Initializing
-	string app_status_init_data = Loading Data
+	string app_status_init_data = A&A Day Break by Spica
 	
 	float DecalSlopeScaleBias = 0.0
 	float DecalDepthBias = -0.1
