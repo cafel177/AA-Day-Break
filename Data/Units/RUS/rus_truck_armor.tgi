@@ -11,9 +11,6 @@
 
 	[EconomyComponent]
 	{
-		[Cost]
-		money = 300
-
 		[Production]
 		ammo = 5
 		oil = 8
@@ -68,6 +65,12 @@
 {
 	IDS = rus_truck_armor
 
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 300
+	}
+
 	[ElementComponent]
 	{
 		required_structures = rus_hq_mechanized
@@ -81,6 +84,12 @@
 [Thing Template=AAUnitRUSVehicleHQTruckBase]
 {
 	IDS = rus_truck_armor_tb
+
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 150
+	}
 
 	[ElementComponent]
 	{

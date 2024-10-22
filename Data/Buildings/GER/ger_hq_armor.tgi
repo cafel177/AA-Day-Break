@@ -51,9 +51,6 @@
 	
 	[EconomyComponent]
 	{
-		[Cost]	
-		money = 150
-
 		[Production]
 		ammo = 10
 		oil = 15
@@ -253,6 +250,12 @@
 {
 	IDS = ger_hq_armor
 
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 150
+	}
+
 	[RecruitComponent]
 	{		
 		[RecruitActor]
@@ -281,6 +284,12 @@
 [Thing Template=AAGERBuildingPackableHQBase]
 {
 	IDS = ger_hq_armor_tb
+
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 75
+	}
 
 	[RecruitComponent]
 	{		

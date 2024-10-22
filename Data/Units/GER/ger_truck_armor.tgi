@@ -11,9 +11,6 @@
 
 	[EconomyComponent]
 	{
-		[Cost]
-		money = 300
-
 		[Production]
 		ammo = 7
 		oil = 10
@@ -67,6 +64,12 @@
 {
 	IDS = ger_truck_armor
 
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 300
+	}
+
 	[ElementComponent]
 	{
 		required_structures = ger_hq_mechanized
@@ -80,6 +83,12 @@
 [Thing Template=AAUnitGERVehicleHQTruckBase]
 {
 	IDS = ger_truck_armor_tb
+
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 150
+	}
 
 	[ElementComponent]
 	{
