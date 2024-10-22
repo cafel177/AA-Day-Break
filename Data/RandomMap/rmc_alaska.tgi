@@ -5,6 +5,7 @@
 	name = "#rmc_alaska_name"
 	description = "#rmc_alaska_description"
 	biome = arctic_tundra
+	weather = NONE,NONE,NONE,NONE,SNOW_LIGHT,SNOW_HEAVY
 
 /********************    TERRAIN    ********************/
 

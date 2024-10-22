@@ -5,6 +5,7 @@
 	name = "#rmc_germany_name"
 	description = "#rmc_germany_description"
 	biome = temperate_forest
+	weather = NONE,NONE,NONE,RAIN_LIGHT,RAIN_HEAVY
 
 /********************    TERRAIN    ********************/
 
