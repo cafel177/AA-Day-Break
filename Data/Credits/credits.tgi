@@ -16,7 +16,7 @@
 	texture = /Credits/BBRD01.png
 
 	[CreditNode template=CreditsTextHeader]
-	text = "@                          -- A&A Day Break by Spica based on TimeGate Studios, Inc. --"
+	text = "@                          -- AA Day Break by Spica based on TimeGate Studios, Inc. --"
 	leading = 40
 
 	[CreditNode template=CreditsTextHeader]
