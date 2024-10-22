@@ -120,7 +120,18 @@
 */
 	[ResearchComponent]
 	{
+				[ResearchItem]
+		{
+			property_IDS = tech_napalm
+			type = GLOBAL
+			research_time = 60
 		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
 		[ResearchItem]
 		{
 			property_IDS = tech_self_sealing_fuel_tanks

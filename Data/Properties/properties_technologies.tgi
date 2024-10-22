@@ -70,7 +70,7 @@
 	
 	[Modifier Template=AddModifier]
 	attribute = DETECTION_RANGE
-	amount = 5
+	amount = 35
 }
 
 [Property Template=AATechnology]
@@ -88,7 +88,7 @@
 
 	[Modifier Template=AddModifier]
 	attribute = DV
-	amount = 5
+	amount = 10
 }
 
 [Property Template=AATechnology]
