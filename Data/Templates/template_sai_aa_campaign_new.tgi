@@ -215,6 +215,16 @@
 				one_time_bonus				= 200
 				repeat_penalty				= 1000
 			}	
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= mechhq
+			}
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= armorhq
+			}
 		} ;; Recruiting
 
 		[ActorPriority]

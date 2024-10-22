@@ -211,6 +211,16 @@
 				property_ids				= infhq  
 				one_time_bonus				= 200
 			}
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= mechhq
+			}
+
+			[SpecificRecruitRequest]
+			{
+				property_ids				= armorhq
+			}
 		} ;; Recruiting
 
 		[ActorPriority]
