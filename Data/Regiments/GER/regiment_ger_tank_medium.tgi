@@ -64,6 +64,11 @@
 {
 	IDS = regiment_ger_tank_medium_tb
 
+	[LairComponent]
+	{
+		reward = 112, 112	
+	}
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy

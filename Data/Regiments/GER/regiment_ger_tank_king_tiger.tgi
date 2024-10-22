@@ -65,6 +65,11 @@
 {
 	IDS = regiment_ger_tank_king_tiger_tb
 
+	[LairComponent]
+	{
+		reward = 187, 187	
+	}
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy

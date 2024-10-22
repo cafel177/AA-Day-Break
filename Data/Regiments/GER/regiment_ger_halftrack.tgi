@@ -70,6 +70,11 @@
 {
 	IDS = regiment_ger_halftrack_tb
 
+	[LairComponent]
+	{
+		reward = 20, 20	
+	}
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_tiny
