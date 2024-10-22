@@ -110,4 +110,9 @@
 [Thing Template=AAUnitGERVehicleKingTigerTank]
 {
 	IDS = ger_tank_king_tiger_tb
+
+	[LairComponent]
+	{
+		reward = 30, 30	
+	}
 }

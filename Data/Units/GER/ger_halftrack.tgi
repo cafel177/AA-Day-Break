@@ -126,6 +126,6 @@
 
 	[LairComponent]
 	{
-		reward = 4, 4	
+		reward = 5, 5	
 	}
 }

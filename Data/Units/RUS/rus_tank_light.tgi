@@ -129,7 +129,7 @@
 
 	[LairComponent]
 	{
-		reward = 5, 5	
+		reward = 8, 8	
 	}
 
 	[PerformerComponent]
