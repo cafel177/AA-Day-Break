@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleHQTruckBase Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_armor
 	name = "#ger_truck_armor_name"
 	editor_name = "#ger_truck_armor_editor_name"
 
@@ -23,18 +22,9 @@
    		[Upkeep]
 		building_limit_consumed = 0
 	}
-
-	[ElementComponent]
-	{
-		required_structures = ger_hq_mechanized
-		required_properties = armorhqproduction
-	}
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = ger_hq_armor
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -71,4 +61,31 @@
 		resource_prefix = GERTruckBedless/GERTruckBedless
 		icon = /UI/Game/BuildingButtons/IconHQArmor.png
 	}
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckBase]
+{
+	IDS = ger_truck_armor
+
+	[ElementComponent]
+	{
+		required_structures = ger_hq_mechanized
+		required_properties = armorhqproduction
+	}
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_armor
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckBase]
+{
+	IDS = ger_truck_armor_tb
+
+	[ElementComponent]
+	{
+		required_properties = armorhqproduction
+	}
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_armor_tb
 }

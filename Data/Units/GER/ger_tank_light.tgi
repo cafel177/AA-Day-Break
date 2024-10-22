@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleLightTank]
+[Template AAUnitGERVehicleLightTankBase Template=AAUnitGERVehicleLightTank]
 {
-	IDS = ger_tank_light
 	name = "#ger_tank_light_name"
 	editor_name = "#ger_tank_light_editor_name"
 	
@@ -46,6 +45,24 @@
 		property_IDS = combat_unit
 	}
 	
+	[View]
+	{
+		resource_prefix = GERTankLight/GERTankLight	
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERTankLight/GERTankLightRecoil1.kf
+		}
+	}
+}
+
+[Thing Template=AAUnitGERVehicleLightTankBase]
+{
+	IDS = ger_tank_light
+
 	[PerformerComponent]
 	{
 		[Ability template=AATurretAttackLocal]
@@ -77,7 +94,7 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = at_stun_ger3
+						IDS = at_stun_ger4
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 1
 						enchantment_type = ench_type_stun1
@@ -97,7 +114,7 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = at_stun_ger3_2
+						IDS = at_stun_ger4_2
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 1
 						enchantment_type = ench_type_slow
@@ -114,17 +131,78 @@
 			}
 		}
 	}
-	
-	[View]
+}
+
+[Thing Template=AAUnitGERVehicleLightTankBase]
+{
+	IDS = ger_tank_light_tb
+
+	[PerformerComponent]
 	{
-		resource_prefix = GERTankLight/GERTankLight	
-		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERTankLight/GERTankLightRecoil1.kf
+		[Ability template=AATurretAttackLocal]
+		{
+			
+			[AbilityDefinition Template=AALightTankGun]
+			{				
+				name = "#ger_tank_light_AbilityDefinition_name"
+				recharge_time = 6
+				range = 25
+				area = 2
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 50
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_cannon_light
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger5
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 1
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+				
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY -TANK
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger5_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 1
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+			}
 		}
 	}
 }

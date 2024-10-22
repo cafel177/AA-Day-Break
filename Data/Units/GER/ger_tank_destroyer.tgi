@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleMediumTank]
+[Template AAUnitGERVehicleTankAT Template=AAUnitGERVehicleMediumTank]
 {
-	IDS = ger_tank_destroyer
 	name = "#ger_tank_destroyer_name"
 	editor_name = "#ger_tank_destroyer_editor_name"
 
@@ -43,8 +42,26 @@
 		
 		[Property]
 		property_IDS = combat_unit
-	}
+	}	
+	
+	[View]
+	{
+		resource_prefix = GERTankDestroyer/GERTankDestroyer
 		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERTankDestroyer/GERTankDestroyerRecoil1.kf
+		}
+	}
+}
+
+[Thing Template=AAUnitGERVehicleTankAT]
+{
+	 IDS = ger_tank_destroyer
+
 	[PerformerComponent]
 	{
 
@@ -116,17 +133,81 @@
 			}
 		}
 	}
-	
-	[View]
+}
+
+[Thing Template=AAUnitGERVehicleTankAT]
+{
+	 IDS = ger_tank_destroyer_tb
+
+	[PerformerComponent]
 	{
-		resource_prefix = GERTankDestroyer/GERTankDestroyer
+
+
+		[Ability template=AAProjectileLocal]
+		{
+			[AbilityDefinition Template=AAAntiTankGun]
+			{				
+				name = "#ger_tank_destroyer_AbilityDefinition_name"
+				recharge_time = 6
+				area = 4
+				range = 40
+				max_targets = 6
+				attenuation_range_min = 1
+				attenuation_factor_max = 0.2
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 80
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger3
+						name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun2
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
 		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERTankDestroyer/GERTankDestroyerRecoil1.kf
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+				
+				[Effect Template=EnchantmentEffect]
+				{
+
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger3_2
+						name = "#gbr_tank_destroyer_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png		
+		
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_cannon_heavy
+			}
 		}
 	}
 }

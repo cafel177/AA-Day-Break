@@ -43,7 +43,7 @@
 [Template RUSTankCO Template=AAUnitRUSVehicleMediumTank]
 {
 	name = "#rus_tank_co_Thing_name"
-	
+
 	[BodyComponent]
 	{
 		health = 440
@@ -119,6 +119,12 @@
 [Thing Template=RUSTankCO]
 {
 	IDS = rus_tank_co
+	editor_name = "#rus_tank_co_Thing_editor_name"
+}
+
+[Thing Template=RUSTankCO]
+{
+	IDS = rus_tank_co_tb
 	editor_name = "#rus_tank_co_Thing_editor_name"
 }
 

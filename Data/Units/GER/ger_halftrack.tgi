@@ -72,10 +72,8 @@
 	IDS = ger_halftrack
 }
 
-[Thing Template=GERHalftrack]
+[Template GERHalftrackRecon Template=GERHalftrack]
 {
-	IDS = ger_halftrack_recon
-
 	[ElementComponent]
 	morale_value = 7
 
@@ -115,4 +113,14 @@
 			}
 		}
 	}
+}
+
+[Thing Template=GERHalftrackRecon]
+{
+	IDS = ger_halftrack_recon
+}
+
+[Thing Template=GERHalftrackRecon]
+{
+	IDS = ger_halftrack_recon_tb
 }

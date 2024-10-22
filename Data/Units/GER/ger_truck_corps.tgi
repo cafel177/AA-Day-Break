@@ -74,6 +74,15 @@
 
 [Thing Template=AAUnitGERVehicleHQTruckCorp ]
 {
+	IDS = ger_truck_corps_tb
+	editor_name = "#ger_truck_corps_Thing_editor_name"
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_corps_tb
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckCorp ]
+{
 	IDS = ger_truck_corps_dynamic
 	editor_name = "#ger_truck_corps_dynamic_editor_name"
 

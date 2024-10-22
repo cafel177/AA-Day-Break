@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHeavyTank]
+[Template AAUnitGERVehicleKingTigerTank Template=AAUnitGERVehicleHeavyTank]
 {
-	IDS = ger_tank_king_tiger
 	name = "#ger_tank_king_tiger_name"
 	editor_name = "#ger_tank_king_tiger_editor_name"
 
@@ -101,4 +100,14 @@
 			kf = GERTankKingTiger/GERTankKingTigerRecoil1.kf
 		}
 	}
+}
+
+[Thing Template=AAUnitGERVehicleKingTigerTank]
+{
+	IDS = ger_tank_king_tiger
+}
+
+[Thing Template=AAUnitGERVehicleKingTigerTank]
+{
+	IDS = ger_tank_king_tiger_tb
 }

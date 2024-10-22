@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleMediumTank]
+[Template AAUnitRUSVehicleMediumTankBase Template=AAUnitRUSVehicleMediumTank]
 {
-	IDS = rus_tank_medium
 	name = "#rus_tank_medium_name"
 	editor_name = "#rus_tank_medium_editor_name"
 
@@ -87,4 +86,14 @@
 			kf = RUSTankMedium/RUSTankMediumRecoil1.kf
 		}
 	}
+}
+
+[Thing Template=AAUnitRUSVehicleMediumTankBase]
+{
+	IDS = rus_tank_medium
+}
+
+[Thing Template=AAUnitRUSVehicleMediumTankBase]
+{
+	IDS = rus_tank_medium_tb
 }

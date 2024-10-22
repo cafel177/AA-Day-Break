@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationArmor]
+[Template AARUSOrganizationArmorTankAT Template=AARUSOrganizationArmor]
 {	
-	IDS = regiment_rus_tank_at
 	name = "#regiment_rus_tank_destroyer_name"
 	editor_name = "#regiment_rus_tank_destroyer_editor_name"
 
@@ -42,6 +41,15 @@
 		audio_ids = rus_tank_destroyer_attack
 	}		
 	
+
+	
+	[ExperienceComponent template=AAArmorExperienceComponent]
+}
+
+[Thing Template=AARUSOrganizationArmorTankAT]
+{
+	IDS = regiment_rus_tank_at
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -55,6 +63,24 @@
 		[Slot]	;; captain
 		element_IDS = rus_tank_co
 	}
+}
+
+
+[Thing Template=AARUSOrganizationArmorTankAT]
+{
+	IDS = regiment_rus_tank_at_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = rus_tank_destroyer_tb
 	
-	[ExperienceComponent template=AAArmorExperienceComponent]
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_tank_co_tb
+	}
 }

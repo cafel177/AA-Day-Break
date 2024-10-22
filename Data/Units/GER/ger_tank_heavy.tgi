@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHeavyTank]
+[Template AAUnitGERVehicleHeavyTankBase Template=AAUnitGERVehicleHeavyTank]
 {
-	IDS = ger_tank_heavy
 	name = "#ger_tank_heavy_name"
 	editor_name = "#ger_tank_heavy_editor_name"
 
@@ -102,3 +101,13 @@
 		}
 	}
 }
+
+[Thing Template=AAUnitGERVehicleHeavyTankBase]
+{
+	 IDS = ger_tank_heavy
+}
+
+[Thing Template=AAUnitGERVehicleHeavyTankBase]
+{
+	 IDS = ger_tank_heavy_tb
+}	

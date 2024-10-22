@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationArmor]
+[Template AARUSOrganizationArmorTankLight Template=AARUSOrganizationArmor]
 {	
-	IDS = regiment_rus_tank_light
 	name = "#regiment_rus_tank_light_name"
 	editor_name = "#regiment_rus_tank_light_editor_name"
 
@@ -31,8 +30,20 @@
 
 		[WhenCommandedAggressive Template=FXC_PlaySFX]
 		audio_ids = rus_tank_light_attack
-	}		
+	}			
+
 	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AARUSOrganizationArmorTankLight]
+{
+	IDS = regiment_rus_tank_light
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -46,10 +57,23 @@
 		[Slot]	;; captain
 		element_IDS = rus_tank_co
 	}
-	
-	[PropertiesComponent]
+}
+
+[Thing Template=AARUSOrganizationArmorTankLight]
+{
+	IDS = regiment_rus_tank_light_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		[Property]
-		property_ids = tank_company
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = rus_tank_light_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_tank_co_tb
 	}
 }

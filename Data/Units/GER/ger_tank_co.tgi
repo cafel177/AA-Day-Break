@@ -115,6 +115,11 @@
 	editor_name = "#ger_tank_co_Thing_editor_name"
 }
 
+[Thing Template=GERTankCO]
+{
+	IDS = ger_tank_co_tb
+	editor_name = "#ger_tank_co_Thing_editor_name"
+}
 
 ;; For the Special Op - Panzer Hohle
 [Thing Template=GERTankCO]

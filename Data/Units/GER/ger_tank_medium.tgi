@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleMediumTank]
+[Template AAUnitGERVehicleMediumTankBase Template=AAUnitGERVehicleMediumTank]
 {
-	IDS = ger_tank_medium
 	name = "#ger_tank_medium_name"
 	editor_name = "#ger_tank_medium_editor_name"
 
@@ -89,4 +88,14 @@
 			kf = GERTankMedium/GERTankMediumRecoil1.kf
 		}
 	}
+}
+
+[Thing Template=AAUnitGERVehicleMediumTankBase]
+{
+	 IDS = ger_tank_medium
+}
+
+[Thing Template=AAUnitGERVehicleMediumTankBase]
+{
+	 IDS = ger_tank_medium_tb
 }

@@ -1,6 +1,5 @@
-[Thing Template=AARUSBuildingPackableHQ]
+[Template AARUSBuildingPackableHQBase Template=AARUSBuildingPackableHQ]
 {
-	IDS = rus_hq_armor
 	name = "#rus_hq_armor_Thing_name"
 	editor_name = "#rus_hq_armor_Thing_editor_name"
 
@@ -104,27 +103,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-	
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_light
-		
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_medium
-		
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_at
-		
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_artillery
-
-		[RecruitActor]
-		actor_ids = rus_truck_supply
 	}
 	
 	[ResearchComponent]
@@ -249,5 +227,60 @@
 			location = door_04
 			attached = true
 		}
+	}
+}
+
+[Thing Template=AARUSBuildingPackableHQBase]
+{
+	IDS = rus_hq_armor
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_light
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_medium
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_at
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_artillery
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+	}
+}
+
+[Thing Template=AARUSBuildingPackableHQBase]
+{
+	IDS = rus_hq_armor_tb
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_rus_halftrack_tb
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_light_tb
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_medium_tb
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_heavy_tb
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_at_tb
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_artillery_tb
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
 	}
 }

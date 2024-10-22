@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationArmor]
+[Template AAGEROrganizationArmorTankMedium Template=AAGEROrganizationArmor]
 {	
-	IDS = regiment_ger_tank_medium
 	name = "#regiment_ger_tank_medium_name"
 	editor_name = "#regiment_ger_tank_medium_editor_name"
 
@@ -33,6 +32,19 @@
 		audio_ids = ger_tank_medium_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankMedium]
+{
+	IDS = regiment_ger_tank_medium
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -46,10 +58,23 @@
 		[Slot]	;; captain
 		element_IDS = ger_tank_co
 	}
-	
-	[PropertiesComponent]
+}
+
+[Thing Template=AAGEROrganizationArmorTankMedium]
+{
+	IDS = regiment_ger_tank_medium_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		[Property]
-		property_ids = tank_company
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_medium_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_tb
 	}
 }

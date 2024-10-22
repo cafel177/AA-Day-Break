@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationHQ]
+[Template AAGEROrganizationTankHQ Template=AAGEROrganizationHQ]
 {
-	IDS = regiment_ger_hq_armor
 	name = "#regiment_ger_hq_armor_name"
 	editor_name = "#regiment_ger_hq_armor_editor_name"
 
@@ -31,6 +30,13 @@
 		audio_ids = ger_truck_deployed
 	}
 	
+
+}
+
+[Thing Template=AAGEROrganizationTankHQ]
+{
+	IDS = regiment_ger_hq_armor
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
@@ -50,5 +56,31 @@
 		
 		[Slot]	;; captain
 		element_IDS = ger_truck_armor
+	}
+}
+
+[Thing Template=AAGEROrganizationTankHQ]
+{
+	IDS = regiment_ger_hq_armor_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq_mobile
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_truck_armor_tb
 	}
 }

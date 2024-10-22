@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationMobile]
+[Template AAGEROrganizationMobileBase Template=AAGEROrganizationMobile]
 {	
-	IDS = regiment_ger_halftrack
 	name = "#regiment_ger_halftrack_name"
 	editor_name = "#regiment_ger_halftrack_editor_name"
 
@@ -32,20 +31,6 @@
 		audio_ids = ger_halftrack_attack
 	}		
 	
-	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
-	{	
-		layout_IDS = regiment_vehicle_tiny
-
-		[Slot]	;; front
-		element_IDS = ger_halftrack_recon
-		
-		[Slot]	;; support
-		element_IDS = null
-
-		[Slot]	;; captain
-		element_IDS = ger_car_armored_co
-	}
-	
 	[PropertiesComponent]
 	{	
 		[Property]
@@ -59,5 +44,43 @@
 
 		[Property]
 		property_IDS = engineer	
+	}
+}
+
+[Thing Template=AAGEROrganizationMobileBase]
+{
+	IDS = regiment_ger_halftrack
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = ger_halftrack_recon
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = ger_car_armored_co
+	}
+}
+
+[Thing Template=AAGEROrganizationMobileBase]
+{
+	IDS = regiment_ger_halftrack_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = ger_halftrack_recon_tb
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = ger_car_armored_co
 	}
 }

@@ -1,5 +1,13 @@
 [Template AAUnitGERSPA Inherit=AAUnitGERVehicleSPA]
 {
+	name = "#ger_tank_spa_Thing_name"
+	editor_name = "#ger_tank_spa_Thing_editor_name"
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_artillery
+	}
+
 	[BodyComponent]
 	{
 		health = 300
@@ -36,35 +44,6 @@
 	}
 	
 	[PerformerComponent]
-	
-	[View]
-	{
-		resource_prefix = GERTankSPA/GERTankSPA
-		
-		[AspectNormal]
-		{						
-			[Animation Template=ObjectAnimationCustomPlay]
-			ids = Recoil1
-			length = 1
-			kf = GERTankSPA/GERTankSPARecoil1.kf
-		}
-	}
-}
-
-;;----------------------------- UNITS ------------------------ ;;
-
-[Thing Template=AAUnitGERSPA]
-{
-	IDS = ger_tank_spa
-	name = "#ger_tank_spa_Thing_name"
-	editor_name = "#ger_tank_spa_Thing_editor_name"
-
-	[ElementComponent]
-	{
-		required_structures = ger_brigade_artillery
-	}
-
-	[PerformerComponent]
 	{
 		
 		[Ability Template=AAProjectileLocal]
@@ -100,4 +79,29 @@
 
 		}
 	}
+	
+	[View]
+	{
+		resource_prefix = GERTankSPA/GERTankSPA
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERTankSPA/GERTankSPARecoil1.kf
+		}
+	}
+}
+
+;;----------------------------- UNITS ------------------------ ;;
+
+[Thing Template=AAUnitGERSPA]
+{
+	IDS = ger_tank_spa
+}
+
+[Thing Template=AAUnitGERSPA]
+{
+	IDS = ger_tank_spa_tb
 }

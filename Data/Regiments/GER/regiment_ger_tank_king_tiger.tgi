@@ -1,6 +1,6 @@
-[Thing Template=AAGEROrganizationArmor]
+[Template AAGEROrganizationArmorTankKingTiger Template=AAGEROrganizationArmor]
 {	
-	IDS = regiment_ger_tank_king_tiger
+
 	name = "#regiment_ger_tank_king_tiger_name"
 	editor_name = "#regiment_ger_tank_king_tiger_editor_name"
 
@@ -33,6 +33,19 @@
 		audio_ids = ger_tank_king_tiger_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankKingTiger]
+{
+	IDS = regiment_ger_tank_king_tiger
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -46,10 +59,23 @@
 		[Slot]	;; captain
 		element_IDS = ger_tank_co
 	}
-	
-	[PropertiesComponent]
+}
+
+[Thing Template=AAGEROrganizationArmorTankKingTiger]
+{
+	IDS = regiment_ger_tank_king_tiger_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		[Property]
-		property_ids = tank_company
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_king_tiger_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_tb
 	}
 }

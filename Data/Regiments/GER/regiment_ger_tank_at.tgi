@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationArmor]
+[Template AAGEROrganizationArmorTankAT Template=AAGEROrganizationArmor]
 {	
-	IDS = regiment_ger_tank_at
 	name = "#regiment_ger_tank_destroyer_name"
 	editor_name = "#regiment_ger_tank_destroyer_editor_name"
 
@@ -42,6 +41,15 @@
 		audio_ids = ger_tank_destroyer_attack
 	}		
 	
+
+	
+	[ExperienceComponent template=AAArmorExperienceComponent]
+}
+
+[Thing Template=AAGEROrganizationArmorTankAT]
+{
+	IDS = regiment_ger_tank_at
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_light
@@ -55,6 +63,23 @@
 		[Slot]	;; captain
 		element_IDS = ger_tank_co
 	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankAT]
+{
+	IDS = regiment_ger_tank_at_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_destroyer_tb
 	
-	[ExperienceComponent template=AAArmorExperienceComponent]
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_tb
+	}
 }

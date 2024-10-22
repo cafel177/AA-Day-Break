@@ -72,11 +72,8 @@
 	IDS = rus_halftrack
 }
 
-
-[Thing Template=RUSHalftrack]
+[Template RUSHalftrackRecon Template=RUSHalftrack]
 {
-	IDS = rus_halftrack_recon
-
 	[ElementComponent]
 	morale_value = 7
 
@@ -116,4 +113,14 @@
 			}
 		}
 	}
+}
+
+[Thing Template=RUSHalftrackRecon]
+{
+	IDS = rus_halftrack_recon
+}
+
+[Thing Template=RUSHalftrackRecon]
+{
+	IDS = rus_halftrack_recon_tb
 }

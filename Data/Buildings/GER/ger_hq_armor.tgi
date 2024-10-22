@@ -1,6 +1,5 @@
-[Thing Template=AAGERBuildingPackableHQ]
+[Template AAGERBuildingPackableHQBase Template=AAGERBuildingPackableHQ]
 {
-	IDS = ger_hq_armor
 	name = "#ger_hq_armor_Thing_name"
 	editor_name = "#ger_hq_armor_Thing_editor_name"
 
@@ -98,30 +97,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-	
-	[RecruitComponent]
-	{		
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_light
-		
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_medium
-		
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_king_tiger
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_at
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_artillery
-
-		[RecruitActor]
-		actor_ids = ger_truck_supply
 	}
 	
 	[ResearchComponent]
@@ -271,5 +246,66 @@
 			location = door_02
 			attached = true
 		}
+	}
+}
+
+[Thing Template=AAGERBuildingPackableHQBase]
+{
+	IDS = ger_hq_armor
+
+	[RecruitComponent]
+	{		
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_light
+		
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_medium
+		
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_king_tiger
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_at
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_artillery
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+	}
+}
+
+[Thing Template=AAGERBuildingPackableHQBase]
+{
+	IDS = ger_hq_armor_tb
+
+	[RecruitComponent]
+	{		
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_tb
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_light_tb
+		
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_medium_tb
+		
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_heavy_tb
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_king_tiger_tb
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_at_tb
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_artillery_tb
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
 	}
 }

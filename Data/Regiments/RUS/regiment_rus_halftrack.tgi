@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationMobile]
+[Template AARUSOrganizationMobileBase Template=AARUSOrganizationMobile]
 {	
-	IDS = regiment_rus_halftrack
 	name = "#regiment_rus_halftrack_name"
 	editor_name = "#regiment_rus_halftrack_editor_name"
 
@@ -32,19 +31,7 @@
 		audio_ids = rus_halftrack_attack
 	}		
 	
-	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
-	{	
-		layout_IDS = regiment_vehicle_tiny
 
-		[Slot]	;; front
-		element_IDS = rus_halftrack_recon
-		
-		[Slot]	;; support
-		element_IDS = null
-
-		[Slot]	;; captain
-		element_IDS = rus_car_armored_co
-	}
 	
 	[PropertiesComponent]
 	{	
@@ -59,5 +46,43 @@
 
 		[Property]
 		property_IDS = engineer	
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileBase]
+{
+	IDS = regiment_rus_halftrack
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = rus_halftrack_recon
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileBase]
+{
+	IDS = regiment_rus_halftrack_tb
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = rus_halftrack_recon_tb
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co
 	}
 }
