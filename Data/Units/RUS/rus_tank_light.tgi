@@ -127,6 +127,11 @@
 {
 	IDS = rus_tank_light_tb
 
+	[LairComponent]
+	{
+		reward = 5, 5	
+	}
+
 	[PerformerComponent]
 	{
 		[Ability template=AATurretAttackLocal]

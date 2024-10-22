@@ -123,4 +123,9 @@
 [Thing Template=GERHalftrackRecon]
 {
 	IDS = ger_halftrack_recon_tb
+
+	[LairComponent]
+	{
+		reward = 4, 4	
+	}
 }
