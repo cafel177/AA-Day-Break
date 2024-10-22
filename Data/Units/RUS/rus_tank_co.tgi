@@ -126,6 +126,11 @@
 {
 	IDS = rus_tank_co_tb
 	editor_name = "#rus_tank_co_Thing_editor_name"
+
+	[LairComponent]
+	{
+		reward = 7, 7	
+	}
 }
 
 ;; For the Special Op Maskirovka

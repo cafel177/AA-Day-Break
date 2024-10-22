@@ -104,4 +104,10 @@
 [Thing Template=AAUnitGERSPA]
 {
 	IDS = ger_tank_spa_tb
+
+
+	[LairComponent]
+	{
+		reward = 10, 10	
+	}
 }

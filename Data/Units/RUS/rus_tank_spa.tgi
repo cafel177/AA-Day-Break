@@ -104,4 +104,9 @@
 [Thing Template=AAUnitRUSSPA]
 {
 	IDS = rus_tank_spa_tb
+
+	[LairComponent]
+	{
+		reward = 10, 10	
+	}
 }

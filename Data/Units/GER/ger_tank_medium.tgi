@@ -98,4 +98,9 @@
 [Thing Template=AAUnitGERVehicleMediumTankBase]
 {
 	 IDS = ger_tank_medium_tb
+
+	[LairComponent]
+	{
+		reward = 15, 15	
+	}
 }

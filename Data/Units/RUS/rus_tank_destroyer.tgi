@@ -142,6 +142,11 @@
 {
 	IDS = rus_tank_destroyer_tb
 
+	[LairComponent]
+	{
+		reward = 20, 20	
+	}
+
 	[PerformerComponent]
 	{
 
