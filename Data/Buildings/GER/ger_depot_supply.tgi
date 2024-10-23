@@ -18,15 +18,19 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 50
+		money = 5
 		
 		[Upkeep]
 		
 		[Production]
-		ammo = 5
-		oil = 5
+
 	}
 	
+	[LairComponent]
+	{
+		reward = 2, 3	
+	}
+
 	[PropertiesComponent]
 	{	
 		[Property]

@@ -26,7 +26,7 @@
 		ammo = 12
 
 		[Upkeep]
-		building_limit_consumed = 1
+		building_limit_consumed = 0
 	}
 	
 	[MobileDeploymentComponent]
