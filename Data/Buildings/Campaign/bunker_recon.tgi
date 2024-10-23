@@ -11,8 +11,8 @@
 	
 	[BodyComponent]
 	{
-		health = 500
-		defense = 2
+		health = 400
+		defense = 0
 	}
 	
 	[SupplyComponent]
@@ -28,7 +28,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 5
 		
 		[Production]
 		
