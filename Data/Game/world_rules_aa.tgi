@@ -5,7 +5,7 @@
 	description = "#world_rules_DifficultyLevel_description"
 	type = enum_specified
 	always_editable = true
-	default = MEDIUM
+	default = hard
 	
 	;; NOTE: enum values specified by [DifficultyLevel] nodes.
 }
@@ -49,7 +49,7 @@
 	description = "#world_rules_aa_StartingExperience_description"
 	name = "#world_rules_aa_StartingExperience_name"
 	type = fixed
-	editbox_max_value = 5000
+	editbox_max_value = 99999
 	default = 200	
 }
 

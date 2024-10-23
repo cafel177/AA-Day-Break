@@ -44,7 +44,7 @@
 	bool	AllowSellUnderSiege			= false
 	
 	;; economy a.k.a. unit limit
-	int		EconomyLimitedResourceMax 	= 20
+	int		EconomyLimitedResourceMax 	= 30
 
 	;; when the sun's diffuse RGB sum (R+G+B) is less than this threshold
 	;; it is considered nighttime. any VFX that are nightonly will only
