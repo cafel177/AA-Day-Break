@@ -51,7 +51,7 @@
 		element_IDS = rus_infantry_recon
 		
 		[Slot]	;; rear guard 1
-		element_IDS = null
+		element_IDS = rus_infantry_recon
 
 		[Slot]	;; rear guard 2
 		element_IDS = null
