@@ -305,10 +305,6 @@ USAGE:
 	[RequiredObject]
 	object_ids = placeholder_corpsunpacked_tb
 	position = 0,0
-	
-	[RequiredObject]
-	object_ids = placeholder_depot_supply
-	position = 0,0
 
 	[RequiredObject]
 	object_ids = placeholder_depot_moneybox
@@ -316,6 +312,14 @@ USAGE:
 
 	[RequiredObject]
 	object_ids = placeholder_regiments_halftrack
+	position = 0,0
+
+	[RequiredObject]
+	object_ids = placeholder_regiments_halftrack
+	position = 0,0
+
+	[RequiredObject]
+	object_ids = placeholder_regiments_tank_light
 	position = 0,0
 
 	[GroupRestriction]
