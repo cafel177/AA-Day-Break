@@ -1,7 +1,7 @@
 /**************************************************************************
 
 template_audio.tgi
-Copyright © 2002-2003 TimeGate Studios
+Copyright ?2002-2003 TimeGate Studios
 
 DESCRIPTION: Audio declarations
 
@@ -82,7 +82,7 @@ USAGE:
 	;; The first number of the range specifies how steeply the sound falloff curve should be.
 	;; Lower numbers make for steeper curves, 0 is not allowed.
 	;; The second number specifies at what range the sound should be muted entirely.
-	point2 range = 4, 64
+	point2 range = 10, 512
 	
 	;; How many of these sounds can be playing at the same time. More than 4 is just wasting 
 	;; channels. Sounds that should never overlap should have a limit of 1.
