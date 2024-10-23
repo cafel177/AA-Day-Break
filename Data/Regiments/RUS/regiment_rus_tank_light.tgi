@@ -68,6 +68,17 @@
 		reward = 75, 75	
 	}
 
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+
+    [RandomActor]
+    random_actor_ids = random_tank_regiments
+    weight = 1
+
 	[Placement]
 	placement_group_ids = null
 

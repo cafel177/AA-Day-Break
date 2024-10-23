@@ -55,8 +55,14 @@
 		ids = village_easterneurope
 		name = "#mg_rmc_easterneurope_village_easterneurope_name"
 
+	    area_factor = 2.5
+
 		[Object]
 		object_ids = random_city_easterneurope
+		weight = 0.0
+
+		[Object]
+		object_ids = random_tank_regiments
 		weight = 1
 	}
 

@@ -461,6 +461,12 @@
 				property_IDS				= engineer
 				value						= -5000
 			}
+
+			[ActorPreference]
+			{
+				property_IDS				= economic_truck
+				value						= -5000000
+			}
 		}
 
 		[GoalPriority]

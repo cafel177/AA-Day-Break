@@ -70,6 +70,18 @@
 	placeholder_IDS = placeholder_depot_moneybox
 	thing_IDS = thing_currency_resource_tb
 
+	[Placeholder]
+	placeholder_IDS = placeholder_regiments_tank_light
+	thing_IDS = regiment_ger_tank_light_tb
+
+	[Placeholder]
+	placeholder_IDS = placeholder_regiments_tank_medium
+	thing_IDS = regiment_ger_tank_medium_tb
+
+	[Placeholder]
+	placeholder_IDS = placeholder_regiments_tank_heavy
+	thing_IDS = regiment_ger_tank_heavy_tb
+
 	[Badge]
 	badge_texture = USA/USABadge01.png
 	

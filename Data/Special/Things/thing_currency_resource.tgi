@@ -55,6 +55,6 @@
 	[EconomyComponent]
 	{
 		[Production]
-		money = 100
+		money = 120
 	}
 }

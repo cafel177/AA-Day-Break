@@ -1,0 +1,34 @@
+[Template AARandomTankRegiments Inherit=RandomActor]
+{
+	[Flags]
+	revealed = true
+	axis_locked = false
+	targetable = true
+	tile_locked = false
+	
+	[Placement]
+	placement_group_IDS = group_special
+	placement_category = building
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1.5
+		square_size = 0
+	}
+
+	[View]
+	{
+		resource_prefix = RandomVillage/RandomVillage
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+}
+
+/********************    N. AFRICAN VILLAGES    ********************/
+
+[Thing Template=AARandomTankRegiments]
+IDS = random_tank_regiments
+name = "#random_tank_regiments_name"
+

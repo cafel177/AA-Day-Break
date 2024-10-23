@@ -69,6 +69,13 @@
 		reward = 162, 162	
 	}
 
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+
 	[Placement]
 	placement_group_ids = null
 
