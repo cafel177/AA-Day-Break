@@ -444,8 +444,7 @@
 
 	[GoalEngine]
 	{
-		build_queue_max_items				= 1
-
+		build_queue_max_items				= 2
 		[GoalPriority]
 		{
 			goal_IDS						= EXPLORE
@@ -460,12 +459,6 @@
 			{
 				property_IDS				= engineer
 				value						= -5000
-			}
-
-			[ActorPreference]
-			{
-				property_IDS				= economic_truck
-				value						= -5000000
 			}
 		}
 
