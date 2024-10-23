@@ -79,6 +79,9 @@
 	IDS = rus_truck_corps_tb
 	editor_name = "#rus_truck_corps_Thing_editor_name"
 
+	[Placement]
+	placement_group_ids = null
+
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = rus_corps_tb
 }

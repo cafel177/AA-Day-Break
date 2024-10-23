@@ -115,6 +115,9 @@
 {
 	 IDS = ger_tank_heavy_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 25, 25	

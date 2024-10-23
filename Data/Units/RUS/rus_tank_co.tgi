@@ -127,6 +127,9 @@
 	IDS = rus_tank_co_tb
 	editor_name = "#rus_tank_co_Thing_editor_name"
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 7, 7	

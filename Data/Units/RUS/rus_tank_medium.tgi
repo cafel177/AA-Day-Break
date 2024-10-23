@@ -98,6 +98,9 @@
 {
 	IDS = rus_tank_medium_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 15, 15	

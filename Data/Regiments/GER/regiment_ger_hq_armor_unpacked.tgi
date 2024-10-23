@@ -60,6 +60,9 @@
 {
 	IDS = regiment_ger_hq_armor_unpacked_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq

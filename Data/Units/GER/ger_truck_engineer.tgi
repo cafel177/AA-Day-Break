@@ -76,6 +76,9 @@
 {
 	IDS = ger_truck_engineer_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = ger_brigade_engineer_tb
 }

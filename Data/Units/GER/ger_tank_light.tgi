@@ -137,6 +137,9 @@
 {
 	IDS = ger_tank_light_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 8, 8	

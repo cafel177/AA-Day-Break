@@ -49,6 +49,9 @@
 {
 	IDS = thing_currency_resource_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[EconomyComponent]
 	{
 		[Production]

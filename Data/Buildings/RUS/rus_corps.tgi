@@ -363,6 +363,9 @@
 	name = "#rus_corps_Thing_name"
 	editor_name = "#rus_corps_Thing_editor_name"
 	
+	[Placement]
+	placement_group_ids = null
+
 	[PropertiesComponent]
 	{
 		[Property]

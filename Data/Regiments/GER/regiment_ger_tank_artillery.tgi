@@ -72,6 +72,9 @@
 		reward = 112, 112	
 	}
 
+	[Placement]
+	placement_group_ids = null
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_light

@@ -263,6 +263,9 @@
 {
 	IDS = ger_brigade_artillery_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[ResearchComponent]
 	{
 		

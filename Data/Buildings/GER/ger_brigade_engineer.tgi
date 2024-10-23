@@ -237,6 +237,9 @@
 {
 	IDS = ger_brigade_engineer_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[ResearchComponent]
 	{
 		[ResearchItem]

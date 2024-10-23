@@ -85,6 +85,9 @@
 {
 	IDS = rus_truck_armor_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[EconomyComponent]
 	{
 		[Cost]	

@@ -115,6 +115,9 @@
 {
 	IDS = ger_tank_king_tiger_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 30, 30	

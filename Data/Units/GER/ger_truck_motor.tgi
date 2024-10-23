@@ -72,6 +72,9 @@
 {
 	IDS = ger_truck_motor_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = ger_motor_pool_tb
 }

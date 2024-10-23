@@ -107,6 +107,8 @@
 {
 	IDS = ger_tank_spa_tb
 
+	[Placement]
+	placement_group_ids = null
 
 	[LairComponent]
 	{

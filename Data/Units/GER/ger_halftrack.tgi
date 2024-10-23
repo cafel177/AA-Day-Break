@@ -124,6 +124,9 @@
 {
 	IDS = ger_halftrack_recon_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[LairComponent]
 	{
 		reward = 5, 5	

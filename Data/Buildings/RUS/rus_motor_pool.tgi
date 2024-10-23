@@ -280,6 +280,9 @@
 {
 	IDS = rus_motor_pool_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[RecruitComponent]
 	{	
 		[RecruitActor]
