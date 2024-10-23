@@ -75,7 +75,7 @@
 [Template RUSHalftrackRecon Template=RUSHalftrack]
 {
 	[ElementComponent]
-	morale_value = 7
+	morale_value = 12
 
 	[BuilderComponent]
 	{

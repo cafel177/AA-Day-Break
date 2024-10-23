@@ -11,7 +11,7 @@
 	}
 	
 	[ElementComponent]
-	morale_value = 10
+	morale_value = 12
 
 	[MoverComponent]
 	{

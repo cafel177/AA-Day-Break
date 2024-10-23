@@ -79,7 +79,7 @@
 	IDS = gbr_halftrack_recon
 
 	[ElementComponent]
-	morale_value = 7
+	morale_value = 12
 
 	[BuilderComponent]
 	{
