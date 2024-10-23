@@ -38,6 +38,8 @@
 	
 	[Ability Template=AASpecialOpAssemblyLine]
 
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpGERSupplyDrop]
 }
 

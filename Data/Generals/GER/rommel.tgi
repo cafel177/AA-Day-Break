@@ -38,5 +38,7 @@
 	
 	[Ability Template=AASpecialOpForcedMarch]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpGERSupplyDrop]
 }

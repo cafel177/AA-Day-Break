@@ -39,5 +39,7 @@
 	
 	[Ability Template=AASpecialOpGBRSecretAgent]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpGBRSupplyDrop]
 }

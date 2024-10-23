@@ -39,5 +39,7 @@
 	
 	[Ability Template=AASpecialOpResupply]
 
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpGBRSupplyDrop]
 }

@@ -38,5 +38,7 @@
 	
 	[Ability Template=AASpecialOpRadarScan]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpJPNSupplyDrop]
 }

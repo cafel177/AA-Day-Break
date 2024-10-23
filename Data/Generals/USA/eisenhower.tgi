@@ -34,10 +34,12 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
 	[Ability Template=AASpecialOpMechanizedAdvance]
 
-	[Ability Template=AASpecialOpEconomicAidMoney]
+	[Ability Template=AASpecialOpResupply2]
 	
 	[Ability Template=AASpecialOpRapidDeployment]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpUSASupplyDrop]
 }
 

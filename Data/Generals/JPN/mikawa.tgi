@@ -34,9 +34,11 @@
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
 	[Ability Template=AASpecialOpBanzaiCharge]
 	
-	[Ability Template=AASpecialOpEconomicAidMoney]
+	[Ability Template=AASpecialOpResupply]
 	
 	[Ability Template=AASpecialOpRapidDeployment]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpJPNSupplyDrop]
 }

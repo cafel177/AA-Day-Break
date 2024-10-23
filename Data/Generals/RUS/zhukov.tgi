@@ -38,6 +38,8 @@
 	
 	[Ability Template=AASpecialOpRapidDeployment]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpRUSSupplyDrop]
 }
 
