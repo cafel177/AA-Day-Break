@@ -74,7 +74,7 @@
 			{				
 				name = "#jpn_tank_spa_AbilityDefinition_name"
 				recharge_time = 9
-				range = 55
+				range = 60
 				area = 5
 				max_targets = 12
 					

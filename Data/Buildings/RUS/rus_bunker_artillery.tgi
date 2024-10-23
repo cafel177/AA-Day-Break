@@ -17,7 +17,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 35
+		control_range = 50
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -27,7 +27,7 @@
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 5
-				range = 35
+				range = 50
 				area = 6
 				max_targets = 15
 
@@ -114,7 +114,7 @@
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 5
-				range = 35
+				range = 50
 				area = 6
 				max_targets = 15
 
