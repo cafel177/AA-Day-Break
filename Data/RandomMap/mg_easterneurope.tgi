@@ -48,6 +48,14 @@
 
 	[TerrainNoise Template=TempNoisePhase06]
 
+/*************************    ACTOR GROUPS    **************************/
+
+	[ActorGroup Template=StartCorpsTankBattle]
+	{
+        		ids = start_corps_tb
+		apply_to_all_major_kingdoms = true
+	}
+
 /********************    VILLAGES    ********************/
 
 	[ActorGroup Template=RMCVillageActorGroups]
@@ -55,7 +63,8 @@
 		ids = village_easterneurope
 		name = "#mg_rmc_easterneurope_village_easterneurope_name"
 
-	    area_factor = 2.5
+		balanced_placement = false
+	    	area_factor = 3
 
 		[Object]
 		object_ids = random_city_easterneurope
@@ -64,18 +73,11 @@
 		[Object]
 		object_ids = random_tank_regiments
 		weight = 1
-	}
 
-/*************************    ACTOR GROUPS    **************************/
-
-	[ActorGroup Template=StartCorpsTankBattle]
-	{
-		apply_to_all_major_kingdoms = true
-	
-		[GroupRestriction]
-		group_ids = village_easterneurope
-		proximity_min = 96
-		proximity_desired = 0
+        		[GroupRestriction]
+	    	group_ids = start_corps_tb*
+	   	proximity_min = 60
+	    	proximity_desired = 60
 	}
 
 	[ActorGroup Template=MachineGunBunkers]
