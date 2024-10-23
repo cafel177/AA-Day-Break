@@ -70,6 +70,10 @@
 	thing_IDS = thing_currency_resource_tb
 
 	[Placeholder]
+	placeholder_IDS = placeholder_regiments_halftrack
+	thing_IDS = regiment_rus_halftrack_tb
+
+	[Placeholder]
 	placeholder_IDS = placeholder_regiments_tank_light
 	thing_IDS = regiment_rus_tank_light_tb
 

@@ -72,6 +72,13 @@
 {
 	IDS = regiment_rus_halftrack_tb
 
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+
 	[LairComponent]
 	{
 		reward = 20, 20	
