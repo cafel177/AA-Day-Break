@@ -315,6 +315,9 @@
 		actor_ids = regiment_ger_tank_artillery_tb
 
 		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_flame_tb
+
+		[RecruitActor]
 		actor_ids = ger_truck_supply
 	}
 }

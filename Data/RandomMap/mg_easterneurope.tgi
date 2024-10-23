@@ -24,15 +24,7 @@
 
 /********************    BLOCKING TERRAIN    ********************/
 
-	[TerrainBlob Template=TempMountainTerrainBlob]
 
-	[TerrainBlob Template=TempMountainTerrainBlob02]
-	
-	[TerrainBlob Template=TempMountainTerrainBlob03]
-	
-	[TerrainBlob Template=TempMountainTerrainBlob04]
-	
-	[TerrainBlob Template=TempMountainTerrainBlob05]
 	
 /********************    TERRAIN NOISE    ********************/
 

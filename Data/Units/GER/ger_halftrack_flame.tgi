@@ -35,6 +35,15 @@
 
 [Template GERHalftrackFlame Inherit=AAUnitGERVehicleHalftrack]
 {
+	name = "#ger_halftrack_flame_Thing_name"
+	editor_name = "#ger_halftrack_flame_Thing_editor_name"
+
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	{
+		required_properties = tech_flame
+	}
 
 	[BodyComponent]
 	{
@@ -84,15 +93,10 @@
 [Thing Template=GERHalftrackFlame]
 {
 	IDS = ger_halftrack_flame
-	name = "#ger_halftrack_flame_Thing_name"
-	editor_name = "#ger_halftrack_flame_Thing_editor_name"
-
-	hide_if_missing_properties = false
 
 	[ElementComponent]
 	{
 		required_structures = ger_motor_pool
-		required_properties = tech_flame
 	}
 
 	[DefenderComponent]
@@ -123,7 +127,7 @@
 				{
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = ger_buff_all
+						IDS = ger_buff_all1
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type = ench_type_generic
@@ -174,7 +178,155 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = ger_buff_artillery
+						IDS = ger_buff_artillery1
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type =ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png
+			
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 15
+
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = ATTACK_EFFICIENCY_ACTUAL
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+[Thing Template=GERHalftrackFlame]
+{
+	IDS = ger_halftrack_flame_tb
+
+	[Placement]
+	placement_group_ids = null
+
+	[LairComponent]
+	{
+		reward = 5, 5	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool_tb
+	}
+
+	[DefenderComponent]
+	{
+		control_range = 20
+		
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{	
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 20
+				recharge_time = 4
+				area = 6
+				max_targets = 15				
+				
+				[Effect Template=FireDamageEffect]
+				amount = 5
+
+				[Flags]
+				spell = true
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = ger_buff_all2
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type = ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -0.5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = MORALE_RECOVERY_RATE
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +artillery -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = ger_buff_artillery2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type =ench_type_generic

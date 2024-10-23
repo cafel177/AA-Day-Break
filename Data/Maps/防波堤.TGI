@@ -1,7 +1,7 @@
 [Text language=Default]
 {
 	ids = map_strings_table
-	name = "3v5 Map"
+	name = "(DB) - 3v5 Map"
 
 	kingdom_1 = "Side 1"
 	kingdom_0 = "Side 0"
@@ -13,7 +13,7 @@
 	team_0 = "team 1"
 	kingdom_5 = "Side 5"
 	kingdom_4 = "Side 4"
-	map_name = "3v5 Map"
+	map_name = "(DB) - 3v5 Map"
 	kingdom_3 = "Side 3"
 	kingdom_2 = "Side 2"
 }
