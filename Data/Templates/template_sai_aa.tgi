@@ -571,7 +571,7 @@
 		[GoalPriority]
 		{
 			goal_IDS						= UNPACK
-			multiplier						= 100
+			multiplier						= 1000
 		}
 
 		[GoalPriority]

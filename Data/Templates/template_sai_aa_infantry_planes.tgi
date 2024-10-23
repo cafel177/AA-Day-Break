@@ -185,7 +185,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 1
+				num_goals					= 0
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200
@@ -293,7 +293,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 2
+				num_goals					= 1
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200

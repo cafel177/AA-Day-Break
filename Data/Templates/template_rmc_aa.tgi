@@ -314,6 +314,10 @@ USAGE:
 	object_ids = placeholder_depot_moneybox
 	position = 0,0
 
+	[RequiredObject]
+	object_ids = placeholder_regiments_halftrack
+	position = 0,0
+
 	[GroupRestriction]
 	group_ids = start_corps*
 	proximity_min = 96

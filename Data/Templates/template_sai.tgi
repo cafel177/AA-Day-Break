@@ -505,7 +505,7 @@
 		{
 			;; How often should the goal engine think?  Use MUCH CAUTION decreasing this, it can
 			;;	cause serious performance issues, especially on large maps with many AIs.
-			fixed think_frequency				= 30
+			fixed think_frequency				= 20
 
 			;; Once the AI thinks, how long should it wait to send out its order.  Generally 0 
 			;;	unless you're trying to dumb down the AI for some reason.
@@ -1251,7 +1251,7 @@
 		{
 			;; We limit the number of recruit goals per think because they only reason about their own
 			;;	effect on the kingdom's economy, not that of other recruit goals.
-			int max_goals_per_think				= 1		;; < 0 indicates unlimited
+			int max_goals_per_think				= 4		;; < 0 indicates unlimited
 			
 			;; We generate this many military recruit goals each think cycle.  Must be greater than
 			;;	0.

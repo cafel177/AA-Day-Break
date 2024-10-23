@@ -64,16 +64,16 @@
 
 		[Object]
 		object_ids = random_city_easterneurope
-		weight = 0.0
+		weight = 1
 
 		[Object]
 		object_ids = random_tank_regiments
-		weight = 1
+		weight = 10
 
         		[GroupRestriction]
 	    	group_ids = start_corps_tb*
-	   	proximity_min = 60
-	    	proximity_desired = 60
+	   	proximity_min = 96
+	    	proximity_desired = 96
 	}
 
 	[ActorGroup Template=MachineGunBunkers]
