@@ -1,5 +1,5 @@
 # 轴心与同盟-破晓 (Axis & Allies Day Break) 玩家手册
-本Mod由 海盗(Spica) 作为发起者开发，制作组成员如下(字母表排序)：
+本Mod完全免费，无任何商业用途，由 海盗(Spica) 作为发起者开发，制作组成员如下(字母表排序)：
 * 开发支持：CA 会飞的熊 憨憨 奈叶   
 * 测试支持：AT鸽 pansen Shonda TAP 威胖喵 小河坂梦
 * 鸣谢：A&A开发商TimeGate 以及 每一位玩这个Mod的你
