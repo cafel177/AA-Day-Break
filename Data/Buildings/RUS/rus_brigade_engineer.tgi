@@ -40,17 +40,6 @@
 		property_IDS = oil
 	}	
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = rus_truck_bunker
-
-		[RecruitActor]
-		actor_ids = rus_truck_bunker_aa
-
-		[RecruitActor]
-		actor_ids = rus_truck_heal
-	}
 
 	[DenizenComponent]
 	{
@@ -137,6 +126,18 @@
 {
 	IDS = rus_brigade_engineer
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker
+
+		[RecruitActor]
+		actor_ids = rus_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = rus_truck_heal
+	}
+
 	[ResearchComponent]
 	{
 	
@@ -196,6 +197,15 @@
 
 	[Placement]
 	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker
+
+		[RecruitActor]
+		actor_ids = rus_truck_heal
+	}
 
 	[ResearchComponent]
 	{

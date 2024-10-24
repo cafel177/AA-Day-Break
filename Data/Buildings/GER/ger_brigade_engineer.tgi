@@ -41,17 +41,7 @@
 	}	
 	
 
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = ger_truck_bunker
 
-		[RecruitActor]
-		actor_ids = ger_truck_bunker_aa
-
-		[RecruitActor]
-		actor_ids = ger_truck_heal
-	}
 
 	[DenizenComponent]
 	{
@@ -170,6 +160,18 @@
 {
 	IDS = ger_brigade_engineer
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker
+
+		[RecruitActor]
+		actor_ids = ger_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = ger_truck_heal
+	}
+
 	[ResearchComponent]
 	{
 		[ResearchItem]
@@ -239,6 +241,15 @@
 
 	[Placement]
 	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker
+
+		[RecruitActor]
+		actor_ids = ger_truck_heal
+	}
 
 	[ResearchComponent]
 	{
