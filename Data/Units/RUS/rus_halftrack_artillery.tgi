@@ -36,7 +36,7 @@
 			[AbilityDefinition Template=AASPAShot]
 			{
 				name = "#rus_halftrack_artillery_AbilityDefinition_name"
-				range = 45
+				range = 50
 				area = 4
 				recharge_time = 9
 				max_targets = 10
