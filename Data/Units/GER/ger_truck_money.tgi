@@ -53,7 +53,7 @@
 	[View]
 	{
 		resource_prefix = GERTruck/GERTruck
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		icon = /UI/Game/BuildingButtons/IconEconomicAid.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = ger_truck_deployed
