@@ -1,0 +1,64 @@
+
+[MenuBackground Inherit=PanelWidget]
+{
+	bool use_bink = True
+	
+	[View Template=GroupVE]
+
+	[IntroCinematic Template = CinematicWidget]
+	{
+		repeating_video = true
+		
+		[VideoResource]
+		video_resource = /Video/MainMenu/USAIntroMovie.bik
+		
+		[VideoResource]
+		video_resource = /Video/MainMenu/JPNIntroMovie.bik
+		
+		[VideoResource]
+		video_resource = /Video/MainMenu/GERIntroMovie.bik
+		
+		[VideoResource]
+		video_resource = /Video/MainMenu/RUSIntroMovie.bik
+		
+		[VideoResource]
+		video_resource = /Video/MainMenu/GBRIntroMovie.bik
+	}
+}
+
+[MenuBackgroundLogo Template = DecalWidget]
+{
+	[View Template = NoVE]
+	{
+		L = 19
+		T = 718
+		R = +103
+		B = +48
+	}
+	
+	[Decal Template = DecalVE]
+	{
+		alpha_blending = true
+		texture = /UI/%s/Default/Menus/MainMenu/MainMenuAtariLogo.tga
+	}
+}
+
+[MiniMenuBackground Template = CinematicWidget]
+{
+	repeating_video = true
+	visible = false
+
+	[View]
+	{
+		L = 852
+		T = 86
+		R = +90
+		B = +90
+	}
+	
+	[VideoResource]
+	video_resource = /Video/MainMenu/AAGlobeBig.bik
+}
+
+
+
