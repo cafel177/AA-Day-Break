@@ -1081,7 +1081,7 @@ USAGE:
 
 	[ElementComponent]
 	{
-		resupply_rate = 0.1	
+		resupply_rate = 0.3
 	}
 	
 	[Flags]
