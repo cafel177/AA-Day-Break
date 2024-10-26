@@ -1,0 +1,77 @@
+[Template AAUSARegimentInfantryAT Template=AAUSAOrganizationInfantry]
+{
+	name = "#regiment_usa_infantry_at_AAUSARegimentInfantryAT_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 75
+		
+		[Upkeep]
+		ammo = 15
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/USA/USAInfantryAT/USAInfantryAT
+		icon = /UI/Game/RegimentButtons/IconInfantryAT.png
+		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_at_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_at_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_at_attack
+	}		
+	
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = usa_infantry
+		
+		[Slot]	;; rear guard 1
+		element_IDS = usa_infantry
+
+		[Slot]	;; rear guard 2
+		element_IDS = usa_infantry_mg
+		
+		[Slot]	;; rear guard 3
+		element_IDS = usa_infantry_mg
+	
+		[Slot]	;; flank
+		element_IDS = usa_infantry_at
+		
+		[Slot]	;; captain
+		element_IDS = usa_infantry_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = antitank_company
+	}
+}
+
+[Thing Template=AAUSARegimentInfantryAT]
+{
+	IDS = regiment_usa_infantry_at
+	editor_name = "#regiment_usa_infantry_at_editor_name"
+}
+
+/*
+[Thing Template=AAUSARegimentInfantryAT]
+{
+	IDS = regiment_usa_infantry_at_amphibious
+	editor_name = "USA AT Infantry Regiment - Amphibious"
+	
+	transport_actor = usa_transport_water
+
+	[Placement]
+	placement_group_ids = null
+}
+*/

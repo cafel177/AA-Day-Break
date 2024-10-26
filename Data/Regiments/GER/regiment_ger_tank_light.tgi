@@ -1,0 +1,99 @@
+[Template AAGEROrganizationArmorTankLight Template=AAGEROrganizationArmor]
+{	
+	name = "#regiment_ger_tank_light_name"
+	editor_name = "#regiment_ger_tank_light_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 150
+		
+		[Upkeep]
+		ammo = 15
+		oil = 10
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GER/GERTankLight/GERTankLight
+		icon = /UI/Game/RegimentButtons/IconTankLight.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorLight.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_tank_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_tank_light_attack
+	}		
+	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankLight]
+{
+	IDS = regiment_ger_tank_light
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_light
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankLight]
+{
+	IDS = regiment_ger_tank_light_tb
+
+	[LairComponent]
+	{
+		reward = 75, 75	
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+
+    [RandomActor]
+    random_actor_ids = random_tank_regiments
+    weight = 1
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_light_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_tb
+	}
+}

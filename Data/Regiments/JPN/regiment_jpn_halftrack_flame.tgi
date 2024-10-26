@@ -1,0 +1,58 @@
+[Thing Template=AAJPNOrganizationMobile]
+{	
+	IDS = regiment_jpn_halftrack_flame
+	name = "#regiment_jpn_halftrack_flame_name"
+	editor_name = "#regiment_jpn_halftrack_flame_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 125
+		
+		[Upkeep]
+		ammo = 10
+		oil = 10
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/JPN/JPNHalftrack/JPNHalftrack
+		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
+		banner_icon = /Organizations/Banners/Icons/IconFlame.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_destroyer_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_destroyer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_destroyer_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = jpn_halftrack_flame
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = jpn_car_armored_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = mechanized_company
+
+		[Property]
+		property_IDS = trailblazing	
+	}
+}

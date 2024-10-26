@@ -1,0 +1,106 @@
+[Thing Template=AAUnitGBRVehicleHeavyTank]
+{
+	;;IDS = gbr_heavy_tank
+	IDS = gbr_tank_heavy
+	name = "#gbr_tank_heavy_name"
+	editor_name = "#gbr_tank_heavy_editor_name"
+
+	hide_if_missing_properties = false
+
+	[BodyComponent]
+	{
+		health = 600
+		defense = 20
+	}
+
+	[ElementComponent]
+	{
+		required_structures = gbr_motor_pool
+		required_properties = tech_heavy_tank
+	}
+
+	[MoverComponent]
+		
+	{
+		speed_max = 3
+		acceleration = 1.25
+		
+		/*
+		[WhenStartMoving template=FXC_PlaySFX]
+		{
+			audio_ids = attack_usa_mg_light
+		}
+		*/
+				
+		[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_01	
+	  	}
+	  	
+	  	[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_02	
+	  	}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+
+		[Ability template=AATurretAttackLocal]
+		{
+			
+			[AbilityDefinition Template=AAHeavyTankGun]
+			{				
+				name = "#gbr_tank_heavy_AbilityDefinition_name"
+				recharge_time = 6
+				area = 3
+				range = 35
+				max_targets = 6
+				
+				[Flags] 
+				bombard = true
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+				
+				[Effect Template=APDamageEffect]
+				amount = 110
+
+				[Effect Template=MoraleGainEffect]
+				targets = self
+				amount = .5
+                
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_cannon_heavy
+			}
+		}	
+
+	}
+	
+	[View]
+	{
+		resource_prefix = GBRTankHeavy/GBRTankHeavy
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GBRTankHeavy/GBRTankHeavyRecoil1.kf
+		}
+	}
+}

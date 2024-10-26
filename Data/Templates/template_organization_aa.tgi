@@ -1,0 +1,1111 @@
+/**************************************************************************
+
+template_organization_AA.tgi
+Copyright ?2003 TimeGate Studios
+
+DESCRIPTION:  templates for AA units.
+
+REVISION HISTORY:
+ick061903 - created
+
+
+USAGE:
+
+
+**************************************************************************/
+
+;; --------------------------------------------
+;; ORGANIZATION COMPONENT
+;; --------------------------------------------
+
+[Template AAInfantryOrganizationComponent Inherit=OrganizationComponent]
+{
+	layout_IDS = infantry_regiment_standard
+	entrenchment_time = 99999
+
+	control_range = 18
+	operational_range = 34
+	morale_breakpoint = 15
+
+	recruit_time = 15
+	recruit_full = false
+
+	in_supply_detached = false
+}
+
+[Template AAInfantryOrganizationComponentNew Inherit=AAInfantryOrganizationComponent]
+{
+	recruit_time = 6
+}
+
+[Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
+{
+	layout_IDS = vehicle_regiment_standard
+	entrenchment_time = 99999
+
+	control_range = 18
+	operational_range = 34
+	morale_breakpoint = 15
+
+	recruit_time = 20
+	recruit_full = false
+
+	in_supply_detached = false
+}
+
+[Template AAVehicleOrganizationComponentNew Inherit=AAVehicleOrganizationComponent]
+{
+	recruit_time = 10
+}
+
+[Template AAArmorOrganizationComponent Inherit=OrganizationComponent]
+{
+	layout_IDS = vehicle_regiment_standard
+	entrenchment_time = 99999
+
+	control_range = 18
+	operational_range = 34
+	morale_breakpoint = 10
+
+	recruit_time = 25
+	recruit_full = false
+
+	in_supply_detached = false
+}
+
+[Template AAArmorOrganizationComponentNew Inherit=AAArmorOrganizationComponent]
+{
+	recruit_time = 12
+}
+
+[Template AAOrganizationComponentAmbient Inherit=OrganizationComponent]
+{
+	layout_IDS = vehicle_regiment_standard
+	entrenchment_time = 99999
+	
+	morale_breakpoint = 8
+	rampages = true
+	
+	control_range = 18
+	operational_range = 34
+
+	recruit_time = 30
+	recruit_full = false
+
+	in_supply_detached = false
+	
+	rampage_wait_chance = 75%
+	rampage_direction = -45,45
+	rampage_aggressive = false
+	rampage_distance = .5, 4
+	rampage_max_detached_ratio = 25%
+	rampage_points_to_try = 50
+}
+
+;; --------------------------------------------
+;; ORGANIZATIONS
+;; --------------------------------------------
+
+
+
+[Template AAOrganization Inherit=Organization]
+{
+	[View]
+	{
+		z_offset = 5 
+		banner_ids = default_banner
+		banner_icon = %sBannerIcon.tga 
+		use_faction_banner = true
+
+		;; selection vfx (overriding default)
+		focused_vfx = banner_focus_vfx
+		selected_vfx = banner_selection_vfx
+
+		[AspectNormal]
+		{
+			ground_size = 1.85, 0.15
+		}
+	}
+}
+
+[Template AAOrganizationArmor Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 18
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_tank
+		
+		[Property]
+		property_IDS = org_unit
+	}
+	
+	[ExperienceComponent template=AAArmorExperienceComponent]
+}
+
+[Template AAOrganizationInfantry Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 26
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_infantry
+
+		[Property]
+		property_IDS = org_unit
+	}
+	
+	[ExperienceComponent template=AAInfantryExperienceComponent]
+}
+
+[Template AAOrganizationParatrooper Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 30
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_infantry
+
+		[Property]
+		property_IDS = org_unit
+	}
+	
+	[ExperienceComponent template=AAParatrooperExperienceComponent]
+}
+
+[Template AAOrganizationMobile Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 26
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_mechanized
+
+		[Property]
+		property_IDS = org_unit
+	}
+	
+	[ExperienceComponent template=AAMechanizedExperienceComponent]
+}
+
+[Template AAOrganizationEngineer Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 26
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_infantry
+
+		[Property]
+		property_IDS = org_unit
+	}
+	
+	[ExperienceComponent template=AAInfantryExperienceComponent]
+}
+
+[Template AAOrganizationArtillery Template=AAOrganization]
+{
+	numbered = true
+
+	[DetectionComponent]
+	{
+		detection_range = 30
+		remote_detection_range = 12
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_unit
+	}
+}
+
+[Template AAOrganizationHQ Template=AAOrganization]
+{
+	numbered = true
+
+	[HQComponent]
+	{
+		max_attachments = 6
+	}
+
+	[DetectionComponent]
+	{
+		detection_range = 40
+		remote_detection_range = 18
+	}
+	
+	[EconomyComponent]
+	{
+		supply_required = true
+
+		[Upkeep]
+		unit_limit_consumed = 0
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = hq
+	}
+
+	[OrganizationComponent]
+	{
+		in_supply_detached = false
+	}
+	
+	[ExperienceComponent template=AAMechanizedExperienceComponent]
+}
+
+[template AAAmbientCompany template=AAOrganization]
+{
+	recruitable = no
+	
+	[DetectionComponent]
+	{
+		detection_range = 20
+		remote_detection_range = 12
+	}
+
+	[Flags]
+	invisible = true
+	
+	[View]
+	{
+		banner_ids = ambient_banner
+		banner_icon = null
+	}
+
+	[OrganizationComponent Template=AAOrganizationComponentAmbient]
+
+	[Placement]
+	placement_group_IDS = group_ambient
+}
+
+;; -------------------- GREAT BRITAIN --------------------
+
+[Template AAGBROrganizationArmor Template=AAOrganizationArmor]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+	
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_deployed
+	}	
+}
+
+[Template AAGBROrganizationInfantry Template=AAOrganizationInfantry]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+			
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_infantry_deployed
+	}	
+}
+
+[Template AAGBROrganizationParatrooper Template=AAOrganizationParatrooper]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+			
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_paratrooper_deployed
+	}	
+}
+
+[Template AAGBROrganizationMobile Template=AAOrganizationMobile]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+		
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_vehicle_deployed
+	}	
+}
+
+[Template AAGBROrganizationEngineer Template=AAOrganizationEngineer]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+	
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_engineer_deployed
+	}	
+}
+
+[Template AAGBROrganizationArtillery Template=AAOrganizationArtillery]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+	
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconArtillery.png 
+	}	
+}
+
+[Template AAGBROrganizationHQ Template=AAOrganizationHQ]
+{
+	
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+
+	[View]
+	{
+		banner_ids = gbr_banner
+		banner_icon = /Organizations/Banners/Icons/IconHQ.png
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_engineer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_engineer_attack
+	}
+}
+
+;; -------------------- GERMAN --------------------
+[Template AAGEROrganizationArmor Template=AAOrganizationArmor]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+	
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_tank_deployed
+	}
+}
+
+[Template AAGEROrganizationInfantry Template=AAOrganizationInfantry]
+{
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+			
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_infantry_deployed
+	}
+}
+
+[Template AAGEROrganizationParatrooper Template=AAOrganizationParatrooper]
+{
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+			
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_paratrooper_deployed
+	}	
+}
+
+[Template AAGEROrganizationMobile Template=AAOrganizationMobile]
+{
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+		
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_vehicle_deployed
+	}	
+}
+
+[Template AAGEROrganizationEngineer Template=AAOrganizationEngineer]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+	
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_engineer_deployed
+	}	
+}
+
+[Template AAGEROrganizationArtillery Template=AAOrganizationArtillery]
+{
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+	
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconArtillery.png
+	}	
+}
+
+[Template AAGEROrganizationHQ Template=AAOrganizationHQ]
+{
+	
+	[Placement]
+	placement_group_IDS = group_nation_ger
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
+
+	[View]
+	{
+		banner_ids = ger_banner
+		banner_icon = /Organizations/Banners/Icons/IconHQ.png
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_engineer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_engineer_attack
+	}
+}
+
+;; -------------------- JAPAN --------------------
+[Template AAJPNOrganizationArmor Template=AAOrganizationArmor]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+	
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_tank_deployed
+	}	
+}
+
+[Template AAJPNOrganizationInfantry Template=AAOrganizationInfantry]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+			
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_infantry_deployed
+	}	
+}
+
+[Template AAJPNOrganizationParatrooper Template=AAOrganizationParatrooper]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+			
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_paratrooper_deployed
+	}	
+}
+
+[Template AAJPNOrganizationMobile Template=AAOrganizationMobile]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+		
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_vehicle_deployed
+	}	
+}
+
+[Template AAJPNOrganizationEngineer Template=AAOrganizationEngineer]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+	
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconEngineer.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_engineer_deployed
+	}	
+}
+
+[Template AAJPNOrganizationArtillery Template=AAOrganizationArtillery]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+	
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconArtillery.png
+	}	
+}
+
+[Template AAJPNOrganizationHQ Template=AAOrganizationHQ]
+{
+	
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+
+	[View]
+	{
+		banner_ids = jpn_banner
+		banner_icon = /Organizations/Banners/Icons/IconHQ.png 
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_engineer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_engineer_attack
+	}
+}
+
+
+;; -------------------- RUSSIA --------------------
+[Template AARUSOrganizationArmor Template=AAOrganizationArmor]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+	
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_tank_deployed
+	}	
+}
+
+[Template AARUSOrganizationInfantry Template=AAOrganizationInfantry]
+{
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+			
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconInfantry.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_deployed
+	}	
+}
+
+[Template AARUSOrganizationParatrooper Template=AAOrganizationParatrooper]
+{
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+			
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png 
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_paratrooper_deployed
+	}	
+}
+
+[Template AARUSOrganizationMobile Template=AAOrganizationMobile]
+{
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+		
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png  
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_vehicle_deployed
+	}	
+}
+
+[Template AARUSOrganizationEngineer Template=AAOrganizationEngineer]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+	
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_engineer_deployed
+	}	
+}
+
+[Template AARUSOrganizationArtillery Template=AAOrganizationArtillery]
+{
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+	
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconArtillery.png  
+	}	
+}
+
+[Template AARUSOrganizationHQ Template=AAOrganizationHQ]
+{
+	
+	[Placement]
+	placement_group_IDS = group_nation_rus
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+
+	[View]
+	{
+		banner_ids = rus_banner
+		banner_icon = /Organizations/Banners/Icons/IconHQ.png
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_engineer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_engineer_attack
+	}
+}
+
+
+;; -------------------- USA --------------------
+[Template AAUSAOrganizationArmor Template=AAOrganizationArmor]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+	
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconArmor.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_tank_deployed
+	}	
+}
+
+[Template AAUSAOrganizationInfantry Template=AAOrganizationInfantry]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+			
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconInfantry.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_infantry_deployed
+	}	
+}
+
+[Template AAUSAOrganizationParatrooper Template=AAOrganizationParatrooper]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+			
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconParatrooper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_paratrooper_deployed
+	}	
+}
+
+[Template AAUSAOrganizationMobile Template=AAOrganizationMobile]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+		
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconMobile.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_vehicle_deployed
+	}	
+}
+
+[Template AAUSAOrganizationEngineer Template=AAOrganizationEngineer]
+{
+
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+	
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconEngineer.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_engineer_deployed
+	}	
+}
+
+[Template AAUSAOrganizationArtillery Template=AAOrganizationArtillery]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+	
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconArtillery.png
+	}	
+}
+
+[Template AAUSAOrganizationHQ Template=AAOrganizationHQ]
+{
+	
+	[Placement]
+	placement_group_IDS = group_nation_usa
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
+
+	[View]
+	{
+		banner_ids = usa_banner
+		banner_icon = /Organizations/Banners/Icons/IconHQ.png
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_engineer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_engineer_attack
+	}
+}

@@ -1,0 +1,93 @@
+[Thing Template=AAUnitJPNBiped]
+{
+	IDS = jpn_infantry_mortar
+	name = "#jpn_infantry_mortar_name"
+	editor_name = "#jpn_infantry_mortar_editor_name"
+			
+	[BodyComponent]
+	health = 150
+	defense = 1
+	
+	[CharacterComponent Template=AAInfantryMortarCharacterComponent]
+
+	[MoverComponent]
+	speed_max = 2
+
+	[ElementComponent]
+	{
+		required_structures = jpn_brigade_artillery
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = mortar		
+
+		[Property]
+		property_IDS = property_infantry_unit
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+		[Ability Template=AAAttackLocalBomb]
+		{
+			spawn_bone_ids = cannon_ae_01
+			
+			[AbilityDefinition Template=AAMortarShot]
+			{
+				name = "#jpn_infantry_mortar_AbilityDefinition_name"
+				recharge_time = 8
+				area = 3
+				range = 35
+				max_targets = 8
+
+				[Flags] 
+				bombard = true
+					
+				[Effect Template=BlastDamageEffect]
+				amount = 35
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = explosive
+				targets = building
+				amount = 50
+
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = .4
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_artillery_light
+			}
+		}
+	}
+	
+	[View]
+	{
+		resource_prefix = JPNInfantryMortar/JPNInfantryMortar
+
+		[WhenCreated Template=FXC_Equipment]
+		action = HIDE
+		location = base
+		equipment_type_ids = mortarup
+
+		[WhenCreated Template=FXC_Equipment]
+		action = HIDE
+		location = rhand
+		equipment_type_ids = shellup
+
+		[WhenCreated Template=FXC_Equipment]
+		action = UNHIDE
+		location = rhand
+		equipment_type_ids = mortardown
+	}
+}

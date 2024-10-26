@@ -1,0 +1,127 @@
+[Thing Template=AAUnitJPNVehicleLightTank]
+{
+	IDS = jpn_tank_light
+	name = "#jpn_tank_light_name"
+	editor_name = "#jpn_tank_light_editor_name"
+
+	[BodyComponent]
+	{
+		health = 275
+		defense = 6
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3.5
+		acceleration = 3
+		
+		[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_01	
+	  	}
+	  	
+	  	/*
+		[WhenStartMoving template=FXC_PlaySFX]
+		{
+			audio_ids = attack_usa_mg_light
+		}
+		*/
+	}
+
+	[ElementComponent]
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+		[Ability template=AATurretAttackLocal]
+		{
+			
+			[AbilityDefinition Template=AALightTankGun]
+			{				
+				name = "#jpn_tank_light_AbilityDefinition_name"
+				recharge_time = 6
+				range = 25
+				area = 2
+				max_targets = 4
+
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 40
+				
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_cannon_light
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_jpn3
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 1
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+				
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY -TANK
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_jpn3_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 1
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.5
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+			}
+		}
+	}
+	
+	[View]
+	{
+		resource_prefix = JPNTankLight/JPNTankLight
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = %sRecoil1.kf
+		}
+	}
+}

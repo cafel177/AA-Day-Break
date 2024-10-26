@@ -1,0 +1,73 @@
+
+;;; Special Handicap Properties
+
+[Property Template=SharedProperty]
+{
+	IDS = property_handicap_easy
+	name = "#properties_handicaps_name"
+	icon = /Properties/%s/PropertyIcons/IconPropertyEconomic.png
+	;;required_properties = building
+	is_technology = true
+		
+	[Modifier Template=MultiplyModifier]
+	attribute = RECRUIT_COST
+	amount = -0.4
+		
+	[Modifier template=MultiplyModifier]
+	attribute = health
+	amount = -0.25
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = property_handicap_normal
+	name = "#properties_handicaps_property_handicap_normal_name"
+	icon = /Properties/%s/PropertyIcons/IconPropertyEconomic.png
+	;;required_properties = building
+	is_technology = true
+		
+	[Modifier Template=MultiplyModifier]
+	attribute = RECRUIT_COST
+	amount = -0.25
+		
+	[Modifier template=MultiplyModifier]
+	attribute = health
+	amount = -0.25
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = property_handicap_hard
+	name = "#properties_handicaps_property_handicap_hard_name"
+	icon = /Properties/%s/PropertyIcons/IconPropertyEconomic.png
+	;;required_properties = building
+	is_technology = true
+		
+	[Modifier Template=MultiplyModifier]
+	attribute = RECRUIT_COST
+	amount = +0.25
+		
+	[Modifier template=MultiplyModifier]
+	attribute = health
+	amount = +0.25
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = property_handicap_infinite
+	name = "#properties_handicaps_property_handicap_infinite_name"
+	icon = /Properties/%s/PropertyIcons/IconPropertyEconomic.png
+	;;required_properties = building
+	is_technology = true
+
+	[Modifier template=FlagModifier]
+	modifier_flag = NO_UPKEEP
+	
+	[Modifier Template=MultiplyModifier]
+	attribute = RECRUIT_COST
+	amount = +0.4
+		
+	[Modifier template=MultiplyModifier]
+	attribute = health
+	amount = +0.25
+}

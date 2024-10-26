@@ -1,0 +1,80 @@
+[Template AAUnitGERVehicleHQTruckMotor Template=AAUnitGERVehicleHQTruck]
+{
+	name = "#ger_truck_motor_name"
+	editor_name = "#ger_truck_motor_editor_name"
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 125
+
+		[Production]
+		oil = 15
+
+		[Upkeep]
+		building_limit_consumed = 1
+	}
+
+	[ElementComponent]
+	
+	[MobileDeploymentComponent]
+	{
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+		trailer_actor = ger_trailer_motor
+
+		[TrailerHitch]
+		{
+			node_ids = hitch
+			node_offset = 0, -1.1, .8
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = motor_pool
+	}
+		
+	[View]
+	{
+		resource_prefix = GERTruckBedless/GERTruckBedless
+		icon = /UI/Game/BuildingButtons/IconMotorPool.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = motor_pool_select
+	}
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckMotor ]
+{
+	IDS = ger_truck_motor
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_motor_pool
+}
+
+[Thing Template=AAUnitGERVehicleHQTruckMotor ]
+{
+	IDS = ger_truck_motor_tb
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_motor_pool_tb
+}

@@ -1,0 +1,130 @@
+[Template AAUnitGERVehicleKingTigerTank Template=AAUnitGERVehicleHeavyTank]
+{
+	name = "#ger_tank_king_tiger_name"
+	editor_name = "#ger_tank_king_tiger_editor_name"
+
+	hide_if_missing_properties = false
+	
+	[BodyComponent]
+	{
+		health = 800
+		defense = 25
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 2.5
+		acceleration = 1.25
+		
+		[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_01	
+	  	}
+	  	
+	  	[WhenStartMoving template=FXC_CreateVFX]
+		{
+			VFX_IDS = start_exhaust_01
+			location = exhaust_point_02	
+	  	}
+
+	  	/*
+		[WhenStartMoving template=FXC_PlaySFX]
+		{
+			audio_ids = attack_usa_mg_light
+		}
+		*/
+	}
+
+	[ElementComponent]
+	{
+		required_properties = tech_heavy_tank, tech_tank_king_tiger
+	}
+		
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+	
+	[PerformerComponent]
+	{
+
+
+		[Ability template=AATurretAttackLocal]
+		{
+			
+			[AbilityDefinition Template=AAHeavyTankGun]
+			{				
+				name = "#ger_tank_king_tiger_AbilityDefinition_name"
+				recharge_time = 6
+				area = 3
+				range = 40
+				max_targets = 6
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 135
+
+                			[Effect Template=MoraleGainEffect]
+				targets = self
+				amount = .5
+                
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_cannon_heavy
+			}
+		}
+	}
+	  	
+	[View]
+	{
+		resource_prefix = GERTankKingTiger/GERTankKingTiger
+		
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = GERTankKingTiger/GERTankKingTigerRecoil1.kf
+		}
+	}
+}
+
+[Thing Template=AAUnitGERVehicleKingTigerTank]
+{
+	IDS = ger_tank_king_tiger
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool
+	}
+}
+
+[Thing Template=AAUnitGERVehicleKingTigerTank]
+{
+	IDS = ger_tank_king_tiger_tb
+
+	[Placement]
+	placement_group_ids = null
+
+	[LairComponent]
+	{
+		reward = 30, 30	
+	}
+
+	[ElementComponent]
+	{
+		required_structures = ger_motor_pool_tb
+	}
+}

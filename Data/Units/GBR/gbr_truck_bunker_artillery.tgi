@@ -1,0 +1,65 @@
+[Thing Template=AAUnitGBRVehicleHQTruck]
+{
+	IDS = gbr_truck_bunker_artillery
+	name = "#gbr_truck_bunker_artillery_name"
+	editor_name = "#gbr_truck_bunker_artillery_editor_name"
+
+	hide_if_missing_properties = false
+    
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
+
+		[Production]
+
+
+   		[Upkeep]
+		ammo = 10
+		building_limit_consumed = 0
+	}
+	
+	[ElementComponent]
+	{
+		required_structures = gbr_brigade_engineer
+		required_properties = tech_improved_fortifications
+	}
+
+	[BodyComponent]
+	health = 300
+	defense = 2
+	
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_bunker_artillery
+	packed_position_offset = 0,0
+	packed_orientation = 1,0
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+		
+		trailer_actor = null
+
+		[TrailerHitch]
+		node_ids = hitch
+		node_offset = 0, -1.7, .5
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = property_bunker_artillery
+	}	
+	
+	[View]
+	{
+		resource_prefix = GBRTruck/GBRTruck
+		icon = /UI/Game/BuildingButtons/IconBunkerArtillery.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = depot_supply_select
+	}
+}

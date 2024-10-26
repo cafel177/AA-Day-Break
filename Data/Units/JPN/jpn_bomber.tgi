@@ -1,0 +1,105 @@
+[Template AAJPNAirplaneAttackBomb Template=AAAirplaneAttackBomb]
+{
+	mana_cost = 5
+	range = 15
+	area = 6
+	recharge_time = 5
+	max_targets = 12
+							
+	[Effect Template=BlastDamageEffect]
+	amount = 75
+
+	[Effect Template=MoraleLossEffect]
+	amount = .5
+
+	[WhenDo Template=FXC_PlaySFX]
+	audio_ids = bomb_heavy
+	at = TARGET_GROUND
+}
+
+[Thing Template=AAUnitJPNAirplaneBomber]
+{
+	IDS = jpn_bomber
+	name = "#jpn_bomber_name"
+	editor_name = "#jpn_bomber_editor_name"
+	
+	[View]
+	resource_prefix = JPNBomber/JPNBomber
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAProjectileLocal]
+		{
+			;spawn_position = -0.3,-3.0,-0.4
+			
+			[AbilityDefinition Template=AAJPNAirplaneAttackBomb]
+			IDS = jpn_bomb1
+			name = "#jpn_bomber_AbilityDefinition_name"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{
+			;spawn_position = 0.3,-3.0,-0.3
+			
+			[AbilityDefinition Template=AAJPNAirplaneAttackBomb]
+			IDS = jpn_bomb2
+			name = "#jpn_bomber_AbilityDefinition_name_2"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{
+			;spawn_position = -0.3,-3.5,-0.2
+			
+			[AbilityDefinition Template=AAJPNAirplaneAttackBomb]
+			IDS = jpn_bomb3
+			name = "#jpn_bomber_AbilityDefinition_name_3"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{
+			;spawn_position = 0.3,-3.5,-0.1
+			
+			[AbilityDefinition Template=AAJPNAirplaneAttackBomb]
+			IDS = jpn_bomb4
+			name = "#jpn_bomber_AbilityDefinition_name_4"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{
+			required_properties = tech_napalm
+			
+			[AbilityDefinition Template=AAAirplaneAttackBomb]
+			{
+				IDS = jpn_bomb5
+				mana_cost = 0	
+				range = 15	
+				name = "#usa_bomber_AbilityDefinition_name_5"
+				area = 6
+				recharge_time = 5	
+				max_targets = 12
+
+				projectile_ids = napalm_bomb
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+			
+				[Effect Template=FireDamageEffect]
+				amount = 60
+				
+				[Effect Template=MoraleLossEffect]
+				amount = 2
+
+				[WhenDo Template=FXC_PlaySFX]
+				audio_ids = bomb_heavy
+				at = TARGET_GROUND
+			}
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = bomber
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+}

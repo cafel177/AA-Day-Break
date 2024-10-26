@@ -1,0 +1,30 @@
+[Thing Template=Placeholder]
+{
+	IDS = placeholder_truck_bunker_antiaircraft
+	name = "#placeholder_truck_bunker_antiaircraft_name"
+
+	[Flags]
+	axis_locked = false	
+
+	[Placement]
+	placement_group_IDS = group_special
+	placement_category = building
+
+	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 0.6
+					
+		soft_shape = RECT
+		rect_width = 1.4
+		rect_height = 3.0
+	}
+
+	[View]
+	{
+		resource_prefix = PlaceholderBunkerAntiAircraft/PlaceholderBunkerAntiAircraft
+		
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+}

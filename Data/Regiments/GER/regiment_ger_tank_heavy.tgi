@@ -1,0 +1,95 @@
+[Template AAGEROrganizationArmorTankHeavy Template=AAGEROrganizationArmor]
+{	
+	name = "#regiment_ger_tank_heavy_name"
+	editor_name = "#regiment_ger_tank_heavy_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 325
+		
+		[Upkeep]
+		ammo = 20
+		oil = 20
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GER/GERTankHeavy/GERTankHeavy
+		icon = /UI/Game/RegimentButtons/IconTankHeavy.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorHeavy.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_tank_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = ger_tank_heavy_attack
+	}		
+	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankHeavy]
+{
+	IDS = regiment_ger_tank_heavy
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_heavy
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankHeavy]
+{
+	IDS = regiment_ger_tank_heavy_tb
+
+	[LairComponent]
+	{
+		reward = 162, 162	
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+    
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_heavy_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_tb
+	}
+}

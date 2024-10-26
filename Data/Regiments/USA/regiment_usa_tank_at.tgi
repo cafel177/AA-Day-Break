@@ -1,0 +1,60 @@
+[Thing Template=AAUSAOrganizationArmor]
+{	
+	IDS = regiment_usa_tank_at
+	name = "#regiment_usa_tank_destroyer_name"
+	editor_name = "#regiment_usa_tank_destroyer_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 225
+		
+		[Upkeep]
+		ammo = 20
+		oil = 15
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_tank
+
+		[Property]
+		property_ids = antitank_company
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/USA/USATankDestroyer/USATankDestroyer
+		icon = /UI/Game/RegimentButtons/IconTankAT.png
+		banner_icon = /Organizations/Banners/Icons/IconAntiTank.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_tank_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = usa_tank_destroyer_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = usa_tank_destroyer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = usa_tank_destroyer_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = usa_tank_destroyer
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = usa_tank_co
+	}
+	
+	[ExperienceComponent template=AAArmorExperienceComponent]
+}

@@ -1,0 +1,284 @@
+[Thing Template=AAUSABuildingPackable]
+{
+	IDS = usa_bunker_artillery
+	name = "#usa_bunker_artillery_Thing_name"
+	editor_name = "#usa_bunker_artillery_Thing_editor_name"
+	
+	[LairComponent]
+	{
+		reward = 30, 40	
+	}
+
+	[BodyComponent]
+	{
+		health = 1500
+		defense = 15
+	}
+
+	[DefenderComponent]
+	{
+		control_range = 50
+
+		[Ability Template=AAAttackLocal]
+		{
+			turret_ids = Turret
+			
+			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
+			{
+				name = "#usa_bunker_artillery_DefenderComponent_AbilityDefinition_name"
+				recharge_time = 5
+				range = 50
+				area = 6
+				max_targets = 15
+
+				[Effect Template=BlastDamageEffect]
+				amount = 50
+
+				[Effect Template=MoraleLossEffect]
+				targets = +ENEMY -TANK
+				amount = 2
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_bunker_artillery_stun
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_bunker_artillery_slow
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -1
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_artillery_heavy
+			}
+		}
+	}
+
+	[PerformerComponent]
+	{
+		[Turret]
+		{
+			turret_ids = Turret
+			yaw_rotation_per_sec_degrees = 180
+			yaw_rotation_range_degrees = 360
+			yaw_start_degrees = 0
+			offset = 1.979,-1.317	
+		}
+
+		[Ability Template=AAAttackLocal]
+		{
+			turret_ids = Turret
+			
+			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
+			{
+				name = "#usa_bunker_artillery_DefenderComponent_AbilityDefinition_name"
+				recharge_time = 5
+				range = 50
+				area = 6
+				max_targets = 15
+
+				[Effect Template=BlastDamageEffect]
+				amount = 50
+
+				[Flags] 
+				bombard = true
+
+				[Effect Template=MoraleLossEffect]
+				targets = +ENEMY -TANK
+				amount = 2
+
+				[Effect Template=AddDamageEffect]
+				damage_type_ids = explosive
+				targets = building
+				amount = 50
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_bunker_artillery_stun2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = usa_bunker_artillery_slow2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -1
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[WhenDo Template=FXC_PlayObjectAnimation]
+				object_animation_IDS = Recoil1
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_artillery_heavy
+			}
+		}
+	}
+
+	[DetectionComponent]
+	{
+		detection_range = 30
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 150
+		
+		[Production]
+		
+		[Upkeep]
+		ammo = 20
+	}
+
+	[Flags]
+	{
+		axis_locked = false
+	}
+
+	[MobileDeploymentComponent]
+	{
+		packing_length = 5
+		unpacking_length = 5
+		pack_health_min = 1
+	}
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = bunker
+
+		[Property]
+		property_ids = artillery
+
+		[Property]
+		property_IDS = property_bunker_artillery		
+
+		[Property]
+		property_ids = military_building
+	}
+		
+	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 2
+		
+		soft_shape = CIRCLE
+		soft_radius = 2.1
+	}
+
+
+	
+	[View]
+	{
+		resource_prefix = USABunkerArtillery/USABunkerArtillery
+		icon = /UI/Game/BuildingButtons/IconBunkerArtillery.png
+
+		[AspectNormal]
+		{						
+			[Animation Template=ObjectAnimationCustomPlay]
+			ids = Recoil1
+			length = 1
+			kf = USABunkerArtillery/USABunkerArtilleryRecoil1.kf
+		}
+		
+
+
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_snow
+			terrain_group_filter = snow
+		}
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = bunker_artillery_select
+		}
+	}
+
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		audio_ids = bunker_artillery_construction_complete
+		actor_state = structure_unpacking
+	}
+}

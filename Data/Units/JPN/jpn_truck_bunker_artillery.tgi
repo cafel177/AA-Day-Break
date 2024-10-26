@@ -1,0 +1,75 @@
+[Thing Template=AAUnitJPNVehicleHQTruck]
+{
+	IDS = jpn_truck_bunker_artillery
+	name = "#jpn_truck_bunker_artillery_name"
+	editor_name = "#jpn_truck_bunker_artillery_editor_name"
+
+	hide_if_missing_properties = false
+    
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
+
+		[Production]
+		
+
+   		[Upkeep]
+		ammo = 10
+		building_limit_consumed = 0
+	}
+
+	[ElementComponent]
+	{
+		required_structures = jpn_brigade_engineer
+		required_properties = tech_improved_fortifications
+	}
+
+	[BodyComponent]
+	{
+		health = 300
+		defense = 2
+	}
+	
+	[MobileDeploymentComponent]
+	{
+	
+		unpack_to_actor_ids = jpn_bunker_artillery
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+
+		;; ids of the trailer actor
+		trailer_actor = null
+
+		[TrailerHitch]
+		{		
+			;; node name and node offset of the truck's hitch
+			node_ids = hitch
+			node_offset = 0, -1.2, .5
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = property_bunker_artillery
+	}
+	
+	[View]
+	{
+		resource_prefix = JPNTruck/JPNTruck
+		icon = /UI/Game/BuildingButtons/IconBunkerArtillery.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = depot_supply_select
+	}
+}

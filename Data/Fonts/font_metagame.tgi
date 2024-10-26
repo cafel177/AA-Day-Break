@@ -1,0 +1,43 @@
+/**************************************************************************
+
+medium.tgi
+Copyright © 2002-2004 TimeGate Studios
+
+DESCRIPTION: Describes the contents of a font.
+
+REVISION HISTORY:
+drp033104 - created
+
+
+**************************************************************************/
+[Font template = Font]
+{
+	ids = metagame
+	name = "#font_metagame_name"
+	size = 12 ;; this is the Windows font size, not the actual pixel height of glyphs.
+
+	[CharacterSet]
+	{
+		ids = base
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
+	}
+
+	[CharacterSet]
+	ids = hangul_jamo
+	font = simsun
+
+	[CharacterSet]
+	ids = hiragana_katakana
+	font = simsun
+
+	[CharacterSet]
+	ids = han
+	font = simsun
+
+	[CharacterSet]
+	ids = hangul_johab
+	font = simsun
+}

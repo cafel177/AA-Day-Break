@@ -1,0 +1,93 @@
+[Template AARUSOrganizationArtilleryTank Template=AARUSOrganizationArtillery]
+{	
+	name = "#regiment_rus_tank_artillery_name"
+	editor_name = "#regiment_rus_tank_artillery_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 225
+		
+		[Upkeep]
+		ammo = 20
+		oil = 15
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = org_tank
+
+		[Property]
+		property_ids = artillery_company
+	}	
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSTankSPA/RUSTankSPA
+		icon = /UI/Game/RegimentButtons/IconTankArtillery.png
+		banner_icon = /Organizations/Banners/Icons/IconArmorArtillery.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_tank_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_artillery_attack
+	}		
+	
+
+	
+	[ExperienceComponent template=AAArmorExperienceComponent]
+}
+
+[Thing Template=AARUSOrganizationArtilleryTank]
+{
+	IDS = regiment_rus_tank_artillery
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = rus_tank_spa
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_tank_co
+	}
+}
+
+[Thing Template=AARUSOrganizationArtilleryTank]
+{
+	IDS = regiment_rus_tank_artillery_tb
+
+	[LairComponent]
+	{
+		reward = 112, 112	
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = rus_tank_spa_tb
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_tank_co_tb
+	}
+}

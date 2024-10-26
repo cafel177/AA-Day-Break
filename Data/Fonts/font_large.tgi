@@ -1,0 +1,94 @@
+/**************************************************************************
+main_menu.tgi
+Copyright © 2002-2003 TimeGate Studios
+
+DESCRIPTION: Describes the contents of a font.
+
+REVISION HISTORY:
+Brad - created
+
+USAGE:
+
+FIELDS:
+		   
+	[Font] all information about the font under this node
+		ids = the internal name of this font
+		name = the display name of this font
+		
+		[Set] describes a particular range of glyphs in the font
+		ids = name of the set (must be predefined in fonts.tgi)
+		font = the TrueType font this range comes from
+		
+		
+		  
+EXAMPLES:
+	
+**************************************************************************/
+[Font template = Font]
+{
+	ids = large ;;putting large here cause the K2 and AA share the main menu font setting which is a font named large. Need to seperate the TGI for the games. 
+	name = "#font_large_large_name"
+	size = 16 ;; this is the Windows font size, not the actual pixel height of glyphs.
+
+	[CharacterSet]
+	{
+		ids = base
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
+		
+		backup_font = simsun
+	}
+
+	[CharacterSet]
+	ids = hangul_jamo
+	font = simsun
+
+	[CharacterSet]
+	ids = hiragana_katakana
+	font = simsun
+
+	[CharacterSet]
+	ids = han
+	font = simsun
+
+	[CharacterSet]
+	ids = hangul_johab
+	font = simsun
+}
+
+[Font template = Font]
+{
+	ids = large_outline
+	name = "#font_large_large_outline_name"
+	size = 30 ;; this is the Windows font size, not the actual pixel height of glyphs.
+
+	[CharacterSet]
+	{
+		ids = base
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
+		outline = false
+		
+		backup_font = simsun
+	}
+
+	[CharacterSet]
+	ids = hangul_jamo
+	font = simsun
+
+	[CharacterSet]
+	ids = hiragana_katakana
+	font = simsun
+
+	[CharacterSet]
+	ids = han
+	font = simsun
+
+	[CharacterSet]
+	ids = hangul_johab
+	font = simsun
+}

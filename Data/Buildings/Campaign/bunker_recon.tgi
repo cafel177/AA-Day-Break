@@ -1,0 +1,104 @@
+[Thing Template=AABuilding]
+{
+	IDS = bunker_recon
+	name = "#bunker_recon_name"
+	editor_name = "#bunker_recon_editor_name"
+
+	[Flags]
+	{
+		axis_locked = false
+	}
+	
+	[BodyComponent]
+	{
+		health = 400
+		defense = 0
+	}
+	
+	[SupplyComponent]
+	{
+		supply_range = 0
+		is_relay = false
+	}
+
+	[DetectionComponent]
+	detection_range = 70
+	remote_detection_range = 12
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 5
+		
+		[Production]
+		
+		[Upkeep]
+	}
+
+	[ResearchComponent]
+	{
+
+	}
+
+	[PropertiesComponent]
+	{		
+
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		square_size = 2
+	}
+	
+	[Placement]
+	placement_group_IDS = group_campaign
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		resource_prefix = SearchLight/SearchLight
+		icon = /UI/Game/BuildingButtons/IconLendLease.png
+
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = search_light_beam
+			location = spotlight_ae_01
+			attached = true
+		}
+
+		[AspectNormal]
+		
+		[Aspect Template=AAAspectDeath]
+
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_snow
+			terrain_group_filter = snow
+		}
+	
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = bunker_select
+		}
+	}
+
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		audio_ids = bunker_construction_complete
+		actor_state = construction
+	}
+}

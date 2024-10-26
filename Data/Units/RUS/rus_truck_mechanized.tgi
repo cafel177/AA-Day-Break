@@ -1,0 +1,81 @@
+[Thing Template=AAUnitRUSVehicleHQTruck]
+{
+	IDS = rus_truck_mechanized
+	name = "#rus_truck_mechanized_name"
+	editor_name = "#rus_truck_mechanized_editor_name"
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 250
+
+		[Production]
+		ammo = 5
+		oil = 5
+		unit_limit_provided = 9
+
+   		[Upkeep]
+		building_limit_consumed = 0
+	}
+	
+	[ElementComponent]
+	{
+		required_properties = mechhqproduction
+	}
+	
+	[MobileDeploymentComponent]
+	{
+	
+		unpack_to_actor_ids = rus_hq_mechanized
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+
+		trailer_actor = rus_trailer_mechanized
+
+		[TrailerHitch]
+		{		
+			node_ids = hitch
+			node_offset = 0, -.9, .8
+		}
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = captain	
+		
+		[Property]
+		property_ids = mechhq	
+
+		[Property]
+		property_ids = inf_mech_hq
+
+		[Property]
+		property_ids = air_mech_hq
+
+		[Property]
+		property_ids = mech_armor_hq	
+	}
+
+	
+	[View]
+	{
+		resource_prefix = RUSTruckBedless/RUSTruckBedless
+		icon = /UI/Game/BuildingButtons/IconHQMechanized.png
+	}
+}

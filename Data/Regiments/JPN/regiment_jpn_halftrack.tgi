@@ -1,0 +1,63 @@
+[Thing Template=AAJPNOrganizationMobile]
+{	
+	IDS = regiment_jpn_halftrack
+	name = "#regiment_jpn_halftrack_name"
+	editor_name = "#regiment_jpn_halftrack_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 35
+		
+		[Upkeep]
+		ammo = 0
+		oil = 5
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/JPN/JPNHalftrack/JPNHalftrack
+		icon = /UI/Game/RegimentButtons/IconHalftrack.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = jpn_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = jpn_halftrack_attack
+	}
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS =  jpn_halftrack_recon
+	
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = jpn_car_armored_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = mechanized_company
+
+		[Property]
+		property_IDS = recon	
+		
+		[Property]
+		property_IDS = trailblazing	
+
+		[Property]
+		property_IDS = engineer	
+	}
+}

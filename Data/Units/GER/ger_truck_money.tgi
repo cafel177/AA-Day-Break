@@ -1,0 +1,64 @@
+[Thing Template=AAUnitGERVehicleHQTruck]
+{
+	IDS = ger_truck_money
+	name = "#ger_truck_money_name"
+	editor_name = "#ger_truck_money_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 180
+
+		[Production]
+		money = 18
+
+   		[Upkeep]
+		building_limit_consumed = 1
+	}
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+	
+	[MobileDeploymentComponent]
+	{
+	
+		unpack_to_actor_ids = ger_depot_money
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+		acceleration = 2
+		trailer_actor = ger_trailer_supply
+
+		[TrailerHitch]
+		{
+			node_ids = hitch
+			node_offset = 0, -1.8, .5
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = money
+	}	
+	
+	[View]
+	{
+		resource_prefix = GERTruck/GERTruck
+		icon = /UI/Game/BuildingButtons/IconEconomicAid.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = ger_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = depot_supply_select
+	}
+}

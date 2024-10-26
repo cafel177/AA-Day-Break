@@ -1,0 +1,98 @@
+[Template AAGBRAirplaneAttackBomb Template=AAAirplaneAttackBomb]
+{
+	mana_cost = 5
+	range = 15
+	area = 6
+	recharge_time = 5	
+	max_targets = 12
+					
+	[Effect Template=BlastDamageEffect]
+	amount = 75
+
+	[Effect Template=MoraleLossEffect]
+	amount = .5
+	
+	[WhenDo Template=FXC_PlaySFX]
+	audio_ids = bomb_heavy
+	at = TARGET_GROUND
+	
+}
+
+[Thing Template=AAUnitGBRAirplaneBomber]
+{
+	IDS = gbr_bomber
+	name = "#gbr_bomber_name"
+	editor_name = "#gbr_bomber_editor_name"
+	
+	[View]
+	resource_prefix = GBRBomber/GBRBomber
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAProjectileLocal]
+		{			
+			[AbilityDefinition Template=AAGBRAirplaneAttackBomb]
+			IDS = gbr_bomb1
+			name = "#gbr_bomber_AbilityDefinition_name"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{			
+			[AbilityDefinition Template=AAGBRAirplaneAttackBomb]
+			IDS = gbr_bomb2
+			name = "#gbr_bomber_AbilityDefinition_name_2"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{			
+			[AbilityDefinition Template=AAGBRAirplaneAttackBomb]
+			IDS = gbr_bomb3
+			name = "#gbr_bomber_AbilityDefinition_name_3"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{			
+			[AbilityDefinition Template=AAGBRAirplaneAttackBomb]
+			IDS = gbr_bomb4
+			name = "#gbr_bomber_AbilityDefinition_name_4"
+		}
+
+		[Ability Template=AAProjectileLocal]
+		{
+			required_properties = tech_napalm
+			
+			[AbilityDefinition Template=AAAirplaneAttackBomb]
+			{
+				IDS = gbr_bomb5
+				mana_cost = 0	
+				range = 15	
+				name = "#usa_bomber_AbilityDefinition_name_5"
+				area = 6
+				recharge_time = 5	
+				max_targets = 12
+
+				projectile_ids = napalm_bomb
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+			
+				[Effect Template=FireDamageEffect]
+				amount = 60
+				
+				[Effect Template=MoraleLossEffect]
+				amount = 2
+
+				[WhenDo Template=FXC_PlaySFX]
+				audio_ids = bomb_heavy
+				at = TARGET_GROUND
+			}
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = bomber
+		
+		[Property]
+		property_IDS = combat_unit
+	}
+}

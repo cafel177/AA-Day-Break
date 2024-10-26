@@ -1,0 +1,94 @@
+/**************************************************************************
+
+small.tgi
+Copyright ?2002-2003 TimeGate Studios
+
+DESCRIPTION: Describes the contents of a font.
+
+REVISION HISTORY:
+bat112702 - created
+
+USAGE:
+
+FIELDS:
+		   
+	[Font] all information about the font under this node
+		ids = the internal name of this font
+		name = the display name of this font
+		
+		[Set] describes a particular range of glyphs in the font
+		ids = name of the set (must be predefined in fonts.tgi)
+		font = the TrueType font this range comes from
+		
+		
+		  
+EXAMPLES:
+	
+**************************************************************************/
+[Font template = Font]
+{
+	ids = small
+	name = "#font_small_small_name"
+	size = 13 ;; this is the Windows font size, not the actual pixel height of glyphs.
+
+	[CharacterSet]
+	{
+		ids = base
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
+		
+		backup_font = simsun
+	}
+
+	[CharacterSet]
+	ids = hangul_jamo
+	font = simsun
+
+	[CharacterSet]
+	ids = hiragana_katakana
+	font = simsun
+
+	[CharacterSet]
+	ids = han
+	font = simsun
+
+	[CharacterSet]
+	ids = hangul_johab
+	font = simsun
+}
+
+[Font template = Font]
+{
+	ids = small_bold
+	name = "#font_small_small_bold_name"
+	size = 14 ;; this is the Windows font size, not the actual pixel height of glyphs.
+
+	[CharacterSet]
+	{
+		ids = base
+		font = simsun
+		antialias = false
+		bold = false
+		shadow = false
+		
+		backup_font = simsun
+	}
+
+	[CharacterSet]
+	ids = hangul_jamo
+	font = simsun
+
+	[CharacterSet]
+	ids = hiragana_katakana
+	font = simsun
+
+	[CharacterSet]
+	ids = han
+	font = simsun
+
+	[CharacterSet]
+	ids = hangul_johab
+	font = simsun
+}

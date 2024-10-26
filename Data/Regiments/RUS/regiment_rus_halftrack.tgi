@@ -1,0 +1,103 @@
+[Template AARUSOrganizationMobileBase Template=AARUSOrganizationMobile]
+{	
+	name = "#regiment_rus_halftrack_name"
+	editor_name = "#regiment_rus_halftrack_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 35
+		
+		[Upkeep]
+		ammo = 0
+		oil = 5
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSHalftrack/RUSHalftrack
+		icon = /UI/Game/RegimentButtons/IconHalftrack.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_halftrack_attack
+	}		
+	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = mechanized_company
+
+		[Property]
+		property_IDS = recon	
+		
+		[Property]
+		property_IDS = trailblazing	
+
+		[Property]
+		property_IDS = engineer	
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileBase]
+{
+	IDS = regiment_rus_halftrack
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = rus_halftrack_recon
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileBase]
+{
+	IDS = regiment_rus_halftrack_tb
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		soft_radius = 1
+		square_size = 0
+	}
+
+	[LairComponent]
+	{
+		reward = 20, 20	
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_tiny
+
+		[Slot]	;; front
+		element_IDS = rus_halftrack_recon_tb
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co
+	}
+}
