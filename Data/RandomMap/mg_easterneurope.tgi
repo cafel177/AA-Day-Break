@@ -76,13 +76,13 @@
 	    	proximity_desired = 96
 	}
 
-	[ActorGroup Template=MachineGunBunkers]
+	[ActorGroup Template=StartMoneyTankBattleEasy]
 	apply_to_all_major_kingdoms = true
 
-	[ActorGroup Template=AntiAirBatteries]
+	[ActorGroup Template=StartMoneyTankBattleMedium]
 	apply_to_all_major_kingdoms = true
 
-	[ActorGroup Template=ArtilleryBatteries]
+	[ActorGroup Template=StartMoneyTankBattleHard]
 	apply_to_all_major_kingdoms = true
 
     	[ActorGroup Template=StartInfinite]

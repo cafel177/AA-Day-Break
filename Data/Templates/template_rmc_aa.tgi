@@ -430,6 +430,96 @@ USAGE:
 	proximity_desired = 12
 }
 
+[Template StartMoneyTankBattleEasy Template=RMCActorGroup]
+{
+	ids = start_money_tb_easy
+	name = "#template_rmc_aa_start_money_name"
+
+	kingdom_ids = null
+	show_ui = true
+	difficulty_level = easy
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_moneybox
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+
+[Template StartMoneyTankBattleMedium Template=RMCActorGroup]
+{
+	ids = start_money_tb_medium
+	name = "#template_rmc_aa_start_money_name"
+
+	kingdom_ids = null
+	show_ui = true
+	difficulty_level = medium
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_moneybox
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+
+[Template StartMoneyTankBattleHard Template=RMCActorGroup]
+{
+	ids = start_money_tb_hard
+	name = "#template_rmc_aa_start_money_name"
+
+	kingdom_ids = null
+	show_ui = true
+	difficulty_level = hard
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_moneybox
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}
+
 [Template StartInfinite Template=RMCActorGroup]
 {
 	ids = start_infinite
