@@ -14,9 +14,6 @@
 		oil = 0
 	}
 
-	[Placement]
-	placement_group_ids = null
-
 	[PropertiesComponent]
 	{	
 		[Property]

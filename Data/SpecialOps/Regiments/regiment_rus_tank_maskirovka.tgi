@@ -13,9 +13,6 @@
 		ammo = 5
 		oil = 0
 	}
-	
-	[Placement]
-	placement_group_ids = null
 
 	[PropertiesComponent]
 	{	
