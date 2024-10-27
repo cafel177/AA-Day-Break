@@ -131,6 +131,9 @@
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_halftrack_at
 	}
 
 	[Size]

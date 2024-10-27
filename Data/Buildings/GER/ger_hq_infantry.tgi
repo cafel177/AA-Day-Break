@@ -134,6 +134,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_hohle
 	}
 	
 	[ResearchComponent]

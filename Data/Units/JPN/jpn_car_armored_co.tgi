@@ -41,9 +41,8 @@
 
 
 
-[Thing Template=AAUnitJPNVehicleJeep]
+[Template AAUnitJPNVehicleJeepCo Template=AAUnitJPNVehicleJeep]
 {
-	IDS = jpn_car_armored_co
 	name = "#jpn_car_armored_co_Thing_name"
 	editor_name = "#jpn_car_armored_co_Thing_editor_name"
 
@@ -117,4 +116,17 @@
 		portrait_ids = jpn_car_armored_co_portrait
 
 	}
+}
+
+[Thing Template=AAUnitJPNVehicleJeepCo]
+{
+	IDS = jpn_car_armored_co
+}
+
+[Thing Template=AAUnitJPNVehicleJeepCo]
+{
+	IDS = jpn_car_armored_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }
