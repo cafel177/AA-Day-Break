@@ -112,7 +112,7 @@
 		actor_ids = regiment_rus_halftrack
 
 		[RecruitActor]
-		actor_ids = regiment_rus_halftrack_aa
+		actor_ids = regiment_rus_halftrack_aa_new
 
 		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_sniper
@@ -140,6 +140,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_maskirovka
+
+		[RecruitActor]
+		actor_ids = regiment_rus_halftrack_aa
 	}
 
 	[Size]

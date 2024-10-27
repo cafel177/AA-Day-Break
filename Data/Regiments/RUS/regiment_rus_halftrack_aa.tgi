@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationMobile]
+[Template AARUSOrganizationMobileAA Template=AARUSOrganizationMobile]
 {	
-	IDS = regiment_rus_halftrack_aa
 	name = "#regiment_rus_halftrack_aa_name"
 	editor_name = "#regiment_rus_halftrack_aa_editor_name"
 
@@ -33,6 +32,42 @@
 		audio_ids = rus_aa_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = antiaircraft_company
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileAA ]
+{
+	IDS = regiment_rus_halftrack_aa
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		control_range = 30
+		
+		[Slot]	;; front
+		element_IDS = rus_halftrack_aa
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_car_armored_co_old
+	}
+}
+
+[Thing Template=AARUSOrganizationMobileAA ]
+{
+	IDS = regiment_rus_halftrack_aa_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -46,11 +81,5 @@
 		
 		[Slot]	;; captain
 		element_IDS = rus_car_armored_co
-	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = antiaircraft_company
 	}
 }

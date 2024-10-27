@@ -101,7 +101,7 @@
 		actor_ids = regiment_gbr_tank_light_new
 		
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_medium
+		actor_ids = regiment_gbr_tank_medium_new
 		
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_heavy
@@ -126,6 +126,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_light
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_medium
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_flame
