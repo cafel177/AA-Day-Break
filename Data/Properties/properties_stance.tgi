@@ -33,16 +33,12 @@ USAGE:
 	amount = -0.3
 
 	[Modifier Template=ResistDamageModifier]
-	damage_type = gunfire
-	amount = 0.05
-
-	[Modifier Template=ResistDamageModifier]
 	damage_type = armor_piercing
-	amount = 0.05
+	amount = 0.15
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
-	amount = 0.05
+	amount = 0.1
 }
 
 [Property Template=SharedProperty]
@@ -56,14 +52,10 @@ USAGE:
 	amount = -0.6
 
 	[Modifier Template=ResistDamageModifier]
-	damage_type = gunfire
-	amount = 0.1
-
-	[Modifier Template=ResistDamageModifier]
 	damage_type = armor_piercing
-	amount = 0.1
+	amount = 0.2
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
-	amount = 0.1
+	amount = 0.15
 }
