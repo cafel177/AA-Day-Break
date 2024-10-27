@@ -4,6 +4,8 @@
 	name = "#usa_engineer_name"
 	editor_name = "#usa_engineer_editor_name"
 	
+	hide_if_missing_properties = true
+
 	[View]
 	{
 		resource_prefix = USAEngineer/USAEngineer
@@ -38,6 +40,7 @@
 
 	[ElementComponent]
 	required_structures = usa_brigade_engineer
+	required_properties = tech_infantry_flame
 
 	[MoverComponent]
 	speed_max = 3

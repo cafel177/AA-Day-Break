@@ -4,6 +4,8 @@
 	name = "#rus_engineer_name"
 	editor_name = "#rus_engineer_editor_name"
 	
+	hide_if_missing_properties = true
+
 	[View]
 	{
 		resource_prefix = RUSEngineer/RUSEngineer
@@ -41,6 +43,7 @@
 
 	[ElementComponent]
 	required_structures = rus_brigade_engineer
+	required_properties = tech_infantry_flame
 
 	[MoverComponent]
 	speed_max = 3

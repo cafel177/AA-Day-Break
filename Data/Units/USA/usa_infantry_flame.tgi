@@ -44,7 +44,7 @@
 	name = "#usa_infantry_flame_name"
 	editor_name = "#usa_infantry_flame_editor_name"
 
-	hide_if_missing_properties = false
+	hide_if_missing_properties = true
 		
 	[BodyComponent]
 	{
@@ -59,7 +59,7 @@
 
 	[ElementComponent]
 	{
-		required_properties = tech_flame
+		required_properties = tech_infantry_flame
 	}
 	
 	[PropertiesComponent]

@@ -131,6 +131,9 @@
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_engineer
 	}
 	
 	[ResearchComponent]

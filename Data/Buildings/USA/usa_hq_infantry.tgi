@@ -132,6 +132,12 @@
 
 		[RecruitActor]
 		actor_ids = usa_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_flame
+
+		[RecruitActor]
+		actor_ids = regiment_usa_engineer
 	}
 
 	[ResearchComponent]

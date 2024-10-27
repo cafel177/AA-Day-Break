@@ -4,6 +4,8 @@
 	name = "#jpn_engineer_name"
 	editor_name = "#jpn_engineer_editor_name"
 	
+	hide_if_missing_properties = true
+
 	[View]
 	{
 		resource_prefix = JPNEngineer/JPNEngineer
@@ -40,7 +42,8 @@
 	[CharacterComponent Template=AAEngineerCharacterComponent]
 
 	[ElementComponent]
-	required_structures = jpn_brigade_engineer	
+	required_structures = jpn_brigade_engineer
+	required_properties = tech_infantry_flame	
 	morale_value = 6
 		
 	[MoverComponent]

@@ -4,6 +4,8 @@
 	name = "#gbr_engineer_name"
 	editor_name = "#gbr_engineer_editor_name"
 	
+	hide_if_missing_properties = true
+
 	[View]
 	{
 		resource_prefix = GBREngineer/GBREngineer
@@ -40,7 +42,8 @@
 	[CharacterComponent Template=AAEngineerCharacterComponent]
 
 	[ElementComponent]
-	required_structures = gbr_brigade_engineer	
+	required_structures = gbr_brigade_engineer
+	required_properties = tech_infantry_flame	
 
 	[MoverComponent]
 	speed_max = 3
