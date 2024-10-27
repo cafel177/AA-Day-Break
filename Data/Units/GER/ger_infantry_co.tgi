@@ -37,9 +37,9 @@
 }
 
 
-[Thing Template=AAUnitGERProne]
+[Template AAUnitGERProneCo Template=AAUnitGERProne]
 {
-	IDS = ger_infantry_co
+
 	name = "#ger_infantry_co_Thing_name"
 	editor_name = "#ger_infantry_co_Thing_editor_name"
 	
@@ -102,4 +102,17 @@
 			}
 		}
 	}
+}
+
+[Thing Template= AAUnitGERProneCo]
+{
+	IDS = ger_infantry_co
+}
+
+[Thing Template= AAUnitGERProneCo]
+{
+	IDS = ger_infantry_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }
