@@ -118,7 +118,7 @@
 		actor_ids = regiment_ger_halftrack_sniper
 			
 		[RecruitActor]
-		actor_ids = regiment_ger_halftrack_artillery		
+		actor_ids = regiment_ger_halftrack_artillery_new		
 
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_mechanized
@@ -143,6 +143,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack
+
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_artillery
 	}
 	
 	[Size]

@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationArmor]
+[Template AAGBROrganizationArmorTankFlame Template=AAGBROrganizationArmor]
 {	
-	IDS = regiment_gbr_tank_flame
 	name = "#regiment_gbr_tank_flame_name"
 	editor_name = "#regiment_gbr_tank_flame_editor_name"
 
@@ -33,6 +32,41 @@
 		audio_ids = gbr_tank_flame_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAGBROrganizationArmorTankFlame]
+{
+	IDS = regiment_gbr_tank_flame
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = gbr_tank_flame
+	
+		[Slot]	;; support
+		element_IDS = gbr_tank_light
+		
+		[Slot]	;; captain
+		element_IDS = gbr_tank_co_old
+	}
+}
+
+[Thing Template=AAGBROrganizationArmorTankFlame]
+{
+	IDS = regiment_gbr_tank_flame_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -45,11 +79,5 @@
 		
 		[Slot]	;; captain
 		element_IDS = gbr_tank_co
-	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = tank_company
 	}
 }

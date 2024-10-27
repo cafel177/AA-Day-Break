@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationArtillery]
+[Template AAGEROrganizationHalftrackArtillery Template=AAGEROrganizationArtillery]
 {	
-	IDS = regiment_ger_halftrack_artillery
 	name = "#regiment_ger_halftrack_artillery_name"
 	editor_name = "#regiment_ger_halftrack_artillery_editor_name"
 
@@ -41,6 +40,38 @@
 		audio_ids = ger_artillery_attack
 	}		
 	
+
+	
+	[ExperienceComponent template=AAMechanizedExperienceComponent]
+}
+
+
+[Thing Template=AAGEROrganizationHalftrackArtillery]
+{
+	IDS = regiment_ger_halftrack_artillery
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = ger_halftrack
+	
+		[Slot]	;; support
+		element_IDS = ger_halftrack_artillery
+		
+		[Slot]	;; captain
+		element_IDS = ger_car_armored_co_old
+	}
+}
+
+[Thing Template=AAGEROrganizationHalftrackArtillery]
+{
+	IDS = regiment_ger_halftrack_artillery_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_light
@@ -54,6 +85,4 @@
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co
 	}
-	
-	[ExperienceComponent template=AAMechanizedExperienceComponent]
 }

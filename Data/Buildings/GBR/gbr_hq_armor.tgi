@@ -113,7 +113,7 @@
 		actor_ids = regiment_gbr_tank_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_flame
+		actor_ids = regiment_gbr_tank_flame_new
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply
@@ -126,6 +126,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_light
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_flame
 
 	}
 

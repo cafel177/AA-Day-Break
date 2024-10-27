@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationArmor]
+[Template AAUSAOrganizationArmorTankMedium Template=AAUSAOrganizationArmor]
 {	
-	IDS = regiment_usa_tank_medium
 	name = "#regiment_usa_tank_medium_name"
 	editor_name = "#regiment_usa_tank_medium_editor_name"
 
@@ -33,6 +32,41 @@
 		audio_ids = usa_tank_medium_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = tank_company
+	}
+}
+
+[Thing Template=AAUSAOrganizationArmorTankMedium]
+{
+	IDS = regiment_usa_tank_medium
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = usa_tank_medium
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = usa_tank_co_old
+	}
+}
+
+[Thing Template=AAUSAOrganizationArmorTankMedium]
+{
+	IDS = regiment_usa_tank_medium_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -45,11 +79,5 @@
 		
 		[Slot]	;; captain
 		element_IDS = usa_tank_co
-	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = tank_company
 	}
 }
