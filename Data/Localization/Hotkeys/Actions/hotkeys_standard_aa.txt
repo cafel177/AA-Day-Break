@@ -27,9 +27,9 @@ map e GroupFormationButtons_2|formation
 ###############################
 
 map l game|action|verify "ActorCommand recruit_location"
-map p game|action|verify "ActorCommand pack"
-map p game|action|verify "ActorCommand pack_organization"
-map p game|action|verify "ActorCommand unpack"
+map space game|action|verify "ActorCommand pack"
+map space game|action|verify "ActorCommand pack_organization"
+map space game|action|verify "ActorCommand unpack"
 map a game|action|verify "ActorCommand air_attack"
 map c game|action|verify "ActorCommand air_recon"
 map e game|action|verify "ActorCommand escort_on"
@@ -43,7 +43,7 @@ map b game|action|verify "ActorCommand construct"
 map m game|action|verify "ActorCommand move"
 map s game|action|verify "ActorCommand stop"
 map r game|action|verify "ActorCommand retreat"
-map o game|action|verify "ActorCommand rout"
+map t game|action|verify "ActorCommand rout"
 map x game|action|verify "ActorCommand explore"
 map delete game|action|verify "ActorCommand disband"
 map r game|action|verify "ActorCommand research"
@@ -75,7 +75,7 @@ map a game|action|verify "CommandAll"
 # game - team commands        #
 ###############################
 
-map t game|action|verify "GoToTeamCommands"
+map o game|action|verify "GoToTeamCommands"
 
 map a game|action|verify "SelectTeamKingdom"
 

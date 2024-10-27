@@ -149,7 +149,7 @@ map ctrl-s ButtonSupplyBorder
 
 # game - chat
 map enter vworld ChatActivate
-map space vworld CycleMessageLog
+# map space vworld CycleMessageLog
 ### map esc GameChatPanel GameChatClose
 map enter GameChatPanel|editbox ChatSend
 map PageUp GameChatPanel|editbox "GameChatPrevFilter"
