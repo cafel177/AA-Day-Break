@@ -240,13 +240,13 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_light
+		actor_ids = regiment_rus_tank_light_new
 		
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_medium
+		actor_ids = regiment_rus_tank_medium_new
 		
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_heavy
+		actor_ids = regiment_rus_tank_heavy_new
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_at
@@ -265,6 +265,15 @@
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_rocket_truck
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_light
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_medium
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_heavy
 	}
 }
 

@@ -98,7 +98,7 @@
 	[RecruitComponent]
 	{		
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_light
+		actor_ids = regiment_gbr_tank_light_new
 		
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_medium
@@ -123,6 +123,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_light
 
 	}
 

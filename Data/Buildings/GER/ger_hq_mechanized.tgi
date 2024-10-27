@@ -109,7 +109,7 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
-		actor_ids = regiment_ger_halftrack
+		actor_ids = regiment_ger_halftrack_new
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_aa
@@ -140,6 +140,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_hohle
+
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack
 	}
 	
 	[Size]
