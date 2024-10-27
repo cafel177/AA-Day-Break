@@ -290,7 +290,7 @@
 	
 	[Modifier Template=AddModifier]
 	attribute = ABILITY_HEAL
-	amount = 3
+	amount = 10
 	repair = true
 }
 
