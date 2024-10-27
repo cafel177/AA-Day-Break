@@ -130,7 +130,7 @@
 		actor_ids = regiment_ger_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_light
+		actor_ids = regiment_ger_tank_light_new
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply
@@ -146,6 +146,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_artillery
+
+        		[RecruitActor]
+		actor_ids = regiment_ger_tank_light
 	}
 	
 	[Size]

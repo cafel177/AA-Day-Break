@@ -127,13 +127,16 @@
 		actor_ids = regiment_gbr_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_light
+		actor_ids = regiment_gbr_tank_light_new
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_at
+
+        		[RecruitActor]
+		actor_ids = regiment_gbr_tank_light
 	}
 
 	[Size]
