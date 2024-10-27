@@ -123,6 +123,15 @@
 
 		[RecruitActor]
 		actor_ids = usa_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_usa_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_armored
 	}
 	
 	[ResearchComponent]

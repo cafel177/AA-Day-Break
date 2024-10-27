@@ -256,6 +256,15 @@
 
 		[RecruitActor]
 		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_rocket_truck
 	}
 }
 

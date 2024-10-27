@@ -278,6 +278,12 @@
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_mechanized
 	}
 }
 

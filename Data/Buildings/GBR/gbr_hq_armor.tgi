@@ -117,6 +117,13 @@
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_tank_mechanized
+
 	}
 
 	[ResearchComponent]

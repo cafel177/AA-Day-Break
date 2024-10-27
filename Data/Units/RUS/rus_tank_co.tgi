@@ -124,6 +124,15 @@
 
 [Thing Template=RUSTankCO]
 {
+	IDS = rus_tank_co_old
+	editor_name = "#rus_tank_co_Thing_editor_name"
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
+}
+
+[Thing Template=RUSTankCO]
+{
 	IDS = rus_tank_co_tb
 	editor_name = "#rus_tank_co_Thing_editor_name"
 

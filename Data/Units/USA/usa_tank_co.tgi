@@ -40,9 +40,8 @@
 ;;---------------------------------------------- USATankCO Unit --------
 
 
-[Thing Template=AAUnitUSAVehicleMediumTank]
+[Template AAUnitUSAVehicleMediumTankCo Template=AAUnitUSAVehicleMediumTank]
 {
-	IDS = usa_tank_co
 	name = "#usa_tank_co_Thing_name"
 	editor_name = "#usa_tank_co_Thing_editor_name"
 
@@ -122,3 +121,17 @@
 		}
 	}
 }
+
+[Thing Template=AAUnitUSAVehicleMediumTankCo]
+{	
+	IDS = usa_tank_co
+}
+
+[Thing Template=AAUnitUSAVehicleMediumTankCo]
+{	
+	IDS = usa_tank_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
+}
+

@@ -40,9 +40,8 @@
 ;;---------------------------------------------- GBRTankCO Unit --------
 
 
-[Thing Template=AAUnitGBRVehicleMediumTank]
+[Template AAUnitGBRVehicleMediumTankCo Template=AAUnitGBRVehicleMediumTank]
 {
-	IDS = gbr_tank_co
 	name = "#gbr_tank_co_Thing_name"
 	editor_name = "#gbr_tank_co_Thing_editor_name"
 
@@ -119,3 +118,17 @@
 		}
 	}
 }
+
+[Thing Template=AAUnitGBRVehicleMediumTankCo]
+{
+	IDS = gbr_tank_co
+}
+
+[Thing Template=AAUnitGBRVehicleMediumTankCo]
+{
+	IDS = gbr_tank_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
+}
+
