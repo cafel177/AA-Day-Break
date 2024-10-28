@@ -437,7 +437,9 @@
 {
 	IDS = marine_deployment
 	name = "#properties_intrinsic_marine_deployment_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyEngineering.png
+
+	is_technology = true
 }
 
 

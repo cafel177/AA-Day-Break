@@ -46,7 +46,7 @@
 
 	[View]
 	{
-		resource_prefix = RUSBrigadeEngineer2/RUSBrigadeEngineer
+		resource_prefix = GERDepotMoney/RUSBrigadeEngineer
 		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
 
 		[TextureSearchPath]

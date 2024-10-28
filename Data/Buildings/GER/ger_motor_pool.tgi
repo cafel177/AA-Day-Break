@@ -145,6 +145,9 @@
 	{	
 		[RecruitActor]
 		actor_ids = ger_truck_corps
+
+		[RecruitActor]
+		actor_ids = ger_truck_ship
 	}
 
 	[ResearchComponent]

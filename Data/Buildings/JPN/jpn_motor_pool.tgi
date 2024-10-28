@@ -17,6 +17,9 @@
 	{	
 		[RecruitActor]
 		actor_ids = jpn_truck_corps
+
+		[RecruitActor]
+		actor_ids = jpn_truck_ship
 	}
 
 	[DenizenComponent]

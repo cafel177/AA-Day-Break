@@ -190,6 +190,7 @@ map a game|action|verify "ActorDataSelectCommand gbr_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand gbr_bunker_artillery"
 
 # Corps HQ
+map q game|action|verify "ActorDataSelectCommand gbr_truck_ship"
 map p game|action|verify "ActorDataSelectCommand gbr_truck_corps"
 map f game|action|verify "ActorDataSelectCommand gbr_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand gbr_truck_artillery"
@@ -267,6 +268,7 @@ map r game|action|verify "ActorDataSelectCommand ger_bunker_artillery"
 
 # Corps HQ
 map p game|action|verify "ActorDataSelectCommand ger_truck_corps"
+map q game|action|verify "ActorDataSelectCommand ger_truck_ship"
 map f game|action|verify "ActorDataSelectCommand ger_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand ger_truck_artillery"
 map e game|action|verify "ActorDataSelectCommand ger_truck_engineer"
@@ -342,6 +344,7 @@ map r game|action|verify "ActorDataSelectCommand jpn_bunker_artillery"
 
 # Corps HQ
 map p game|action|verify "ActorDataSelectCommand jpn_truck_corps"
+map q game|action|verify "ActorDataSelectCommand jpn_truck_ship"
 map f game|action|verify "ActorDataSelectCommand jpn_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand jpn_truck_artillery"
 map e game|action|verify "ActorDataSelectCommand jpn_truck_engineer"
@@ -418,6 +421,7 @@ map r game|action|verify "ActorDataSelectCommand rus_bunker_artillery"
 
 # Corps HQ
 map p game|action|verify "ActorDataSelectCommand rus_truck_corps"
+map q game|action|verify "ActorDataSelectCommand rus_truck_ship"
 map f game|action|verify "ActorDataSelectCommand rus_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand rus_truck_artillery"
 map e game|action|verify "ActorDataSelectCommand rus_truck_engineer"
@@ -494,6 +498,7 @@ map r game|action|verify "ActorDataSelectCommand usa_bunker_artillery"
 
 # Corps HQ
 map p game|action|verify "ActorDataSelectCommand usa_truck_corps"
+map q game|action|verify "ActorDataSelectCommand usa_truck_ship"
 map f game|action|verify "ActorDataSelectCommand usa_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand usa_truck_artillery"
 map e game|action|verify "ActorDataSelectCommand usa_truck_engineer"

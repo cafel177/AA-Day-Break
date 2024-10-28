@@ -13,6 +13,9 @@
 	{	
 		[RecruitActor]
 		actor_ids = usa_truck_corps
+
+		[RecruitActor]
+		actor_ids = usa_truck_ship
 	}
 
 	[DenizenComponent]

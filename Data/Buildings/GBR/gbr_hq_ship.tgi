@@ -1,0 +1,189 @@
+[Thing Template=AAGBRBuildingPackable]
+{
+	IDS = gbr_hq_ship
+	name = "#gbr_hq_ship_Thing_name"
+	editor_name = "#gbr_hq_ship_Thing_editor_name"
+
+	[LairComponent]
+	{
+		reward = 50, 75	
+	}
+
+	[Flags]
+	{
+		axis_locked = false
+	}
+    
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = gbr_carrier
+	}
+
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = -30.0, 0.0
+			deployment_offset = -30.0, 0.0
+		}
+	}
+
+	[BodyComponent]
+	health = 1500
+	defense = 0
+
+	[EconomyComponent]
+	{
+		[Cost]	
+		money = 150
+
+		[Production]
+		oil = 10
+		ammo = 10
+		
+		[Upkeep]
+		building_limit_consumed = 1
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = economic_building	
+
+		[Property]
+		property_IDS = ammo
+
+		[Property]
+		property_IDS = oil
+	}
+	
+	[ResearchComponent]
+	{
+
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		square_size = 8
+	}
+
+	[View]
+	{
+		resource_prefix = GBRHQShip/USABrigadeEngineer
+		icon = /UI/Game/BuildingButtons/IconHQShip.png
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_brigade_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_brigade_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_brigade_snow
+			terrain_group_filter = snow
+		}
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = brigade_engineer_select
+		}
+		
+		;;------ Spot Lights --------------------
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = spotlight_03
+			location = spotlight_ae_01
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = spotlight_02
+			location = spotlight_ae_02
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_01
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_02
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_03
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_04
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_05
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_06
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_small
+			location = window_07
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = waypoint_move_location
+			location = window_08
+			attached = true
+		}
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_packing
+		audio_ids = pack_7s_sfx
+	}
+	
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
+	}
+}
