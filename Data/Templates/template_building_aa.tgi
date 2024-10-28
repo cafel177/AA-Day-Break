@@ -372,7 +372,7 @@ USAGE:
 	{
 		supply_range = 40
 		is_relay = true
-		stockpile_max = 60
+		stockpile_max = 100
 	}
 
 	[PropertiesComponent]
