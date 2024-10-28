@@ -68,13 +68,13 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = rus_tank_light
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co
@@ -106,13 +106,13 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light_tb
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = rus_tank_light_tb
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co_tb

@@ -77,13 +77,13 @@
 		layout_IDS = regiment_infantry
 		
 		[Slot]	;; front
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_sp_amphib
 		
 		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_sp_amphib
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_sp_amphib
 		
 		[Slot]	;; rear guard 3
 		element_IDS = ger_infantry_sp_amphib

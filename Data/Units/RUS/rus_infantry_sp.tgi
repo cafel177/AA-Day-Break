@@ -15,11 +15,8 @@
 	[BodyComponent]
 	health = 250
 	defense = 2
-
-	hide_if_missing_properties = false
     
-	[ElementComponent]
-	required_properties = tech_special_forces
+
 
 	[CharacterComponent Template=AAInfantryCharacterComponent]
 
@@ -89,4 +86,9 @@
 {
 	IDS = rus_infantry_sp
 	editor_name = "#rus_infantry_editor_name"
+
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	required_properties = tech_special_forces
 }

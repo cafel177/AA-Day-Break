@@ -17,10 +17,8 @@
 	health = 250
 	defense = 2
 	
-    	hide_if_missing_properties = false
         
-	[ElementComponent]
-	required_properties = tech_special_forces
+
 
 	[CharacterComponent Template=AAInfantryCharacterComponent]
 
@@ -77,6 +75,11 @@
 [Thing Template=AAUnitGBRInfantrySP]
 {
 	IDS = gbr_infantry_sp
+
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	required_properties = tech_special_forces
 }	
 
 [Thing Template=AAUnitGBRInfantrySP]
