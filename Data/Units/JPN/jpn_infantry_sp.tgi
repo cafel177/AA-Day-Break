@@ -50,7 +50,7 @@
 				range = 12
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 14
+				amount = 12
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_rifle
