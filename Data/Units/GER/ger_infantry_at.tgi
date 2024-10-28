@@ -60,7 +60,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 45
+				amount = 70
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_rocket
