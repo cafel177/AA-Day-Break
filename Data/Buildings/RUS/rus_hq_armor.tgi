@@ -284,7 +284,7 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 75
+		money = 112
 	}
 
 	[RecruitComponent]

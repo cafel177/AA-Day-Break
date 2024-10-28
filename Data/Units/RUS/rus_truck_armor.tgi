@@ -91,7 +91,7 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 150
+		money = 225
 	}
 
 	[ElementComponent]
