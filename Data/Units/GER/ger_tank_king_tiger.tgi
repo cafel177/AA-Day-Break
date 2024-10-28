@@ -7,8 +7,8 @@
 	
 	[BodyComponent]
 	{
-		health = 800
-		defense = 25
+		health = 600
+		defense = 15
 	}
 	
 	[MoverComponent]
@@ -65,18 +65,18 @@
 				name = "#ger_tank_king_tiger_AbilityDefinition_name"
 				recharge_time = 6
 				area = 3
-				range = 40
-				max_targets = 6
+				range = 30
+				max_targets = 4
 				
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 135
+				amount = 100
 
                 			[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .5
+				amount = .1
                 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
