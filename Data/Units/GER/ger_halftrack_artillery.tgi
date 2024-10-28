@@ -67,15 +67,15 @@
 				name = "#ger_halftrack_artillery_AbilityDefinition_name"
 				range = 50
 				recharge_time = 9
-				area = 4
-				max_targets = 10
+				area = 5
+				max_targets = 12
 	
 				[Effect Template=BlastDamageEffect]
-				amount = 40
+				amount = 50
 				
 				[Effect Template=MoraleLossEffect]
 				targets =+ENEMY -TANK
-				amount = .75
+				amount = 1
 				
 				[Flags] 
 				bombard = true
