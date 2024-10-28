@@ -112,22 +112,27 @@
 		actor_ids = regiment_gbr_infantry
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_aa
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_at
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_artillery
 		
 		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_aa
-
-		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_heavy
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_amphib
 
-		[RecruitActor]
-		actor_ids = gbr_truck_supply
+
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_engineer

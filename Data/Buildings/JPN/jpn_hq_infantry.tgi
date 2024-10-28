@@ -113,13 +113,19 @@
 		actor_ids = regiment_jpn_infantry
 
 		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_aa
+
+		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_at
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_commando
@@ -132,9 +138,6 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_amphib
-
-		[RecruitActor]
-		actor_ids = jpn_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_engineer

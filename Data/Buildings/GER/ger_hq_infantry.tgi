@@ -115,31 +115,31 @@
 		actor_ids = regiment_ger_infantry
 	
 		[RecruitActor]
+		actor_ids = regiment_ger_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_aa
+
+		[RecruitActor]
 		actor_ids = regiment_ger_infantry_at
 	
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_ger_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_mechanized
+		actor_ids = regiment_ger_infantry_goliath
 
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_amphib
-
-		[RecruitActor]
-		actor_ids = ger_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_ger_engineer
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_hohle
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_goliath
 	}
 	
 	[ResearchComponent]
