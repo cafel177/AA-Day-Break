@@ -5,7 +5,7 @@
 
 	[BodyComponent]
 	{
-		health = 400
+		health = 350
 		defense = 3
 	}
 	
@@ -49,7 +49,7 @@
 				name = "#rus_halftrack_AbilityDefinition_name"
                 
 				recharge_time = 3
-				range = 7
+				range = 5
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 10
