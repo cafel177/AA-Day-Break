@@ -550,3 +550,32 @@ USAGE:
 	proximity_desired = 12
 }
 
+[Template StartMarine Template=RMCActorGroup]
+{
+	ids = start_marine
+	name = "#template_rmc_aa_start_marine_name"
+
+	kingdom_ids = null
+	show_ui = true
+	difficulty_level = infinite
+
+	range = 1,1
+	area_factor = 0
+	
+	search_relative_kingdom_ids = this
+	search_radius = 12
+
+	intraproximity_min = 10
+	intraproximity_desired = 10
+	starting_location_weight = 10000
+
+	[RequiredObject]
+	object_ids = placeholder_depot_marine
+	position = 0,0
+	
+	;; see comment in [MachineGunBunkers]
+	[GroupRestriction]
+	group_ids = start_corps*
+	proximity_min = 12
+	proximity_desired = 12
+}

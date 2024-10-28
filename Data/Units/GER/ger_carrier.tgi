@@ -7,7 +7,7 @@
 	[BodyComponent]
 	{
 		health = 3000
-		defense = 10
+		defense = 0
 	}
 	
 	[PropertiesComponent]

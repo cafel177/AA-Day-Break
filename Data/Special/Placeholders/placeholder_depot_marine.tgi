@@ -1,0 +1,31 @@
+[Thing Template=Placeholder]
+{
+	IDS = placeholder_depot_marine
+	name = "#placeholder_depot_marine_name"
+
+	[Flags]
+	axis_locked = false
+	tile_locked = false
+
+	[Placement]
+	placement_group_IDS = group_special
+	placement_category = building
+
+	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 1
+					
+		soft_shape = RECT
+		rect_width = 1
+		rect_height = 1
+	}
+
+	[View]
+	{
+		resource_prefix = PlaceholderDepotSupply/PlaceholderDepotSupply
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+}

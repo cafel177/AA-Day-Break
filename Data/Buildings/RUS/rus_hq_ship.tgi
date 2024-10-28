@@ -29,8 +29,8 @@
 	{
 		[DeploymentInfo]
 		{
-			creation_offset = -30.0, 0.0
-			deployment_offset = -30.0, 0.0
+			creation_offset = -20.0, 0.0
+			deployment_offset = -20.0, 0.0
 		}
 	}
 
