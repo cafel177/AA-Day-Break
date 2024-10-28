@@ -113,7 +113,7 @@
 
 	[LairComponent]
 	{
-		reward = 25, 25	
+		reward = 20, 20	
 	}
 
 	[ElementComponent]
