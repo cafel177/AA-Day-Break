@@ -46,37 +46,40 @@
 
 	[View]
 	{
-		resource_prefix = RUSDepotSupply/RUSDepotSupply
+		resource_prefix = RUSBrigadeEngineer2/RUSBrigadeEngineer
 		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
 
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_depot_dirt
+			vfx_ids = ground_brigade_dirt
 			terrain_group_filter = dirt
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_depot_desert
+			vfx_ids = ground_brigade_desert
 			terrain_group_filter = desert
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_depot_snow
+			vfx_ids = ground_brigade_snow
 			terrain_group_filter = snow
 		}
 		
 		[WhenSelected Template=FXC_PlaySFX]
 		{
-			audio_ids = depot_supply_select
+			audio_ids = brigade_engineer_select
 		}
 		
-		;;----- Spot Lights ----------------------
+		;----- Lights -----
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_03
+			vfx_ids = spotlight_02_bright
 			location = spotlight_ae_01
 			attached = true
 		}
@@ -92,20 +95,6 @@
 		{
 			vfx_ids = window_thin
 			location = window_02
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_03
-			attached = true
-		}
-		
-		[WhenConstructed Template=FXC_CreateVFX]
-		{
-			vfx_ids = window_thin
-			location = window_04
 			attached = true
 		}		
 	}
