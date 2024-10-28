@@ -18,6 +18,11 @@
 	health = 250
 	defense = 2
 
+	hide_if_missing_properties = false
+    
+	[ElementComponent]
+	required_properties = tech_special_forces
+
 	[MoverComponent]
 	speed_max = 3
 	
