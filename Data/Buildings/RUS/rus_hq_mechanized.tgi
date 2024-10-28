@@ -112,28 +112,28 @@
 		actor_ids = regiment_rus_halftrack
 
 		[RecruitActor]
+		actor_ids = regiment_rus_tank_light_new
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_aa_new
 
 		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_sniper
 
 		[RecruitActor]
-		actor_ids = regiment_rus_halftrack_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_mechanized
-
-		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_light_new
-			
+		actor_ids = regiment_rus_halftrack_artillery
+	
 		[RecruitActor]
 		actor_ids = regiment_rus_rocket_truck
-
-		[RecruitActor]
-		actor_ids = rus_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_at

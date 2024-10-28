@@ -112,25 +112,25 @@
 		actor_ids = regiment_gbr_halftrack
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_tank_light_new
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_aa
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_sniper
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
-
-		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_tank_light_new
-
-		[RecruitActor]
-		actor_ids = gbr_truck_supply
+		actor_ids = regiment_gbr_halftrack_artillery
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_halftrack_at
