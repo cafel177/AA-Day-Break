@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 65
+		money = 75
 		
 		[Upkeep]
 		ammo = 10
@@ -34,7 +34,7 @@
 		layout_IDS = regiment_mechanized_infantry
 
 		[Slot]	;; front
-		element_IDS = gbr_halftrack
+		element_IDS = gbr_halftrack_def
 		
 		[Slot]	;; rear guard 1
 		element_IDS = gbr_infantry
@@ -43,13 +43,13 @@
 		element_IDS = gbr_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = gbr_infantry
+		element_IDS = gbr_infantry_mg
 	
 		[Slot]	;; flank
 		element_IDS = gbr_infantry
 		
 		[Slot]	;; captain
-		element_IDS = gbr_car_armored_co
+		element_IDS = gbr_infantry_co
 	}
 	
 	[PropertiesComponent]

@@ -1,0 +1,67 @@
+[Template JPNHalftrackDef Template=AAUnitJPNVehicleHalftrack]
+{
+	name = "#jpn_halftrack_Thing_name"
+	editor_name = "#jpn_halftrack_Thing_editor_name"
+
+	[BodyComponent]
+	{
+		health = 400
+		defense = 3
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 4.5
+		acceleration = 3.5
+		turn_radius = 1.5
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = mg		
+		
+		[Property]
+		property_IDS = halftrack_unit
+	}
+	
+	[View]
+	{
+		resource_prefix = JPNHalftrack/JPNHalftrack
+	}
+
+	[PerformerComponent]
+	{
+		
+		[Ability Template=AAGunLocal]
+		{	
+			[AbilityDefinition Template=AAInfantryRifle]
+			{
+				name = "#jpn_halftrack_AbilityDefinition_name"
+                
+				recharge_time = 3
+				range = 7
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 10
+			
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_mg_heavy
+			
+			}
+		}
+	}
+}
+
+;;----------------------------- UNITS ------------------------ ;;
+
+[Thing Template=JPNHalftrackDef]
+{
+	IDS = jpn_halftrack_def
+}

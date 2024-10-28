@@ -166,10 +166,10 @@
 	;; experience
 	fixed	ExperienceGainMinimum = 0	;; minimum amount of experience gained
 	fixed	ExperienceGainMaximum = 30	;; maximum amount of experience gained
-	fixed	ExperienceKillMultiplier = 2	;; base experience value is multiplied by this
+	fixed	ExperienceKillMultiplier = 1	;; base experience value is multiplied by this
 	fixed	ExperienceCaptureMultiplier = 1	;; base experience value is multiplied by this
 	fixed	ExperienceRoutMultiplier = 1	;; base experience value is multiplied by this
-	fixed	ExperienceEngageMultiplier = 2	;; base experience value is multiplied by this
+	fixed	ExperienceEngageMultiplier = 1	;; base experience value is multiplied by this
 	fixed	ExperienceDefaultValue = 1	;; value used when victim has no CV and no specified fake CV value
 
 	fixed	ExperienceFactionGainMultiplier = 2.0f	;; multiplier applied to amount of experience kingdom gains through its actors
