@@ -112,7 +112,7 @@
 		actor_ids = regiment_ger_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_ger_infantry
+		actor_ids = regiment_ger_infantry_def
 	
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_mechanized
@@ -128,6 +128,9 @@
 	
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry
 
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_goliath
