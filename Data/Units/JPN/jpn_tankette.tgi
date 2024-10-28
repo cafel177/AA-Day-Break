@@ -33,8 +33,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool
-		required_properties = tech_tankette
+		required_properties = tech_special_forces
 	}
 	
 	[PropertiesComponent]
