@@ -2,8 +2,8 @@
 {
 	[BodyComponent]
 	{
-		health = 300
-		defense = 4
+		health = 400
+		defense = 6
 	}
 
 	[MoverComponent]
@@ -88,10 +88,10 @@
 				amount = 70
 
 				[Effect Template=BlastDamageEffect]
-				amount = 50
+				amount = 65
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.25
+				amount = 1.5
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_artillery_heavy
