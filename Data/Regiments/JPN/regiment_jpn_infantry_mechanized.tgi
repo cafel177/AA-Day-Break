@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 90
+		money = 75
 		
 		[Upkeep]
 		ammo = 10
@@ -32,7 +32,6 @@
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_mechanized_infantry
-		entrenchment_time = 30
 
 		[Slot]	;; front
 		element_IDS = jpn_halftrack
@@ -47,7 +46,7 @@
 		element_IDS = jpn_infantry
 	
 		[Slot]	;; flank
-		element_IDS = jpn_infantry_mg
+		element_IDS = jpn_infantry
 		
 		[Slot]	;; captain
 		element_IDS = jpn_car_armored_co

@@ -79,12 +79,12 @@
 
 [Thing Template=AAUnitUSAKneelMG]
 {
-	IDS = gbr_infantry_mg
+	IDS = usa_infantry_mg
 }	
 
 [Thing Template=AAUnitUSAKneelMG]
 {
-	IDS = gbr_infantry_mg_sp
+	IDS = usa_infantry_mg_sp
 
     	[BodyComponent]
 	health = 200

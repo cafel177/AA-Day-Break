@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 90
+		money = 75
 		
 		[Upkeep]
 		ammo = 10
@@ -32,7 +32,6 @@
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_mechanized_infantry
-		entrenchment_time = 30
 
 		[Slot]	;; front
 		element_IDS = ger_halftrack
@@ -44,10 +43,10 @@
 		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_mg
+		element_IDS = ger_infantry
 	
 		[Slot]	;; flank
-		element_IDS = ger_infantry_mg
+		element_IDS = ger_infantry
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co

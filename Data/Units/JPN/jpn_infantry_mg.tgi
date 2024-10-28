@@ -84,7 +84,7 @@
 
 [Thing Template=AAUnitJPNKneelMG]
 {
-	IDS = jpn_infantry_mg_ap
+	IDS = jpn_infantry_mg_sp
 
     	[BodyComponent]
 	health = 200
