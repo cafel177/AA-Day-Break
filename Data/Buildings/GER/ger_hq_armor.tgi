@@ -268,7 +268,7 @@
 		actor_ids = regiment_ger_tank_heavy_new
 
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_king_tiger_new
+		actor_ids = ger_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_at
@@ -277,7 +277,7 @@
 		actor_ids = regiment_ger_tank_artillery
 
 		[RecruitActor]
-		actor_ids = ger_truck_supply
+		actor_ids = regiment_ger_tank_king_tiger_new
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_aa
@@ -324,9 +324,6 @@
 		actor_ids = regiment_ger_tank_heavy_tb
 
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_king_tiger_tb
-
-		[RecruitActor]
 		actor_ids = regiment_ger_tank_at_tb
 
 		[RecruitActor]
@@ -334,6 +331,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_flame_tb
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_king_tiger_tb
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply

@@ -249,13 +249,13 @@
 		actor_ids = regiment_rus_tank_heavy_new
 
 		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
 		actor_ids = regiment_rus_tank_at
 		
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_artillery
-
-		[RecruitActor]
-		actor_ids = rus_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_aa

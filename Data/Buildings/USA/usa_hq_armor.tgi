@@ -116,13 +116,13 @@
 		actor_ids = regiment_usa_tank_heavy
 
 		[RecruitActor]
+		actor_ids = usa_truck_supply
+
+		[RecruitActor]
 		actor_ids = regiment_usa_tank_at
 		
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_artillery
-
-		[RecruitActor]
-		actor_ids = usa_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_aa
