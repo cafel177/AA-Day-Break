@@ -7,8 +7,8 @@
 
 	[BodyComponent]
 	{
-		health = 450
-		defense = 12
+		health = 600
+		defense = 10
 	}
 	
 	[ElementComponent]
@@ -53,7 +53,7 @@
 				name = "#gbr_tank_medium_AbilityDefinition_name"
 				recharge_time = 6
 				area = 2
-				range = 30
+				range = 25
 				max_targets = 4
 
 				[Flags] 
@@ -63,7 +63,7 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 40
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_medium
