@@ -1,6 +1,5 @@
-[Thing Template=AAUnitJPNKneel]
+[Template AAUnitJPNKneelMG Template=AAUnitJPNKneel]
 {
-	IDS = jpn_infantry_mg
 	name = "#jpn_infantry_mg_name"
 	editor_name = "#jpn_infantry_mg_editor_name"
 	
@@ -77,3 +76,20 @@
 		equipment_type_ids = rifle
 	}
 }
+
+[Thing Template=AAUnitJPNKneelMG]
+{
+	IDS = jpn_infantry_mg
+}	
+
+[Thing Template=AAUnitJPNKneelMG]
+{
+	IDS = jpn_infantry_mg_ap
+
+    	[BodyComponent]
+	health = 200
+	defense = 2
+
+	[MoverComponent]
+	speed_max = 3
+}	

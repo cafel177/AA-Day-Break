@@ -13,13 +13,13 @@
 	}
 	
 	[BodyComponent]
-	health = 200
-	defense = 1
+	health = 250
+	defense = 3.5
 
 	[CharacterComponent Template=AAInfantryCharacterComponent]
 
 	[MoverComponent]
-	speed_max = 2.5
+	speed_max = 3
 		
 	[PropertiesComponent]
 	{
@@ -47,7 +47,7 @@
 				range = 12
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
+				amount = 14
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_rifle
@@ -62,7 +62,7 @@
 				projectile_ids = grenade01
 				
 				[Effect Template=BlastDamageEffect]
-				amount = 20
+				amount = 25
 			}
 		}
 	}	

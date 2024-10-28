@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSKneel]
+[Template AAUnitRUSKneelMG Template=AAUnitRUSKneel]
 {
-	IDS = rus_infantry_mg
 	name = "#rus_infantry_mg_name"
 	editor_name = "#rus_infantry_mg_editor_name"
 
@@ -76,3 +75,20 @@
 		equipment_type_ids = rifle
 	}
 }
+
+[Thing Template=AAUnitRUSKneelMG]
+{
+	IDS = rus_infantry_mg
+}	
+
+[Thing Template=AAUnitRUSKneelMG]
+{
+	IDS = rus_infantry_mg_sp
+
+    	[BodyComponent]
+	health = 200
+	defense = 2
+
+	[MoverComponent]
+	speed_max = 3
+}	

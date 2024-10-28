@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERKneel]
+[Template AAUnitGERKneelMG Template=AAUnitGERKneel]
 {
-	IDS = ger_infantry_mg
 	name = "#ger_infantry_mg_name"
 	editor_name = "#ger_infantry_mg_editor_name"
 	
@@ -649,4 +648,22 @@
 			}
 		}
 	}
+}
+
+
+[Thing Template=AAUnitGERKneelMG]
+{
+	IDS = ger_infantry_mg
+}	
+
+[Thing Template=AAUnitGERKneelMG]
+{
+	IDS = ger_infantry_mg_sp
+
+    	[BodyComponent]
+	health = 200
+	defense = 2
+
+	[MoverComponent]
+	speed_max = 3
 }

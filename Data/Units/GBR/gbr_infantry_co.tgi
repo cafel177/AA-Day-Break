@@ -40,9 +40,9 @@
 ;;---------------------------------------------- GBRInfantryCO Unit --------
 
 
-[Thing Template=AAUnitGBRProne]
+[Template AAUnitGBRProneCO Template=AAUnitGBRProne]
 {
-	IDS = gbr_infantry_co
+
 	name = "#gbr_infantry_co_Thing_name"
 	editor_name = "#gbr_infantry_co_Thing_editor_name"
 	
@@ -83,6 +83,13 @@
 		property_IDS = combat_unit
 	}
 	
+
+}
+
+[Thing Template=AAUnitGBRProneCO]
+{
+	IDS = gbr_infantry_co
+
 	[PerformerComponent]
 	{
 		[Ability Template=AAGunLocal]
@@ -110,6 +117,46 @@
 				
 				[Effect Template=BlastDamageEffect]
 				amount = 20
+			}
+		}
+	}
+}	
+
+[Thing Template=AAUnitGBRProneCO]
+{
+	IDS = gbr_infantry_co_sp
+
+	[BodyComponent]
+	health = 250
+	defense = 3.5
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAGunLocal]
+		{
+			[AbilityDefinition Template=AAInfantrySMG]
+			{				
+				name = "#gbr_infantry_co_AbilityDefinition_name"
+				recharge_time = 2
+				range = 12
+								
+				[Effect Template=PierceDamageEffect]
+				amount = 14
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_mg_light
+			}
+		}
+		
+		[Ability Template=AAGrenadeLocal]
+		{
+			[AbilityDefinition Template=AAThrownGrenade]
+			{
+				name = "#gbr_infantry_co_AbilityDefinition_name_2"
+				projectile_ids = grenade01
+				
+				[Effect Template=BlastDamageEffect]
+				amount = 25
 			}
 		}
 	}
