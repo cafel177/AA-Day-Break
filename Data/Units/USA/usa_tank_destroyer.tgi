@@ -6,8 +6,8 @@
 
 	[BodyComponent]
 	{
-		health = 500
-		defense = 12
+		health = 400
+		defense = 6
 	}
 	
 	[MoverComponent]
@@ -55,9 +55,9 @@
 			{				
 				name = "#usa_tank_destroyer_AbilityDefinition_name"
 				recharge_time = 6
-				area = 4
+				area = 5
 				range = 40
-				max_targets = 6
+				max_targets = 4
 				attenuation_range_min = 1
 				attenuation_factor_max = 0.2
 
@@ -65,7 +65,7 @@
 				bombard = true
 				
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 90
 
 				[Effect Template=EnchantmentEffect]
 				{
