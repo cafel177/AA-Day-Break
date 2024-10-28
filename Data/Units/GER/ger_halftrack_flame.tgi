@@ -186,7 +186,7 @@
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 15
+						amount = 25
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
