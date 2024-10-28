@@ -54,7 +54,7 @@
 				bombard = true
 	
 				[Effect Template=BlastDamageEffect]
-				amount = 30
+				amount = 40
 
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = explosive
@@ -63,7 +63,7 @@
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .25
+				amount = .5
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_artillery_light
