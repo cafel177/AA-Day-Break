@@ -30,7 +30,7 @@
 		[WhenDestroyed Template=FXC_CreateVFX]
 		{
 			vfx_ids = tank_shot_explosion
-			at = TARGET_HIT_POSITION
+			at = TARGET_GROUND
 			attached = false
 		}
 		

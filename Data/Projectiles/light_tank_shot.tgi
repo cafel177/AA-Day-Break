@@ -12,7 +12,7 @@
 		{
 			vfx_ids = tank_shot_explosion
 			target_flags = +infantry
-			at = TARGET_HIT_POSITION
+			at = TARGET_GROUND
 			attached = false
 		}
 		
@@ -21,7 +21,7 @@
 		{
 			vfx_ids = tank_shot_explosion_hard
 			target_flags = -infantry -building
-			at = TARGET_HIT_POSITION
+			at = TARGET_GROUND
 			attached = false
 		}
 		
@@ -30,7 +30,7 @@
 		{
 			vfx_ids = tank_shot_explosion_building
 			target_flags = +building
-			at = TARGET_HIT_POSITION
+			at = TARGET_GROUND
 			attached = false
 		}
 
