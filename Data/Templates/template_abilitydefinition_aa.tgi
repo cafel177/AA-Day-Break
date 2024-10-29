@@ -311,7 +311,7 @@ smm021003 - created
 
 ;;--------------------------------------------- Infantry Rifle --
 
-[Template AAInfantryRifle Inherit=AAAttack]
+[Template AAInfantryRifleBase Inherit=AAAttack]
 {
 	range = 10
 	recharge_time = 3
@@ -323,7 +323,10 @@ smm021003 - created
 		location = gun_ae_01
 		;attached = false
 	}
+}
 
+[Template AAInfantryRifle Inherit=AAInfantryRifleBase]
+{
 	[WhenDo template=FXC_CreateVFX]
 	{
 		VFX_IDS = rifle_shot_explosion
@@ -342,6 +345,25 @@ smm021003 - created
 	}
 }
 
+[Template AAInfantryRifleBomb Inherit=AAInfantryRifleBase]
+{
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = rifle_shot_explosion
+		target_flags = +infantry
+		at = TARGET_GROUND
+ 		location = spine
+		attached = false
+	}
+	
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = rifle_shot_explosion_hard
+		target_flags = -infantry
+		at = TARGET_GROUND
+		attached = false
+	}
+}
 
 ;;--------------------------------------------- Infantry Rocket ---
 
@@ -381,7 +403,7 @@ smm021003 - created
 
 ;;---------------------------------------- Vehicle MachineGun --
 
-[Template AAVehicleMG Inherit=AAAttack]
+[Template AAVehicleMGBase Inherit=AAAttack]
 {
 	range = 12
 	impact_impulse = 2000
@@ -395,14 +417,6 @@ smm021003 - created
 		location = cannon_ae_01
 		;attached = false
 	}
-
-	[WhenDo template=FXC_CreateVFX]
-	{
-		VFX_IDS = mg_shot_explosion
-		target_flags = +infantry
-		at = TARGET_HIT_POSITION
-		attached = false
-	}
 	
 	[WhenDo template=FXC_CreateVFX]
 	{
@@ -410,18 +424,46 @@ smm021003 - created
 		target_flags = +infantry
 		at = TARGET_GROUND
 		attached = false
+	}	
+} ; end [Template AAVehicleMG]
+
+[Template AAVehicleMG Inherit=AAVehicleMGBase]
+{
+    	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion
+		target_flags = +infantry
+		at = TARGET_HIT_POSITION
+		attached = false
 	}
-	
-	[WhenDo template=FXC_CreateVFX]
+    
+    	[WhenDo template=FXC_CreateVFX]
 	{
 		VFX_IDS = mg_shot_explosion_hard
 		target_flags = -infantry
 		at = TARGET_HIT_POSITION
 		attached = false
 	}
-	
-} ; end [Template AAVehicleMG]
+}
 
+[Template AAVehicleMGBomb Inherit=AAVehicleMGBase]
+{
+    	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion
+		target_flags = +infantry
+		at = TARGET_GROUND
+		attached = false
+	}
+    
+    	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion_hard
+		target_flags = -infantry
+		at = TARGET_GROUND
+		attached = false
+	}
+}
 
 ;;------------------------------------------ Vehicle Cannons ---
 

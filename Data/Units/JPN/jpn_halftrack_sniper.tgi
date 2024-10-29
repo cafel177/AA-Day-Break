@@ -52,7 +52,7 @@
 		
 		[Ability Template=AAGunLocalBomb]
 		{	
-			[AbilityDefinition Template=AAVehicleMG]
+			[AbilityDefinition Template=AAVehicleMGBomb]
 			{
 				name = "#jpn_halftrack_AbilityDefinition_name"
 				recharge_time = 7

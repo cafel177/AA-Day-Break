@@ -93,9 +93,6 @@
 				recharge_time = 5
 				area = 4
 				max_targets = 8
-				
-				[Flags] 
-				bombard = true	
 
 				[Effect Template=FireDamageEffect]
 				amount = 30
