@@ -14,7 +14,7 @@
 	[Size]
 	{
 		blocking_shape = CIRCLE
-		blocking_radius = 1
+		blocking_radius = 0.5
 					
 		soft_shape = RECT
 		rect_width = 1
