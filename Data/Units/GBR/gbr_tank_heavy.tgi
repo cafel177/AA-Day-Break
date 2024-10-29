@@ -23,7 +23,7 @@
 		
 	{
 		speed_max = 3
-		acceleration = 1.25
+		acceleration = 2.5
 		
 		/*
 		[WhenStartMoving template=FXC_PlaySFX]
