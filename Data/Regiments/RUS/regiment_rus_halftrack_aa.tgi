@@ -32,7 +32,10 @@
 		audio_ids = rus_aa_attack
 	}		
 	
-
+	[DetectionComponent]
+	{
+		detection_range = 30
+	}
 	
 	[PropertiesComponent]
 	{	

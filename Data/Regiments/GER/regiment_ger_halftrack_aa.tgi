@@ -33,6 +33,11 @@
 		audio_ids = ger_aa_attack
 	}		
 	
+	[DetectionComponent]
+	{
+		detection_range = 30
+	}
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy

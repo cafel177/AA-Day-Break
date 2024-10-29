@@ -30,6 +30,11 @@
 		audio_ids = jpn_aa_attack
 	}		
 	
+	[DetectionComponent]
+	{
+		detection_range = 30
+	}
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_mechanized
