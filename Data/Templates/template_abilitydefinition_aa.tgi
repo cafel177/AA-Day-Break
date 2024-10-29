@@ -634,7 +634,7 @@ smm021003 - created
 }
 
 
-[Template AABunkerAttackMG Inherit=AABunkerAttack]
+[Template AABunkerAttackMGBase Inherit=AABunkerAttack]
 {
 	range = 16
 	recharge_time = 2
@@ -685,7 +685,18 @@ smm021003 - created
 		frequency = 1
 		delay = 0.73
 	}
+	
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion_ground01
+		target_flags = +infantry
+		at = TARGET_GROUND
+		attached = false
+	}
+}
 
+[Template AABunkerAttackMG Template=AABunkerAttackMGBase]
+{
 	;;explosion on target
 	[WhenDo template=FXC_CreateVFX]
 	{
@@ -695,20 +706,33 @@ smm021003 - created
  		location = spine
 		attached = false
 	}
-	
-	[WhenDo template=FXC_CreateVFX]
-	{
-		VFX_IDS = mg_shot_explosion_ground01
-		target_flags = +infantry
-		at = TARGET_GROUND
-		attached = false
-	}
-	
+
 	[WhenDo template=FXC_CreateVFX]
 	{
 		VFX_IDS = mg_shot_explosion_hard
 		target_flags = -infantry
 		at = TARGET_HIT_POSITION
+		attached = false
+	}
+}
+
+[Template AABunkerAttackMGBombard Template=AABunkerAttackMGBase]
+{
+	;;explosion on target
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion
+		target_flags = +infantry
+		at = TARGET_GROUND
+ 		location = spine
+		attached = false
+	}
+
+	[WhenDo template=FXC_CreateVFX]
+	{
+		VFX_IDS = mg_shot_explosion_hard
+		target_flags = -infantry
+		at = TARGET_GROUND
 		attached = false
 	}
 }

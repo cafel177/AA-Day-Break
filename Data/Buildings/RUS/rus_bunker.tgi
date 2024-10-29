@@ -114,7 +114,7 @@
 		{
 			turret_ids = turret
 			
-			[AbilityDefinition Template=AABunkerAttackMG]
+			[AbilityDefinition Template=AABunkerAttackMGBombard]
 			{
 				name = "#rus_bunker_DefenderComponent_AbilityDefinition_name"
 				area = 4
