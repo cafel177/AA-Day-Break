@@ -1,9 +1,11 @@
 [Template AARandomTankRegiments Inherit=RandomActor]
 {
 	[Flags]
-	revealed = true
-	axis_locked = false
+	blocking = false
 	targetable = true
+	ethereal = false
+	radar = false
+	axis_locked = false	
 	tile_locked = false
 	
 	[Placement]

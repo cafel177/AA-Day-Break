@@ -4,6 +4,10 @@
 	name = "#placeholder_regiments_halftrack_name"
 
 	[Flags]
+	blocking = false
+	targetable = true
+	ethereal = true
+	radar = false
 	axis_locked = false	
 	tile_locked = false
 
