@@ -6,6 +6,11 @@
 	[Flags]
 	axis_locked = false
 	tile_locked = false
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
 
 	[Placement]
 	placement_group_IDS = group_special

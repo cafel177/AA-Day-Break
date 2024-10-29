@@ -5,6 +5,7 @@
 
 	[Flags]
 	axis_locked = false	
+	tile_locked = false
 
 	[Placement]
 	placement_group_IDS = group_special
