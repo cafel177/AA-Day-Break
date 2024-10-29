@@ -56,11 +56,11 @@
 
 		[Inventory]
 		actor_ids = usa_bomber
-		count = 2
+		count = 3
 
 		[Inventory]
 		actor_ids = usa_fighter
-		count = 4
+		count = 6
 
 		[Runway]
 		{

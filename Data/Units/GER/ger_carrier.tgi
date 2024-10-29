@@ -82,11 +82,11 @@
 
 		[Inventory]
 		actor_ids = ger_bomber
-		count = 2
+		count = 3
 
 		[Inventory]
 		actor_ids = ger_fighter
-		count = 6
+		count = 8
 
 		[Runway]
 		{
