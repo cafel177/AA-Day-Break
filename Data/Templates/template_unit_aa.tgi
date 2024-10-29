@@ -1363,6 +1363,9 @@ USAGE:
 	{	
 		[Property]
 		property_IDS = provides_corps_property
+
+		[Property]
+		property_IDS = building
 	}
 
 	[Placement]
