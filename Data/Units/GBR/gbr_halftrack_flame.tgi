@@ -224,4 +224,40 @@
 			}
 		}
 	}
+
+	[PerformerComponent]
+	{
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{				
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				ability_type = null
+				range = 10
+				recharge_time = 50		
+				targets = +ENEMY +building
+
+				[Effect Template=FireDamageEffect]
+				amount = 50
+
+				[Effect Template=StealResourcesEffect]
+				{
+					[ResourcesAmount]
+					money = 25
+				}
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = flame
+					targets = SELF
+					amount = 900
+					hide_from_tooltip = true
+				}
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+			}
+		}
+	}
 }
