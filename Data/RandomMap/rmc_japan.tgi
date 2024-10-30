@@ -11,12 +11,8 @@
 	[TerrainBlob Template=TempGrassTerrainBlob]
 	
 	[TerrainStreak Template=TempGrassDryTerrainStreak]
-
-	[TerrainBlob Template=TempDirtDarkTerrainBlob]
 	
 	[TerrainBlob Template=TempGrassDryTerrainBlob]
-	
-	[TerrainBlob Template=TempDirtDarkTerrainBlob02]
 	
 	[TerrainBlob Template=TempGrassDryTerrainBlob02]
 	
@@ -61,7 +57,7 @@
 	    	area_factor = 3
 
 		[Object]
-		object_ids = random_city_japan
+		object_ids = random_village_japan
 		weight = 1
 
 		[Object]
