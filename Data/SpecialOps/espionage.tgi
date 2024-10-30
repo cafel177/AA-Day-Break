@@ -16,7 +16,7 @@
 	[Effect Template=StealResourcesEffect]
 	{
 		[ResourcesAmount]
-		money = 50
+		money = 75
 	}
 
 	[WhenDo Template=FXC_CreateVFX]

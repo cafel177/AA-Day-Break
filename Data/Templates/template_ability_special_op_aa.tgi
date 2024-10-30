@@ -287,13 +287,13 @@ smm042004 - created
 
 [Template AASpecialOpGBRSecretAgent Template=AASpecialOpShared]
 {
-	cost_faction_experience = 200
+	cost_faction_experience = 600
 	ability_ids = gbr_secret_agent
 }
 
 [Template AASpecialOpUSASecretAgent Template=AASpecialOpShared]
 {
-	cost_faction_experience = 200
+	cost_faction_experience = 600
 	ability_ids = usa_secret_agent
 }
 
