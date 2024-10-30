@@ -234,7 +234,7 @@
 				name = "#gbr_tank_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				ability_type = null
-				range = 10
+				range = 0.5
 				recharge_time = 50		
 				targets = +ENEMY +building
 
