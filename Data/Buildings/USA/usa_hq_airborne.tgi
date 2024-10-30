@@ -8,6 +8,11 @@
 	health = 2000
 	defense = 0
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 20
@@ -58,7 +63,7 @@
 		money = 125
 
 		[Production]
-		money = 25
+		money = 30
 		ammo = 10
 		oil = 0
 		unit_limit_provided = 3

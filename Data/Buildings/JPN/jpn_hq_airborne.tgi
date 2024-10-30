@@ -8,6 +8,11 @@
 	health = 2000
 	defense = 0
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 20
