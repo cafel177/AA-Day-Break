@@ -1,0 +1,90 @@
+
+[RMC template=AAAllRMC]
+{
+	IDS = rmc_greatbritain
+	name = "#rmc_greatbritain_name"
+	description = "#mg_rmc_greatbritain_description"
+	biome = temperate_forest
+
+	weather = NONE,NONE,RAIN_LIGHT,RAIN_HEAVY
+	
+/********************    TERRAIN    ********************/
+
+	[TerrainBlob Template=TempGrassTerrainBlob]
+	
+	[TerrainStreak Template=TempGrassDryTerrainStreak]
+
+	[TerrainBlob Template=TempDirtDarkTerrainBlob]
+	
+	[TerrainBlob Template=TempGrassDryTerrainBlob]
+	
+	[TerrainBlob Template=TempDirtDarkTerrainBlob02]
+	
+	[TerrainBlob Template=TempGrassDryTerrainBlob02]
+	
+	[TerrainBlob Template=TempGrassTerrainBlob02]
+
+/********************    BLOCKING TERRAIN    ********************/
+
+	[TerrainBlob Template=TempMountainTerrainBlob]
+
+	[TerrainBlob Template=TempOceanTerrainBlob]
+	
+/********************    TERRAIN NOISE    ********************/
+
+	[TerrainNoise Template=TempNoisePhase01]
+	
+	[TerrainNoise Template=TempNoisePhase02]
+	
+	[TerrainNoise Template=TempNoisePhase03]
+	
+	[TerrainNoise Template=TempNoisePhase04]
+
+	[TerrainNoise Template=TempNoisePhase05]
+
+	[TerrainNoise Template=TempNoisePhase06]
+
+/*************************    ACTOR GROUPS    **************************/
+
+	[ActorGroup Template=StartCorpsTankBattle]
+	{
+        		ids = start_corps_tb
+		apply_to_all_major_kingdoms = true
+	}
+
+/********************    VILLAGES    ********************/
+
+	[ActorGroup Template=RMCVillageActorGroups]
+	{
+		ids = village_southerneurope
+		name = "#mg_rmc_gibraltar_village_southerneurope_name"
+
+		balanced_placement = false
+	    	area_factor = 3
+
+		[Object]
+		object_ids = random_village_southerneurope
+		weight = 1
+
+		[Object]
+		object_ids = random_tank_regiments
+		weight = 10
+
+        		[GroupRestriction]
+	    	group_ids = start_corps_tb*
+	   	proximity_min = 96
+	    	proximity_desired = 96
+	}
+
+	[ActorGroup Template=StartMoneyTankBattleEasy]
+	apply_to_all_major_kingdoms = true
+
+	[ActorGroup Template=StartMoneyTankBattleMedium]
+	apply_to_all_major_kingdoms = true
+
+	[ActorGroup Template=StartMoneyTankBattleHard]
+	apply_to_all_major_kingdoms = true
+
+    	[ActorGroup Template=StartInfinite]
+	apply_to_all_major_kingdoms = true
+}
