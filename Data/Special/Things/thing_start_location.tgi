@@ -16,9 +16,11 @@
 
 	[EconomyComponent]
 	{
-
 		[Production]
 		building_limit_provided = 20
+
+		[Production]
+		nuclear_limit_provided = 1
 	}
 
 	[Placement]

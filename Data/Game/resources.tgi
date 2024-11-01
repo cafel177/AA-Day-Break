@@ -1,7 +1,7 @@
 /**************************************************************************
 
 resources.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: a list of resources that the game uses.  This file is game-specific, 
 		but must be processes prior to any data objects.  Note that [Resource]
@@ -94,6 +94,24 @@ EXAMPLE:
 [Resource template=LimitedConsumedResource]	
 {
 	IDS = building_limit_consumed
+	name = "#resources_building_limit_consumed_name"
+	limited_by = building_limit_provided
+	icon = ch_building
+}
+
+[Resource template=UpkeepResource]	
+{
+	IDS = nuclear_limit_provided
+	name = "#resources_building_limit_provided_name"
+	icon = ch_building
+	
+	[PurchaseCost]
+	money = 0
+}
+
+[Resource template=LimitedConsumedResource]	
+{
+	IDS = nuclear_limit_consumed
 	name = "#resources_building_limit_consumed_name"
 	limited_by = building_limit_provided
 	icon = ch_building

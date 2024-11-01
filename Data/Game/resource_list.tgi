@@ -1,7 +1,7 @@
 /**************************************************************************
 
 resource_list.tgi
-Copyright © 2002 TimeGate Studios
+Copyright ?2002 TimeGate Studios
 
 DESCRIPTION: a list of resource IDSes that the game uses.  This file is
 			game-specific, but must be processes prior to any template files.  
@@ -38,7 +38,8 @@ EXAMPLE:
 	fixed unit_limit_consumed
 	fixed building_limit_consumed
 	fixed building_limit_provided
-	
+	fixed nuclear_limit_consumed
+	fixed nuclear_limit_provided
 }
 
 [template CostList]
@@ -57,6 +58,8 @@ EXAMPLE:
 	unit_limit_consumed = 0
 	building_limit_consumed = 0
 	building_limit_provided = 0 ;; should always be zero
+	nuclear_limit_consumed = 0
+	nuclear_limit_provided = 0
 }
 
 [template ProductionList template=ResourceList]
@@ -69,4 +72,6 @@ EXAMPLE:
 	unit_limit_consumed = 0	; should always be zero
 	building_limit_consumed = 0
 	building_limit_provided = 0 ;; should always be zero
+	nuclear_limit_consumed = 0
+	nuclear_limit_provided = 0
 }
