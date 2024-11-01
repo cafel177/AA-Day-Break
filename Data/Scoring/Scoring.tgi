@@ -189,6 +189,20 @@
 	name					= "#Scoring_building_limit_consumption_stat_name"
 	resource_ids			= building_limit_consumed
 }
+
+[Statistic template = ResourceProductionStatistic]
+{
+	ids						= nuclear_limit_production_stat
+	name					= "#Scoring_nuclear_limit_production_stat_name"
+	resource_ids			= nuclear_limit_provided
+}
+
+[Statistic template = ResourceProductionStatistic]
+{
+	ids						= nuclear_limit_consumption_stat
+	name					= "#Scoring_nuclear_limit_consumption_stat_name"
+	resource_ids			= nuclear_limit_consumed
+}
 ;;---------------------------------------------------------------------------------------------
 ;;
 ;; Resource Rates - must include every resource in order and go after production but before scores
@@ -244,6 +258,19 @@
 	resource_ids			= building_limit_consumed
 }
 
+[Statistic template = ResourceRateStatistic]
+{
+	ids						= nuclear_limit_production
+	name					= "#Scoring_nuclear_limit_production_name"
+	resource_ids			= nuclear_limit_provided
+}
+
+[Statistic template = ResourceRateStatistic]
+{
+	ids						= nuclear_limit_consumption
+	name					= "#Scoring_nuclear_limit_consumption_name"
+	resource_ids			= nuclear_limit_consumed
+}
 ;;---------------------------------------------------------------------------------------------
 ;;
 ;; Scores - must go after resource production and rates.  If a score is used in other scores

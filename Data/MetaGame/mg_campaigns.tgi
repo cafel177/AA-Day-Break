@@ -833,6 +833,8 @@
 		unit_limit_consumed = 0
 		building_limit_consumed = 0
 		building_limit_provided = 0
+		nuclear_limit_consumed = 0
+		nuclear_limit_provided = 0
 	}
 
 	[WaterStockpileBonus Template=ResourceList]
@@ -844,6 +846,8 @@
 		unit_limit_consumed = 0
 		building_limit_consumed = 0
 		building_limit_provided = 0
+		nuclear_limit_consumed = 0
+		nuclear_limit_provided = 0
 	}
 
 	;; Objectives

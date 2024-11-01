@@ -102,7 +102,7 @@ EXAMPLE:
 [Resource template=UpkeepResource]	
 {
 	IDS = nuclear_limit_provided
-	name = "#resources_building_limit_provided_name"
+	name = "#resources_nuclear_limit_provided_name"
 	icon = ch_building
 	
 	[PurchaseCost]
@@ -112,7 +112,7 @@ EXAMPLE:
 [Resource template=LimitedConsumedResource]	
 {
 	IDS = nuclear_limit_consumed
-	name = "#resources_building_limit_consumed_name"
-	limited_by = building_limit_provided
+	name = "#resources_nuclear_limit_consumed_name"
+	limited_by = nuclear_limit_provided
 	icon = ch_building
 }
