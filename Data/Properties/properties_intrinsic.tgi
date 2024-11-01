@@ -410,6 +410,13 @@
 	IDS = corpshq
 	name = "#properties_intrinsic_corpshq_name"
 	icon = null
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_missile
+	name = "#properties_intrinsic_nuclear_missile_name"
+	icon = null
 	
 	enabled_target_flags = provides_corps
 }

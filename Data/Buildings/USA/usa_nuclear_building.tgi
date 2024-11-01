@@ -1,0 +1,124 @@
+[Thing Template=AAUSABuildingPackable]
+{
+	IDS = usa_nuclear_building
+	name = "#usa_nuclear_building_name"
+	editor_name = "#usa_nuclear_building_editor_name"
+
+	[Flags]
+	{
+		axis_locked = false
+        revealed = true
+	}
+
+	[BodyComponent]
+	{
+		health = 4000
+		defense = 0
+	}
+
+	[DetectionComponent]
+	detection_range = 30
+	remote_detection_range = 12
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = nuclear_heal
+	}
+    
+	[LairComponent]
+	{
+		reward = 100, 200	
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = regiment_nuclear
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 400
+		
+		[Production]
+		
+		[Upkeep]
+		building_limit_consumed = 1
+        nuclear_limit_consumed = 1
+		ammo = 40
+		oil = 40
+	}
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = property_bunker
+
+		[Property]
+		property_ids = military_building
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		square_size = 6
+	}
+	
+	[View]
+	{
+		resource_prefix = USANuclear/NukeSilo_3
+		icon = /UI/Game/BuildingButtons/IconICBM.png
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_snow
+			terrain_group_filter = snow
+		}
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = bunker_artillery_select
+		}
+
+        [WhenCreated Template=FXC_CreateRFX]
+		{
+			at = TARGET_THING
+			blink_count = 15
+			src_color	= 1, 0, 1
+			dst_color	= 0, 1, 1
+			radar_icon = /Minimap/Icons/IconCorpsHQ.tga
+		}
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_packing
+		audio_ids = pack_7s_sfx
+	}
+	
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
+	}
+    
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		audio_ids = nuclear_complete
+		actor_state = structure_unpacking
+	}
+}

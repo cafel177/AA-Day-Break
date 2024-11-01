@@ -32,7 +32,7 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = 
+		unpack_to_actor_ids = gbr_nuclear_building
 		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
@@ -62,7 +62,7 @@
 	[View]
 	{
 		resource_prefix = GBRTruck/GBRTruck
-		icon = /UI/Game/BuildingButtons/.png
+		icon = /UI/Game/BuildingButtons/IconICBM.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = gbr_truck_deployed

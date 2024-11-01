@@ -1,0 +1,129 @@
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_decay1
+	name = "#nuclear_decay1_name"
+
+	[Modifier template=PeriodicDamageModifier]
+	damage_type = gunfire
+	amount = 2000
+}
+
+[Thing template=AAUnit]
+{
+	IDS = thing_nuclearA
+	name = "#thing_nuclearA_name"
+	
+    hide_if_missing_properties = false
+
+    [Elementcomponent]
+	morale_value = 99
+	resupply_rate = 0
+
+	[BodyComponent]
+	{
+		health = 3000
+        defense = 0
+	}
+	
+	[MoverComponent]
+	speed_max = 1
+
+	[PropertiesComponent]
+	{
+        [Property]
+		property_IDS = captain
+
+		[Property]
+		property_IDS = nuclear_missile
+
+		[Property]
+		property_IDS = nuclear_decay1
+	}
+
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+	flatten_terrain = false
+
+	[View]
+	{
+	    resource_prefix = ThingVisibilityActor/ThingVisibilityActor
+	    shadow_type = none
+	    shadow_texture = null
+	}
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_decay2
+	name = "#nuclear_decay2_name"
+
+	required_properties = nuclear_decay1
+
+	[Modifier template=PeriodicDamageModifier]
+	damage_type = gunfire
+	amount = 2000
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_heal
+	name = "#nuclear_heal_name"
+
+	required_properties = nuclear_decay1
+
+	[Modifier template=PeriodicHealModifier]
+	amount = 2000
+}
+
+[Thing template=Actor]
+{
+	IDS = thing_nuclearB
+	name = "#thing_nuclearB_name"
+	
+    hide_if_missing_properties = false
+
+	[BodyComponent]
+	{
+		health = 20500
+        defense = 0
+	}
+
+	[DetectionComponent]
+	detection_range = 30.0
+	remote_detection_range = 30.0
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = nuclear_decay2
+	}
+	
+	[PropertiesComponent]
+	{
+        [Property]
+		property_IDS = nuclear_missile
+
+		[Property]
+		property_IDS = nuclear_decay1
+	}
+
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+	flatten_terrain = false
+
+	[View]
+	{
+	    resource_prefix = ThingVisibilityActor/ThingVisibilityActor
+	    shadow_type = none
+	    shadow_texture = null
+	}
+ 
+}

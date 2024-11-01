@@ -1,0 +1,66 @@
+[Thing Template=AAOrganization]
+{
+	IDS = regiment_nuclear
+	name = "#regiment_nuclear_name"
+
+	[Flags]
+	{
+	    invisible = true
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 0
+
+		[Upkeep]
+		unit_limit_consumed = 0
+	}		
+	
+	[View]
+	{
+		resource_prefix = /SpecialOps/Units/Saboteur/Saboteur
+        icon = /UI/Game/RegimentButtons/IconV2.png
+        banner_ids = ambient_banner
+		banner_icon = null
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_recon_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_recon_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_recon_attack
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nuclear_missile
+
+		[Property]
+		property_ids = infantry_company
+
+        [Property]
+		property_ids = tank_company
+
+		[Property]
+		property_ids = mechanized_company
+        
+        [Property]
+		property_ids = artillery_company
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_single_unit
+		recruit_time = 300
+
+		[Slot]	;; captain
+		element_IDS = thing_nuclearA
+	}
+}

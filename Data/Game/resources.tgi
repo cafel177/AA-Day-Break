@@ -103,7 +103,7 @@ EXAMPLE:
 {
 	IDS = nuclear_limit_provided
 	name = "#resources_nuclear_limit_provided_name"
-	icon = ch_building
+	icon = ch_rank5
 	
 	[PurchaseCost]
 	money = 0
@@ -114,5 +114,5 @@ EXAMPLE:
 	IDS = nuclear_limit_consumed
 	name = "#resources_nuclear_limit_consumed_name"
 	limited_by = nuclear_limit_provided
-	icon = ch_building
+	icon = ch_rank5
 }

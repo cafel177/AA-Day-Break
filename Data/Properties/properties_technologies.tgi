@@ -728,8 +728,6 @@
 	action_button_icon = TechIcons/IconReorganizeHQ.png
 	
 	required_properties = provides_corps_property
-
-	enabled_target_flags = provides_corps
 }
 
 
