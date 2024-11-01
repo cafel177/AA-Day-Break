@@ -4,6 +4,8 @@
 	name = "#usa_truck_ship_name"
 	editor_name = "#usa_truck_ship_editor_name"
 
+	hide_if_missing_properties = false
+
 	[BodyComponent]
 	{
 		health = 500

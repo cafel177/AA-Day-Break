@@ -4,6 +4,8 @@
 	name = "#rus_truck_nuclear_name"
 	editor_name = "#rus_truck_nuclear_editor_name"
     
+	hide_if_missing_properties = false
+
 	[EconomyComponent]
 	{
 		[Cost]
