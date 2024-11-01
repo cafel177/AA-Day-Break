@@ -1113,6 +1113,147 @@ USAGE:
 	}
 }
 
+[Template AAUnitHelichopter Template=AAUnit]
+{
+	[BodyComponent]
+	{
+		rot_time = 10
+		sink_time = 5
+
+		[OnDeathAbility Template=AAAttackLocal]
+		{
+			[AbilityDefinition Template=AAAttack]
+			{
+				name = "#template_unit_aa_BodyComponent_OnDeathAbility_AbilityDefinition_name_2"
+				area = 5
+				recharge_time = 10
+				targets = +ACTOR -ORGANIZATION -AIR -MINE
+									
+				[Effect Template=BlastDamageEffect]
+				amount = 80
+
+				[Flags]
+				spell = true
+			}
+		}
+		
+		[WhenHealth Template=FXC_CreateVFX]
+	  	{
+			VFX_IDS = airplane_engine_fire
+			location = explosion_point_death02
+			health = 0.8
+			health_trigger_type = ABSOLUTE_BELOW
+	  	}
+		
+	 	[WhenHealth Template=FXC_CreateVFX]
+	 	{
+	 		VFX_IDS = airplane_engine_fire
+			location = explosion_point_death01
+			health = 0.8
+			health_trigger_type = ABSOLUTE_BELOW
+	  	}
+	}
+
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 0
+	}
+
+	[ElementComponent]
+	{
+		morale_value = 15
+		group_priority = 2
+		resupply_rate = 0.2
+	}
+
+	places_tracks = false
+
+	[Flags]
+	{
+		blocking = false
+		ethereal = true
+	}
+		
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = aircraft
+
+		[Property]
+		property_IDS = trailblazing
+	}
+
+	[Stance Template=StanceDeath]
+	
+	[View]
+	{
+		z_offset = 11
+		shadow_type = STENCIL
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+		
+		[Aspect Template=AAAspectDeath]
+		
+		[Swivel]
+		{
+			swivel_node_ids = base
+			swivel_inertia = .25
+			spring_constant = .95
+			swivel_mass = 8000
+			wind_sway = false
+			recoil = true
+			impact_sway = true
+			movement_inertia = false
+		}
+
+                	[WhenCreated template=FXC_CreateVFX]
+                	{
+                		VFX_IDS = headlight_projection
+                		attached = true
+                		location = headlight_projection_01
+               	 	}
+
+                	[WhenCreated template=FXC_CreateVFX]
+                	{
+                		VFX_IDS = headlight_projection
+                		attached = true
+                		location = headlight_projection_02
+               	 	}
+
+		[WhenDestroyed Template=FXC_PlaySFX]
+		audio_ids = helichopter_death
+		at = SOURCE_GROUND
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 9
+		acceleration = 0
+
+		turn_radius = 0.9
+		turn_type = in_place
+		collision_impulse = 8000
+
+        		[WhenStartMoving Template=FXC_PlaySFX]
+		audio_ids = helichopter_move_1
+	}
+	
+	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 0.5
+
+		soft_shape = CIRCLE
+		soft_radius = 1.1
+		
+		target_shape = RECT
+		target_rect_width = 1
+		target_rect_height = 1
+	}
+}
+
 [Template AAUnitAirplaneBomber Template=AAUnitAirplane]
 {
 	[AircraftComponent]
@@ -1359,10 +1500,19 @@ USAGE:
 [Template AAUnitSeaMajor Template=AAUnitSea]
 {
 
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
 	[PropertiesComponent]
 	{	
 		[Property]
 		property_IDS = provides_corps_property
+
+		[Property]
+		property_IDS = building
 	}
 
 	[Placement]
@@ -1737,6 +1887,18 @@ USAGE:
 	actor_state = falling
 }
 
+[Template AAUnitGBRHelichopter Template=AAUnitHelichopter]
+{
+	[Placement]
+	placement_group_IDS = group_nation_gbr
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_gbr
+	}
+}
+
 [Template AAUnitGBRSeaMajor Template=AAUnitSeaMajor]
 {
 	[Placement]
@@ -2047,6 +2209,18 @@ USAGE:
 	[WhenLeave Template=FXC_PlaySFX]
 	audio_ids = crash_ger_bomber
 	actor_state = falling
+}
+
+[Template AAUnitGERHelichopter Template=AAUnitHelichopter]
+{
+	[Placement]
+	placement_group_IDS = group_nation_ger
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_ger
+	}
 }
 
 [Template AAUnitGERVehicleHQTruck Template=AAUnitVehicleHQTruck]
@@ -2405,6 +2579,18 @@ USAGE:
 	actor_state = falling
 }
 
+[Template AAUnitJPNHelichopter Template=AAUnitHelichopter]
+{
+	[Placement]
+	placement_group_IDS = group_nation_jpn
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_jpn
+	}
+}
+
 [Template AAUnitJPNSeaMajor Template=AAUnitSeaMajor]
 {
 	[Placement]
@@ -2749,6 +2935,18 @@ USAGE:
 	actor_state = falling
 }
 
+[Template AAUnitRUSHelichopter Template=AAUnitHelichopter]
+{
+	[Placement]
+	placement_group_IDS = group_nation_rus
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_rus
+	}
+}
+
 [Template AAUnitRUSSeaMajor Template=AAUnitSeaMajor]
 {
 	[Placement]
@@ -3067,6 +3265,18 @@ USAGE:
 	[WhenLeave Template=FXC_PlaySFX]
 	audio_ids = crash_usa_bomber
 	actor_state = falling
+}
+
+[Template AAUnitUSAHelichopter Template=AAUnitHelichopter]
+{
+	[Placement]
+	placement_group_IDS = group_nation_usa
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = nation_usa
+	}
 }
 
 [Template AAUnitUSASeaMajor Template=AAUnitSeaMajor]

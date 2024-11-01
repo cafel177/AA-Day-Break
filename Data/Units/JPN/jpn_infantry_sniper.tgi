@@ -51,7 +51,7 @@
 	{
 		[Ability Template=AAGunLocalBomb]
 		{
-			[AbilityDefinition Template=AAInfantryRifle]
+			[AbilityDefinition Template=AAInfantryRifleBomb]
 			{				
 				name = "#jpn_infantry_sniper_AbilityDefinition_name"
 				recharge_time = 5

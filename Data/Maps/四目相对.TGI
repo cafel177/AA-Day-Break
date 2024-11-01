@@ -1,0 +1,21 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "(DB) - 2v2v2v2 Map - marine"
+
+	kingdom_1 = "Side 1"
+	kingdom_0 = "Side 0"
+	independent_8 = "Other"
+	team_3 = "Team 3"
+	team_2 = "Team 2"
+	team_1 = "Team 1"
+	kingdom_7 = "Side 7"
+	team_0 = "Team 0"
+	kingdom_6 = "Side 6"
+	map_description = "2v2v2v2 Map with marine"
+	kingdom_5 = "Side 5"
+	kingdom_4 = "Side 4"
+	map_name = "(DB) - 2v2v2v2 Map - marine"
+	kingdom_3 = "Side 3"
+	kingdom_2 = "Side 2"
+}

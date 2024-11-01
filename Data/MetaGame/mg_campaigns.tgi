@@ -1,0 +1,3326 @@
+;;-----------------------------------------------------------------------------
+;; Basic templates for things nations can purchase
+;;-----------------------------------------------------------------------------
+
+;; Things a kingdom can purchase from the shop
+[Template DynamicCampaignShopTemplate]
+{
+	[list Technology]
+	{
+		string		ids
+		int		cost
+	}
+
+	[list Actor]
+	{
+		string		ids
+		int		cost
+	}
+
+	[list Division]
+	{
+		string		ids
+		int		cost
+	}
+}
+
+[Template DefaultDynamicCampaignShopTemplate Template=DynamicCampaignShopTemplate]
+{
+}
+
+[Template USADynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
+{	
+	[Division]
+	ids = usa_division_infantry
+	cost = 25
+
+	[Division]
+	ids = usa_division_mobile
+	cost = 40
+
+	[Division]
+	ids = usa_division_armor
+	cost = 50
+	
+	[Division]
+	ids = usa_division_air
+	cost = 100
+	
+	[Actor]
+	ids = mg_usa_army_infantry
+	cost = 25
+
+	[Actor]
+	ids = mg_usa_army_infantry_air
+	cost = 100
+
+	[Actor]
+	ids = mg_usa_army_mobile
+	cost = 40
+
+	[Actor]
+	ids = mg_usa_army_mobile_air
+	cost = 125
+
+	[Actor]
+	ids = mg_usa_army_armor
+	cost = 75
+	
+	[Actor]
+	ids = mg_usa_army_armor_air
+	cost = 150
+		
+	[Technology]
+	ids = tech_infantry_flame
+	cost = 25
+	
+	[Technology]
+	ids = tech_ammo_production
+	cost = 50
+		
+	[Technology]
+	ids = tech_construction_battalions
+	cost = 25	
+		
+	[Technology]
+	ids = tech_garand_semi_auto
+	cost = 25	
+		
+	[Technology]
+	ids = tech_gyrostabilized_cannons
+	cost = 75
+			
+	[Technology]
+	ids = tech_increased_payload
+	cost = 100	
+	
+	[Technology]
+	ids = tech_improved_fire_control
+	cost = 50	
+	
+	[Technology]
+	ids = tech_improved_light_antitank
+	cost = 50
+		
+	[Technology]
+	ids = tech_improved_logistics
+	cost = 25
+			
+	[Technology]
+	ids = tech_napalm
+	cost = 100
+	
+	[Technology]
+	ids = tech_long_range_artillery
+	cost = 50		
+		
+	[Technology]
+	ids = tech_rifle_grenade
+	cost = 50
+		
+	[Technology]
+	ids = tech_improved_machineguns
+	cost = 50	
+		
+	[Technology]
+	ids = tech_mechanical_reliability
+	cost = 50	
+	
+	[Technology]
+	ids = tech_oil_production
+	cost = 75
+			
+	[Technology]
+	ids = tech_proximity_fuses
+	cost = 50
+	
+	[Technology]
+	ids = tech_self_sealing_fuel_tanks
+	cost = 25
+	
+	[Technology]
+	ids = tech_special_forces
+	cost = 25
+
+	[Technology]
+	ids = tech_mechanized_production
+	cost = 50
+		
+	[Technology]
+	ids = tech_advanced_infantry_training
+	cost = 50	
+	
+	[Technology]
+	ids = tech_superchargers
+	cost = 25
+}
+
+[Template JPNDynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
+{	
+	[Division]
+	ids = jpn_division_infantry
+	cost = 25
+
+	[Division]
+	ids = jpn_division_mobile
+	cost = 50
+
+	[Division]
+	ids = jpn_division_armor
+	cost = 50
+	
+	[Division]
+	ids = jpn_division_air
+	cost = 100
+		
+	[Actor]
+	ids = mg_jpn_army_infantry
+	cost = 25
+
+	[Actor]
+	ids = mg_jpn_army_infantry_air
+	cost = 90
+
+	[Actor]
+	ids = mg_jpn_army_mobile
+	cost = 50
+
+	[Actor]
+	ids = mg_jpn_army_mobile_air
+	cost = 110
+
+	[Actor]
+	ids = mg_jpn_army_armor
+	cost = 75
+
+	[Actor]
+	ids = mg_jpn_army_armor_air
+	cost = 125
+	
+	[Technology]
+	ids = tech_infantry_banzai
+	cost = 50
+	
+	[Technology]
+	ids = tech_construction_battalions
+	cost = 25
+		
+	[Technology]
+	ids = tech_foraging
+	cost = 25
+
+	[Technology]
+	ids = tech_mechanized_production
+	cost = 50
+	
+	[Technology]
+	ids = tech_oil_production
+	cost = 75
+
+	[Technology]
+	ids = tech_entrenchment
+	cost = 25
+
+	[Technology]
+	ids = tech_self_sealing_fuel_tanks
+	cost = 25
+
+	[Technology]
+	ids = tech_improved_recon
+	cost = 50
+	
+	[Technology]
+	ids = tech_air_superiority
+	cost = 50
+	
+	[Technology]
+	ids = tech_improved_fortifications
+	cost = 25	
+	
+	[Technology]
+	ids = tech_improved_light_antitank
+	cost = 50
+			
+	[Technology]
+	ids = tech_improved_logistics
+	cost = 25
+	
+	[Technology]
+	ids = tech_long_range_artillery
+	cost = 50		
+			
+	[Technology]
+	ids = tech_military_surplus
+	cost = 75
+		
+	[Technology]
+	ids = tech_sniper_rifle
+	cost = 50		
+	
+	[Technology]
+	ids = tech_special_forces
+	cost = 25
+			
+	[Technology]
+	ids = tech_tankette
+	cost = 75	
+				
+	[Technology]
+	ids = tech_plentiful_ammunition
+	cost = 75
+	
+	[Technology]
+	ids = tech_improved_mortars
+	cost = 25	
+		
+	[Technology]
+	ids = tech_diesel_engines
+	cost = 50
+	
+	[Technology]
+	ids = tech_superchargers
+	cost = 25
+}
+
+[Template GBRDynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
+{	
+	[Division]
+	ids = gbr_division_infantry
+	cost = 25
+
+	[Division]
+	ids = gbr_division_mobile
+	cost = 50
+
+	[Division]
+	ids = gbr_division_armor
+	cost = 50
+
+	[Division]
+	ids = gbr_division_air
+	cost = 80
+	
+	[Actor]
+	ids = mg_gbr_army_infantry
+	cost = 25
+
+	[Actor]
+	ids = mg_gbr_army_infantry_air
+	cost = 100
+
+	[Actor]
+	ids = mg_gbr_army_mobile
+	cost = 50
+
+	[Actor]
+	ids = mg_gbr_army_mobile_air
+	cost = 125
+
+	[Actor]
+	ids = mg_gbr_army_armor
+	cost = 75
+
+	[Actor]
+	ids = mg_gbr_army_armor_air
+	cost = 150
+	
+	[Technology]
+	ids = tech_tank_flame
+	cost = 100		
+	
+	[Technology]
+	ids = tech_construction_battalions
+	cost = 80
+			
+	[Technology]
+	ids = tech_military_surplus
+	cost = 75
+
+	[Technology]
+	ids = tech_foraging
+	cost = 25
+			
+	[Technology]
+	ids = tech_increased_payload
+	cost = 125	
+	
+	[Technology]
+	ids = tech_improved_fire_control
+	cost = 50	
+	
+	[Technology]
+	ids = tech_air_superiority
+	cost = 50
+			
+	[Technology]
+	ids = tech_improved_logistics
+	cost = 100
+	
+	[Technology]
+	ids = tech_long_range_artillery
+	cost = 50		
+			
+	[Technology]
+	ids = tech_entrenchment
+	cost = 25
+		
+	[Technology]
+	ids = tech_improved_machineguns
+	cost = 50		
+	
+	[Technology]
+	ids = tech_mechanical_reliability
+	cost = 50
+		
+	[Technology]
+	ids = tech_proximity_fuses
+	cost = 50
+	
+	[Technology]
+	ids = tech_self_sealing_fuel_tanks
+	cost = 25
+	
+	[Technology]
+	ids = tech_special_forces
+	cost = 25
+		
+	[Technology]
+	ids = tech_mechanized_production
+	cost = 50
+	
+	[Technology]
+	ids = tech_plentiful_ammunition
+	cost = 75	
+		
+	[Technology]
+	ids = tech_diesel_engines
+	cost = 50
+	
+	[Technology]
+	ids = tech_sas_commandos
+	cost = 50	
+	
+	[Technology]
+	ids = tech_improved_mortars
+	cost = 25
+}
+
+[Template GERDynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
+{	
+	[Division]
+	ids = ger_division_infantry
+	cost = 25
+
+	[Division]
+	ids = ger_division_mobile
+	cost = 50
+
+	[Division]
+	ids = ger_division_armor
+	cost = 40
+
+	[Division]
+	ids = ger_division_air
+	cost = 100
+	
+	[Actor]
+	ids = mg_ger_army_infantry
+	cost = 25
+
+	[Actor]
+	ids = mg_ger_army_infantry_air
+	cost = 100
+
+	[Actor]
+	ids = mg_ger_army_mobile
+	cost = 50
+
+	[Actor]
+	ids = mg_ger_army_mobile_air
+	cost = 125
+
+	[Actor]
+	ids = mg_ger_army_armor
+	cost = 70
+
+	[Actor]
+	ids = mg_ger_army_armor_air
+	cost = 140
+		
+	[Technology]
+	ids = tech_ammo_production
+	cost = 50
+	
+	[Technology]
+	ids = tech_construction_battalions
+	cost = 25
+
+	[Technology]
+	ids = tech_air_superiority
+	cost = 50
+	
+	[Technology]
+	ids = tech_improved_recon
+	cost = 50
+				
+	[Technology]
+	ids = tech_oil_production
+	cost = 75
+	
+	[Technology]
+	ids = tech_improved_fire_control
+	cost = 50	
+		
+	[Technology]
+	ids = tech_improved_logistics
+	cost = 25
+	
+	[Technology]
+	ids = tech_improved_mortars
+	cost = 25
+	
+	[Technology]
+	ids = tech_panzerfaust
+	cost = 50	
+		
+	[Technology]
+	ids = tech_gyrostabilized_cannons
+	cost = 75
+			
+	[Technology]
+	ids = tech_marksmanship
+	cost = 25
+		
+	[Technology]
+	ids = tech_improved_machineguns
+	cost = 50	
+		
+	[Technology]
+	ids = tech_tank_production
+	cost = 75
+	
+	[Technology]
+	ids = tech_proximity_fuses
+	cost = 50
+	
+	[Technology]
+	ids = tech_schurzen
+	cost = 100
+		
+	[Technology]
+	ids = tech_self_sealing_fuel_tanks
+	cost = 25
+	
+	[Technology]
+	ids = tech_goliath
+	cost = 75
+		
+	[Technology]
+	ids = tech_tank_king_tiger
+	cost = 150	
+		
+	[Technology]
+	ids = tech_advanced_infantry_training
+	cost = 50
+	
+	[Technology]
+	ids = tech_advanced_armor_training
+	cost = 75
+		
+	[Technology]
+	ids = tech_diesel_engines
+	cost = 50
+	
+	[Technology]
+	ids = tech_superchargers
+	cost = 25
+}
+
+[Template RUSDynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
+{	
+	[Division]
+	ids = rus_division_infantry
+	cost = 20
+
+	[Division]
+	ids = rus_division_mobile
+	cost = 50
+
+	[Division]
+	ids = rus_division_armor
+	cost = 50
+
+	[Division]
+	ids = rus_division_air
+	cost = 100
+	
+	[Actor]
+	ids = mg_rus_army_infantry
+	cost = 20
+
+	[Actor]
+	ids = mg_rus_army_infantry_air
+	cost = 95
+
+	[Actor]
+	ids = mg_rus_army_mobile
+	cost = 50
+
+	[Actor]
+	ids = mg_rus_army_mobile_air
+	cost = 125
+
+	[Actor]
+	ids = mg_rus_army_armor
+	cost = 75
+
+	[Actor]
+	ids = mg_rus_army_armor_air
+	cost = 150
+
+	[Technology]
+	ids = tech_conscription
+	cost = 50
+	
+	[Technology]
+	ids = tech_construction_battalions
+	cost = 25
+		
+	[Technology]
+	ids = tech_entrenchment
+	cost = 25
+			
+	[Technology]
+	ids = tech_improved_recon
+	cost = 50	
+	
+	[Technology]
+	ids = tech_sniper_rifle
+	cost = 50
+	
+	[Technology]
+	ids = tech_improved_light_antitank
+	cost = 50
+			
+	[Technology]
+	ids = tech_military_surplus
+	cost = 75
+	
+	[Technology]
+	ids = tech_long_range_artillery
+	cost = 50		
+			
+	[Technology]
+	ids = tech_marksmanship
+	cost = 25
+		
+	[Technology]
+	ids = tech_ammo_production
+	cost = 50
+			
+	[Technology]
+	ids = tech_mechanical_reliability
+	cost = 50
+			
+	[Technology]
+	ids = tech_rocket_truck
+	cost = 75
+			
+	[Technology]
+	ids = tech_self_sealing_fuel_tanks
+	cost = 25
+	
+	[Technology]
+	ids = tech_improved_fortifications
+	cost = 25
+		
+	[Technology]
+	ids = tech_tank_production
+	cost = 75	
+				
+	[Technology]
+	ids = tech_advanced_infantry_training
+	cost = 50
+	
+	[Technology]
+	ids = tech_gyrostabilized_cannons
+	cost = 75	
+		
+	[Technology]
+	ids = tech_diesel_engines
+	cost = 50
+	
+	[Technology]
+	ids = tech_superchargers
+	cost = 25
+}
+	
+;;-----------------------------------------------------------------------------
+;; Templates for events that can happen in the dynamic campaign
+;;-----------------------------------------------------------------------------
+
+[Template MGEventTemplate]
+{	
+	string 		ids			;; IDS of the event
+	localized	name			;; Name of the event
+
+	;; The round when this event happens.
+	;; If -1, then this event occurs randomly according to round_probability
+	int 		round = -1
+
+	;; The probability this event will happen in a particular round.  
+	;; This should be set to something besides 1.0 if the round is not set.  
+	;; If the round is set, this is the probability the event happens in that round
+	;; (which should probably be 1.0).
+	fixed		round_probability = 1.0
+
+	;; The turn when this event happens.  If not specified and the event should happen
+	;; that round, it will happen at a random turn.
+	string 		kingdom_turn_ids = NULL
+
+	;; Optional message to display when this event occurs.  If not specified 
+	;; no message will be displayed.  If it includes %s, it will display the kingdom
+	;; whose turn it happened on.
+	localized	message = ""
+
+	[List Effect]
+}
+
+[Template MGEventEffectTypeTemplate]
+{
+
+	;; The type of the event effect
+	;; Possible types include:
+	;; ADD_TECH
+	;; REMOVE_TECH
+	;; ADD_ACTOR
+	;; REMOVE_ACTOR
+	;; CHANGE_TERRITORY
+
+	string		type
+
+	;; Optional message to display when this effect occurs.  If not specified
+	;; no message will be displayed.  The parameters will otherwise be inserted in 
+	;; this priority order:
+	;; %s - target kingdom
+	;; %s - actor
+	;; %s - territory
+	;; %s - technology
+	;; %s - source kingdom
+
+	localized	message = ""	
+}
+
+[Template MGEventEffectTypeAddTechnologyTemplate Inherit=MGEventEffectTypeTemplate]
+{
+	string		type = ADD_TECH
+
+	;; The kingdom to add the technology to.  
+	;; If not specified, the target is the same as kingdom_turn_ids in the Event.
+	string		kingdom_target_ids = NULL
+
+	;; The technology to add.  If not specified, random technology
+	string		tech_ids = NULL
+
+	;; The message to display
+	localized	message = "#mg_campaigns_MGEventEffectTypeAddTechnologyTemplate_message|ss"
+}
+
+[Template MGEventEffectTypeRemoveTechnologyTemplate Inherit=MGEventEffectTypeTemplate]
+{
+	string		type = REMOVE_TECH
+
+	;; The kingdom to remove the technology from.  
+	;; If not specified, the target is the same as kingdom_turn_ids in the Event.
+	string		kingdom_target_ids = NULL
+
+	;; The technology to remove.  If not specified, random technology
+	string		tech_ids = NULL
+
+	;; The message to display
+	localized	message = "#mg_campaigns_MGEventEffectTypeRemoveTechnologyTemplate_message|ss"
+}
+
+[Template MGEventEffectTypeAddActorTemplate Inherit=MGEventEffectTypeTemplate]
+{
+	string		type = ADD_ACTOR
+
+	;; The kingdom to add the actor to.
+	;; If not specified, the target is the same as kingdom_turn_ids in the Event.
+	string		kingdom_target_ids = NULL
+
+	;; The territory to place the actor.
+	;; If not specified, places the actor in a random territory.
+	string		territory_ids = NULL
+
+	;; The type of actor to add.  If not specified, random metagame actor.
+	string		actor_ids = NULL
+
+	;; The message to display
+	localized	message = "#mg_campaigns_MGEventEffectTypeAddActorTemplate_message|sss"
+}
+
+[Template MGEventEffectTypeRemoveActorTemplate Inherit=MGEventEffectTypeTemplate]
+{
+	string		type = REMOVE_ACTOR
+
+	;; The kingdom to remove the actor from.
+	;; If not specified, the target is the same as kingdom_turn_ids in the Event.
+	string		kingdom_target_ids = NULL
+
+	;; This just chooses a random actor from the kingdom to remove 
+	;; (Could be removed in any territory)
+
+	;; The message to display
+	localized	message = "#mg_campaigns_MGEventEffectTypeRemoveActorTemplate_message|sss"
+}
+
+[Template MGEventEffectTypeChangeTerritoryTemplate Inherit=MGEventEffectTypeTemplate]
+{
+	string		type = CHANGE_TERRITORY
+
+	;; The kingdom from which to take a territory
+	string		kingdom_source_ids = NULL
+
+	;; The territory that will change ownership
+	string		territory_ids = NULL
+
+	;; The kingdom to which the territory will go.
+	;; If not specified, the target is the same as kingdom_turn_ids in the Event.
+	string		kingdom_target_ids = NULL
+
+	;; Functionality:
+	;; 1)  If the kingdom_source_ids is only specified, it takes a random territory from
+	;;     that kingdom and transfers it to the target.
+	;; 2)  If the territory_ids is only specified, it takes that particular territory from
+	;;     whatever kingdom and transfers it to the target.
+	;; 3)  If both are specified, it only transfers that particular territory if and only if 
+	;;     it is owned by the specified kingdom.
+
+	;; The message to display
+	localized	message = "#mg_campaigns_MGEventEffectTypeChangeTerritoryTemplate_message|sss"
+}
+
+;;-----------------------------------------------------------------------------
+;; Kingdom and team templates
+;;-----------------------------------------------------------------------------
+
+;; specified basic kingdom template information
+[Template DynamicCampaignKingdomTemplate]
+{
+	;; Required Properties
+	string		ids
+	localized	name
+	string		nation_ids
+	string		capital_ids
+	string		color_ids
+	string		sai_ids
+	string		cinematic_win
+	string		nation_selection_screen_background_video
+	string		icon
+
+	;; Default Properties
+	string		mgai_ids = mgai_test
+	int			starting_resources = 50
+	
+	;; Directional economy bonuses for attacking from water or land
+	[StockpileBonus Template=ResourceList]
+	{
+		money = 0
+		oil = 0
+		ammo = 0
+		unit_limit_provided = 0
+		unit_limit_consumed = 0
+		building_limit_consumed = 0
+		building_limit_provided = 0
+		nuclear_limit_consumed = 0
+		nuclear_limit_provided = 0
+	}
+
+	[WaterStockpileBonus Template=ResourceList]
+	{
+		money = 0
+		oil = 0
+		ammo = 0
+		unit_limit_provided = 0
+		unit_limit_consumed = 0
+		building_limit_consumed = 0
+		building_limit_provided = 0
+		nuclear_limit_consumed = 0
+		nuclear_limit_provided = 0
+	}
+
+	;; Objectives
+	[list Objective]
+	{
+		int	capital_captures = 2
+	}
+
+	;; Owned territories
+	[list Territory]
+	{
+		string ids
+		string liberates_to = null
+		
+		[list Actor]
+		{
+			string ids
+		}
+	}
+
+	[Shop Template=DynamicCampaignShopTemplate]
+}
+
+;; Specifies dynamic campaign team information
+[Template DynamicCampaignTeamTemplate]
+{
+	string		ids
+	localized	name	
+
+	[list Kingdom]
+	{
+		string	ids
+	}
+}
+
+;; Specifies information about the dynamic campaign
+[Template DynamicCampaignTemplate]
+{
+	;; General Properties
+	string 		ids 
+	localized 	name
+	string		default_kingdom	
+	localized	description
+	int		initial_month
+	int		initial_year
+
+	;; Destroy behaviors
+	;; - none - never destroy an army (unless there is no retreat available)
+	;; - first - destroy first army into the territory
+	;; - weakest - destroy the weakest army in terms of quickbattle odds
+	;; - strongest - destroy the strongest army in terms of quickbattle odds
+	;; - least_expensive - destroy the least expensive army in terms of total upgrade cost of all divisions in the army
+	;; - most_expensive - destroy the most expensive army in terms of total upgrade cost of all divisions in the army
+	;; - random - destroy 1 random army
+	;; - all - destroy all armies
+	string		attacking_destroy_behavior 	;; What army to destroy when you attack and lose
+	string		defending_destroy_behavior	;; What army to destroy when you get attacked and lose
+
+	;; Map
+	string		map_ids
+	string		map_table_ids
+
+	;; VFX
+	string		territory_friendly_vfx = territory_friendly_tint
+	string		territory_enemy_vfx = territory_enemy_tint
+	string		territory_friendly_arrow_vfx = territory_friendly_arrow
+	string		territory_enemy_arrow_vfx = territory_enemy_arrow
+
+	;; Cinematics (win cinematics specified with kingdom)
+	string		cinematic_intro
+
+	;; For the choose dynamic campaign interface
+	string		choose_background_texture
+	[list ChooseButtonVE]
+	{
+		string	when
+		string	texture
+	}
+
+	[list Kingdom Template=DynamicCampaignKingdomTemplate]
+
+	[list Team Template=DynamicCampaignTeamTemplate]
+
+	[list Event Template=MGEventTemplate]
+}
+
+[Template DefaultDynamicCampaignTemplate Template=DynamicCampaignTemplate]
+{
+	;; Start all of the dynamic campaigns in December 1942
+	initial_month = 12
+	initial_year = 1941
+
+	;; Default destroy behavior
+	attacking_destroy_behavior = weakest
+	defending_destroy_behavior = weakest
+
+	[Team Template=DynamicCampaignTeamTemplate]
+	{
+		ids = axis_team
+		name = "#mg_campaigns_axis_team_name"
+
+		[Kingdom]
+		ids = kingdom_germany
+
+		[Kingdom]
+		ids = kingdom_jpn
+	}
+
+	[Team Template=DynamicCampaignTeamTemplate]
+	{
+		ids = allied_team
+		name = "#mg_campaigns_allied_team_name"
+
+		[Kingdom]
+		ids = kingdom_usa
+
+		[Kingdom]
+		ids = kingdom_great_britain
+
+		[Kingdom]
+		ids = kingdom_russia
+	}
+
+	/*
+	[Event Template=MGEventTemplate]
+	{
+		ids = add_actor_event
+		name = "Free Army"
+		round = 2
+		message = "A territory has formed a militia!"
+		
+		[Effect Template=MGEventEffectTypeAddActorTemplate]
+	}
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = add_tech_event
+		name = "Free Technology"
+		round = 3
+		message = "A new technology has been discovered!"
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+	}
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = remove_actor_event
+		name = "Army Lost"
+		round = 4
+		message = "An army has been lost due to illness."
+		
+		[Effect Template=MGEventEffectTypeRemoveActorTemplate]
+	}
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = remove_tech_event
+		name = "Technology Lost"
+		round = 5
+		message = "A technology has been destroyed by spies."
+		
+		[Effect Template=MGEventEffectTypeRemoveTechnologyTemplate]
+	}
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = change_territory_event
+		name = "Territory Allegiance Changed"
+		round = 6
+		message = "A territory has revolted against their oppressors."
+		
+		[Effect Template=MGEventEffectTypeChangeTerritoryTemplate]
+	}
+	*/
+}
+
+;;-----------------------------------------------------------------------------
+;; All the default information about each kingdom
+;;-----------------------------------------------------------------------------
+
+	[Template JapanKingdomTemplate Template=DynamicCampaignKingdomTemplate]
+	{
+		ids = kingdom_jpn
+		name = "#mg_campaigns_kingdom_jpn_name"
+		nation_ids = nation_jpn
+		capital_ids = Japan
+		color_ids = yellow
+		sai_ids = jpn_sai
+		cinematic_win = /Video/Metagame/JPNVictory.bik
+		nation_selection_screen_background_video = /Video/MetaGame/NationBackgrounds/JPN_MetaGame.bik
+		icon = UI/%s/KingdomIcons/IconJPN.png
+
+		[Objective]
+		{
+			capital_captures = 2
+		}
+
+		[Territory]
+		{
+			ids = Japan
+			liberates_to = kingdom_jpn
+
+			[Actor]
+  			ids = mg_jpn_capital
+
+			[Actor]
+  			ids = mg_jpn_army_defensive
+  			
+			[Actor]
+  			ids = mg_jpn_army_defensive
+		}
+		
+		[Territory]
+		{
+			ids = Marshallislands
+		}
+		
+		[Territory]
+		{
+			ids = IwoJima
+			
+			[Actor]
+  			ids = mg_jpn_army_defensive	
+  			
+ 			[Actor]
+			ids = mg_jpn_army_infantry
+  			
+ 			[Actor]
+			ids = mg_jpn_army_infantry
+						
+			[Actor]
+			ids = mg_jpn_army_infantry_air
+		}
+		
+		[Territory]
+		{
+			ids = Manchuria
+			
+			[Actor]
+			ids = mg_jpn_army_infantry
+						
+			[Actor]
+			ids = mg_jpn_army_mobile
+		}
+		
+		[Territory]
+		{
+			ids = EasternChina
+			
+			[Actor]
+			ids = mg_jpn_army_infantry
+			
+			[Actor]
+			ids = mg_jpn_army_infantry
+			
+			[Actor]
+			ids = mg_jpn_army_infantry
+			
+			[Actor]
+			ids = mg_jpn_army_infantry_air
+					
+			[Actor]
+			ids = mg_jpn_army_infantry_air
+		}
+		
+		[Shop Template=JPNDynamicCampaignShop]
+	}
+	
+	[Template GermanyKingdomTemplate Template=DynamicCampaignKingdomTemplate]
+	{
+		ids = kingdom_germany
+		name = "#mg_campaigns_kingdom_germany_name"
+		nation_ids = nation_ger
+		capital_ids = Germany
+		color_ids = bright_red ;dark_gray
+		sai_ids = ger_sai
+		cinematic_win = /Video/Metagame/GERVictory.bik
+		nation_selection_screen_background_video = /Video/MetaGame/NationBackgrounds/GER_MetaGame.bik
+		icon = UI/%s/KingdomIcons/IconGER.png
+
+		[Objective]
+		{
+			capital_captures = 2
+		}
+
+		[Territory]
+		{
+			ids = Germany
+			liberates_to = kingdom_germany
+
+			[Actor]
+  			ids = mg_ger_capital
+
+			[Actor]
+  			ids = mg_ger_army_defensive
+  			
+			[Actor]
+  			ids = mg_ger_army_defensive  
+		}
+		
+		[Territory]
+		{
+			ids = EasternEurope	
+
+			[Actor]
+			ids = mg_ger_army_infantry
+				
+			[Actor]
+			ids = mg_ger_army_mobile
+			
+			[Actor]
+			ids = mg_ger_army_mobile
+			
+			[Actor]
+			ids = mg_ger_army_armor
+			
+			[Actor]
+			ids = mg_ger_army_armor_air
+		}
+		
+		[Territory]
+		{
+			ids = Scandanavia
+			
+			[Actor]
+			ids = mg_ger_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = SouthernEurope
+			
+			[Actor]
+			ids = mg_ger_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = France
+			
+			[Actor]
+			ids = mg_ger_army_mobile
+		}
+		
+		[Territory]
+		{
+			ids = FrenchCoast
+						
+			[Actor]
+			ids = mg_ger_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = GermanCoast
+			liberates_to = kingdom_germany
+			
+			[Actor]
+			ids = mg_ger_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = Libya
+			
+			[Actor]
+			ids = mg_ger_army_infantry			
+						
+			[Actor]
+			ids = mg_ger_army_armor
+		}
+
+		[Shop Template=GERDynamicCampaignShop]	
+	}
+	
+	[Template RussiaKingdomTemplate Template=DynamicCampaignKingdomTemplate]
+	{
+		ids = kingdom_russia
+		name = "#mg_campaigns_kingdom_russia_name"
+		nation_ids = nation_rus
+		capital_ids = Russia
+		color_ids = brownish_maroon
+		sai_ids = rus_sai
+		cinematic_win = /Video/Metagame/RUSVictory.bik
+		nation_selection_screen_background_video = /Video/MetaGame/NationBackgrounds/RUS_MetaGame.bik
+		icon = UI/%s/KingdomIcons/IconRUS.png
+
+		[Objective]
+		{
+			capital_captures = 2
+		}
+
+		[Territory]
+		{
+			ids = Russia
+			liberates_to = kingdom_russia
+
+			[Actor]
+  			ids = mg_rus_capital
+
+			[Actor]
+  			ids = mg_rus_army_defensive
+  			
+  			[Actor]
+  			ids = mg_rus_army_defensive
+
+			[Actor]
+			ids = mg_rus_army_infantry
+			
+			[Actor]
+			ids = mg_rus_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = Belarus
+			
+			[Actor]
+			ids = mg_rus_army_infantry
+		
+			[Actor]
+			ids = mg_rus_army_armor
+		}
+		
+		[Territory]
+		{
+			ids = Ukraine
+			
+			[Actor]
+			ids = mg_rus_army_infantry
+
+			
+			[Actor]
+			ids = mg_rus_army_armor
+		}
+		
+		[Territory]
+		{
+			ids = Caucasus
+		}
+		
+		[Territory]
+		{
+			ids = UralMountains
+			
+			[Actor]
+			ids = mg_rus_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = Siberia
+			
+			[Actor]
+			ids = mg_rus_army_infantry			
+		}
+		
+		[Territory]
+		{
+			ids = EasternSiberia
+			
+			[Actor]
+  			ids = mg_rus_army_defensive
+
+		}
+		
+		[Territory]
+		{
+			ids = Kazakhstan
+		}
+		
+		[Shop Template=RUSDynamicCampaignShop]	
+	}
+	
+	[Template GreatBritainKingdomTemplate Template=DynamicCampaignKingdomTemplate]
+	{
+		ids = kingdom_great_britain
+		name = "#mg_campaigns_kingdom_great_britain_name"
+		nation_ids = nation_gbr
+		capital_ids = GreatBritain
+		color_ids = blue
+		sai_ids = gbr_sai
+		cinematic_win = /Video/Metagame/GBRVictory.bik
+		nation_selection_screen_background_video = /Video/MetaGame/NationBackgrounds/GBR_MetaGame.bik
+		icon = UI/%s/KingdomIcons/IconGBR.png
+
+		[Objective]
+		{
+			capital_captures = 2
+		}
+
+		[Territory]
+		{
+			ids = GreatBritain
+			liberates_to = kingdom_great_britain
+
+			[Actor]
+  			ids = mg_gbr_capital
+
+			[Actor]
+  			ids = mg_gbr_army_defensive
+  			
+			[Actor]
+  			ids = mg_gbr_army_defensive  
+  			
+  			[Actor]
+			ids = mg_gbr_army_infantry
+  			
+  			[Actor]
+			ids = mg_gbr_army_mobile
+		}
+		
+		[Territory]
+		{
+			ids = EasternCanada			
+		}
+		
+		[Territory]
+		{
+			ids = Egypt
+	
+  			[Actor]
+  			ids = mg_gbr_army_mobile
+  			
+  			[Actor]
+  			ids = mg_gbr_army_infantry_air
+		}
+		
+		[Territory]
+		{
+			ids = gibraltar
+			
+			[Actor]
+  			ids = mg_gbr_army_defensive  
+		}	
+		[Territory]
+		{
+			ids = WesternCanada1
+		}
+		
+		[Territory]
+		{
+			ids = WesternCanada2
+		}
+		
+		[Territory]
+		{
+			ids = SouthAfrica
+			
+  			[Actor]
+			ids = mg_gbr_army_infantry			
+		}
+		
+		[Territory]
+		{
+			ids = India
+			
+			[Actor]
+  			ids = mg_gbr_army_defensive  
+  			
+  			[Actor]
+			ids = mg_gbr_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = AustraliaNewZealand
+			
+			[Actor]
+  			ids = mg_gbr_army_defensive 
+  			
+  			[Actor]
+			ids = mg_gbr_army_infantry
+		}
+				
+		[Territory]
+		{
+			ids = SouthEasternAsia
+			
+			[Actor]
+			ids = mg_gbr_army_infantry
+		}
+		
+		[Territory]
+		{
+			ids = DutchEastIndies
+		}
+		
+		[Territory]
+		{
+			ids = NewGuineaSolomonIslands
+		}
+
+		[Shop Template=GBRDynamicCampaignShop]
+	}
+	
+	[Template UnitedStatesKingdomTemplate Template=DynamicCampaignKingdomTemplate]
+	{
+		ids = kingdom_usa
+		name = "#mg_campaigns_kingdom_usa_name"
+		nation_ids = nation_usa
+		capital_ids = EasternUnitedStates1
+		color_ids = green
+		sai_ids = usa_sai
+		cinematic_win = /Video/Metagame/USAVictory.bik
+		nation_selection_screen_background_video = /Video/MetaGame/NationBackgrounds/USA_MetaGame.bik
+		icon = UI/%s/KingdomIcons/IconUSA.png
+
+		[Objective]
+		{
+			capital_captures = 2
+		}
+		
+		[Territory]
+		{
+			ids = CentralChina
+			
+			[Actor]
+			ids = mg_usa_china										
+		}
+		
+		[Territory]
+		{
+			ids = WesternChina									
+		}		
+		
+		[Territory]
+		{
+			ids = EasternUnitedStates1
+			liberates_to = kingdom_usa
+
+			[Actor]
+  			ids = mg_usa_capital
+
+			[Actor]
+  			ids = mg_usa_army_defensive
+  			
+  			[Actor]
+  			ids = mg_usa_army_defensive
+
+			[Actor]
+  			ids = mg_usa_army_infantry  			
+		}
+		
+		[Territory]
+		{
+			ids = WesternUnitedStates2
+			liberates_to = kingdom_usa
+			
+			[Actor]
+  			ids = mg_usa_army_defensive
+  			
+			[Actor]
+  			ids = mg_usa_army_defensive  
+  			
+			[Actor]
+  			ids = mg_usa_army_infantry						
+		}
+		
+		[Territory]
+		{
+			ids = Hawaii
+			liberates_to = kingdom_usa
+			
+			[Actor]
+  			ids = mg_usa_army_defensive  				
+		}
+				
+		[Territory]
+		{
+			ids = SamoaWater
+		}
+		
+		[Territory]
+		{
+			ids = Samoa
+		}
+		
+		[Territory]
+		{
+			ids = Philippines
+			
+			[Actor]
+  			ids = mg_usa_phillipine_garrison  
+		}
+		
+		[Territory]
+		{
+			ids = Midway
+		}
+		
+		[Territory]
+		{
+			ids = Aleutian Islands
+		}
+		
+		[Territory]
+		{
+			ids = Alaska
+			liberates_to = kingdom_usa
+		}
+		
+		
+		[Shop Template=USADynamicCampaignShop]
+	}
+
+;;-----------------------------------------------------------------------------
+;; Definitions of all the campaigns
+;;-----------------------------------------------------------------------------
+
+[DynamicCampaign Template=DefaultDynamicCampaignTemplate]
+{
+	;; General
+	ids = usa_dynamic_campaign
+	name = "#mg_campaigns_usa_dynamic_campaign_name"
+	default_kingdom = kingdom_usa
+	cinematic_intro = /Video/Metagame/USAIntro.bik
+	choose_background_texture = DynamicCampaigns/%s/USABackground.png
+	description = "#mg_campaigns_usa_dynamic_campaign_description"
+
+	;; Map
+	map_ids = worldmap
+	map_table_ids = worldmaptable
+
+	[ChooseButtonVE]
+	when = SELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/USACampaignPressed.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/USACampaign.png
+
+	[ChooseButtonVE]
+	when = SELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/USACampaignPressedFocused.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/USACampaignFocused.png
+	
+	[Kingdom Template=UnitedStatesKingdomTemplate]
+	mgai_ids = usa_worldmap_mgai
+	
+	[Kingdom Template=JapanKingdomTemplate]
+	mgai_ids = jpn_worldmap_mgai
+	
+	[Kingdom Template=GermanyKingdomTemplate]
+	mgai_ids = ger_worldmap_mgai
+		
+	[Kingdom Template=RussiaKingdomTemplate]
+	mgai_ids = rus_worldmap_mgai
+	
+	[Kingdom Template=GreatBritainKingdomTemplate]
+	mgai_ids = gbr_worldmap_mgai
+	
+;;	Tech Events
+/*	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_1
+		name = null
+		round = 2
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_2
+		name = "#mg_campaigns_gbr_add_tech_2_name"
+		round = 3
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_superchargers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_3
+		name = "#mg_campaigns_gbr_add_tech_3_name"
+		round = 4
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_4
+		name = "#mg_campaigns_gbr_add_tech_4_name"
+		round = 5
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_5
+		name = "#mg_campaigns_gbr_add_tech_5_name"
+		round = 6
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_flame
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_6
+		name = "#mg_campaigns_gbr_add_tech_6_name"
+		round = 7
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_7
+		name = "#mg_campaigns_gbr_add_tech_7_name"
+		round = 8
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+		
+		
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_1
+		name = "#mg_campaigns_rus_add_tech_1_name"
+		round = 2
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_conscript
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_2
+		name = "#mg_campaigns_rus_add_tech_2_name"
+		round = 3
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_entrenchment
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_3
+		name = "#mg_campaigns_rus_add_tech_3_name"
+		round = 4
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_diesel_engines
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_4
+		name = "#mg_campaigns_rus_add_tech_4_name"
+		round = 5
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_rocket_truck
+		}
+	}	
+	
+	
+	
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_1
+		name = "#mg_campaigns_ger_add_tech_1_name"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_2
+		name = "#mg_campaigns_ger_add_tech_2_name"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_3
+		name = "#mg_campaigns_ger_add_tech_3_name"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_4
+		name = "#mg_campaigns_ger_add_tech_4_name"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_mg
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_5
+		name = "#mg_campaigns_ger_add_tech_5_name"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_schurzen
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_6
+		name = "#mg_campaigns_ger_add_tech_6_name"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_king_tiger
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_1
+		name = "#mg_campaigns_jpn_add_tech_1_name"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_improved_fortifications
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_2
+		name = "#mg_campaigns_jpn_add_tech_2_name"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_3
+		name = "#mg_campaigns_jpn_add_tech_3_name"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_4
+		name = "#mg_campaigns_jpn_add_tech_4_name"
+		round = 6
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_banzai
+		}
+	}
+*/
+}
+
+[DynamicCampaign Template=DefaultDynamicCampaignTemplate]
+{
+	;; General
+	ids = great_britain_dynamic_campaign
+	name = "#mg_campaigns_great_britain_dynamic_campaign_name"
+	default_kingdom = kingdom_great_britain
+	cinematic_intro = /Video/Metagame/GBRIntro.bik
+	choose_background_texture = DynamicCampaigns/%s/GBRBackground.png
+	description = "#mg_campaigns_great_britain_dynamic_campaign_description"
+		
+	;; Map
+	map_ids = worldmap
+	map_table_ids = worldmaptable
+
+	[ChooseButtonVE]
+	when = SELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/GBRCampaignPressed.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/GBRCampaign.png
+
+	[ChooseButtonVE]
+	when = SELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/GBRCampaignPressedFocused.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/GBRCampaignFocused.png
+	
+	[Kingdom Template=GreatBritainKingdomTemplate]
+	mgai_ids = gbr_worldmap_mgai
+	
+	[Kingdom Template=JapanKingdomTemplate]
+	mgai_ids = jpn_worldmap_mgai	
+			
+	[Kingdom Template=GermanyKingdomTemplate]
+	mgai_ids = ger_worldmap_mgai
+	
+	[Kingdom Template=RussiaKingdomTemplate]
+	mgai_ids = rus_worldmap_mgai
+	
+	[Kingdom Template=UnitedStatesKingdomTemplate]
+	mgai_ids = usa_worldmap_mgai	
+	
+;;	Tech Events
+/*
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_1
+		name = "#mg_campaigns_usa_add_tech_1_name"
+		round = 2
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_logistics
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_2
+		name = "#mg_campaigns_usa_add_tech_2_name"
+		round = 3
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_garand
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_3
+		name = "#mg_campaigns_usa_add_tech_3_name"
+		round = 4
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_4
+		name = "#mg_campaigns_usa_add_tech_4_name"
+		round = 5
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_increased_payload
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_5
+		name = "#mg_campaigns_usa_add_tech_5_name"
+		round = 6
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_flame
+		}
+	}
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_6
+		name = "#mg_campaigns_usa_add_tech_6_name"
+		round = 7
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_proxfuse
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_7
+		name = "#mg_campaigns_usa_add_tech_7_name"
+		round = 8
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_8
+		name = "#mg_campaigns_usa_add_tech_8_name"
+		round = 9
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+			
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_1
+		name = "#mg_campaigns_rus_add_tech_1_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_conscript
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_2
+		name = "#mg_campaigns_rus_add_tech_2_name_2"
+		round = 3
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_entrenchment
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_3
+		name = "#mg_campaigns_rus_add_tech_3_name_2"
+		round = 4
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_diesel_engines
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_4
+		name = "#mg_campaigns_rus_add_tech_4_name_2"
+		round = 5
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_rocket_truck
+		}
+	}	
+	
+	
+	
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_1
+		name = "#mg_campaigns_ger_add_tech_1_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_2
+		name = "#mg_campaigns_ger_add_tech_2_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_3
+		name = "#mg_campaigns_ger_add_tech_3_name_2"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_4
+		name = "#mg_campaigns_ger_add_tech_4_name_2"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_mg
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_5
+		name = "#mg_campaigns_ger_add_tech_5_name_2"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_schurzen
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_6
+		name = "#mg_campaigns_ger_add_tech_6_name_2"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_king_tiger
+		}
+	}	
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_1
+		name = "#mg_campaigns_jpn_add_tech_1_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_improved_fortifications
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_2
+		name = "#mg_campaigns_jpn_add_tech_2_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_3
+		name = "#mg_campaigns_jpn_add_tech_3_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_4
+		name = "#mg_campaigns_jpn_add_tech_4_name_2"
+		round = 6
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_banzai
+		}
+	}
+*/	
+}
+
+[DynamicCampaign Template=DefaultDynamicCampaignTemplate]
+{
+	;; General
+	ids = russia_dynamic_campaign
+	name = "#mg_campaigns_russia_dynamic_campaign_name"
+	default_kingdom = kingdom_russia
+	cinematic_intro = /Video/Metagame/RUSIntro.bik
+	choose_background_texture = DynamicCampaigns/%s/RUSBackground.png
+	description = "#mg_campaigns_russia_dynamic_campaign_description"
+		
+	;; Map
+	map_ids = worldmap
+	map_table_ids = worldmaptable
+
+	[ChooseButtonVE]
+	when = SELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/RUSCampaignPressed.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/RUSCampaign.png
+
+	[ChooseButtonVE]
+	when = SELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/RUSCampaignPressedFocused.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/RUSCampaignFocused.png
+
+	[Kingdom Template=RussiaKingdomTemplate]
+	mgai_ids = rus_worldmap_mgai
+	
+	[Kingdom Template=GermanyKingdomTemplate]
+	mgai_ids = ger_worldmap_mgai
+	
+	[Kingdom Template=JapanKingdomTemplate]
+	mgai_ids = jpn_worldmap_mgai
+	
+	[Kingdom Template=GreatBritainKingdomTemplate]
+	mgai_ids = gbr_worldmap_mgai
+	
+	[Kingdom Template=UnitedStatesKingdomTemplate]
+	mgai_ids = usa_worldmap_mgai
+	
+;;	Tech Events	
+/*	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_1
+		name = "#mg_campaigns_usa_add_tech_1_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_logistics
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_2
+		name = "#mg_campaigns_usa_add_tech_2_name_2"
+		round = 3
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_garand
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_3
+		name = "#mg_campaigns_usa_add_tech_3_name_2"
+		round = 4
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_4
+		name = "#mg_campaigns_usa_add_tech_4_name_2"
+		round = 5
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_increased_payload
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_5
+		name = "#mg_campaigns_usa_add_tech_5_name_2"
+		round = 6
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_flame
+		}
+	}
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_6
+		name = "#mg_campaigns_usa_add_tech_6_name_2"
+		round = 7
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_proxfuse
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_7
+		name = "#mg_campaigns_usa_add_tech_7_name_2"
+		round = 8
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_8
+		name = "#mg_campaigns_usa_add_tech_8_name_2"
+		round = 9
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_1
+		name = "#mg_campaigns_gbr_add_tech_1_name"
+		round = 2
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_2
+		name = "#mg_campaigns_gbr_add_tech_2_name_2"
+		round = 3
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_superchargers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_3
+		name = "#mg_campaigns_gbr_add_tech_3_name_2"
+		round = 4
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_4
+		name = "#mg_campaigns_gbr_add_tech_4_name_2"
+		round = 5
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_5
+		name = "#mg_campaigns_gbr_add_tech_5_name_2"
+		round = 6
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_flame
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_6
+		name = "#mg_campaigns_gbr_add_tech_6_name_2"
+		round = 7
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_7
+		name = "#mg_campaigns_gbr_add_tech_7_name_2"
+		round = 8
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+		
+
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_1
+		name = "#mg_campaigns_ger_add_tech_1_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_2
+		name = "#mg_campaigns_ger_add_tech_2_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_3
+		name = "#mg_campaigns_ger_add_tech_3_name_3"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_4
+		name = "#mg_campaigns_ger_add_tech_4_name_3"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_mg
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_5
+		name = "#mg_campaigns_ger_add_tech_5_name_3"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_schurzen
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_6
+		name = "#mg_campaigns_ger_add_tech_6_name_3"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_king_tiger
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_1
+		name = "#mg_campaigns_jpn_add_tech_1_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_improved_fortifications
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_2
+		name = "#mg_campaigns_jpn_add_tech_2_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_3
+		name = "#mg_campaigns_jpn_add_tech_3_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_4
+		name = "#mg_campaigns_jpn_add_tech_4_name_3"
+		round = 6
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_banzai
+		}
+	}
+*/
+}
+
+[DynamicCampaign Template=DefaultDynamicCampaignTemplate]
+{
+	;; General
+	ids = germany_dynamic_campaign
+	name = "#mg_campaigns_germany_dynamic_campaign_name"
+	default_kingdom = kingdom_germany
+	cinematic_intro = /Video/Metagame/GERIntro.bik
+	choose_background_texture = DynamicCampaigns/%s/GERBackground.png
+	description = "#mg_campaigns_germany_dynamic_campaign_description"
+		
+	;; Map
+	map_ids = worldmap
+	map_table_ids = worldmaptable
+
+	[ChooseButtonVE]
+	when = SELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/GERCampaignPressed.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/GERCampaign.png
+
+	[ChooseButtonVE]
+	when = SELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/GERCampaignPressedFocused.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/GERCampaignFocused.png
+
+	[Kingdom Template=GermanyKingdomTemplate]
+	mgai_ids = ger_worldmap_mgai
+	
+	[Kingdom Template=RussiaKingdomTemplate]
+	mgai_ids = rus_worldmap_mgai
+		
+	[Kingdom Template=JapanKingdomTemplate]
+	mgai_ids = jpn_worldmap_mgai
+	
+	[Kingdom Template=GreatBritainKingdomTemplate]
+	mgai_ids = gbr_worldmap_mgai
+	
+	[Kingdom Template=UnitedStatesKingdomTemplate]
+	mgai_ids = usa_worldmap_mgai
+
+;;	Tech Events
+/*
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_1
+		name = "#mg_campaigns_usa_add_tech_1_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_logistics
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_2
+		name = "#mg_campaigns_usa_add_tech_2_name_3"
+		round = 3
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_garand
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_3
+		name = "#mg_campaigns_usa_add_tech_3_name_3"
+		round = 4
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_4
+		name = "#mg_campaigns_usa_add_tech_4_name_3"
+		round = 5
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_increased_payload
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_5
+		name = "#mg_campaigns_usa_add_tech_5_name_3"
+		round = 6
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_flame
+		}
+	}
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_6
+		name = "#mg_campaigns_usa_add_tech_6_name_3"
+		round = 7
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_proxfuse
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_7
+		name = "#mg_campaigns_usa_add_tech_7_name_3"
+		round = 8
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_8
+		name = "#mg_campaigns_usa_add_tech_8_name_3"
+		round = 9
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_1
+		name = "#mg_campaigns_gbr_add_tech_1_name_2"
+		round = 2
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_2
+		name = "#mg_campaigns_gbr_add_tech_2_name_3"
+		round = 3
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_superchargers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_3
+		name = "#mg_campaigns_gbr_add_tech_3_name_3"
+		round = 4
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_4
+		name = "#mg_campaigns_gbr_add_tech_4_name_3"
+		round = 5
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_5
+		name = "#mg_campaigns_gbr_add_tech_5_name_3"
+		round = 6
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_flame
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_6
+		name = "#mg_campaigns_gbr_add_tech_6_name_3"
+		round = 7
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_7
+		name = "#mg_campaigns_gbr_add_tech_7_name_3"
+		round = 8
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+		
+		
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_1
+		name = "#mg_campaigns_rus_add_tech_1_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_conscript
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_2
+		name = "#mg_campaigns_rus_add_tech_2_name_3"
+		round = 3
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_entrenchment
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_3
+		name = "#mg_campaigns_rus_add_tech_3_name_3"
+		round = 4
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_diesel_engines
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_4
+		name = "#mg_campaigns_rus_add_tech_4_name_3"
+		round = 5
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_rocket_truck
+		}
+	}	
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_1
+		name = "#mg_campaigns_jpn_add_tech_1_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_improved_fortifications
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_2
+		name = "#mg_campaigns_jpn_add_tech_2_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_3
+		name = "#mg_campaigns_jpn_add_tech_3_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = jpn_add_tech_4
+		name = "#mg_campaigns_jpn_add_tech_4_name_4"
+		round = 6
+		kingdom_turn_ids = kingdom_jpn
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_banzai
+		}
+	}
+*/
+}
+	
+[DynamicCampaign Template=DefaultDynamicCampaignTemplate]
+{
+	;; General
+	ids = jpn_dynamic_campaign
+	name = "#mg_campaigns_jpn_dynamic_campaign_name"
+	default_kingdom = kingdom_jpn
+	cinematic_intro = /Video/Metagame/JPNIntro.bik
+	choose_background_texture = DynamicCampaigns/%s/JPNBackground.png
+	description = "#mg_campaigns_jpn_dynamic_campaign_description"
+		
+	;; Map
+	map_ids = worldmap
+	map_table_ids = worldmaptable
+
+	[ChooseButtonVE]
+	when = SELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/JPNCampaignPressed.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + UNFOCUSED
+	texture = DynamicCampaigns/%s/JPNCampaign.png
+
+	[ChooseButtonVE]
+	when = SELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/JPNCampaignPressedFocused.png
+
+	[ChooseButtonVE]
+	when = UNSELECTED + FOCUSED
+	texture = DynamicCampaigns/%s/JPNCampaignFocused.png
+
+	[Kingdom Template=JapanKingdomTemplate]
+	mgai_ids = jpn_worldmap_mgai
+	
+	[Kingdom Template=UnitedStatesKingdomTemplate]
+	mgai_ids = usa_worldmap_mgai
+	
+	[Kingdom Template=GreatBritainKingdomTemplate]
+	mgai_ids = gbr_worldmap_mgai
+		
+	[Kingdom Template=GermanyKingdomTemplate]
+	mgai_ids = ger_worldmap_mgai
+		
+	[Kingdom Template=RussiaKingdomTemplate]
+	mgai_ids = rus_worldmap_mgai	
+
+;;	Tech Events
+/*
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_1
+		name = "#mg_campaigns_usa_add_tech_1_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_logistics
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_2
+		name = "#mg_campaigns_usa_add_tech_2_name_4"
+		round = 3
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_garand
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_3
+		name = "#mg_campaigns_usa_add_tech_3_name_4"
+		round = 4
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_4
+		name = "#mg_campaigns_usa_add_tech_4_name_4"
+		round = 5
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_increased_payload
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_5
+		name = "#mg_campaigns_usa_add_tech_5_name_4"
+		round = 6
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_infantry_flame
+		}
+	}
+		
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_6
+		name = "#mg_campaigns_usa_add_tech_6_name_4"
+		round = 7
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_proxfuse
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_7
+		name = "#mg_campaigns_usa_add_tech_7_name_4"
+		round = 8
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = usa_add_tech_8
+		name = "#mg_campaigns_usa_add_tech_8_name_4"
+		round = 9
+		kingdom_turn_ids = kingdom_usa
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_1
+		name = "#mg_campaigns_gbr_add_tech_1_name_3"
+		round = 2
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_2
+		name = "#mg_campaigns_gbr_add_tech_2_name_4"
+		round = 3
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_superchargers
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_3
+		name = "#mg_campaigns_gbr_add_tech_3_name_4"
+		round = 4
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_4
+		name = "#mg_campaigns_gbr_add_tech_4_name_4"
+		round = 5
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_self_sealing_fuel_tanks
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_5
+		name = "#mg_campaigns_gbr_add_tech_5_name_4"
+		round = 6
+		kingdom_turn_ids = kingdom_great_britain
+
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_flame
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_6
+		name = "#mg_campaigns_gbr_add_tech_6_name_4"
+		round = 7
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = gbr_add_tech_7
+		name = "#mg_campaigns_gbr_add_tech_7_name_4"
+		round = 8
+		kingdom_turn_ids = kingdom_great_britain
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_gyrostabilizers
+		}
+	}
+
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_1
+		name = "#mg_campaigns_rus_add_tech_1_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_conscript
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_2
+		name = "#mg_campaigns_rus_add_tech_2_name_4"
+		round = 3
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_entrenchment
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_3
+		name = "#mg_campaigns_rus_add_tech_3_name_4"
+		round = 4
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_diesel_engines
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = rus_add_tech_4
+		name = "#mg_campaigns_rus_add_tech_4_name_4"
+		round = 5
+		kingdom_turn_ids = kingdom_russia
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_rocket_truck
+		}
+	}	
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_1
+		name = "#mg_campaigns_ger_add_tech_1_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_infantry
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_2
+		name = "#mg_campaigns_ger_add_tech_2_name_4"
+		round = 2
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_training_armor
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_3
+		name = "#mg_campaigns_ger_add_tech_3_name_4"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_marksmanship
+		}
+	}		
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_4
+		name = "#mg_campaigns_ger_add_tech_4_name_4"
+		round = 3
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_mg
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_5
+		name = "#mg_campaigns_ger_add_tech_5_name_4"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_schurzen
+		}
+	}
+	
+	[Event Template=MGEventTemplate]
+	{
+		ids = ger_add_tech_6
+		name = "#mg_campaigns_ger_add_tech_6_name_4"
+		round = 7
+		kingdom_turn_ids = kingdom_germany
+		
+		[Effect Template=MGEventEffectTypeAddTechnologyTemplate]
+		{
+			tech_ids = tech_tank_king_tiger
+		}
+	}	
+*/
+}

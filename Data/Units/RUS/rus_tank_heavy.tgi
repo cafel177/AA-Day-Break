@@ -7,8 +7,8 @@
 
 	[BodyComponent]
 	{
-		health = 700
-		defense = 20
+		health = 550
+		defense = 15
 	}
 
 	[MoverComponent]
@@ -57,18 +57,18 @@
 				name = "#rus_tank_heavy_AbilityDefinition_name"
 				recharge_time = 6
 				area = 3
-				range = 35
-				max_targets = 6
+				range = 30
+				max_targets = 4
 				
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 110
+				amount = 80
 
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .5
+				amount = .1
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
@@ -113,7 +113,7 @@
 
 	[LairComponent]
 	{
-		reward = 25, 25	
+		reward = 20, 20	
 	}
 
 	[ElementComponent]

@@ -51,6 +51,28 @@
 {
 	IDS = regiment_ger_halftrack
 
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_heavy
+
+		[Slot]	;; front
+		element_IDS = ger_halftrack
+		
+		[Slot]	;; support
+		element_IDS = null
+
+		[Slot]	;; captain
+		element_IDS = ger_car_armored_co_old
+	}
+}
+
+[Thing Template=AAGEROrganizationMobileBase]
+{
+	IDS = regiment_ger_halftrack_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_tiny

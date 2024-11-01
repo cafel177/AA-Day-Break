@@ -42,6 +42,9 @@
 	{
 		[RecruitActor]
 		actor_ids = ger_truck_bunker_artillery
+
+		[RecruitActor]
+		actor_ids = ger_truck_nuclear
 	}
 
 	[DenizenComponent]

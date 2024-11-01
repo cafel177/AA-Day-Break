@@ -107,7 +107,16 @@
 		actor_ids = regiment_usa_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry
+		actor_ids = regiment_usa_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_at
@@ -116,10 +125,7 @@
 		actor_ids = regiment_usa_infantry_artillery
 		
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_mechanized
+		actor_ids = regiment_usa_infantry
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_assault
@@ -131,7 +137,10 @@
 		actor_ids = regiment_usa_infantry_amphib
 
 		[RecruitActor]
-		actor_ids = usa_truck_supply
+		actor_ids = regiment_usa_infantry_flame
+
+		[RecruitActor]
+		actor_ids = regiment_usa_engineer
 	}
 
 	[ResearchComponent]

@@ -7,8 +7,8 @@
 
 	[BodyComponent]
 	{
-		health = 330
-		defense = 5
+		health = 440
+		defense = 8
 	}
 	
 	[MoverComponent]
@@ -62,10 +62,10 @@
 				amount = 70
 
 				[Effect Template=BlastDamageEffect]
-				amount = 50
+				amount = 65
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.25
+				amount = 1.5
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_artillery_heavy
@@ -112,7 +112,7 @@
 
 	[LairComponent]
 	{
-		reward = 10, 10	
+		reward = 15, 15	
 	}
 
 	[ElementComponent]

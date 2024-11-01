@@ -40,9 +40,8 @@
 ;;---------------------------------------------- RUSTankCO Unit --------
 
 
-[Thing Template=AAUnitRUSVehicleJeep]
+[Template AAUnitRUSVehicleJeepCo Template=AAUnitRUSVehicleJeep]
 {
-	IDS = rus_car_armored_co
 	name = "#rus_car_armored_co_Thing_name"
 	editor_name = "#rus_car_armored_co_Thing_editor_name"
 
@@ -111,4 +110,17 @@
 		portrait_ids = rus_car_armored_co_portrait
 
 	}
+}
+
+[Thing Template=AAUnitRUSVehicleJeepCo]
+{
+	IDS = rus_car_armored_co
+}
+
+[Thing Template=AAUnitRUSVehicleJeepCo]
+{
+	IDS = rus_car_armored_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }

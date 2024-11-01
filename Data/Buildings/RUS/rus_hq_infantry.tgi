@@ -112,7 +112,16 @@
 		actor_ids = regiment_rus_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry
+		actor_ids = regiment_rus_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_aa
 
 		[RecruitActor]
 		actor_ids = regiment_rus_infantry_at
@@ -121,19 +130,22 @@
 		actor_ids = regiment_rus_infantry_artillery
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_rus_conscript
+		actor_ids = regiment_rus_infantry
 
 		[RecruitActor]
 		actor_ids = regiment_rus_infantry_sniper
 
 		[RecruitActor]
+		actor_ids = regiment_rus_conscript
+
+		[RecruitActor]
 		actor_ids = regiment_rus_infantry_amphib
 
 		[RecruitActor]
-		actor_ids = rus_truck_supply
+		actor_ids = regiment_rus_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_maskirovka
 	}
 		
 	[ResearchComponent]

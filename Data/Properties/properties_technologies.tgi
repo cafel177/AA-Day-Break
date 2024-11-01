@@ -290,7 +290,7 @@
 	
 	[Modifier Template=AddModifier]
 	attribute = ABILITY_HEAL
-	amount = 3
+	amount = 10
 	repair = true
 }
 
@@ -728,8 +728,6 @@
 	action_button_icon = TechIcons/IconReorganizeHQ.png
 	
 	required_properties = provides_corps_property
-
-	enabled_target_flags = provides_corps
 }
 
 

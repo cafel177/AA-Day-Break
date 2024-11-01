@@ -52,10 +52,10 @@
 		element_IDS = jpn_infantry_recon
 		
 		[Slot]	;; rear guard 1
-		element_IDS = jpn_infantry_recon
+		element_IDS = null
 
 		[Slot]	;; rear guard 2
-		element_IDS = null
+		element_IDS = jpn_infantry_recon
 		
 		[Slot]	;; rear guard 3
 		element_IDS = null

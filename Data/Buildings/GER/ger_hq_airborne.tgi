@@ -8,6 +8,11 @@
 	health = 3000
 	defense = 0
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 20
@@ -121,6 +126,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = regiment_ger_helichopter
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply

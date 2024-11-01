@@ -50,7 +50,7 @@
 		element_IDS = rus_rocket_truck
 		
 		[Slot]	;; captain
-		element_IDS = rus_tank_co
+		element_IDS = rus_tank_co_old
 	}
 
 }

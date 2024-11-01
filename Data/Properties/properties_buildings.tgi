@@ -18,7 +18,7 @@
 	required_properties = building
 
 	[Modifier template=PeriodicHealModifier]
-	amount = 35
+	amount = 25
 }
 
 [Property Template=SharedProperty]

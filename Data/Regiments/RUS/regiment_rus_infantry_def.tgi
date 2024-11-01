@@ -1,0 +1,65 @@
+[Template AARUSRegimentInfantry Template=AARUSOrganizationInfantry]
+{
+	name = "#regiment_rus_infantry_def_AARUSRegimentInfantry_name"
+	
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 50
+		
+		[Upkeep]
+		ammo = 10
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSInfantry/RUSInfantry
+		icon = /UI/Game/RegimentButtons/IconEngineer.png
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_attack
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+}
+
+[Thing Template=AARUSRegimentInfantry]
+{
+	IDS = regiment_rus_infantry_def
+	editor_name = "#regiment_rus_infantry_def_Thing_editor_name"
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		        		entrenchment_time = 15
+                        
+		[Slot]	;; front
+		element_IDS = rus_infantry_def
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_infantry
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_infantry
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_infantry
+	
+		[Slot]	;; flank
+		element_IDS = rus_infantry_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_infantry_co
+	}
+}
+

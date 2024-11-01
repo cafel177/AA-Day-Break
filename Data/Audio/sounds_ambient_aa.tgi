@@ -900,3 +900,11 @@
 
 	files = Sounds/Metagame/ArmyMove.wav
 }
+
+[Audio Template=AudioAmbient]
+{
+	IDS = helichopter_move_1
+	name = "#sounds_death_aa_mg_death_army_name"
+
+	files = Sounds/General/helicopter.wav
+}

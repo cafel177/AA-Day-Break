@@ -45,8 +45,31 @@
 	{
 		[ResearchItem]
 		{
-			property_IDS = tech_proximity_fuses
+			property_IDS = tech_ammo_production
 			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}		
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_proximity_fuses
+			type = GLOBAL
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
@@ -65,7 +88,7 @@
 			{
 				money = 75
 			}
-		}		
+		}
 
 		[ResearchItem]
 		{

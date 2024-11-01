@@ -68,7 +68,7 @@
 		{
 			idle_animation = idleattack
 									
-			[AbilityDefinition Template=AAInfantrySMG]
+			[AbilityDefinition Template=AAInfantryRifleBomb]
 			{
 				name = "#gbr_sas_sniper_AbilityDefinition_name"
 				recharge_time = 5

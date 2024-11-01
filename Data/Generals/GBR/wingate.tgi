@@ -33,6 +33,8 @@
 	portrait_ids = wingate_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpSabotageGBR]
 
 	[Ability Template=AASpecialOpEconomicAidGBR]

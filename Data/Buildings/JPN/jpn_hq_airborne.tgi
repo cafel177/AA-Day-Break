@@ -8,6 +8,11 @@
 	health = 2000
 	defense = 0
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 20
@@ -125,6 +130,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_banzai_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_helichopter
 
 		[RecruitActor]
 		actor_ids = jpn_truck_supply

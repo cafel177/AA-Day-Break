@@ -32,6 +32,8 @@
 	portrait_ids = eisenhower_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpMechanizedAdvance]
 
 	[Ability Template=AASpecialOpResupply2]
@@ -56,10 +58,16 @@
 	public = false
 	
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpMechanizedAdvance]
 
-	[Ability Template=AASpecialOpEconomicAidMoney]
-	
 	[Ability Template=AASpecialOpResupply2]
+	
+	[Ability Template=AASpecialOpRapidDeployment]
+	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
+	[Ability Template=AASpecialOpUSASupplyDrop]
 	
 }

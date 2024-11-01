@@ -9,8 +9,8 @@
 
 	[BodyComponent]
 	{
-		health = 600
-		defense = 20
+		health = 500
+		defense = 12
 	}
 
 	[ElementComponent]
@@ -23,7 +23,7 @@
 		
 	{
 		speed_max = 3
-		acceleration = 1.25
+		acceleration = 2.5
 		
 		/*
 		[WhenStartMoving template=FXC_PlaySFX]
@@ -68,8 +68,8 @@
 				name = "#gbr_tank_heavy_AbilityDefinition_name"
 				recharge_time = 6
 				area = 3
-				range = 35
-				max_targets = 6
+				range = 30
+				max_targets = 4
 				
 				[Flags] 
 				bombard = true
@@ -78,11 +78,11 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 110
+				amount = 80
 
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .5
+				amount = .1
                 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_heavy

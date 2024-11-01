@@ -20,9 +20,8 @@
 	modifier_flag = NO_UPKEEP
 }
 
-[Thing Template=AAUnitGBRProne]
+[Template AAUnitProneSaboteur Template=AABipedProne]
 {
-	IDS = saboteur
 	name = "#saboteur_name"
 	editor_name = "#saboteur_editor_name"
 	
@@ -40,8 +39,8 @@
 
 	[BodyComponent]
 	{
-		health = 200
-		defense = 5
+		health = 250
+		defense = 2
 	}
 		
 	[EconomyComponent]
@@ -71,9 +70,6 @@
 
 		[Property]
 		property_IDS = stealthy
-		
-		[Property]
-		property_IDS = saboteur_decay
 
 		[Property]
 		property_IDS = recon	
@@ -105,7 +101,7 @@
 				
 				[Effect Template=FireDamageEffect]
 				{
-					amount = 1000
+					amount = 1500
 				}
 
 				[Effect Template=EnchantmentEffect]
@@ -428,3 +424,10 @@
 		}
 	}
 }
+
+[Thing Template=AAUnitProneSaboteur]
+{
+	IDS = saboteur
+}
+
+

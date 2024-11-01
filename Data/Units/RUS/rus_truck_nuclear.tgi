@@ -1,0 +1,73 @@
+[Thing Template=AAUnitRUSVehicleHQTruck]
+{
+	IDS = rus_truck_nuclear
+	name = "#rus_truck_nuclear_name"
+	editor_name = "#rus_truck_nuclear_editor_name"
+    
+	hide_if_missing_properties = false
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 800
+
+   		[Upkeep]
+		ammo = 20
+		oil = 20
+		building_limit_consumed = 1
+		nuclear_limit_consumed = 1
+	}
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer, rus_motor_pool, rus_brigade_artillery
+		required_properties = nuclear_weapon
+	}
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+	
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = rus_nuclear_building
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+
+		;; ids of the trailer actor
+		trailer_actor = rus_trailer_artillery
+
+		[TrailerHitch]
+		{		
+			;; node name and node offset of the truck's hitch
+			node_ids = hitch
+			node_offset = 0, -2.2, .5
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = property_bunker_artillery
+	}
+	
+	[View]
+	{
+		resource_prefix = RUSTruck/RUSTruck
+		icon = /UI/Game/BuildingButtons/IconICBM.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = rus_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = depot_supply_select
+	}
+}

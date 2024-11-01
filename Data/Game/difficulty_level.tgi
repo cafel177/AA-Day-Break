@@ -6,6 +6,12 @@
 
 [DifficultyLevel]
 {
+	ids = nuclear_weapon
+	name = "#difficulty_level_nuclear_weapon_name_2"
+}
+
+[DifficultyLevel]
+{
 	ids = easy
 	name = "#difficulty_level_easy_name_2"
 }

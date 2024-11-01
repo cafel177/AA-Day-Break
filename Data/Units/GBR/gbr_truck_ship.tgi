@@ -1,0 +1,68 @@
+[Thing Template=AAUnitGBRVehicleHQTruck]
+{
+	IDS = gbr_truck_ship
+	name = "#gbr_truck_ship_name"
+	editor_name = "#gbr_truck_ship_editor_name"
+
+	hide_if_missing_properties = false
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 150
+		
+		[Production]
+		ammo = 5
+		oil = 5
+
+		[Upkeep]
+		building_limit_consumed = 1
+	}
+
+	[ElementComponent]
+	required_properties = marine_deployment
+	
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = gbr_hq_ship
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 3
+		acceleration = 2
+		trailer_actor = gbr_trailer_motor
+
+		[TrailerHitch]
+		{
+			node_ids = hitch
+			node_offset = 0, -.7, .8
+		}
+	}
+		
+	[PropertiesComponent]
+	{
+
+	}
+	
+	[View]
+	{
+		resource_prefix = GBRTruckBedless/GBRTruckBedless
+		icon = /UI/Game/BuildingButtons/IconHQShip.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = motor_pool_select
+	}
+}

@@ -4,7 +4,12 @@
 	name = "#placeholder_regiments_tank_light_name"
 
 	[Flags]
+	blocking = false
+	targetable = true
+	ethereal = true
+	radar = false
 	axis_locked = false	
+	tile_locked = false
 
 	[Placement]
 	placement_group_IDS = group_special

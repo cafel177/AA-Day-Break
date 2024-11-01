@@ -1,0 +1,87 @@
+[Template USAHalftrackDef Inherit=AAUnitUSAVehicleHalftrack]
+{
+	name = "#usa_halftrack_Thing_name"
+	editor_name = "#usa_halftrack_Thing_editor_name"
+
+	[BodyComponent]
+	{
+		health = 350
+		defense = 3
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 4.5
+		acceleration = 3.5
+		turn_radius = 1.5
+	}
+
+	[ElementComponent]
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = mg		
+		
+		[Property]
+		property_IDS = combat_unit
+		
+		[Property]
+		property_IDS = halftrack_unit
+	}
+	
+	[PerformerComponent]
+	{
+		[Ability Template=AAGunLocal]
+		{	
+			[AbilityDefinition Template=AAInfantryRifle]
+			{
+				name = "#usa_halftrack_AbilityDefinition_name"
+                
+				recharge_time = 3
+				range = 5
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 10
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = usa_mg_heavy
+			}
+		}	
+	}
+	
+	
+	[View]
+	{
+		resource_prefix = USAHalftrack/USAHalftrack
+		
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = headlight_projection
+			location = headlight_projection_01
+			
+			attached = true
+		}
+	
+		[WhenCreated Template=FXC_CreateVFX]
+		{
+			vfx_ids = headlight_projection
+			location = headlight_projection_02
+			
+			attached = true
+		}
+	}
+}
+
+;;----------------------------- UNITS ------------------------ ;;
+
+[Thing Template=USAHalftrackDef]
+{
+	IDS = usa_halftrack_def
+}

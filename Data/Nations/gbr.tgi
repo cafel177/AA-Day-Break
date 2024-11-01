@@ -62,6 +62,14 @@
 	thing_IDS = thing_infinite_resource
 
 	[Placeholder]
+	placeholder_IDS = placeholder_depot_marine
+	thing_IDS = thing_marine_resource
+
+	[Placeholder]
+	placeholder_IDS = placeholder_depot_nuclear
+	thing_IDS = thing_nuclear_resource
+
+	[Placeholder]
 	placeholder_IDS = placeholder_corpsunpacked_tb
 	thing_ids = rus_corps_tb
 

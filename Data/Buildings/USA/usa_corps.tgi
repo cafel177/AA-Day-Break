@@ -30,7 +30,7 @@
 {
 
 	[BodyComponent]
-	health = 3000
+	health = 3500
 	defense = 0
 	
 	[DefenderComponent]
@@ -202,6 +202,18 @@
 			[ResearchCost Template=CostList]
 			{
 				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
 			}
 		}	
 	}	

@@ -39,9 +39,8 @@
 
 ;;---------------------------------------------- GBRCarArmoredCO Unit --------
 
-[Thing Template=AAUnitGBRVehicleJeep]
+[Template AAUnitGBRVehicleJeepCo Template=AAUnitGBRVehicleJeep]
 {
-	IDS = gbr_car_armored_co
 	name = "#gbr_car_armored_co_Thing_name"
 	editor_name = "#gbr_car_armored_co_Thing_editor_name"
 
@@ -108,4 +107,17 @@
 		portrait_ids = gbr_car_armored_co_portrait
 
 	}
+}
+
+[Thing Template=AAUnitGBRVehicleJeepCo]
+{
+	IDS = gbr_car_armored_co
+}
+
+[Thing Template=AAUnitGBRVehicleJeepCo]
+{
+	IDS = gbr_car_armored_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }

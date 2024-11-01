@@ -2,8 +2,8 @@
 {
 	[BodyComponent]
 	{
-		health = 300
-		defense = 4
+		health = 375
+		defense = 8
 	}
 	
 	[MoverComponent]
@@ -87,10 +87,10 @@
 				amount = 70
 
 				[Effect Template=BlastDamageEffect]
-				amount = 50
+				amount = 65
 
 				[Effect Template=MoraleLossEffect]
-				amount = 1.5
+				amount = 2
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

@@ -1,0 +1,43 @@
+[Thing template=Actor]
+{
+	IDS = thing_marine_resource
+	name = "#thing_marine_resource_name"
+	category = UNIT
+	
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = marine_deployment
+	}
+	
+	[Flags]
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
+	
+	[Placement]
+	placement_group_IDS = group_special
+	placement_category = building
+
+	[View]
+	{
+		resource_prefix = ThingCurrencyResource/ThingCurrencyResource
+		shadow_type = none
+		shadow_texture = null
+
+		[TextureSearchPath]
+		path = /Shared/SharedTextures
+	}
+
+    	[Size]
+	{
+		blocking_shape = CIRCLE
+		blocking_radius = 1
+					
+		soft_shape = RECT
+		rect_width = 2
+		rect_height = 2
+	}
+}

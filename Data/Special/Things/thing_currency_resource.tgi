@@ -12,6 +12,7 @@
 	
 	[Placement]
 	placement_group_IDS = group_special
+	placement_category = building
 
 	[View]
 	{
@@ -26,7 +27,7 @@
     	[Size]
 	{
 		blocking_shape = CIRCLE
-		blocking_radius = 2
+		blocking_radius = 1
 					
 		soft_shape = RECT
 		rect_width = 2
@@ -55,6 +56,6 @@
 	[EconomyComponent]
 	{
 		[Production]
-		money = 130
+		money = 40
 	}
 }

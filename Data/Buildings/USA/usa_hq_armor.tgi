@@ -110,10 +110,13 @@
 		actor_ids = regiment_usa_tank_light
 		
 		[RecruitActor]
-		actor_ids = regiment_usa_tank_medium
+		actor_ids = regiment_usa_tank_medium_new
 		
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_heavy
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_usa_tank_at
@@ -122,7 +125,16 @@
 		actor_ids = regiment_usa_tank_artillery
 
 		[RecruitActor]
-		actor_ids = usa_truck_supply
+		actor_ids = regiment_usa_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_usa_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_armored
+
+		[RecruitActor]
+		actor_ids = regiment_usa_tank_medium
 	}
 	
 	[ResearchComponent]

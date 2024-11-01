@@ -53,11 +53,11 @@
 
 		[Inventory]
 		actor_ids = jpn_bomber
-		count = 2
+		count = 3
 
 		[Inventory]
 		actor_ids = jpn_fighter
-		count = 4
+		count = 6
 
 		[Runway]
 		{
@@ -85,7 +85,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 400
+		money = 200
 
 		[Upkeep]
 		ammo = 15
@@ -97,7 +97,7 @@
 	{
 		packing_length = 8
 		unpacking_length = 8
-		pack_health_min = 1
+		pack_health_min = 0.3
 	}
 
  	[PropertiesComponent]

@@ -32,6 +32,8 @@
 	portrait_ids = montgomery_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpCarpetBombGBR]
 	
 	[Ability Template=AASpecialOpCourage]

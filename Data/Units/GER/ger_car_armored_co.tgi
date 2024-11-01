@@ -41,9 +41,8 @@
 
 
 
-[Thing Template=AAUnitGERVehicleJeep]
+[Template AAUnitGERVehicleJeepCo Template=AAUnitGERVehicleJeep]
 {
-	IDS = ger_car_armored_co
 	name = "#ger_car_armored_co_Thing_name"
 	editor_name = "#ger_car_armored_co_Thing_editor_name"
 
@@ -114,4 +113,17 @@
 		portrait_ids = ger_car_armored_co_portrait
 
 	}
+}
+
+[Thing Template=AAUnitGERVehicleJeepCo]
+{
+	IDS = ger_car_armored_co
+}
+
+[Thing Template=AAUnitGERVehicleJeepCo]
+{
+	IDS = ger_car_armored_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }

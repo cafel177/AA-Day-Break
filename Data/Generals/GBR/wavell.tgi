@@ -33,6 +33,8 @@
 	portrait_ids = wavell_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpCarpetBombGBR]
 	
 	[Ability Template=AASpecialOpSandbag]

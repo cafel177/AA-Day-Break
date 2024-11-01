@@ -1,0 +1,71 @@
+[Template GBRHalftrackDef Inherit=AAUnitGBRVehicleHalftrack]
+{
+	name = "#gbr_halftrack_Thing_name"
+	editor_name = "#gbr_halftrack_Thing_editor_name"
+
+	[BodyComponent]
+	{
+		health = 350
+		defense = 3
+	}
+
+	[MoverComponent]
+	{
+		speed_max = 4.5
+		turn_radius = 1.5
+		acceleration = 3.5
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+		
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = mg
+		
+		[Property]
+		property_IDS = combat_unit
+		
+		[Property]
+		property_IDS = halftrack_unit
+	}
+	
+	[View]
+	{
+		resource_prefix = GBRHalftrack/GBRHalftrack
+	}
+
+	[PerformerComponent]
+	{
+		
+		[Ability Template=AAGunLocal]
+		{
+					
+			[AbilityDefinition Template=AAInfantryRifle]
+			{
+				name = "#gbr_halftrack_AbilityDefinition_name"
+				
+				recharge_time = 3
+				range = 5
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 10
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_mg_heavy
+			}
+		}
+	}
+}
+
+
+;;----------------------------- UNITS ------------------------ ;;
+
+[Thing Template=GBRHalftrackDef]
+{
+	IDS = gbr_halftrack_def
+}

@@ -7,35 +7,40 @@
 {
 	IDS = nation_ger
 	name = "#properties_intrinsic_nation_ger_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_jpn
 	name = "#properties_intrinsic_nation_jpn_name"
-	icon = null
+	description = "#properties_nation_jpn"
+	icon = PropertyIcons/IconPropertyNational.png
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = flame
+	amount = -0.30
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_gbr
 	name = "#properties_intrinsic_nation_gbr_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_usa
 	name = "#properties_intrinsic_nation_usa_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_rus
 	name = "#properties_intrinsic_nation_rus_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 ;; -------------- ORGANIZATION PROPERTIES ---------------
@@ -406,6 +411,13 @@
 	IDS = corpshq
 	name = "#properties_intrinsic_corpshq_name"
 	icon = null
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_missile
+	name = "#properties_intrinsic_nuclear_missile_name"
+	icon = null
 	
 	enabled_target_flags = provides_corps
 }
@@ -437,9 +449,20 @@
 {
 	IDS = marine_deployment
 	name = "#properties_intrinsic_marine_deployment_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyEngineering.png
+
+	is_technology = true
 }
 
+
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_weapon
+	name = "#properties_intrinsic_nuclear_weapon_name"
+	icon = PropertyIcons/IconPropertyEngineering.png
+
+	is_technology = true
+}
 
 ;; -------------- ABILITY PROPERTIES ---------------
 

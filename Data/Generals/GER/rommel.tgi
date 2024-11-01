@@ -32,6 +32,8 @@
 	portrait_ids = rommel_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpBlitzkrieg]
 	
 	[Ability Template=AASpecialOpPanzerHohle]

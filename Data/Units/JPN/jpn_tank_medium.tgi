@@ -6,8 +6,8 @@
 
 	[BodyComponent]
 	{
-		health = 425
-		defense = 12
+		health = 500
+		defense = 10
 	}
 	
 	[MoverComponent]
@@ -62,7 +62,7 @@
 			{				
 				name = "#jpn_tank_medium_AbilityDefinition_name"
 				recharge_time = 6
-				range = 30
+				range = 25
 				area = 2
 				max_targets = 4
 
@@ -70,7 +70,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 40
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

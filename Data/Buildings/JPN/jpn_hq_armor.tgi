@@ -101,22 +101,31 @@
 	[RecruitComponent]
 	{		
 		[RecruitActor]
-		actor_ids = regiment_jpn_tankette
-
-		[RecruitActor]
 		actor_ids = regiment_jpn_tank_light
 		
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_medium
 
 		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
 		actor_ids = regiment_jpn_tank_at
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_tank_artillery
+		actor_ids = regiment_jpn_tank_artillery_new
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = regiment_jpn_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tank_artillery
 	}
 	
 	[SupplyComponent Template=HQSupplyComponent]

@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRKneel]
+[Template AAUnitGBRKneelMG Template=AAUnitGBRKneel]
 {
-	IDS = gbr_infantry_mg
 	name = "#gbr_infantry_mg_name"
 	editor_name = "#gbr_infantry_mg_editor_name"
 	
@@ -76,4 +75,22 @@
 	}
 		
 
+}
+
+
+[Thing Template=AAUnitGBRKneelMG]
+{
+	IDS = gbr_infantry_mg
+}	
+
+[Thing Template=AAUnitGBRKneelMG]
+{
+	IDS = gbr_infantry_mg_sp
+
+	[BodyComponent]
+	health = 200
+	defense = 2
+
+	[MoverComponent]
+	speed_max = 3
 }

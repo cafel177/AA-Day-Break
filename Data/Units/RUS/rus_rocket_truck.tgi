@@ -4,10 +4,10 @@
 	impact_impulse = 6000
 	icon = /Properties/AbilityIcons/IconAbilityDamageExplosive.png
 	
-	area = 5
+	area = 4
 	attenuation_range_min = 1
 	attenuation_factor_max = 0.25
-	max_targets = 12
+	max_targets = 10
 
 	range = 50
 	recharge_time = 9

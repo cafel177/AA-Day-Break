@@ -5,8 +5,8 @@
 
 	[BodyComponent]
 	{
-		health = 495
-		defense = 12
+		health = 660
+		defense = 10
 	}
 
 	
@@ -50,7 +50,7 @@
 			{				
 				name = "#rus_tank_medium_AbilityDefinition_name"
 				recharge_time = 6
-				range = 30
+				range = 25
 				area = 2
 				max_targets = 4
 
@@ -58,7 +58,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 80
+				amount = 40
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

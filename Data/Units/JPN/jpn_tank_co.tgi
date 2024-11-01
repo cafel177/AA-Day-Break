@@ -40,9 +40,8 @@
 ;;---------------------------------------------- JPNTankCO Unit --------
 
 
-[Thing Template=AAUnitJPNVehicleMediumTank]
+[Template AAUnitJPNVehicleMediumTankCo Template=AAUnitJPNVehicleMediumTank]
 {
-	IDS = jpn_tank_co
 	name = "#jpn_tank_co_Thing_name"
 	editor_name = "#jpn_tank_co_Thing_editor_name"
 
@@ -122,4 +121,17 @@
 			kf = JPNTankCO/JPNTankCORecoil1.kf
 		}
 	}
+}
+
+[Thing Template=AAUnitJPNVehicleMediumTankCo]
+{	
+	IDS = jpn_tank_co
+}
+
+[Thing Template=AAUnitJPNVehicleMediumTankCo]
+{	
+	IDS = jpn_tank_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }

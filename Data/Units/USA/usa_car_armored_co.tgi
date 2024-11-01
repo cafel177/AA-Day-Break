@@ -39,9 +39,8 @@
 
 ;;---------------------------------------------- USACarArmoredCO Unit --------
 
-[Thing Template=AAUnitUSAVehicleJeep]
+[Template AAUnitUSAVehicleJeepCo Template=AAUnitUSAVehicleJeep]
 {
-	IDS = usa_car_armored_co
 	name = "#usa_car_armored_co_Thing_name"
 	editor_name = "#usa_car_armored_co_Thing_editor_name"
 
@@ -113,4 +112,17 @@
 		portrait_ids = usa_car_armored_co_portrait
 
 	}
+}
+
+[Thing Template=AAUnitUSAVehicleJeepCo]
+{	
+	IDS = usa_car_armored_co
+}
+
+[Thing Template=AAUnitUSAVehicleJeepCo]
+{	
+	IDS = usa_car_armored_co_old
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 }

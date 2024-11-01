@@ -45,6 +45,28 @@
 {
 	IDS = regiment_ger_tank_medium
 
+	[Placement]
+	placement_group_ids = null
+    
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_medium
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_old
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankMedium]
+{
+	IDS = regiment_ger_tank_medium_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy

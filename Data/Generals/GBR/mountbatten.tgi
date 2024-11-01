@@ -32,6 +32,8 @@
 	portrait_ids = mountbatten_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpSabotageGBR]
 	
 	[Ability Template=AASpecialOpSmokeBarrage]

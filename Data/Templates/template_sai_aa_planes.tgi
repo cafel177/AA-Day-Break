@@ -121,7 +121,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= antiaircraft_company
-			value							= -100
+			value							= 100
 			repeat_penalty					= 200				
 		}
 

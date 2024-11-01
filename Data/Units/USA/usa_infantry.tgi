@@ -147,6 +147,86 @@
 
 [Thing Template=AAUnitUSAInfantry]
 {
+	IDS = usa_infantry_def
+
+	[BuilderComponent]
+	{
+		[BuildActor]
+		actor_ids = usa_bunker
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = engineer
+	}
+
+	[CharacterComponent Template=AAInfantryCharacterComponent]
+	{
+		[Animation Template=AttackAnimation]
+		{
+			IDS = build1
+			key_ratio = 0.1
+			kf = /Shared/Animations/Units/Infantry/Build1.kf
+
+			[WhenStart Template=FXC_Equipment]
+			{
+				action = HIDE
+				location = rhand
+				equipment_type_ids = rifle
+			}
+
+			[WhenStart Template=FXC_Equipment]
+			{
+				action = UNHIDE
+				location = rhand
+				equipment_type_ids = hammer
+			}
+
+			[WhenEnd Template=FXC_Equipment]
+			{
+				action = UNHIDE
+				location = rhand
+				equipment_type_ids = rifle
+			}
+
+			[WhenEnd Template=FXC_Equipment]
+			{
+				action = HIDE
+				location = rhand
+				equipment_type_ids = hammer
+			}
+		}
+	}
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAConstructLocal]
+		{
+			animation1 = build1
+			
+			[AbilityDefinition Template=AAConstructAction]
+			{
+				[Effect Template=RepairEffect]
+				amount = 3
+			}
+		}
+
+        [Ability Template=AARepairLocal]
+		{	
+			[AbilityDefinition Template=AARepairAction]
+			{
+				recharge_time = 1
+
+				[Effect Template=RepairEffect]
+				amount = 2
+			}
+		}
+	}
+}
+
+[Thing Template=AAUnitUSAInfantry]
+{
 	IDS = usa_infantry_amphib
 
 	[Placement]

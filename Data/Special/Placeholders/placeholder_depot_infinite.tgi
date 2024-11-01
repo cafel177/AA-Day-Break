@@ -6,6 +6,11 @@
 	[Flags]
 	axis_locked = false
 	tile_locked = false
+	invulnerable = true
+	invisible = true
+	blocking = false
+	targetable = false
+	ethereal = true
 
 	[Placement]
 	placement_group_IDS = group_special
@@ -14,7 +19,7 @@
 	[Size]
 	{
 		blocking_shape = CIRCLE
-		blocking_radius = 1
+		blocking_radius = 0.5
 					
 		soft_shape = RECT
 		rect_width = 1

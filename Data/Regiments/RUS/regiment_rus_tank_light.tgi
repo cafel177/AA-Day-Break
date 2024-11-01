@@ -44,15 +44,37 @@
 {
 	IDS = regiment_rus_tank_light
 
+	[Placement]
+	placement_group_ids = null
+    
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light
 	
 		[Slot]	;; support
 		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_tank_co_old
+	}
+}
+
+[Thing Template=AARUSOrganizationArmorTankLight]
+{
+	IDS = regiment_rus_tank_light_new
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = rus_tank_light
+	
+		[Slot]	;; support
+		element_IDS = rus_tank_light
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co
@@ -84,13 +106,13 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light_tb
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = rus_tank_light_tb
 		
 		[Slot]	;; captain
 		element_IDS = rus_tank_co_tb

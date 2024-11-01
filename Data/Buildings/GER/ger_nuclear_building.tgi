@@ -1,0 +1,115 @@
+[Thing Template=AAGERBuildingPackable]
+{
+	IDS = ger_nuclear_building
+	name = "#ger_nuclear_building_name"
+	editor_name = "#ger_nuclear_building_editor_name"
+
+	[Flags]
+	{
+		axis_locked = false
+        		revealed = true
+	}
+
+	[BodyComponent]
+	{
+		health = 4000
+		defense = 0
+	}
+
+	[DetectionComponent]
+	detection_range = 30
+	remote_detection_range = 12
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = nuclear_heal
+	}
+    
+	[LairComponent]
+	{
+		reward = 100, 200	
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = regiment_nuclear
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 400
+		
+		[Production]
+		
+		[Upkeep]
+		building_limit_consumed = 1
+        		nuclear_limit_consumed = 1
+		ammo = 40
+		oil = 40
+	}
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = property_bunker
+
+		[Property]
+		property_ids = military_building
+	}
+
+	[Size]
+	{
+		blocking_shape = SQUARE
+		square_size = 6
+	}
+	
+	[View]
+	{
+		resource_prefix = GERNuclear/NukeSilo_3
+		icon = /UI/Game/BuildingButtons/IconICBM.png
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_bunker_snow
+			terrain_group_filter = snow
+		}
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = bunker_artillery_select
+		}
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_packing
+		audio_ids = pack_7s_sfx
+	}
+	
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
+	}
+    
+	[WhenLeave Template=FXC_PlaySFX]
+	{
+		audio_ids = nuclear_complete
+		actor_state = structure_unpacking
+	}
+}

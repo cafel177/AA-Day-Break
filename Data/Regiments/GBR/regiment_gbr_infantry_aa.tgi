@@ -10,7 +10,7 @@
 		money = 60
 		
 		[Upkeep]
-		ammo = 10
+		ammo = 5
 		oil = 5
 	}
 
@@ -30,28 +30,24 @@
 		audio_ids = gbr_aa_attack
 	}		
 	
+	[DetectionComponent]
+	{
+		detection_range = 30
+	}
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_mechanized
+		layout_IDS = regiment_vehicle_light
 		control_range = 30
 		
 		[Slot]	;; front
-		element_IDS = gbr_infantry
-		
-		[Slot]	;; rear guard 1
-		element_IDS = gbr_infantry
-
-		[Slot]	;; rear guard 2
 		element_IDS = gbr_halftrack_aa
-		
-		[Slot]	;; rear guard 3
-		element_IDS = gbr_infantry_mg
 	
-		[Slot]	;; flank
-		element_IDS = gbr_halftrack_aa
+		[Slot]	;; support
+		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = gbr_infantry_co
+		element_IDS = gbr_car_armored_co
 	}
 	
 	[PropertiesComponent]

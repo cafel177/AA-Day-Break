@@ -46,6 +46,28 @@
 {
 	IDS = regiment_ger_tank_king_tiger
 
+	[Placement]
+	placement_group_ids = null
+    
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_vehicle_light
+		
+		[Slot]	;; front
+		element_IDS = ger_tank_king_tiger
+	
+		[Slot]	;; support
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_tank_co_old
+	}
+}
+
+[Thing Template=AAGEROrganizationArmorTankKingTiger]
+{
+	IDS = regiment_ger_tank_king_tiger_new
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_heavy

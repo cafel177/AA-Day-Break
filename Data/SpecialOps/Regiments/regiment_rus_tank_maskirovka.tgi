@@ -13,9 +13,6 @@
 		ammo = 5
 		oil = 0
 	}
-	
-	[Placement]
-	placement_group_ids = null
 
 	[PropertiesComponent]
 	{	
@@ -52,6 +49,6 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = rus_car_armored_co
+		element_IDS = rus_car_armored_co_old
 	}
 }

@@ -90,4 +90,10 @@
 
     	[ActorGroup Template=StartInfinite]
 	apply_to_all_major_kingdoms = true
+
+    	[ActorGroup Template=StartMarine]
+	apply_to_all_major_kingdoms = true
+
+    	[ActorGroup Template=StartNuclear]
+	apply_to_all_major_kingdoms = true
 }

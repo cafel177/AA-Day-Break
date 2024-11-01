@@ -109,7 +109,16 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
-		actor_ids = regiment_ger_halftrack
+		actor_ids = regiment_ger_halftrack_new
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_light_new
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
 
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_aa
@@ -118,22 +127,28 @@
 		actor_ids = regiment_ger_halftrack_sniper
 			
 		[RecruitActor]
-		actor_ids = regiment_ger_halftrack_artillery		
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_goliath
-
-		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_light
+		actor_ids = regiment_ger_halftrack_artillery_new		
 
 		[RecruitActor]
-		actor_ids = ger_truck_supply
+		actor_ids = regiment_ger_goliath
+
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_at
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_hohle
+
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack
+
+		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_artillery
+
+        		[RecruitActor]
+		actor_ids = regiment_ger_tank_light
 	}
 	
 	[Size]

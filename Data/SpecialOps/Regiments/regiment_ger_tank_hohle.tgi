@@ -14,9 +14,6 @@
 		oil = 0
 	}
 
-	[Placement]
-	placement_group_ids = null
-
 	[PropertiesComponent]
 	{	
 		[Property]
@@ -52,7 +49,7 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = ger_car_armored_co
+		element_IDS = ger_car_armored_co_old
 	}
 	
 

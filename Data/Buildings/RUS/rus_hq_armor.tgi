@@ -240,13 +240,16 @@
 	[RecruitComponent]
 	{
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_light
+		actor_ids = regiment_rus_tank_light_new
 		
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_medium
+		actor_ids = regiment_rus_tank_medium_new
 		
 		[RecruitActor]
-		actor_ids = regiment_rus_tank_heavy
+		actor_ids = regiment_rus_tank_heavy_new
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_at
@@ -255,7 +258,22 @@
 		actor_ids = regiment_rus_tank_artillery
 
 		[RecruitActor]
-		actor_ids = rus_truck_supply
+		actor_ids = regiment_rus_tank_aa
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_mechanized
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_rocket_truck
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_light
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_medium
+		
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_heavy
 	}
 }
 
@@ -266,7 +284,7 @@
 	[EconomyComponent]
 	{
 		[Cost]	
-		money = 75
+		money = 112
 	}
 
 	[RecruitComponent]
