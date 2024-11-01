@@ -1243,7 +1243,7 @@ USAGE:
 	[Size]
 	{
 		blocking_shape = CIRCLE
-		blocking_radius = 1
+		blocking_radius = 0.5
 
 		soft_shape = CIRCLE
 		soft_radius = 1.1
