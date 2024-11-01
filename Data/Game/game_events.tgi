@@ -89,10 +89,12 @@
 	{
 		radar_icon = /Textures/GameEvents/testart.tga
 	}
+/*
 	[AdditionalFX template=FXC_GameEventSFX]
 	{
 		audio_ids = lair_reward_sfx
 	}
+*/
 }
 
 [GameEvent template=GameEvent]
