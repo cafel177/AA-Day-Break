@@ -1359,6 +1359,12 @@ USAGE:
 [Template AAUnitSeaMajor Template=AAUnitSea]
 {
 
+	[EconomyComponent]
+	{
+		[Upkeep]
+		unit_limit_consumed = 1
+	}
+
 	[PropertiesComponent]
 	{	
 		[Property]
