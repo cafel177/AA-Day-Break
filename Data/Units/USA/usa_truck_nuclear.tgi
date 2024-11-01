@@ -1,0 +1,71 @@
+[Thing Template=AAUnitUSAVehicleHQTruck]
+{
+	IDS = usa_truck_nuclear
+	name = "#usa_truck_nuclear_name"
+	editor_name = "#usa_truck_nuclear_editor_name"
+    
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 800
+
+   		[Upkeep]
+		ammo = 20
+		oil = 20
+		building_limit_consumed = 1
+		nuclear_limit_consumed = 1
+	}
+
+	[ElementComponent]
+	{
+		required_structures = usa_brigade_engineer, usa_motor_pool, usa_brigade_artillery
+		required_properties = nuclear_weapon
+	}
+
+	[BodyComponent]
+	{
+		health = 500
+		defense = 2
+	}
+	
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = 
+		
+		packed_position_offset = 0,0
+		packed_orientation = 1,0
+	}
+	
+	[MoverComponent]
+	{
+		speed_max = 3
+
+		;; ids of the trailer actor
+		trailer_actor = usa_trailer_artillery
+
+		[TrailerHitch]
+		{		
+			;; node name and node offset of the truck's hitch
+			node_ids = hitch
+			node_offset = 0, -2.2, .5
+		}
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = property_bunker_artillery
+	}
+	
+	[View]
+	{
+		resource_prefix = USATruck/USATruck
+		icon = /UI/Game/BuildingButtons/.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = usa_truck_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = depot_supply_select
+	}
+}
