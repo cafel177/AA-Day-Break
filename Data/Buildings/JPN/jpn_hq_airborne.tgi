@@ -132,6 +132,9 @@
 		actor_ids = regiment_jpn_paratrooper_banzai_ground
 
 		[RecruitActor]
+		actor_ids = regiment_jpn_helichopter
+
+		[RecruitActor]
 		actor_ids = jpn_truck_supply
 	}
 	

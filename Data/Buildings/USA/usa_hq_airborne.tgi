@@ -126,6 +126,9 @@
 		actor_ids = regiment_usa_paratrooper_heavy_ground
 
 		[RecruitActor]
+		actor_ids = regiment_usa_helichopter
+
+		[RecruitActor]
 		actor_ids = usa_truck_supply
 	}
 	

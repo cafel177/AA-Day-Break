@@ -128,6 +128,9 @@
 		actor_ids = regiment_ger_paratrooper_heavy_ground
 
 		[RecruitActor]
+		actor_ids = regiment_ger_helichopter
+
+		[RecruitActor]
 		actor_ids = ger_truck_supply
 	}
 	
