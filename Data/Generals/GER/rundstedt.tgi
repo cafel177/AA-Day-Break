@@ -32,6 +32,8 @@
 	portrait_ids = rundstedt_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpVWeapons]
 	
 	[Ability Template=AASpecialOpFear]

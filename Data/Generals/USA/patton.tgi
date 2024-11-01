@@ -32,6 +32,8 @@
 	portrait_ids = patton_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpMechanizedAdvance]
 	
 	[Ability Template=AASpecialOpResupply2]

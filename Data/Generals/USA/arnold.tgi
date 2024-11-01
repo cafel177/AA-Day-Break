@@ -32,6 +32,8 @@
 	portrait_ids = arnold_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpCarpetBombUSA]
 
 	[Ability Template=AASpecialOpPropagandaWarUSA]

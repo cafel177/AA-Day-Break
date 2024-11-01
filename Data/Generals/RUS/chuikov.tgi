@@ -32,6 +32,8 @@
 	portrait_ids = chuikov_portrait
 	
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpCarpetBombRUS]
 		
 	[Ability Template=AASpecialOpMaskirovka]

@@ -32,6 +32,8 @@
 	portrait_ids = kesselring_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpBlitzkrieg]
 		
 	[Ability Template=AASpecialOpRapidDeployment]
@@ -57,11 +59,13 @@
 	public = false
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpVWeapons]
 	
 	[Ability Template=AASpecialOpGERSupplyDrop]
 	
+	[Ability Template=AASpecialOpEconomicAidMoney]
+
 	[Ability Template=AASpecialOpRadarScan]
-	
-	[Ability Template=AASpecialOpCorpsGER]
 }

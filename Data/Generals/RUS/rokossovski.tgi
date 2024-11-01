@@ -32,6 +32,8 @@
 	portrait_ids = rokossovski_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpCommunistZeal]
 	
 	[Ability Template=AASpecialOpDoubleGuard]

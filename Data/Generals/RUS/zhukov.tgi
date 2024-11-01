@@ -33,6 +33,8 @@
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;	
 	[Ability Template=AASpecialOpAtomicBomb]
+
+	[Ability Template=AASpecialOpCarpetBombRUS]
 	
 	[Ability Template=AASpecialOpMilitaryGearUpRUS]
 	
