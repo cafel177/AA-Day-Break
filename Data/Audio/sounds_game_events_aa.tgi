@@ -257,6 +257,21 @@
 
 [Audio Template=AudioFeedback]
 {
+	IDS = nuclear_complete
+	name = "#sounds_game_events_aa_nuclear_complete_name"
+
+	control_flags = WORLD
+	world_flags = FOGGED
+
+	who_flags = EVERYONE
+
+	volume = 100%
+
+	files = Sounds/Feedback/BuildNuclearComplete.wav
+}
+
+[Audio Template=AudioFeedback]
+{
 	IDS = packable_complete
 	name = "#sounds_game_events_aa_airfield_complete_name"
 
