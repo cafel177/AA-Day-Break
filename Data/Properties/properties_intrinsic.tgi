@@ -14,11 +14,12 @@
 {
 	IDS = nation_jpn
 	name = "#properties_intrinsic_nation_jpn_name"
+	description = "#properties_nation_jpn"
 	icon = PropertyIcons/IconPropertyNational.png
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = flame
-	amount = -0.20
+	amount = -0.30
 }
 
 [Property Template=SharedProperty]
