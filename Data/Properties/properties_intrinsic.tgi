@@ -7,35 +7,39 @@
 {
 	IDS = nation_ger
 	name = "#properties_intrinsic_nation_ger_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_jpn
 	name = "#properties_intrinsic_nation_jpn_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = flame
+	amount = -0.20
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_gbr
 	name = "#properties_intrinsic_nation_gbr_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_usa
 	name = "#properties_intrinsic_nation_usa_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 [Property Template=SharedProperty]
 {
 	IDS = nation_rus
 	name = "#properties_intrinsic_nation_rus_name"
-	icon = null
+	icon = PropertyIcons/IconPropertyNational.png
 }
 
 ;; -------------- ORGANIZATION PROPERTIES ---------------
