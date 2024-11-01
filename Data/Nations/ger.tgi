@@ -67,6 +67,10 @@
 	thing_IDS = thing_marine_resource
 
 	[Placeholder]
+	placeholder_IDS = placeholder_depot_nuclear
+	thing_IDS = thing_nuclear_resource
+
+	[Placeholder]
 	placeholder_IDS = placeholder_corpsunpacked_tb
 	thing_ids = ger_corps_tb
 

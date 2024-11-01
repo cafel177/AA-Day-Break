@@ -447,6 +447,15 @@
 }
 
 
+[Property Template=SharedProperty]
+{
+	IDS = nuclear_weapon
+	name = "#properties_intrinsic_nuclear_weapon_name"
+	icon = PropertyIcons/IconPropertyEngineering.png
+
+	is_technology = true
+}
+
 ;; -------------- ABILITY PROPERTIES ---------------
 
 [Property Template=SharedProperty]
