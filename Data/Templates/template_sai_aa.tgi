@@ -444,7 +444,7 @@
 
 	[GoalEngine]
 	{
-        default_max_recruited_per_think		= 0
+        default_max_recruited_per_think		= 2
 		build_queue_max_items				= 2
 		[GoalPriority]
 		{

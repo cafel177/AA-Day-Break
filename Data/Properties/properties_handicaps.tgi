@@ -63,17 +63,11 @@
 	[Modifier template=FlagModifier]
 	modifier_flag = NO_UPKEEP
 	
-	[Modifier Template=ResourceProductionModifier]
-	{
-		[Production Template=ProductionList]
-        		money = 20
-	}
-
 	[Modifier Template=MultiplyModifier]
 	attribute = RECRUIT_COST
-	amount = +0.5
-
+	amount = +0.4
+		
 	[Modifier template=MultiplyModifier]
 	attribute = health
-	amount = +0.5
+	amount = +0.25
 }
