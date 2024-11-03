@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 1000
+			value							= 550
 		}
 
 		[ActorPriority]
@@ -125,14 +125,14 @@
 	} ;; GoalEngine
 } ;; AACampaignBaseEgo
 
-[template CampaignLowIncomeEgoNew template = AACampaignBaseEgo]
+[template CampaignLowIncomeEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{
 		[Item]
 		stat								= money_rate
 		min									= -9999999
-		max									= 150
+		max									= 40
 	}
 
 	[GoalEngine]
@@ -169,7 +169,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 0
+				num_goals					= 1
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200
@@ -194,37 +194,26 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= money
-				one_time_bonus				= 100
+                base_priority				= 500
 			}
                         
             [SpecificRecruitRequest]
 			{
 				property_ids				= oil
-				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
-				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
-				one_time_bonus				= 200
-				repeat_penalty				= 1000
-			}	
-
-			[SpecificRecruitRequest]
-			{
-				property_ids				= mechhq
+				hq_type_not_available_bonus			= 1000
+				repeat_penalty				= 1500
 			}
 
-			[SpecificRecruitRequest]
-			{
-				property_ids				= armorhq
-			}
 		} ;; Recruiting
 
 		[ActorPriority]
@@ -249,14 +238,14 @@
 	} ;; GoalEngine
 } ;; CampaignLowIncomeEgo
 
-[template CampaignMainGameEgoNew template = AACampaignBaseEgo]
+[template CampaignMainGameEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{
 		[Item]
 		stat								= money_rate
-		min									= 150
-		max									= 250
+		min									= 30
+		max									= 150
 	}
 
 	[GoalEngine]
@@ -288,7 +277,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 1
+				num_goals					= 2
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200
@@ -319,7 +308,7 @@
 			{
 				property_ids				= money
                 base_priority				= -750
-				one_time_bonus				= 50
+				one_time_bonus				= 200
 			}
 
 			[SpecificRecruitRequest]
@@ -432,13 +421,13 @@
 	} ;; GoalEngine
 } ;; CampaignMainGameEgo
 
-[template CampaignEndGameEgoNew template = AACampaignBaseEgo]
+[template CampaignEndGameEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{
 		[Item]
 		stat								= money_rate
-		min									= 250
+		min									= 120
 		max									= 1000000
 	}
 

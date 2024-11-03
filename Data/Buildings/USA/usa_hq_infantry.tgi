@@ -125,7 +125,7 @@
 		actor_ids = regiment_usa_infantry_artillery
 		
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry
+		actor_ids = regiment_usa_infantry_sp
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_assault
@@ -141,6 +141,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_usa_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry
 	}
 
 	[ResearchComponent]

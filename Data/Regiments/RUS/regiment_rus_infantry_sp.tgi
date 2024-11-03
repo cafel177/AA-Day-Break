@@ -1,0 +1,97 @@
+[Template AARUSRegimentInfantry Template=AARUSOrganizationInfantry]
+{
+	name = "#regiment_rus_infantry_AARUSRegimentInfantry_name"
+	
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 75
+		
+		[Upkeep]
+		ammo = 15
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/RUS/RUSInfantry/RUSInfantry
+		icon = /UI/Game/RegimentButtons/IconInfantry.png
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = rus_infantry_attack
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+}
+
+[Thing Template=AARUSRegimentInfantry]
+{
+	IDS = regiment_rus_infantry_sp
+	editor_name = "#regiment_rus_infantry_Thing_editor_name"
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_infantry
+
+		[Slot]	;; front
+		element_IDS = rus_infantry_sp
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_infantry_sp
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_infantry_sp
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_infantry_sp
+	
+		[Slot]	;; flank
+		element_IDS = rus_infantry_mg_sp
+		
+		[Slot]	;; captain
+		element_IDS = rus_infantry_co_sp
+	}
+}
+
+[Thing Template=AARUSRegimentInfantry]
+{
+	IDS = regiment_rus_infantry_amphib_sp
+	editor_name = "#regiment_rus_infantry_amphibious_editor_name"
+	
+	transport_actor = rus_transport_water
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = rus_infantry_sp_amphib
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_infantry_sp_amphib
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_infantry_sp_amphib
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_infantry_sp_amphib
+	
+		[Slot]	;; flank
+		element_IDS = rus_infantry_mg_sp
+		
+		[Slot]	;; captain
+		element_IDS = rus_infantry_co_sp
+	}
+}

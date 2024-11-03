@@ -127,7 +127,7 @@
 		actor_ids = regiment_gbr_infantry_artillery
 		
 		[RecruitActor]
-		actor_ids = regiment_gbr_infantry
+		actor_ids = regiment_gbr_infantry_sp
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_heavy
@@ -135,10 +135,11 @@
 		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_amphib
 
-
-
 		[RecruitActor]
 		actor_ids = regiment_gbr_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry
 	}
 	
 	[ResearchComponent]

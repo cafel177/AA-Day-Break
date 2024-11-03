@@ -5,10 +5,10 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 75
+		money = 50
 		
 		[Upkeep]
-		ammo = 15
+		ammo = 10
 	}
 
 	[View]
@@ -38,27 +38,27 @@
 	IDS = regiment_ger_infantry
 	editor_name = "#regiment_ger_infantry_Thing_editor_name"
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry
-
+		
 		[Slot]	;; front
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_old
 	
 		[Slot]	;; flank
-		element_IDS = ger_infantry_mg_sp
+		element_IDS = ger_infantry_mg
 		
 		[Slot]	;; captain
-		element_IDS = ger_infantry_co_sp
+		element_IDS = ger_infantry_co
 	}
 }
 
@@ -72,26 +72,26 @@
 	[Placement]
 	placement_group_ids = null
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry
 		
 		[Slot]	;; front
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 1
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry_amphib
 	
 		[Slot]	;; flank
-		element_IDS = ger_infantry_mg_sp
+		element_IDS = ger_infantry_mg
 		
 		[Slot]	;; captain
-		element_IDS = ger_infantry_co_sp
+		element_IDS = ger_infantry_co
 	}
 }

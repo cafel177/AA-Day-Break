@@ -234,4 +234,15 @@
 
 	[ElementComponent]
 	required_properties = tech_battleship
-}	
+}
+	
+[Thing Template=AAUnitJPNInfantry]
+{
+	IDS = jpn_infantry_old
+
+	[Placement]
+	placement_group_ids = null
+
+	[ElementComponent]
+	required_properties = tech_infantry_flame
+}

@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 1000
+			value							= 650
 		}
 
 		[ActorPriority]
@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AAInfantryBaseEgo
 
-[template InfantryLowIncomeEgoNew template = AAInfantryBaseEgo]
+[template InfantryLowIncomeEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -194,37 +194,27 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= money
-				one_time_bonus				= 100
+                base_priority				= 500
 			}
                         
             [SpecificRecruitRequest]
 			{
 				property_ids				= oil
-				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
-				repeat_penalty				= 10
 			}	
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
-				one_time_bonus				= 200
-				repeat_penalty				= 1000
+				hq_type_not_available_bonus			= 1000
+				repeat_penalty				= 1500
 			}
 
-			[SpecificRecruitRequest]
-			{
-				property_ids				= mechhq
-			}
 
-			[SpecificRecruitRequest]
-			{
-				property_ids				= armorhq
-			}
 		} ;; Recruiting
 
 		[ActorPriority]
@@ -249,7 +239,7 @@
 	} ;; GoalEngine
 } ;; BalancedLowIncomeEgo
 
-[template InfantryMainGameEgoNew template = AAInfantryBaseEgo]
+[template InfantryMainGameEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -433,7 +423,7 @@
 	} ;; GoalEngine
 } ;; BalancedMainGameEgo
 
-[template InfantryEndGameEgoNew template = AAInfantryBaseEgo]
+[template InfantryEndGameEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{
