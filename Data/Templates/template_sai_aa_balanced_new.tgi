@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AABalancedBaseEgo
 
-[template BalancedLowIncomeEgoNew template = AABalancedBaseEgo]
+[template BalancedLowIncomeEgoNew template = AABalancedBaseEgoNew]
 {
 	[Filters]
 	{
@@ -249,7 +249,7 @@
 	} ;; GoalEngine
 } ;; BalancedLowIncomeEgo
 
-[template BalancedMainGameEgoNew template = AABalancedBaseEgo]
+[template BalancedMainGameEgoNew template = AABalancedBaseEgoNew]
 {
 	[Filters]
 	{
@@ -432,7 +432,7 @@
 	} ;; GoalEngine
 } ;; BalancedMainGameEgo
 
-[template BalancedEndGameEgoNew template = AABalancedBaseEgo]
+[template BalancedEndGameEgoNew template = AABalancedBaseEgoNew]
 {
 	[Filters]
 	{

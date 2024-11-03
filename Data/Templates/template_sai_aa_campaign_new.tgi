@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AACampaignBaseEgo
 
-[template CampaignLowIncomeEgoNew template = AACampaignBaseEgo]
+[template CampaignLowIncomeEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{
@@ -249,7 +249,7 @@
 	} ;; GoalEngine
 } ;; CampaignLowIncomeEgo
 
-[template CampaignMainGameEgoNew template = AACampaignBaseEgo]
+[template CampaignMainGameEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{
@@ -432,7 +432,7 @@
 	} ;; GoalEngine
 } ;; CampaignMainGameEgo
 
-[template CampaignEndGameEgoNew template = AACampaignBaseEgo]
+[template CampaignEndGameEgoNew template = AACampaignBaseEgoNew]
 {
 	[Filters]
 	{

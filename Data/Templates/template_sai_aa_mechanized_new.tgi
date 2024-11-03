@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AAMechanizedBaseEgo
 
-[template MechanizedLowIncomeEgoNew template = AAMechanizedBaseEgo]
+[template MechanizedLowIncomeEgoNew template = AAMechanizedBaseEgoNew]
 {
 	[Filters]
 	{
@@ -249,7 +249,7 @@
 	} ;; GoalEngine
 } ;; MechanizedLowIncomeEgo
 
-[template MechanizedMainGameEgoNew template = AAMechanizedBaseEgo]
+[template MechanizedMainGameEgoNew template = AAMechanizedBaseEgoNew]
 {
 	[Filters]
 	{
@@ -434,7 +434,7 @@
 	} ;; GoalEngine
 } ;; MechanizedMainGameEgo
 
-[template MechanizedEndGameEgoNew template = AAMechanizedBaseEgo]
+[template MechanizedEndGameEgoNew template = AAMechanizedBaseEgoNew]
 {
 	[Filters]
 	{

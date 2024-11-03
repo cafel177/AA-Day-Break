@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AAArmorBaseEgo
 
-[template ArmorLowIncomeEgoNew template = AAArmorBaseEgo]
+[template ArmorLowIncomeEgoNew template = AAArmorBaseEgoNew]
 {
 	[Filters]
 	{
@@ -250,7 +250,7 @@
 	} ;; GoalEngine
 } ;; ArmorLowIncomeEgo
 
-[template ArmorMainGameEgoNew template = AAArmorBaseEgo]
+[template ArmorMainGameEgoNew template = AAArmorBaseEgoNew]
 {
 	[Filters]
 	{
@@ -434,7 +434,7 @@
 	} ;; GoalEngine
 } ;; ArmorMainGameEgo
 
-[template ArmorEndGameEgoNew template = AAArmorBaseEgo]
+[template ArmorEndGameEgoNew template = AAArmorBaseEgoNew]
 {
 	[Filters]
 	{

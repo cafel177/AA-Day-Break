@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AAInfantryBaseEgo
 
-[template InfantryLowIncomeEgoNew template = AAInfantryBaseEgo]
+[template InfantryLowIncomeEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -249,7 +249,7 @@
 	} ;; GoalEngine
 } ;; BalancedLowIncomeEgo
 
-[template InfantryMainGameEgoNew template = AAInfantryBaseEgo]
+[template InfantryMainGameEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -433,7 +433,7 @@
 	} ;; GoalEngine
 } ;; BalancedMainGameEgo
 
-[template InfantryEndGameEgoNew template = AAInfantryBaseEgo]
+[template InfantryEndGameEgoNew template = AAInfantryBaseEgoNew]
 {
 	[Filters]
 	{

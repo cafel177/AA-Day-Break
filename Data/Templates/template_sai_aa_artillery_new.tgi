@@ -125,7 +125,7 @@
 	} ;; GoalEngine
 } ;; AAArtilleryBaseEgo
 
-[template ArtilleryLowIncomeEgoNew template = AAArtilleryBaseEgo]
+[template ArtilleryLowIncomeEgoNew template = AAArtilleryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -249,7 +249,7 @@
 	} ;; GoalEngine
 } ;; ArtilleryLowIncomeEgo
 
-[template ArtilleryMainGameEgoNew template = AAArtilleryBaseEgo]
+[template ArtilleryMainGameEgoNew template = AAArtilleryBaseEgoNew]
 {
 	[Filters]
 	{
@@ -433,7 +433,7 @@
 	} ;; GoalEngine
 } ;; ArtilleryMainGameEgo
 
-[template ArtilleryEndGameEgoNew template = AAArtilleryBaseEgo]
+[template ArtilleryEndGameEgoNew template = AAArtilleryBaseEgoNew]
 {
 	[Filters]
 	{

@@ -134,7 +134,7 @@
 	} ;; GoalEngine
 } ;; AAPlanesBaseEgo
 
-[template PlanesLowIncomeEgoNew template = AAPlanesBaseEgo]
+[template PlanesLowIncomeEgoNew template = AAPlanesBaseEgoNew]
 {
 	[Filters]
 	{
@@ -258,7 +258,7 @@
 	} ;; GoalEngine
 } ;; PlanesLowIncomeEgo
 
-[template PlanesMainGameEgoNew template = AAPlanesBaseEgo]
+[template PlanesMainGameEgoNew template = AAPlanesBaseEgoNew]
 {
 	[Filters]
 	{
@@ -445,7 +445,7 @@
 	} ;; GoalEngine
 } ;; PlanesMainGameEgo
 
-[template PlanesEndGameEgoNew template = AAPlanesBaseEgo]
+[template PlanesEndGameEgoNew template = AAPlanesBaseEgoNew]
 {
 	[Filters]
 	{
