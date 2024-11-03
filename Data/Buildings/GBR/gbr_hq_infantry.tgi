@@ -137,6 +137,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry
 	}
 	
 	[ResearchComponent]

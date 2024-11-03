@@ -144,6 +144,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry
 	}
 		
 	[ResearchComponent]

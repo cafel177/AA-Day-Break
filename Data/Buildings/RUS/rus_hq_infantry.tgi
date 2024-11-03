@@ -146,6 +146,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_rus_tank_maskirovka
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry
 	}
 		
 	[ResearchComponent]
