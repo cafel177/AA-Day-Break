@@ -35,7 +35,7 @@
 
 [Thing Template=AAGBRRegimentInfantry]
 {
-	IDS = regiment_gbr_infantry
+	IDS = regiment_gbr_infantry_sp
 	editor_name = "#regiment_gbr_infantry_Thing_editor_name"
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
@@ -64,7 +64,7 @@
 
 [Thing Template=AAGBRRegimentInfantry]
 {
-	IDS = regiment_gbr_infantry_amphib
+	IDS = regiment_gbr_infantry_amphib_sp
 	editor_name = "#regiment_gbr_infantry_amphibious_editor_name"
 	
 	transport_actor = gbr_transport_water

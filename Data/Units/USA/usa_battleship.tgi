@@ -559,7 +559,7 @@
 	[RecruitComponent]
 	{	
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_amphib
+		actor_ids = regiment_usa_infantry_amphib_sp
 		
 		[RecruitActor]
 		actor_ids = usa_truck_corps_amphibious_dynamic
@@ -590,7 +590,7 @@
 		actor_ids = regiment_usa_infantry_marine
 		
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_amphib
+		actor_ids = regiment_usa_infantry_amphib_sp
 
 		[RecruitActor]
 		actor_ids = usa_truck_corps_amphibious

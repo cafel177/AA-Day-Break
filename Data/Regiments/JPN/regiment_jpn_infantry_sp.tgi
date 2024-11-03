@@ -35,7 +35,7 @@
 
 [Thing Template=AAJPNRegimentInfantry]
 {
-	IDS = regiment_jpn_infantry
+	IDS = regiment_jpn_infantry_sp
 	editor_name = "#regiment_jpn_infantry_Thing_editor_name"
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
@@ -64,7 +64,7 @@
 
 [Thing Template=AAJPNRegimentInfantry]
 {
-	IDS = regiment_jpn_infantry_amphib
+	IDS = regiment_jpn_infantry_amphib_sp
 	editor_name = "#regiment_jpn_infantry_amphibious_editor_name"
 	
 	transport_actor = jpn_transport_water

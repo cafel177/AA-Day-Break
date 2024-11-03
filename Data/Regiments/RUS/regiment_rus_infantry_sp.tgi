@@ -35,7 +35,7 @@
 
 [Thing Template=AARUSRegimentInfantry]
 {
-	IDS = regiment_rus_infantry
+	IDS = regiment_rus_infantry_sp
 	editor_name = "#regiment_rus_infantry_Thing_editor_name"
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
@@ -64,7 +64,7 @@
 
 [Thing Template=AARUSRegimentInfantry]
 {
-	IDS = regiment_rus_infantry_amphib
+	IDS = regiment_rus_infantry_amphib_sp
 	editor_name = "#regiment_rus_infantry_amphibious_editor_name"
 	
 	transport_actor = rus_transport_water
@@ -93,39 +93,5 @@
 		
 		[Slot]	;; captain
 		element_IDS = rus_infantry_co_sp
-	}
-}
-
-;; brw082504 - Special Tutorial Regiment that is in supply, but detached
-[Thing Template=AARUSRegimentInfantry]
-{
-	IDS = regiment_rus_infantry_tutorial
-	editor_name = "#regiment_rus_infantry_tutorial_editor_name"
-
-	[Placement]
-	placement_group_ids = group_campaign
-
-	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
-	{	
-		layout_IDS = regiment_infantry
-		in_supply_detached = true
-		
-		[Slot]	;; front
-		element_IDS = rus_infantry
-		
-		[Slot]	;; rear guard 1
-		element_IDS = rus_infantry
-
-		[Slot]	;; rear guard 2
-		element_IDS = rus_infantry
-		
-		[Slot]	;; rear guard 3
-		element_IDS = rus_infantry
-	
-		[Slot]	;; flank
-		element_IDS = rus_infantry_mg
-		
-		[Slot]	;; captain
-		element_IDS = rus_infantry_co
 	}
 }

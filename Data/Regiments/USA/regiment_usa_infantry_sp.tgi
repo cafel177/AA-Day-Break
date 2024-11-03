@@ -35,7 +35,7 @@
 
 [Thing Template=AAUSARegimentInfantry]
 {
-	IDS = regiment_usa_infantry
+	IDS = regiment_usa_infantry_sp
 	editor_name = "#regiment_usa_infantry_Thing_editor_name"
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
@@ -64,7 +64,7 @@
 
 [Thing Template=AAUSARegimentInfantry]
 {
-	IDS = regiment_usa_infantry_amphib
+	IDS = regiment_usa_infantry_amphib_sp
 	editor_name = "#regiment_usa_infantry_amphibious_editor_name"
 	
 	transport_actor = usa_transport_water

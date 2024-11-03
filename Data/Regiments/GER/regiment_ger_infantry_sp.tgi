@@ -35,7 +35,7 @@
 
 [Thing Template=AAGERRegimentInfantry]
 {
-	IDS = regiment_ger_infantry
+	IDS = regiment_ger_infantry_sp
 	editor_name = "#regiment_ger_infantry_Thing_editor_name"
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
@@ -64,7 +64,7 @@
 
 [Thing Template=AAGERRegimentInfantry]
 {
-	IDS = regiment_ger_infantry_amphib
+	IDS = regiment_ger_infantry_amphib_sp
 	editor_name = "#regiment_ger_infantry_amphibious_editor_name"
 	
 	transport_actor = ger_transport_water
