@@ -1,12 +1,12 @@
-;;---------------------------------------------- GERInfantryCO Portrait --------
+;;---------------------------------------------- JPNInfantryCO Portrait --------
 [Thing Template=Portrait]
 {
-	ids = ger_infantry_co_portrait
-	name = "#ger_infantry_co_portrait_name"
+	ids = jpn_infantry_co_portrait_sp
+	name = "#jpn_infantry_co_portrait_name"
 
 	[View]
 	{
-		resource_prefix = GERInfantryCo/GERInfantryCOPortrait
+		resource_prefix = JPNInfantryCo/JPNInfantryCOPortrait
 
 		[TextureSearchPath]
 		path = /Shared/SharedTextures
@@ -37,17 +37,28 @@
 }
 
 
-[Template AAUnitGERProneCo Template=AAUnitGERProne]
+;;---------------------------------------------- JPNInfantryCO Unit --------
+
+
+
+[Template AAUnitJPNProneCO Template=AAUnitJPNProne]
 {
 
-	name = "#ger_infantry_co_Thing_name"
-	editor_name = "#ger_infantry_co_Thing_editor_name"
+	name = "#jpn_infantry_co_Thing_name"
+	editor_name = "#jpn_infantry_co_Thing_editor_name"
 	
 	[View]
-	resource_prefix = GERInfantryCO/GERInfantryCO
+	{	
+		resource_prefix = JPNInfantryCO/JPNInfantryCO
 
-	portrait_ids = ger_infantry_co_portrait	
+		portrait_ids = jpn_infantry_co_portrait_sp	
 		
+		[WhenCreated Template=FXC_Equipment]
+		action = UNHIDE
+		location = rhand
+		equipment_type_ids = rifle
+	}
+
 	[BodyComponent]
 	health = 200
 	defense = 1
@@ -55,7 +66,9 @@
 	[CharacterComponent Template=AAInfantrySMGCharacterComponent]
 	
 	[ElementComponent]
-	morale_value = 5
+	
+	[MoverComponent]
+	speed_max = 3
 	
 	[PropertiesComponent]
 	{
@@ -69,50 +82,45 @@
 		property_IDS = combat_unit
 	}
 	
-	[MoverComponent]
-	speed_max = 3
-	
+
+}	
+
+[Thing Template=AAUnitJPNProneCO]
+{
+	IDS = jpn_infantry_co_sp
+
+	[BodyComponent]
+	health = 250
+	defense = 2
+
 	[PerformerComponent]
 	{
 		[Ability Template=AAGunLocal]
 		{
 			[AbilityDefinition Template=AAInfantrySMG]
 			{				
-				name = "#ger_infantry_co_AbilityDefinition_name"
+				name = "#jpn_infantry_co_AbilityDefinition_name"
 				recharge_time = 2
 				range = 12
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
-
+				amount = 14
+			
 				[WhenDo template=FXC_PlaySFX]
-				audio_ids = ger_mg_light
+				audio_ids = jpn_mg_light
 			}
 		}
-		
+
 		[Ability Template=AAGrenadeLocal]
-		{		
+		{
 			[AbilityDefinition Template=AAThrownGrenade]
 			{
-				name = "#ger_infantry_AbilityDefinition_name_2"
+				name = "#jpn_infantry_AbilityDefinition_name_2"
 				projectile_ids = grenade02
 				
 				[Effect Template=BlastDamageEffect]
-				amount = 20
+				amount = 25
 			}
 		}
 	}
-}
-
-[Thing Template= AAUnitGERProneCo]
-{
-	IDS = ger_infantry_co
-}
-
-[Thing Template= AAUnitGERProneCo]
-{
-	IDS = ger_infantry_co_old
-
-	[ElementComponent]
-	required_properties = tech_infantry_flame
-}
+}	

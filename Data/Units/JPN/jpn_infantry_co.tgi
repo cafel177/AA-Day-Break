@@ -82,13 +82,6 @@
 		property_IDS = combat_unit
 	}
 	
-
-}
-
-[Thing Template=AAUnitJPNProneCO]
-{
-	IDS = jpn_infantry_co
-
 	[PerformerComponent]
 	{
 		[Ability Template=AAGunLocal]
@@ -119,44 +112,18 @@
 			}
 		}
 	}
+}
+
+[Thing Template=AAUnitJPNProneCO]
+{
+	IDS = jpn_infantry_co
 }	
 
 [Thing Template=AAUnitJPNProneCO]
 {
-	IDS = jpn_infantry_co_sp
+	IDS = jpn_infantry_co_old
 
-	[BodyComponent]
-	health = 250
-	defense = 2
+	[ElementComponent]
+	required_properties = tech_infantry_flame
 
-	[PerformerComponent]
-	{
-		[Ability Template=AAGunLocal]
-		{
-			[AbilityDefinition Template=AAInfantrySMG]
-			{				
-				name = "#jpn_infantry_co_AbilityDefinition_name"
-				recharge_time = 2
-				range = 12
-				
-				[Effect Template=PierceDamageEffect]
-				amount = 14
-			
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = jpn_mg_light
-			}
-		}
-
-		[Ability Template=AAGrenadeLocal]
-		{
-			[AbilityDefinition Template=AAThrownGrenade]
-			{
-				name = "#jpn_infantry_AbilityDefinition_name_2"
-				projectile_ids = grenade02
-				
-				[Effect Template=BlastDamageEffect]
-				amount = 25
-			}
-		}
-	}
 }	

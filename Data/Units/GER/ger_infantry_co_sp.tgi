@@ -1,7 +1,7 @@
 ;;---------------------------------------------- GERInfantryCO Portrait --------
 [Thing Template=Portrait]
 {
-	ids = ger_infantry_co_portrait
+	ids = ger_infantry_co_portrait_sp
 	name = "#ger_infantry_co_portrait_name"
 
 	[View]
@@ -46,7 +46,7 @@
 	[View]
 	resource_prefix = GERInfantryCO/GERInfantryCO
 
-	portrait_ids = ger_infantry_co_portrait	
+	portrait_ids = ger_infantry_co_portrait_sp	
 		
 	[BodyComponent]
 	health = 200
@@ -72,6 +72,17 @@
 	[MoverComponent]
 	speed_max = 3
 	
+
+}
+
+[Thing Template= AAUnitGERProneCo]
+{
+	IDS = ger_infantry_co_sp
+
+	[BodyComponent]
+	health = 250
+	defense = 2
+
 	[PerformerComponent]
 	{
 		[Ability Template=AAGunLocal]
@@ -83,7 +94,7 @@
 				range = 12
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
+				amount = 14
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_mg_light
@@ -98,21 +109,8 @@
 				projectile_ids = grenade02
 				
 				[Effect Template=BlastDamageEffect]
-				amount = 20
+				amount = 25
 			}
 		}
 	}
-}
-
-[Thing Template= AAUnitGERProneCo]
-{
-	IDS = ger_infantry_co
-}
-
-[Thing Template= AAUnitGERProneCo]
-{
-	IDS = ger_infantry_co_old
-
-	[ElementComponent]
-	required_properties = tech_infantry_flame
 }
