@@ -444,8 +444,8 @@
 
 	[GoalEngine]
 	{
-        default_max_recruited_per_think		= 2
-		build_queue_max_items				= 2
+        default_max_recruited_per_think		= 1
+		build_queue_max_items				= 1
 		[GoalPriority]
 		{
 			goal_IDS						= EXPLORE
@@ -599,7 +599,7 @@
 		{
 			saving_time_limit				= 300
 
-			other_short_need				= 20	
+			other_short_need				= 200
 			other_enough_need				= 20
 			other_plenty_value				= 50
 			other_plenty_need				= 0

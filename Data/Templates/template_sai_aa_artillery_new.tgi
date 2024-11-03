@@ -12,7 +12,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= money
-			value							= 1000
+			value							= 550
 		}
 
 		[ActorPriority]
@@ -194,34 +194,26 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= money
-				one_time_bonus				= 100
+            	base_priority				= 500
 			}
                         
             [SpecificRecruitRequest]
 			{
 				property_ids				= oil
-				repeat_penalty				= 10
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= ammo
-				repeat_penalty				= 10
 			}	
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
-				hq_type_not_available_bonus			= 1600
-				repeat_penalty				= 1000
+				hq_type_not_available_bonus			= 1000
+				repeat_penalty				= 1500
 			}
 
-			[SpecificRecruitRequest]
-			{
-				property_ids				= mechhq
-				hq_type_not_available_bonus			= 1600
-				repeat_penalty				= 1000
-			}
 
 		} ;; Recruiting
 
