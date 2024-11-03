@@ -221,18 +221,15 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
-				one_time_bonus				= 200
+				hq_type_not_available_bonus			= 1600
 				repeat_penalty				= 1000
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= mechhq
-			}
-
-			[SpecificRecruitRequest]
-			{
-				property_ids				= armorhq
+				hq_type_not_available_bonus			= 1600
+				repeat_penalty				= 1000
 			}
 		} ;; Recruiting
 

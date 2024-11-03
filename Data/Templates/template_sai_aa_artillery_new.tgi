@@ -212,19 +212,17 @@
 			[SpecificRecruitRequest]
 			{
 				property_ids				= infhq  
-				one_time_bonus				= 200
+				hq_type_not_available_bonus			= 1600
 				repeat_penalty				= 1000
 			}
 
 			[SpecificRecruitRequest]
 			{
 				property_ids				= mechhq
+				hq_type_not_available_bonus			= 1600
+				repeat_penalty				= 1000
 			}
 
-			[SpecificRecruitRequest]
-			{
-				property_ids				= armorhq
-			}
 		} ;; Recruiting
 
 		[ActorPriority]
