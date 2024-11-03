@@ -51,6 +51,7 @@ USAGE:
 	
 	[Flags]
 	{
+		blocking = false
 		ownable = false
 		targetable = false
 		invulnerable = true
