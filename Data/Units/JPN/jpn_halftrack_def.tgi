@@ -41,10 +41,11 @@
 		
 		[Ability Template=AAGunLocal]
 		{	
-			[AbilityDefinition Template=AAInfantryRifle]
+			[AbilityDefinition Template=AAVehicleMG]
 			{
 				name = "#jpn_halftrack_AbilityDefinition_name"
-                
+                                		max_targets = 1
+
 				recharge_time = 3
 				range = 5
 				
