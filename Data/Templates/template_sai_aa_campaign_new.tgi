@@ -132,7 +132,7 @@
 		[Item]
 		stat								= money_rate
 		min									= -9999999
-		max									= 150
+		max									= 40
 	}
 
 	[GoalEngine]
@@ -169,7 +169,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 0
+				num_goals					= 1
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200
@@ -244,8 +244,8 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 150
-		max									= 250
+		min									= 30
+		max									= 150
 	}
 
 	[GoalEngine]
@@ -277,7 +277,7 @@
 		{
 			[DeepGoals]
 			{
-				num_goals					= 1
+				num_goals					= 2
 				base_priority				= 500
 				min_priority				= 500
 				black_fog_priority			= 200
@@ -308,7 +308,7 @@
 			{
 				property_ids				= money
                 base_priority				= -750
-				one_time_bonus				= 50
+				one_time_bonus				= 200
 			}
 
 			[SpecificRecruitRequest]
@@ -427,7 +427,7 @@
 	{
 		[Item]
 		stat								= money_rate
-		min									= 250
+		min									= 120
 		max									= 1000000
 	}
 
