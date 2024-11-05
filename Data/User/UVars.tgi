@@ -6,6 +6,8 @@
 	flag	CameraRotate = true
 	int	ResolutionX = 2560
 	int	ResolutionY = 1600
+	flag	ResolutionWindowed = true
+	flag	ResolutionCoopFullscreenMode = true
 	int	UIMessageLogMaximumLines = 15
 	int	RenderLODShadows = 2
 	float	ParticleGeneratePCG = 0.600000
