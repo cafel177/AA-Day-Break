@@ -7,7 +7,7 @@
 	show_faction_portrait = true
 
 	[BodyComponent]
-	health = 3500
+	health = 4000
 	defense = 0
 
 	[DefenderComponent]
@@ -399,7 +399,7 @@
 		actor_ids = jpn_truck_airfield
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = jpn_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = jpn_truck_ammo
@@ -447,7 +447,7 @@
 		actor_ids = jpn_truck_airfield
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = jpn_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = jpn_truck_ammo

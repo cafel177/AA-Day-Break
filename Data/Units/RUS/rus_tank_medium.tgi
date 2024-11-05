@@ -12,7 +12,7 @@
 	
 	[MoverComponent]
 	{
-		speed_max = 3.5
+		speed_max = 4
 		acceleration = 3
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
@@ -58,7 +58,7 @@
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 40
+				amount = 30
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

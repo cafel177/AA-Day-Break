@@ -1,0 +1,151 @@
+[Thing Template=AAGBRBuildingPackableDepot]
+{
+	IDS = gbr_depot_supply_large
+	name = "#gbr_depot_supply_name"
+	editor_name = "#gbr_depot_supply_editor_name"
+
+	[BodyComponent]
+	health = 1000
+	defense = 3
+
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 2.5, 1.5
+			deployment_offset = 2.5, 6.0
+		}
+	}
+
+	[SupplyComponent]
+	{
+		supply_range = 50
+		stockpile_max = 120
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+	}
+
+	[ConstructionComponent]
+
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 25
+		
+		[Upkeep]
+		
+		[Production]
+		ammo = 5
+		oil = 5
+	}
+	
+	[LairComponent]
+	{
+		reward = 15, 25		
+	}
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = supplydepot	
+
+		[Property]
+		property_IDS = economic_building
+	}	
+		
+	[ResearchComponent]
+	
+	[Size]
+	{
+		blocking_shape = SQUARE
+		square_size = 8
+	}
+
+	[View]
+	{
+		resource_prefix = GBRDepotSupplyLarge/USADepotSupply
+		icon = /UI/Game/BuildingButtons/IconDepotSupplyLarge.png
+
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_depot_dirt
+			terrain_group_filter = dirt
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_depot_desert
+			terrain_group_filter = desert
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = ground_depot_snow
+			terrain_group_filter = snow
+		}
+		
+		[WhenSelected Template=FXC_PlaySFX]
+		{
+			audio_ids = depot_supply_select
+		}
+		
+		;;----- Spot Lights ----------------------
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = spotlight_03
+			location = spotlight_ae_01
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_01
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_02
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_03
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_04
+			attached = true
+		}		
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_unpacking
+		audio_ids = unpack_7s_sfx
+	}
+
+	[WhenEnter Template=FXC_PlaySFX]
+	{
+		actor_state = structure_packing
+		audio_ids = pack_7s_sfx
+	}
+
+}

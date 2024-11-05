@@ -5,8 +5,23 @@
 	editor_name = "#ger_depot_money_editor_name"
 
 	[BodyComponent]
-	health = 2000
+	health = 3000
 	defense = 0
+
+	[DenizenComponent]
+	{
+		[DeploymentInfo]
+		{
+			creation_offset = 2.5, 1.5
+			deployment_offset = 2.5, 6.0
+		}
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = ger_truck_supply_large
+	}
 
 	[ConstructionComponent]
 

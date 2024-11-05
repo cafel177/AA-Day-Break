@@ -5,7 +5,7 @@
 	editor_name = "#usa_hq_infantry_Thing_editor_name"
 
 	[BodyComponent]
-	health = 2000
+	health = 3000
 	defense = 0
 	
 	[DenizenComponent]

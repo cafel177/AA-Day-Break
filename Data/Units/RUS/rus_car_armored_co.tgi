@@ -119,6 +119,17 @@
 
 [Thing Template=AAUnitRUSVehicleJeepCo]
 {
+	IDS = rus_car_armored_co_aa
+
+	[MoverComponent]
+	{
+		speed_max = 8
+		acceleration = 0
+	}
+}
+
+[Thing Template=AAUnitRUSVehicleJeepCo]
+{
 	IDS = rus_car_armored_co_old
 
 	[ElementComponent]

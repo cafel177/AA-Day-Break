@@ -50,7 +50,7 @@
 		element_IDS = jpn_halftrack_aa
 		
 		[Slot]	;; captain
-		element_IDS = jpn_car_armored_co
+		element_IDS = jpn_car_armored_co_aa
 	}
 	
 	[PropertiesComponent]

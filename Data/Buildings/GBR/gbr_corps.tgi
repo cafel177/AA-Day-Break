@@ -1,7 +1,7 @@
 [Template GBRcorpsHQ Template=AAGBRBuildingPackableCorpHQ]
 {
 	[BodyComponent]
-	health = 3500
+	health = 4000
 	defense = 0
 
 	[DefenderComponent]
@@ -377,7 +377,7 @@
 		actor_ids = gbr_truck_airfield
 
 		[RecruitActor]
-		actor_ids = gbr_truck_supply
+		actor_ids = gbr_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = gbr_truck_ammo
@@ -425,7 +425,7 @@
 		actor_ids = gbr_truck_airfield
 
 		[RecruitActor]
-		actor_ids = gbr_truck_supply
+		actor_ids = gbr_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = gbr_truck_ammo
