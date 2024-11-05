@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 120
+		money = 150
 		
 		[Upkeep]
 		ammo = 10
@@ -50,7 +50,7 @@
 		element_IDS = gbr_halftrack_aa
 		
 		[Slot]	;; captain
-		element_IDS = gbr_car_armored_co
+		element_IDS = gbr_car_armored_co_aa
 	}
 	
 	[PropertiesComponent]

@@ -125,6 +125,17 @@
 
 [Thing Template=AAUnitJPNVehicleJeepCo]
 {
+	IDS = jpn_car_armored_co_aa
+
+	[MoverComponent]
+	{
+		speed_max = 8
+		acceleration = 0
+	}
+}
+
+[Thing Template=AAUnitJPNVehicleJeepCo]
+{
 	IDS = jpn_car_armored_co_old
 
 	[ElementComponent]

@@ -47,7 +47,7 @@
 		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = usa_car_armored_co
+		element_IDS = usa_car_armored_co_aa
 	}
 	
 	[PropertiesComponent]
