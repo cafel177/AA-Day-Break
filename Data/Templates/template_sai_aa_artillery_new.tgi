@@ -112,7 +112,7 @@
 		[ActorPriority]
 		{
 			property_IDS					= antiaircraft_company
-			value							= 100
+			value							= 500
 			repeat_penalty					= 200				
 		}
 
@@ -417,8 +417,8 @@
 		[ActorPriority]
 		{
 			property_IDS					= property_bunker_aa
-			value							= 200
-			repeat_penalty					= 50
+			value							= 300
+			repeat_penalty					= 75
 		}
 	} ;; GoalEngine
 } ;; ArtilleryMainGameEgo
