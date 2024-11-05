@@ -1,12 +1,12 @@
-[Thing Template=AARUSBuildingPackableDepot]
+[Thing Template=AAJPNBuildingPackableDepot]
 {
-	IDS = rus_depot_money
-	name = "#rus_depot_money_Thing_name"
-	editor_name = "#rus_depot_money_Thing_editor_name"
+	IDS = jpn_depot_supply_large
+	name = "#jpn_depot_supply_Thing_name"
+	editor_name = "#jpn_depot_supply_Thing_editor_name"
 
 	[BodyComponent]
-	health = 3000
-	defense = 0
+	health = 1000
+	defense = 3
 
 	[DenizenComponent]
 	{
@@ -17,33 +17,49 @@
 		}
 	}
 
+	[SupplyComponent]
+	{
+		supply_range = 50
+		stockpile_max = 120
+	}
+
 	[RecruitComponent]
-	{	
+	{
 		[RecruitActor]
-		actor_ids = rus_truck_supply_large
+		actor_ids = jpn_truck_supply
 	}
 
 	[ConstructionComponent]
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 0.3
+	}
+
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 25
 		
 		[Upkeep]
-		building_limit_consumed = 1
-
+		
 		[Production]
-		money = 30
+		ammo = 5
+		oil = 5
 	}
 	
+	[LairComponent]
+	{
+		reward = 15, 25		
+	}
+
 	[PropertiesComponent]
 	{	
 		[Property]
-		property_IDS = economic_building
+		property_IDS = supplydepot	
 
 		[Property]
-		property_ids = money
+		property_IDS = economic_building
 	}	
 		
 	[ResearchComponent]
@@ -54,47 +70,39 @@
 		square_size = 8
 	}
 
-	[Stance Template=StanceUpgrade]
-	{
-		property_ids = building_upgrade
-	}
-
 	[View]
 	{
-		resource_prefix = RUSDepotMoney/RUSBrigadeEngineer
-		icon = /UI/Game/BuildingButtons/IconDepotSupply.png
+		resource_prefix = JPNDepotSupplyLarge/USADepotSupply
+		icon = /UI/Game/BuildingButtons/IconDepotSupplyLarge.png
 
-		[TextureSearchPath]
-		path = /Shared/SharedTextures
-		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_brigade_dirt
+			vfx_ids = ground_depot_dirt
 			terrain_group_filter = dirt
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_brigade_desert
+			vfx_ids = ground_depot_desert
 			terrain_group_filter = desert
 		}
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = ground_brigade_snow
+			vfx_ids = ground_depot_snow
 			terrain_group_filter = snow
 		}
 		
 		[WhenSelected Template=FXC_PlaySFX]
 		{
-			audio_ids = brigade_engineer_select
+			audio_ids = depot_supply_select
 		}
 		
-		;----- Lights -----
+		;;----- Spot Lights ----------------------
 		
 		[WhenConstructed Template=FXC_CreateVFX]
 		{
-			vfx_ids = spotlight_02_bright
+			vfx_ids = spotlight_03
 			location = spotlight_ae_01
 			attached = true
 		}
@@ -110,6 +118,20 @@
 		{
 			vfx_ids = window_thin
 			location = window_02
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_03
+			attached = true
+		}
+		
+		[WhenConstructed Template=FXC_CreateVFX]
+		{
+			vfx_ids = window_thin
+			location = window_04
 			attached = true
 		}		
 	}

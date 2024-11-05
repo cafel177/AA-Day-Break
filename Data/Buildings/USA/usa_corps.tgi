@@ -413,7 +413,7 @@
 		actor_ids = usa_truck_airfield
 
 		[RecruitActor]
-		actor_ids = usa_truck_supply
+		actor_ids = usa_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = usa_truck_ammo
@@ -461,7 +461,7 @@
 		actor_ids = usa_truck_airfield
 
 		[RecruitActor]
-		actor_ids = usa_truck_supply
+		actor_ids = usa_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = usa_truck_ammo
