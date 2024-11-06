@@ -18,7 +18,7 @@
 		[Production]
 		ammo = 5
 		oil = 5
-		unit_limit_provided = 9
+		unit_limit_provided = 8
 
    		[Upkeep]
 		building_limit_consumed = 0
@@ -26,6 +26,7 @@
 	
 	[ElementComponent]
 	{
+		required_structures = rus_hq_infantry
 		required_properties = mechhqproduction
 	}
 	

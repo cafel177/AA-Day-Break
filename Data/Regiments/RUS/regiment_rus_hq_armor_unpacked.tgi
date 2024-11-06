@@ -6,7 +6,7 @@
 	[EconomyComponent]
 
 	[HQComponent]
-	max_attachments = 9
+	max_attachments = 6
 
 	[Placement]
 	placement_category = BUILDING
