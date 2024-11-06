@@ -128,6 +128,8 @@ map g game|action|verify "PropertyDataSelectCommand tech_military_gearup"
 map k game|action|verify "PropertyDataSelectCommand tech_marksmanship"
 map s game|action|verify "PropertyDataSelectCommand tech_sniper_rifle"
 map e game|action|verify "PropertyDataSelectCommand tech_special_forces"
+map c game|action|verify "PropertyDataSelectCommand tech_battleship"
+map t game|action|verify "PropertyDataSelectCommand tech_military_surplus"
 
 # Airfield Tech
 map a game|action|verify "PropertyDataSelectCommand tech_air_superiority"
@@ -157,6 +159,7 @@ map m game|action|verify "PropertyDataSelectCommand tech_mechanized_production"
 map p game|action|verify "PropertyDataSelectCommand tech_panzerfaust"
 map s game|action|verify "PropertyDataSelectCommand tech_schurzen"
 map f game|action|verify "PropertyDataSelectCommand tech_tank_flame"
+map f game|action|verify "PropertyDataSelectCommand tech_flame"
 map k game|action|verify "PropertyDataSelectCommand tech_tank_king_tiger"
 map t game|action|verify "PropertyDataSelectCommand tech_tankette"
 
@@ -191,6 +194,8 @@ map a game|action|verify "ActorDataSelectCommand gbr_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand gbr_bunker_artillery"
 
 # Corps HQ
+map c game|action|verify "ActorDataSelectCommand gbr_truck_nuclear"
+map c game|action|verify "ActorDataSelectCommand gbr_truck_heal"
 map q game|action|verify "ActorDataSelectCommand gbr_truck_ship"
 map p game|action|verify "ActorDataSelectCommand gbr_truck_corps"
 map f game|action|verify "ActorDataSelectCommand gbr_truck_airfield"
@@ -237,6 +242,7 @@ map e game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper_heavy"
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper"
 map d game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper"
 map d game|action|verify "ActorDataSelectCommand regiment_gbr_sas_paratrooper_ground"
+map c game|action|verify "ActorDataSelectCommand regiment_gbr_helichopter"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack"
@@ -247,14 +253,14 @@ map d game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_flame"
 map z game|action|verify "ActorDataSelectCommand regiment_gbr_infantry_mechanized"
 
 # Armor HQ
-map f game|action|verify "ActorDataSelectCommand regiment_gbr_tank_flame"
+map f game|action|verify "ActorDataSelectCommand regiment_gbr_tank_flame_new"
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_tank_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_gbr_tank_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_gbr_tank_destroyer"
 map v game|action|verify "ActorDataSelectCommand regiment_gbr_tank_heavy"
-map l game|action|verify "ActorDataSelectCommand regiment_gbr_tank_light"
+map l game|action|verify "ActorDataSelectCommand regiment_gbr_tank_light_new"
 map z game|action|verify "ActorDataSelectCommand regiment_gbr_tank_mechanized"
-map e game|action|verify "ActorDataSelectCommand regiment_gbr_tank_medium"
+map e game|action|verify "ActorDataSelectCommand regiment_gbr_tank_medium_new"
 map d game|action|verify "ActorDataSelectCommand regiment_gbr_tank_at"
 
 
@@ -270,14 +276,22 @@ map a game|action|verify "ActorDataSelectCommand ger_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand ger_bunker_artillery"
 
 # Corps HQ
+map c game|action|verify "ActorDataSelectCommand ger_truck_nuclear"
+map c game|action|verify "ActorDataSelectCommand ger_truck_heal"
 map p game|action|verify "ActorDataSelectCommand ger_truck_corps"
+map p game|action|verify "ActorDataSelectCommand ger_truck_corps_tb"
 map q game|action|verify "ActorDataSelectCommand ger_truck_ship"
 map f game|action|verify "ActorDataSelectCommand ger_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand ger_truck_artillery"
+map r game|action|verify "ActorDataSelectCommand ger_truck_artillery_tb"
 map e game|action|verify "ActorDataSelectCommand ger_truck_engineer"
+map e game|action|verify "ActorDataSelectCommand ger_truck_engineer_tb"
 map p game|action|verify "ActorDataSelectCommand ger_truck_motor"
+map p game|action|verify "ActorDataSelectCommand ger_truck_motor_tb"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_hq_armor"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_hq_armor_unpacked"
+map a game|action|verify "ActorDataSelectCommand regiment_ger_hq_armor_tb"
+map a game|action|verify "ActorDataSelectCommand regiment_ger_hq_armor_unpacked_tb"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_hq_infantry"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_hq_infantry_unpacked"
 map z game|action|verify "ActorDataSelectCommand regiment_ger_hq_mechanized"
@@ -306,14 +320,16 @@ map f game|action|verify "ActorDataSelectCommand regiment_ger_infantry_def"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_infantry_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_ger_infantry_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_infantry_at" 
-map g game|action|verify "ActorDataSelectCommand regiment_ger_infantry_goliath" 
+map g game|action|verify "ActorDataSelectCommand regiment_ger_goliath" 
 
 # Mechanized HQ
-map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack"
+map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_new"
+map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_tb"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_aa"
-map r game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_artillery"
+map r game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_artillery_new"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_sniper"
 map d game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_flame"
+map d game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_flame_tb"
 map z game|action|verify "ActorDataSelectCommand regiment_ger_infantry_mechanized" 
 
 
@@ -323,18 +339,24 @@ map a game|action|verify "ActorDataSelectCommand regiment_ger_paratrooper_ground
 map e game|action|verify "ActorDataSelectCommand regiment_ger_paratrooper_heavy_ground"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_paratrooper_a"
 map e game|action|verify "ActorDataSelectCommand regiment_ger_paratrooper_heavy"
+map c game|action|verify "ActorDataSelectCommand regiment_ger_helichopter"
 
 # Armor HQ
-map k game|action|verify "ActorDataSelectCommand regiment_ger_tank_king_tiger"
+map k game|action|verify "ActorDataSelectCommand regiment_ger_tank_king_tiger_new"
+map k game|action|verify "ActorDataSelectCommand regiment_ger_tank_king_tiger_tb"
 map a game|action|verify "ActorDataSelectCommand regiment_ger_tank_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_ger_tank_artillery"
+map r game|action|verify "ActorDataSelectCommand regiment_ger_tank_artillery_tb"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_tank_destroyer"
-map v game|action|verify "ActorDataSelectCommand regiment_ger_tank_heavy"
-map l game|action|verify "ActorDataSelectCommand regiment_ger_tank_light"
+map v game|action|verify "ActorDataSelectCommand regiment_ger_tank_heavy_new"
+map v game|action|verify "ActorDataSelectCommand regiment_ger_tank_heavy_tb"
+map l game|action|verify "ActorDataSelectCommand regiment_ger_tank_light_new"
+map l game|action|verify "ActorDataSelectCommand regiment_ger_tank_light_tb"
 map z game|action|verify "ActorDataSelectCommand regiment_ger_tank_mechanized"
-map e game|action|verify "ActorDataSelectCommand regiment_ger_tank_medium"
+map e game|action|verify "ActorDataSelectCommand regiment_ger_tank_medium_new"
+map e game|action|verify "ActorDataSelectCommand regiment_ger_tank_medium_tb"
 map d game|action|verify "ActorDataSelectCommand regiment_ger_tank_at"
-
+map d game|action|verify "ActorDataSelectCommand regiment_ger_tank_at_tb"
 
 ### Nation - Japan
 
@@ -348,6 +370,8 @@ map a game|action|verify "ActorDataSelectCommand jpn_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand jpn_bunker_artillery"
 
 # Corps HQ
+map c game|action|verify "ActorDataSelectCommand jpn_truck_nuclear"
+map c game|action|verify "ActorDataSelectCommand jpn_truck_heal"
 map p game|action|verify "ActorDataSelectCommand jpn_truck_corps"
 map q game|action|verify "ActorDataSelectCommand jpn_truck_ship"
 map f game|action|verify "ActorDataSelectCommand jpn_truck_airfield"
@@ -404,10 +428,11 @@ map e game|action|verify "ActorDataSelectCommand regiment_jpn_paratrooper_heavy_
 map a game|action|verify "ActorDataSelectCommand regiment_jpn_paratrooper_a"
 map b game|action|verify "ActorDataSelectCommand regiment_jpn_paratrooper_banzai"
 map e game|action|verify "ActorDataSelectCommand regiment_jpn_paratrooper_heavy"
+map c game|action|verify "ActorDataSelectCommand regiment_jpn_helichopter"
 
 # Armor HQ
 map a game|action|verify "ActorDataSelectCommand regiment_jpn_tank_aa"
-map r game|action|verify "ActorDataSelectCommand regiment_jpn_tank_artillery"
+map r game|action|verify "ActorDataSelectCommand regiment_jpn_tank_artillery_new"
 map t game|action|verify "ActorDataSelectCommand regiment_jpn_tank_destroyer"
 map v game|action|verify "ActorDataSelectCommand regiment_jpn_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_jpn_tank_light"
@@ -427,14 +452,22 @@ map a game|action|verify "ActorDataSelectCommand rus_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand rus_bunker_artillery"
 
 # Corps HQ
+map c game|action|verify "ActorDataSelectCommand rus_truck_nuclear"
+map c game|action|verify "ActorDataSelectCommand rus_truck_heal"
 map p game|action|verify "ActorDataSelectCommand rus_truck_corps"
+map p game|action|verify "ActorDataSelectCommand rus_truck_corps_tb"
 map q game|action|verify "ActorDataSelectCommand rus_truck_ship"
 map f game|action|verify "ActorDataSelectCommand rus_truck_airfield"
 map r game|action|verify "ActorDataSelectCommand rus_truck_artillery"
+map r game|action|verify "ActorDataSelectCommand rus_truck_artillery_tb"
 map e game|action|verify "ActorDataSelectCommand rus_truck_engineer"
+map e game|action|verify "ActorDataSelectCommand rus_truck_engineer_tb"
 map p game|action|verify "ActorDataSelectCommand rus_truck_motor"
+map p game|action|verify "ActorDataSelectCommand rus_truck_motor_tb"
 map a game|action|verify "ActorDataSelectCommand regiment_rus_hq_armor"
 map a game|action|verify "ActorDataSelectCommand regiment_rus_hq_armor_unpacked"
+map a game|action|verify "ActorDataSelectCommand regiment_rus_hq_armor_tb"
+map a game|action|verify "ActorDataSelectCommand regiment_rus_hq_armor_unpacked_tb"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_hq_infantry"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_hq_infantry_unpacked"
 map z game|action|verify "ActorDataSelectCommand regiment_rus_hq_mechanized"
@@ -468,11 +501,13 @@ map d game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack"
-map a game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_aa"
+map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_tb"
+map a game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_aa_new"
 map r game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_sniper"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_rocket_truck"
 map d game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_flame"
+map d game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_flame_tb"
 map z game|action|verify "ActorDataSelectCommand regiment_rus_infantry_mechanized"
 
 # Airborne HQ
@@ -481,17 +516,23 @@ map a game|action|verify "ActorDataSelectCommand regiment_rus_paratrooper_ground
 map e game|action|verify "ActorDataSelectCommand regiment_rus_paratrooper_heavy_ground"
 map a game|action|verify "ActorDataSelectCommand regiment_rus_paratrooper_a"
 map e game|action|verify "ActorDataSelectCommand regiment_rus_paratrooper_heavy"
+map c game|action|verify "ActorDataSelectCommand regiment_rus_helichopter"
 
 # Armor HQ
 map a game|action|verify "ActorDataSelectCommand regiment_rus_tank_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_rus_tank_artillery"
+map r game|action|verify "ActorDataSelectCommand regiment_rus_tank_artillery_tb"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_tank_destroyer"
-map v game|action|verify "ActorDataSelectCommand regiment_rus_tank_heavy"
-map l game|action|verify "ActorDataSelectCommand regiment_rus_tank_light"
+map v game|action|verify "ActorDataSelectCommand regiment_rus_tank_heavy_new"
+map v game|action|verify "ActorDataSelectCommand regiment_rus_tank_heavy_tb"
+map l game|action|verify "ActorDataSelectCommand regiment_rus_tank_light_new"
+map l game|action|verify "ActorDataSelectCommand regiment_rus_tank_light_tb"
 map z game|action|verify "ActorDataSelectCommand regiment_rus_tank_mechanized"
-map e game|action|verify "ActorDataSelectCommand regiment_rus_tank_medium"
+map e game|action|verify "ActorDataSelectCommand regiment_rus_tank_medium_new"
+map e game|action|verify "ActorDataSelectCommand regiment_rus_tank_medium_tb"
 map u game|action|verify "ActorDataSelectCommand regiment_rus_tank_rocket_truck"
 map d game|action|verify "ActorDataSelectCommand regiment_rus_tank_at"
+map d game|action|verify "ActorDataSelectCommand regiment_rus_tank_at_tb"
 
 ### Nation - USA
 
@@ -506,6 +547,8 @@ map a game|action|verify "ActorDataSelectCommand usa_bunker_aa"
 map r game|action|verify "ActorDataSelectCommand usa_bunker_artillery"
 
 # Corps HQ
+map c game|action|verify "ActorDataSelectCommand usa_truck_nuclear"
+map c game|action|verify "ActorDataSelectCommand usa_truck_heal"
 map p game|action|verify "ActorDataSelectCommand usa_truck_corps"
 map q game|action|verify "ActorDataSelectCommand usa_truck_ship"
 map f game|action|verify "ActorDataSelectCommand usa_truck_airfield"
@@ -560,6 +603,7 @@ map a game|action|verify "ActorDataSelectCommand regiment_usa_paratrooper_ground
 map e game|action|verify "ActorDataSelectCommand regiment_usa_paratrooper_heavy_ground"
 map a game|action|verify "ActorDataSelectCommand regiment_usa_paratrooper_a"
 map e game|action|verify "ActorDataSelectCommand regiment_usa_paratrooper_heavy"
+map c game|action|verify "ActorDataSelectCommand regiment_usa_helichopter"
 
 # Armor HQ
 map a game|action|verify "ActorDataSelectCommand regiment_usa_tank_aa"
@@ -568,7 +612,7 @@ map t game|action|verify "ActorDataSelectCommand regiment_usa_tank_destroyer"
 map v game|action|verify "ActorDataSelectCommand regiment_usa_tank_heavy"
 map l game|action|verify "ActorDataSelectCommand regiment_usa_tank_light"
 map z game|action|verify "ActorDataSelectCommand regiment_usa_tank_mechanized"
-map e game|action|verify "ActorDataSelectCommand regiment_usa_tank_medium"
+map e game|action|verify "ActorDataSelectCommand regiment_usa_tank_medium_new"
 map d game|action|verify "ActorDataSelectCommand regiment_usa_tank_at"
 
 ###################################
@@ -588,3 +632,8 @@ map 9 game|action|verify|1 "SelectObservingKingdom 8"
 map q game|action|verify|1 "SelectObservingKingdom 9"
 map w game|action|verify|1 "SelectObservingKingdom 10"
 
+map s game|action|verify "ActorDataSelectCommand usa_carrier"
+map s game|action|verify "ActorDataSelectCommand ger_carrier"
+map s game|action|verify "ActorDataSelectCommand gbr_carrier"
+map s game|action|verify "ActorDataSelectCommand rus_carrier"
+map s game|action|verify "ActorDataSelectCommand jpn_carrier"

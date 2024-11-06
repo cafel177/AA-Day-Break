@@ -444,7 +444,7 @@
 		actor_ids = ger_truck_artillery_tb
 
 		[RecruitActor]
-		actor_ids = ger_truck_supply
+		actor_ids = ger_truck_supply_large
 
 		[RecruitActor]
 		actor_ids = ger_truck_ammo

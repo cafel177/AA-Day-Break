@@ -33,7 +33,6 @@
 	
 	[ElementComponent]
 	{
-		required_properties = tech_conscription
 		resupply_rate = 0.9
 	}
 
