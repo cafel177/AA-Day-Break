@@ -39,7 +39,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 25
+		money = 22
 		
 		[Upkeep]
 		

@@ -14,7 +14,7 @@
 		[Production]
 		ammo = 5
 		oil = 8
-		unit_limit_provided = 9
+		unit_limit_provided = 6
 
    		[Upkeep]
 		building_limit_consumed = 0
