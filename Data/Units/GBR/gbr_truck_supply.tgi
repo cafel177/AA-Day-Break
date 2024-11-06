@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 5
+		money = 4
 
    		[Upkeep]
 		building_limit_consumed = 0
