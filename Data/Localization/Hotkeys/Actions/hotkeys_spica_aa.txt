@@ -489,7 +489,7 @@ map s game|action|verify "ActorDataSelectCommand rus_truck_bunker_artillery"
 
 # Infantry HQ
 map o game|action|verify "ActorDataSelectCommand regiment_rus_infantry_recon"
-map c game|action|verify "ActorDataSelectCommand regiment_rus_conscript"
+map x game|action|verify "ActorDataSelectCommand regiment_rus_conscript"
 map e game|action|verify "ActorDataSelectCommand regiment_rus_engineer"
 map i game|action|verify "ActorDataSelectCommand regiment_rus_infantry"
 map p game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sp"

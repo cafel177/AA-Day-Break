@@ -23,6 +23,9 @@
 		stockpile_max = 120
 	}
 
+	[DetectionComponent]
+	detection_range = 50
+
 	[RecruitComponent]
 	{
 		[RecruitActor]

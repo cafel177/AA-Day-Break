@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 150
+		health = 185
 		defense = 1
 	}
 
@@ -33,7 +33,7 @@
 	
 	[ElementComponent]
 	{
-		resupply_rate = 0.9
+		resupply_rate = 1
 	}
 
 	[PerformerComponent]
@@ -69,7 +69,7 @@
 				recharge_time = 6
 				
 				[Effect Template=FireDamageEffect]
-				amount = 10
+				amount = 15
 			}
 		}
 	}
