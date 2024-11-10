@@ -17,6 +17,9 @@
 		}
 	}
 
+	[DetectionComponent]
+	detection_range = 50
+
 	[SupplyComponent]
 	{
 		supply_range = 60
