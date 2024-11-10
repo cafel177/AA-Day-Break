@@ -9,7 +9,7 @@
 	name = "#economic_aid_money_name"
 	description = "#economic_aid_money_description"
 	targets = NULL
-	recharge_time = 90
+	recharge_time = 60
 	range = 0
 	area = 0
 
