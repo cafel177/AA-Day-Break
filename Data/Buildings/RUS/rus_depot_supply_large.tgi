@@ -22,7 +22,7 @@
 
 	[SupplyComponent]
 	{
-		supply_range = 60
+		supply_range = 50
 		stockpile_max = 120
 	}
 

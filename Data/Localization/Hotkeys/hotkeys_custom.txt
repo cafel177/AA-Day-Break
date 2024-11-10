@@ -41,7 +41,7 @@ map y game "UseFactionAbility 0"
 map h game "UseFactionAbility 1"
 map n game "UseFactionAbility 2"
 map j game "UseFactionAbility 3"
-map m game "UseFactionAbility 4"
+map u game "UseFactionAbility 4"
 map k game "UseFactionAbility 5"
 
 # cycle context

@@ -11,6 +11,9 @@
 	[Placement]
 	placement_group_ids = null
 
+	[DetectionComponent]
+	detection_range = 18
+
 	[EconomyComponent]
 	{
 		[Cost]
