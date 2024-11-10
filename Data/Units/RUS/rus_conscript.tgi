@@ -33,7 +33,7 @@
 	
 	[ElementComponent]
 	{
-		resupply_rate = 0.9
+		resupply_rate = 1
 	}
 
 	[PerformerComponent]
