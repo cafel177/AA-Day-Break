@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 150
+		health = 185
 		defense = 1
 	}
 
@@ -69,7 +69,7 @@
 				recharge_time = 6
 				
 				[Effect Template=FireDamageEffect]
-				amount = 10
+				amount = 15
 			}
 		}
 	}
