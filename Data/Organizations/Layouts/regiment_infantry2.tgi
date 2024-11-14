@@ -1,0 +1,186 @@
+[OrganizationLayout template=AAOrganizationLayout]
+{
+	IDS = regiment_infantry2
+	name = "#regiment_infantry_name"
+	default_formation_ids = regiment_defensive
+	combat_formation_ids = regiment_aggressive
+	
+	[Slot template=LayoutSlot]
+	property_IDS = front
+	required = false
+	number = 3
+	name = "#regiment_infantry_Slot_name"
+
+	[Slot template=LayoutSlot]
+	property_IDS = front
+	required = false
+	name = "#regiment_infantry_Slot_name_2"
+
+	[Slot template=LayoutSlot]
+	property_IDS = front
+	required = false
+	name = "#regiment_infantry_Slot_name_3"
+
+	[Slot template=LayoutSlot]
+	property_IDS = front
+	required = false
+	name = "#regiment_infantry_Slot_name_4"
+
+	[Slot template=LayoutSlot]
+	property_IDS = support
+	number = 2
+	required = false
+	name = "#regiment_infantry_Slot_name_5"
+	
+	[Slot template=PrimarySlot]
+	property_IDS = captain
+	locked = true
+	name = "#regiment_infantry_Slot_name_6"
+	
+	[Formation]
+	{
+		formation_IDS = regiment_aggressive
+		
+		;; Front Line1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -1,+5.25
+
+		;; Front Line2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +2.5,+10
+		
+		;; Front Line3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +6,+8.5
+
+		;; Rear Guard1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -7.5,+5
+
+		;; Rear Guard2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -4.5,+4
+
+		;; Rear Guard3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = 0,+4.5
+
+		;; Support1
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +4.5,-0.5
+	
+		;; Support1
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -3.5,-1
+		
+		[Position template=FormationPosition]
+		property_IDS = captain
+		offset = 0,0
+	}
+
+	[Formation]
+	{
+		formation_IDS = regiment_defensive
+		
+		;; Front Line1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -6,+5
+
+		;; Front Line2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = 0,+6.5
+		
+		;; Front Line3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +5.5,+5.5
+
+		;; Rear Guard1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = 0.5,-6
+
+		;; Rear Guard2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -6.5,-5.5
+		
+		;; Rear Guard3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +6.5,-5.5
+
+		;; Support1
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +4.5,0.5
+
+		;; Support2
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -5,-0.5
+		
+		[Position template=FormationPosition]
+		property_IDS = captain
+		offset = 0,0
+	}
+	
+	[Formation]
+	{
+		formation_IDS = regiment_column
+		
+		;; Front Line1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -5.5,+2.5
+
+		;; Front Line2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -3.5,+8
+		
+		;; Front Line3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +4,+8.5
+			
+		;; Rear Guard1
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +5,+2.5
+		
+		;; Rear Guard2
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = -5.5,-6.5
+
+		;; Rear Guard3
+		[Position template=FormationPosition]
+		property_IDS = front
+		offset = +5.5,-6
+
+		;; Support1
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = +2.5,-5
+
+		;; Support2
+		[Position template=FormationPosition]
+		property_IDS = support
+		offset = -3,-4.5
+		
+		[Position template=FormationPosition]
+		property_IDS = captain
+		offset = 0,0
+	}
+}

@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 200
+		health = 180
 		defense = 1
 	}
 
@@ -28,6 +28,9 @@
 		property_IDS = support
 		
 		[Property]
+		property_IDS = property_infantry_unit
+
+		[Property]
 		property_IDS = combat_unit
 	}
 	
@@ -38,14 +41,13 @@
 
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocalBomb]
+		[Ability Template=AAGunLocal]
 		{
 			[AbilityDefinition Template=AAInfantryRifle]
 			{				
 				name = "#rus_conscript_AbilityDefinition_name"
 				recharge_time = 3
-				range = 10
-				
+				range = 10				
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 10
@@ -67,7 +69,7 @@
 				projectile_ids = molotov
 				
 				[Effect Template=FireDamageEffect]
-				amount = 20
+				amount = 15
 			}
 		}
 	}
