@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 185
+		health = 200
 		defense = 1
 	}
 
@@ -44,7 +44,7 @@
 			{				
 				name = "#rus_conscript_AbilityDefinition_name"
 				recharge_time = 3
-				range = 12
+				range = 10
 				
 				
 				[Effect Template=PierceDamageEffect]
@@ -66,10 +66,8 @@
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				projectile_ids = molotov
 				
-				recharge_time = 6
-				
 				[Effect Template=FireDamageEffect]
-				amount = 15
+				amount = 20
 			}
 		}
 	}
