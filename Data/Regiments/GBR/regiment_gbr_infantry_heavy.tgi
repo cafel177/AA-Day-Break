@@ -30,7 +30,7 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
-		layout_IDS = regiment_infantry
+		layout_IDS = regiment_infantry2
 		
 		[Slot]	;; front
 		element_IDS = gbr_infantry
