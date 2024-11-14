@@ -70,4 +70,10 @@
 	[Modifier template=MultiplyModifier]
 	attribute = health
 	amount = +0.25
+
+	[Modifier Template=ResourceProductionModifier]
+	{
+		[Production Template=ProductionList]
+        		money = 1
+	}
 }

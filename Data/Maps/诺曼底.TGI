@@ -1,0 +1,26 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "(DB) - Operation Overlord: D-Day"
+
+	restriction_group_0001 = "ALLIES"
+	kingdom_1 = "Axis 1"
+	kingdom_0 = "Allies 1"
+	name_37768 = "Douvres"
+	independent_8 = "Disabled"
+	kingdom_9 = "Axis 3"
+	name_37796 = "Valognes"
+	name_37775 = "Bayeux"
+	kingdom_7 = "Beachhead Defenders"
+	team_1 = "Allies"
+	kingdom_6 = "Allies 4"
+	team_0 = "Axis"
+	map_description = "Despite the victories in southern Italy, the march northward remains slow, and the bulk of the German forces have been able to continue the fight against Russia.  At Stalin's urging, the time has come to open a new front. On June 6th, 1944, this front will be opened with an amphibious invasion in Normandy that will mark the final days of Germany's conquest.  Despite substantial misinformation fed to the Germans about the time and location of the landing, coastal defenses remain enormous.  D-Day is about to begin. "
+	kingdom_5 = "Allies 3"
+	name_37782 = "Carentan"
+	independent_2 = "Civilian"
+	kingdom_4 = "Allies 2"
+	map_name = "(DB) - Operation Overlord: D-Day"
+	kingdom_3 = "Axis 2"
+	restriction_group_0002 = "AXIS"
+}
