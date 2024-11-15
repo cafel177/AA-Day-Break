@@ -92,7 +92,7 @@
 							
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .75
+				amount = .5
 			}
 			
 			
