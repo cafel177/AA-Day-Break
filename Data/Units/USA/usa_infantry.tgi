@@ -153,6 +153,9 @@
 	{
 		[BuildActor]
 		actor_ids = usa_bunker
+
+		[BuildActor]
+		actor_ids = usa_bunker_aa
 	}
 
 	[PropertiesComponent]

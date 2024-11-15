@@ -109,7 +109,7 @@
 			
 						[Modifier Template=MultiplyModifier]
 						attribute = SPEED_MAX
-						amount = -0.5
+						amount = -0.25
 
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint

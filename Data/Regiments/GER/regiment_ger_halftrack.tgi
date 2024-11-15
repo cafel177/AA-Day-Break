@@ -76,6 +76,7 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_tiny
+		recruit_full = true
 
 		[Slot]	;; front
 		element_IDS = ger_halftrack_recon
@@ -110,6 +111,7 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_tiny
+		recruit_full = true
 
 		[Slot]	;; front
 		element_IDS = ger_halftrack_recon_tb

@@ -9,6 +9,11 @@
 	health = 1250
 	defense = 8
 
+	[ElementComponent]
+	{
+		required_structures = gbr_brigade_engineer
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 50

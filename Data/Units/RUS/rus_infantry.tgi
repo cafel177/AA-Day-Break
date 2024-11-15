@@ -157,6 +157,9 @@
 	{
 		[BuildActor]
 		actor_ids = rus_bunker
+
+		[BuildActor]
+		actor_ids = rus_bunker_aa
 	}
 
 	[PropertiesComponent]

@@ -63,18 +63,6 @@
 				money = 75
 			}
 		}	
-				
-		[ResearchItem]
-		{
-			property_IDS = tech_rifle_grenade
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
 		
 		[ResearchItem]
 		{

@@ -10,6 +10,11 @@
 		defense = 8
 	}
 
+	[ElementComponent]
+	{
+		required_structures = jpn_brigade_engineer
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 50

@@ -38,13 +38,11 @@
 
 ;;------------------------------------------------------
 
-[Thing Template=AAUnitUSAKneel]
+[Template AAUnitUSAKneelFlame Template=AAUnitUSAKneel]
 {
-	IDS = usa_infantry_flame
 	name = "#usa_infantry_flame_name"
 	editor_name = "#usa_infantry_flame_editor_name"
 
-	hide_if_missing_properties = true
 		
 	[BodyComponent]
 	{
@@ -55,11 +53,6 @@
 	[MoverComponent]
 	{
 		speed_max = 2.5
-	}
-
-	[ElementComponent]
-	{
-		required_properties = tech_infantry_flame
 	}
 	
 	[PropertiesComponent]
@@ -91,15 +84,15 @@
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				range = 20
 				recharge_time = 5
-				area = 4
-				max_targets = 8
+				area = 3
+				max_targets = 5
 
 				[Effect Template=FireDamageEffect]
 				amount = 30
 							
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
-				amount = 1
+				targets = infantry
+				amount = .5
 			}
 			
 			
@@ -611,5 +604,29 @@
 			}
 		}
 						
+	}
+}
+
+[Thing Template=AAUnitUSAKneelFlame]
+{
+	IDS = usa_infantry_flame
+
+	hide_if_missing_properties = true
+
+	[ElementComponent]
+	{
+		required_properties = tech_infantry_flame
+	}
+}
+
+[Thing Template=AAUnitUSAKneelFlame]
+{
+	IDS = usa_infantry_flame_new
+
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	{
+		required_properties = tech_flame
 	}
 }

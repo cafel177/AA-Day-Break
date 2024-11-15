@@ -37,6 +37,9 @@
 	[PropertiesComponent]
 	{		
 		[Property]
+		property_ids = artillery
+
+		[Property]
 		property_IDS = front
 
 		[Property]

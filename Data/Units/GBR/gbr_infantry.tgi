@@ -151,6 +151,9 @@
 	{
 		[BuildActor]
 		actor_ids = gbr_bunker
+
+		[BuildActor]
+		actor_ids = gbr_bunker_aa
 	}
 
 	[PropertiesComponent]
