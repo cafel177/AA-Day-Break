@@ -15,6 +15,11 @@
 		defense = 5
 	}
 	
+	[ElementComponent]
+	{
+		required_structures = gbr_brigade_engineer
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 25

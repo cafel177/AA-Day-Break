@@ -20,6 +20,12 @@
 		defense = 15
 	}
 
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_engineer,  ger_brigade_artillery
+		required_properties = tech_improved_fortifications
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 50

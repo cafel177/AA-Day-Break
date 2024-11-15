@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 65
+		money = 75
 		
 		[Upkeep]
 		ammo = 15
@@ -45,7 +45,7 @@
 		element_IDS = usa_infantry_assault
 	
 		[Slot]	;; flank
-		element_IDS = usa_infantry_mg
+		element_IDS = usa_infantry_flame_new
 		
 		[Slot]	;; captain
 		element_IDS = usa_infantry_co

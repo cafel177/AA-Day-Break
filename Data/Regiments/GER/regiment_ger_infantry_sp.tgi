@@ -14,7 +14,8 @@
 	[View]
 	{
 		resource_prefix = /Units/GER/GERInfantry/GERInfantry
-		icon = /UI/Game/RegimentButtons/IconInfantry.png
+		icon = /UI/Game/RegimentButtons/IconInfantrySP.png
+		banner_icon = /Organizations/Banners/Icons/IconAttack.png
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = ger_infantry_select
@@ -52,7 +53,7 @@
 		element_IDS = ger_infantry_sp
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_mg_sp
 	
 		[Slot]	;; flank
 		element_IDS = ger_infantry_mg_sp
@@ -86,7 +87,7 @@
 		element_IDS = ger_infantry_sp_amphib
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry_mg_sp
 	
 		[Slot]	;; flank
 		element_IDS = ger_infantry_mg_sp

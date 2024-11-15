@@ -157,6 +157,12 @@
 	{
 		[BuildActor]
 		actor_ids = rus_bunker
+
+		[BuildActor]
+		actor_ids = rus_bunker_aa
+
+		[BuildActor]
+		actor_ids = rus_bunker_artillery
 	}
 
 	[PropertiesComponent]

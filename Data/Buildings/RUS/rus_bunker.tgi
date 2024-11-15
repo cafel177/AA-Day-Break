@@ -43,6 +43,11 @@
 		defense = 5
 	}
 	
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 25
