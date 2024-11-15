@@ -60,6 +60,9 @@
 		[Slot]	;; captain
 		element_IDS = rus_infantry_co
 	}
+
+	[Placement]
+	placement_group_ids = null
 }
 
 [Thing Template=AARUSRegimentInfantry]
