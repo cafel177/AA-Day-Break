@@ -52,7 +52,7 @@
 		element_IDS = ger_infantry_sp
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp
+		element_IDS = ger_infantry_mg_sp
 	
 		[Slot]	;; flank
 		element_IDS = ger_infantry_mg_sp
@@ -86,7 +86,7 @@
 		element_IDS = ger_infantry_sp_amphib
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_sp_amphib
+		element_IDS = ger_infantry_mg_sp_amphib
 	
 		[Slot]	;; flank
 		element_IDS = ger_infantry_mg_sp
