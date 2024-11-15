@@ -14,7 +14,7 @@
 	[View]
 	{
 		resource_prefix = /Units/JPN/JPNInfantry/JPNInfantry
-		icon = /UI/Game/RegimentButtons/IconInfantry.png
+		icon = /UI/Game/RegimentButtons/IconInfantrySP.png
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = jpn_infantry_select

@@ -14,7 +14,7 @@
 	[View]
 	{
 		resource_prefix = /Units/GER/GERInfantry/GERInfantry
-		icon = /UI/Game/RegimentButtons/IconInfantry.png
+		icon = /UI/Game/RegimentButtons/IconInfantrySP.png
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = ger_infantry_select
