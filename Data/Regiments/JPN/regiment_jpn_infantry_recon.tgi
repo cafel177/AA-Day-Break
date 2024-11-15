@@ -47,6 +47,7 @@
 	{	
 		layout_IDS = regiment_infantry2
 		entrenchment_time = 30
+		recruit_full = true
 
 		[Slot]	;; front
 		element_IDS = jpn_infantry_recon
