@@ -20,6 +20,12 @@
 		defense = 15
 	}
 
+	[ElementComponent]
+	{
+		required_structures = jpn_brigade_engineer,  jpn_brigade_artillery
+		required_properties = tech_improved_fortifications
+	}
+
 	[DefenderComponent]
 	{
 		control_range = 50
