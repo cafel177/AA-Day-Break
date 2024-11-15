@@ -32,7 +32,7 @@
 
 	[ElementComponent]
 	{
-		required_properties = tech_rifle_grenade
+		required_structures = usa_brigade_artillery	
 	}
 	
 	[PropertiesComponent]
