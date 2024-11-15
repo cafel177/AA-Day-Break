@@ -156,9 +156,6 @@
 
 		[BuildActor]
 		actor_ids = usa_bunker_aa
-
-		[BuildActor]
-		actor_ids = usa_bunker_artillery
 	}
 
 	[PropertiesComponent]

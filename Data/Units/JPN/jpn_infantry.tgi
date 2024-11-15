@@ -156,9 +156,6 @@
 
 		[BuildActor]
 		actor_ids = jpn_bunker_aa
-
-		[BuildActor]
-		actor_ids = jpn_bunker_artillery
 	}
 
 	[PropertiesComponent]

@@ -160,9 +160,6 @@
 
 		[BuildActor]
 		actor_ids = ger_bunker_aa
-
-		[BuildActor]
-		actor_ids = ger_bunker_artillery
 	}
 
 	[PropertiesComponent]
