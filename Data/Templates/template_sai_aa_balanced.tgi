@@ -60,19 +60,19 @@
 		[ActorPriority]
 		{
 			property_IDS					= engineer_brigade
-			value							= 550
+			value							= 1000
 		}
 
 		[ActorPriority]
 		{
 			property_IDS					= motor_pool
-			value							= 550
+			value							= 1000
 		}
 
 		[ActorPriority]
 		{
 			property_IDS					= artillery_brigade
-			value							= 550
+			value							= 1000
 		}
 
 		[ActorPriority]
@@ -112,8 +112,8 @@
 		[ActorPriority]
 		{
 			property_IDS					= antiaircraft_company
-			value							= 700
-			repeat_penalty					= 100				
+			value							= 1000
+			repeat_penalty					= 300					
 		}
 
 		[ActorPriority]
