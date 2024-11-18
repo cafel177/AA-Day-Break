@@ -42,8 +42,7 @@
 
 	[PropertiesComponent]
 	{		
-		[Property]
-		property_IDS = property_bunker
+
 	}
 
 	[Size]

@@ -26,9 +26,12 @@
 	[View]
 	{
 		resource_prefix = /SpecialOps/Units/Saboteur/Saboteur
-        icon = /UI/Game/RegimentButtons/IconV2.png
-        banner_ids = ambient_banner
+        		icon = /UI/Game/RegimentButtons/IconV2.png
+        		banner_ids = ambient_banner
 		banner_icon = null
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = nuclear_ready
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = gbr_recon_select

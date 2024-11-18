@@ -58,6 +58,12 @@
 		
 		[Property]
 		property_IDS = halftrack_unit
+
+		[Property]
+		property_ids = anti_stun1
+
+		[Property]
+		property_ids = anti_stun2
 	}
 	
 	[PerformerComponent]

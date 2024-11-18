@@ -68,6 +68,7 @@
 	
 	[View]
 	{
+		minimap_icon = /Minimap/Icons/IconNuclear.tga
 		resource_prefix = USANuclear/NukeSilo_3
 		icon = /UI/Game/BuildingButtons/IconICBM.png
 		
@@ -100,7 +101,7 @@
 			blink_count = 15
 			src_color	= 1, 0, 1
 			dst_color	= 0, 1, 1
-			radar_icon = /Minimap/Icons/IconCorpsHQ.tga
+			radar_icon = /Minimap/Icons/IconNuclear.tga
 		}
 	}
 

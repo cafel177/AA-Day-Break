@@ -59,6 +59,9 @@
 	{
 		[Property]
 		property_IDS = property_bunker_artillery
+
+		[Property]
+		property_ids = artillery
 	}
 	
 	[View]

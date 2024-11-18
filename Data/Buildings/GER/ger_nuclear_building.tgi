@@ -68,6 +68,7 @@
 	
 	[View]
 	{
+		minimap_icon = /Minimap/Icons/IconNuclear.tga
 		resource_prefix = GERNuclear/NukeSilo_3
 		icon = /UI/Game/BuildingButtons/IconICBM.png
 		
@@ -92,6 +93,15 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		{
 			audio_ids = bunker_artillery_select
+		}
+
+                [WhenCreated Template=FXC_CreateRFX]
+		{
+			at = TARGET_THING
+			blink_count = 15
+			src_color	= 1, 0, 1
+			dst_color	= 0, 1, 1
+			radar_icon = /Minimap/Icons/IconNuclear.tga
 		}
 	}
 

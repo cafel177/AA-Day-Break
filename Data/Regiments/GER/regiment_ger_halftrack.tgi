@@ -40,10 +40,7 @@
 		property_IDS = recon	
 		
 		[Property]
-		property_IDS = trailblazing	
-
-		[Property]
-		property_IDS = engineer	
+		property_IDS = trailblazing		
 	}
 }
 

@@ -139,7 +139,7 @@
 		actor_ids = regiment_rus_infantry_sniper
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_amphib
+		actor_ids = regiment_rus_infantry_amphib_sp
 
 		[RecruitActor]
 		actor_ids = regiment_rus_engineer

@@ -51,6 +51,9 @@
 	{
 		[Property]
 		property_IDS = property_bunker_aa
+
+		[Property]
+		property_IDS = property_aa	
 	}
 	
 	[View]
