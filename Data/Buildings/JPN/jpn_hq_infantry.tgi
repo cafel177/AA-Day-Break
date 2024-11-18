@@ -140,7 +140,7 @@
 		actor_ids = regiment_jpn_tankette
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_amphib
+		actor_ids = regiment_jpn_infantry_amphib_sp
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_engineer
