@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 5
+		defense = 4
 	}
 	
 	[MoverComponent]
@@ -75,7 +75,7 @@
 				
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = 0.2
+				amount = 0.15
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
