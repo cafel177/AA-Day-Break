@@ -37,16 +37,6 @@
 	}	
 		
 
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = ger_truck_bunker_artillery
-
-		[RecruitActor]
-		actor_ids = ger_truck_nuclear
-	}
-
 	[DenizenComponent]
 	{
 		[DeploymentInfo]
@@ -209,6 +199,15 @@
 {
 	IDS = ger_brigade_artillery
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker_artillery
+
+		[RecruitActor]
+		actor_ids = ger_truck_nuclear
+	}
+
 	[ResearchComponent]
 	{
 		
@@ -268,6 +267,15 @@
 
 	[Placement]
 	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker_artillery_tb
+
+		[RecruitActor]
+		actor_ids = ger_truck_nuclear_tb
+	}
 
 	[ResearchComponent]
 	{

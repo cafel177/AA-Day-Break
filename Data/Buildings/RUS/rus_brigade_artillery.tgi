@@ -38,16 +38,6 @@
 	}	
 		
 
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = rus_truck_bunker_artillery
-
-		[RecruitActor]
-		actor_ids = rus_truck_nuclear
-	}
-
 	[DenizenComponent]
 	{
 		[DeploymentInfo]
@@ -143,6 +133,15 @@
 {
 	IDS = rus_brigade_artillery
 
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker_artillery
+
+		[RecruitActor]
+		actor_ids = rus_truck_nuclear
+	}
+
 	[ResearchComponent]
 	{
 		[ResearchItem]
@@ -213,6 +212,15 @@
 
 	[Placement]
 	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = rus_truck_bunker_artillery_tb
+
+		[RecruitActor]
+		actor_ids = rus_truck_nuclear_tb
+	}
 
 	[ResearchComponent]
 	{		

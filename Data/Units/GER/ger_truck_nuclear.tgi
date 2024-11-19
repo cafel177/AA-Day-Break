@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleNuclearTruck Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_nuclear
 	name = "#ger_truck_nuclear_name"
 	editor_name = "#ger_truck_nuclear_editor_name"
     
@@ -20,7 +19,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = ger_brigade_engineer, ger_motor_pool, ger_brigade_artillery
 		required_properties = nuclear_weapon
 	}
 
@@ -69,5 +67,25 @@
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = depot_supply_select
+	}
+}
+
+[Thing Template = AAUnitGERVehicleNuclearTruck]
+{
+	IDS = ger_truck_nuclear
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_engineer, ger_motor_pool, ger_brigade_artillery
+	}
+}
+
+[Thing Template = AAUnitGERVehicleNuclearTruck]
+{
+	IDS = ger_truck_nuclear_tb
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_engineer_tb, ger_motor_pool_tb, ger_brigade_artillery_tb
 	}
 }

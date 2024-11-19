@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleBunkerArtilleryTruck Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_bunker_artillery
 	name = "#ger_truck_bunker_artillery_name"
 	editor_name = "#ger_truck_bunker_artillery_editor_name"
 
@@ -21,7 +20,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = ger_brigade_engineer
 		required_properties = tech_improved_fortifications
 	}
 
@@ -72,5 +70,25 @@
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = depot_supply_select
+	}
+}
+
+[Thing Template = AAUnitGERVehicleBunkerArtilleryTruck]
+{
+	IDS = ger_truck_bunker_artillery
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_engineer
+	}
+}
+
+[Thing Template = AAUnitGERVehicleBunkerArtilleryTruck]
+{
+	IDS = ger_truck_bunker_artillery_tb
+
+	[ElementComponent]
+	{
+		required_structures = ger_brigade_engineer_tb
 	}
 }

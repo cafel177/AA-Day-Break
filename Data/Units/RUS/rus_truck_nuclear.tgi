@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleHQTruck]
+[Template AAUnitRUSVehicleNuclearTruck Template=AAUnitRUSVehicleHQTruck]
 {
-	IDS = rus_truck_nuclear
 	name = "#rus_truck_nuclear_name"
 	editor_name = "#rus_truck_nuclear_editor_name"
     
@@ -20,7 +19,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_brigade_engineer, rus_motor_pool, rus_brigade_artillery
 		required_properties = nuclear_weapon
 	}
 
@@ -69,5 +67,25 @@
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = depot_supply_select
+	}
+}
+
+[Thing Template = AAUnitRUSVehicleNuclearTruck]
+{
+	IDS = rus_truck_nuclear
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer, rus_motor_pool, rus_brigade_artillery
+	}
+}
+
+[Thing Template = AAUnitRUSVehicleNuclearTruck]
+{
+	IDS = rus_truck_nuclear_tb
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer_tb, rus_motor_pool_tb, rus_brigade_artillery_tb
 	}
 }
