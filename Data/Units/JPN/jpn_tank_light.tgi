@@ -87,7 +87,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-				
+				/*
 				[Effect Template=EnchantmentEffect]
 				{
 					targets = +ENEMY -TANK
@@ -108,6 +108,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
+				*/
 			}
 		}
 	}
