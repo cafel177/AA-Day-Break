@@ -8,7 +8,7 @@
 	[BodyComponent]
 	{
 		health = 300
-		defense = 6
+		defense = 4
 	}
 
 	[ElementComponent]
@@ -74,7 +74,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-				
+				/*
 				[Effect Template=EnchantmentEffect]
 				{
 					targets = +ENEMY -TANK
@@ -95,6 +95,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
+				*/
 			}
 		}
 	}

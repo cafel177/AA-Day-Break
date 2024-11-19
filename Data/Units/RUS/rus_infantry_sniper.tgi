@@ -53,7 +53,7 @@
 			[AbilityDefinition Template=AAInfantryRifleBomb]
 			{				
 				name = "#rus_infantry_sniper_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 7
 				area = 1
 				range = 30
 				max_targets = 1

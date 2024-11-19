@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleHQTruck]
+[Template AAUnitRUSVehicleBunkerArtilleryTruck Template=AAUnitRUSVehicleHQTruck]
 {
-	IDS = rus_truck_bunker_artillery
 	name = "#rus_truck_bunker_artillery_name"
 	editor_name = "#rus_truck_bunker_artillery_editor_name"
 
@@ -21,7 +20,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_brigade_engineer
 		required_properties = tech_improved_fortifications
 	}
 
@@ -74,5 +72,25 @@
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = depot_supply_select
+	}
+}
+
+[Thing Template = AAUnitRUSVehicleBunkerArtilleryTruck]
+{
+	IDS = rus_truck_bunker_artillery
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer
+	}
+}
+
+[Thing Template = AAUnitRUSVehicleBunkerArtilleryTruck]
+{
+	IDS = rus_truck_bunker_artillery_tb
+
+	[ElementComponent]
+	{
+		required_structures = rus_brigade_engineer_tb
 	}
 }
