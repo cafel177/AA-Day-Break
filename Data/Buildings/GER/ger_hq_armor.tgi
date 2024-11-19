@@ -262,22 +262,22 @@
 		actor_ids = regiment_ger_tank_light_new
 		
 		[RecruitActor]
-		actor_ids = regiment_ger_tank_medium_new
-		
-		[RecruitActor]
 		actor_ids = regiment_ger_tank_heavy_new
 
 		[RecruitActor]
+		actor_ids = regiment_ger_tank_king_tiger_new
+
+		[RecruitActor]
 		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_medium_new
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_at
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_king_tiger_new
 
 		[RecruitActor]
 		actor_ids = regiment_ger_tank_aa

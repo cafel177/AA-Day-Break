@@ -102,15 +102,18 @@
 	{		
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_light
-		
-		[RecruitActor]
-		actor_ids = regiment_jpn_tank_medium
 
 		[RecruitActor]
 		actor_ids = jpn_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_dummy
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tank_medium
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_tank_at
