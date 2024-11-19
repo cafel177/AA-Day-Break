@@ -54,9 +54,9 @@
 			[AbilityDefinition Template=AAInfantryRifleBomb]
 			{				
 				name = "#jpn_infantry_sniper_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 7
 				area = 1
-				range = 28
+				range = 30
 				max_targets = 1
 				
 				[Flags] 

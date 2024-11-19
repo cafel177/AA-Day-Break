@@ -71,7 +71,7 @@
 			[AbilityDefinition Template=AAInfantryRifleBomb]
 			{
 				name = "#gbr_sas_sniper_AbilityDefinition_name"
-				recharge_time = 5
+				recharge_time = 7
 				area = 1
 				range = 28
 				max_targets = 1
