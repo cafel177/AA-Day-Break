@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 180
+		health = 165
 		defense = 1
 	}
 
@@ -51,7 +51,7 @@
 				range = 10				
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
+				amount = 8
 
 				[WhenDo template=FXC_PlaySFX]
 				{
