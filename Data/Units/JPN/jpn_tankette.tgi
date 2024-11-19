@@ -31,10 +31,12 @@
 		*/
 	}
 
+	/*
 	[ElementComponent]
 	{
 		required_properties = tech_special_forces
 	}
+	*/
 	
 	[PropertiesComponent]
 	{
@@ -71,6 +73,10 @@
 				[Effect Template=BlastDamageEffect]
 				amount = 30
 				
+				[Effect Template=MoraleLossEffect]
+				targets = infantry
+				amount = 0.2
+
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 
