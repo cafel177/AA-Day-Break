@@ -17,7 +17,7 @@
 	[View]
 	{
 		resource_prefix = /Units/JPN/JPNTankMedium/JPNTankMedium
-		icon = /UI/Game/RegimentButtons/IconTankMedium.png
+		icon = /UI/Game/RegimentButtons/IconTankDef.png
 		banner_icon = /Organizations/Banners/Icons/IconArmorMedium.png
 
 		[WhenCreated Template=FXC_PlaySFX]
