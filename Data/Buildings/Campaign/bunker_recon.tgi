@@ -11,8 +11,8 @@
 	
 	[BodyComponent]
 	{
-		health = 500
-		defense = 0
+		health = 300
+		defense = 1
 	}
 	
 	[SupplyComponent]
