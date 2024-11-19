@@ -208,11 +208,11 @@
 	icon = PropertyIcons/IconPropertyNational.png
 	
 	enabled_target_flags = tank
-
+/*
 	[Modifier Template=ResistDamageModifier]
 	damage_type = gunfire
 	amount = 0.2
-
+*/
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
 	amount = 0.2
