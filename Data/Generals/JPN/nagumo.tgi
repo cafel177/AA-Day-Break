@@ -32,6 +32,8 @@
 	portrait_ids = nagumo_portrait
 
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpKamikaze]
 	
 	[Ability Template=AASpecialOpIndustrialSabotage]

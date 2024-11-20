@@ -32,6 +32,8 @@
 	portrait_ids = mikawa_portrait
 	
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpBanzaiCharge]
 	
 	[Ability Template=AASpecialOpResupply]
