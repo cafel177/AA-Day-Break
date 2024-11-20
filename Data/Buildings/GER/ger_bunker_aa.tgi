@@ -6,7 +6,7 @@
 
 	[BodyComponent]
 	{
-		health = 1250
+		health = 600
 		defense = 8
 	}
 
@@ -30,7 +30,7 @@
 				range = 50
 								
 				[Effect Template=PierceDamageEffect]
-				amount = 60
+				amount = 90
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_aa

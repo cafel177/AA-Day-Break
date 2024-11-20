@@ -31,12 +31,10 @@
 		*/
 	}
 
-	/*
 	[ElementComponent]
 	{
-		required_properties = tech_special_forces
+		required_structures = jpn_motor_pool	
 	}
-	*/
 	
 	[PropertiesComponent]
 	{
