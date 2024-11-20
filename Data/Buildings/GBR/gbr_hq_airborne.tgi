@@ -114,13 +114,13 @@
 		actor_ids = regiment_gbr_infantry_recon
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_aa
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_paratrooper
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_sas_paratrooper
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_paratrooper_ground
@@ -133,6 +133,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_helichopter
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_sas_paratrooper
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply
