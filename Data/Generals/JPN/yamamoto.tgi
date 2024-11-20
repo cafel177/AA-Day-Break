@@ -32,6 +32,8 @@
 	portrait_ids = yamamoto_portrait
 	
 	;; ---------------- SPECIAL OPERATIONS ------------------- ;;
+	[Ability Template=AASpecialOpAtomicBomb]
+
 	[Ability Template=AASpecialOpKamikaze]
 	
 	[Ability Template=AASpecialOpFear]

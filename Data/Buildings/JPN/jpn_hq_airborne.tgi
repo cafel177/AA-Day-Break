@@ -114,13 +114,13 @@
 		actor_ids = regiment_jpn_infantry_recon
 
 		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_aa
+
+		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_banzai
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_ground
@@ -133,6 +133,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_helichopter
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai
 
 		[RecruitActor]
 		actor_ids = jpn_truck_supply
