@@ -55,10 +55,10 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_tiny
 		
 		[Slot]	;; front
-		element_IDS = ger_halftrack
+		element_IDS = ger_halftrack_artillery
 	
 		[Slot]	;; support
 		element_IDS = ger_halftrack_artillery
