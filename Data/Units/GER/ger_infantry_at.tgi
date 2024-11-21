@@ -49,7 +49,7 @@
 			[AbilityDefinition Template=AAInfantryRocket]
 			{				
 				name = "#ger_infantry_at_AbilityDefinition_name"
-				recharge_time = 6
+				recharge_time = 7
 				area = 3
 				range = 30
 				max_targets = 4

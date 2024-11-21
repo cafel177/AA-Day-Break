@@ -63,11 +63,11 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 135
 	}
 
 	[OrganizationComponent]
-	recruit_time = 8
+	recruit_time = 6
 
 	[Placement]
 	placement_group_ids = null

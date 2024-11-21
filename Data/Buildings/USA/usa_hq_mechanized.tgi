@@ -131,6 +131,9 @@
 		actor_ids = regiment_usa_halftrack_artillery
 
 		[RecruitActor]
+		actor_ids = regiment_usa_halftrack_at_new
+
+		[RecruitActor]
 		actor_ids = regiment_usa_halftrack_at
 	}
 

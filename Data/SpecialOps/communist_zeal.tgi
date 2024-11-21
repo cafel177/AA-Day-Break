@@ -31,10 +31,35 @@
 				ability_type = attack
 										
 				[Effect Template=AddDamageEffect]
+				targets = infantry
 				damage_type_IDS = armor_piercing
 				amount = +3
 			}
-			
+
+			[Modifier Template=AbilityEffectModifier]
+			{
+				ability_type = attack
+
+				[Effect Template=AddDamageEffect]
+				targets = VEHICLE
+				damage_type_IDS = armor_piercing
+				amount = +5
+			}
+
+			[Modifier Template=AbilityEffectModifier]
+			{
+				ability_type = attack
+
+				[Effect Template=AddDamageEffect]
+				targets = tank
+				damage_type_IDS = armor_piercing
+				amount = +10
+			}
+
+			[Modifier Template=AddModifier]
+			attribute = DV
+			amount = +2
+
 			[Modifier Template=MultiplyModifier]
 			attribute = RECHARGE_TIME
 			amount = +0.2

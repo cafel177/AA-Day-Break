@@ -98,13 +98,25 @@
 
 		[ResearchItem]
 		{
-			property_IDS = tech_mechanized_production
+			property_IDS = tech_mechanical_reliability
 			type = GLOBAL
 			research_time = 60
 		
 			[ResearchCost Template=CostList]
 			{
 				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanized_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
 			}
 		}
 	}

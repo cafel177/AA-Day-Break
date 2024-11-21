@@ -79,7 +79,7 @@
 			[AbilityDefinition Template=AAHeavyTankGun]
 			{				
 				name = "#rus_tank_destroyer_AbilityDefinition_name"
-				recharge_time = 6
+				recharge_time = 8
 				area = 5
 				range = 40
 				max_targets = 4

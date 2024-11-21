@@ -75,6 +75,18 @@
 				money = 150
 			}
 		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
 	}
 	
 	[RecruitComponent]
