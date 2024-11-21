@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationMobile]
+[Template AAUSAOrganizationMobileAT Template=AAUSAOrganizationMobile]
 {	
-	IDS = regiment_usa_halftrack_at
 	name = "#regiment_usa_halftrack_at_name"
 	editor_name = "#regiment_usa_halftrack_at_editor_name"
 
@@ -32,7 +31,18 @@
 		[WhenCommandedAggressive Template=FXC_PlaySFX]
 		audio_ids = usa_tank_destroyer_attack
 	}		
-	
+		
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = antitank_company
+	}
+}
+
+[Thing Template = AAUSAOrganizationMobileAT]
+{
+	IDS = regiment_usa_halftrack_at
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_heavy
@@ -46,10 +56,23 @@
 		[Slot]	;; captain
 		element_IDS = usa_car_armored_co_old
 	}
-	
-	[PropertiesComponent]
+}
+
+[Thing Template = AAUSAOrganizationMobileAT]
+{
+	IDS = regiment_usa_halftrack_at_new
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		[Property]
-		property_ids = antitank_company
+		layout_IDS = regiment_vehicle_heavy
+		
+		[Slot]	;; front
+		element_IDS = usa_halftrack
+	
+		[Slot]	;; support
+		element_IDS = usa_tank_light2
+		
+		[Slot]	;; captain
+		element_IDS = usa_car_armored_co
 	}
 }

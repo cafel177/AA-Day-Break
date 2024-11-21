@@ -1,59 +1,82 @@
-[Thing Template=AAUnitGBRVehicleLightTank]
+[Thing Template=AAUnitUSAVehicleLightTank]
 {
-	;;IDS = gbr_light_tank
-	IDS = gbr_tank_light
-	name = "#gbr_tank_light_name"
-	editor_name = "#gbr_tank_light_editor_name"
+	IDS = usa_tank_light2
+	name = "#usa_tank_light_name"
+	editor_name = "#usa_tank_light_editor_name"
 
 	[BodyComponent]
 	{
-		health = 300
-		defense = 4
+		health = 400
+		defense = 6
 	}
-
-	[ElementComponent]
-
+	
 	[MoverComponent]
 	{
 		speed_max = 3.5
 		acceleration = 3
-				
+		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
-			VFX_IDS = start_exhaust_01
+			VFX_IDS = start_exhaust_02
 			location = exhaust_point_01	
 	  	}
 	  	
 	  	[WhenStartMoving template=FXC_CreateVFX]
 		{
-			VFX_IDS = start_exhaust_01
+			VFX_IDS = start_exhaust_02
 			location = exhaust_point_02	
 	  	}
+	  	
+	  	/*
+		[WhenStartMoving template=FXC_PlaySFX]
+		{
+			audio_ids = attack_usa_mg_light
+		}
+		*/
+	}
+
+	[ElementComponent]
+	{
+		required_structures = usa_motor_pool
+	}
+	
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = front
+
+		[Property]
+		property_IDS = support
+		
+		[Property]
+		property_IDS = combat_unit
 	}
 	
 	[PerformerComponent]
 	{
+
 		[Ability template=AATurretAttackLocal]
-		{			
+		{
+			
 			[AbilityDefinition Template=AALightTankGun]
 			{				
-				name = "#gbr_tank_light_AbilityDefinition_name"
-				recharge_time = 6
-				area = 2
-				range = 25
+				name = "#usa_tank_light_AbilityDefinition_name"
+				recharge_time = 7
+				area = 3
+				range = 30
 				max_targets = 4
 
 				[Flags] 
 				bombard = true
 
+				[Effect Template=APDamageEffect]
+				amount = 65
+				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
 				
-				[Effect Template=APDamageEffect]
-				amount = 40
-				
 				[WhenDo template=FXC_PlaySFX]
-				audio_ids = gbr_cannon_light
+				audio_ids = usa_cannon_light
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -61,9 +84,9 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = at_stun_gbr3
+						IDS = at_stun_usa5
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
-						duration = 1
+						duration = 2
 						enchantment_type = ench_type_stun1
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
@@ -81,15 +104,15 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = at_stun_gbr3_2
+						IDS = at_stun_usa5_2
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
-						duration = 1
+						duration = 2
 						enchantment_type = ench_type_slow
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=MultiplyModifier]
 						attribute = SPEED_MAX
-						amount = -0.15
+						amount = -0.2
 
 						[WhenAdded template=FXC_CreateVFX]
 						VFX_IDS = smoke_tint
@@ -99,29 +122,17 @@
 			}
 		}
 	}
-
-	[PropertiesComponent]
-	{
-		[Property]
-		property_IDS = front
-		
-		[Property]
-		property_IDS = support
-		
-		[Property]
-		property_IDS = combat_unit
-	}
 	
 	[View]
 	{
-		resource_prefix = GBRTankLight/GBRTankLight
+		resource_prefix = USATankLight/USATankLight
 		
 		[AspectNormal]
 		{						
 			[Animation Template=ObjectAnimationCustomPlay]
 			ids = Recoil1
 			length = 1
-			kf = GBRTankLight/GBRTankLightRecoil1.kf
+			kf = USATankLight/USATankLightRecoil1.kf
 		}
 	}
 }
