@@ -72,11 +72,11 @@
 				max_targets = 12
 	
 				[Effect Template=BlastDamageEffect]
-				amount = 50
+				amount = 40
 				
 				[Effect Template=MoraleLossEffect]
 				targets =+ENEMY -TANK
-				amount = 1
+				amount = .75
 				
 				[Flags] 
 				bombard = true
