@@ -128,6 +128,9 @@
 		actor_ids = regiment_usa_infantry_sp
 
 		[RecruitActor]
+		actor_ids = regiment_usa_halftrack_flame
+
+		[RecruitActor]
 		actor_ids = regiment_usa_infantry_assault
 
 		[RecruitActor]

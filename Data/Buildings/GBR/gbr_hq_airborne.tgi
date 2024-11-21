@@ -135,6 +135,9 @@
 		actor_ids = regiment_gbr_helichopter
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_halftrack_flame
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_sas_paratrooper
 
 		[RecruitActor]
