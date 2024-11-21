@@ -115,8 +115,8 @@ USAGE:
 	[MapSize]
 	width = 256
 	height = 256
-	recommended_kingdoms_min = 2
-	recommended_kingdoms_max = 4
+	recommended_kingdoms_min = 1
+	recommended_kingdoms_max = 2
 
 	[MapSize]
 	width = 320
@@ -153,6 +153,37 @@ USAGE:
 	height = 640
 	recommended_kingdoms_min = 6
 	recommended_kingdoms_max = 8
+
+	[MapSize]
+	width = 704
+	height = 704
+	recommended_kingdoms_min = 8
+	recommended_kingdoms_max = 10
+
+	[MapSize]
+	width = 768
+	height = 768
+	recommended_kingdoms_min = 8
+	recommended_kingdoms_max = 10
+
+	[MapSize]
+	width = 832
+	height = 832
+	recommended_kingdoms_min = 10
+	recommended_kingdoms_max = 12
+
+	[MapSize]
+	width = 896
+	height = 896
+	recommended_kingdoms_min = 10
+	recommended_kingdoms_max = 12
+
+	[MapSize]
+	width = 960
+	height = 960
+	recommended_kingdoms_min = 12
+	recommended_kingdoms_max = 16
+
 
 /*	KINGDOMS			*/
 
@@ -216,6 +247,94 @@ USAGE:
 		IDS = side08
 		name = "#template_rmc_aa_side08_name_2"
 		color = pink
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+	
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side09
+		name = "#template_rmc_aa_side09_name_2"
+		color = aqua
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side10
+		name = "#template_rmc_aa_side10_name_2"
+		color = maroon
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side11
+		name = "#template_rmc_aa_side11_name_2"
+		color = lime
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side12
+		name = "#template_rmc_aa_side12_name_2"
+		color = purple
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side13
+		name = "#template_rmc_aa_side13_name_2"
+		color = sky
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side14
+		name = "#template_rmc_aa_side14_name_2"
+		color = orange
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side15
+		name = "#template_rmc_aa_side15_name_2"
+		color = gold
+		team = null
+		playable = true
+		required = false
+		SAI_default_ids = null
+	}
+
+	[Kingdom Template=RMCKingdomMajor]
+	{
+		IDS = side16
+		name = "#template_rmc_aa_side16_name_2"
+		color = gray
 		team = null
 		playable = true
 		required = false
