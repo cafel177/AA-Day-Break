@@ -1,22 +1,23 @@
-[Template AAGEROrganizationMobileFlame Template=AAGEROrganizationMobile]
+[Thing Template=AAGEROrganizationMobile]
 {	
-	name = "#regiment_ger_halftrack_flame_name"
-	editor_name = "#regiment_ger_halftrack_flame_editor_name"
+	IDS = regiment_ger_halftrack_flame_light
+	name = "#regiment_ger_halftrack_flame_light_name"
+	editor_name = "#regiment_ger_halftrack_flame_light_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 50
 		
 		[Upkeep]
-		ammo = 10
-		oil = 10
+		ammo = 5
+		oil = 5
 	}
 
 	[View]
 	{
 		resource_prefix = /Units/GER/GERHalftrack/GERHalftrack
-		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
+		icon = /UI/Game/RegimentButtons/IconUSAInfantryFlame.png
 		banner_icon = /Organizations/Banners/Icons/IconFlame.png
 
 		[WhenCreated Template=FXC_PlaySFX]
@@ -42,11 +43,6 @@
 		[Property]
 		property_IDS = trailblazing	
 	}
-}
-
-[Thing Template=AAGEROrganizationMobileFlame]
-{
-	IDS = regiment_ger_halftrack_flame
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
@@ -56,34 +52,7 @@
 		element_IDS = ger_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = ger_halftrack_flame
-		
-		[Slot]	;; captain
-		element_IDS = ger_car_armored_co
-	}
-}
-
-[Thing Template=AAGEROrganizationMobileFlame]
-{
-	IDS = regiment_ger_halftrack_flame_tb
-
-	[LairComponent]
-	{
-		reward = 35, 35	
-	}
-
-	[Placement]
-	placement_group_ids = null
-
-	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
-	{	
-		layout_IDS = regiment_vehicle_light
-		
-		[Slot]	;; front
-		element_IDS = ger_halftrack_flame_tb
-	
-		[Slot]	;; support
-		element_IDS = ger_halftrack_flame_tb
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co

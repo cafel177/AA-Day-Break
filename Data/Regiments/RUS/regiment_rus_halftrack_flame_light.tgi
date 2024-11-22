@@ -1,22 +1,23 @@
-[Template AARUSOrganizationMobileFlame Template=AARUSOrganizationMobile]
+[Thing Template=AARUSOrganizationMobile]
 {	
-	name = "#regiment_rus_halftrack_flame_name"
-	editor_name = "#regiment_rus_halftrack_flame_editor_name"
+	IDS = regiment_rus_halftrack_flame_light
+	name = "#regiment_rus_halftrack_flame_light_name"
+	editor_name = "#regiment_rus_halftrack_flame_light_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 50
 		
 		[Upkeep]
-		ammo = 10
-		oil = 10
+		ammo = 5
+		oil = 5
 	}
 
 	[View]
 	{
 		resource_prefix = /Units/RUS/RUSHalftrack/RUSHalftrack
-		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
+		icon = /UI/Game/RegimentButtons/IconUSAInfantryFlame.png
 		banner_icon = /Organizations/Banners/Icons/IconFlame.png
 
 		[WhenCreated Template=FXC_PlaySFX]
@@ -30,9 +31,7 @@
 
 		[WhenCommandedAggressive Template=FXC_PlaySFX]
 		audio_ids = rus_tank_destroyer_attack
-	}		
-	
-
+	}			
 	
 	[PropertiesComponent]
 	{	
@@ -42,11 +41,6 @@
 		[Property]
 		property_IDS = trailblazing	
 	}
-}
-
-[Thing Template=AARUSOrganizationMobileFlame]
-{
-	IDS = regiment_rus_halftrack_flame
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
@@ -56,36 +50,10 @@
 		element_IDS = rus_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = rus_halftrack_flame
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = rus_car_armored_co
 	}
 }
 
-[Thing Template=AARUSOrganizationMobileFlame]
-{
-	IDS = regiment_rus_halftrack_flame_tb
-
-	[LairComponent]
-	{
-		reward = 35, 35	
-	}
-
-	[Placement]
-	placement_group_ids = null
-
-	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
-	{	
-		layout_IDS = regiment_vehicle_light
-		
-		[Slot]	;; front
-		element_IDS = rus_halftrack_flame_tb
-	
-		[Slot]	;; support
-		element_IDS = rus_halftrack_flame_tb
-		
-		[Slot]	;; captain
-		element_IDS = rus_car_armored_co
-	}
-}

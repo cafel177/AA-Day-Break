@@ -97,7 +97,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = gbr_motor_pool
 		required_properties = tech_flame
 	}
 

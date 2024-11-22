@@ -114,7 +114,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = usa_motor_pool
 		required_properties = tech_flame
 	}
 

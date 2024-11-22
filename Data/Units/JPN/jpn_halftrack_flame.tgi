@@ -93,7 +93,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool
 		required_properties = tech_flame
 	}
 

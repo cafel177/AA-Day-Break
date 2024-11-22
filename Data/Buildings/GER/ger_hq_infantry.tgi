@@ -133,6 +133,9 @@
 		actor_ids = regiment_ger_infantry_sp
 
 		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_flame_light
+
+		[RecruitActor]
 		actor_ids = regiment_ger_infantry_goliath
 
 		[RecruitActor]

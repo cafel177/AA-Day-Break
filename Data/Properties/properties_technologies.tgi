@@ -419,7 +419,7 @@
 	icon = PropertyIcons/IconPropertyEngineering.png
 	action_button_icon = TechIcons/IconFlameTanks.png
 	
-	required_properties = mech_armor_hq
+	required_properties = hq
 }
 
 [Property Template=AATechnology]

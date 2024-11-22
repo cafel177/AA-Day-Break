@@ -132,6 +132,9 @@
 		actor_ids = regiment_usa_helichopter
 
 		[RecruitActor]
+		actor_ids = regiment_usa_halftrack_flame_light
+
+		[RecruitActor]
 		actor_ids = usa_truck_supply
 	}
 	

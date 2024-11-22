@@ -21,8 +21,8 @@
 	}
 
 	[BodyComponent]
-	health = 500
-	defense = 2
+	health = 100
+	defense = 0
 	
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = gbr_heal_parts
@@ -45,6 +45,26 @@
 
 	}	
 	
+	[PerformerComponent]
+	{
+		 [Ability Template=AARepairLocal]
+		{
+			[AbilityDefinition Template=AARepairAction]
+			{				
+				[Effect Template=RepairEffect]
+				amount = 2000
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = flame
+					targets = SELF
+					amount = 900
+					hide_from_tooltip = true
+				}
+			}
+		}
+	}
+
 	[View]
 	{
 		resource_prefix = GBRTruck/GBRTruck

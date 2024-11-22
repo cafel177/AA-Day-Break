@@ -276,7 +276,7 @@ drp012903 - moved game-specific AVars out
 	;; these are used in map generation to allow the user to select certain
 	;; sizes of map.
 	int			MapMinimumSize = 192
-	int			MapMaximumSize = 896
+	int			MapMaximumSize = 960
 	int			MapStepSize = 64
 	;;int			KingdomsMax = 16	;; pcb062904 - now an svar
 	

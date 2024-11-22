@@ -37,14 +37,14 @@
 
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_tiny
 		control_range = 30
 		
 		[Slot]	;; front
 		element_IDS = ger_halftrack_aa
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = ger_halftrack_aa
 		
 		[Slot]	;; captain
 		element_IDS = ger_car_armored_co_aa

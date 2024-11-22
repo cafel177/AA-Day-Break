@@ -1,36 +1,36 @@
-[Thing Template=AAUSAOrganizationMobile]
+[Thing Template=AAJPNOrganizationMobile]
 {	
-	IDS = regiment_usa_halftrack_flame
-	name = "#regiment_usa_halftrack_flame_name"
-	editor_name = "#regiment_usa_halftrack_flame_editor_name"
+	IDS = regiment_jpn_halftrack_flame_light
+	name = "#regiment_jpn_halftrack_flame_light_name"
+	editor_name = "#regiment_jpn_halftrack_flame_light_editor_name"
 
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 50
 		
 		[Upkeep]
-		ammo = 10
-		oil = 10
+		ammo = 5
+		oil = 5
 	}
 
 	[View]
 	{
-		resource_prefix = /Units/USA/USAHalftrack/USAHalftrack
-		icon = /UI/Game/RegimentButtons/IconHalftrackFlame.png
+		resource_prefix = /Units/JPN/JPNHalftrack/JPNHalftrack
+		icon = /UI/Game/RegimentButtons/IconUSAInfantryFlame.png
 		banner_icon = /Organizations/Banners/Icons/IconFlame.png
 
 		[WhenCreated Template=FXC_PlaySFX]
-		audio_ids = usa_vehicle_deployed
+		audio_ids = jpn_vehicle_deployed
 
 		[WhenSelected Template=FXC_PlaySFX]
-		audio_ids = usa_tank_destroyer_select
+		audio_ids = jpn_tank_destroyer_select
 
 		[WhenCommanded Template=FXC_PlaySFX]
-		audio_ids = usa_tank_destroyer_move
+		audio_ids = jpn_tank_destroyer_move
 
 		[WhenCommandedAggressive Template=FXC_PlaySFX]
-		audio_ids = usa_tank_destroyer_attack
+		audio_ids = jpn_tank_destroyer_attack
 	}		
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
@@ -38,13 +38,13 @@
 		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = usa_halftrack_flame
+		element_IDS = jpn_halftrack_flame
 	
 		[Slot]	;; support
-		element_IDS = usa_halftrack_flame
+		element_IDS = null
 		
 		[Slot]	;; captain
-		element_IDS = usa_car_armored_co
+		element_IDS = jpn_car_armored_co
 	}
 	
 	[PropertiesComponent]
