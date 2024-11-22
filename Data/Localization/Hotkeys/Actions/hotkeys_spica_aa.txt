@@ -36,7 +36,7 @@ map e game|action|verify "ActorCommand escort_on"
 map e game|action|verify "ActorCommand escort_off"
 
 map a game|action|verify "ActorCommand kill"
-map b game|action|verify "ActorCommand bombard"
+map space game|action|verify "ActorCommand bombard"
 map g game|action|verify "ActorCommand guard"
 map i game|action|verify "ActorCommand repair"
 map b game|action|verify "ActorCommand construct"
