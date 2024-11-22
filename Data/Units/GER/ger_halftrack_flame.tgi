@@ -100,11 +100,6 @@
 {
 	IDS = ger_halftrack_flame
 
-	[ElementComponent]
-	{
-		required_structures = ger_motor_pool
-	}
-
 	[DefenderComponent]
 	{
 		control_range = 20
@@ -282,11 +277,6 @@
 	[LairComponent]
 	{
 		reward = 5, 5	
-	}
-
-	[ElementComponent]
-	{
-		required_structures = ger_motor_pool_tb
 	}
 
 	[DefenderComponent]
