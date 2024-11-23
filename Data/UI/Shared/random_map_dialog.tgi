@@ -1,8 +1,8 @@
 ;; - K2
 [Template RMCSliderWidget Inherit=/*Shared*/PanelWidget]
 {
-	string disabled_locked_texture = /UI/%s/Default/SliderBar/GripLocked.png
-	string disabled_random_texture = /UI/%s/Default/SliderBar/GripRandom.png
+	string disabled_locked_texture = /UI/%s/Default/SliderBar/GripDisabled.png
+	string disabled_random_texture = /UI/%s/Default/SliderBar/GripDisabled.png
 
 	[View]
 	{
@@ -77,8 +77,8 @@
 
 [Template EditorRMCSliderWidget Inherit=/*Shared*/PanelWidget]
 {
-	string disabled_locked_texture = /UI/%s/Default/SliderBar/GripLocked.png
-	string disabled_random_texture = /UI/%s/Default/SliderBar/GripRandom.png
+	string disabled_locked_texture = /UI/%s/Default/SliderBar/GripDisabled.png
+	string disabled_random_texture = /UI/%s/Default/SliderBar/GripDisabled.png
 
 	[View]
 	{
@@ -162,7 +162,36 @@
 	}
 }
 
+[Template RMCObjectSliderWidget Template=RMCSliderWidget]
+{
+	[RangeSlider]
+	{
+		show_minmax = true
+		show_current_val = true
+		
+		[CurrentValueLabel]
+		{
+			[View Template = GroupVE]
+			{
+				L = 31r
+				T = 2
+				R = +39
+				B = +15
 
+				[Child Template = DecalVE]
+				{
+					texture = /UI/Default/SliderBar/TileEnds.png
+				}
+			}
+
+			[Label]
+			{
+				L = 7
+				T = 1
+			}
+		}
+	}
+}
 
 [Template RMCDropDownWidget Inherit=PanelWidget]
 {
@@ -222,7 +251,7 @@
 			}	
 		}
 		
-		[ObjectSlider Template=RMCSliderWidget]
+		[ObjectSlider Template=RMCObjectSliderWidget]
 		{
 			[View Template = NoVE]
 			{
@@ -376,7 +405,7 @@
 			L = 56
 			T = 300
 			R = +444
-			B = +350
+			B = +250
 			
 			;; cwp040804 - children no longer being defined in template, so must be defined here
 			[Child Template = GameListboxGroupVE]
@@ -430,7 +459,7 @@
 		{
 			[Listbox]
 			{
-				num_visible_items = 8
+				num_visible_items = 20
 			}
 			
 			[View]
@@ -469,7 +498,7 @@
 		{
 			[Listbox]
 			{
-				num_visible_items = 9
+				num_visible_items = 20
 				
 				[ItemLook]
 				{
@@ -516,21 +545,13 @@
 	
 	[ObjectsSlidersPanel Inherit = SharedSmallPanelWidget]
 	{
-		vislble = false
 		
 		[View]
 		{
-			/*
-			L = 542
-			T = 345
-			R = +424
-			B = +137
-			*/
-			
-			L = 0
-			T = 0
-			R = 0
-			B = 0
+			L = 56
+			T = 555
+			R = +444
+			B = +155
 			
 			;; cwp040804 - children no longer being defined in template, so must be defined here
 			[Child Template = GameListboxGroupVE]
@@ -765,18 +786,15 @@
 			text = "#random_map_dialog_Child_text_3"
 		}
 		
-		;; cwp091504 - no longer showing the object panel since they don't exist in AA.
-		/*
 		[Child Template = SharedSmallLeftLabelVE]
 		{
-			L = 542
-			T = 323
-			R = +424
+			L = 57
+			T = 715
+			R = +444
 			B = +20
 			
 			text = "#random_map_dialog_Child_text_4"
 		}
-		*/
 		
 		[Child Template = SharedSmallLeftLabelVE]
 		{
@@ -979,7 +997,7 @@
 		{
 			[Listbox]
 			{
-				num_visible_items = 8
+				num_visible_items = 20
 			}
 			
 			[View]
@@ -1018,7 +1036,7 @@
 		{
 			[Listbox]
 			{
-				num_visible_items = 8
+				num_visible_items = 20
 			}
 			
 			[View]

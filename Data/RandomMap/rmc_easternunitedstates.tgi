@@ -61,7 +61,7 @@
 	[ActorGroup Template=RMCVillageActorGroups]
 	{
 		ids = washington
-		name = "Washington, D.C."
+		name = "#mg_rmc_easternunitedstates_washington_name"
 
 		range = 1,1
 		area_factor = 1.00
@@ -75,7 +75,7 @@
 	[ActorGroup Template=RMCVillageActorGroups]
 	{
 		ids = village_easternunitedstates
-		name = "#Villages"
+		name = "#mg_rmc_easternunitedstates_village_easternunitedstates_name"
 
 		balanced_placement = false
 	    	area_factor = 3
