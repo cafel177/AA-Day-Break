@@ -39,7 +39,7 @@
 	}
 
 	[BodyComponent]
-	health = 200
+	health = 225
 	defense = 1
 
 	[CharacterComponent Template=AAInfantryCharacterComponent]
