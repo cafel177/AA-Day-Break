@@ -55,7 +55,7 @@
 	
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocalBomb]
+		[Ability Template=AAGunLocal]
 		{
 			use_bonus = 110
 			spawn_bone_ids = gun_ae_01
@@ -72,9 +72,6 @@
 				max_targets = 3
 				attenuation_range_min = 1
 				attenuation_factor_max = 0.2
-
-				[Flags] 
-				bombard = true
 
 				[Effect Template=BlastDamageEffect]
 				amount = 30
