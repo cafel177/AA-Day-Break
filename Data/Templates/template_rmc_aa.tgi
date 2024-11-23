@@ -357,9 +357,9 @@ USAGE:
 [Template RMCVillageActorGroups Template=RMCActorGroup]
 {
 	kingdom_ids = side_enemy
-	show_ui = false
+	show_ui = true
 
-	range = 4,5
+	range = 0,5
 	area_factor = 1.75
 
 	balanced_placement = true
@@ -449,7 +449,7 @@ USAGE:
 	name = "#template_rmc_aa_start_bunkers_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = hard
 
 	range = 1,1
@@ -487,7 +487,7 @@ USAGE:
 	name = "#template_rmc_aa_start_antiair_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = medium
 
 	range = 1,1
@@ -519,7 +519,7 @@ USAGE:
 	name = "#template_rmc_aa_start_artillery_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = easy
 
 	range = 1,1
@@ -557,7 +557,7 @@ USAGE:
 	name = "#template_rmc_aa_start_money_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = easy
 
 	range = 1,1
@@ -587,7 +587,7 @@ USAGE:
 	name = "#template_rmc_aa_start_money_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = medium
 
 	range = 1,1
@@ -617,7 +617,7 @@ USAGE:
 	name = "#template_rmc_aa_start_money_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = hard
 
 	range = 1,1
@@ -647,7 +647,7 @@ USAGE:
 	name = "#template_rmc_aa_start_infinite_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = infinite
 
 	range = 1,1
@@ -677,7 +677,7 @@ USAGE:
 	name = "#template_rmc_aa_start_marine_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = infinite
 
 	range = 1,1
@@ -707,7 +707,7 @@ USAGE:
 	name = "#template_rmc_aa_start_nuclear_name"
 
 	kingdom_ids = null
-	show_ui = true
+	show_ui = false
 	difficulty_level = nuclear_weapon
 
 	range = 1,1

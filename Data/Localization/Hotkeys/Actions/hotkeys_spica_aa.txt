@@ -36,7 +36,7 @@ map e game|action|verify "ActorCommand escort_on"
 map e game|action|verify "ActorCommand escort_off"
 
 map a game|action|verify "ActorCommand kill"
-map b game|action|verify "ActorCommand bombard"
+map space game|action|verify "ActorCommand bombard"
 map g game|action|verify "ActorCommand guard"
 map i game|action|verify "ActorCommand repair"
 map b game|action|verify "ActorCommand construct"
@@ -233,6 +233,7 @@ map r game|action|verify "ActorDataSelectCommand regiment_gbr_infantry_artillery
 map t game|action|verify "ActorDataSelectCommand regiment_gbr_infantry_at"
 map e game|action|verify "ActorDataSelectCommand regiment_gbr_engineer"
 map v game|action|verify "ActorDataSelectCommand regiment_gbr_infantry_heavy"
+map q game|action|verify "ActorDataSelectCommand regiment_gbr_halftrack_flame_light"
 
 # Airborne HQ
 map a game|action|verify "ActorDataSelectCommand regiment_gbr_paratrooper_ground"
@@ -321,6 +322,7 @@ map a game|action|verify "ActorDataSelectCommand regiment_ger_infantry_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_ger_infantry_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_ger_infantry_at" 
 map g game|action|verify "ActorDataSelectCommand regiment_ger_goliath" 
+map q game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_flame_light"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_ger_halftrack_new"
@@ -410,6 +412,7 @@ map r game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_artillery
 map t game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_at"
 map b game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_banzai"
 map d game|action|verify "ActorDataSelectCommand regiment_jpn_infantry_commando"
+map q game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack_flame_light"
 
 # Halftrack HQ
 map f game|action|verify "ActorDataSelectCommand regiment_jpn_halftrack"
@@ -498,6 +501,7 @@ map a game|action|verify "ActorDataSelectCommand regiment_rus_infantry_aa"
 map r game|action|verify "ActorDataSelectCommand regiment_rus_infantry_artillery"
 map t game|action|verify "ActorDataSelectCommand regiment_rus_infantry_at"
 map d game|action|verify "ActorDataSelectCommand regiment_rus_infantry_sniper"
+map q game|action|verify "ActorDataSelectCommand regiment_rus_halftrack_flame_light"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_rus_halftrack"
@@ -588,6 +592,7 @@ map t game|action|verify "ActorDataSelectCommand regiment_usa_infantry_at"
 map v game|action|verify "ActorDataSelectCommand regiment_usa_infantry_flame"
 map i game|action|verify "ActorDataSelectCommand regiment_usa_infantry_armored"
 map a game|action|verify "ActorDataSelectCommand regiment_usa_infantry_assault"
+map q game|action|verify "ActorDataSelectCommand regiment_usa_halftrack_flame_light"
 
 # Mechanized HQ
 map f game|action|verify "ActorDataSelectCommand regiment_usa_halftrack"
