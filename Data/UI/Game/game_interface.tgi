@@ -283,12 +283,12 @@
 
 	[TutorialWidget]
  	{
- 		command = ActorDataSelectCommand regiment_usa_infantry_amphib
+ 		command = ActorDataSelectCommand regiment_usa_infantry_amphib_sp
  	}
  
  	[TutorialWidget]
  	{
- 		command = ActorDataSelectCommand regiment_rus_infantry_amphib
+ 		command = ActorDataSelectCommand regiment_rus_infantry_amphib_sp
  	}
 
 	[TutorialWidget]
@@ -302,7 +302,7 @@
  	}
 	[TutorialWidget]
  	{
- 		command = ActorDataSelectCommand regiment_rus_infantry
+ 		command = ActorDataSelectCommand regiment_rus_infantry_sp
  	}
  
  	[TutorialWidget]
@@ -322,7 +322,7 @@
  
  	[TutorialWidget]
  	{
- 		command = ActorDataSelectCommand usa_truck_supply
+ 		command = ActorDataSelectCommand usa_truck_supply_large
  	}
  
   	[TutorialWidget]
