@@ -225,6 +225,11 @@
 
 			[SpecificRecruitRequest]
 			{
+				property_ids				= corpshq 
+			}	
+
+			[SpecificRecruitRequest]
+			{
 				property_ids				= infhq  
 				hq_type_not_available_bonus			= 1000
 				repeat_penalty				= 1500

@@ -208,6 +208,11 @@
 
 			[SpecificRecruitRequest]
 			{
+				property_ids				= corpshq 
+			}	
+
+			[SpecificRecruitRequest]
+			{
 				property_ids				=  infhq
 				one_time_bonus				= 200
 			}
