@@ -100,7 +100,7 @@
 				{
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = gbr_buff_all2
+						IDS = gbr_buff_all3
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type = ench_type_generic
@@ -151,7 +151,7 @@
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
-						IDS = gbr_buff_artillery2
+						IDS = gbr_buff_artillery3
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
 						duration = 20
 						enchantment_type =ench_type_generic
@@ -204,6 +204,131 @@
 
 	[PerformerComponent]
 	{
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{				
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 30
+				recharge_time = 4
+				area = 6
+				max_targets = 15			
+				
+				[Effect Template=FireDamageEffect]
+				amount = 10
+
+				[Flags]
+				spell = true
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = gbr_buff_all4
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type = ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -0.75
+
+						[Modifier Template=MultiplyModifier]
+						attribute = MORALE_RECOVERY_RATE
+						amount = -0.75
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +artillery -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = gbr_buff_artillery4
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type =ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png
+			
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 30
+
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = ATTACK_EFFICIENCY_ACTUAL
+						amount = -0.75
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+			}
+		}
+
 		[Ability template=AATurretAttackLocal]
 		{
 			[AbilityDefinition Template=AAVehicleFlame]

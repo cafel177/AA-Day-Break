@@ -235,57 +235,6 @@
 		[Ability template=AATurretAttackLocal]
 		{
 			[AbilityDefinition Template=AAVehicleFlame]
-			{				
-				name = "#gbr_tank_flame_AbilityDefinition_name"
-				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				ability_type = null
-				range = 0.5
-				recharge_time = 50		
-				targets = +ENEMY +building
-
-				[Effect Template=FireDamageEffect]
-				amount = 50
-
-				[Effect Template=StealResourcesEffect]
-				{
-					[ResourcesAmount]
-					money = 25
-				}
-
-				[Effect Template=AddDamageEffect]
-				{
-					damage_type_ids = flame
-					targets = SELF
-					amount = 900
-					hide_from_tooltip = true
-				}
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = gbr_flame_tank
-			}
-		}
-	}
-}
-
-[Thing Template=RUSHalftrackFlame]
-{
-	IDS = rus_halftrack_flame_tb
-
-	[Placement]
-	placement_group_ids = null
-
-	[LairComponent]
-	{
-		reward = 5, 5	
-	}
-
-	[DefenderComponent]
-	{
-		control_range = 20
-		
-		[Ability template=AATurretAttackLocal]
-		{
-			[AbilityDefinition Template=AAVehicleFlame]
 			{	
 				name = "#gbr_tank_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
@@ -297,8 +246,6 @@
 				[Effect Template=FireDamageEffect]
 				amount = 5
 
-				[Flags]
-				spell = true
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_flame_tank
@@ -366,7 +313,182 @@
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 25
+						amount = 15
+
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = ATTACK_EFFICIENCY_ACTUAL
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+			}
+		}
+
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{				
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				ability_type = null
+				range = 0.5
+				recharge_time = 50		
+				targets = +ENEMY +building
+
+				[Effect Template=FireDamageEffect]
+				amount = 50
+
+				[Effect Template=StealResourcesEffect]
+				{
+					[ResourcesAmount]
+					money = 20
+				}
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = flame
+					targets = SELF
+					amount = 900
+					hide_from_tooltip = true
+				}
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+			}
+		}
+	}
+}
+
+[Thing Template=RUSHalftrackFlame]
+{
+	IDS = rus_halftrack_flame_tb
+
+	[Placement]
+	placement_group_ids = null
+
+	[LairComponent]
+	{
+		reward = 5, 5	
+	}
+	[DefenderComponent]
+	{
+		control_range = 20
+		
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{	
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 20
+				recharge_time = 4
+				area = 6
+				max_targets = 15				
+				
+				[Effect Template=FireDamageEffect]
+				amount = 5
+
+				[Flags]
+				spell = true
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_buff_all3
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type = ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -0.5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = MORALE_RECOVERY_RATE
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +artillery -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_buff_artillery3
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type =ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png
+			
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 15
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
@@ -408,4 +530,164 @@
 			}
 		}
 	}
+
+	[PerformerComponent]
+	{
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{	
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				range = 20
+				recharge_time = 4
+				area = 6
+				max_targets = 15				
+				
+				[Effect Template=FireDamageEffect]
+				amount = 5
+
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+
+				[Effect Template=EnchantmentEffect]
+				{
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_buff_all4
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type = ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
+
+						[Modifier Template=MultiplyModifier]
+						attribute = RESUPPLY_RATE
+						amount = -0.5
+
+						[Modifier Template=MultiplyModifier]
+						attribute = MORALE_RECOVERY_RATE
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +artillery -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = rus_buff_artillery4
+						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
+						duration = 20
+						enchantment_type =ench_type_generic
+						icon = /Properties/PropertyIcons/IconPropertyHealth.png
+			
+						[Modifier template=PeriodicDamageModifier]
+						damage_type = flame
+						amount = 15
+
+						[Modifier template=TerrainSpeedModifier]
+						amount = 2
+
+						[Modifier Template=MultiplyModifier]
+						attribute = ATTACK_EFFICIENCY_ACTUAL
+						amount = -0.5
+
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_radiation
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +tank
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_large
+							target_flags = +vehicle
+							location = position
+							attached = true
+						}
+			
+						[WhenAdded Template=FXC_CreateVFX]
+						{
+							VFX_IDS = atomic_sparks_small
+							target_flags = +infantry
+							location = position
+							attached = true
+						}
+					}
+				}
+			}
+		}
+
+		[Ability template=AATurretAttackLocal]
+		{
+			[AbilityDefinition Template=AAVehicleFlame]
+			{				
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				ability_type = null
+				range = 0.5
+				recharge_time = 50		
+				targets = +ENEMY +building
+
+				[Effect Template=FireDamageEffect]
+				amount = 50
+
+				[Effect Template=StealResourcesEffect]
+				{
+					[ResourcesAmount]
+					money = 20
+				}
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = flame
+					targets = SELF
+					amount = 900
+					hide_from_tooltip = true
+				}
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+			}
+		}
+	}
+
 }
