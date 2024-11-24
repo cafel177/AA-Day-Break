@@ -12,7 +12,7 @@
 
 	[BodyComponent]
 	{
-		health = 1000
+		health = 1500
 		defense = 5
 	}
 	
@@ -43,7 +43,7 @@
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .25
+				amount = .5
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -105,7 +105,7 @@
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .25
+				amount = .5
 
 				[Effect Template=EnchantmentEffect]
 				{
