@@ -57,7 +57,7 @@
 				amount = 70
 
 				[Effect Template=BlastDamageEffect]
-				amount = 75
+				amount = 65
 
 				[Effect Template=MoraleLossEffect]
 				amount = 1.5

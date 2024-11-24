@@ -67,8 +67,8 @@
 				name = "#ger_halftrack_artillery_AbilityDefinition_name"
 				range = 50
 				recharge_time = 9
-				area = 5
-				max_targets = 12
+				area = 4
+				max_targets = 10
 	
 				[Effect Template=BlastDamageEffect]
 				amount = 40

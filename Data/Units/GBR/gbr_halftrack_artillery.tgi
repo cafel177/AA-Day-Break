@@ -67,9 +67,9 @@
 			{
 				name = "#gbr_halftrack_artillery_AbilityDefinition_name"
 				range = 50
-				area = 5
+				area = 4
 				recharge_time = 9
-				max_targets = 12
+				max_targets = 10
 	
 				[Effect Template=BlastDamageEffect]
 				amount = 40

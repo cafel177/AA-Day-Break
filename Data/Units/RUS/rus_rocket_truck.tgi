@@ -14,7 +14,7 @@
 	reload_time = 0.0
 									
 	[Effect Template=BlastDamageEffect]
-	amount = 20
+	amount = 15
 
 	[Effect Template=MoraleLossEffect]
 	amount = 0.25
