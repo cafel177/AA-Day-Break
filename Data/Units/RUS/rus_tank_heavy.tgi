@@ -56,7 +56,7 @@
 			{				
 				name = "#rus_tank_heavy_AbilityDefinition_name"
 				recharge_time = 6
-				area = 3
+				area = 2
 				range = 30
 				max_targets = 4
 

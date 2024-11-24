@@ -79,18 +79,18 @@
 			[AbilityDefinition Template=AAHeavyTankGun]
 			{				
 				name = "#rus_tank_destroyer_AbilityDefinition_name"
-				recharge_time = 8
-				area = 5
+				recharge_time = 9
+				area = 2
 				range = 40
-				max_targets = 4
+				max_targets = 3
 				attenuation_range_min = 1
-				attenuation_factor_max = 0.1
+				attenuation_factor_max = 0.01
 
 				[Flags] 
 				bombard = true
 				
 				[Effect Template=APDamageEffect]
-				amount = 100
+				amount = 80
 
 				[Effect Template=EnchantmentEffect]
 				{
