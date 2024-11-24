@@ -2,6 +2,7 @@
 {
 	name = "#regiment_ger_hq_armor_name"
 	editor_name = "#regiment_ger_hq_armor_editor_name"
+	description = "#hq_Thing_description"
 
 	[EconomyComponent]
 	

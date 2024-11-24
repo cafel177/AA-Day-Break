@@ -3,7 +3,8 @@
 	IDS = regiment_rus_hq_airborne_unpacked
 	name = "#regiment_rus_hq_airborne_unpacked_name"
 	editor_name = "#regiment_rus_hq_airborne_unpacked_editor_name"
-	
+	description = "#hq_Thing_description"
+
 	[EconomyComponent]
 
 	[HQComponent]
