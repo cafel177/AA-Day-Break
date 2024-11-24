@@ -3,7 +3,8 @@
 	IDS = ger_bunker_artillery
 	name = "#ger_bunker_artillery_Thing_name"
 	editor_name = "#ger_bunker_artillery_Thing_editor_name"
-	
+	description = "#bunker_Thing_description"
+
 	[LairComponent]
 	{
 		reward = 30, 40	

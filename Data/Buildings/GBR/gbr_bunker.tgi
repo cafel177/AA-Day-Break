@@ -3,6 +3,7 @@
 	IDS = gbr_bunker
 	name = "#gbr_bunker_Thing_name"
 	editor_name = "#gbr_bunker_Thing_editor_name"
+	description = "#bunker_Thing_description"
 
 	[LairComponent]
 	{

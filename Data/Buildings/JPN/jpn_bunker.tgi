@@ -3,6 +3,7 @@
 	IDS = jpn_bunker
 	name = "#jpn_bunker_Thing_name"
 	editor_name = "#jpn_bunker_Thing_editor_name"
+	description = "#bunker_Thing_description"
 
 	[LairComponent]
 	{
