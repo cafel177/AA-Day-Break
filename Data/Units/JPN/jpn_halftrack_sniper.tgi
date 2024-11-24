@@ -69,7 +69,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
 				targets = infantry
-				amount = 400
+				amount = 300
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_mg_heavy
