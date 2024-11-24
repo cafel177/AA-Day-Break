@@ -52,6 +52,9 @@
 		
 		[Property]
 		property_IDS = combat_unit
+
+		[Property]
+		property_ids = armor_plating
 	}
 	
 	[PerformerComponent]
