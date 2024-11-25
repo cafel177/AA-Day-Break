@@ -59,7 +59,7 @@
 				range = 5
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
+				amount = 8
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_mg_heavy
