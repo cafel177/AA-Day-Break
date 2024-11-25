@@ -43,7 +43,7 @@
 		element_IDS = usa_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_infantry_mg
+		element_IDS = usa_infantry
 	
 		[Slot]	;; flank
 		element_IDS = usa_infantry

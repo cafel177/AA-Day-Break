@@ -5,8 +5,13 @@
 
 	[BodyComponent]
 	{
-		health = 350
+		health = 325
 		defense = 3
+	}
+
+	[ElementComponent]
+	{
+		morale_value = 5
 	}
 
 	[MoverComponent]
@@ -15,8 +20,6 @@
 		acceleration = 3.5
 		turn_radius = 1.5
 	}
-
-	[ElementComponent]
 	
 	[PropertiesComponent]
 	{
