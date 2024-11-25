@@ -3,6 +3,7 @@
 	IDS = gbr_nuclear_building
 	name = "#gbr_nuclear_building_name"
 	editor_name = "#gbr_nuclear_building_editor_name"
+	description = "#nuclear_Thing_description"
 
 	[Flags]
 	{
@@ -10,6 +11,11 @@
         		revealed = true
 	}
 
+	[MobileDeploymentComponent]
+	{
+		pack_health_min = 1
+	}
+    
 	[BodyComponent]
 	{
 		health = 4000

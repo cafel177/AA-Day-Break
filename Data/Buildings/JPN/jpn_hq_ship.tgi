@@ -3,6 +3,7 @@
 	IDS = jpn_hq_ship
 	name = "#jpn_hq_ship_Thing_name"
 	editor_name = "#jpn_hq_ship_Thing_editor_name"
+	description = "#hq_ship_Thing_description"
 
 	[LairComponent]
 	{
