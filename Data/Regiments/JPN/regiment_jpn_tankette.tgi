@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 90
 		
 		[Upkeep]
 		ammo = 10
@@ -35,7 +35,7 @@
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_tiny
 		
 		[Slot]	;; front
 		element_IDS = jpn_tankette

@@ -33,7 +33,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = jpn_motor_pool	
+
 	}
 	
 	[PropertiesComponent]
