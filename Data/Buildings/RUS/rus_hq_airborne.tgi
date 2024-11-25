@@ -125,6 +125,12 @@
 		actor_ids = regiment_rus_paratrooper_heavy
 
 		[RecruitActor]
+		actor_ids = regiment_rus_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_rus_paratrooper_heavy2
+
+		[RecruitActor]
 		actor_ids = regiment_rus_paratrooper_ground
 
 		[RecruitActor]

@@ -63,7 +63,30 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 175
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AARUSRegimentParatrooper]
+{
+	IDS = regiment_rus_paratrooper_heavy2
+    name = "#regiment_rus_paratrooper_heavy_AARUSRegimentParatrooper_name2"
+	
+	transport_actor = rus_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 215
 	}
 
 	[Placement]

@@ -123,6 +123,12 @@
 		actor_ids = regiment_gbr_paratrooper_heavy
 
 		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy2
+
+		[RecruitActor]
 		actor_ids = regiment_gbr_paratrooper_ground
 
 		[RecruitActor]
@@ -139,6 +145,9 @@
 
 		[RecruitActor]
 		actor_ids = regiment_gbr_sas_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_sas_paratrooper2
 
 		[RecruitActor]
 		actor_ids = gbr_truck_supply

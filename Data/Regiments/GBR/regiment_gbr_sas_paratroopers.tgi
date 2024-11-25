@@ -63,7 +63,33 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 135
+		money = 160
+	}
+
+	[OrganizationComponent]
+	recruit_time = 6
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AAGBRRegimentCommando]
+{
+	IDS = regiment_gbr_sas_paratrooper2
+	name = "#sas_paratroopers_name2"
+
+	transport_actor = gbr_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
 	}
 
 	[OrganizationComponent]
