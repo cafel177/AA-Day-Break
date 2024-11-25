@@ -47,7 +47,7 @@
 		element_IDS = rus_conscript
 	
 		[Slot]	;; flank
-		element_IDS = rus_conscript
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = rus_infantry_co
