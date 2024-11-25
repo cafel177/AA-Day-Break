@@ -32,16 +32,16 @@
 	name = "#rus_bunker_Thing_name"
 	editor_name = "#rus_bunker_Thing_editor_name"
 	description = "#bunker_Thing_description"
-
+/*
 	[LairComponent]
 	{
 		reward = 15, 25	
 	}
-
+*/
 	[BodyComponent]
 	{
 		health = 1500
-		defense = 5
+		defense = 8
 	}
 	
 	[ElementComponent]
@@ -197,6 +197,8 @@
 	{
 		packing_length = 3
 		unpacking_length = 3
+
+        pack_health_min = 1
 	}
 	
 	[PropertiesComponent]
@@ -212,6 +214,9 @@
 
 		[Property]
 		property_IDS = military_building
+        
+		[Property]
+		property_IDS = bunker_fix    
 	}
 	
 	[Size]

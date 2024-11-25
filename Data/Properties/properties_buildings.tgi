@@ -23,6 +23,30 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = building_fix
+	name = "#properties_buildings_building_upgrade_name"
+	icon = PropertyIcons/IconPropertyHealth.png
+
+	required_properties = bunker
+
+	[Modifier template=PeriodicHealModifier]
+	amount = 25
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = bunker_fix
+	name = "#properties_buildings_building_upgrade_name"
+	icon = PropertyIcons/IconPropertyHealth.png
+
+	required_properties = bunker
+
+	[Modifier template=PeriodicHealModifier]
+	amount = 10
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = city_building_repair
 	name = "#properties_buildings_city_building_repair_name"
 	icon = PropertyIcons/IconPropertyHealth.png

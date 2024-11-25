@@ -4,15 +4,15 @@
 	name = "#usa_bunker_artillery_Thing_name"
 	editor_name = "#usa_bunker_artillery_Thing_editor_name"
 	description = "#bunker_Thing_description"
-
+/*
 	[LairComponent]
 	{
 		reward = 30, 40	
 	}
-
+*/
 	[BodyComponent]
 	{
-		health = 1500
+		health = 1250
 		defense = 15
 	}
 
@@ -24,7 +24,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 50
+		control_range = 45
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -33,8 +33,8 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#usa_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 5
-				range = 50
+				recharge_time = 7
+				range = 45
 				area = 6
 				max_targets = 15
 
@@ -42,7 +42,6 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
 				amount = 2
 
 				[Effect Template=AddDamageEffect]
@@ -119,8 +118,8 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#usa_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 5
-				range = 50
+				recharge_time = 7
+				range = 45
 				area = 6
 				max_targets = 15
 
@@ -131,7 +130,6 @@
 				bombard = true
 
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
 				amount = 2
 
 				[Effect Template=AddDamageEffect]
@@ -215,22 +213,27 @@
 	{
 		packing_length = 5
 		unpacking_length = 5
-	}
 
+        pack_health_min = 1
+	}
+	
 	[PropertiesComponent]
-	{	
+	{		
 		[Property]
 		property_IDS = bunker
+	
+		[Property]
+		property_IDS = artillery		
 
 		[Property]
-		property_ids = artillery
+		property_IDS = property_bunker_artillery
 
 		[Property]
-		property_IDS = property_bunker_artillery		
+		property_IDS = military_building
 
-		[Property]
-		property_ids = military_building
-	}
+        [Property]
+		property_IDS = bunker_fix    
+	}	
 		
 	[Size]
 	{
