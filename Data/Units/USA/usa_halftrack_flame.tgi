@@ -114,6 +114,8 @@
 
 	[ElementComponent]
 	{
+		morale_value = 15
+
 		required_properties = tech_flame
 	}
 
@@ -149,7 +151,7 @@
 					{
 						IDS = usa_buff_all
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type = ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
 
@@ -200,13 +202,13 @@
 					{
 						IDS = usa_buff_artillery
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type =ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 25
+						amount = 50
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
@@ -311,7 +313,7 @@
 					{
 						IDS = usa_buff_all2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type = ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
 
@@ -362,13 +364,13 @@
 					{
 						IDS = usa_buff_artillery2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type =ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 25
+						amount = 50
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
