@@ -90,18 +90,7 @@
 	}
 
 	[PerformerComponent]
-	{
-		[Ability Template=AARepairLocal]
-		{	
-			[AbilityDefinition Template=AARepairAction]
-			{
-				recharge_time = 1
-
-				[Effect Template=RepairEffect]
-				amount = 3
-			}
-		}
-		
+	{		
 		[Ability Template=AAConstructLocal]
 		{
 			[AbilityDefinition Template=AAConstructAction]
