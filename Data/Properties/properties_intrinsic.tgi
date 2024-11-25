@@ -731,3 +731,15 @@
 	name = "#properties_technologies_tech_battleship_name"
 	icon = null
 }
+
+[Property Template=SharedProperty]
+{
+	IDS = conscript
+	name = "#properties_technologies_tech_ger_conscript_name"
+	icon = PropertyIcons/IconPropertyEconomic.png
+	action_button_icon = TechIcons/IconConscription.png	
+	
+	[Modifier template=MultiplyModifier]
+	attribute = MORALE_RECOVERY_RATE
+	amount = 5
+}
