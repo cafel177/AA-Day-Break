@@ -28,7 +28,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 112
+		money = 106
 		
 		[Upkeep]
 		building_limit_consumed = 1
