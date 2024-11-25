@@ -205,7 +205,6 @@
 	{
 		packing_length = 5
 		unpacking_length = 5
-		pack_health_min = 1
 	}
 
 	[EconomyComponent]
