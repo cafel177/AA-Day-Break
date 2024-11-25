@@ -215,6 +215,8 @@
 
         [Ability Template=AARepairLocal]
 		{	
+			animation1 = build1
+
 			[AbilityDefinition Template=AARepairAction]
 			{
 				[Effect Template=RepairEffect]

@@ -5,10 +5,11 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 50
+		money = 65
 		
 		[Upkeep]
-		ammo = 10
+		ammo = 5
+		oil = 5
 	}
 
 	[View]
@@ -56,7 +57,7 @@
 		element_IDS = usa_infantry_def
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_infantry_def
+		element_IDS = usa_infantry_recon
 	
 		[Slot]	;; flank
 		element_IDS = usa_infantry_mg
