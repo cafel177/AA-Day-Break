@@ -71,7 +71,7 @@
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .35
+				amount = .2
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -134,7 +134,7 @@
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .35
+				amount = .2
 
 				[Effect Template=EnchantmentEffect]
 				{
