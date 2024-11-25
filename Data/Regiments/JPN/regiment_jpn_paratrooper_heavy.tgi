@@ -81,7 +81,7 @@
 
 [Thing Template=AAJPNRegimentParatrooperHeavy]
 {
-	IDS = regiment_jpn_paratrooper_heavy
+	IDS = regiment_jpn_paratrooper_heavy2
     name = "#regiment_jpn_paratrooper_heavy_AAJPNRegimentParatrooperHeavy_name2"
 	
 	transport_actor = jpn_transport_air
