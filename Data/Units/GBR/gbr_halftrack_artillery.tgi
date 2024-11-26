@@ -69,7 +69,7 @@
 				range = 50
 				area = 4
 				recharge_time = 9
-				max_targets = 10
+				max_targets = 8
 	
 				[Effect Template=BlastDamageEffect]
 				amount = 40
@@ -82,9 +82,9 @@
 				bombard = true
 				
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
-				amount = 60
+				amount = 50
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_artillery_light

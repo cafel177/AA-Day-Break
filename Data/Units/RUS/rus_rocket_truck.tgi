@@ -14,15 +14,15 @@
 	reload_time = 0.0
 									
 	[Effect Template=BlastDamageEffect]
-	amount = 15
+	amount = 20
 
 	[Effect Template=MoraleLossEffect]
 	amount = 0.25
 	
 	[Effect Template=AddDamageEffect]
-	damage_type_IDS = explosive
+	damage_type_IDS = flame
 	targets = building
-	amount = 15
+	amount = 10
 
 	[WhenDo template=FXC_PlaySFX]
 	audio_ids = rus_rocket_truck
