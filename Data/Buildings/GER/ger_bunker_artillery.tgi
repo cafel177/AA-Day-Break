@@ -17,7 +17,7 @@
 
 	[BodyComponent]
 	{
-		health = 1250
+		health = 2000
 		defense = 15
 	}
 
@@ -29,7 +29,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 40
+		control_range = 35
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -39,7 +39,7 @@
 			{
 				name = "#ger_bunker_artillery_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 7
-				range = 40
+				range = 35
 				area = 6
 				max_targets = 15
 
@@ -52,7 +52,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
-				amount = 50
+				amount = 60
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -124,7 +124,7 @@
 			{
 				name = "#ger_bunker_artillery_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 7
-				range = 45
+				range = 35
 				area = 6
 				max_targets = 15
 
@@ -140,7 +140,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
-				amount = 50
+				amount = 60
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -201,7 +201,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 125
+		money = 175
 		
 		[Production]
 		

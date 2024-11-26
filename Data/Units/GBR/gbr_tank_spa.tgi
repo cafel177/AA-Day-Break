@@ -85,7 +85,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = flame
 				targets = building
-				amount = 50
+				amount = 60
 
 				[Effect Template=BlastDamageEffect]
 				amount = 55

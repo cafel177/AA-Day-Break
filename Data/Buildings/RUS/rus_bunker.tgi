@@ -51,7 +51,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 25
+		control_range = 22
 	
 		[Ability Template=AAAttackLocal]
 		{
@@ -64,7 +64,7 @@
 				max_targets = 10
 				
 				recharge_time = 2
-				range = 25
+				range = 22
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 20	
@@ -127,7 +127,7 @@
 				max_targets = 10
 				
 				recharge_time = 2
-				range = 25
+				range = 22
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 20	

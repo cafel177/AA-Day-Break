@@ -53,7 +53,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = flame
 				targets = building
-				amount = 50
+				amount = 60
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = rus_artillery_heavy
