@@ -203,6 +203,20 @@
 	name					= "#Scoring_nuclear_limit_consumption_stat_name"
 	resource_ids			= nuclear_limit_consumed
 }
+
+[Statistic template = ResourceProductionStatistic]
+{
+	ids						= heal_parts_limit_production_stat
+	name					= "#Scoring_heal_parts_limit_production_stat_name"
+	resource_ids			= heal_parts_limit_provided
+}
+
+[Statistic template = ResourceProductionStatistic]
+{
+	ids						= heal_parts_limit_consumption_stat
+	name					= "#Scoring_heal_parts_limit_consumption_stat_name"
+	resource_ids			= heal_parts_limit_consumed
+}
 ;;---------------------------------------------------------------------------------------------
 ;;
 ;; Resource Rates - must include every resource in order and go after production but before scores
@@ -270,6 +284,20 @@
 	ids						= nuclear_limit_consumption
 	name					= "#Scoring_nuclear_limit_consumption_name"
 	resource_ids			= nuclear_limit_consumed
+}
+
+[Statistic template = ResourceRateStatistic]
+{
+	ids						= heal_parts_limit_production
+	name					= "#Scoring_heal_parts_limit_production_name"
+	resource_ids			= heal_parts_limit_provided
+}
+
+[Statistic template = ResourceRateStatistic]
+{
+	ids						= heal_parts_limit_consumption
+	name					= "#Scoring_heal_parts_limit_consumption_name"
+	resource_ids			= heal_parts_limit_consumed
 }
 ;;---------------------------------------------------------------------------------------------
 ;;

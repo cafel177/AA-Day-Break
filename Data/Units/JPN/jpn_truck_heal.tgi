@@ -13,6 +13,7 @@
 
    		[Upkeep]
 		building_limit_consumed = 0
+		heal_parts_limit_consumed = 1
 	}
 
     	[ElementComponent]

@@ -19,6 +19,7 @@
 		[Production]
 		building_limit_provided = 20
 		nuclear_limit_provided = 1
+		heal_parts_limit_provided = 1
 	}
 
 	[Placement]

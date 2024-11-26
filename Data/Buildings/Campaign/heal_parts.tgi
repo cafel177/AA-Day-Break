@@ -26,6 +26,10 @@
 	morale_value = 0
 
 	[EconomyComponent]
+	{
+		[Upkeep]
+		heal_parts_limit_consumed = 1
+	}
 
 	[PropertiesComponent]
 	{

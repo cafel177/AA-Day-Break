@@ -822,6 +822,25 @@
 					L = 100%
 				}
 
+				[Heal_Parts_Limit_Provided Template=EditorEconomyResourceWidget]
+				{
+					resource_IDS = heal_parts_limit_provided
+		
+					[View]
+					T = 10
+					L = 100%
+				}
+				
+				[Heal_Parts_Limit_Consumed Template=EditorEconomyResourceWidget]
+				{
+					resource_IDS = heal_parts_limit_consumed
+		
+					;; NOTE: not visible
+					[View]
+					T = 10
+					L = 100%
+				}
+
 				[FactionExperience Inherit=LabelWidget]
 				{
 					visible = false
