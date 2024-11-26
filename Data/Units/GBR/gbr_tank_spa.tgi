@@ -3,7 +3,7 @@
 	[BodyComponent]
 	{
 		health = 400
-		defense = 4
+		defense = 6
 	}
 
 	[MoverComponent]
@@ -77,15 +77,15 @@
 				recharge_time = 9
 				range = 60
 				area = 5
-				max_targets = 12
+				max_targets = 10
 					
 				[Flags] 
 				bombard = true
 				
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
-				amount = 70
+				amount = 50
 
 				[Effect Template=BlastDamageEffect]
 				amount = 55
