@@ -38,6 +38,9 @@
 
 		[Property]
 		property_IDS = nuclear_decay1
+
+		[Property]
+		property_IDS = aircraft
 	}
 
 	[Flags]
@@ -109,6 +112,9 @@
 
 		[Property]
 		property_IDS = nuclear_decay1
+
+		[Property]
+		property_IDS = aircraft
 	}
 
 	[Flags]
