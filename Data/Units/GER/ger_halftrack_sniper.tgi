@@ -67,12 +67,12 @@
 				bombard = true
 
 				[Effect Template=PierceDamageEffect]
-				amount = 20
+				amount = 5
 				
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
 				targets = infantry
-				amount = 300
+				amount = 275
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = ger_mg_heavy
