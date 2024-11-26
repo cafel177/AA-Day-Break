@@ -24,7 +24,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 45
+		control_range = 40
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -34,7 +34,7 @@
 			{
 				name = "#gbr_bunker_artillery_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 7
-				range = 45
+				range = 40
 				area = 6
 				max_targets = 15
 

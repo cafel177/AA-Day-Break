@@ -53,7 +53,7 @@
 			{				
 				name = "#rus_tank_medium_AbilityDefinition_name"
 				recharge_time = 6
-				range = 25
+				range = 30
 				area = 2
 				max_targets = 4
 
