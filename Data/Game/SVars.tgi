@@ -173,7 +173,7 @@
 	fixed	ExperienceDefaultValue = 1	;; value used when victim has no CV and no specified fake CV value
 
 	fixed	ExperienceFactionGainMultiplier = 2.0f	;; multiplier applied to amount of experience kingdom gains through its actors
-	fixed	ExperienceFactionGainPeriodic = 1.0f	;; amount of experience kingdom gains per second
+	fixed	ExperienceFactionGainPeriodic = 0.33f	;; amount of experience kingdom gains per second
 
 	;; modifiers
 	fixed	ModifierAttributeClampAdd = 1
