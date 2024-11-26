@@ -36,7 +36,7 @@
 	[StructureComponent]
 	{
 		[TechnologyProperty]
-		property_ids = building_upgrade
+		property_ids = building_fix
 	}
 
    	[Size]
