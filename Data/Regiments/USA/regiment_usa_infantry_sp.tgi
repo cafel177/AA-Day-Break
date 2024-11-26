@@ -8,7 +8,7 @@
 		money = 75
 		
 		[Upkeep]
-		ammo = 10
+		ammo = 12
 	}
 
 	[View]
@@ -53,7 +53,7 @@
 		element_IDS = usa_infantry_sp
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_infantry_mg_sp
+		element_IDS = usa_infantry_sp
 	
 		[Slot]	;; flank
 		element_IDS = usa_infantry_mg_sp
@@ -84,7 +84,7 @@
 		element_IDS = usa_infantry_sp_amphib
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_infantry_mg_sp
+		element_IDS = usa_infantry_sp_amphib
 	
 		[Slot]	;; flank
 		element_IDS = usa_infantry_mg_sp

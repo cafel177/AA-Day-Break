@@ -120,6 +120,6 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 90
 	}
 }

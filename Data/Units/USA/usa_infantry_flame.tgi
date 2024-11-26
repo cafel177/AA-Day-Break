@@ -83,7 +83,7 @@
 				name = "#usa_infantry_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
 				range = 25
-				recharge_time = 5
+				recharge_time = 8
 				area = 3
 				max_targets = 5
 
@@ -92,7 +92,7 @@
 							
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .5
+				amount = .25
 			}
 			
 			
