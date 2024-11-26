@@ -61,7 +61,7 @@
 			{
 				name = "#gbr_halftrack_AbilityDefinition_name"
 				recharge_time = 7
-				area = 1.5
+				area = 2
 				range = 30
 				max_targets = 2			
 				
@@ -69,12 +69,12 @@
 				bombard = true
 
 				[Effect Template=PierceDamageEffect]
-				amount = 20
+				amount = 5
 				
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
 				targets = infantry
-				amount = 400
+				amount = 275
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_mg_heavy

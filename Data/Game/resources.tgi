@@ -116,3 +116,21 @@ EXAMPLE:
 	limited_by = nuclear_limit_provided
 	icon = ch_rank5
 }
+
+[Resource template=UpkeepResource]	
+{
+	IDS = heal_parts_limit_provided
+	name = "#resources_heal_parts_limit_provided_name"
+	icon = ch_rank4
+	
+	[PurchaseCost]
+	money = 0
+}
+
+[Resource template=LimitedConsumedResource]	
+{
+	IDS = heal_parts_limit_consumed
+	name = "#resources_heal_parts_limit_consumed_name"
+	limited_by = heal_parts_limit_provided
+	icon = ch_rank4
+}

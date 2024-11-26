@@ -32,17 +32,17 @@
 			{				
 				name = "#usa_infantry_at_AbilityDefinition_name"
 				recharge_time = 7
-				area = 3
+				area = 2
 				range = 30
-				max_targets = 4
-				attenuation_range_min = 1
-				attenuation_factor_max = 0.2
+				max_targets = 2
+				attenuation_range_min = 0.1
+				attenuation_factor_max = 0.01
 
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 65
+				amount = 60
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_rocket

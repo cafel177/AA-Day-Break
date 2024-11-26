@@ -32,29 +32,6 @@
 		property_IDS = combat_unit
 	}
 	
-	[PerformerComponent]
-	{
-		[Ability Template=AAGunLocal]
-		{
-			[AbilityDefinition Template=AAInfantryMG]
-			{				
-				name = "#ger_infantry_mg_AbilityDefinition_name"
-				area = 1.5
-				attenuation_range_min = 0.5
-				attenuation_factor_max = 0.5
-				max_targets = 4
-				
-				recharge_time = 2
-				range = 18
-				
-				[Effect Template=PierceDamageEffect]
-				amount = 15
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = ger_mg_heavy
-			}
-		}
-	}
 	
 	[View]
 	{
@@ -654,6 +631,30 @@
 [Thing Template=AAUnitGERKneelMG]
 {
 	IDS = ger_infantry_mg
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAGunLocal]
+		{
+			[AbilityDefinition Template=AAInfantryMG]
+			{				
+				name = "#ger_infantry_mg_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+				
+				recharge_time = 2
+				range = 18
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 15
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_mg_heavy
+			}
+		}
+	}
 }	
 
 [Thing Template=AAUnitGERKneelMG]
@@ -661,9 +662,33 @@
 	IDS = ger_infantry_mg_sp
 
     	[BodyComponent]
-	health = 200
+	health = 250
 	defense = 2
 
 	[MoverComponent]
 	speed_max = 3
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAGunLocal]
+		{
+			[AbilityDefinition Template=AAInfantryMG]
+			{				
+				name = "#ger_infantry_mg_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+				
+				recharge_time = 2
+				range = 18
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 18
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_mg_heavy
+			}
+		}
+	}
 }

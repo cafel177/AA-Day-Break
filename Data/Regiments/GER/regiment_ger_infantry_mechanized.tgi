@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 100
+		money = 75
 		
 		[Upkeep]
 		ammo = 10
@@ -43,7 +43,7 @@
 		element_IDS = ger_infantry
 		
 		[Slot]	;; rear guard 3
-		element_IDS = ger_infantry_mg
+		element_IDS = ger_infantry
 	
 		[Slot]	;; flank
 		element_IDS = ger_infantry

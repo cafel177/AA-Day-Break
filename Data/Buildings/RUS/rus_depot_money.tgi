@@ -6,7 +6,7 @@
 
 	[BodyComponent]
 	health = 3000
-	defense = 0
+	defense = 3
 
 	[DenizenComponent]
 	{
@@ -28,7 +28,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 112
+		money = 106
 		
 		[Upkeep]
 		building_limit_consumed = 1

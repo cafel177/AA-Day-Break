@@ -64,13 +64,13 @@
 				recharge_time = 7
 				area = 3
 				range = 30
-				max_targets = 4
+				max_targets = 3
 
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 65
+				amount = 60
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

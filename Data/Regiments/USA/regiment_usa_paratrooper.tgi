@@ -63,11 +63,39 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 135
+		money = 140
 	}
 
 	[OrganizationComponent]
 	recruit_time = 6
+	morale_breakpoint = 20
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AAUSARegimentParatrooper]
+{
+	IDS = regiment_usa_paratrooper2
+	name = "#regiment_usa_paratrooper_name2"
+
+	transport_actor = usa_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 175
+	}
+
+	[OrganizationComponent]
+	recruit_time = 6
+	morale_breakpoint = 20
 
 	[Placement]
 	placement_group_ids = null

@@ -38,10 +38,10 @@
 		element_IDS = usa_paratrooper
 		
 		[Slot]	;; rear guard 3
-		element_IDS = usa_paratrooper_mg
+		element_IDS = usa_paratrooper_mortar
 	
 		[Slot]	;; support
-		element_IDS = usa_paratrooper_mortar
+		element_IDS = usa_paratrooper_mg
 		
 		[Slot]	;; captain
 		element_IDS = usa_paratrooper_co
@@ -63,7 +63,33 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 175
+	}
+
+	[OrganizationComponent]
+	recruit_time = 6
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AAUSARegimentParatrooperHeavy]
+{
+	IDS = regiment_usa_paratrooper_heavy2
+    name = "#regiment_usa_paratrooper_heavy_AAUSARegimentParatrooperHeavy_name2"
+	
+	transport_actor = usa_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 215
 	}
 
 	[OrganizationComponent]

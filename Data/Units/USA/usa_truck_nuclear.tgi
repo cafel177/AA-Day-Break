@@ -24,6 +24,12 @@
 		required_properties = nuclear_weapon
 	}
 
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = nuclear_heal
+	}
+
 	[BodyComponent]
 	{
 		health = 500

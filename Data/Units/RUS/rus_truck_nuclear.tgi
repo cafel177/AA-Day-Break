@@ -17,6 +17,12 @@
 		nuclear_limit_consumed = 1
 	}
 
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = nuclear_heal
+	}
+
 	[ElementComponent]
 	{
 		required_properties = nuclear_weapon

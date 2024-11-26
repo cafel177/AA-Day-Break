@@ -20,7 +20,7 @@
 	amount = 0.25
 	
 	[Effect Template=AddDamageEffect]
-	damage_type_IDS = explosive
+	damage_type_IDS = flame
 	targets = building
 	amount = 15
 

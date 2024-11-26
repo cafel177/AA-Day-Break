@@ -4,10 +4,7 @@
 	editor_name = "#regiment_ger_paratrooper_editor_name"
 
 	[EconomyComponent]
-	{
-		[Cost]
-		money = 150
-		
+	{		
 		[Upkeep]
 		ammo = 10
 	}	
@@ -66,11 +63,42 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 135
+		money = 140
 	}
 
 	[Placement]
 	placement_group_ids = null
+
+	[OrganizationComponent]
+	recruit_time = 6
+	morale_breakpoint = 20
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AAGERRegimentParatrooper]
+{
+	IDS = regiment_ger_paratrooper2
+	name = "#regiment_ger_paratrooper_name2"
+
+	transport_actor = ger_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 175
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent]
+	recruit_time = 6
+	morale_breakpoint = 20
 
 	[PropertiesComponent]
 	{	

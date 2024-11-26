@@ -217,12 +217,12 @@
 
         [Ability Template=AARepairLocal]
 		{	
+			animation1 = build1
+
 			[AbilityDefinition Template=AARepairAction]
 			{
-				recharge_time = 1
-
 				[Effect Template=RepairEffect]
-				amount = 2
+				amount = 3
 			}
 		}
 	}

@@ -6,7 +6,7 @@
 
 	[BodyComponent]
 	health = 3000
-	defense = 0
+	defense = 3
 	
 	[DefenderComponent]
 	{
@@ -53,7 +53,7 @@
  	[EconomyComponent]
 	{
 		[Cost]	
-		money = 125
+		money = 150
 
 		[Production]
 		ammo = 10

@@ -3,7 +3,7 @@
 	[BodyComponent]
 	{
 		health = 400
-		defense = 4
+		defense = 6
 	}
 	
 	[MoverComponent]
@@ -44,20 +44,20 @@
 			{				
 				name = "#usa_tank_spa_AbilityDefinition_name"
 				recharge_time = 9
-				range = 60
+				range = 50
 				area = 5
-				max_targets = 12
+				max_targets = 10
 					
 				[Flags] 
 				bombard = true
 				
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
-				amount = 70
+				amount = 60
 
 				[Effect Template=BlastDamageEffect]
-				amount = 75
+				amount = 65
 
 				[Effect Template=MoraleLossEffect]
 				amount = 1.5

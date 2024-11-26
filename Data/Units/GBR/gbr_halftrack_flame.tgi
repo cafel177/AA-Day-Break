@@ -97,6 +97,8 @@
 
 	[ElementComponent]
 	{
+		morale_value = 15
+
 		required_properties = tech_flame
 	}
 
@@ -118,6 +120,8 @@
 				[Effect Template=FireDamageEffect]
 				amount = 5
 
+				targets = +ENEMY -building
+                
 				[Flags]
 				spell = true
 
@@ -130,7 +134,7 @@
 					{
 						IDS = gbr_buff_all
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type = ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
 
@@ -181,13 +185,13 @@
 					{
 						IDS = gbr_buff_artillery
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type =ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 25
+						amount = 50
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
@@ -232,6 +236,41 @@
 
 	[PerformerComponent]
 	{
+        		[Ability template=AATurretAttackLocal]
+		{
+            use_bonus = 110
+
+			[AbilityDefinition Template=AAVehicleFlame]
+			{	
+				name = "#gbr_tank_flame_AbilityDefinition_name"
+				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
+				ability_type = null
+				range = 0.5
+				recharge_time = 50		
+				targets = +ENEMY +building
+
+				[Effect Template=FireDamageEffect]
+				amount = 50
+
+				[Effect Template=StealResourcesEffect]
+				{
+					[ResourcesAmount]
+					money = 20
+				}
+
+				[Effect Template=AddDamageEffect]
+				{
+					damage_type_ids = flame
+					targets = SELF
+					amount = 900
+					hide_from_tooltip = true
+				}
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_flame_tank
+			}
+		}
+        
 		[Ability template=AATurretAttackLocal]
 		{
 			[AbilityDefinition Template=AAVehicleFlame]
@@ -243,6 +282,8 @@
 				area = 6
 				max_targets = 15			
 				
+                targets = +ENEMY -building
+
 				[Effect Template=FireDamageEffect]
 				amount = 5
 
@@ -255,7 +296,7 @@
 					{
 						IDS = gbr_buff_all2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type = ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png		
 
@@ -306,13 +347,13 @@
 					{
 						IDS = gbr_buff_artillery2
 						name = "#atomic_bomb_Effect_EnchantmentProperty_name"
-						duration = 20
+						duration = 10
 						enchantment_type =ench_type_generic
 						icon = /Properties/PropertyIcons/IconPropertyHealth.png
 			
 						[Modifier template=PeriodicDamageModifier]
 						damage_type = flame
-						amount = 25
+						amount = 50
 
 						[Modifier template=TerrainSpeedModifier]
 						amount = 2
@@ -354,37 +395,5 @@
 			}
 		}
 
-		[Ability template=AATurretAttackLocal]
-		{
-			[AbilityDefinition Template=AAVehicleFlame]
-			{				
-				name = "#gbr_tank_flame_AbilityDefinition_name"
-				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				ability_type = null
-				range = 0.5
-				recharge_time = 50		
-				targets = +ENEMY +building
-
-				[Effect Template=FireDamageEffect]
-				amount = 50
-
-				[Effect Template=StealResourcesEffect]
-				{
-					[ResourcesAmount]
-					money = 20
-				}
-
-				[Effect Template=AddDamageEffect]
-				{
-					damage_type_ids = flame
-					targets = SELF
-					amount = 900
-					hide_from_tooltip = true
-				}
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = gbr_flame_tank
-			}
-		}
 	}
 }

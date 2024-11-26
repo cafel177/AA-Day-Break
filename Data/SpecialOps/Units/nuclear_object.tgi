@@ -38,6 +38,9 @@
 
 		[Property]
 		property_IDS = nuclear_decay1
+
+		[Property]
+		property_IDS = aircraft
 	}
 
 	[Flags]
@@ -65,17 +68,6 @@
 
 	[Modifier template=PeriodicDamageModifier]
 	damage_type = gunfire
-	amount = 2000
-}
-
-[Property Template=SharedProperty]
-{
-	IDS = nuclear_heal
-	name = "#nuclear_heal_name"
-
-	required_properties = nuclear_decay1
-
-	[Modifier template=PeriodicHealModifier]
 	amount = 2000
 }
 
@@ -109,6 +101,9 @@
 
 		[Property]
 		property_IDS = nuclear_decay1
+
+		[Property]
+		property_IDS = aircraft
 	}
 
 	[Flags]

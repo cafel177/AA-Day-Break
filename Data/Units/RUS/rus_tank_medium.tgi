@@ -6,9 +6,13 @@
 	[BodyComponent]
 	{
 		health = 715
-		defense = 8
+		defense = 10
 	}
 
+	[ElementComponent]
+	{
+		morale_value = 30
+	}
 	
 	[MoverComponent]
 	{
@@ -38,6 +42,9 @@
 		
 		[Property]
 		property_IDS = combat_unit
+
+		[Property]
+		property_ids = armor_plating
 	}
 	
 	[PerformerComponent]
@@ -50,13 +57,13 @@
 			{				
 				name = "#rus_tank_medium_AbilityDefinition_name"
 				recharge_time = 6
-				range = 25
+				range = 30
 				area = 2
 				max_targets = 4
 
 
 				[Effect Template=APDamageEffect]
-				amount = 30
+				amount = 35
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

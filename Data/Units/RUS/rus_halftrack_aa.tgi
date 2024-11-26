@@ -12,8 +12,8 @@
 	
 	[MoverComponent]
 	{
-		speed_max = 8
-		acceleration = 0
+		speed_max = 6
+		acceleration = 3
 	}
 	
 	[ElementComponent]

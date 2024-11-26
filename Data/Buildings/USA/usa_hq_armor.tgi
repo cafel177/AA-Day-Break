@@ -12,7 +12,7 @@
 
 	[BodyComponent]
 	health = 3000
-	defense = 0
+	defense =3
 
 	[DefenderComponent]
 	{

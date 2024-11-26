@@ -38,22 +38,21 @@
 			{
 				name = "#usa_halftrack_artillery_AbilityDefinition_name"
 				range = 50
-				area = 5
+				area = 4
 				recharge_time = 9
-				max_targets = 12
+				max_targets = 8
 					
 				[Effect Template=BlastDamageEffect]
 				amount = 50
 				
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
 				amount = .75
 				
 				[Flags] 
 				bombard = true
 				
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
 				amount = 60
 

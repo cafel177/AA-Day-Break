@@ -46,7 +46,7 @@
 			{				
 				name = "#ger_infantry_mortar_AbilityDefinition_name"
 				recharge_time = 8
-				range = 35
+				range = 30
 				area = 3
 				max_targets = 8
 
@@ -57,9 +57,9 @@
 				amount = 40
 
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
-				amount = 50
+				amount = 75
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry

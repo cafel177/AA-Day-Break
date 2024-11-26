@@ -3,15 +3,16 @@
 	IDS = rus_bunker_artillery
 	name = "#rus_bunker_artillery_Thing_name"
 	editor_name = "#rus_bunker_artillery_Thing_editor_name"
-	
+	description = "#bunker_Thing_description"
+/*
 	[LairComponent]
 	{
 		reward = 30, 40	
 	}
-
+*/
 	[BodyComponent]
 	{
-		health = 1500
+		health = 2000
 		defense = 15
 	}
 
@@ -23,7 +24,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 50
+		control_range = 35
 
 		[Ability Template=AAAttackLocal]
 		{
@@ -32,8 +33,8 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 5
-				range = 50
+				recharge_time = 7
+				range = 35
 				area = 6
 				max_targets = 15
 
@@ -41,13 +42,12 @@
 				amount = 50
 
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
 				amount = 2
 
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
-				amount = 50
+				amount = 60
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -119,8 +119,8 @@
 			[AbilityDefinition Template=AABunkerAttackArtilleryDefender]
 			{
 				name = "#rus_bunker_artillery_DefenderComponent_AbilityDefinition_name"
-				recharge_time = 5
-				range = 50
+				recharge_time = 7
+				range = 35
 				area = 6
 				max_targets = 15
 
@@ -131,13 +131,12 @@
 				bombard = true
 
 				[Effect Template=MoraleLossEffect]
-				targets = +ENEMY -TANK
 				amount = 2
 
 				[Effect Template=AddDamageEffect]
 				damage_type_ids = explosive
 				targets = building
-				amount = 50
+				amount = 60
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -198,7 +197,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 120
+		money = 175
 		
 		[Production]
 		
@@ -216,23 +215,27 @@
 	{
 		packing_length = 5
 		unpacking_length = 5
-		pack_health_min = 1
-	}
 
+        pack_health_min = 1
+	}
+	
 	[PropertiesComponent]
-	{
+	{		
 		[Property]
 		property_IDS = bunker
-
-		[Property]
-		property_ids = artillery		
 	
+		[Property]
+		property_IDS = artillery		
+
 		[Property]
 		property_IDS = property_bunker_artillery
 
 		[Property]
 		property_IDS = military_building
-	}
+
+        [Property]
+		property_IDS = bunker_fix    
+	}	
 	
 	[Size]
 	{

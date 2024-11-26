@@ -8,7 +8,7 @@
 	[BodyComponent]
 	{
 		health = 500
-		defense = 8
+		defense = 10
 	}
 	
 	[MoverComponent]
@@ -38,6 +38,8 @@
 
 	[ElementComponent]
 	{
+                morale_value = 25
+                
 		required_properties = tech_heavy_tank
 	}
 		
@@ -51,6 +53,9 @@
 		
 		[Property]
 		property_IDS = combat_unit
+
+		[Property]
+		property_IDS = armor_plating_medium
 	}
 	
 	[PerformerComponent]
@@ -64,7 +69,7 @@
 			{				
 				name = "#ger_tank_heavy_AbilityDefinition_name"
 				recharge_time = 6
-				area = 3
+				area = 3.5
 				range = 30
 				max_targets = 4
 
@@ -73,7 +78,7 @@
 	
 				[Effect Template=MoraleGainEffect]
 				targets = self
-				amount = .1
+				amount = 1
 
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

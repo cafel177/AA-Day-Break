@@ -8,7 +8,7 @@
 
 	[BodyComponent]
 	{
-		health = 175
+		health = 200
 		defense = 1
 	}
 
@@ -36,6 +36,8 @@
 	
 	[ElementComponent]
 	{
+        morale_value = 6
+
 		required_properties = tech_conscription
 		resupply_rate = 1
 	}
@@ -48,10 +50,10 @@
 			{				
 				name = "#rus_conscript_AbilityDefinition_name"
 				recharge_time = 3
-				range = 10				
+				range = 12			
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 8
+				amount = 9
 
 				[WhenDo template=FXC_PlaySFX]
 				{
@@ -70,7 +72,7 @@
 				projectile_ids = molotov
 				
 				[Effect Template=FireDamageEffect]
-				amount = 15
+				amount = 18
 			}
 		}
 	}

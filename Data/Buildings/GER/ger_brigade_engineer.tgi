@@ -10,7 +10,7 @@
 
 	[BodyComponent]
 	health = 2000
-	defense = 0
+	defense = 2
 
 	[EconomyComponent]
 	{

@@ -19,7 +19,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = flame
-	amount = -0.30
+	amount = -0.10
 }
 
 [Property Template=SharedProperty]
@@ -220,6 +220,36 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = armor_plating_light
+	name = "#properties_intrinsic_armor_plating_name"
+	icon = PropertyIcons/IconPropertyDefense.png
+	
+	enabled_target_flags = tank
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = armor_piercing
+	amount = 0.2
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = armor_plating_medium
+	name = "#properties_intrinsic_armor_plating_name"
+	icon = PropertyIcons/IconPropertyDefense.png
+	
+	enabled_target_flags = tank
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = armor_piercing
+	amount = 0.3
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = explosive
+	amount = 0.05
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = armor_plating
 	name = "#properties_intrinsic_armor_plating_name"
 	icon = PropertyIcons/IconPropertyDefense.png
@@ -228,7 +258,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = armor_piercing
-	amount = 0.10
+	amount = 0.4
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive
@@ -730,4 +760,16 @@
 	IDS = provides_corps_property
 	name = "#properties_technologies_tech_battleship_name"
 	icon = null
+}
+
+[Property Template=SharedProperty]
+{
+	IDS = conscript
+	name = "#properties_technologies_tech_ger_conscript_name"
+	icon = PropertyIcons/IconPropertyEconomic.png
+	action_button_icon = TechIcons/IconConscription.png	
+	
+	[Modifier template=MultiplyModifier]
+	attribute = MORALE_RECOVERY_RATE
+	amount = 5
 }

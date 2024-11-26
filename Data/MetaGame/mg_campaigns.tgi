@@ -835,6 +835,8 @@
 		building_limit_provided = 0
 		nuclear_limit_consumed = 0
 		nuclear_limit_provided = 0
+		heal_parts_limit_consumed = 0
+		heal_parts_limit_provided = 0
 	}
 
 	[WaterStockpileBonus Template=ResourceList]
@@ -848,6 +850,8 @@
 		building_limit_provided = 0
 		nuclear_limit_consumed = 0
 		nuclear_limit_provided = 0
+		heal_parts_limit_consumed = 0
+		heal_parts_limit_provided = 0
 	}
 
 	;; Objectives

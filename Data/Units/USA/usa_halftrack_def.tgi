@@ -5,8 +5,13 @@
 
 	[BodyComponent]
 	{
-		health = 350
-		defense = 6
+		health = 325
+		defense = 3
+	}
+
+	[ElementComponent]
+	{
+		morale_value = 5
 	}
 
 	[MoverComponent]
@@ -15,8 +20,6 @@
 		acceleration = 3.5
 		turn_radius = 1.5
 	}
-
-	[ElementComponent]
 	
 	[PropertiesComponent]
 	{
@@ -49,7 +52,7 @@
 				range = 5
 				
 				[Effect Template=PierceDamageEffect]
-				amount = 10
+				amount = 8
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_mg_heavy

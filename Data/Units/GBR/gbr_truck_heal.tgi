@@ -6,6 +6,8 @@
 
     	hide_if_missing_properties = false
 
+	[RecruitComponent]
+    
 	[EconomyComponent]
 	{
 		[Cost]
@@ -13,6 +15,7 @@
 
    		[Upkeep]
 		building_limit_consumed = 0
+		heal_parts_limit_consumed = 1
 	}
 	
 	[ElementComponent]
@@ -20,14 +23,23 @@
 		required_properties = tech_improved_fortifications
 	}
 
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = supply_drop_decay
+	}
+
+	[StructureComponent]
+	{
+		[TechnologyProperty]
+		property_ids = building_fix
+	}
+
 	[BodyComponent]
-	health = 100
+	health = 1000
 	defense = 0
 	
-	[MobileDeploymentComponent]
-	unpack_to_actor_ids = gbr_heal_parts
-	packed_position_offset = 0,0
-	packed_orientation = 1,0
+
 	
 	[MoverComponent]
 	{
@@ -38,11 +50,6 @@
 		[TrailerHitch]
 		node_ids = hitch
 		node_offset = 0, -1.7, .5
-	}
-	
-	[PropertiesComponent]
-	{
-
 	}	
 	
 	[PerformerComponent]

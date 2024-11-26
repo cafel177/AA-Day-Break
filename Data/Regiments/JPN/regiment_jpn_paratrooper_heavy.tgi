@@ -38,10 +38,10 @@
 		element_IDS = jpn_paratrooper
 		
 		[Slot]	;; rear guard 3
-		element_IDS = jpn_paratrooper_mg
+		element_IDS = jpn_paratrooper_mortar
 	
 		[Slot]	;; support
-		element_IDS = jpn_paratrooper_mortar
+		element_IDS = jpn_paratrooper_mg
 		
 		[Slot]	;; captain
 		element_IDS = jpn_paratrooper_co
@@ -63,7 +63,33 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 135
+		money = 160
+	}
+
+	[OrganizationComponent]
+	recruit_time = 6
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+}
+
+[Thing Template=AAJPNRegimentParatrooperHeavy]
+{
+	IDS = regiment_jpn_paratrooper_heavy2
+    name = "#regiment_jpn_paratrooper_heavy_AAJPNRegimentParatrooperHeavy_name2"
+	
+	transport_actor = jpn_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
 	}
 
 	[OrganizationComponent]
@@ -86,6 +112,7 @@
 		reward = 30, 35	
 	}
 }
+
 
 [Thing Template=AAJPNRegimentParatrooperHeavy]
 {

@@ -81,7 +81,6 @@
 	bombard = true
 	summon_multiple = false
 	summon_unique = true
-	primary_island_only = true
 	
 	[WhenDo Template=FXC_CreateVFX]
 	{

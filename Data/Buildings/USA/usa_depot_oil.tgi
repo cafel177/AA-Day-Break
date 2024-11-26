@@ -6,7 +6,7 @@
 	
 	[BodyComponent]
 	health = 1500
-	defense = 0
+	defense = 2
 	
 	[EconomyComponent]
 	{

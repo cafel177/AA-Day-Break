@@ -14,7 +14,7 @@
 	}
 
 	[BodyComponent]
-	health = 300
+	health = 200
 	defense = 1
 	
 	[MobileDeploymentComponent]

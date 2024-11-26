@@ -1268,7 +1268,7 @@ USAGE:
 		
 	[BodyComponent]
 	{ 
-		health = 300
+		health = 400
 		defense = 0
 		
 		[OnDeathAbility Template=AAAttackLocal]
@@ -1340,7 +1340,7 @@ USAGE:
 
 	[BodyComponent]
 	{
-		health = 100
+		health = 180
 		defense = 0
 		
 		[OnDeathAbility Template=AAAttackLocal]

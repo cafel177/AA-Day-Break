@@ -87,7 +87,7 @@
 				name = "#rus_infantry_mortar_AbilityDefinition_name"
 				recharge_time = 8
 				area = 3
-				range = 35
+				range = 30
 				max_targets = 8
 
 				[Flags] 
@@ -97,9 +97,9 @@
 				amount = 50
 
 				[Effect Template=AddDamageEffect]
-				damage_type_IDS = explosive
+				damage_type_IDS = flame
 				targets = building
-				amount = 50
+				amount = 75
 
 				[Effect Template=MoraleLossEffect]
 				targets = infantry

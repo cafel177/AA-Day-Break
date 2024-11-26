@@ -3,6 +3,7 @@
 	IDS = regiment_ger_hq_infantry_unpacked
 	name = "#regiment_ger_hq_infantry_unpacked_name"
 	editor_name = "#regiment_ger_hq_infantry_unpacked_editor_name"
+	description = "#hq_Thing_description"
 
 	[EconomyComponent]
 

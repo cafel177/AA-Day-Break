@@ -66,11 +66,12 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 135
+		money = 160
 	}
 
 	[OrganizationComponent]
 	recruit_time = 6
+	morale_breakpoint = 20
 
 	[Placement]
 	placement_group_ids = null
@@ -79,6 +80,36 @@
 	{	
 		[Property]
 		property_IDS = recon
+	}
+}
+
+[Thing Template=AAJPNRegimentParatrooperBanzai]
+{
+	IDS = regiment_jpn_paratrooper_banzai2
+	name = "#regiment_jpn_paratrooper_banzai_name2"
+
+	transport_actor = jpn_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
+	}
+
+	[OrganizationComponent]
+	recruit_time = 6
+	morale_breakpoint = 20
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+
+		[Property]
+		property_ids = org_resupply
 	}
 
 	[LairComponent]

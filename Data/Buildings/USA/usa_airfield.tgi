@@ -11,7 +11,7 @@
 
 	[BodyComponent]
 	health = 3000
-	defense = 0
+	defense = 3
 
 	[Flags]
 	axis_locked = false
@@ -100,7 +100,6 @@
 	{
 		packing_length = 8
 		unpacking_length = 8
-		pack_health_min = 0.3
 	}
 
  	[PropertiesComponent]

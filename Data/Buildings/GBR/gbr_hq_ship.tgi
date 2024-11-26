@@ -3,6 +3,7 @@
 	IDS = gbr_hq_ship
 	name = "#gbr_hq_ship_Thing_name"
 	editor_name = "#gbr_hq_ship_Thing_editor_name"
+	description = "#hq_ship_Thing_description"
 
 	[LairComponent]
 	{
@@ -36,7 +37,7 @@
 
 	[BodyComponent]
 	health = 3000
-	defense = 0
+	defense = 3
 
 	[EconomyComponent]
 	{

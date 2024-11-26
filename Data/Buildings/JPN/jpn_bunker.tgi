@@ -3,16 +3,17 @@
 	IDS = jpn_bunker
 	name = "#jpn_bunker_Thing_name"
 	editor_name = "#jpn_bunker_Thing_editor_name"
-
+	description = "#bunker_Thing_description"
+/*
 	[LairComponent]
 	{
 		reward = 15, 25	
 	}
-
+*/
 	[BodyComponent]
 	{
-		health = 1000
-		defense = 5
+		health = 1500
+		defense = 8
 	}
 	
 	[ElementComponent]
@@ -22,7 +23,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 25
+		control_range = 22
 	
 		[Ability Template=AAAttackLocal]
 		{
@@ -35,14 +36,14 @@
 				max_targets = 10
 
 				recharge_time = 2
-				range = 25
+				range = 22
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 20	
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .25
+				amount = .2
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -98,14 +99,14 @@
 				max_targets = 10
 
 				recharge_time = 2
-				range = 25
+				range = 22
 				
 				[Effect Template=PierceDamageEffect]
 				amount = 20	
 	
 				[Effect Template=MoraleLossEffect]
 				targets = infantry
-				amount = .25
+				amount = .2
 
 				[Effect Template=EnchantmentEffect]
 				{
@@ -151,7 +152,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 50
+		money = 75
 		
 		[Production]
 		
@@ -168,7 +169,8 @@
 	{
 		packing_length = 3
 		unpacking_length = 3
-		pack_health_min = 1
+
+        pack_health_min = 1
 	}
 	
 	[PropertiesComponent]
@@ -187,6 +189,9 @@
 
 		[Property]
 		property_IDS = military_building
+        
+		[Property]
+		property_IDS = bunker_fix    
 	}
 	
 	[Size]
