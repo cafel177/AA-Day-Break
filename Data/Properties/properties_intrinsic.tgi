@@ -233,6 +233,23 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = armor_plating_medium
+	name = "#properties_intrinsic_armor_plating_name"
+	icon = PropertyIcons/IconPropertyDefense.png
+	
+	enabled_target_flags = tank
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = armor_piercing
+	amount = 0.3
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = explosive
+	amount = 0.05
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = armor_plating
 	name = "#properties_intrinsic_armor_plating_name"
 	icon = PropertyIcons/IconPropertyDefense.png
