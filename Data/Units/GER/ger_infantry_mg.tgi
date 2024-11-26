@@ -661,7 +661,7 @@
 	IDS = ger_infantry_mg_sp
 
     	[BodyComponent]
-	health = 200
+	health = 250
 	defense = 2
 
 	[MoverComponent]

@@ -48,7 +48,7 @@
 			[AbilityDefinition Template=AAInfantryRifle]
 			{				
 				name = "#usa_infantry_AbilityDefinition_name"
-				recharge_time = 3
+				recharge_time = 2
 				range = 12
 				
 				[Effect Template=PierceDamageEffect]
