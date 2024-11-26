@@ -75,7 +75,7 @@
 			{				
 				name = "#gbr_tank_spa_AbilityDefinition_name"
 				recharge_time = 9
-				range = 60
+				range = 50
 				area = 5
 				max_targets = 10
 					
