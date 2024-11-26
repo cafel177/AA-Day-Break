@@ -39,10 +39,10 @@
 		element_IDS = rus_infantry
 
 		[Slot]	;; rear guard 2
-		element_IDS = rus_infantry
+		element_IDS = rus_infantry_sp
 		
 		[Slot]	;; rear guard 3
-		element_IDS = rus_infantry_mg
+		element_IDS = rus_infantry_mg_sp
 	
 		[Slot]	;; flank
 		element_IDS = rus_infantry_sniper
