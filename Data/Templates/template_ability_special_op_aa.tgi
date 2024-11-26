@@ -160,7 +160,7 @@ smm042004 - created
 [Template AASpecialOpEconomicAidMoney Template=AASpecialOpShared]
 {	
 	ability_ids = economic_aid_money
-	cost_faction_experience = 400
+	cost_faction_experience = 500
 }
 
 [Template AASpecialOpEspionage Template=AASpecialOpShared]
@@ -313,7 +313,7 @@ smm042004 - created
 
 [Template AASpecialOpSupplyDrop Template=AASpecialOpShared]
 {
-	cost_faction_experience = 300
+	cost_faction_experience = 200
 }
 
 [Template AASpecialOpGBRSupplyDrop Template=AASpecialOpSupplyDrop]
