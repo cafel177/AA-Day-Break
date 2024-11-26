@@ -47,6 +47,9 @@
 		
 		[Property]
 		property_IDS = combat_unit
+
+        		[Property]
+		property_IDS = armor_plating_light
 	}
 	
 	[PerformerComponent]
@@ -62,8 +65,8 @@
 				area = 5
 				range = 40
 				max_targets = 3
-				attenuation_range_min = 0.1
-				attenuation_factor_max = 0.01
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.1
 
 				[Flags] 
 				bombard = true

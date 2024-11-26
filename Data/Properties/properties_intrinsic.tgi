@@ -220,6 +220,19 @@
 
 [Property Template=SharedProperty]
 {
+	IDS = armor_plating_light
+	name = "#properties_intrinsic_armor_plating_name"
+	icon = PropertyIcons/IconPropertyDefense.png
+	
+	enabled_target_flags = tank
+
+	[Modifier Template=ResistDamageModifier]
+	damage_type = armor_piercing
+	amount = 0.2
+}
+
+[Property Template=SharedProperty]
+{
 	IDS = armor_plating
 	name = "#properties_intrinsic_armor_plating_name"
 	icon = PropertyIcons/IconPropertyDefense.png
