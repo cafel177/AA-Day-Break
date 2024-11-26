@@ -5,8 +5,8 @@
 	editor_name = "#rus_depot_supply_Thing_editor_name"
 
 	[BodyComponent]
-	health = 500
-	defense = 0
+	health = 350
+	defense = 1
 
 	[DenizenComponent]
 	{
