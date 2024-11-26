@@ -6,7 +6,7 @@
 	[BodyComponent]
 	{
 		health = 300
-		defense = 4
+		defense = 5
 	}
 	
 	[MoverComponent]
@@ -94,7 +94,7 @@
 						IDS = at_stun_ger4
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 1
-						enchantment_type = ench_type_stun1
+						enchantment_type = ench_type_stun2
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]
@@ -174,7 +174,7 @@
 						IDS = at_stun_ger5
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 1
-						enchantment_type = ench_type_stun1
+						enchantment_type = ench_type_stun2
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]

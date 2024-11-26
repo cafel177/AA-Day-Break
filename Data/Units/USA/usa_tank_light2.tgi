@@ -64,13 +64,15 @@
 				recharge_time = 7
 				area = 3
 				range = 30
-				max_targets = 4
+				max_targets = 3
+				attenuation_range_min = 0.1
+				attenuation_factor_max = 0.01
 
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 65
+				amount = 70
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
@@ -87,7 +89,7 @@
 						IDS = at_stun_usa5
 						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
 						duration = 2
-						enchantment_type = ench_type_stun1
+						enchantment_type = ench_type_stun2
 						icon = /properties/PropertyIcons/IconPropertyMovement.png
 			
 						[Modifier Template=FlagModifier]
