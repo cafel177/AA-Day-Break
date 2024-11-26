@@ -19,7 +19,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = flame
-	amount = -0.30
+	amount = -0.10
 }
 
 [Property Template=SharedProperty]
