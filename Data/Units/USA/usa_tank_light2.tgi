@@ -65,14 +65,12 @@
 				area = 3
 				range = 30
 				max_targets = 3
-				attenuation_range_min = 0.1
-				attenuation_factor_max = 0.01
 
 				[Flags] 
 				bombard = true
 
 				[Effect Template=APDamageEffect]
-				amount = 70
+				amount = 60
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1
