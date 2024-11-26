@@ -35,7 +35,28 @@
 		[Property]
 		property_IDS = combat_unit
 	}
+
 	
+	[View]
+	{
+		resource_prefix = JPNInfantryMG/JPNInfantryMG
+				
+		[WhenCreated Template=FXC_Equipment]
+		action = HIDE
+		location = base
+		equipment_type_ids = tripoddown
+
+		[WhenCreated Template=FXC_Equipment]
+		action = UNHIDE
+		location = rhand
+		equipment_type_ids = rifle
+	}
+}
+
+[Thing Template=AAUnitJPNKneelMG]
+{
+	IDS = jpn_infantry_mg
+
 	[PerformerComponent]
 	{
 		
@@ -60,26 +81,6 @@
 			}
 		}
 	}
-	
-	[View]
-	{
-		resource_prefix = JPNInfantryMG/JPNInfantryMG
-				
-		[WhenCreated Template=FXC_Equipment]
-		action = HIDE
-		location = base
-		equipment_type_ids = tripoddown
-
-		[WhenCreated Template=FXC_Equipment]
-		action = UNHIDE
-		location = rhand
-		equipment_type_ids = rifle
-	}
-}
-
-[Thing Template=AAUnitJPNKneelMG]
-{
-	IDS = jpn_infantry_mg
 }	
 
 [Thing Template=AAUnitJPNKneelMG]
@@ -92,4 +93,29 @@
 
 	[MoverComponent]
 	speed_max = 3
+
+	[PerformerComponent]
+	{
+		
+		[Ability Template=AAGunLocal]
+		{
+			[AbilityDefinition Template=AAInfantryMG]
+			{				
+				name = "#jpn_infantry_mg_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+				
+				recharge_time = 2
+				range = 18
+				
+				[Effect Template=PierceDamageEffect]
+				amount = 17
+			
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_mg_heavy
+			}
+		}
+	}
 }	

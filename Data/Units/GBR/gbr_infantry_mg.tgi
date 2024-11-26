@@ -34,6 +34,29 @@
 		property_IDS = combat_unit
 	}
 	
+	[View]
+	{
+		resource_prefix = GBRInfantryMG/GBRInfantryMG
+		
+		[WhenCreated Template=FXC_Equipment]
+		action = HIDE
+		location = base
+		equipment_type_ids = tripoddown
+
+		[WhenCreated Template=FXC_Equipment]
+		action = UNHIDE
+		location = rhand
+		equipment_type_ids = rifle
+	}
+		
+
+}
+
+
+[Thing Template=AAUnitGBRKneelMG]
+{
+	IDS = gbr_infantry_mg
+
 	[PerformerComponent]
 	{
 		
@@ -58,29 +81,6 @@
 			}
 		}
 	}
-	
-	[View]
-	{
-		resource_prefix = GBRInfantryMG/GBRInfantryMG
-		
-		[WhenCreated Template=FXC_Equipment]
-		action = HIDE
-		location = base
-		equipment_type_ids = tripoddown
-
-		[WhenCreated Template=FXC_Equipment]
-		action = UNHIDE
-		location = rhand
-		equipment_type_ids = rifle
-	}
-		
-
-}
-
-
-[Thing Template=AAUnitGBRKneelMG]
-{
-	IDS = gbr_infantry_mg
 }	
 
 [Thing Template=AAUnitGBRKneelMG]
@@ -93,4 +93,29 @@
 
 	[MoverComponent]
 	speed_max = 3
+
+	[PerformerComponent]
+	{
+		
+		[Ability Template=AAGunLocal]
+		{				
+			[AbilityDefinition Template=AAInfantryMG]
+			{				
+				name = "#gbr_infantry_mg_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+				
+				recharge_time = 2
+				range = 18
+								
+				[Effect Template=PierceDamageEffect]
+				amount = 17
+				
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_mg_heavy
+			}
+		}
+	}
 }
