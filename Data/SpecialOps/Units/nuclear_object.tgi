@@ -71,17 +71,6 @@
 	amount = 2000
 }
 
-[Property Template=SharedProperty]
-{
-	IDS = nuclear_heal
-	name = "#nuclear_heal_name"
-
-	required_properties = nuclear_decay1
-
-	[Modifier template=PeriodicHealModifier]
-	amount = 2000
-}
-
 [Thing template=Actor]
 {
 	IDS = thing_nuclearB

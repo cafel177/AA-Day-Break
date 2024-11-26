@@ -24,7 +24,7 @@
 [Property Template=SharedProperty]
 {
 	IDS = building_fix
-	name = "#properties_buildings_building_upgrade_name"
+	name = "#properties_buildings_building_fix_name"
 	icon = PropertyIcons/IconPropertyHealth.png
 
 	required_properties = building

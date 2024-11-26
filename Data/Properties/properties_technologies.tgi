@@ -737,6 +737,17 @@
 
 [Property Template=AATechnology]
 {
+	IDS = nuclear_heal
+	name = "#nuclear_heal_name"
+
+	required_properties = nuclear_decay1
+
+	[Modifier template=PeriodicHealModifier]
+	amount = 2000
+}
+
+[Property Template=AATechnology]
+{
 	IDS = assembly_line_tech
 	name = "#properties_technologies_assembly_line_tech_name"
 	icon = PropertyIcons/IconPropertyHealth.png
