@@ -78,7 +78,7 @@
 			{				
 				name = "#ger_infantry_mortar_AbilityDefinition_name"
 				recharge_time = 8
-				range = 35
+				range = 30
 				area = 3
 				max_targets = 8
 

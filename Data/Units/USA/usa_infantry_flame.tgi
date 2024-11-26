@@ -82,7 +82,7 @@
 			{				
 				name = "#usa_infantry_flame_AbilityDefinition_name"
 				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				range = 20
+				range = 25
 				recharge_time = 5
 				area = 3
 				max_targets = 5
