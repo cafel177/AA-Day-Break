@@ -68,6 +68,7 @@
 
 	[OrganizationComponent]
 	recruit_time = 6
+	morale_breakpoint = 20
 
 	[Placement]
 	placement_group_ids = null
@@ -94,6 +95,7 @@
 
 	[OrganizationComponent]
 	recruit_time = 6
+	morale_breakpoint = 20
 
 	[Placement]
 	placement_group_ids = null
