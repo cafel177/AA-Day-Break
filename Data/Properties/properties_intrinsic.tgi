@@ -228,7 +228,7 @@
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = armor_piercing
-	amount = 0.20
+	amount = 0.4
 
 	[Modifier Template=ResistDamageModifier]
 	damage_type = explosive

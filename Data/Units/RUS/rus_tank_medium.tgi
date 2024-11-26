@@ -9,6 +9,10 @@
 		defense = 8
 	}
 
+	[ElementComponent]
+	{
+		morale_value = 30
+	}
 	
 	[MoverComponent]
 	{
@@ -59,7 +63,7 @@
 
 
 				[Effect Template=APDamageEffect]
-				amount = 30
+				amount = 35
 				
 				[WhenDo Template=FXC_PlayObjectAnimation]
 				object_animation_IDS = Recoil1

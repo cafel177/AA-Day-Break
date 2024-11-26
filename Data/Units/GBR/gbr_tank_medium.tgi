@@ -13,6 +13,8 @@
 	
 	[ElementComponent]
 	{
+		morale_value = 30
+
 		required_structures = gbr_motor_pool	
 	}
 
@@ -60,7 +62,7 @@
 				object_animation_IDS = Recoil1
 				
 				[Effect Template=APDamageEffect]
-				amount = 30
+				amount = 35
 				
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_cannon_medium
