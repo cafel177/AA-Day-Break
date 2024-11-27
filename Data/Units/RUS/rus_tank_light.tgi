@@ -125,12 +125,12 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#usa_tank_light_AbilityDefinition_name"
-				recharge_time = 2
+				recharge_time = 4
 				range = 25
                 			area = 1
 				max_targets = 1
 
-				targets = building
+				targets = +ENEMY +building
 
 				[Effect Template=BlastDamageEffect]
 				amount = 10
@@ -222,12 +222,12 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#usa_tank_light_AbilityDefinition_name"
-				recharge_time = 2
+				recharge_time = 4
 				range = 25
                 			area = 1
 				max_targets = 1
 
-				targets = building
+				targets = +ENEMY +building
 
 				[Effect Template=BlastDamageEffect]
 				amount = 10
