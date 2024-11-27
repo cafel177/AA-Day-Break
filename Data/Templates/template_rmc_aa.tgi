@@ -541,7 +541,7 @@ USAGE:
 */
 
     [RequiredObject]
-	object_ids = placeholder_truck_bunker
+	object_ids = placeholder_bunker
 	position = 0,0
 
 	;; see comment in [MachineGunBunkers]
