@@ -40,7 +40,7 @@
 		layout_IDS = regiment_vehicle_tiny
 		
 		[Slot]	;; front
-		element_IDS = ger_halftrack
+		element_IDS = ger_goliath
 		
 		[Slot]	;; support
 		element_IDS = ger_goliath
