@@ -24,7 +24,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 35
+		control_range = 40
 
 		[Ability Template=AAAttackLocal]
 		{
