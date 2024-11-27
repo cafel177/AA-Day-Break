@@ -159,7 +159,7 @@ USAGE:
 		packing_length = 7
 		unpacking_length = 7
 		
-		pack_health_min = 0.9
+		pack_health_min = 0.75
 	}
 	
 	[PropertiesComponent]
