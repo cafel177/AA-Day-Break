@@ -72,6 +72,11 @@
 				[Effect Template=APDamageEffect]
 				amount = 80
 
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = flame
+				targets = building
+				amount = 50
+
 				[Effect Template=MoraleGainEffect]
 				targets = self
 				amount = 1

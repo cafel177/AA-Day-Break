@@ -115,6 +115,23 @@
 				*/
 			}
 		}
+
+		[Ability template=AATurretAttackLocal]
+		{		
+			[AbilityDefinition Template=AALightTankGun]
+			{				
+				name = "#usa_tank_light_AbilityDefinition_name"
+				recharge_time = 2
+				range = 25
+                area = 1
+				max_targets = 1
+
+				targets = building
+
+				[Effect Template=BlastDamageEffect]
+				amount = 10
+			}
+		}
 	}
 	
 	[View]

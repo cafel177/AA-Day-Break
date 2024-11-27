@@ -51,11 +51,11 @@
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_supply
-	thing_IDS = gbr_truck_supply
+	thing_IDS = gbr_truck_supply_large
 
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_money
-	thing_IDS = gbr_truck_supply
+	thing_IDS = gbr_truck_supply_large
 	
 	[Placeholder]
 	placeholder_IDS = placeholder_depot_infinite
