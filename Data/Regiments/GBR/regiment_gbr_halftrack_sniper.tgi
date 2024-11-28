@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 100
 		
 		[Upkeep]
 		ammo = 10
@@ -38,10 +38,10 @@
 		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
-		element_IDS = gbr_halftrack
+		element_IDS = gbr_halftrack_sniper
 	
 		[Slot]	;; support
-		element_IDS = gbr_halftrack_sniper
+		element_IDS = null
 		
 		[Slot]	;; captain
 		element_IDS = gbr_car_armored_co

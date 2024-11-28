@@ -2,14 +2,13 @@
 {
 	[BodyComponent]
 	{
-		health = 200
+		health = 220
 		defense = 3
 	}
 	
 	[MoverComponent]
 	{
-		speed_max = 4.5
-		acceleration = 3.5
+		speed_max = 3.5
 	}
 
 	[ElementComponent]
@@ -76,9 +75,9 @@
 			{
 				name = "#usa_halftrack_AbilityDefinition_name"
 				recharge_time = 7
-				area = 2
+				area = 1
 				range = 30
-				max_targets = 2			
+				max_targets = 1			
 				
 				[Flags] 
 				bombard = true
