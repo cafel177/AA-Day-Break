@@ -37,6 +37,7 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
+		recruit_time = 30
 		supply_used = false
 		
 		[Slot]	;; front

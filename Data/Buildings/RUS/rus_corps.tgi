@@ -299,7 +299,7 @@
 		{
 			property_IDS = tech_conscription
 			type = GLOBAL	
-			research_time = 60
+			research_time = 90
 		
 			[ResearchCost Template=CostList]
 			{
@@ -311,7 +311,7 @@
 		{
 			property_IDS = tech_sniper_rifle
 			type = GLOBAL	
-			research_time = 60
+			research_time = 90
 		
 			[ResearchCost Template=CostList]
 			{
@@ -507,7 +507,7 @@
 		{
 			property_IDS = tech_conscription
 			type = GLOBAL	
-			research_time = 60
+			research_time = 90
 		
 			[ResearchCost Template=CostList]
 			{
@@ -519,7 +519,7 @@
 		{
 			property_IDS = tech_sniper_rifle
 			type = GLOBAL	
-			research_time = 60
+			research_time = 90
 		
 			[ResearchCost Template=CostList]
 			{
