@@ -36,6 +36,7 @@
 	{
 		layout_ids = regiment_hq_mobile
 		supply_used = false
+		recruit_time = 45
 		
 		[Slot]	;; front
 		element_IDS = null
