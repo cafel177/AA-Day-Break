@@ -35,7 +35,7 @@ USAGE:
 
 [Template AAInfantryOrganizationComponentNew Inherit=AAInfantryOrganizationComponent]
 {
-	recruit_time = 6
+	recruit_time = 7
 }
 
 [Template AAVehicleOrganizationComponent Inherit=OrganizationComponent]
@@ -55,7 +55,7 @@ USAGE:
 
 [Template AAVehicleOrganizationComponentNew Inherit=AAVehicleOrganizationComponent]
 {
-	recruit_time = 10
+	recruit_time = 15
 }
 
 [Template AAArmorOrganizationComponent Inherit=OrganizationComponent]
@@ -75,7 +75,7 @@ USAGE:
 
 [Template AAArmorOrganizationComponentNew Inherit=AAArmorOrganizationComponent]
 {
-	recruit_time = 12
+	recruit_time = 20
 }
 
 [Template AAOrganizationComponentAmbient Inherit=OrganizationComponent]

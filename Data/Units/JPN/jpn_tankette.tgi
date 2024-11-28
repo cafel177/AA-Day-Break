@@ -50,8 +50,6 @@
 	
 	[PerformerComponent]
 	{
-
-
 		[Ability template=AATurretAttackLocal]
 		{
 			
@@ -77,6 +75,30 @@
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_cannon_light
+			}
+		}
+
+		[Ability Template=AAGunLocal]
+		{	
+            use_bonus = 110
+
+			[AbilityDefinition Template=AAVehicleMG]
+			{
+				name = "#jpn_halftrack_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 4
+
+				recharge_time = 3
+				range = 25
+
+				[Effect Template=PierceDamageEffect]
+				amount = 12
+			
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_mg_heavy
+			
 			}
 		}
 	}

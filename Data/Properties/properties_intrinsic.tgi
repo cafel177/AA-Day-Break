@@ -771,5 +771,5 @@
 	
 	[Modifier template=MultiplyModifier]
 	attribute = MORALE_RECOVERY_RATE
-	amount = 5
+	amount = 2
 }

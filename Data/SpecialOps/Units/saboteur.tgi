@@ -39,8 +39,8 @@
 
 	[BodyComponent]
 	{
-		health = 250
-		defense = 2
+		health = 500
+		defense = 5
 	}
 		
 	[EconomyComponent]

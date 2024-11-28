@@ -29,7 +29,7 @@
 				range = 50
 							
 				[Effect Template=PierceDamageEffect]
-				amount = 90
+				amount = 120
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_aa
