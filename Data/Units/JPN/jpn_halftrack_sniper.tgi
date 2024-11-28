@@ -8,7 +8,7 @@
 	
 	[MoverComponent]
 	{
-		speed_max = 3.5
+		speed_max = 3
 	}
 
 	[PropertiesComponent]
