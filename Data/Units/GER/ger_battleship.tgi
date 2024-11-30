@@ -443,14 +443,14 @@
 		height = 2
 
 		blocking_shape = CIRCLE
-		blocking_radius = 9
+		blocking_radius = 1
 
 		soft_shape = CIRCLE
-		soft_radius = 10.1
+		soft_radius = 1.1
 		
 		target_shape = RECT
-		target_rect_width = 4
-		target_rect_height = 16
+		target_rect_width = 1
+		target_rect_height = 1
 	}
 		
 	[View]

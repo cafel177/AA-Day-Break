@@ -110,10 +110,10 @@
 		actor_ids = regiment_usa_halftrack
 
 		[RecruitActor]
-		actor_ids = regiment_usa_tank_light
+		actor_ids = regiment_usa_halftrack_sp
 
 		[RecruitActor]
-		actor_ids = regiment_usa_halftrack_at_new
+		actor_ids = regiment_usa_tank_light
 
 		[RecruitActor]
 		actor_ids = usa_truck_supply
@@ -122,14 +122,14 @@
 		actor_ids = regiment_usa_halftrack_aa
 
 		[RecruitActor]
-		actor_ids = regiment_usa_halftrack_sniper
-
-		[RecruitActor]
 		actor_ids = regiment_usa_halftrack_flame
 
 		[RecruitActor]
 		actor_ids = regiment_usa_halftrack_artillery
 
+		[RecruitActor]
+		actor_ids = regiment_usa_halftrack_at_new
+        
 		[RecruitActor]
 		actor_ids = regiment_usa_halftrack_at
 	}

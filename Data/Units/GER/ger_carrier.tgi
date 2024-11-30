@@ -46,6 +46,12 @@
 
 		[RecruitActor]
 		actor_ids = regiment_ger_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy2
 	}
 
 	[DenizenComponent]

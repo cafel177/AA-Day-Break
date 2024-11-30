@@ -112,19 +112,16 @@
 		actor_ids = regiment_ger_halftrack_new
 
 		[RecruitActor]
+		actor_ids = regiment_ger_halftrack_sp
+
+		[RecruitActor]
 		actor_ids = regiment_ger_tank_light_new
 
 		[RecruitActor]
 		actor_ids = ger_truck_supply
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_dummy
-
-		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_aa
-
-		[RecruitActor]
-		actor_ids = regiment_ger_halftrack_sniper
 			
 		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_flame

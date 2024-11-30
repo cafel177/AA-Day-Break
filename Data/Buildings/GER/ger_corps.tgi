@@ -357,7 +357,7 @@
 				money = 75
 			}
 		}
-
+/*
 		[ResearchItem]
 		{
 			property_IDS = tech_sniper_rifle
@@ -369,7 +369,7 @@
 				money = 100
 			}
 		}	
-
+*/
 		[ResearchItem]
 		{
 			property_IDS = tech_battleship
@@ -601,7 +601,7 @@
 				money = 75
 			}
 		}
-
+/*
 		[ResearchItem]
 		{
 			property_IDS = tech_sniper_rifle
@@ -613,7 +613,7 @@
 				money = 100
 			}
 		}	
-
+*/
 		[ResearchItem]
 		{
 			property_IDS = tech_battleship

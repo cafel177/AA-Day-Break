@@ -1,0 +1,55 @@
+[Thing Template=AAGBROrganizationMobile]
+{	
+	IDS = regiment_gbr_halftrack_sp
+	name = "#regiment_gbr_halftrack_sniper_name"
+	editor_name = "#regiment_gbr_halftrack_sniper_editor_name"
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 100
+		
+		[Upkeep]
+		ammo = 10
+		oil = 5
+	}
+
+	[View]
+	{
+		resource_prefix = /Units/GBR/GBRTankDestroyer/GBRTankDestroyer
+		icon = /UI/Game/RegimentButtons/IconHalftrackSniper.png
+
+		[WhenCreated Template=FXC_PlaySFX]
+		audio_ids = gbr_vehicle_deployed
+
+		[WhenSelected Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_destroyer_select
+
+		[WhenCommanded Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_destroyer_move
+
+		[WhenCommandedAggressive Template=FXC_PlaySFX]
+		audio_ids = gbr_tank_destroyer_attack
+	}		
+	
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{	
+		layout_IDS = regiment_vehicle_light2
+        entrenchment_time = 20
+		
+		[Slot]	;; front
+		element_IDS = gbr_halftrack_sp
+	
+		[Slot]	;; support
+		element_IDS = gbr_halftrack_sp
+		
+		[Slot]	;; captain
+		element_IDS = gbr_car_armored_co
+	}
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = mechanized_company
+	}
+}
