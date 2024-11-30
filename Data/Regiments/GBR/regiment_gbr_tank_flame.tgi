@@ -6,11 +6,11 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 175
+		money = 275
 		
 		[Upkeep]
-		ammo = 15
-		oil = 15
+		ammo = 20
+		oil = 25
 	}
 	
 	[View]
@@ -69,13 +69,13 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_heavy
+		layout_IDS = regiment_vehicle_light
 		
 		[Slot]	;; front
 		element_IDS = gbr_tank_flame
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = gbr_tank_flame
 		
 		[Slot]	;; captain
 		element_IDS = gbr_tank_co
