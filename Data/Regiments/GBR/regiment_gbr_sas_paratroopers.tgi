@@ -13,6 +13,7 @@
 	{
 		resource_prefix = /SpecialOps/Units/SAS/SAS
 		icon = /UI/Game/RegimentButtons/IconGBRSASParatroopers.png
+		banner_icon = /Organizations/Banners/Icons/IconParatrooperSniper.png
 
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = gbr_paratrooper_select
