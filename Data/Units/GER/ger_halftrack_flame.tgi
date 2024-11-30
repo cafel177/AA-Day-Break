@@ -116,9 +116,6 @@
 				recharge_time = 4
 				area = 6
 				max_targets = 15				
-				
-				[Effect Template=FireDamageEffect]
-				amount = 5
 
 				targets = +ENEMY -air -mine -building
 
@@ -140,11 +137,11 @@
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[Modifier Template=MultiplyModifier]
 						attribute = MORALE_RECOVERY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[WhenAdded Template=FXC_CreateVFX]
 						{
@@ -236,40 +233,6 @@
 
 	[PerformerComponent]
 	{
-        		[Ability template=AATurretAttackLocal]
-		{
-            			use_bonus = 110
-
-			[AbilityDefinition Template=AAVehicleFlame]
-			{				
-				name = "#gbr_tank_flame_AbilityDefinition_name"
-				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				ability_type = null
-				range = 0.5
-				recharge_time = 50		
-				targets = +ENEMY +building
-
-				[Effect Template=FireDamageEffect]
-				amount = 50
-
-				[Effect Template=StealResourcesEffect]
-				{
-					[ResourcesAmount]
-					money = 20
-				}
-
-				[Effect Template=AddDamageEffect]
-				{
-					damage_type_ids = flame
-					targets = SELF
-					amount = 900
-					hide_from_tooltip = true
-				}
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = gbr_flame_tank
-			}
-		}
         
 		[Ability template=AATurretAttackLocal]
 		{
@@ -284,8 +247,6 @@
 				
 				targets = +ENEMY -air -mine -building
 
-				[Effect Template=FireDamageEffect]
-				amount = 5
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = gbr_flame_tank
@@ -302,11 +263,11 @@
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[Modifier Template=MultiplyModifier]
 						attribute = MORALE_RECOVERY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[WhenAdded Template=FXC_CreateVFX]
 						{
@@ -424,9 +385,6 @@
 				recharge_time = 4
 				area = 6
 				max_targets = 15				
-				
-				[Effect Template=FireDamageEffect]
-				amount = 5
 
 				targets = +ENEMY -air -mine -building
                 
@@ -448,11 +406,11 @@
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[Modifier Template=MultiplyModifier]
 						attribute = MORALE_RECOVERY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[WhenAdded Template=FXC_CreateVFX]
 						{
@@ -544,40 +502,6 @@
 
 	[PerformerComponent]
 	{
-        		[Ability template=AATurretAttackLocal]
-		{
-            use_bonus = 110
-
-			[AbilityDefinition Template=AAVehicleFlame]
-			{				
-				name = "#gbr_tank_flame_AbilityDefinition_name"
-				icon = /Properties/AbilityIcons/IconAbilityDamageFire.png
-				ability_type = null
-				range = 0.5
-				recharge_time = 50		
-				targets = +ENEMY +building
-
-				[Effect Template=FireDamageEffect]
-				amount = 50
-
-				[Effect Template=StealResourcesEffect]
-				{
-					[ResourcesAmount]
-					money = 20
-				}
-
-				[Effect Template=AddDamageEffect]
-				{
-					damage_type_ids = flame
-					targets = SELF
-					amount = 900
-					hide_from_tooltip = true
-				}
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = gbr_flame_tank
-			}
-		}
 
 		[Ability template=AATurretAttackLocal]
 		{
@@ -590,8 +514,6 @@
 				area = 6
 				max_targets = 15				
 				
-				[Effect Template=FireDamageEffect]
-				amount = 5
 
 				targets = +ENEMY -air -mine -building
                 
@@ -610,11 +532,11 @@
 
 						[Modifier Template=MultiplyModifier]
 						attribute = RESUPPLY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[Modifier Template=MultiplyModifier]
 						attribute = MORALE_RECOVERY_RATE
-						amount = -0.5
+						amount = -0.15
 
 						[WhenAdded Template=FXC_CreateVFX]
 						{
