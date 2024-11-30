@@ -39,7 +39,7 @@
 	{
 		morale_value = 30
 
-		required_structures = jpn_motor_pool	
+		required_structures = jpn_brigade_engineer	
 	}
 
 	[PropertiesComponent]

@@ -15,7 +15,7 @@
 	{
 		morale_value = 30
 
-		required_structures = gbr_motor_pool	
+		required_structures = gbr_brigade_engineer
 	}
 
 	[MoverComponent]
