@@ -11,7 +11,7 @@
 		
 		[Upkeep]
 		ammo = 10
-		oil = 15
+		oil = 5
 	}
 
 	[View]
@@ -36,12 +36,13 @@
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_light
+        entrenchment_time = 20
 		
 		[Slot]	;; front
-		element_IDS = gbr_halftrack_sniper
+		element_IDS = gbr_halftrack_sp
 	
 		[Slot]	;; support
-		element_IDS = null
+		element_IDS = gbr_halftrack_sp
 		
 		[Slot]	;; captain
 		element_IDS = gbr_car_armored_co
