@@ -55,6 +55,11 @@
 				[Effect Template=PierceDamageEffect]
 				amount = 14
 
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				targets = infantry
+				amount = 7
+
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_mg_heavy
 			}
