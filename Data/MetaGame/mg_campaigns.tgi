@@ -71,9 +71,25 @@
 	cost = 150
 		
 	[Technology]
-	ids = tech_infantry_flame
-	cost = 25
+	ids = tech_flame
+	cost = 50
 	
+	[Technology]
+	ids = tech_battleship
+	cost = 50
+
+	[Technology]
+	ids = tech_marksmanship
+	cost = 25
+
+	[Technology]
+	ids = tech_tank_production
+	cost = 75
+
+	[Technology]
+	ids = tech_improved_fortifications
+	cost = 25
+
 	[Technology]
 	ids = tech_ammo_production
 	cost = 50
@@ -94,6 +110,10 @@
 	ids = tech_increased_payload
 	cost = 100	
 	
+	[Technology]
+	ids = tech_heavy_tank
+	cost = 100
+
 	[Technology]
 	ids = tech_improved_fire_control
 	cost = 50	
@@ -214,16 +234,32 @@
 	cost = 50
 	
 	[Technology]
+	ids = tech_flame
+	cost = 50
+	
+	[Technology]
+	ids = tech_battleship
+	cost = 50
+
+	[Technology]
 	ids = tech_oil_production
 	cost = 75
 
 	[Technology]
-	ids = tech_entrenchment
-	cost = 25
+	ids = tech_ammo_production
+	cost = 75	
+
+	[Technology]
+	ids = tech_proximity_fuses
+	cost = 75	
 
 	[Technology]
 	ids = tech_self_sealing_fuel_tanks
 	cost = 25
+
+	[Technology]
+	ids = tech_napalm
+	cost = 100	
 
 	[Technology]
 	ids = tech_improved_recon
@@ -241,6 +277,10 @@
 	ids = tech_improved_light_antitank
 	cost = 50
 			
+	[Technology]
+	ids = tech_mechanical_reliability
+	cost = 50	
+
 	[Technology]
 	ids = tech_improved_logistics
 	cost = 25
@@ -260,10 +300,6 @@
 	[Technology]
 	ids = tech_special_forces
 	cost = 25
-			
-	[Technology]
-	ids = tech_tankette
-	cost = 75	
 				
 	[Technology]
 	ids = tech_plentiful_ammunition
@@ -325,8 +361,8 @@
 	cost = 150
 	
 	[Technology]
-	ids = tech_tank_flame
-	cost = 100		
+	ids = tech_flame
+	cost = 50		
 	
 	[Technology]
 	ids = tech_construction_battalions
@@ -359,9 +395,21 @@
 	[Technology]
 	ids = tech_long_range_artillery
 	cost = 50		
-			
+	
 	[Technology]
-	ids = tech_entrenchment
+	ids = tech_napalm
+	cost = 100
+
+	[Technology]
+	ids = tech_ammo_production
+	cost = 50
+
+	[Technology]
+	ids = tech_oil_production
+	cost = 75
+
+	[Technology]
+	ids = tech_improved_fortifications
 	cost = 25
 		
 	[Technology]
@@ -385,6 +433,10 @@
 	cost = 25
 		
 	[Technology]
+	ids = tech_battleship
+	cost = 50
+
+	[Technology]
 	ids = tech_mechanized_production
 	cost = 50
 	
@@ -403,6 +455,10 @@
 	[Technology]
 	ids = tech_improved_mortars
 	cost = 25
+
+	[Technology]
+	ids = tech_heavy_tank
+	cost = 100
 }
 
 [Template GERDynamicCampaignShop Template=DefaultDynamicCampaignShopTemplate]
@@ -423,6 +479,10 @@
 	ids = ger_division_air
 	cost = 100
 	
+	[Technology]
+	ids = tech_napalm
+	cost = 100
+
 	[Actor]
 	ids = mg_ger_army_infantry
 	cost = 25
@@ -468,6 +528,10 @@
 	cost = 75
 	
 	[Technology]
+	ids = tech_improved_fortifications
+	cost = 25
+
+	[Technology]
 	ids = tech_improved_fire_control
 	cost = 50	
 		
@@ -496,6 +560,18 @@
 	cost = 50	
 		
 	[Technology]
+	ids = tech_battleship
+	cost = 50
+
+	[Technology]
+	ids = tech_special_forces
+	cost = 25
+
+	[Technology]
+	ids = tech_military_surplus
+	cost = 75
+
+	[Technology]
 	ids = tech_tank_production
 	cost = 75
 	
@@ -514,7 +590,19 @@
 	[Technology]
 	ids = tech_goliath
 	cost = 75
-		
+
+	[Technology]
+	ids = tech_flame
+	cost = 50
+	
+	[Technology]
+	ids = tech_mechanized_production
+	cost = 50
+
+	[Technology]
+	ids = tech_heavy_tank
+	cost = 100
+
 	[Technology]
 	ids = tech_tank_king_tiger
 	cost = 150	
@@ -585,10 +673,6 @@
 	[Technology]
 	ids = tech_construction_battalions
 	cost = 25
-		
-	[Technology]
-	ids = tech_entrenchment
-	cost = 25
 			
 	[Technology]
 	ids = tech_improved_recon
@@ -609,7 +693,19 @@
 	[Technology]
 	ids = tech_long_range_artillery
 	cost = 50		
-			
+		
+	[Technology]
+	ids = tech_heavy_tank
+	cost = 100
+
+	[Technology]
+	ids = tech_napalm
+	cost = 100
+
+	[Technology]
+	ids = tech_improved_fire_control
+	cost = 50
+
 	[Technology]
 	ids = tech_marksmanship
 	cost = 25
@@ -617,7 +713,31 @@
 	[Technology]
 	ids = tech_ammo_production
 	cost = 50
-			
+		
+	[Technology]
+	ids = tech_flame
+	cost = 50
+
+	[Technology]
+	ids = tech_oil_production
+	cost = 75
+
+	[Technology]
+	ids = tech_proximity_fuses
+	cost = 50
+
+	[Technology]
+	ids = tech_mechanized_production
+	cost = 50
+
+	[Technology]
+	ids = tech_special_forces
+	cost = 25
+
+	[Technology]
+	ids = tech_battleship
+	cost = 50
+
 	[Technology]
 	ids = tech_mechanical_reliability
 	cost = 50
@@ -633,7 +753,11 @@
 	[Technology]
 	ids = tech_improved_fortifications
 	cost = 25
-		
+
+	[Technology]
+	ids = tech_improved_logistics
+	cost = 25
+
 	[Technology]
 	ids = tech_tank_production
 	cost = 75	
