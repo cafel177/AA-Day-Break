@@ -22,7 +22,7 @@
 	[Effect Template=AddDamageEffect]
 	damage_type_IDS = flame
 	targets = building
-	amount = 15
+	amount = 20
 
 	[WhenDo template=FXC_PlaySFX]
 	audio_ids = rus_rocket_truck
