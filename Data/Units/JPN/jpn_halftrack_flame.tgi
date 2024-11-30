@@ -116,7 +116,7 @@
 				[Effect Template=FireDamageEffect]
 				amount = 5
 
-				targets = +ENEMY -building
+				targets = +ENEMY -air -mine -building
                 
 				[Flags]
 				spell = true
@@ -278,7 +278,7 @@
 				area = 6
 				max_targets = 15				
 				
-                targets = +ENEMY -building
+				targets = +ENEMY -air -mine -building
 
 				[Effect Template=FireDamageEffect]
 				amount = 5
