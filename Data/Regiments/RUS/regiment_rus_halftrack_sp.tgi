@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 90
+		money = 100
 		
 		[Upkeep]
 		ammo = 10
@@ -18,7 +18,6 @@
 	{
 		resource_prefix = /Units/RUS/RUSTankDestroyer/RUSTankDestroyer
 		icon = /UI/Game/RegimentButtons/IconHalftrackSniper.png
-		banner_icon = /Organizations/Banners/Icons/IconMobileAntiTank.png
 
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = rus_vehicle_deployed
@@ -35,7 +34,7 @@
 	
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_light2
         entrenchment_time = 20
 		
 		[Slot]	;; front

@@ -1,4 +1,4 @@
-[Template JPNHalftrack Template=AAUnitJPNVehicleHalftrack]
+[Thing Template=AAUnitJPNVehicleHalftrack]
 {
     	IDS = jpn_halftrack_sp
 	name = "#jpn_halftrack_Thing_name"
@@ -59,7 +59,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
 				targets = infantry
-				amount = 7
+				amount = 5
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_mg_heavy

@@ -1,6 +1,6 @@
-[Template USAHalftrack Inherit=AAUnitUSAVehicleHalftrack]
+[Thing Template=AAUnitUSAVehicleHalftrack]
 {
-    IDS = usa_halftrack_sp
+    	IDS = usa_halftrack_sp
 	name = "#usa_halftrack_Thing_name"
 	editor_name = "#usa_halftrack_Thing_editor_name"
 
@@ -58,7 +58,7 @@
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
 				targets = infantry
-				amount = 7
+				amount = 5
 
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = usa_mg_heavy
