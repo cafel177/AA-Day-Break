@@ -4,12 +4,12 @@
 	name = "#jpn_bunker_artillery_Thing_name"
 	editor_name = "#jpn_bunker_artillery_Thing_editor_name"
 	description = "#bunker_Thing_description"
-/*
+
 	[LairComponent]
 	{
-		reward = 30, 40	
+		reward = 10, 15
 	}
-*/
+
 	[Flags]
 	{
 		axis_locked = false

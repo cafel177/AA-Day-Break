@@ -32,12 +32,12 @@
 	name = "#rus_bunker_Thing_name"
 	editor_name = "#rus_bunker_Thing_editor_name"
 	description = "#bunker_Thing_description"
-/*
+
 	[LairComponent]
 	{
-		reward = 15, 25	
+		reward = 5, 10
 	}
-*/
+
 	[BodyComponent]
 	{
 		health = 1500
