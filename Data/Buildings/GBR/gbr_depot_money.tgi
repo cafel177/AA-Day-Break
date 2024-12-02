@@ -4,6 +4,9 @@
 	name = "#gbr_depot_money_name"
 	editor_name = "#gbr_depot_money_editor_name"
 
+	[Placement]
+	placement_group_ids = null
+
 	[BodyComponent]
 	health = 3000
 	defense = 3
