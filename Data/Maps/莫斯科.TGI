@@ -1,0 +1,24 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "(DB) - The Burning of Moscow"
+
+	kingdom_1 = "Allies 1"
+	kingdom_0 = "Axis 1"
+	kingdom_9 = "Axis 4"
+	kingdom_8 = "Allies 3"
+	independent_6 = "German Spies"
+	name_1591 = "Ryazan"
+	team_1 = "Team 2"
+	kingdom_7 = "Axis 3"
+	team_0 = "Team 1"
+	map_description = "With the Red Army in tatters and supplies desperately short, Russian morale is at an all time low and forces are surrendering in droves.  Stalin has realized that the fall of Moscow will result in the complete collapse of Communist control over the masses, and has staked a final defensive line, comprised of the last remnants of the Red Army and irregular conscripts from the general population.  Victory here will mean the end of Russia.  The German European forces, supported by advance Japanese units from the newly-conquered India, are prepared to strike the final blow."
+	trigger_52_element_2 = "HINT : Several German spies have been planted behind enemy lines.  These spies will allow you to track enemy movement."
+	kingdom_5 = "Moscow Garrison"
+	name_1549 = "Kaluga"
+	kingdom_4 = "Allies 2"
+	independent_2 = "Civilian"
+	map_name = "(DB) - The Burning of Moscow"
+	kingdom_10 = "Allies 4"
+	kingdom_3 = "Axis 2"
+}
