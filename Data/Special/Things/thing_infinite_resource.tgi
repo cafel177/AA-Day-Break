@@ -18,8 +18,7 @@
 	ethereal = true
 	
 	[Placement]
-	placement_group_IDS = group_special
-	placement_category = building
+	placement_group_IDS = null
 
 	[View]
 	{
