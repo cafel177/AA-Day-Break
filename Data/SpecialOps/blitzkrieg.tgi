@@ -29,7 +29,7 @@
 		
 			[Modifier Template=AddModifier]
 			attribute = AV
-			amount = +50
+			amount = +30
 			
 			[Modifier Template=MultiplyModifier]
 			attribute = SPEED_MAX
