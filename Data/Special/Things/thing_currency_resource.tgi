@@ -12,7 +12,7 @@
 	
 	[Placement]
 	placement_group_IDS = group_special
-	placement_category = building
+	placement_category = unit
 
 	[View]
 	{

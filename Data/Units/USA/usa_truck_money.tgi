@@ -4,6 +4,9 @@
 	name = "#usa_truck_money_name"
 	editor_name = "#usa_truck_money_editor_name"
 
+	[Placement]
+	placement_group_ids = null
+
 	[EconomyComponent]
 	{
 		[Cost]

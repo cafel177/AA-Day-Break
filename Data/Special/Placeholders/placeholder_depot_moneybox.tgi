@@ -13,7 +13,7 @@
 	ethereal = true
 
 	[Placement]
-	placement_group_IDS = group_special
+	placement_group_IDS = null
 	placement_category = building
 
 	[Size]
