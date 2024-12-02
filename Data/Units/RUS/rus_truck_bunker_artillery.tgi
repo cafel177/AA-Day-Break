@@ -89,6 +89,9 @@
 {
 	IDS = rus_truck_bunker_artillery_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[ElementComponent]
 	{
 		required_structures = rus_brigade_engineer_tb

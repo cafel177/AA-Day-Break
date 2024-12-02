@@ -90,6 +90,9 @@
 {
 	IDS = ger_truck_nuclear_tb
 
+	[Placement]
+	placement_group_ids = null
+
 	[ElementComponent]
 	{
 		required_structures = ger_brigade_engineer_tb, ger_motor_pool_tb, ger_brigade_artillery_tb
