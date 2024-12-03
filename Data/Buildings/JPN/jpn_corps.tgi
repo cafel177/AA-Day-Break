@@ -182,7 +182,6 @@
 			}
 		}
 
-/*
 		[ResearchItem]
 		{
 			property_IDS = tech_tankette
@@ -194,7 +193,6 @@
 				money = 100
 			}
 		}
-*/
 	}	
 
 	[Size]

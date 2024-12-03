@@ -129,6 +129,9 @@
 		actor_ids = regiment_jpn_halftrack_artillery
 
 		[RecruitActor]
+		actor_ids = regiment_jpn_tankette
+
+		[RecruitActor]
 		actor_ids = regiment_jpn_halftrack_at
 	}
 
