@@ -35,7 +35,7 @@
 		detection_range = 30
 	}
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_tiny
 		control_range = 30
