@@ -35,7 +35,7 @@
 	{
         morale_value = 25
 
-		required_structures = usa_motor_pool
+		required_structures = usa_brigade_engineer, usa_motor_pool
 		required_properties = tech_heavy_tank
 	}
 	

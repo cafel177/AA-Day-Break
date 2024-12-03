@@ -17,7 +17,7 @@
 	{
                 morale_value = 25
                 
-		required_structures = gbr_motor_pool
+		required_structures = gbr_brigade_engineer, gbr_motor_pool
 		required_properties = tech_heavy_tank
 	}
 

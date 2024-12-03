@@ -107,7 +107,7 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_motor_pool
+		required_structures = rus_brigade_engineer, rus_motor_pool
 	}
 }
 
@@ -125,6 +125,6 @@
 
 	[ElementComponent]
 	{
-		required_structures = rus_motor_pool_tb
+		required_structures = rus_brigade_engineer_tb, rus_motor_pool_tb
 	}
 }
