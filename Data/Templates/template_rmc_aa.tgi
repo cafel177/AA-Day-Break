@@ -502,8 +502,8 @@ USAGE:
 	
 	properties = tech_noupkeep
 	
-    [RequiredObject]
-	object_ids = placeholder_truck_bunker_antiaircraft
+    	[RequiredObject]
+	object_ids = placeholder_bunker_antiaircraft
 	position = 0,0
 	
 	;; see comment in [MachineGunBunkers]
