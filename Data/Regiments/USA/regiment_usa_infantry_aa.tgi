@@ -1,4 +1,4 @@
-[Thing Template=AAUSAOrganizationInfantry]
+[Thing Template=AAUSAOrganizationMobile]
 {
 	IDS = regiment_usa_infantry_aa
 	name = "#regiment_usa_infantry_aa_name"
