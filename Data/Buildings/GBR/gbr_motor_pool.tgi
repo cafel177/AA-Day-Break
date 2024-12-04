@@ -12,15 +12,6 @@
 	health = 2000
 	defense = 2
 
-	[RecruitComponent]
-	{	
-		[RecruitActor]
-		actor_ids = gbr_truck_corps
-
-		[RecruitActor]
-		actor_ids = gbr_truck_ship
-	}
-
 	[DenizenComponent]
 	{
 		[DeploymentInfo]
@@ -55,69 +46,6 @@
 
 		[Property]
 		property_IDS = oil
-	}
-	
-	[ResearchComponent]
-	{
-		[ResearchItem]
-		{
-			property_IDS = tech_diesel_engines
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanical_reliability
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_heavy_tank
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_flame
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanized_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
 	}
 
 	[Size]
@@ -215,4 +143,95 @@
 [Thing Template AAGBRBuildingPackableMotorPool]
 {
 	IDS = gbr_motor_pool
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_diesel_engines
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_heavy_tank
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_flame
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanized_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = gbr_truck_corps
+
+		[RecruitActor]
+		actor_ids = gbr_truck_ship
+	}
+}
+
+[Thing Template AAGBRBuildingPackableMotorPool]
+{
+	IDS = gbr_motor_pool_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{
+
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = gbr_truck_corps_ib
+	}
 }

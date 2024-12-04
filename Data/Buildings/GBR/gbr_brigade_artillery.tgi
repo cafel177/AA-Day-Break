@@ -35,67 +35,6 @@
 		[Property]
 		property_IDS = ammo
 	}	
-		
-	[ResearchComponent]
-	{
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fire_control
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_long_range_artillery
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_plentiful_ammunition
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-				
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_mortars
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = gbr_truck_bunker_artillery
-
-		[RecruitActor]
-		actor_ids = gbr_truck_nuclear
-	}
 
 	[DenizenComponent]
 	{
@@ -176,4 +115,105 @@
 [Thing Template = AAGBRBuildingPackableArtillery]
 {
 	IDS = gbr_brigade_artillery
+
+	[ResearchComponent]
+	{
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_long_range_artillery
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_plentiful_ammunition
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = gbr_truck_bunker_artillery
+
+		[RecruitActor]
+		actor_ids = gbr_truck_nuclear
+	}
+}
+
+[Thing Template = AAGBRBuildingPackableArtillery]
+{
+	IDS = gbr_brigade_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_plentiful_ammunition
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{
+
+	}
 }

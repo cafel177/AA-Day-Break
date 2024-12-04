@@ -104,51 +104,6 @@
 		[Property]
 		property_ids = mg		
 	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = rus_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_rus_conscript
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_sniper
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_rus_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_rus_tank_maskirovka
-
-		[RecruitActor]
-		actor_ids = regiment_rus_infantry
-	}
 		
 	[ResearchComponent]
 	
@@ -268,4 +223,87 @@
 [Thing Template = AARUSBuildingPackableHQInf]
 {
 	IDS = rus_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_rus_conscript
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_sniper
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_rus_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_maskirovka
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry
+	}
+}
+
+[Thing Template = AARUSBuildingPackableHQInf]
+{
+	IDS = rus_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = rus_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_rus_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_rus_conscript
+
+		[RecruitActor]
+		actor_ids = regiment_rus_tank_maskirovka
+	}
 }

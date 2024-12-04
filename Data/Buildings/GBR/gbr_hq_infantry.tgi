@@ -101,45 +101,6 @@
 		[Property]
 		property_ids = mg		
 	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = gbr_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_artillery
-		
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry
-	}
 	
 	[ResearchComponent]
 	
@@ -268,4 +229,78 @@
 [Thing Template = AAGBRBuildingPackableHQInf]
 {
 	IDS = gbr_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_artillery
+		
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry
+	}
+}
+
+[Thing Template = AAGBRBuildingPackableHQInf]
+{
+	IDS = gbr_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_artillery
+		
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_heavy
+	}
 }

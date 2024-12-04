@@ -344,3 +344,33 @@
 	}
 
 }
+
+[Thing Template=AARUSBuildingPackableMotor]
+{
+	IDS = rus_motor_pool_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = rus_truck_corps_ib
+	}
+
+	[ResearchComponent]
+	{					
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_light_antitank
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+
+}

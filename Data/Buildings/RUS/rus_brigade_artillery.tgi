@@ -273,3 +273,21 @@
 		}		
 	}
 }
+
+[Thing Template=AARUSBuildingPackableArtillery]
+{
+	IDS = rus_brigade_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+	[RecruitComponent]
+	{
+
+	}
+
+	[ResearchComponent]
+	{
+	
+	}
+}
