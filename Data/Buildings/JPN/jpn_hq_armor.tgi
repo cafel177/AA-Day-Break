@@ -104,10 +104,10 @@
 		actor_ids = regiment_jpn_tank_light
 
 		[RecruitActor]
-		actor_ids = jpn_truck_supply
+		actor_ids = regiment_jpn_halftrack_flame
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_dummy
+		actor_ids = jpn_truck_supply
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_dummy

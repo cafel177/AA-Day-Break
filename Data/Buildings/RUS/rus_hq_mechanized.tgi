@@ -125,9 +125,6 @@
 		actor_ids = regiment_rus_halftrack_aa_new
 
 		[RecruitActor]
-		actor_ids = regiment_rus_halftrack_flame
-
-		[RecruitActor]
 		actor_ids = regiment_rus_halftrack_artillery
 	
 		[RecruitActor]

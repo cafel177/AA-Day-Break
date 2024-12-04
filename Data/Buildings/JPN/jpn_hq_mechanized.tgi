@@ -121,10 +121,6 @@
 		[RecruitActor]
 		actor_ids = regiment_jpn_halftrack_aa
 
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_halftrack_flame
-
 		[RecruitActor]
 		actor_ids = regiment_jpn_halftrack_artillery
 

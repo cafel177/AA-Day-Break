@@ -124,9 +124,6 @@
 		actor_ids = regiment_ger_halftrack_aa
 			
 		[RecruitActor]
-		actor_ids = regiment_ger_halftrack_flame
-
-		[RecruitActor]
 		actor_ids = regiment_ger_halftrack_artillery_new		
 
 		[RecruitActor]
