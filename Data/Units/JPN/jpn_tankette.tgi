@@ -9,7 +9,7 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 3
+		defense = 4
 	}
 	
 	[MoverComponent]
@@ -50,7 +50,7 @@
 	
 	[DefenderComponent]
 	{
-		control_range = 14
+		control_range = 12
 
 		[Ability Template=AAGunLocal]
 		{	
@@ -60,10 +60,10 @@
 				area = 1.5
 				attenuation_range_min = 0.5
 				attenuation_factor_max = 0.5
-				max_targets = 4
+				max_targets = 3
 
-				recharge_time = 2
-				range = 14
+				recharge_time = 3
+				range = 12
 
 				[Effect Template=AddDamageEffect]
 				damage_type_IDS = gunfire
@@ -89,12 +89,12 @@
 				area = 1.5
 				attenuation_range_min = 0.5
 				attenuation_factor_max = 0.5
-				max_targets = 4
+				max_targets = 3
 
 				targets = +ENEMY -air -mine -building -tank
 
 				recharge_time = 2
-				range = 14
+				range = 12
 
 				[Effect Template=PierceDamageEffect]
 				amount = 14
