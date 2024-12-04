@@ -1,6 +1,5 @@
-[Thing Template=AAUSABuildingPackable]
+[Template AAUSABuildingPackableEngineer Template=AAUSABuildingPackable]
 {
-	IDS = usa_brigade_engineer
 	name = "#usa_brigade_engineer_name"
 	editor_name = "#usa_brigade_engineer_editor_name"
 
@@ -242,4 +241,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template AAUSABuildingPackableEngineer]
+{
+	IDS = usa_brigade_engineer
 }

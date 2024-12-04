@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackable]
+[Template AAJPNBuildingPackableMotorPool Template=AAJPNBuildingPackable]
 {
-	IDS = jpn_motor_pool
 	name = "#jpn_motor_pool_Thing_name"
 	editor_name = "#jpn_motor_pool_Thing_editor_name"
 
@@ -215,4 +214,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template AAJPNBuildingPackableMotorPool]
+{
+	IDS = jpn_motor_pool
 }

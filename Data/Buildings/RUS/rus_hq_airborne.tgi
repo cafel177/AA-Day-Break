@@ -1,6 +1,5 @@
-[Thing Template=AARUSBuildingPackableHQ]
+[Template AARUSBuildingPackableHQAir Template=AARUSBuildingPackableHQ]
 {
-	IDS = rus_hq_airborne
 	name = "#rus_hq_airborne_Thing_name"
 	editor_name = "#rus_hq_airborne_Thing_editor_name"
 
@@ -264,4 +263,9 @@
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
 	}
+}
+
+[Thing Template AARUSBuildingPackableHQAir]
+{
+	IDS = rus_hq_airborne
 }

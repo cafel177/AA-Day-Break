@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackable]
+[Template AAGBRBuildingPackableMotorPool Template=AAGBRBuildingPackable]
 {
-	IDS = gbr_motor_pool
 	name = "#gbr_motor_pool_Thing_name"
 	editor_name = "#gbr_motor_pool_Thing_editor_name"
 
@@ -211,4 +210,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template AAGBRBuildingPackableMotorPool]
+{
+	IDS = gbr_motor_pool
 }

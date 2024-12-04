@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackableHQ]
+[Template AAJPNBuildingPackableHQAir Template=AAJPNBuildingPackableHQ]
 {
-	IDS = jpn_hq_airborne
 	name = "#jpn_hq_airborne_Thing_name"
 	editor_name = "#jpn_hq_airborne_Thing_editor_name"
 
@@ -272,4 +271,9 @@
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
 	}
+}
+
+[Thing Template AAJPNBuildingPackableHQAir]
+{
+	IDS = jpn_hq_airborne
 }

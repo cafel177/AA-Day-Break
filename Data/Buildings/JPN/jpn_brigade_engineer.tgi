@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackable]
+[Template AAJPNBuildingPackableEngineer Template=AAJPNBuildingPackable]
 {
-	IDS = jpn_brigade_engineer
 	name = "#jpn_brigade_engineer_Thing_name"
 	editor_name = "#jpn_brigade_engineer_Thing_editor_name"
 
@@ -222,4 +221,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template = AAJPNBuildingPackableEngineer]
+{
+	IDS = jpn_brigade_engineer
 }

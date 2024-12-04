@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackableHQ]
+[Template AAJPNBuildingPackableHQInf Template=AAJPNBuildingPackableHQ]
 {
-	IDS = jpn_hq_infantry
 	name = "#jpn_hq_infantry_Thing_name"
 	editor_name = "#jpn_hq_infantry_Thing_editor_name"
 
@@ -286,4 +285,9 @@
 		;windows 9-12 are inplace for the skylight windows on the main tent
 	}
 
+}
+
+[Thing Template AAJPNBuildingPackableHQInf]
+{
+	IDS = jpn_hq_infantry
 }

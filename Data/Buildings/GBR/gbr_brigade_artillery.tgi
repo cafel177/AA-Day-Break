@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackable]
+[Template AAGBRBuildingPackableArtillery Template=AAGBRBuildingPackable]
 {
-	IDS = gbr_brigade_artillery
 	name = "#gbr_brigade_artillery_name"
 	editor_name = "#gbr_brigade_artillery_editor_name"
 
@@ -172,4 +171,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template = AAGBRBuildingPackableArtillery]
+{
+	IDS = gbr_brigade_artillery
 }

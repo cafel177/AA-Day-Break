@@ -1,6 +1,5 @@
-[Thing Template=AAUSABuildingPackable]
+[Template AAUSABuildingPackableArtillery Template=AAUSABuildingPackable]
 {
-	IDS = usa_brigade_artillery
 	name = "#usa_brigade_artillery_name"
 	editor_name = "#usa_brigade_artillery_editor_name"
 
@@ -248,3 +247,7 @@
 	}
 }
 
+[Thing Template = AAUSABuildingPackableArtillery]
+{
+	IDS = usa_brigade_artillery
+}

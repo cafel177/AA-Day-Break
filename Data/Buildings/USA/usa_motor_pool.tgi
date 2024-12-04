@@ -1,6 +1,5 @@
-[Thing Template=AAUSABuildingPackable]
+[Template AAUSABuildingPackableMotorPool Template=AAUSABuildingPackable]
 {
-	IDS = usa_motor_pool
 	name = "#usa_motor_pool_Thing_name"
 	editor_name = "#usa_motor_pool_Thing_editor_name"
 
@@ -221,4 +220,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template AAUSABuildingPackableMotorPool]
+{
+	IDS = usa_motor_pool
 }

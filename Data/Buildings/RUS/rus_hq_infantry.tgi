@@ -1,6 +1,5 @@
-[Thing Template=AARUSBuildingPackableHQ]
+[Template AARUSBuildingPackableHQInf Template=AARUSBuildingPackableHQ]
 {
-	IDS = rus_hq_infantry
 	name = "#rus_hq_infantry_Thing_name"
 	editor_name = "#rus_hq_infantry_Thing_editor_name"
 
@@ -264,4 +263,9 @@
 		}
 		;Window07-10 ready for skylights (large)
 	}
+}
+
+[Thing Template = AARUSBuildingPackableHQInf]
+{
+	IDS = rus_hq_infantry
 }

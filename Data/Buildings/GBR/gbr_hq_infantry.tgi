@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackableHQ]
+[Template AAGBRBuildingPackableHQInf Template=AAGBRBuildingPackableHQ]
 {
-	IDS = gbr_hq_infantry
 	name = "#gbr_hq_infantry_Thing_name"
 	editor_name = "#gbr_hq_infantry_Thing_editor_name"
 
@@ -264,4 +263,9 @@
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
 	}
+}
+
+[Thing Template = AAGBRBuildingPackableHQInf]
+{
+	IDS = gbr_hq_infantry
 }

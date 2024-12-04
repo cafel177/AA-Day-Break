@@ -1,6 +1,5 @@
-[Thing Template=AAUSABuildingPackableHQ]
+[Template AAUSABuildingPackableHQInf Template=AAUSABuildingPackableHQ]
 {
-	IDS = usa_hq_infantry
 	name = "#usa_hq_infantry_Thing_name"
 	editor_name = "#usa_hq_infantry_Thing_editor_name"
 
@@ -250,4 +249,9 @@
 			attached = true
 		}
 	}
+}
+
+[Thing Template AAUSABuildingPackableHQInf]
+{
+	IDS = usa_hq_infantry
 }

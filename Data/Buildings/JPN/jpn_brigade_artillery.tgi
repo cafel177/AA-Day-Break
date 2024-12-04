@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackable]
+[Template AAJPNBuildingPackableArtillery Template=AAJPNBuildingPackable]
 {
-	IDS = jpn_brigade_artillery
 	name = "#jpn_brigade_artillery_Thing_name"
 	editor_name = "#jpn_brigade_artillery_Thing_editor_name"
 
@@ -170,4 +169,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template AAJPNBuildingPackableArtillery]
+{
+	IDS = jpn_brigade_artillery
 }

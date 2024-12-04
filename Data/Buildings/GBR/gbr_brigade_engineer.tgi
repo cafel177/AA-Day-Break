@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackable]
+[Template AAGBRBuildingPackableEngineer Template=AAGBRBuildingPackable]
 {
-	IDS = gbr_brigade_engineer
 	name = "#gbr_brigade_engineer_name"
 	editor_name = "#gbr_brigade_engineer_editor_name"
 
@@ -253,4 +252,9 @@
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
 	}
+}
+
+[Thing Template = AAGBRBuildingPackableEngineer]
+{
+	IDS = gbr_brigade_engineer
 }
