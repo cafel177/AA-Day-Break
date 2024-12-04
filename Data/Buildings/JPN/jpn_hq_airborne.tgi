@@ -141,9 +141,6 @@
 		actor_ids = regiment_jpn_helichopter
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_halftrack_flame_light
-
-		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_banzai
 
 		[RecruitActor]

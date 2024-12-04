@@ -130,9 +130,6 @@
 		actor_ids = regiment_gbr_infantry_sp
 
 		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_flame_light
-
-		[RecruitActor]
 		actor_ids = regiment_gbr_infantry_heavy
 
 		[RecruitActor]

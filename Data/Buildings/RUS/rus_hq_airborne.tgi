@@ -140,9 +140,6 @@
 		actor_ids = regiment_rus_helichopter
 
 		[RecruitActor]
-		actor_ids = regiment_rus_halftrack_flame_light
-
-		[RecruitActor]
 		actor_ids = rus_truck_supply
 	}
 	
