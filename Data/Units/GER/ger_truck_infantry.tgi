@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleHQTruckInf Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_infantry
 	name = "#ger_truck_infantry_name"
 	editor_name = "#ger_truck_infantry_editor_name"
 
@@ -25,10 +24,7 @@
 	}
 	
 	[MobileDeploymentComponent]
-	{
-	
-		unpack_to_actor_ids = ger_hq_infantry
-		
+	{		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -69,4 +65,23 @@
 		resource_prefix = GERTruck/GERTruck
 		icon = /UI/Game/BuildingButtons/IconHQInfantry.png
 	}
+}
+
+[Thing Template = AAUnitGERVehicleHQTruckInf]
+{
+	IDS = ger_truck_infantry
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_infantry
+}
+
+[Thing Template = AAUnitGERVehicleHQTruckInf]
+{
+	IDS = ger_truck_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_infantry_ib
 }

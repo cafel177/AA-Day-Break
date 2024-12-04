@@ -88,6 +88,18 @@
 
 [Thing Template=AAUnitRUSVehicleHQTruckCorp]
 {
+	IDS = rus_truck_corps_ib
+	editor_name = "#rus_truck_corps_Thing_editor_name"
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_corps_ib
+}
+
+[Thing Template=AAUnitRUSVehicleHQTruckCorp]
+{
 	IDS = rus_truck_corps_dynamic
 	editor_name = "#rus_truck_corps_dynamic_editor_name"
 

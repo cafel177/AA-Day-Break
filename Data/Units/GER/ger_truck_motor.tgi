@@ -78,3 +78,14 @@
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = ger_motor_pool_tb
 }
+
+[Thing Template=AAUnitGERVehicleHQTruckMotor ]
+{
+	IDS = ger_truck_motor_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_motor_pool_ib
+}

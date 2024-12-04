@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERVehicleHQTruck]
+[Template AAUnitGERVehicleHQTruckAir Template=AAUnitGERVehicleHQTruck]
 {
-	IDS = ger_truck_airborne
 	name = "#ger_truck_airborne_name"
 	editor_name = "#ger_truck_airborne_editor_name"
 
@@ -30,9 +29,7 @@
 	}
 	
 	[MobileDeploymentComponent]
-	{
-		unpack_to_actor_ids = ger_hq_airborne
-		
+	{		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -74,4 +71,23 @@
 		resource_prefix = GERTruck/GERTruck
 		icon = /UI/Game/BuildingButtons/IconHQAirborne.png
 	}
+}
+
+[Thing Template = AAUnitGERVehicleHQTruckAir]
+{
+	IDS = ger_truck_airborne
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_airborne
+}
+
+[Thing Template = AAUnitGERVehicleHQTruckAir]
+{
+	IDS = ger_truck_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = ger_hq_airborne_ib
 }
