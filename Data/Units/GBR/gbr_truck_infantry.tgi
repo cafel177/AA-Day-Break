@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRVehicleHQTruck]
+[Template AAUnitGBRVehicleHQTruckInf Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_infantry
 	name = "#gbr_truck_infantry_name"
 	editor_name = "#gbr_truck_infantry_editor_name"
 
@@ -24,8 +23,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = gbr_hq_infantry
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -67,4 +64,23 @@
 		resource_prefix = GBRTruck/GBRTruck
 		icon = /UI/Game/BuildingButtons/IconHQInfantry.png
 	}
+}
+
+[Thing Template AAUnitGBRVehicleHQTruckInf]
+{
+	IDS = gbr_truck_infantry
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_hq_infantry
+}
+
+[Thing Template AAUnitGBRVehicleHQTruckInf]
+{
+	IDS = gbr_truck_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_hq_infantry_ib
 }

@@ -1,6 +1,5 @@
-[Thing Template=AAUnitJPNVehicleHQTruck]
+[Template AAUnitJPNVehicleHQTruckMotor Template=AAUnitJPNVehicleHQTruck]
 {
-	IDS = jpn_truck_motor
 	name = "#jpn_truck_motor_name"
 	editor_name = "#jpn_truck_motor_editor_name"
 
@@ -26,9 +25,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = jpn_motor_pool
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -66,4 +62,23 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = motor_pool_select
 	}
+}
+
+[Thing Template = AAUnitJPNVehicleHQTruckMotor]
+{
+	IDS = jpn_truck_motor
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_motor_pool
+}
+
+[Thing Template = AAUnitJPNVehicleHQTruckMotor]
+{
+	IDS = jpn_truck_motor_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_motor_pool_ib
 }

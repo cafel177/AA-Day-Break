@@ -1,6 +1,5 @@
-[Thing Template=AAUnitUSAVehicleHQTruck]
+[Template AAUnitUSAVehicleHQTruckEngineer Template=AAUnitUSAVehicleHQTruck]
 {
-	IDS = usa_truck_engineer
 	name = "#usa_truck_engineer_name"
 	editor_name = "#usa_truck_engineer_editor_name"
 
@@ -29,10 +28,7 @@
 	}
 	
 	[MobileDeploymentComponent]
-	{
-	
-		unpack_to_actor_ids = usa_brigade_engineer
-		
+	{		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -69,4 +65,23 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_engineer_select
 	}
+}
+
+[Thing Template = AAUnitUSAVehicleHQTruckEngineer]
+{
+	IDS = usa_truck_engineer
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = usa_brigade_engineer
+}
+
+[Thing Template = AAUnitUSAVehicleHQTruckEngineer]
+{
+	IDS = usa_truck_engineer_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = usa_brigade_engineer_ib
 }

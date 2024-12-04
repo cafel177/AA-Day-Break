@@ -1,6 +1,5 @@
-[Thing Template=AAUnitJPNVehicleHQTruck]
+[Template AAUnitJPNVehicleHQTruckAir Template=AAUnitJPNVehicleHQTruck]
 {
-	IDS = jpn_truck_airborne
 	name = "#jpn_truck_airborne_name"
 	editor_name = "#jpn_truck_airborne_editor_name"
 
@@ -29,8 +28,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = jpn_hq_airborne
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -72,4 +69,23 @@
 		resource_prefix = JPNTruck/JPNTruck
 		icon = /UI/Game/BuildingButtons/IconHQAirborne.png
 	}
+}
+
+[Thing Template AAUnitJPNVehicleHQTruckAir]
+{
+	IDS = jpn_truck_airborne
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_hq_airborne
+}
+
+[Thing Template AAUnitJPNVehicleHQTruckAir]
+{
+	IDS = jpn_truck_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_hq_airborne_ib
 }

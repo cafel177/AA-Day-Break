@@ -1,6 +1,5 @@
-[Thing Template=AAUnitJPNVehicleHQTruck]
+[Template AAUnitJPNVehicleHQTruckArtillery Template=AAUnitJPNVehicleHQTruck]
 {
-	IDS = jpn_truck_artillery
 	name = "#jpn_truck_artillery_name"
 	editor_name = "#jpn_truck_artillery_editor_name"
 	
@@ -25,10 +24,7 @@
 	[ElementComponent]
 	
 	[MobileDeploymentComponent]
-	{
-	
-		unpack_to_actor_ids = jpn_brigade_artillery
-		
+	{		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -65,4 +61,23 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = brigade_artillery_select
 	}
+}
+
+[Thing Template AAUnitJPNVehicleHQTruckArtillery]
+{
+	IDS = jpn_truck_artillery
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_brigade_artillery
+}
+
+[Thing Template AAUnitJPNVehicleHQTruckArtillery]
+{
+	IDS = jpn_truck_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_brigade_artillery_ib
 }
