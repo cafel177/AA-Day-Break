@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationHQ]
+[Template AAGEROrganizationHQAir Template=AAGEROrganizationHQ]
 {
-	IDS = regiment_ger_hq_airborne
 	name = "#regiment_ger_hq_airborne_name"
 	editor_name = "#regiment_ger_hq_airborne_editor_name"
 	description = "#hq_Thing_description"
@@ -34,7 +33,12 @@
 		[WhenCreated Template=FXC_PlaySFX]
 		audio_ids = ger_truck_deployed
 	}
-	
+}
+
+[Thing Template = AAGEROrganizationHQAir]
+{
+	IDS = regiment_ger_hq_airborne
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
@@ -55,5 +59,35 @@
 		
 		[Slot]	;; captain
 		element_IDS = ger_truck_airborne
+	}
+}
+
+[Thing Template = AAGEROrganizationHQAir]
+{
+	IDS = regiment_ger_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq_mobile
+		supply_used = false
+		recruit_time = 30
+		
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = ger_truck_airborne_ib
 	}
 }

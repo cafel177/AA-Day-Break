@@ -330,3 +330,33 @@
 		}
 	}
 }
+
+[Thing Template=AAGERBuildingPackableMotor]
+{
+	IDS = ger_motor_pool_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = ger_truck_corps_ib
+	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_panzerfaust
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+	}
+}

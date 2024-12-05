@@ -35,67 +35,6 @@
 		[Property]
 		property_IDS = ammo
 	}	
-		
-	[ResearchComponent]
-	{
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fire_control
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 125
-			}
-		}		
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_long_range_artillery
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_gyrostabilized_cannons
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_tank_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	}
-	
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = usa_truck_bunker_artillery
-
-		[RecruitActor]
-		actor_ids = usa_truck_nuclear
-	}
 
 	[DenizenComponent]
 	{
@@ -250,4 +189,82 @@
 [Thing Template = AAUSABuildingPackableArtillery]
 {
 	IDS = usa_brigade_artillery
+
+	[ResearchComponent]
+	{
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fire_control
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 125
+			}
+		}		
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_long_range_artillery
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_gyrostabilized_cannons
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_tank_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+	
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = usa_truck_bunker_artillery
+
+		[RecruitActor]
+		actor_ids = usa_truck_nuclear
+	}
+}
+
+[Thing Template = AAUSABuildingPackableArtillery]
+{
+	IDS = usa_brigade_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{
+
+	}
+	
+	[RecruitComponent]
+	{
+	}
 }

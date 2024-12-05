@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationHQ]
+[Template AARUSOrganizationHQAir Template=AARUSOrganizationHQ]
 {
-	IDS = regiment_rus_hq_airborne
 	name = "#regiment_rus_hq_airborne_name"
 	editor_name = "#regiment_rus_hq_airborne_editor_name"
 	description = "#hq_Thing_description"
@@ -34,6 +33,13 @@
 		audio_ids = rus_truck_deployed
 	}
 	
+
+}
+
+[Thing Template = AARUSOrganizationHQAir]
+{
+	IDS = regiment_rus_hq_airborne
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
@@ -54,5 +60,35 @@
 		
 		[Slot]	;; captain
 		element_IDS = rus_truck_airborne
+	}
+}
+
+[Thing Template = AARUSOrganizationHQAir]
+{
+	IDS = regiment_rus_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq_mobile
+		supply_used = false
+		recruit_time = 30
+		
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_truck_airborne_ib
 	}
 }

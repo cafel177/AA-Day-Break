@@ -39,80 +39,6 @@
 		[Property]
 		property_IDS = oil
 	}	
-	
-	[ResearchComponent]
-	{
-		[ResearchItem]
-		{
-			property_IDS = tech_ammo_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-		[ResearchItem]
-		{
-			property_IDS = tech_oil_production
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_proximity_fuses
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_construction_battalions
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_fortifications
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = usa_truck_bunker
-
-		[RecruitActor]
-		actor_ids = usa_truck_bunker_aa
-
-		[RecruitActor]
-		actor_ids = usa_truck_heal
-	}
 
 	[DenizenComponent]
 	{
@@ -246,4 +172,145 @@
 [Thing Template AAUSABuildingPackableEngineer]
 {
 	IDS = usa_brigade_engineer
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_proximity_fuses
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_construction_battalions
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fortifications
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = usa_truck_bunker
+
+		[RecruitActor]
+		actor_ids = usa_truck_bunker_aa
+
+		[RecruitActor]
+		actor_ids = usa_truck_heal
+	}
+}
+
+[Thing Template AAUSABuildingPackableEngineer]
+{
+	IDS = usa_brigade_engineer_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_construction_battalions
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fortifications
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = usa_truck_bunker
+
+		[RecruitActor]
+		actor_ids = usa_truck_heal
+	}
 }

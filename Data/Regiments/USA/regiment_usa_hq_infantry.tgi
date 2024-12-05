@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationHQ]
+[Template AAUSAOrganizationHQInf Template=AAUSAOrganizationHQ]
 {
-	IDS = regiment_usa_hq_infantry
 	name = "#regiment_usa_hq_infantry_name"
 	editor_name = "#regiment_usa_hq_infantry_editor_name"
 
@@ -35,6 +34,13 @@
 		audio_ids = usa_truck_deployed
 	}
 	
+	
+}
+
+[Thing Template = AAUSAOrganizationHQInf]
+{
+	IDS = regiment_usa_hq_infantry
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
@@ -54,5 +60,34 @@
 		
 		[Slot]	;; captain
 		element_IDS = usa_truck_infantry
-	}	
+	}
+}
+
+[Thing Template = AAUSAOrganizationHQInf]
+{
+	IDS = regiment_usa_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq_mobile
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = usa_truck_infantry_ib
+	}
 }

@@ -104,48 +104,6 @@
 		[Property]
 		property_ids = mg		
 	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_def
-	
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = ger_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_at
-	
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_goliath
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_ger_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_ger_tank_hohle
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry
-	}
 	
 	[ResearchComponent]
 	{
@@ -293,4 +251,81 @@
 [Thing Template AAGERBuildingPackableHQInf]
 {
 	IDS = ger_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_def
+	
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_at
+	
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_goliath
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_ger_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_hohle
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry
+	}
+}
+
+[Thing Template AAGERBuildingPackableHQInf]
+{
+	IDS = ger_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_def
+	
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_at
+	
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_ger_tank_hohle
+	}
 }
