@@ -35,45 +35,6 @@
 		[Property]
 		property_IDS = ammo
 	}	
-		
-	[ResearchComponent]
-	{	
-		[ResearchItem]
-		{
-			property_IDS = tech_long_range_artillery
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}	
-				
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_mortars
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_plentiful_ammunition
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	}
 
 	[DenizenComponent]
 	{
@@ -82,12 +43,6 @@
 			creation_offset = 2.5, 1.5
 			deployment_offset = 2.5, 6.0
 		}
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = jpn_truck_bunker_artillery
 	}
 
 	[Size]
@@ -174,4 +129,89 @@
 [Thing Template AAJPNBuildingPackableArtillery]
 {
 	IDS = jpn_brigade_artillery
+
+	[ResearchComponent]
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_long_range_artillery
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_plentiful_ammunition
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = jpn_truck_bunker_artillery
+	}
+}
+
+[Thing Template AAJPNBuildingPackableArtillery]
+{
+	IDS = jpn_brigade_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{						
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_plentiful_ammunition
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{
+
+	}
 }

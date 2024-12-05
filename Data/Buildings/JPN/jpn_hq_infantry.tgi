@@ -102,51 +102,6 @@
 		[Property]
 		property_ids = mg		
 	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = jpn_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_commando
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_banzai
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_tankette
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry
-	}
 		
 	[ResearchComponent]
 	
@@ -290,4 +245,84 @@
 [Thing Template AAJPNBuildingPackableHQInf]
 {
 	IDS = jpn_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_commando
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_banzai
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tankette
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry
+	}
+}
+
+[Thing Template AAJPNBuildingPackableHQInf]
+{
+	IDS = jpn_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_banzai
+	}
 }
