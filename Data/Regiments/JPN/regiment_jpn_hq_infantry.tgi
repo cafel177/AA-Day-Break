@@ -1,6 +1,5 @@
-[Thing Template=AAJPNOrganizationHQ]
+[Template AAJPNOrganizationHQInf Template=AAJPNOrganizationHQ]
 {
-	IDS = regiment_jpn_hq_infantry
 	name = "#regiment_jpn_hq_infantry_name"
 	editor_name = "#regiment_jpn_hq_infantry_editor_name"
 
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = jpn_truck_infantry
 	}	
+}
+
+[Thing Template = AAJPNOrganizationHQInf]
+{
+	IDS = regiment_jpn_hq_infantry
 }

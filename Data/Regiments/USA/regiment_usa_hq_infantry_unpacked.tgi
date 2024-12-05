@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationHQ]
+[Template AAUSAOrganizationHQInfUnpacked Template=AAUSAOrganizationHQ]
 {
-	IDS = regiment_usa_hq_infantry_unpacked
 	name = "#regiment_usa_hq_infantry_unpacked_name"
 	editor_name = "#regiment_usa_hq_infantry_unpacked_editor_name"
 
@@ -52,4 +51,9 @@
 		[Slot]	;; captain
 		element_IDS = usa_hq_infantry
 	}	
+}
+
+[Thing Template = AAUSAOrganizationHQInfUnpacked]
+{
+	IDS = regiment_usa_hq_infantry_unpacked
 }

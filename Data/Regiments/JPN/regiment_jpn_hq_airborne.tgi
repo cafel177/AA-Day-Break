@@ -1,6 +1,5 @@
-[Thing Template=AAJPNOrganizationHQ]
+[Template AAJPNOrganizationHQAir Template=AAJPNOrganizationHQ]
 {
-	IDS = regiment_jpn_hq_airborne
 	name = "#regiment_jpn_hq_airborne_name"
 	editor_name = "#regiment_jpn_hq_airborne_editor_name"
 
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = jpn_truck_airborne
 	}
+}
+
+[Thing Template = AAJPNOrganizationHQAir]
+{
+	IDS = regiment_jpn_hq_airborne
 }

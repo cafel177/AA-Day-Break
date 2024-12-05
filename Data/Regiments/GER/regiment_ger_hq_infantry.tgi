@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationHQ]
+[Template AAGEROrganizationHQInf Template=AAGEROrganizationHQ]
 {
-	IDS = regiment_ger_hq_infantry
 	name = "#regiment_ger_hq_infantry_name"
 	editor_name = "#regiment_ger_hq_infantry_editor_name"
 	description = "#hq_Thing_description"
@@ -56,4 +55,9 @@
 		[Slot]	;; captain
 		element_IDS = ger_truck_infantry
 	}	
+}
+
+[Thing Template = AAGEROrganizationHQInf]
+{
+	IDS = regiment_ger_hq_infantry
 }

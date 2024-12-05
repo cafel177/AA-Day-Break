@@ -1,6 +1,5 @@
-[Thing Template=AAJPNOrganizationHQ]
+[Template AAJPNOrganizationHQInfUnpacked Template=AAJPNOrganizationHQ]
 {
-	IDS = regiment_jpn_hq_infantry_unpacked
 	name = "#regiment_jpn_hq_infantry_unpacked_name"
 	editor_name = "#regiment_jpn_hq_infantry_unpacked_editor_name"
 
@@ -52,4 +51,9 @@
 		[Slot]	;; captain
 		element_IDS = jpn_hq_infantry
 	}	
+}
+
+[Thing Template = AAJPNOrganizationHQInfUnpacked]
+{
+	IDS = regiment_jpn_hq_infantry_unpacked
 }

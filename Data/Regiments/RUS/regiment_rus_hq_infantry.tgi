@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationHQ]
+[Template AARUSOrganizationHQInf Template=AARUSOrganizationHQ]
 {
-	IDS = regiment_rus_hq_infantry
 	name = "#regiment_rus_hq_infantry_name"
 	editor_name = "#regiment_rus_hq_infantry_editor_name"
 	description = "#hq_Thing_description"
@@ -56,4 +55,9 @@
 		[Slot]	;; captain
 		element_IDS = rus_truck_infantry
 	}	
+}
+
+[Thing Template = AARUSOrganizationHQInf]
+{
+	IDS = regiment_rus_hq_infantry
 }

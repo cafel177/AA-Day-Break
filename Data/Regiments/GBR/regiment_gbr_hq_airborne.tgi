@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationHQ]
+[Template AAGBROrganizationHQAir Template=AAGBROrganizationHQ]
 {
-	IDS = regiment_gbr_hq_airborne
 	name = "#regiment_gbr_hq_airborne_name"
 	editor_name = "#regiment_gbr_hq_airborne_editor_name"
 
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = gbr_truck_airborne
 	}
+}
+
+[Thing Template AAGBROrganizationHQAir]
+{
+	IDS = regiment_gbr_hq_airborne
 }

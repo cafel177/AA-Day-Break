@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationHQ]
+[Template AAGBROrganizationHQUnpacked Template=AAGBROrganizationHQ]
 {
-	IDS = regiment_gbr_hq_infantry_unpacked
 	name = "#regiment_gbr_hq_infantry_unpacked_name"
 	editor_name = "#regiment_gbr_hq_infantry_unpacked_editor_name"
 	
@@ -52,4 +51,9 @@
 		[Slot]	;; captain
 		element_IDS = gbr_hq_infantry
 	}
+}
+
+[Thing Template = AAGBROrganizationHQUnpacked]
+{
+	IDS = regiment_gbr_hq_infantry_unpacked
 }

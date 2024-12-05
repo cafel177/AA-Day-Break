@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationHQ]
+[Template AAUSAOrganizationHQAirUnpacked Template=AAUSAOrganizationHQ]
 {
-	IDS = regiment_usa_hq_airborne_unpacked
 	name = "#regiment_usa_hq_airborne_unpacked_name"
 	editor_name = "#regiment_usa_hq_airborne_unpacked_editor_name"
 	
@@ -52,4 +51,9 @@
 		[Slot]	;; captain
 		element_IDS = usa_hq_airborne
 	}
+}
+
+[Thing Template AAUSAOrganizationHQAirUnpacked]
+{
+	IDS = regiment_usa_hq_airborne_unpacked
 }

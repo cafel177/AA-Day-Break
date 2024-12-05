@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationHQ]
+[Template AAUSAOrganizationHQInf Template=AAUSAOrganizationHQ]
 {
-	IDS = regiment_usa_hq_infantry
 	name = "#regiment_usa_hq_infantry_name"
 	editor_name = "#regiment_usa_hq_infantry_editor_name"
 
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = usa_truck_infantry
 	}	
+}
+
+[Thing Template = AAUSAOrganizationHQInf]
+{
+	IDS = regiment_usa_hq_infantry
 }

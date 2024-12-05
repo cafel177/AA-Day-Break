@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationHQ]
+[Template AARUSOrganizationHQAir Template=AARUSOrganizationHQ]
 {
-	IDS = regiment_rus_hq_airborne
 	name = "#regiment_rus_hq_airborne_name"
 	editor_name = "#regiment_rus_hq_airborne_editor_name"
 	description = "#hq_Thing_description"
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = rus_truck_airborne
 	}
+}
+
+[Thing Template = AARUSOrganizationHQAir]
+{
+	IDS = regiment_rus_hq_airborne
 }

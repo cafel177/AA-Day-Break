@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationHQ]
+[Template AAUSAOrganizationHQAir Template=AAUSAOrganizationHQ]
 {
-	IDS = regiment_usa_hq_airborne
 	name = "#regiment_usa_hq_airborne_name"
 	editor_name = "#regiment_usa_hq_airborne_editor_name"
 
@@ -55,4 +54,9 @@
 		[Slot]	;; captain
 		element_IDS = usa_truck_airborne
 	}
+}
+
+[Thing Template AAUSAOrganizationHQAir]
+{
+	IDS = regiment_usa_hq_airborne
 }
