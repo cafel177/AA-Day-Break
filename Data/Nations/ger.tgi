@@ -75,6 +75,10 @@
 	thing_ids = ger_corps_tb
 
 	[Placeholder]
+	placeholder_IDS = placeholder_corpsunpacked_ib
+	thing_ids = ger_corps_ib
+
+	[Placeholder]
 	placeholder_IDS = placeholder_depot_moneybox
 	thing_IDS = thing_currency_resource_tb
 
