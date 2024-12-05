@@ -31,6 +31,13 @@
 		}
 	}
 	
+	
+}
+
+[Thing Template = AAUSAOrganizationHQInfUnpacked]
+{
+	IDS = regiment_usa_hq_infantry_unpacked
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq
@@ -50,10 +57,34 @@
 		
 		[Slot]	;; captain
 		element_IDS = usa_hq_infantry
-	}	
+	}
 }
 
 [Thing Template = AAUSAOrganizationHQInfUnpacked]
 {
-	IDS = regiment_usa_hq_infantry_unpacked
+	IDS = regiment_usa_hq_infantry_unpacked_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = usa_hq_infantry_ib
+	}
 }

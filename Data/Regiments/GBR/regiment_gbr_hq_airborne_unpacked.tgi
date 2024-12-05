@@ -31,6 +31,13 @@
 		}
 	}
 	
+
+}
+
+[Thing Template = AAGBROrganizationHQUnpacked]
+{
+	IDS = regiment_gbr_hq_airborne_unpacked
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq
@@ -55,5 +62,29 @@
 
 [Thing Template = AAGBROrganizationHQUnpacked]
 {
-	IDS = regiment_gbr_hq_airborne_unpacked
+	IDS = regiment_gbr_hq_airborne_unpacked_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = gbr_hq_airborne_ib
+	}
 }
