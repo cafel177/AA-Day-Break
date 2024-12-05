@@ -301,3 +301,70 @@
 		}
 	}
 }
+
+[Thing Template=AAGERBuildingPackableEngineer]
+{
+	IDS = ger_brigade_engineer_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = ger_truck_bunker
+
+		[RecruitActor]
+		actor_ids = ger_truck_heal
+	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_ammo_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+		[ResearchItem]
+		{
+			property_IDS = tech_oil_production
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_construction_battalions
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_fortifications
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+}
