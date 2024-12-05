@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRKneel]
+[Template AAUnitGBRKneelAT Template=AAUnitGBRKneel]
 {
-	IDS = gbr_infantry_at
 	name = "#gbr_infantry_at_name"
 	editor_name = "#gbr_infantry_at_editor_name"
 	
@@ -12,10 +11,7 @@
 
 	[CharacterComponent Template=AAInfantryATCharacterComponent]
 
-	[ElementComponent]
-	{
-		required_structures = gbr_motor_pool
-	}
+
 	
 	[MoverComponent]
 	{
@@ -40,6 +36,26 @@
 		property_IDS = combat_unit
 	}
 	
+	[View]
+	{
+		resource_prefix = GBRInfantryAT/GBRInfantryAT
+
+		[WhenCreated Template=FXC_Equipment]
+		action = UNHIDE
+		location = rhand
+		equipment_type_ids = rifle
+	}
+}
+
+[Thing Template AAUnitGBRKneelAT]
+{
+	IDS = gbr_infantry_at
+
+    	[ElementComponent]
+	{
+		required_structures = gbr_motor_pool
+	}
+
 	[PerformerComponent]
 	{
 		[Ability template=AAAttackLocalBomb]
@@ -108,14 +124,86 @@
 			}
 		}
 	}
-	
-	[View]
-	{
-		resource_prefix = GBRInfantryAT/GBRInfantryAT
+}
 
-		[WhenCreated Template=FXC_Equipment]
-		action = UNHIDE
-		location = rhand
-		equipment_type_ids = rifle
+[Thing Template AAUnitGBRKneelAT]
+{
+	IDS = gbr_infantry_at_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	{
+		required_structures = gbr_motor_pool_ib
+	}
+
+	[PerformerComponent]
+	{
+		[Ability template=AAAttackLocalBomb]
+		{
+			spawn_bone_ids = cannon_ae_01
+			
+			[AbilityDefinition Template=AAInfantryRocket]
+			{				
+				name = "#gbr_infantry_at_AbilityDefinition_name"
+				recharge_time = 7
+				area = 2
+				range = 30
+				max_targets = 2
+				attenuation_range_min = 0.1
+				attenuation_factor_max = 0.01
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 60
+
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_gbr1_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+				
+				[Effect Template=EnchantmentEffect]
+				{
+
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_gbr_2_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.3
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+					}
+				}
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = gbr_rocket
+			}
+		}
 	}
 }

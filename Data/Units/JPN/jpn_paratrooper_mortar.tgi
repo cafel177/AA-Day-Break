@@ -1,11 +1,9 @@
-[Thing Template=AAUnitJPNProne]
+[Template AAUnitJPNProneMortar Template=AAUnitJPNProne]
 {
-	IDS = jpn_paratrooper_mortar
 	name = "#jpn_paratrooper_mortar_name"
 	editor_name = "#jpn_paratrooper_mortar_editor_name"
 	
-	[ElementComponent]
-	required_structures = jpn_brigade_artillery
+
 	
 	[Stance template = StanceFalling]
 	
@@ -110,4 +108,23 @@
 			}
 		}
 	}
+}
+
+[Thing Template AAUnitJPNProneMortar]
+{
+	IDS = jpn_paratrooper_mortar
+
+    	[ElementComponent]
+	required_structures = jpn_brigade_artillery
+}
+
+[Thing Template AAUnitJPNProneMortar]
+{
+	IDS = jpn_paratrooper_mortar_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	required_structures = jpn_brigade_artillery_ib
 }

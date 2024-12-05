@@ -1,6 +1,5 @@
-[Thing Template=AAUnitUSABiped]
+[Template AAUnitUSABipedMortar Template=AAUnitUSABiped]
 {
-	IDS = usa_infantry_mortar
 	name = "#usa_infantry_mortar_name"
 	editor_name = "#usa_infantry_mortar_editor_name"
 		
@@ -31,10 +30,7 @@
 		property_IDS = combat_unit
 	}
 
-	[ElementComponent]
-	{
-		required_structures = usa_brigade_artillery
-	}
+
 	
 	[PerformerComponent]
 	{
@@ -89,5 +85,28 @@
 		action = UNHIDE
 		location = rhand
 		equipment_type_ids = mortardown
+	}
+}
+
+[Thing Template = AAUnitUSABipedMortar]
+{
+	IDS = usa_infantry_mortar
+
+    	[ElementComponent]
+	{
+		required_structures = usa_brigade_artillery
+	}
+}
+
+[Thing Template = AAUnitUSABipedMortar]
+{
+	IDS = usa_infantry_mortar_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	{
+		required_structures = usa_brigade_artillery_ib
 	}
 }

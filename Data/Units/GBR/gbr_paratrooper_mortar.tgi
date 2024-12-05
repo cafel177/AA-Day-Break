@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRProne]
+[Template AAUnitGBRProneMortar Template=AAUnitGBRProne]
 {
-	IDS = gbr_paratrooper_mortar
 	name = "#gbr_paratrooper_mortar_name"
 	editor_name = "#gbr_paratrooper_mortar_editor_name"
 	
@@ -45,8 +44,7 @@
 
 	[CharacterComponent Template=AAInfantryMortarCharacterComponent]
 	
-	[ElementComponent]
-	required_structures = gbr_brigade_artillery
+
 	
 	[MoverComponent]
 	speed_max = 3
@@ -110,4 +108,23 @@
 		actor_state = falling
 		location = neck
 	}
+}
+
+[Thing Template = AAUnitGBRProneMortar]
+{
+	IDS = gbr_paratrooper_mortar
+
+    	[ElementComponent]
+	required_structures = gbr_brigade_artillery
+}
+
+[Thing Template = AAUnitGBRProneMortar]
+{
+	IDS = gbr_paratrooper_mortar_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	required_structures = gbr_brigade_artillery_ib
 }

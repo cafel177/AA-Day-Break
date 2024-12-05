@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERKneel]
+[Template AAUnitGERKneelAT Template=AAUnitGERKneel]
 {
-	IDS = ger_infantry_at
 	name = "#ger_infantry_at_name"
 	editor_name = "#ger_infantry_at_editor_name"
 	
@@ -12,10 +11,7 @@
 
 	[CharacterComponent Template=AAInfantryATCharacterComponent]
 	
-	[ElementComponent]
-	{
-		required_structures = ger_motor_pool
-	}
+
 
 	[MoverComponent]
 	{
@@ -40,6 +36,24 @@
 		property_IDS = combat_unit
 	}
 	
+
+	
+	[View]
+	{
+		resource_prefix = GERInfantryAT/GERInfantryAT
+	}
+
+}
+
+[Thing Template = AAUnitGERKneelAT]
+{
+	IDS = ger_infantry_at
+
+    	[ElementComponent]
+	{
+		required_structures = ger_motor_pool
+	}
+
 	[PerformerComponent]
 	{
 		[Ability template=AAAttackLocalBomb]
@@ -112,10 +126,90 @@
 
 
 	}
-	
-	[View]
+}
+
+[Thing Template = AAUnitGERKneelAT]
+{
+	IDS = ger_infantry_at_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
 	{
-		resource_prefix = GERInfantryAT/GERInfantryAT
+		required_structures = ger_motor_pool_ib
 	}
 
+	[PerformerComponent]
+	{
+		[Ability template=AAAttackLocalBomb]
+		{
+			spawn_bone_ids = cannon_ae_01
+			
+			[AbilityDefinition Template=AAInfantryRocket]
+			{				
+				name = "#ger_infantry_at_AbilityDefinition_name"
+				recharge_time = 7
+				area = 2
+				range = 30
+				max_targets = 2
+				attenuation_range_min = 0.1
+				attenuation_factor_max = 0.01
+				
+				[Flags] 
+				bombard = true
+
+				[Effect Template=APDamageEffect]
+				amount = 70
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = ger_rocket
+			
+				[Effect Template=EnchantmentEffect]
+				{
+					targets = +ENEMY +VEHICLE -building
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger1_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2.0
+						enchantment_type = ench_type_stun1
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=FlagModifier]
+						modifier_flag = PARALYZE			
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+						
+					}
+				}
+
+				[Effect Template=EnchantmentEffect]
+				{
+
+
+					[EnchantmentProperty Template=EnchantmentProperty]
+					{
+						IDS = at_stun_ger_2_2
+						name = "#gbr_infantry_at_AbilityDefinition_Effect_EnchantmentProperty_name"
+						duration = 2.0
+						enchantment_type = ench_type_slow
+						icon = /properties/PropertyIcons/IconPropertyMovement.png
+			
+						[Modifier Template=MultiplyModifier]
+						attribute = SPEED_MAX
+						amount = -0.3
+
+						[WhenAdded template=FXC_CreateVFX]
+						VFX_IDS = smoke_tint
+						
+					}
+				}			
+			}
+		}
+
+
+	}
 }

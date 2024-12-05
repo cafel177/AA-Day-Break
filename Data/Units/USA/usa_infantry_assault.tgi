@@ -1,6 +1,5 @@
-[Thing Template=AAUnitUSAProne]
+[Template AAUnitUSAProneAssault Template=AAUnitUSAProne]
 {
-	IDS = usa_infantry_assault
 	name = "#usa_infantry_assault_name"
 	editor_name = "#usa_infantry_assault_editor_name"
 
@@ -30,10 +29,7 @@
 	[MoverComponent]
 	speed_max = 2.5
 
-	[ElementComponent]
-	{
-		required_structures = usa_brigade_artillery	
-	}
+
 	
 	[PropertiesComponent]
 	{
@@ -125,5 +121,28 @@
 				}
 			}
 		}
+	}
+}
+
+[Thing Template AAUnitUSAProneAssault]
+{
+	IDS = usa_infantry_assault
+
+    	[ElementComponent]
+	{
+		required_structures = usa_brigade_artillery	
+	}
+}
+
+[Thing Template AAUnitUSAProneAssault]
+{
+	IDS = usa_infantry_assault_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	{
+		required_structures = usa_brigade_artillery_ib
 	}
 }
