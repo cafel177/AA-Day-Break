@@ -424,6 +424,55 @@
 	}	
 }
 
+[Thing Template=USAcorpsHQ]
+{
+	IDS = usa_corps_ib
+	name = "#usa_corps_Thing_name"
+	editor_name = "#usa_corps_Thing_editor_name"
+	
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_usa_hq_infantry_ib
+
+		[RecruitActor]
+		actor_ids = regiment_usa_hq_airborne_ib
+
+		[RecruitActor]
+		actor_ids = usa_truck_engineer_ib
+		
+		[RecruitActor]
+		actor_ids = usa_truck_motor_ib
+
+		[RecruitActor]
+		actor_ids = usa_truck_artillery_ib
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply_large
+
+		[RecruitActor]
+		actor_ids = usa_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = usa_truck_oil
+	}	
+}
+
 ;; DYNAMIC CAMPAIGN
 
 [Thing Template=USAcorpsHQ]

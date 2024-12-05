@@ -106,39 +106,6 @@
 		[Property]
 		property_ids = mg		
 	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper2
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper_heavy2
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper_ground
-
-		[RecruitActor]
-		actor_ids = regiment_usa_paratrooper_heavy_ground
-
-		[RecruitActor]
-		actor_ids = regiment_usa_helichopter
-
-		[RecruitActor]
-		actor_ids = usa_truck_supply
-	}
 	
 	[ResearchComponent]
 	
@@ -267,4 +234,72 @@
 [Thing Template AAUSABuildingPackableHQAir]
 {
 	IDS = usa_hq_airborne
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = regiment_usa_helichopter
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
+	}
+}
+
+[Thing Template AAUSABuildingPackableHQAir]
+{
+	IDS = usa_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy2
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_usa_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
+	}
 }
