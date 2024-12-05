@@ -1,4 +1,4 @@
-[Template AAUnitJPNVehicleHQTruck Template=AAUnitJPNVehicleHQTruck]
+[Template AAUnitJPNVehicleHQTruckEngineer Template=AAUnitJPNVehicleHQTruck]
 {
 	name = "#jpn_truck_engineer_name"
 	editor_name = "#jpn_truck_engineer_editor_name"
@@ -67,7 +67,7 @@
 	}
 }
 
-[Thing Template = AAUnitJPNVehicleHQTruck]
+[Thing Template = AAUnitJPNVehicleHQTruckEngineer]
 {
 	IDS = jpn_truck_engineer
 
@@ -75,7 +75,7 @@
 	unpack_to_actor_ids = jpn_brigade_engineer
 }
 
-[Thing Template = AAUnitJPNVehicleHQTruck]
+[Thing Template = AAUnitJPNVehicleHQTruckEngineer]
 {
 	IDS = jpn_truck_engineer_ib
 
