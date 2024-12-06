@@ -240,6 +240,18 @@
 				money = 100
 			}
 		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
 	}
 	
 	[RecruitComponent]
@@ -261,7 +273,17 @@
 
 	[ResearchComponent]
 	{
-
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
 	}
 	
 	[RecruitComponent]
