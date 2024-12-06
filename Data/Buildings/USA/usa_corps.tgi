@@ -119,105 +119,7 @@
 		property_ids = mg		
 	}	
 		
-	[ResearchComponent]
-	{				
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_logistics
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 50
-			}
-		}				
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_machineguns
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_advanced_infantry_training
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_marksmanship
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_garand_semi_auto
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-
-/*
-		[ResearchItem]
-		{
-			property_IDS = tech_sniper_rifle
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-*/
-		[ResearchItem]
-		{
-			property_IDS = tech_battleship
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_special_forces
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-	}	
+	
 
 	[Size]
 	{
@@ -421,6 +323,106 @@
 		
 		[RecruitActor]
 		actor_ids = usa_truck_oil
+	}
+
+	[ResearchComponent]
+	{				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}				
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_garand_semi_auto
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+
+/*
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+*/
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
 	}	
 }
 
@@ -470,6 +472,93 @@
 		
 		[RecruitActor]
 		actor_ids = usa_truck_oil
+	}
+
+	[ResearchComponent]
+	{				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}				
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_garand_semi_auto
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
 	}	
 }
 
@@ -518,5 +607,105 @@
 		
 		[RecruitActor]
 		actor_ids = usa_truck_oil
+	}
+
+	[ResearchComponent]
+	{				
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}				
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_garand_semi_auto
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+
+/*
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+*/
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
 	}
 }

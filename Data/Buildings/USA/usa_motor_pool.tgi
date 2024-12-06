@@ -235,7 +235,19 @@
 	placement_group_ids = null
 
 	[ResearchComponent]
-	{		
+	{	
+		[ResearchItem]
+		{
+			property_IDS = tech_flame
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	
 		[ResearchItem]
 		{
 			property_IDS = tech_improved_light_antitank

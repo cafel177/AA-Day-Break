@@ -291,9 +291,6 @@
 		actor_ids = regiment_jpn_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_aa
-
-		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper
 
 		[RecruitActor]

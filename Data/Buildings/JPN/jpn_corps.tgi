@@ -96,104 +96,7 @@
 		property_ids = mg		
 	}	
 	
-	[ResearchComponent]
-	{
-		[ResearchItem]
-		{
-			property_IDS = tech_foraging
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_improved_logistics
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 50
-			}
-		}
 
-		[ResearchItem]
-		{
-			property_IDS = tech_sniper_rifle
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_military_surplus
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_special_forces
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}		
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_infantry_banzai
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 50
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_battleship
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 150
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_tankette
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-	}	
 
 	[Size]
 	{
@@ -404,7 +307,106 @@
 		
 		[RecruitActor]
 		actor_ids = jpn_truck_oil
-	}	
+	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_foraging
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_infantry_banzai
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_tankette
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}		
 }
 
 [Thing Template=JPNcorpsHQ]
@@ -453,7 +455,82 @@
 		
 		[RecruitActor]
 		actor_ids = jpn_truck_oil
-	}	
+	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_foraging
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_infantry_banzai
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+	}		
 }
 
 ;; DYNAMIC CAMPAIGN
@@ -502,4 +579,103 @@
 		[RecruitActor]
 		actor_ids = jpn_truck_oil
 	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_foraging
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_sniper_rifle
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}		
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_infantry_banzai
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_tankette
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+	}	
 }
