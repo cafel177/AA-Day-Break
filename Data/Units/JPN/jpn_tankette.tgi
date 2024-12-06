@@ -52,7 +52,7 @@
 	{
 		control_range = 12
 
-		[Ability Template=AAGunLocal]
+		[Ability template=AATurretAttackLocal]
 		{	
 			[AbilityDefinition Template=AAVehicleMG]
 			{
@@ -81,7 +81,7 @@
 
 	[PerformerComponent]
 	{
-		[Ability Template=AAGunLocal]
+		[Ability template=AATurretAttackLocal]
 		{	
 			[AbilityDefinition Template=AAVehicleMG]
 			{
