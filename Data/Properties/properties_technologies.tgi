@@ -350,6 +350,10 @@
 		attribute = AV
 		amount = 10
 	}
+
+	[Modifier Template=MultiplyModifier]
+	attribute = RECHARGE_TIME
+	amount = 0.2
 }
 
 [Property Template=AATechnologyTank]
@@ -450,6 +454,10 @@
 	[Modifier Template=AddModifier]
 	attribute = AV
 	amount = 15
+
+	[Modifier Template=MultiplyModifier]
+	attribute = RECHARGE_TIME
+	amount = 0.2
 }
 
 [Property Template=AATechnologyTank]
