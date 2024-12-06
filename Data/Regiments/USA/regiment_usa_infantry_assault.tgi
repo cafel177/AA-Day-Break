@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationInfantry]
+[Template AAUSAOrganizationInfantryAssault Template=AAUSAOrganizationInfantry]
 {
-	IDS = regiment_usa_infantry_assault
 	editor_name = "#regiment_usa_infantry_assault_editor_name"
 	name = "#regiment_usa_infantry_assault_name"
 
@@ -59,4 +58,7 @@
 	}
 }
 
-
+[Thing Template = AAUSAOrganizationInfantryAssault]
+{
+	IDS = regiment_usa_infantry_assault
+}

@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationArtillery]
+[Template AAGBROrganizationInfArtillery Template=AAGBROrganizationArtillery]
 {
-	IDS = regiment_gbr_infantry_artillery
 	name = "#regiment_gbr_infantry_artillery_name"
 	editor_name = "#regiment_gbr_infantry_artillery_editor_name"
 	
@@ -62,4 +61,9 @@
 	}
 	
 	[ExperienceComponent template=AAInfantryExperienceComponent]
+}
+
+[Thing Template = AAGBROrganizationInfArtillery]
+{
+	IDS = regiment_gbr_infantry_artillery
 }

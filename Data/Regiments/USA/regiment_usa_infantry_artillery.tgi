@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationArtillery]
+[Template AAUSAOrganizationInfArtillery Template=AAUSAOrganizationArtillery]
 {
-	IDS = regiment_usa_infantry_artillery
 	name = "#regiment_usa_infantry_artillery_name"
 	editor_name = "#regiment_usa_infantry_artillery_editor_name"
 
@@ -62,4 +61,9 @@
 	}
 	
 	[ExperienceComponent template=AAInfantryExperienceComponent]
+}
+
+[Thing Template = AAUSAOrganizationInfArtillery]
+{
+	IDS = regiment_usa_infantry_artillery
 }

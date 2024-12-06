@@ -64,6 +64,12 @@
 	editor_name = "#regiment_gbr_infantry_at_editor_name"
 }
 
+[Thing Template=AAGBRRegimentInfantryAT]
+{
+	IDS = regiment_gbr_infantry_at_ib
+	editor_name = "#regiment_gbr_infantry_at_editor_name"
+}
+
 /*
 ;; brw051904- Removing because with the current build path you can't recruit them.
 [Thing Template=AAGBRRegimentInfantryAT]

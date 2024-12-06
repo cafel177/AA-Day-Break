@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationInfantry]
+[Template AAGBROrganizationInfantryHeavy Template=AAGBROrganizationInfantry]
 {
-	IDS = regiment_gbr_infantry_heavy
 	name = "#regiment_gbr_infantry_heavy_name"
 	editor_name = "#regiment_gbr_infantry_heavy_editor_name"
 
@@ -58,3 +57,7 @@
 	}
 }
 
+[Thing Template = AAGBROrganizationInfantryHeavy]
+{
+	IDS = regiment_gbr_infantry_heavy
+}
