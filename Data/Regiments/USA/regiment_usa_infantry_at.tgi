@@ -27,6 +27,20 @@
 		audio_ids = usa_infantry_at_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = antitank_company
+	}
+}
+
+[Thing Template=AAUSARegimentInfantryAT]
+{
+	IDS = regiment_usa_infantry_at
+	editor_name = "#regiment_usa_infantry_at_editor_name"
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry
@@ -49,18 +63,38 @@
 		[Slot]	;; captain
 		element_IDS = usa_infantry_co
 	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = antitank_company
-	}
 }
 
 [Thing Template=AAUSARegimentInfantryAT]
 {
-	IDS = regiment_usa_infantry_at
+	IDS = regiment_usa_infantry_at_ib
 	editor_name = "#regiment_usa_infantry_at_editor_name"
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = usa_infantry
+		
+		[Slot]	;; rear guard 1
+		element_IDS = usa_infantry
+
+		[Slot]	;; rear guard 2
+		element_IDS = usa_infantry_mg
+		
+		[Slot]	;; rear guard 3
+		element_IDS = usa_infantry_mg
+	
+		[Slot]	;; flank
+		element_IDS = usa_infantry_at_ib
+		
+		[Slot]	;; captain
+		element_IDS = usa_infantry_co
+	}
 }
 
 /*

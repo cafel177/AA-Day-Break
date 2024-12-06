@@ -292,10 +292,10 @@
 		actor_ids = rus_truck_supply
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_at
+		actor_ids = regiment_rus_infantry_at_ib
 
 		[RecruitActor]
-		actor_ids = regiment_rus_infantry_artillery
+		actor_ids = regiment_rus_infantry_artillery_ib
 
 		[RecruitActor]
 		actor_ids = regiment_rus_infantry_sp

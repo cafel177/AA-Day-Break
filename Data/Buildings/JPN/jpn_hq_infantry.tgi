@@ -314,10 +314,10 @@
 		actor_ids = jpn_truck_supply
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_at
+		actor_ids = regiment_jpn_infantry_at_ib
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_artillery
+		actor_ids = regiment_jpn_infantry_artillery_ib
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_sp

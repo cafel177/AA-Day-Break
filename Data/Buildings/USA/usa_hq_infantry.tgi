@@ -278,15 +278,15 @@
 		actor_ids = usa_truck_supply
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_at
+		actor_ids = regiment_usa_infantry_at_ib
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_artillery
+		actor_ids = regiment_usa_infantry_artillery_ib
 		
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_sp
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_assault
+		actor_ids = regiment_usa_infantry_assault_ib
 	}
 }

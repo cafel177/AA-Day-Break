@@ -297,19 +297,19 @@
 		actor_ids = regiment_jpn_paratrooper
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy
+		actor_ids = regiment_jpn_paratrooper_heavy_ib
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper2
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy2
+		actor_ids = regiment_jpn_paratrooper_heavy2_ib
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_ground
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy_ground
+		actor_ids = regiment_jpn_paratrooper_heavy_ground_ib
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_paratrooper_banzai_ground
