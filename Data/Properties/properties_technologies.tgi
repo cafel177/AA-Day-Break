@@ -112,7 +112,7 @@
 	icon = PropertyIcons/IconPropertySpecialForces.png
 	action_button_icon = TechIcons/IconSASParatroopers.png
 	
-	required_properties = air_mech_hq
+	required_properties = airhq
 
 	description = "#properties_technologies_tech_gbr_sas_commandos_description"
 }
@@ -350,6 +350,10 @@
 		attribute = AV
 		amount = 10
 	}
+
+	[Modifier Template=MultiplyModifier]
+	attribute = RECHARGE_TIME
+	amount = 0.2
 }
 
 [Property Template=AATechnologyTank]
@@ -450,6 +454,10 @@
 	[Modifier Template=AddModifier]
 	attribute = AV
 	amount = 15
+
+	[Modifier Template=MultiplyModifier]
+	attribute = RECHARGE_TIME
+	amount = 0.2
 }
 
 [Property Template=AATechnologyTank]
@@ -659,7 +667,7 @@
 	icon = PropertyIcons/IconPropertySpecialForces.png
 	action_button_icon = TechIcons/IconSniperRifles.png
 	
-	required_properties = inf_mech_hq
+	required_properties = infhq
 
 	description = "#properties_technologies_tech_jpn_sniper_rifle_description"
 }

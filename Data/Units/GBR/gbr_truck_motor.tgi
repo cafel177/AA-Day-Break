@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRVehicleHQTruck]
+[Template AAUnitGBRVehicleHQTruckMotor Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_motor
 	name = "#gbr_truck_motor_name"
 	editor_name = "#gbr_truck_motor_editor_name"
 
@@ -26,8 +25,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = gbr_motor_pool
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -62,4 +59,23 @@
 		[WhenSelected Template=FXC_PlaySFX]
 		audio_ids = motor_pool_select
 	}
+}
+
+[Thing Template = AAUnitGBRVehicleHQTruckMotor]
+{
+	IDS = gbr_truck_motor
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_motor_pool
+}
+
+[Thing Template = AAUnitGBRVehicleHQTruckMotor]
+{
+	IDS = gbr_truck_motor_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_motor_pool_ib
 }

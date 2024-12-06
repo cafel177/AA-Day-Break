@@ -1,4 +1,4 @@
-[Thing Template=AAGEROrganizationInfantry]
+[Thing Template=AAGEROrganizationMobile]
 {
 	IDS = regiment_ger_infantry_aa
 	name = "#regiment_ger_infantry_aa_name"
@@ -35,7 +35,7 @@
 		detection_range = 30
 	}
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_vehicle_tiny
 		control_range = 30

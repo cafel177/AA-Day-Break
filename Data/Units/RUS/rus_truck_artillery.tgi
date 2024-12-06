@@ -81,3 +81,14 @@
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = rus_brigade_artillery_tb
 }
+
+[Thing Template=AAUnitRUSVehicleHQTruckArtillery]
+{
+	IDS = rus_truck_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_brigade_artillery_ib
+}

@@ -134,15 +134,16 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#usa_tank_light_AbilityDefinition_name"
-				recharge_time = 4
+				recharge_time = 3
 				range = 25
                 			area = 1
 				max_targets = 1
 
 				targets = +ENEMY +building
 
-				[Effect Template=BlastDamageEffect]
-				amount = 10
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = explosive
+				amount = 6
 			}
 		}
 	}
@@ -232,15 +233,16 @@
 			[AbilityDefinition Template=AALightTankGun]
 			{				
 				name = "#usa_tank_light_AbilityDefinition_name"
-				recharge_time = 4
+				recharge_time = 3
 				range = 25
                 			area = 1
 				max_targets = 1
 
 				targets = +ENEMY +building
 
-				[Effect Template=BlastDamageEffect]
-				amount = 10
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = explosive
+				amount = 6
 			}
 		}
 	}

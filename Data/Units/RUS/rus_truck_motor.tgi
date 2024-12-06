@@ -81,3 +81,14 @@
 	[MobileDeploymentComponent]
 	unpack_to_actor_ids = rus_motor_pool_tb
 }
+
+[Thing Template=AAUnitRUSVehicleHQTruckMotor]
+{
+	IDS = rus_truck_motor_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_motor_pool_ib
+}

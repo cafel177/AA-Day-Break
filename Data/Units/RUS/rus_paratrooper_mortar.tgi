@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSProne]
+[Template AAUnitRUSProneMortar Template=AAUnitRUSProne]
 {
-	IDS = rus_paratrooper_mortar
 	name = "#rus_paratrooper_mortar_name"
 	editor_name = "#rus_paratrooper_mortar_editor_name"
 
@@ -52,8 +51,7 @@
 
 	[CharacterComponent Template=AAInfantryMortarCharacterComponent]
 
-	[ElementComponent]
-	required_structures = rus_brigade_artillery
+
 	
 	[MoverComponent]
 	speed_max = 2.5
@@ -110,4 +108,23 @@
 			}
 		}
 	}
+}
+
+[Thing Template = AAUnitRUSProneMortar]
+{
+	IDS = rus_paratrooper_mortar
+
+    	[ElementComponent]
+	required_structures = rus_brigade_artillery
+}
+
+[Thing Template = AAUnitRUSProneMortar]
+{
+	IDS = rus_paratrooper_mortar_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	required_structures = rus_brigade_artillery_ib
 }

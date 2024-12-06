@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationHQ]
+[Template AARUSOrganizationHQInf Template=AARUSOrganizationHQ]
 {
-	IDS = regiment_rus_hq_infantry
 	name = "#regiment_rus_hq_infantry_name"
 	editor_name = "#regiment_rus_hq_infantry_editor_name"
 	description = "#hq_Thing_description"
@@ -35,6 +34,13 @@
 		audio_ids = rus_truck_deployed
 	}
 	
+	
+}
+
+[Thing Template = AARUSOrganizationHQInf]
+{
+	IDS = regiment_rus_hq_infantry
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq_mobile
@@ -55,5 +61,35 @@
 		
 		[Slot]	;; captain
 		element_IDS = rus_truck_infantry
-	}	
+	}
+}
+
+[Thing Template = AARUSOrganizationHQInf]
+{
+	IDS = regiment_rus_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq_mobile
+		supply_used = false
+		recruit_time = 30
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_truck_infantry_ib
+	}
 }

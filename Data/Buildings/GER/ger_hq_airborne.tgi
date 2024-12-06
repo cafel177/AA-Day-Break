@@ -1,6 +1,5 @@
-[Thing Template=AAGERBuildingPackableHQ]
+[Template AAGERBuildingPackableHQAir Template=AAGERBuildingPackableHQ]
 {
-	IDS = ger_hq_airborne
 	name = "#ger_hq_airborne_Thing_name"
 	editor_name = "#ger_hq_airborne_Thing_editor_name"
 
@@ -108,42 +107,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_ger_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper2
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper_heavy2
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper_ground
-
-		[RecruitActor]
-		actor_ids = regiment_ger_paratrooper_heavy_ground
-
-		[RecruitActor]
-		actor_ids = regiment_ger_helichopter
-
-		[RecruitActor]
-		actor_ids = regiment_ger_halftrack_flame_light
-
-		[RecruitActor]
-		actor_ids = ger_truck_supply
 	}
 	
 	[ResearchComponent]
@@ -266,5 +229,78 @@
 		}
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
+	}
+}
+
+[Thing Template AAGERBuildingPackableHQAir]
+{
+	IDS = ger_hq_airborne
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy2
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = regiment_ger_helichopter
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
+	}
+}
+
+[Thing Template AAGERBuildingPackableHQAir]
+{
+	IDS = ger_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy_ib
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy2_ib
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_ger_paratrooper_heavy_ground_ib
+
+		[RecruitActor]
+		actor_ids = ger_truck_supply
 	}
 }

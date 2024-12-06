@@ -99,6 +99,10 @@
 	cost = 25	
 		
 	[Technology]
+	ids = tech_improved_mortars
+	cost = 25	
+
+	[Technology]
 	ids = tech_garand_semi_auto
 	cost = 25	
 		
@@ -258,6 +262,10 @@
 	cost = 25
 
 	[Technology]
+	ids = tech_tankette
+	cost = 75	
+
+	[Technology]
 	ids = tech_napalm
 	cost = 100	
 
@@ -368,6 +376,10 @@
 	ids = tech_construction_battalions
 	cost = 80
 			
+	[Technology]
+	ids = tech_improved_light_antitank
+	cost = 50
+
 	[Technology]
 	ids = tech_military_surplus
 	cost = 75
@@ -690,6 +702,10 @@
 	ids = tech_military_surplus
 	cost = 75
 	
+	[Technology]
+	ids = tech_improved_mortars
+	cost = 25	
+
 	[Technology]
 	ids = tech_long_range_artillery
 	cost = 50		

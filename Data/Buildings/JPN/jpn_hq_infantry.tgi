@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackableHQ]
+[Template AAJPNBuildingPackableHQInf Template=AAJPNBuildingPackableHQ]
 {
-	IDS = jpn_hq_infantry
 	name = "#jpn_hq_infantry_Thing_name"
 	editor_name = "#jpn_hq_infantry_Thing_editor_name"
 
@@ -102,51 +101,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = jpn_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_artillery
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_commando
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_banzai
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_tankette
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry
 	}
 		
 	[ResearchComponent]
@@ -286,4 +240,89 @@
 		;windows 9-12 are inplace for the skylight windows on the main tent
 	}
 
+}
+
+[Thing Template AAJPNBuildingPackableHQInf]
+{
+	IDS = jpn_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_artillery
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_commando
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_banzai
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_tankette
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry
+	}
+}
+
+[Thing Template AAJPNBuildingPackableHQInf]
+{
+	IDS = jpn_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_def_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_at_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_artillery_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_banzai
+	}
 }

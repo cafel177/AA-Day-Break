@@ -1,6 +1,5 @@
-[Thing Template=AARUSOrganizationHQ]
+[Template AARUSOrganizationHQAirUnpacked Template=AARUSOrganizationHQ]
 {
-	IDS = regiment_rus_hq_airborne_unpacked
 	name = "#regiment_rus_hq_airborne_unpacked_name"
 	editor_name = "#regiment_rus_hq_airborne_unpacked_editor_name"
 	description = "#hq_Thing_description"
@@ -32,6 +31,13 @@
 		}
 	}
 	
+
+}
+
+[Thing Template = AARUSOrganizationHQAirUnpacked]
+{
+	IDS = regiment_rus_hq_airborne_unpacked
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq
@@ -51,5 +57,34 @@
 		
 		[Slot]	;; captain
 		element_IDS = rus_hq_airborne
+	}
+}
+
+[Thing Template = AARUSOrganizationHQAirUnpacked]
+{
+	IDS = regiment_rus_hq_airborne_unpacked_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = rus_hq_airborne_ib
 	}
 }

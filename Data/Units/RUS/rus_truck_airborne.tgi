@@ -1,6 +1,5 @@
-[Thing Template=AAUnitRUSVehicleHQTruck]
+[Template AAUnitRUSVehicleHQTruckAir Template=AAUnitRUSVehicleHQTruck]
 {
-	IDS = rus_truck_airborne
 	name = "#rus_truck_airborne_name"
 	editor_name = "#rus_truck_airborne_editor_name"
 
@@ -31,8 +30,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = rus_hq_airborne
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -74,4 +71,23 @@
 		resource_prefix = RUSTruck/RUSTruck
 		icon = /UI/Game/BuildingButtons/IconHQAirborne.png
 	}
+}
+
+[Thing Template AAUnitRUSVehicleHQTruckAir]
+{
+	IDS = rus_truck_airborne
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_hq_airborne
+}
+
+[Thing Template AAUnitRUSVehicleHQTruckAir]
+{
+	IDS = rus_truck_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = rus_hq_airborne_ib
 }

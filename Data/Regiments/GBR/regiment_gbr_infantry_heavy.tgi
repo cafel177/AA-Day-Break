@@ -1,6 +1,5 @@
-[Thing Template=AAGBROrganizationInfantry]
+[Template AAGBROrganizationInfantryHeavy Template=AAGBROrganizationInfantry]
 {
-	IDS = regiment_gbr_infantry_heavy
 	name = "#regiment_gbr_infantry_heavy_name"
 	editor_name = "#regiment_gbr_infantry_heavy_editor_name"
 
@@ -28,6 +27,19 @@
 		audio_ids = gbr_infantry_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+}
+
+[Thing Template = AAGBROrganizationInfantryHeavy]
+{
+	IDS = regiment_gbr_infantry_heavy
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry2
@@ -50,11 +62,35 @@
 		[Slot]	;; captain
 		element_IDS = gbr_infantry_co
 	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = infantry_company
-	}
 }
 
+[Thing Template = AAGBROrganizationInfantryHeavy]
+{
+	IDS = regiment_gbr_infantry_heavy_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry2
+		
+		[Slot]	;; front
+		element_IDS = gbr_infantry
+		
+		[Slot]	;; rear guard 1
+		element_IDS = gbr_infantry_mg
+
+		[Slot]	;; rear guard 2
+		element_IDS = gbr_infantry_mg
+		
+		[Slot]	;; rear guard 3
+		element_IDS = gbr_infantry_AT_ib
+	
+		[Slot]	;; flank
+		element_IDS = gbr_infantry_mortar_ib
+		
+		[Slot]	;; captain
+		element_IDS = gbr_infantry_co
+	}
+}

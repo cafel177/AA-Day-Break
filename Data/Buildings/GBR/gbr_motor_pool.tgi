@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackable]
+[Template AAGBRBuildingPackableMotorPool Template=AAGBRBuildingPackable]
 {
-	IDS = gbr_motor_pool
 	name = "#gbr_motor_pool_Thing_name"
 	editor_name = "#gbr_motor_pool_Thing_editor_name"
 
@@ -12,15 +11,6 @@
 	[BodyComponent]
 	health = 2000
 	defense = 2
-
-	[RecruitComponent]
-	{	
-		[RecruitActor]
-		actor_ids = gbr_truck_corps
-
-		[RecruitActor]
-		actor_ids = gbr_truck_ship
-	}
 
 	[DenizenComponent]
 	{
@@ -56,69 +46,6 @@
 
 		[Property]
 		property_IDS = oil
-	}
-	
-	[ResearchComponent]
-	{
-		[ResearchItem]
-		{
-			property_IDS = tech_diesel_engines
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanical_reliability
-			type = GLOBAL
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}	
-		
-		[ResearchItem]
-		{
-			property_IDS = tech_heavy_tank
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 100
-			}
-		}
-
-		[ResearchItem]
-		{
-			property_IDS = tech_flame
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}		
-
-		[ResearchItem]
-		{
-			property_IDS = tech_mechanized_production
-			type = GLOBAL	
-			research_time = 60
-		
-			[ResearchCost Template=CostList]
-			{
-				money = 75
-			}
-		}
 	}
 
 	[Size]
@@ -210,5 +137,123 @@
 	{
 		actor_state = structure_unpacking
 		audio_ids = unpack_7s_sfx
+	}
+}
+
+[Thing Template AAGBRBuildingPackableMotorPool]
+{
+	IDS = gbr_motor_pool
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_light_antitank
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_diesel_engines
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanical_reliability
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_heavy_tank
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_flame
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}		
+
+		[ResearchItem]
+		{
+			property_IDS = tech_mechanized_production
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = gbr_truck_corps
+
+		[RecruitActor]
+		actor_ids = gbr_truck_ship
+	}
+}
+
+[Thing Template AAGBRBuildingPackableMotorPool]
+{
+	IDS = gbr_motor_pool_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_light_antitank
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+
+	[RecruitComponent]
+	{	
+		[RecruitActor]
+		actor_ids = gbr_truck_corps_ib
 	}
 }

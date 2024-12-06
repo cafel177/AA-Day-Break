@@ -1,6 +1,5 @@
-[Thing Template=AAUSAOrganizationInfantry]
+[Template AAUSAOrganizationInfantryAssault Template=AAUSAOrganizationInfantry]
 {
-	IDS = regiment_usa_infantry_assault
 	editor_name = "#regiment_usa_infantry_assault_editor_name"
 	name = "#regiment_usa_infantry_assault_name"
 
@@ -29,6 +28,19 @@
 		audio_ids = usa_infantry_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = infantry_company
+	}
+}
+
+[Thing Template = AAUSAOrganizationInfantryAssault]
+{
+	IDS = regiment_usa_infantry_assault
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{	
 		layout_IDS = regiment_infantry
@@ -51,12 +63,35 @@
 		[Slot]	;; captain
 		element_IDS = usa_infantry_co
 	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = infantry_company
-	}
 }
 
+[Thing Template = AAUSAOrganizationInfantryAssault]
+{
+	IDS = regiment_usa_infantry_assault_ib
 
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = usa_infantry_assault_ib
+		
+		[Slot]	;; rear guard 1
+		element_IDS = usa_infantry_assault_ib
+
+		[Slot]	;; rear guard 2
+		element_IDS = usa_infantry_assault_ib
+		
+		[Slot]	;; rear guard 3
+		element_IDS = usa_infantry_mg
+	
+		[Slot]	;; flank
+		element_IDS = usa_infantry_flame_new
+		
+		[Slot]	;; captain
+		element_IDS = usa_infantry_co
+	}
+}

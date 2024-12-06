@@ -24,28 +24,7 @@
 		audio_ids = rus_paratrooper_attack
 	}		
 	
-	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
-	{
-		layout_ids = regiment_infantry
-		
-		[Slot]	;; front
-		element_IDS = rus_paratrooper
-		
-		[Slot]	;; rear guard 1
-		element_IDS = rus_paratrooper
 
-		[Slot]	;; rear guard 2
-		element_IDS = rus_paratrooper
-		
-		[Slot]	;; rear guard 3
-		element_IDS = rus_paratrooper_mortar
-	
-		[Slot]	;; support
-		element_IDS = rus_paratrooper_mg
-		
-		[Slot]	;; captain
-		element_IDS = rus_paratrooper_co
-	}
 	
 	[PropertiesComponent]
 	{	
@@ -69,14 +48,36 @@
 	[Placement]
 	placement_group_ids = null
 
-	[OrganizationComponent]
-	recruit_time = 6
-	morale_breakpoint = 20
 
 	[PropertiesComponent]
 	{	
 		[Property]
 		property_IDS = recon
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
 	}
 }
 
@@ -96,9 +97,142 @@
 	[Placement]
 	placement_group_ids = null
 
-	[OrganizationComponent]
-	recruit_time = 6
-	morale_breakpoint = 20
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+
+		[Property]
+		property_ids = org_resupply
+	}
+
+	[LairComponent]
+	{
+		reward = 30, 35	
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
+	}
+}
+
+[Thing Template=AARUSRegimentParatrooper]
+{
+	IDS = regiment_rus_paratrooper_heavy_ground
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 90
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
+	}
+}
+
+[Thing Template=AARUSRegimentParatrooper]
+{
+	IDS = regiment_rus_paratrooper_heavy_ib
+
+	transport_actor = rus_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 175
+	}
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
+	}
+}
+
+[Thing Template=AARUSRegimentParatrooper]
+{
+	IDS = regiment_rus_paratrooper_heavy2_ib
+    name = "#regiment_rus_paratrooper_heavy_AARUSRegimentParatrooper_name2"
+	
+	transport_actor = rus_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 215
+	}
+
+	[Placement]
+	placement_group_ids = null
 
 	[PropertiesComponent]
 	{	
@@ -113,15 +247,66 @@
 	{
 		reward = 30, 35	
 	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
+	}
 }
 
 [Thing Template=AARUSRegimentParatrooper]
 {
-	IDS = regiment_rus_paratrooper_heavy_ground
+	IDS = regiment_rus_paratrooper_heavy_ground_ib
+
+	[Placement]
+	placement_group_ids = null
 
 	[EconomyComponent]
 	{
 		[Cost]
 		money = 90
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{
+		layout_ids = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = rus_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = rus_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = rus_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = rus_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = rus_paratrooper_co
 	}
 }

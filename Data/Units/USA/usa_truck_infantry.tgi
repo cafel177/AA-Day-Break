@@ -1,6 +1,5 @@
-[Thing Template=AAUnitUSAVehicleHQTruck]
+[Template AAUnitUSAVehicleHQTruckInf Template=AAUnitUSAVehicleHQTruck]
 {
-	IDS = usa_truck_infantry
 	name = "#usa_truck_infantry_name"
 	editor_name = "#usa_truck_infantry_editor_name"
 
@@ -23,10 +22,7 @@
 	}
 	
 	[MobileDeploymentComponent]
-	{
-	
-		unpack_to_actor_ids = usa_hq_infantry
-		
+	{		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -69,4 +65,23 @@
 		resource_prefix = USATruck/USATruck
 		icon = /UI/Game/BuildingButtons/IconHQInfantry.png
 	}
+}
+
+[Thing Template = AAUnitUSAVehicleHQTruckInf]
+{
+	IDS = usa_truck_infantry
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = usa_hq_infantry
+}
+
+[Thing Template = AAUnitUSAVehicleHQTruckInf]
+{
+	IDS = usa_truck_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = usa_hq_infantry_ib
 }

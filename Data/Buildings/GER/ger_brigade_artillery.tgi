@@ -317,3 +317,31 @@
 		}		
 	}
 }
+
+[Thing Template=AAGERBuildingPackableArtillery]
+{
+	IDS = ger_brigade_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+
+	}
+
+	[ResearchComponent]
+	{
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_mortars
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+	}
+}

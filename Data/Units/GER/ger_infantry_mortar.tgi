@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGERBiped]
+[Template AAUnitGERBipedMortar Template=AAUnitGERBiped]
 {
-	IDS = ger_infantry_mortar
 	name = "#ger_infantry_mortar_name"
 	editor_name = "#ger_infantry_mortar_editor_name"
 		
@@ -13,10 +12,7 @@
 	[MoverComponent]
 	speed_max = 2
 
-	[ElementComponent]
-	{
-		required_structures = ger_brigade_artillery
-	}
+
 	
 	[PropertiesComponent]
 	{
@@ -89,5 +85,28 @@
 		action = UNHIDE
 		location = rhand
 		equipment_type_ids = mortardown
+	}
+}
+
+[Thing Template = AAUnitGERBipedMortar]
+{
+	IDS = ger_infantry_mortar
+
+    	[ElementComponent]
+	{
+		required_structures = ger_brigade_artillery
+	}
+}
+
+[Thing Template = AAUnitGERBipedMortar]
+{
+	IDS = ger_infantry_mortar_ib
+
+	[Placement]
+	placement_group_ids = null
+    
+    	[ElementComponent]
+	{
+		required_structures = ger_brigade_artillery_ib
 	}
 }

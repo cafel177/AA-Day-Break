@@ -1,6 +1,5 @@
-[Thing Template=AAGEROrganizationArtillery]
+[Template AAGEROrganizationInfArtillery Template=AAGEROrganizationArtillery]
 {
-	IDS = regiment_ger_infantry_artillery
 	name = "#regiment_ger_infantry_artillery_name"
 	editor_name = "#regiment_ger_infantry_artillery_editor_name"
 	
@@ -38,6 +37,15 @@
 		audio_ids = ger_infantry_artillery_attack
 	}		
 	
+
+	
+	[ExperienceComponent template=AAInfantryExperienceComponent]
+}
+
+[Thing Template = AAGEROrganizationInfArtillery]
+{
+	IDS = regiment_ger_infantry_artillery
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
 		layout_IDS = regiment_infantry
@@ -60,6 +68,35 @@
 		[Slot]	;; captain
 		element_IDS = ger_infantry_co
 	}
+}
+
+[Thing Template = AAGEROrganizationInfArtillery]
+{
+	IDS = regiment_ger_infantry_artillery_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
+	{	
+		layout_IDS = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = ger_infantry
+		
+		[Slot]	;; rear guard 1
+		element_IDS = ger_infantry
+
+		[Slot]	;; rear guard 2
+		element_IDS = ger_infantry_mg
+		
+		[Slot]	;; rear guard 3
+		element_IDS = ger_infantry_mg
 	
-	[ExperienceComponent template=AAInfantryExperienceComponent]
+		[Slot]	;; flank
+		element_IDS = ger_infantry_mortar_ib
+		
+		[Slot]	;; captain
+		element_IDS = ger_infantry_co
+	}
 }

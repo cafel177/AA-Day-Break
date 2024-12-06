@@ -24,6 +24,133 @@
 		audio_ids = jpn_paratrooper_attack
 	}		
 	
+
+	
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_ids = paratrooper_company
+	}
+}
+
+[Thing Template=AAJPNRegimentParatrooperHeavy]
+{
+	IDS = regiment_jpn_paratrooper_heavy
+
+	transport_actor = jpn_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 160
+	}
+
+
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = jpn_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = jpn_paratrooper_mortar
+	
+		[Slot]	;; support
+		element_IDS = jpn_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = jpn_paratrooper_co
+	}
+}
+
+[Thing Template=AAJPNRegimentParatrooperHeavy]
+{
+	IDS = regiment_jpn_paratrooper_heavy2
+    name = "#regiment_jpn_paratrooper_heavy_AAJPNRegimentParatrooperHeavy_name2"
+	
+	transport_actor = jpn_transport_air
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 200
+	}
+
+
+
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{	
+		[Property]
+		property_IDS = recon
+
+		[Property]
+		property_ids = org_resupply
+	}
+
+	[LairComponent]
+	{
+		reward = 30, 35	
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = jpn_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = jpn_paratrooper_mortar
+	
+		[Slot]	;; support
+		element_IDS = jpn_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = jpn_paratrooper_co
+	}
+}
+
+
+[Thing Template=AAJPNRegimentParatrooperHeavy]
+{
+	IDS = regiment_jpn_paratrooper_heavy_ground
+
+	[EconomyComponent]
+	{
+		[Cost]
+		money = 85
+	}
+
 	[OrganizationComponent Template=AAInfantryOrganizationComponent]
 	{
 		layout_ids = regiment_infantry
@@ -46,17 +173,11 @@
 		[Slot]	;; captain
 		element_IDS = jpn_paratrooper_co
 	}
-	
-	[PropertiesComponent]
-	{	
-		[Property]
-		property_ids = paratrooper_company
-	}
 }
 
 [Thing Template=AAJPNRegimentParatrooperHeavy]
 {
-	IDS = regiment_jpn_paratrooper_heavy
+	IDS = regiment_jpn_paratrooper_heavy_ib
 
 	transport_actor = jpn_transport_air
 
@@ -66,8 +187,7 @@
 		money = 160
 	}
 
-	[OrganizationComponent]
-	recruit_time = 6
+
 
 	[Placement]
 	placement_group_ids = null
@@ -77,11 +197,36 @@
 		[Property]
 		property_IDS = recon
 	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = jpn_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = jpn_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = jpn_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = jpn_paratrooper_co
+	}
 }
 
 [Thing Template=AAJPNRegimentParatrooperHeavy]
 {
-	IDS = regiment_jpn_paratrooper_heavy2
+	IDS = regiment_jpn_paratrooper_heavy2_ib
     name = "#regiment_jpn_paratrooper_heavy_AAJPNRegimentParatrooperHeavy_name2"
 	
 	transport_actor = jpn_transport_air
@@ -92,8 +237,7 @@
 		money = 200
 	}
 
-	[OrganizationComponent]
-	recruit_time = 6
+
 
 	[Placement]
 	placement_group_ids = null
@@ -111,16 +255,67 @@
 	{
 		reward = 30, 35	
 	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_infantry
+		recruit_time = 6
+		morale_breakpoint = 20
+
+		[Slot]	;; front
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = jpn_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = jpn_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = jpn_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = jpn_paratrooper_co
+	}
 }
 
 
 [Thing Template=AAJPNRegimentParatrooperHeavy]
 {
-	IDS = regiment_jpn_paratrooper_heavy_ground
+	IDS = regiment_jpn_paratrooper_heavy_ground_ib
+
+	[Placement]
+	placement_group_ids = null
 
 	[EconomyComponent]
 	{
 		[Cost]
 		money = 85
+	}
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{
+		layout_ids = regiment_infantry
+		
+		[Slot]	;; front
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 1
+		element_IDS = jpn_paratrooper
+
+		[Slot]	;; rear guard 2
+		element_IDS = jpn_paratrooper
+		
+		[Slot]	;; rear guard 3
+		element_IDS = jpn_paratrooper_mortar_ib
+	
+		[Slot]	;; support
+		element_IDS = jpn_paratrooper_mg
+		
+		[Slot]	;; captain
+		element_IDS = jpn_paratrooper_co
 	}
 }

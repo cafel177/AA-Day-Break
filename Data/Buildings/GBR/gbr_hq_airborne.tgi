@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackableHQ]
+[Template AAGBRBuildingPackableHQAir Template=AAGBRBuildingPackableHQ]
 {
-	IDS = gbr_hq_airborne
 	name = "#gbr_hq_airborne_Thing_name"
 	editor_name = "#gbr_hq_airborne_Thing_editor_name"
 
@@ -106,51 +105,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper2
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper_heavy2
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper_ground
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_paratrooper_heavy_ground
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_sas_paratrooper_ground
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_helichopter
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_flame_light
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_sas_paratrooper
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_sas_paratrooper2
-
-		[RecruitActor]
-		actor_ids = gbr_truck_supply
 	}
 	
 	[ResearchComponent]
@@ -274,5 +228,87 @@
 		}
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
+	}
+}
+
+[Thing Template AAGBRBuildingPackableHQAir]
+{
+	IDS = gbr_hq_airborne
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy2
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_sas_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_helichopter
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_sas_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_sas_paratrooper2
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+	}
+}
+
+[Thing Template AAGBRBuildingPackableHQAir]
+{
+	IDS = gbr_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy_ib
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy2_ib
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_paratrooper_heavy_ground_ib
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
 	}
 }

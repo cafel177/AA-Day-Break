@@ -1,6 +1,5 @@
-[Thing Template=AAGBRBuildingPackableHQ]
+[Template AAGBRBuildingPackableHQInf Template=AAGBRBuildingPackableHQ]
 {
-	IDS = gbr_hq_infantry
 	name = "#gbr_hq_infantry_Thing_name"
 	editor_name = "#gbr_hq_infantry_Thing_editor_name"
 
@@ -101,48 +100,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = gbr_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_artillery
-		
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_halftrack_flame_light
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_gbr_infantry
 	}
 	
 	[ResearchComponent]
@@ -266,5 +223,84 @@
 		}
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
+	}
+}
+
+[Thing Template = AAGBRBuildingPackableHQInf]
+{
+	IDS = gbr_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_artillery
+		
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry
+	}
+}
+
+[Thing Template = AAGBRBuildingPackableHQInf]
+{
+	IDS = gbr_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_def_ib
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = gbr_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_at_ib
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_artillery_ib
+		
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_gbr_infantry_heavy_ib
 	}
 }

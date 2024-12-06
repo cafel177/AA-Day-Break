@@ -1,6 +1,5 @@
-[Thing Template=AAUSABuildingPackableHQ]
+[Template AAUSABuildingPackableHQInf Template=AAUSABuildingPackableHQ]
 {
-	IDS = usa_hq_infantry
 	name = "#usa_hq_infantry_Thing_name"
 	editor_name = "#usa_hq_infantry_Thing_editor_name"
 
@@ -99,54 +98,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_def
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_mechanized
-
-		[RecruitActor]
-		actor_ids = usa_truck_supply
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_at
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_artillery
-		
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_sp
-
-		[RecruitActor]
-		actor_ids = regiment_usa_halftrack_flame_light
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_assault
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_marine
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_amphib_sp
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry_flame
-
-		[RecruitActor]
-		actor_ids = regiment_usa_engineer
-
-		[RecruitActor]
-		actor_ids = regiment_usa_infantry
 	}
 
 	[ResearchComponent]
@@ -252,5 +203,90 @@
 			location = door_03
 			attached = true
 		}
+	}
+}
+
+[Thing Template AAUSABuildingPackableHQInf]
+{
+	IDS = usa_hq_infantry
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_def
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_at
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_artillery
+		
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_assault
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_marine
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_amphib_sp
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_flame
+
+		[RecruitActor]
+		actor_ids = regiment_usa_engineer
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry
+	}
+}
+
+[Thing Template AAUSABuildingPackableHQInf]
+{
+	IDS = usa_hq_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_def_ib
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_mechanized
+
+		[RecruitActor]
+		actor_ids = usa_truck_supply
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_at_ib
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_artillery_ib
+		
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_sp
+
+		[RecruitActor]
+		actor_ids = regiment_usa_infantry_assault_ib
 	}
 }

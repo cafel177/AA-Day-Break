@@ -1,6 +1,5 @@
-[Thing Template=AAJPNBuildingPackableHQ]
+[Template AAJPNBuildingPackableHQAir Template=AAJPNBuildingPackableHQ]
 {
-	IDS = jpn_hq_airborne
 	name = "#jpn_hq_airborne_Thing_name"
 	editor_name = "#jpn_hq_airborne_Thing_editor_name"
 
@@ -106,51 +105,6 @@
 		
 		[Property]
 		property_ids = mg		
-	}
-
-	[RecruitComponent]
-	{
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_recon
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_aa
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper2
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy2
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_ground
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_heavy_ground
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_banzai_ground
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_helichopter
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_halftrack_flame_light
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_banzai
-
-		[RecruitActor]
-		actor_ids = regiment_jpn_paratrooper_banzai2
-
-		[RecruitActor]
-		actor_ids = jpn_truck_supply
 	}
 	
 	[ResearchComponent]
@@ -274,5 +228,96 @@
 		}
 		
 		;window_07-10 are ready to go for skylights once the VFX is done
+	}
+}
+
+[Thing Template AAJPNBuildingPackableHQAir]
+{
+	IDS = jpn_hq_airborne
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_aa
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy2
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_helichopter
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai2
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
+	}
+}
+
+[Thing Template AAJPNBuildingPackableHQAir]
+{
+	IDS = jpn_hq_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_jpn_infantry_recon
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper2
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy2_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_heavy_ground_ib
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai_ground
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai
+
+		[RecruitActor]
+		actor_ids = regiment_jpn_paratrooper_banzai2
+
+		[RecruitActor]
+		actor_ids = jpn_truck_supply
 	}
 }

@@ -493,6 +493,142 @@
 	}
 }
 
+[Thing Template=GERcorpsHQ]
+{
+	IDS = ger_corps_ib
+	name = "#ger_corps_Thing_name"
+	editor_name = "#ger_corps_Thing_editor_name"
+	
+	[Placement]
+	placement_group_ids = null
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_ids = mechhqproduction
+		
+		[Property]
+		property_ids = armorhqproduction
+
+		[Property]
+		property_ids = air_support
+	}
+
+	[RecruitComponent]
+	{
+		[RecruitActor]
+		actor_ids = regiment_ger_hq_infantry_ib
+
+		[RecruitActor]
+		actor_ids = regiment_ger_hq_airborne_ib
+
+		[RecruitActor]
+		actor_ids = ger_truck_engineer_ib
+		
+		[RecruitActor]
+		actor_ids = ger_truck_motor_ib
+
+		[RecruitActor]
+		actor_ids = ger_truck_artillery_ib
+
+		[RecruitActor]
+		actor_ids = ger_truck_money
+
+		[RecruitActor]
+		actor_ids = ger_truck_ammo
+		
+		[RecruitActor]
+		actor_ids = ger_truck_oil
+	}
+
+	[ResearchComponent]
+	{		
+		[ResearchItem]
+		{
+			property_IDS = tech_advanced_infantry_training
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_logistics
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 50
+			}
+		}
+		
+		[ResearchItem]
+		{
+			property_IDS = tech_improved_machineguns
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_marksmanship
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_military_surplus
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_special_forces
+			type = GLOBAL	
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 100
+			}
+		}	
+	}
+}
+
 ;; DYNAMIC CAMPAIGN
 
 [Thing Template=GERcorpsHQ]

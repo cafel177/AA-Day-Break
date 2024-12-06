@@ -76,6 +76,20 @@
 
 [Thing Template=AAUnitUSAVehicleHQTruckCorp ]
 {
+	IDS = usa_truck_corps_ib
+	editor_name = "#usa_truck_corps_dynamic_editor_name"
+
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = usa_corps_ib
+	}
+
+	[Placement]
+	placement_group_ids = null
+}
+
+[Thing Template=AAUnitUSAVehicleHQTruckCorp ]
+{
 	IDS = usa_truck_corps_dynamic
 	editor_name = "#usa_truck_corps_dynamic_editor_name"
 

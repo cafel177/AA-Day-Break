@@ -1,6 +1,5 @@
-[Thing Template=AAUnitGBRVehicleHQTruck]
+[Template AAUnitGBRVehicleHQTruckAir Template=AAUnitGBRVehicleHQTruck]
 {
-	IDS = gbr_truck_airborne
 	name = "#gbr_truck_airborne_name"
 	editor_name = "#gbr_truck_airborne_editor_name"
 
@@ -29,8 +28,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-		unpack_to_actor_ids = gbr_hq_airborne
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -72,4 +69,23 @@
 		resource_prefix = GBRTruck/GBRTruck
 		icon = /UI/Game/BuildingButtons/IconHQAirborne.png
 	}
+}
+
+[Thing Template = AAUnitGBRVehicleHQTruckAir]
+{
+	IDS = gbr_truck_airborne
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_hq_airborne
+}
+
+[Thing Template = AAUnitGBRVehicleHQTruckAir]
+{
+	IDS = gbr_truck_airborne_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = gbr_hq_airborne_ib
 }

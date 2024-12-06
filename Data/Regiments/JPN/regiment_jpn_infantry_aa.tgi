@@ -1,4 +1,4 @@
-[Thing Template=AAJPNOrganizationInfantry]
+[Thing Template=AAJPNOrganizationMobile]
 {
 	IDS = regiment_jpn_infantry_aa
 	name = "#regiment_jpn_infantry_aa_name"
@@ -35,7 +35,7 @@
 		detection_range = 30
 	}
 
-	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
 		layout_IDS = regiment_vehicle_tiny
 		control_range = 30

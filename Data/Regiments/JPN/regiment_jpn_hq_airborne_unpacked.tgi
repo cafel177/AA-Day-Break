@@ -1,6 +1,5 @@
-[Thing Template=AAJPNOrganizationHQ]
+[Template AAJPNOrganizationHQAirUnpacked Template=AAJPNOrganizationHQ]
 {
-	IDS = regiment_jpn_hq_airborne_unpacked
 	name = "#regiment_jpn_hq_airborne_unpacked_name"
 	editor_name = "#regiment_jpn_hq_airborne_unpacked_editor_name"
 	
@@ -32,6 +31,13 @@
 		}
 	}
 	
+
+}
+
+[Thing Template = AAJPNOrganizationHQAirUnpacked]
+{
+	IDS = regiment_jpn_hq_airborne_unpacked
+
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{
 		layout_ids = regiment_hq
@@ -51,5 +57,34 @@
 		
 		[Slot]	;; captain
 		element_IDS = jpn_hq_airborne
+	}
+}
+
+[Thing Template = AAJPNOrganizationHQAirUnpacked]
+{
+	IDS = regiment_jpn_hq_airborne_unpacked_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAVehicleOrganizationComponent]
+	{
+		layout_ids = regiment_hq
+		supply_used = false
+		
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+
+		[Slot]	;; front
+		element_IDS = null
+		
+		[Slot]	;; captain
+		element_IDS = jpn_hq_airborne_ib
 	}
 }

@@ -76,6 +76,20 @@
 
 [Thing Template=AAUnitJPNVehicleHQTruckCorp ]
 {
+	IDS = jpn_truck_corps_ib
+	editor_name = "#jpn_truck_corps_dynamic_editor_name"
+
+	[MobileDeploymentComponent]
+	{
+		unpack_to_actor_ids = jpn_corps_ib
+	}
+
+	[Placement]
+	placement_group_ids = null
+}
+
+[Thing Template=AAUnitJPNVehicleHQTruckCorp ]
+{
 	IDS = jpn_truck_corps_dynamic
 	editor_name = "#jpn_truck_corps_dynamic_editor_name"
 

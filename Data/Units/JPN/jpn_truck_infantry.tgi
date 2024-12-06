@@ -1,6 +1,5 @@
-[Thing Template=AAUnitJPNVehicleHQTruck]
+[Template AAUnitJPNVehicleHQTruckInf Template=AAUnitJPNVehicleHQTruck]
 {
-	IDS = jpn_truck_infantry
 	name = "#jpn_truck_infantry_name"
 	editor_name = "#jpn_truck_infantry_editor_name"
 
@@ -24,9 +23,6 @@
 	
 	[MobileDeploymentComponent]
 	{
-	
-		unpack_to_actor_ids = jpn_hq_infantry
-		
 		packed_position_offset = 0,0
 		packed_orientation = 1,0
 	}
@@ -69,4 +65,23 @@
 		resource_prefix = JPNTruck/JPNTruck
 		icon = /UI/Game/BuildingButtons/IconHQInfantry.png
 	}
+}
+
+[Thing Template = AAUnitJPNVehicleHQTruckInf]
+{
+	IDS = jpn_truck_infantry
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_hq_infantry
+}
+
+[Thing Template = AAUnitJPNVehicleHQTruckInf]
+{
+	IDS = jpn_truck_infantry_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[MobileDeploymentComponent]
+	unpack_to_actor_ids = jpn_hq_infantry_ib
 }

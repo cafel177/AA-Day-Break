@@ -9,13 +9,13 @@
 	[BodyComponent]
 	{
 		health = 250
-		defense = 3
+		defense = 4
 	}
 	
 	[MoverComponent]
 	{
-		speed_max = 4
-		acceleration = 4
+		speed_max = 3
+		acceleration = 3
 		
 		[WhenStartMoving template=FXC_CreateVFX]
 		{
@@ -33,7 +33,7 @@
 
 	[ElementComponent]
 	{
-
+		required_properties = tech_tankette
 	}
 	
 	[PropertiesComponent]
@@ -48,53 +48,56 @@
 		property_IDS = combat_unit
 	}
 	
-	[PerformerComponent]
+	[DefenderComponent]
 	{
+		control_range = 12
+
 		[Ability template=AATurretAttackLocal]
-		{
-			
-			[AbilityDefinition Template=AALightTankGun]
-			{				
-				name = "#jpn_tankette_AbilityDefinition_name"
-				icon = /Properties/AbilityIcons/IconAbilityDamageExplosive.png
-				
-				recharge_time = 6
-				range = 25
-				area = 2
-				max_targets = 4
-
-				[Effect Template=BlastDamageEffect]
-				amount = 30
-				
-				[Effect Template=MoraleLossEffect]
-				targets = infantry
-				amount = 0.15
-
-				[WhenDo Template=FXC_PlayObjectAnimation]
-				object_animation_IDS = Recoil1
-
-				[WhenDo template=FXC_PlaySFX]
-				audio_ids = jpn_cannon_light
-			}
-		}
-
-		[Ability Template=AAGunLocal]
 		{	
-            use_bonus = 110
-
 			[AbilityDefinition Template=AAVehicleMG]
 			{
 				name = "#jpn_halftrack_AbilityDefinition_name"
 				area = 1.5
 				attenuation_range_min = 0.5
 				attenuation_factor_max = 0.5
-				max_targets = 4
+				max_targets = 3
 
 				recharge_time = 3
-				range = 25
+				range = 12
+
+				[Effect Template=AddDamageEffect]
+				damage_type_IDS = gunfire
+				amount = 14
+			
+				[Flags]
+				spell = true
+
+				[WhenDo template=FXC_PlaySFX]
+				audio_ids = jpn_mg_heavy
+			
+			}
+		}	
+	}
+
+	[PerformerComponent]
+	{
+		[Ability template=AATurretAttackLocal]
+		{	
+			[AbilityDefinition Template=AAVehicleMG]
+			{
+				name = "#jpn_halftrack_AbilityDefinition_name"
+				area = 1.5
+				attenuation_range_min = 0.5
+				attenuation_factor_max = 0.5
+				max_targets = 3
+
+				targets = +ENEMY -air -mine -building -tank
+
+				recharge_time = 2
+				range = 12
 
 				[Effect Template=PierceDamageEffect]
-				amount = 12
+				amount = 14
 			
 				[WhenDo template=FXC_PlaySFX]
 				audio_ids = jpn_mg_heavy
