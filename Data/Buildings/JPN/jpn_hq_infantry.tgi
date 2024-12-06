@@ -305,7 +305,7 @@
 		actor_ids = regiment_jpn_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_jpn_infantry_def
+		actor_ids = regiment_jpn_infantry_def_ib
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_mechanized

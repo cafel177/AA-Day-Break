@@ -269,7 +269,7 @@
 		actor_ids = regiment_usa_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_usa_infantry_def
+		actor_ids = regiment_usa_infantry_def_ib
 
 		[RecruitActor]
 		actor_ids = regiment_usa_infantry_mechanized

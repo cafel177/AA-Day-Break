@@ -234,6 +234,89 @@
 
 [Thing Template=AAUnitGERInfantry]
 {
+	IDS = ger_infantry_def_ib
+
+	[Placement]
+	placement_group_ids = null
+
+	[BuilderComponent]
+	{
+		[BuildActor]
+		actor_ids = ger_bunker
+	}
+
+	[PropertiesComponent]
+	{
+		[Property]
+		property_IDS = engineer
+	}
+
+	[CharacterComponent Template=AAInfantryCharacterComponent]
+	{
+		[Animation Template=AttackAnimation]
+		{
+			IDS = build1
+			key_ratio = 0.1
+			kf = /Shared/Animations/Units/Infantry/Build1.kf
+
+			[WhenStart Template=FXC_Equipment]
+			{
+				action = HIDE
+				location = rhand
+				equipment_type_ids = rifle
+			}
+
+			[WhenStart Template=FXC_Equipment]
+			{
+				action = UNHIDE
+				location = rhand
+				equipment_type_ids = hammer
+			}
+
+			[WhenEnd Template=FXC_Equipment]
+			{
+				action = UNHIDE
+				location = rhand
+				equipment_type_ids = rifle
+			}
+
+			[WhenEnd Template=FXC_Equipment]
+			{
+				action = HIDE
+				location = rhand
+				equipment_type_ids = hammer
+			}
+		}
+	}
+
+	[PerformerComponent]
+	{
+		[Ability Template=AAConstructLocal]
+		{
+			animation1 = build1
+			
+			[AbilityDefinition Template=AAConstructAction]
+			{
+				[Effect Template=RepairEffect]
+				amount = 3
+			}
+		}
+
+        [Ability Template=AARepairLocal]
+		{	
+			animation1 = build1
+
+			[AbilityDefinition Template=AARepairAction]
+			{
+				[Effect Template=RepairEffect]
+				amount = 3
+			}
+		}
+	}
+}
+
+[Thing Template=AAUnitGERInfantry]
+{
 	IDS = ger_infantry
 	editor_name = "#ger_infantry_editor_name"
 }	

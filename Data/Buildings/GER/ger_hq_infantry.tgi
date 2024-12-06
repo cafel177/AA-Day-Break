@@ -308,7 +308,7 @@
 		actor_ids = regiment_ger_infantry_recon
 
 		[RecruitActor]
-		actor_ids = regiment_ger_infantry_def
+		actor_ids = regiment_ger_infantry_def_ib
 	
 		[RecruitActor]
 		actor_ids = regiment_ger_infantry_mechanized

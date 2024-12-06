@@ -67,3 +67,35 @@
 	}
 }
 
+[Thing Template=AAGERRegimentInfantry]
+{
+	IDS = regiment_ger_infantry_def_ib
+	editor_name = "#regiment_ger_infantry_def_Thing_editor_name"
+
+	[Placement]
+	placement_group_ids = null
+
+	[OrganizationComponent Template=AAInfantryOrganizationComponent]
+	{	
+		layout_IDS = regiment_infantry
+		        		entrenchment_time = 15
+                        
+		[Slot]	;; front
+		element_IDS = ger_infantry_def_ib
+		
+		[Slot]	;; rear guard 1
+		element_IDS = ger_infantry_def_ib
+
+		[Slot]	;; rear guard 2
+		element_IDS = ger_infantry_def_ib
+		
+		[Slot]	;; rear guard 3
+		element_IDS = ger_infantry_recon
+	
+		[Slot]	;; flank
+		element_IDS = ger_infantry_mg
+		
+		[Slot]	;; captain
+		element_IDS = ger_infantry_co
+	}
+}
