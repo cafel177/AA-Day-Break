@@ -4,6 +4,13 @@
 	name = "#ger_halftrack_Thing_name"
 	editor_name = "#ger_halftrack_Thing_editor_name"
 
+	hide_if_missing_properties = false
+
+	[ElementComponent]
+	{
+		required_properties = tech_improved_machineguns
+	}
+
 	[BodyComponent]
 	{
 		health = 250

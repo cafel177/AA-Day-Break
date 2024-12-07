@@ -6,7 +6,7 @@
 	editor_name = "#gbr_bunker_aa_Thing_editor_name"
 	
 	[BodyComponent]
-	health = 500
+	health = 1000
 	defense = 8
 
 	[ElementComponent]
@@ -16,7 +16,7 @@
 
 	[DefenderComponent]
 	{
-		control_range = 50
+		control_range = 35
 	
 		[Ability Template=AAAttackLocal]
 		{		
@@ -26,7 +26,7 @@
 			{
 				name = "#gbr_bunker_aa_DefenderComponent_AbilityDefinition_name"
 				recharge_time = 2
-				range = 50
+				range = 35
 							
 				[Effect Template=PierceDamageEffect]
 				amount = 120
@@ -49,7 +49,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 65
+		money = 75
 		
 		[Production]
 		

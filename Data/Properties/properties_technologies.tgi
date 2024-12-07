@@ -432,6 +432,17 @@
 
 [Property Template=AATechnology]
 {
+	IDS = tech_helicopter
+	name = "#properties_technologies_tech_helicopter_name"
+	description = "#properties_technologies_tech_helicopter_description"
+	icon = PropertyIcons/IconPropertyEngineering.png
+	action_button_icon = TechIcons/IconHelichopter.png
+	
+	required_properties = airhq
+}
+
+[Property Template=AATechnology]
+{
 	IDS = tech_tank_flame
 	name = "#properties_technologies_tech_gbr_tank_flame_name"
 	icon = PropertyIcons/IconPropertyEngineering.png

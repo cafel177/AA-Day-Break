@@ -31,11 +31,13 @@
 		*/
 	}
 
+/*
 	[ElementComponent]
 	{
 		required_properties = tech_tankette
 	}
-	
+	*/
+
 	[PropertiesComponent]
 	{
 		[Property]

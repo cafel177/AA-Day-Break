@@ -277,10 +277,10 @@
 
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_banzai
-
+/*
 		[RecruitActor]
 		actor_ids = regiment_jpn_tankette
-
+*/
 		[RecruitActor]
 		actor_ids = regiment_jpn_infantry_amphib_sp
 

@@ -68,7 +68,7 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_light2
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light
@@ -106,7 +106,7 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_light2
 		
 		[Slot]	;; front
 		element_IDS = rus_tank_light_tb
