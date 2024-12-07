@@ -104,10 +104,10 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-				/*
+
 				[Effect Template=EnchantmentEffect]
 				{
-					targets = +ENEMY -TANK
+					targets = +ENEMY -air -mine -building -TANK
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
@@ -125,7 +125,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-				*/
+
 			}
 		}
 
@@ -203,10 +203,10 @@
 					}
 				}
 				
-                /*
+
 				[Effect Template=EnchantmentEffect]
 				{
-					targets = +ENEMY -TANK
+					targets = +ENEMY -air -mine -building -TANK
 
 					[EnchantmentProperty Template=EnchantmentProperty]
 					{
@@ -224,7 +224,7 @@
 						VFX_IDS = smoke_tint
 					}
 				}
-                */
+
 			}
 		}
 

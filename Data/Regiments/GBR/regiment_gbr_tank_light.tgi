@@ -69,7 +69,7 @@
 
 	[OrganizationComponent Template=AAVehicleOrganizationComponent]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_light2
 		
 		[Slot]	;; front
 		element_IDS = gbr_tank_light
