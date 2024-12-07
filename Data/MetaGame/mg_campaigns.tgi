@@ -260,11 +260,11 @@
 	[Technology]
 	ids = tech_self_sealing_fuel_tanks
 	cost = 25
-
+/*
 	[Technology]
 	ids = tech_tankette
 	cost = 75	
-
+*/
 	[Technology]
 	ids = tech_napalm
 	cost = 100	
