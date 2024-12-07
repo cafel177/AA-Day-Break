@@ -87,6 +87,10 @@
 	cost = 75
 
 	[Technology]
+	ids = tech_helicopter
+	cost = 75
+
+	[Technology]
 	ids = tech_improved_fortifications
 	cost = 25
 
@@ -242,6 +246,10 @@
 	cost = 50
 	
 	[Technology]
+	ids = tech_helicopter
+	cost = 75
+
+	[Technology]
 	ids = tech_battleship
 	cost = 50
 
@@ -392,6 +400,10 @@
 	ids = tech_increased_payload
 	cost = 125	
 	
+	[Technology]
+	ids = tech_helicopter
+	cost = 75
+
 	[Technology]
 	ids = tech_improved_fire_control
 	cost = 50	
@@ -556,6 +568,10 @@
 	cost = 25
 	
 	[Technology]
+	ids = tech_helicopter
+	cost = 75
+
+	[Technology]
 	ids = tech_panzerfaust
 	cost = 50	
 		
@@ -702,6 +718,10 @@
 	ids = tech_military_surplus
 	cost = 75
 	
+	[Technology]
+	ids = tech_helicopter
+	cost = 75
+
 	[Technology]
 	ids = tech_improved_mortars
 	cost = 25	
