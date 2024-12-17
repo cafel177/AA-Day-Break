@@ -225,6 +225,17 @@
 			}
 		}		
 	
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
+			}
+		}
 	}
 
 	[RecruitComponent]
@@ -293,6 +304,18 @@
 			[ResearchCost Template=CostList]
 			{
 				money = 75
+			}
+		}
+
+		[ResearchItem]
+		{
+			property_IDS = tech_battleship
+			type = GLOBAL
+			research_time = 60
+		
+			[ResearchCost Template=CostList]
+			{
+				money = 150
 			}
 		}		
 	
