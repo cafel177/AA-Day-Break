@@ -7,7 +7,7 @@
 	[EconomyComponent]
 	{
 		[Cost]
-		money = 150
+		money = 170
 		
 		[Upkeep]
 		ammo = 15
@@ -35,13 +35,13 @@
 	
 	[OrganizationComponent Template=AAInfantryOrganizationComponentNew]
 	{	
-		layout_IDS = regiment_vehicle_light
+		layout_IDS = regiment_vehicle_tiny
 		
 		[Slot]	;; front
 		element_IDS = rus_rocket_truck
 	
 		[Slot]	;; flank
-		element_IDS = null
+		element_IDS = rus_rocket_truck
 		
 		[Slot]	;; captain
 		element_IDS = rus_car_armored_co

@@ -1,0 +1,23 @@
+[Text language=Default]
+{
+	ids = map_strings_table
+	name = "(DB) - Invasion of Okinawa"
+
+	kingdom_9 = "Axis 4"
+	independent_4 = "Civilian - Agressive"
+	kingdom_8 = "Axis 3"
+	name_3776 = "Hagushi"
+	name_3799 = "Shuri"
+	independent_3 = "Civilian - Passive"
+	kingdom_7 = "Axis 2"
+	kingdom_6 = "Allies 4"
+	kingdom_5 = "Allies 3"
+	team_1 = "Team 2"
+	team_0 = "Team 1"
+	map_name = "(DB) - Invasion of Okinawa"
+	kingdom_2 = "Allies 2"
+	name_3816 = "Taira"
+	kingdom_1 = "Axis 1"
+	kingdom_0 = "Allies 1"
+	map_description = "Iwo Jima is in American hands.  Japanese airspace is now dominated by endless American bomber runs.  Nevertheless, an amphibious invasion will be necessary to ensure final victory.  Every island closer to Japan has proven harder to take, with fiercer resistance and more brutal fighting.  Now, the invasion of the Home Islands must begin, with an assault on Okinawa.  The battle is guaranteed to be the most difficult yet."
+}
