@@ -24,6 +24,8 @@
 	IDS = handicap_medium
 	name = "#handicaps_handicap_medium_name"
 	description = "#handicaps_handicap_medium_description"
+
+	property_ids = property_handicap_medium
 }
 
 [Handicap Template=Handicap]
