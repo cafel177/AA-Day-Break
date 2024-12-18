@@ -102,6 +102,9 @@
 
 		[Property]
 		property_IDS = military_building
+
+		[Property]
+		property_IDS = bunker_fix    
 	}
 
 	[Size]
