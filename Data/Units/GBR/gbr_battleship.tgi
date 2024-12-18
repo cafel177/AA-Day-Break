@@ -223,7 +223,7 @@
 				range = 30
 								
 				[Effect Template=PierceDamageEffect]
-				amount = 40
+				amount = 120
 				
 				;; TEMPORARY EFFECTS
 				;;Muzzle flash effect
@@ -316,7 +316,7 @@
 				range = 30
 								
 				[Effect Template=PierceDamageEffect]
-				amount = 40
+				amount = 120
 				
 				;; TEMPORARY EFFECTS
 				;;Muzzle flash effect
